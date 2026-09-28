@@ -1,0 +1,209 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 48698,
+  "device_id": "209278",
+  "name": "Function Generator",
+  "description": "Electronic test equipment that generates various voltage waveforms.",
+  "tags": [
+    "instrument",
+    "voltage",
+    "supply",
+    "oscillator"
+  ],
+  "thumbnail": "functionGenerator.png",
+  "thumbnail_source": "/functionGenerator.png",
+  "footprint": {
+    "name": "Function generator",
+    "id": 209278
+  },
+  "simulation_model": "function_generator",
+  "extents": {
+    "top": -113.5,
+    "left": -108.22200012207031,
+    "width": 203.2220001220703,
+    "height": 121
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2016-05-31T21:00:44Z",
+      "dir": 90,
+      "id": 282491,
+      "label": null,
+      "name": "Negative",
+      "schematic_symbol_id": 30919,
+      "terminal_type": "breadboard_female",
+      "updated_at": "2016-05-31T21:00:44Z",
+      "x": 5,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2016-05-31T21:00:44Z",
+      "dir": 90,
+      "id": 282492,
+      "label": null,
+      "name": "Positive",
+      "schematic_symbol_id": 30919,
+      "terminal_type": "breadboard_female",
+      "updated_at": "2016-05-31T21:00:44Z",
+      "x": -5,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2016-05-31T20:55:10Z",
+      "dir": 90,
+      "id": 282489,
+      "label": null,
+      "name": "pos",
+      "schematic_symbol_id": 30918,
+      "terminal_type": "schematic",
+      "updated_at": "2016-05-31T20:55:10Z",
+      "x": 10,
+      "y": 70
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2016-05-31T20:55:10Z",
+      "dir": 90,
+      "id": 282490,
+      "label": null,
+      "name": "neg",
+      "schematic_symbol_id": 30918,
+      "terminal_type": "schematic",
+      "updated_at": "2016-05-31T20:55:10Z",
+      "x": -10,
+      "y": 70
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2016-05-31T20:54:39Z",
+      "dir": null,
+      "drill": "750",
+      "footprint_id": 40789,
+      "generator_type": null,
+      "id": 345945,
+      "layer0": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "pos",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2016-05-31T20:54:39Z",
+      "x": 2540,
+      "y": 2540
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2016-05-31T20:54:39Z",
+      "dir": null,
+      "drill": "750",
+      "footprint_id": 40789,
+      "generator_type": null,
+      "id": 345944,
+      "layer0": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "neg",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2016-05-31T20:54:39Z",
+      "x": -2540,
+      "y": 2540
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "created_at": "2016-06-01T17:18:32Z",
+      "default": 1,
+      "default_prefix": "square",
+      "default_show": false,
+      "device_id": 48698,
+      "id": 2107,
+      "name": "Function",
+      "unit": "[[\"square\",\"Square\"],[\"sine\",\"Sine\"],[\"triangle\",\"Triangle\"]]",
+      "updated_at": "2016-06-01T17:18:32Z"
+    },
+    {
+      "path": "device.properties_attributes.1",
+      "created_at": "2016-06-01T17:16:21Z",
+      "default": 2.5,
+      "default_prefix": "",
+      "default_show": false,
+      "device_id": 48698,
+      "id": 2106,
+      "name": "DC Offset",
+      "unit": "(V)",
+      "updated_at": "2016-06-01T17:16:21Z"
+    },
+    {
+      "path": "device.properties_attributes.2",
+      "created_at": "2016-06-01T17:15:22Z",
+      "default": 5,
+      "default_prefix": "",
+      "default_show": false,
+      "device_id": 48698,
+      "id": 2105,
+      "name": "Amplitude",
+      "unit": "(V)",
+      "updated_at": "2016-06-01T17:15:22Z"
+    },
+    {
+      "path": "device.properties_attributes.3",
+      "created_at": "2016-06-01T17:14:09Z",
+      "default": 1000,
+      "default_prefix": "",
+      "default_show": false,
+      "device_id": 48698,
+      "id": 2104,
+      "name": "Frequency",
+      "unit": "(Hz)",
+      "updated_at": "2016-06-01T17:14:09Z"
+    }
+  ],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14654356783d0d70aae61671c09bc78c7fd1ff4664/thumbnail20160609-7992-jh94me.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14654356783d0d70aae61671c09bc78c7fd1ff4664/thumbnail20160609-7992-jh94me.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1465435678bd2dbe8c2bc3c050a04365b62fcaa543/thumbnail20160609-8553-1ac0lba.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1465435678bd2dbe8c2bc3c050a04365b62fcaa543/thumbnail20160609-8553-1ac0lba.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14652596577b455e495cbe0e2fbc5f4cf2fdfc1e08/thumbnail20160607-8559-1egvpsp.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14652596577b455e495cbe0e2fbc5f4cf2fdfc1e08/thumbnail20160607-8559-1egvpsp.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/209278.json"
+}

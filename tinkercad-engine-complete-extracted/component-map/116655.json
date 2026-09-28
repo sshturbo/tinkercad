@@ -1,0 +1,7 @@
+{
+  "device_id": "116655",
+  "simulation_model": "zenerDiode",
+  "implementation_found": true,
+  "module_id": "1660",
+  "model_file": "models/zenerDiode--module-1660.js"
+}

@@ -1,0 +1,7 @@
+{
+  "device_id": "58468",
+  "simulation_model": "npn",
+  "implementation_found": true,
+  "module_id": "72885",
+  "model_file": "models/npn--module-72885.js"
+}

@@ -1,0 +1,267 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 17917,
+  "device_id": "58456",
+  "name": "LED RGB",
+  "description": "A type of LED that combines Red, Blue, and Green to produce any color.",
+  "tags": [
+    "output",
+    "light",
+    "diode",
+    "display"
+  ],
+  "thumbnail": "ledRGB.png",
+  "thumbnail_source": "/ledRGB.png",
+  "footprint": {
+    "name": "5MM-RGB-LED",
+    "id": 58456
+  },
+  "simulation_model": "ledRGB",
+  "extents": {
+    "top": -33.279998779296875,
+    "left": -15,
+    "width": 30,
+    "height": 33.279998779296875
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-23T10:55:35Z",
+      "dir": 90,
+      "id": 202878,
+      "label": null,
+      "name": "Red",
+      "schematic_symbol_id": 20213,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T10:55:35Z",
+      "x": -15,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-23T10:55:35Z",
+      "dir": 90,
+      "id": 202879,
+      "label": null,
+      "name": "Cathode",
+      "schematic_symbol_id": 20213,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T10:55:35Z",
+      "x": -5,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.2",
+      "created_at": "2015-06-23T10:55:35Z",
+      "dir": 90,
+      "id": 202880,
+      "label": null,
+      "name": "Blue",
+      "schematic_symbol_id": 20213,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T10:55:35Z",
+      "x": 5,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.3",
+      "created_at": "2015-06-23T10:55:35Z",
+      "dir": 90,
+      "id": 202881,
+      "label": null,
+      "name": "Green",
+      "schematic_symbol_id": 20213,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T10:55:35Z",
+      "x": 15,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2013-09-02T21:45:22Z",
+      "dir": 0,
+      "id": 57490,
+      "label": null,
+      "name": "terminal-red",
+      "schematic_symbol_id": 4282,
+      "terminal_type": "schematic",
+      "updated_at": "2013-09-02T21:45:22Z",
+      "x": -28.976,
+      "y": 34.08
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2013-09-02T21:45:22Z",
+      "dir": 0,
+      "id": 57491,
+      "label": null,
+      "name": "terminal-cathode",
+      "schematic_symbol_id": 4282,
+      "terminal_type": "schematic",
+      "updated_at": "2013-09-02T21:45:22Z",
+      "x": -0.049,
+      "y": -16.95
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.2",
+      "created_at": "2013-09-02T21:45:22Z",
+      "dir": 0,
+      "id": 57492,
+      "label": null,
+      "name": "terminal-blue",
+      "schematic_symbol_id": 4282,
+      "terminal_type": "schematic",
+      "updated_at": "2013-09-02T21:45:22Z",
+      "x": -0.049,
+      "y": 34.113
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.3",
+      "created_at": "2013-09-02T21:45:22Z",
+      "dir": 0,
+      "id": 57493,
+      "label": null,
+      "name": "terminal-green",
+      "schematic_symbol_id": 4282,
+      "terminal_type": "schematic",
+      "updated_at": "2013-09-02T21:45:22Z",
+      "x": 28.878,
+      "y": 34.081
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-03-31T14:31:44Z",
+      "dir": 90,
+      "drill": "600.0",
+      "footprint_id": 4666,
+      "generator_type": "single",
+      "id": 24953,
+      "layer0": "<circle r=\"508.0\"/>",
+      "layer1": "<circle r=\"508.0\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": 3897,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-10-06T16:20:00Z",
+      "x": 0,
+      "y": -4490
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-03-31T14:31:44Z",
+      "dir": 0,
+      "drill": "600.0",
+      "footprint_id": 4666,
+      "generator_type": "single",
+      "id": 24954,
+      "layer0": "<circle r=\"508.0\"/>",
+      "layer1": "<circle r=\"508.0\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": 3897,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-10-06T16:20:03Z",
+      "x": 0,
+      "y": -3190
+    },
+    {
+      "path": "footprint.pads_attributes.2",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-03-31T14:31:44Z",
+      "dir": 90,
+      "drill": "600.0",
+      "footprint_id": 4666,
+      "generator_type": "single",
+      "id": 24955,
+      "layer0": "<circle r=\"508.0\"/>",
+      "layer1": "<circle r=\"508.0\"/>",
+      "name": "3",
+      "number": null,
+      "pad_type_id": 3897,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-10-06T16:20:05Z",
+      "x": 0,
+      "y": -590
+    },
+    {
+      "path": "footprint.pads_attributes.3",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-03-31T14:31:44Z",
+      "dir": 0,
+      "drill": "600.0",
+      "footprint_id": 4666,
+      "generator_type": "single",
+      "id": 24956,
+      "layer0": "<circle r=\"508.0\"/>",
+      "layer1": "<circle r=\"508.0\"/>",
+      "name": "4",
+      "number": null,
+      "pad_type_id": 3897,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-10-06T16:20:07Z",
+      "x": 0,
+      "y": -1890
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "default": 0,
+      "default_prefix": "rcbg",
+      "default_show": null,
+      "device_id": 17917,
+      "id": 283,
+      "name": "pinout",
+      "unit": "[[\"rcbg\",\"RCBG\"],[\"rcgb\",\"RCGB\"],[\"brcg\",\"BRCG\"]]"
+    }
+  ],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/143514414415e29a268f9118131963238a9c7f5407/thumbnail20150624-27441-qm4jev.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/143514414415e29a268f9118131963238a9c7f5407/thumbnail20150624-27441-qm4jev.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14338702911d6a26ea5e87f193704b2fc52bada0c7/thumbnail20150609-19630-11ql20l.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14338702911d6a26ea5e87f193704b2fc52bada0c7/thumbnail20150609-19630-11ql20l.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14341782326226cc67b278001b6ea756adaf07cc5d/thumbnail20150613-9961-jt2c63.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14341782326226cc67b278001b6ea756adaf07cc5d/thumbnail20150613-9961-jt2c63.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/58456.json"
+}

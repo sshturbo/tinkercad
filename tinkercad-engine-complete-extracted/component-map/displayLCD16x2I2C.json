@@ -1,0 +1,7 @@
+{
+  "device_id": "displayLCD16x2I2C",
+  "simulation_model": "LCD_HD44780_I2C",
+  "implementation_found": true,
+  "module_id": "78116",
+  "model_file": "models/LCD_HD44780_I2C--module-78116.js"
+}

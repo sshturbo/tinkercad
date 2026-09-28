@@ -1,0 +1,1911 @@
+{
+  "integrated circuit": [
+    {
+      "name": "Optocoupler",
+      "kind": "component",
+      "record_json": "components/optocoupler--111209/record.json"
+    },
+    {
+      "name": "Timer",
+      "kind": "component",
+      "record_json": "components/timer--116689/record.json"
+    },
+    {
+      "name": "741 Operational Amplifier",
+      "kind": "component",
+      "record_json": "components/741-operational-amplifier--116692/record.json"
+    },
+    {
+      "name": "Dual Timer",
+      "kind": "component",
+      "record_json": "components/dual-timer--202580/record.json"
+    },
+    {
+      "name": "Quad comparator",
+      "kind": "component",
+      "record_json": "components/quad-comparator--248005/record.json"
+    },
+    {
+      "name": "Dual comparator",
+      "kind": "component",
+      "record_json": "components/dual-comparator--286515/record.json"
+    }
+  ],
+  "isolate": [
+    {
+      "name": "Optocoupler",
+      "kind": "component",
+      "record_json": "components/optocoupler--111209/record.json"
+    },
+    {
+      "name": "741 Operational Amplifier",
+      "kind": "component",
+      "record_json": "components/741-operational-amplifier--116692/record.json"
+    }
+  ],
+  "isolator": [
+    {
+      "name": "Optocoupler",
+      "kind": "component",
+      "record_json": "components/optocoupler--111209/record.json"
+    },
+    {
+      "name": "741 Operational Amplifier",
+      "kind": "component",
+      "record_json": "components/741-operational-amplifier--116692/record.json"
+    }
+  ],
+  "4N35": [
+    {
+      "name": "Optocoupler",
+      "kind": "component",
+      "record_json": "components/optocoupler--111209/record.json"
+    }
+  ],
+  "instrument": [
+    {
+      "name": "Power Supply",
+      "kind": "component",
+      "record_json": "components/power-supply--111724/record.json"
+    },
+    {
+      "name": "Multimeter",
+      "kind": "component",
+      "record_json": "components/multimeter--116662/record.json"
+    },
+    {
+      "name": "Function Generator",
+      "kind": "component",
+      "record_json": "components/function-generator--209278/record.json"
+    },
+    {
+      "name": "Oscilloscope",
+      "kind": "component",
+      "record_json": "components/oscilloscope--58630/record.json"
+    }
+  ],
+  "voltage": [
+    {
+      "name": "Power Supply",
+      "kind": "component",
+      "record_json": "components/power-supply--111724/record.json"
+    },
+    {
+      "name": "Multimeter",
+      "kind": "component",
+      "record_json": "components/multimeter--116662/record.json"
+    },
+    {
+      "name": "9V Battery",
+      "kind": "component",
+      "record_json": "components/9v-battery--116841/record.json"
+    },
+    {
+      "name": "Coin Cell 3V Battery",
+      "kind": "component",
+      "record_json": "components/coin-cell-3v-battery--165360/record.json"
+    },
+    {
+      "name": "Function Generator",
+      "kind": "component",
+      "record_json": "components/function-generator--209278/record.json"
+    },
+    {
+      "name": "5V Regulator [LM7805]",
+      "kind": "component",
+      "record_json": "components/5v-regulator-lm7805--212155/record.json"
+    },
+    {
+      "name": "3.3V Regulator [LD1117V33]",
+      "kind": "component",
+      "record_json": "components/3.3v-regulator-ld1117v33--212156/record.json"
+    },
+    {
+      "name": "1.5V Battery",
+      "kind": "component",
+      "record_json": "components/1.5v-battery--241925/record.json"
+    },
+    {
+      "name": "Quad comparator",
+      "kind": "component",
+      "record_json": "components/quad-comparator--248005/record.json"
+    },
+    {
+      "name": "Dual comparator",
+      "kind": "component",
+      "record_json": "components/dual-comparator--286515/record.json"
+    },
+    {
+      "name": "Oscilloscope",
+      "kind": "component",
+      "record_json": "components/oscilloscope--58630/record.json"
+    },
+    {
+      "name": "Lemon Battery",
+      "kind": "component",
+      "record_json": "components/lemon-battery--batteryLemon/record.json"
+    },
+    {
+      "name": "Potato Battery",
+      "kind": "component",
+      "record_json": "components/potato-battery--batteryPotato/record.json"
+    }
+  ],
+  "input": [
+    {
+      "name": "Temperature Sensor [TMP36]",
+      "kind": "component",
+      "record_json": "components/temperature-sensor-tmp36--112324/record.json"
+    },
+    {
+      "name": "Photoresistor",
+      "kind": "component",
+      "record_json": "components/photoresistor--116691/record.json"
+    },
+    {
+      "name": "Photodiode",
+      "kind": "component",
+      "record_json": "components/photodiode--116732/record.json"
+    },
+    {
+      "name": "Tilt Sensor",
+      "kind": "component",
+      "record_json": "components/tilt-sensor--132486/record.json"
+    },
+    {
+      "name": "Ambient Light Sensor [Phototransistor]",
+      "kind": "component",
+      "record_json": "components/ambient-light-sensor-phototransistor--142078/record.json"
+    },
+    {
+      "name": "Pushbutton",
+      "kind": "component",
+      "record_json": "components/pushbutton--144786/record.json"
+    },
+    {
+      "name": "DIP Switch DPST",
+      "kind": "component",
+      "record_json": "components/dip-switch-dpst--146812/record.json"
+    },
+    {
+      "name": "DIP Switch SPST x 4",
+      "kind": "component",
+      "record_json": "components/dip-switch-spst-x-4--148342/record.json"
+    },
+    {
+      "name": "DIP Switch SPST x 6",
+      "kind": "component",
+      "record_json": "components/dip-switch-spst-x-6--148343/record.json"
+    },
+    {
+      "name": "IR sensor",
+      "kind": "component",
+      "record_json": "components/ir-sensor--196401/record.json"
+    },
+    {
+      "name": "Keypad 4x4",
+      "kind": "component",
+      "record_json": "components/keypad-4x4--203761/record.json"
+    },
+    {
+      "name": "Ultrasonic Distance Sensor",
+      "kind": "component",
+      "record_json": "components/ultrasonic-distance-sensor--219294/record.json"
+    },
+    {
+      "name": "PIR Sensor",
+      "kind": "component",
+      "record_json": "components/pir-sensor--234203/record.json"
+    },
+    {
+      "name": "Gas Sensor",
+      "kind": "component",
+      "record_json": "components/gas-sensor--239306/record.json"
+    },
+    {
+      "name": "Potentiometer",
+      "kind": "component",
+      "record_json": "components/potentiometer--45547/record.json"
+    },
+    {
+      "name": "Slideswitch",
+      "kind": "component",
+      "record_json": "components/slideswitch--58458/record.json"
+    },
+    {
+      "name": "Smoothing",
+      "kind": "starter-device",
+      "record_json": "starter-devices/smoothing--starterArduinoSmoothing/record.json"
+    }
+  ],
+  "weather": [
+    {
+      "name": "Temperature Sensor [TMP36]",
+      "kind": "component",
+      "record_json": "components/temperature-sensor-tmp36--112324/record.json"
+    }
+  ],
+  "power control": [
+    {
+      "name": "H-bridge Motor Driver",
+      "kind": "component",
+      "record_json": "components/h-bridge-motor-driver--112326/record.json"
+    },
+    {
+      "name": "Small Signal nMOS Transistor",
+      "kind": "component",
+      "record_json": "components/small-signal-nmos-transistor--116838/record.json"
+    },
+    {
+      "name": "Small Signal pMOS Transistor",
+      "kind": "component",
+      "record_json": "components/small-signal-pmos-transistor--116839/record.json"
+    },
+    {
+      "name": "Relay DPDT",
+      "kind": "component",
+      "record_json": "components/relay-dpdt--122164/record.json"
+    },
+    {
+      "name": "Relay SPDT",
+      "kind": "component",
+      "record_json": "components/relay-spdt--122167/record.json"
+    },
+    {
+      "name": "TIP120",
+      "kind": "component",
+      "record_json": "components/tip120--138714/record.json"
+    },
+    {
+      "name": "5V Regulator [LM7805]",
+      "kind": "component",
+      "record_json": "components/5v-regulator-lm7805--212155/record.json"
+    },
+    {
+      "name": "3.3V Regulator [LD1117V33]",
+      "kind": "component",
+      "record_json": "components/3.3v-regulator-ld1117v33--212156/record.json"
+    },
+    {
+      "name": "NPN Transistor (BJT)",
+      "kind": "component",
+      "record_json": "components/npn-transistor-bjt--58468/record.json"
+    },
+    {
+      "name": "PNP Transistor (BJT)",
+      "kind": "component",
+      "record_json": "components/pnp-transistor-bjt--58571/record.json"
+    },
+    {
+      "name": "nMOS Transistor (MOSFET)",
+      "kind": "component",
+      "record_json": "components/nmos-transistor-mosfet--58627/record.json"
+    },
+    {
+      "name": "pMOS Transistor (MOSFET)",
+      "kind": "component",
+      "record_json": "components/pmos-transistor-mosfet--59076/record.json"
+    }
+  ],
+  "L293D": [
+    {
+      "name": "H-bridge Motor Driver",
+      "kind": "component",
+      "record_json": "components/h-bridge-motor-driver--112326/record.json"
+    }
+  ],
+  "output": [
+    {
+      "name": "LCD 16 x 2",
+      "kind": "component",
+      "record_json": "components/lcd-16-x-2--113878/record.json"
+    },
+    {
+      "name": "Piezo",
+      "kind": "component",
+      "record_json": "components/piezo--114067/record.json"
+    },
+    {
+      "name": "DC Motor",
+      "kind": "component",
+      "record_json": "components/dc-motor--114158/record.json"
+    },
+    {
+      "name": "Light bulb",
+      "kind": "component",
+      "record_json": "components/light-bulb--116693/record.json"
+    },
+    {
+      "name": "7 Segment Display",
+      "kind": "component",
+      "record_json": "components/7-segment-display--129710/record.json"
+    },
+    {
+      "name": "IR remote",
+      "kind": "component",
+      "record_json": "components/ir-remote--138097/record.json"
+    },
+    {
+      "name": "Micro Servo",
+      "kind": "component",
+      "record_json": "components/micro-servo--142073/record.json"
+    },
+    {
+      "name": "DC Motor with encoder",
+      "kind": "component",
+      "record_json": "components/dc-motor-with-encoder--153670/record.json"
+    },
+    {
+      "name": "NeoPixel Ring 12",
+      "kind": "component",
+      "record_json": "components/neopixel-ring-12--202163/record.json"
+    },
+    {
+      "name": "NeoPixel Ring 24",
+      "kind": "component",
+      "record_json": "components/neopixel-ring-24--215824/record.json"
+    },
+    {
+      "name": "NeoPixel Ring 16",
+      "kind": "component",
+      "record_json": "components/neopixel-ring-16--215830/record.json"
+    },
+    {
+      "name": "NeoPixel",
+      "kind": "component",
+      "record_json": "components/neopixel--215842/record.json"
+    },
+    {
+      "name": "Vibration Motor",
+      "kind": "component",
+      "record_json": "components/vibration-motor--311892/record.json"
+    },
+    {
+      "name": "Hobby Gearmotor",
+      "kind": "component",
+      "record_json": "components/hobby-gearmotor--330000/record.json"
+    },
+    {
+      "name": "LED",
+      "kind": "component",
+      "record_json": "components/led--58422/record.json"
+    },
+    {
+      "name": "LED RGB",
+      "kind": "component",
+      "record_json": "components/led-rgb--58456/record.json"
+    },
+    {
+      "name": "7-Segment Clock Display",
+      "kind": "component",
+      "record_json": "components/7-segment-clock-display--display7SegmentI2C/record.json"
+    },
+    {
+      "name": "LCD 16 x 2 (I2C)",
+      "kind": "component",
+      "record_json": "components/lcd-16-x-2-i2c--displayLCD16x2I2C/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 10",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-10--neopixel_strip_10/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 12",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-12--neopixel_strip_12/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 16",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-16--neopixel_strip_16/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 20",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-20--neopixel_strip_20/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 4",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-4--neopixel_strip_4/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 6",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-6--neopixel_strip_6/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 8",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-8--neopixel_strip_8/record.json"
+    }
+  ],
+  "display": [
+    {
+      "name": "LCD 16 x 2",
+      "kind": "component",
+      "record_json": "components/lcd-16-x-2--113878/record.json"
+    },
+    {
+      "name": "Light bulb",
+      "kind": "component",
+      "record_json": "components/light-bulb--116693/record.json"
+    },
+    {
+      "name": "NeoPixel Ring 12",
+      "kind": "component",
+      "record_json": "components/neopixel-ring-12--202163/record.json"
+    },
+    {
+      "name": "NeoPixel Ring 24",
+      "kind": "component",
+      "record_json": "components/neopixel-ring-24--215824/record.json"
+    },
+    {
+      "name": "NeoPixel Ring 16",
+      "kind": "component",
+      "record_json": "components/neopixel-ring-16--215830/record.json"
+    },
+    {
+      "name": "NeoPixel",
+      "kind": "component",
+      "record_json": "components/neopixel--215842/record.json"
+    },
+    {
+      "name": "LED",
+      "kind": "component",
+      "record_json": "components/led--58422/record.json"
+    },
+    {
+      "name": "LED RGB",
+      "kind": "component",
+      "record_json": "components/led-rgb--58456/record.json"
+    },
+    {
+      "name": "7-Segment Clock Display",
+      "kind": "component",
+      "record_json": "components/7-segment-clock-display--display7SegmentI2C/record.json"
+    },
+    {
+      "name": "LCD 16 x 2 (I2C)",
+      "kind": "component",
+      "record_json": "components/lcd-16-x-2-i2c--displayLCD16x2I2C/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 10",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-10--neopixel_strip_10/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 12",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-12--neopixel_strip_12/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 16",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-16--neopixel_strip_16/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 20",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-20--neopixel_strip_20/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 4",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-4--neopixel_strip_4/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 6",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-6--neopixel_strip_6/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 8",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-8--neopixel_strip_8/record.json"
+    }
+  ],
+  "sound": [
+    {
+      "name": "Piezo",
+      "kind": "component",
+      "record_json": "components/piezo--114067/record.json"
+    }
+  ],
+  "speaker": [
+    {
+      "name": "Piezo",
+      "kind": "component",
+      "record_json": "components/piezo--114067/record.json"
+    }
+  ],
+  "buzzer": [
+    {
+      "name": "Piezo",
+      "kind": "component",
+      "record_json": "components/piezo--114067/record.json"
+    }
+  ],
+  "motion": [
+    {
+      "name": "DC Motor",
+      "kind": "component",
+      "record_json": "components/dc-motor--114158/record.json"
+    },
+    {
+      "name": "Micro Servo",
+      "kind": "component",
+      "record_json": "components/micro-servo--142073/record.json"
+    },
+    {
+      "name": "DC Motor with encoder",
+      "kind": "component",
+      "record_json": "components/dc-motor-with-encoder--153670/record.json"
+    },
+    {
+      "name": "PIR Sensor",
+      "kind": "component",
+      "record_json": "components/pir-sensor--234203/record.json"
+    },
+    {
+      "name": "Vibration Motor",
+      "kind": "component",
+      "record_json": "components/vibration-motor--311892/record.json"
+    },
+    {
+      "name": "Hobby Gearmotor",
+      "kind": "component",
+      "record_json": "components/hobby-gearmotor--330000/record.json"
+    }
+  ],
+  "general": [
+    {
+      "name": "Zener Diode",
+      "kind": "component",
+      "record_json": "components/zener-diode--116655/record.json"
+    },
+    {
+      "name": "Resistor",
+      "kind": "component",
+      "record_json": "components/resistor--53184/record.json"
+    },
+    {
+      "name": "Capacitor",
+      "kind": "component",
+      "record_json": "components/capacitor--57752/record.json"
+    },
+    {
+      "name": "Polarized Capacitor",
+      "kind": "component",
+      "record_json": "components/polarized-capacitor--57950/record.json"
+    },
+    {
+      "name": "Inductor",
+      "kind": "component",
+      "record_json": "components/inductor--58208/record.json"
+    },
+    {
+      "name": "Diode",
+      "kind": "component",
+      "record_json": "components/diode--58320/record.json"
+    }
+  ],
+  "current": [
+    {
+      "name": "Multimeter",
+      "kind": "component",
+      "record_json": "components/multimeter--116662/record.json"
+    }
+  ],
+  "resistance": [
+    {
+      "name": "Multimeter",
+      "kind": "component",
+      "record_json": "components/multimeter--116662/record.json"
+    }
+  ],
+  "measure": [
+    {
+      "name": "Multimeter",
+      "kind": "component",
+      "record_json": "components/multimeter--116662/record.json"
+    },
+    {
+      "name": "Ultrasonic Distance Sensor",
+      "kind": "component",
+      "record_json": "components/ultrasonic-distance-sensor--219294/record.json"
+    },
+    {
+      "name": "Gas Sensor",
+      "kind": "component",
+      "record_json": "components/gas-sensor--239306/record.json"
+    },
+    {
+      "name": "Oscilloscope",
+      "kind": "component",
+      "record_json": "components/oscilloscope--58630/record.json"
+    }
+  ],
+  "connector": [
+    {
+      "name": "USB standard A",
+      "kind": "component",
+      "record_json": "components/usb-standard-a--116686/record.json"
+    },
+    {
+      "name": "8 Pin Header",
+      "kind": "component",
+      "record_json": "components/8-pin-header--116859/record.json"
+    }
+  ],
+  "power": [
+    {
+      "name": "USB standard A",
+      "kind": "component",
+      "record_json": "components/usb-standard-a--116686/record.json"
+    },
+    {
+      "name": "9V Battery",
+      "kind": "component",
+      "record_json": "components/9v-battery--116841/record.json"
+    },
+    {
+      "name": "Coin Cell 3V Battery",
+      "kind": "component",
+      "record_json": "components/coin-cell-3v-battery--165360/record.json"
+    },
+    {
+      "name": "1.5V Battery",
+      "kind": "component",
+      "record_json": "components/1.5v-battery--241925/record.json"
+    },
+    {
+      "name": "Lemon Battery",
+      "kind": "component",
+      "record_json": "components/lemon-battery--batteryLemon/record.json"
+    },
+    {
+      "name": "Potato Battery",
+      "kind": "component",
+      "record_json": "components/potato-battery--batteryPotato/record.json"
+    }
+  ],
+  "supply": [
+    {
+      "name": "USB standard A",
+      "kind": "component",
+      "record_json": "components/usb-standard-a--116686/record.json"
+    },
+    {
+      "name": "9V Battery",
+      "kind": "component",
+      "record_json": "components/9v-battery--116841/record.json"
+    },
+    {
+      "name": "Coin Cell 3V Battery",
+      "kind": "component",
+      "record_json": "components/coin-cell-3v-battery--165360/record.json"
+    },
+    {
+      "name": "Function Generator",
+      "kind": "component",
+      "record_json": "components/function-generator--209278/record.json"
+    },
+    {
+      "name": "1.5V Battery",
+      "kind": "component",
+      "record_json": "components/1.5v-battery--241925/record.json"
+    },
+    {
+      "name": "Lemon Battery",
+      "kind": "component",
+      "record_json": "components/lemon-battery--batteryLemon/record.json"
+    },
+    {
+      "name": "Potato Battery",
+      "kind": "component",
+      "record_json": "components/potato-battery--batteryPotato/record.json"
+    }
+  ],
+  "oscillator": [
+    {
+      "name": "Timer",
+      "kind": "component",
+      "record_json": "components/timer--116689/record.json"
+    },
+    {
+      "name": "Dual Timer",
+      "kind": "component",
+      "record_json": "components/dual-timer--202580/record.json"
+    },
+    {
+      "name": "Function Generator",
+      "kind": "component",
+      "record_json": "components/function-generator--209278/record.json"
+    }
+  ],
+  "555": [
+    {
+      "name": "Timer",
+      "kind": "component",
+      "record_json": "components/timer--116689/record.json"
+    }
+  ],
+  "light": [
+    {
+      "name": "Photoresistor",
+      "kind": "component",
+      "record_json": "components/photoresistor--116691/record.json"
+    },
+    {
+      "name": "Photodiode",
+      "kind": "component",
+      "record_json": "components/photodiode--116732/record.json"
+    },
+    {
+      "name": "7 Segment Display",
+      "kind": "component",
+      "record_json": "components/7-segment-display--129710/record.json"
+    },
+    {
+      "name": "Ambient Light Sensor [Phototransistor]",
+      "kind": "component",
+      "record_json": "components/ambient-light-sensor-phototransistor--142078/record.json"
+    },
+    {
+      "name": "NeoPixel Ring 12",
+      "kind": "component",
+      "record_json": "components/neopixel-ring-12--202163/record.json"
+    },
+    {
+      "name": "NeoPixel Ring 24",
+      "kind": "component",
+      "record_json": "components/neopixel-ring-24--215824/record.json"
+    },
+    {
+      "name": "NeoPixel Ring 16",
+      "kind": "component",
+      "record_json": "components/neopixel-ring-16--215830/record.json"
+    },
+    {
+      "name": "NeoPixel",
+      "kind": "component",
+      "record_json": "components/neopixel--215842/record.json"
+    },
+    {
+      "name": "LED",
+      "kind": "component",
+      "record_json": "components/led--58422/record.json"
+    },
+    {
+      "name": "LED RGB",
+      "kind": "component",
+      "record_json": "components/led-rgb--58456/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 10",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-10--neopixel_strip_10/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 12",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-12--neopixel_strip_12/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 16",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-16--neopixel_strip_16/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 20",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-20--neopixel_strip_20/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 4",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-4--neopixel_strip_4/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 6",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-6--neopixel_strip_6/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 8",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-8--neopixel_strip_8/record.json"
+    }
+  ],
+  "detector": [
+    {
+      "name": "Photoresistor",
+      "kind": "component",
+      "record_json": "components/photoresistor--116691/record.json"
+    },
+    {
+      "name": "Photodiode",
+      "kind": "component",
+      "record_json": "components/photodiode--116732/record.json"
+    },
+    {
+      "name": "Ambient Light Sensor [Phototransistor]",
+      "kind": "component",
+      "record_json": "components/ambient-light-sensor-phototransistor--142078/record.json"
+    },
+    {
+      "name": "Ultrasonic Distance Sensor",
+      "kind": "component",
+      "record_json": "components/ultrasonic-distance-sensor--219294/record.json"
+    },
+    {
+      "name": "PIR Sensor",
+      "kind": "component",
+      "record_json": "components/pir-sensor--234203/record.json"
+    }
+  ],
+  "sensor": [
+    {
+      "name": "Photoresistor",
+      "kind": "component",
+      "record_json": "components/photoresistor--116691/record.json"
+    },
+    {
+      "name": "Photodiode",
+      "kind": "component",
+      "record_json": "components/photodiode--116732/record.json"
+    },
+    {
+      "name": "Ambient Light Sensor [Phototransistor]",
+      "kind": "component",
+      "record_json": "components/ambient-light-sensor-phototransistor--142078/record.json"
+    }
+  ],
+  "741": [
+    {
+      "name": "741 Operational Amplifier",
+      "kind": "component",
+      "record_json": "components/741-operational-amplifier--116692/record.json"
+    }
+  ],
+  "logic": [
+    {
+      "name": "8-Bit Shift Register",
+      "kind": "component",
+      "record_json": "components/8-bit-shift-register--116695/record.json"
+    },
+    {
+      "name": "Quad NAND gate",
+      "kind": "component",
+      "record_json": "components/quad-nand-gate--116696/record.json"
+    },
+    {
+      "name": "Quad NOR gate",
+      "kind": "component",
+      "record_json": "components/quad-nor-gate--116698/record.json"
+    },
+    {
+      "name": "Hex Inverter",
+      "kind": "component",
+      "record_json": "components/hex-inverter--116701/record.json"
+    },
+    {
+      "name": "Quad AND gate",
+      "kind": "component",
+      "record_json": "components/quad-and-gate--116702/record.json"
+    },
+    {
+      "name": "Triple 3-Input NAND gate",
+      "kind": "component",
+      "record_json": "components/triple-3-input-nand-gate--116705/record.json"
+    },
+    {
+      "name": "Triple 3-Input AND gate",
+      "kind": "component",
+      "record_json": "components/triple-3-input-and-gate--116707/record.json"
+    },
+    {
+      "name": "Inverting Schmitt Trigger",
+      "kind": "component",
+      "record_json": "components/inverting-schmitt-trigger--116709/record.json"
+    },
+    {
+      "name": "Dual 4-Input NAND gate",
+      "kind": "component",
+      "record_json": "components/dual-4-input-nand-gate--116714/record.json"
+    },
+    {
+      "name": "Dual 4-Input AND gate",
+      "kind": "component",
+      "record_json": "components/dual-4-input-and-gate--116716/record.json"
+    },
+    {
+      "name": "Triple 3-Input NOR gate",
+      "kind": "component",
+      "record_json": "components/triple-3-input-nor-gate--116719/record.json"
+    },
+    {
+      "name": "Quad OR gate",
+      "kind": "component",
+      "record_json": "components/quad-or-gate--116721/record.json"
+    },
+    {
+      "name": "Dual J-K Flip-Flop",
+      "kind": "component",
+      "record_json": "components/dual-j-k-flip-flop--116723/record.json"
+    },
+    {
+      "name": "Dual D Flip-Flop",
+      "kind": "component",
+      "record_json": "components/dual-d-flip-flop--116725/record.json"
+    },
+    {
+      "name": "Quad XOR gate",
+      "kind": "component",
+      "record_json": "components/quad-xor-gate--116727/record.json"
+    },
+    {
+      "name": "4-Bit Binary Counter",
+      "kind": "component",
+      "record_json": "components/4-bit-binary-counter--116728/record.json"
+    },
+    {
+      "name": "Quad NAND Schmitt Trigger",
+      "kind": "component",
+      "record_json": "components/quad-nand-schmitt-trigger--116730/record.json"
+    },
+    {
+      "name": "7-Segment Decoder",
+      "kind": "component",
+      "record_json": "components/7-segment-decoder--121827/record.json"
+    },
+    {
+      "name": "Johnson Decade Counter",
+      "kind": "component",
+      "record_json": "components/johnson-decade-counter--129343/record.json"
+    },
+    {
+      "name": "4-Bit Adder",
+      "kind": "component",
+      "record_json": "components/4-bit-adder--ic74hc283/record.json"
+    },
+    {
+      "name": "4-Bit Latch",
+      "kind": "component",
+      "record_json": "components/4-bit-latch--ic74hc75/record.json"
+    }
+  ],
+  "memory": [
+    {
+      "name": "8-Bit Shift Register",
+      "kind": "component",
+      "record_json": "components/8-bit-shift-register--116695/record.json"
+    },
+    {
+      "name": "Dual J-K Flip-Flop",
+      "kind": "component",
+      "record_json": "components/dual-j-k-flip-flop--116723/record.json"
+    },
+    {
+      "name": "Dual D Flip-Flop",
+      "kind": "component",
+      "record_json": "components/dual-d-flip-flop--116725/record.json"
+    },
+    {
+      "name": "Johnson Decade Counter",
+      "kind": "component",
+      "record_json": "components/johnson-decade-counter--129343/record.json"
+    }
+  ],
+  "74HC595": [
+    {
+      "name": "8-Bit Shift Register",
+      "kind": "component",
+      "record_json": "components/8-bit-shift-register--116695/record.json"
+    }
+  ],
+  "74595": [
+    {
+      "name": "8-Bit Shift Register",
+      "kind": "component",
+      "record_json": "components/8-bit-shift-register--116695/record.json"
+    }
+  ],
+  "74HC00": [
+    {
+      "name": "Quad NAND gate",
+      "kind": "component",
+      "record_json": "components/quad-nand-gate--116696/record.json"
+    }
+  ],
+  "7400": [
+    {
+      "name": "Quad NAND gate",
+      "kind": "component",
+      "record_json": "components/quad-nand-gate--116696/record.json"
+    }
+  ],
+  "74HC02": [
+    {
+      "name": "Quad NOR gate",
+      "kind": "component",
+      "record_json": "components/quad-nor-gate--116698/record.json"
+    }
+  ],
+  "7402": [
+    {
+      "name": "Quad NOR gate",
+      "kind": "component",
+      "record_json": "components/quad-nor-gate--116698/record.json"
+    }
+  ],
+  "74HC04": [
+    {
+      "name": "Hex Inverter",
+      "kind": "component",
+      "record_json": "components/hex-inverter--116701/record.json"
+    }
+  ],
+  "7404": [
+    {
+      "name": "Hex Inverter",
+      "kind": "component",
+      "record_json": "components/hex-inverter--116701/record.json"
+    }
+  ],
+  "74HC08": [
+    {
+      "name": "Quad AND gate",
+      "kind": "component",
+      "record_json": "components/quad-and-gate--116702/record.json"
+    }
+  ],
+  "7408": [
+    {
+      "name": "Quad AND gate",
+      "kind": "component",
+      "record_json": "components/quad-and-gate--116702/record.json"
+    }
+  ],
+  "74HC10": [
+    {
+      "name": "Triple 3-Input NAND gate",
+      "kind": "component",
+      "record_json": "components/triple-3-input-nand-gate--116705/record.json"
+    }
+  ],
+  "7410": [
+    {
+      "name": "Triple 3-Input NAND gate",
+      "kind": "component",
+      "record_json": "components/triple-3-input-nand-gate--116705/record.json"
+    }
+  ],
+  "74HC11": [
+    {
+      "name": "Triple 3-Input AND gate",
+      "kind": "component",
+      "record_json": "components/triple-3-input-and-gate--116707/record.json"
+    }
+  ],
+  "7411": [
+    {
+      "name": "Triple 3-Input AND gate",
+      "kind": "component",
+      "record_json": "components/triple-3-input-and-gate--116707/record.json"
+    }
+  ],
+  "74HC14": [
+    {
+      "name": "Inverting Schmitt Trigger",
+      "kind": "component",
+      "record_json": "components/inverting-schmitt-trigger--116709/record.json"
+    }
+  ],
+  "7414": [
+    {
+      "name": "Inverting Schmitt Trigger",
+      "kind": "component",
+      "record_json": "components/inverting-schmitt-trigger--116709/record.json"
+    }
+  ],
+  "74HC20": [
+    {
+      "name": "Dual 4-Input NAND gate",
+      "kind": "component",
+      "record_json": "components/dual-4-input-nand-gate--116714/record.json"
+    }
+  ],
+  "7420": [
+    {
+      "name": "Dual 4-Input NAND gate",
+      "kind": "component",
+      "record_json": "components/dual-4-input-nand-gate--116714/record.json"
+    }
+  ],
+  "74HC21": [
+    {
+      "name": "Dual 4-Input AND gate",
+      "kind": "component",
+      "record_json": "components/dual-4-input-and-gate--116716/record.json"
+    }
+  ],
+  "7421": [
+    {
+      "name": "Dual 4-Input AND gate",
+      "kind": "component",
+      "record_json": "components/dual-4-input-and-gate--116716/record.json"
+    }
+  ],
+  "74HC27": [
+    {
+      "name": "Triple 3-Input NOR gate",
+      "kind": "component",
+      "record_json": "components/triple-3-input-nor-gate--116719/record.json"
+    }
+  ],
+  "7427": [
+    {
+      "name": "Triple 3-Input NOR gate",
+      "kind": "component",
+      "record_json": "components/triple-3-input-nor-gate--116719/record.json"
+    }
+  ],
+  "74HC32": [
+    {
+      "name": "Quad OR gate",
+      "kind": "component",
+      "record_json": "components/quad-or-gate--116721/record.json"
+    }
+  ],
+  "7432": [
+    {
+      "name": "Quad OR gate",
+      "kind": "component",
+      "record_json": "components/quad-or-gate--116721/record.json"
+    }
+  ],
+  "74HC73": [
+    {
+      "name": "Dual J-K Flip-Flop",
+      "kind": "component",
+      "record_json": "components/dual-j-k-flip-flop--116723/record.json"
+    }
+  ],
+  "7473": [
+    {
+      "name": "Dual J-K Flip-Flop",
+      "kind": "component",
+      "record_json": "components/dual-j-k-flip-flop--116723/record.json"
+    }
+  ],
+  "74HC74": [
+    {
+      "name": "Dual D Flip-Flop",
+      "kind": "component",
+      "record_json": "components/dual-d-flip-flop--116725/record.json"
+    }
+  ],
+  "7474": [
+    {
+      "name": "Dual D Flip-Flop",
+      "kind": "component",
+      "record_json": "components/dual-d-flip-flop--116725/record.json"
+    }
+  ],
+  "74HC86": [
+    {
+      "name": "Quad XOR gate",
+      "kind": "component",
+      "record_json": "components/quad-xor-gate--116727/record.json"
+    }
+  ],
+  "7486": [
+    {
+      "name": "Quad XOR gate",
+      "kind": "component",
+      "record_json": "components/quad-xor-gate--116727/record.json"
+    }
+  ],
+  "74HC93": [
+    {
+      "name": "4-Bit Binary Counter",
+      "kind": "component",
+      "record_json": "components/4-bit-binary-counter--116728/record.json"
+    }
+  ],
+  "7493": [
+    {
+      "name": "4-Bit Binary Counter",
+      "kind": "component",
+      "record_json": "components/4-bit-binary-counter--116728/record.json"
+    }
+  ],
+  "74HC132": [
+    {
+      "name": "Quad NAND Schmitt Trigger",
+      "kind": "component",
+      "record_json": "components/quad-nand-schmitt-trigger--116730/record.json"
+    }
+  ],
+  "74132": [
+    {
+      "name": "Quad NAND Schmitt Trigger",
+      "kind": "component",
+      "record_json": "components/quad-nand-schmitt-trigger--116730/record.json"
+    }
+  ],
+  "mosfet": [
+    {
+      "name": "Small Signal nMOS Transistor",
+      "kind": "component",
+      "record_json": "components/small-signal-nmos-transistor--116838/record.json"
+    },
+    {
+      "name": "Small Signal pMOS Transistor",
+      "kind": "component",
+      "record_json": "components/small-signal-pmos-transistor--116839/record.json"
+    }
+  ],
+  "microcontroller": [
+    {
+      "name": "ATtiny",
+      "kind": "component",
+      "record_json": "components/attiny--116840/record.json"
+    },
+    {
+      "name": "Arduino Uno R3",
+      "kind": "component",
+      "record_json": "components/arduino-uno-r3--132521/record.json"
+    },
+    {
+      "name": "Smoothing",
+      "kind": "starter-device",
+      "record_json": "starter-devices/smoothing--starterArduinoSmoothing/record.json"
+    }
+  ],
+  "arduino": [
+    {
+      "name": "ATtiny",
+      "kind": "component",
+      "record_json": "components/attiny--116840/record.json"
+    }
+  ],
+  "9volt": [
+    {
+      "name": "9V Battery",
+      "kind": "component",
+      "record_json": "components/9v-battery--116841/record.json"
+    }
+  ],
+  "9 volt": [
+    {
+      "name": "9V Battery",
+      "kind": "component",
+      "record_json": "components/9v-battery--116841/record.json"
+    }
+  ],
+  "male": [
+    {
+      "name": "8 Pin Header",
+      "kind": "component",
+      "record_json": "components/8-pin-header--116859/record.json"
+    }
+  ],
+  "female": [
+    {
+      "name": "8 Pin Header",
+      "kind": "component",
+      "record_json": "components/8-pin-header--116859/record.json"
+    }
+  ],
+  "CD4511": [
+    {
+      "name": "7-Segment Decoder",
+      "kind": "component",
+      "record_json": "components/7-segment-decoder--121827/record.json"
+    }
+  ],
+  "74HC4017": [
+    {
+      "name": "Johnson Decade Counter",
+      "kind": "component",
+      "record_json": "components/johnson-decade-counter--129343/record.json"
+    }
+  ],
+  "744017": [
+    {
+      "name": "Johnson Decade Counter",
+      "kind": "component",
+      "record_json": "components/johnson-decade-counter--129343/record.json"
+    }
+  ],
+  "digit": [
+    {
+      "name": "7 Segment Display",
+      "kind": "component",
+      "record_json": "components/7-segment-display--129710/record.json"
+    }
+  ],
+  "number": [
+    {
+      "name": "7 Segment Display",
+      "kind": "component",
+      "record_json": "components/7-segment-display--129710/record.json"
+    }
+  ],
+  "led": [
+    {
+      "name": "7 Segment Display",
+      "kind": "component",
+      "record_json": "components/7-segment-display--129710/record.json"
+    },
+    {
+      "name": "NeoPixel Ring 12",
+      "kind": "component",
+      "record_json": "components/neopixel-ring-12--202163/record.json"
+    },
+    {
+      "name": "NeoPixel Ring 24",
+      "kind": "component",
+      "record_json": "components/neopixel-ring-24--215824/record.json"
+    },
+    {
+      "name": "NeoPixel Ring 16",
+      "kind": "component",
+      "record_json": "components/neopixel-ring-16--215830/record.json"
+    },
+    {
+      "name": "NeoPixel",
+      "kind": "component",
+      "record_json": "components/neopixel--215842/record.json"
+    },
+    {
+      "name": "7-Segment Clock Display",
+      "kind": "component",
+      "record_json": "components/7-segment-clock-display--display7SegmentI2C/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 10",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-10--neopixel_strip_10/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 12",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-12--neopixel_strip_12/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 16",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-16--neopixel_strip_16/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 20",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-20--neopixel_strip_20/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 4",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-4--neopixel_strip_4/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 6",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-6--neopixel_strip_6/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 8",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-8--neopixel_strip_8/record.json"
+    }
+  ],
+  "infrared": [
+    {
+      "name": "IR remote",
+      "kind": "component",
+      "record_json": "components/ir-remote--138097/record.json"
+    },
+    {
+      "name": "IR sensor",
+      "kind": "component",
+      "record_json": "components/ir-sensor--196401/record.json"
+    },
+    {
+      "name": "PIR Sensor",
+      "kind": "component",
+      "record_json": "components/pir-sensor--234203/record.json"
+    }
+  ],
+  "transistor": [
+    {
+      "name": "TIP120",
+      "kind": "component",
+      "record_json": "components/tip120--138714/record.json"
+    }
+  ],
+  "darlington": [
+    {
+      "name": "TIP120",
+      "kind": "component",
+      "record_json": "components/tip120--138714/record.json"
+    }
+  ],
+  "pwm": [
+    {
+      "name": "Micro Servo",
+      "kind": "component",
+      "record_json": "components/micro-servo--142073/record.json"
+    }
+  ],
+  "pulse width modulation": [
+    {
+      "name": "Micro Servo",
+      "kind": "component",
+      "record_json": "components/micro-servo--142073/record.json"
+    }
+  ],
+  "switch": [
+    {
+      "name": "Pushbutton",
+      "kind": "component",
+      "record_json": "components/pushbutton--144786/record.json"
+    },
+    {
+      "name": "Keypad 4x4",
+      "kind": "component",
+      "record_json": "components/keypad-4x4--203761/record.json"
+    }
+  ],
+  "press": [
+    {
+      "name": "Pushbutton",
+      "kind": "component",
+      "record_json": "components/pushbutton--144786/record.json"
+    }
+  ],
+  "key": [
+    {
+      "name": "Pushbutton",
+      "kind": "component",
+      "record_json": "components/pushbutton--144786/record.json"
+    }
+  ],
+  "button": [
+    {
+      "name": "DIP Switch DPST",
+      "kind": "component",
+      "record_json": "components/dip-switch-dpst--146812/record.json"
+    },
+    {
+      "name": "DIP Switch SPST x 4",
+      "kind": "component",
+      "record_json": "components/dip-switch-spst-x-4--148342/record.json"
+    },
+    {
+      "name": "DIP Switch SPST x 6",
+      "kind": "component",
+      "record_json": "components/dip-switch-spst-x-6--148343/record.json"
+    },
+    {
+      "name": "Keypad 4x4",
+      "kind": "component",
+      "record_json": "components/keypad-4x4--203761/record.json"
+    },
+    {
+      "name": "Slideswitch",
+      "kind": "component",
+      "record_json": "components/slideswitch--58458/record.json"
+    }
+  ],
+  "rotary": [
+    {
+      "name": "DC Motor with encoder",
+      "kind": "component",
+      "record_json": "components/dc-motor-with-encoder--153670/record.json"
+    }
+  ],
+  "position": [
+    {
+      "name": "DC Motor with encoder",
+      "kind": "component",
+      "record_json": "components/dc-motor-with-encoder--153670/record.json"
+    }
+  ],
+  "remote": [
+    {
+      "name": "IR sensor",
+      "kind": "component",
+      "record_json": "components/ir-sensor--196401/record.json"
+    }
+  ],
+  "ws2812": [
+    {
+      "name": "NeoPixel Ring 12",
+      "kind": "component",
+      "record_json": "components/neopixel-ring-12--202163/record.json"
+    },
+    {
+      "name": "NeoPixel Ring 24",
+      "kind": "component",
+      "record_json": "components/neopixel-ring-24--215824/record.json"
+    },
+    {
+      "name": "NeoPixel Ring 16",
+      "kind": "component",
+      "record_json": "components/neopixel-ring-16--215830/record.json"
+    },
+    {
+      "name": "NeoPixel",
+      "kind": "component",
+      "record_json": "components/neopixel--215842/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 10",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-10--neopixel_strip_10/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 12",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-12--neopixel_strip_12/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 16",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-16--neopixel_strip_16/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 20",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-20--neopixel_strip_20/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 4",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-4--neopixel_strip_4/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 6",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-6--neopixel_strip_6/record.json"
+    },
+    {
+      "name": "NeoPixel Strip 8",
+      "kind": "component",
+      "record_json": "components/neopixel-strip-8--neopixel_strip_8/record.json"
+    }
+  ],
+  "556": [
+    {
+      "name": "Dual Timer",
+      "kind": "component",
+      "record_json": "components/dual-timer--202580/record.json"
+    }
+  ],
+  "transducer": [
+    {
+      "name": "Ultrasonic Distance Sensor",
+      "kind": "component",
+      "record_json": "components/ultrasonic-distance-sensor--219294/record.json"
+    }
+  ],
+  "ping": [
+    {
+      "name": "Ultrasonic Distance Sensor",
+      "kind": "component",
+      "record_json": "components/ultrasonic-distance-sensor--219294/record.json"
+    }
+  ],
+  "air": [
+    {
+      "name": "Gas Sensor",
+      "kind": "component",
+      "record_json": "components/gas-sensor--239306/record.json"
+    }
+  ],
+  "smoke": [
+    {
+      "name": "Gas Sensor",
+      "kind": "component",
+      "record_json": "components/gas-sensor--239306/record.json"
+    }
+  ],
+  "alcohol": [
+    {
+      "name": "Gas Sensor",
+      "kind": "component",
+      "record_json": "components/gas-sensor--239306/record.json"
+    }
+  ],
+  "methane": [
+    {
+      "name": "Gas Sensor",
+      "kind": "component",
+      "record_json": "components/gas-sensor--239306/record.json"
+    }
+  ],
+  "fart": [
+    {
+      "name": "Gas Sensor",
+      "kind": "component",
+      "record_json": "components/gas-sensor--239306/record.json"
+    }
+  ],
+  "LM339": [
+    {
+      "name": "Quad comparator",
+      "kind": "component",
+      "record_json": "components/quad-comparator--248005/record.json"
+    }
+  ],
+  "LM393": [
+    {
+      "name": "Dual comparator",
+      "kind": "component",
+      "record_json": "components/dual-comparator--286515/record.json"
+    }
+  ],
+  "vibrate": [
+    {
+      "name": "Vibration Motor",
+      "kind": "component",
+      "record_json": "components/vibration-motor--311892/record.json"
+    }
+  ],
+  "move": [
+    {
+      "name": "Vibration Motor",
+      "kind": "component",
+      "record_json": "components/vibration-motor--311892/record.json"
+    }
+  ],
+  "wiggle": [
+    {
+      "name": "Vibration Motor",
+      "kind": "component",
+      "record_json": "components/vibration-motor--311892/record.json"
+    }
+  ],
+  "spin": [
+    {
+      "name": "Hobby Gearmotor",
+      "kind": "component",
+      "record_json": "components/hobby-gearmotor--330000/record.json"
+    }
+  ],
+  "variable": [
+    {
+      "name": "Potentiometer",
+      "kind": "component",
+      "record_json": "components/potentiometer--45547/record.json"
+    },
+    {
+      "name": "Smoothing",
+      "kind": "starter-device",
+      "record_json": "starter-devices/smoothing--starterArduinoSmoothing/record.json"
+    }
+  ],
+  "resistor": [
+    {
+      "name": "Potentiometer",
+      "kind": "component",
+      "record_json": "components/potentiometer--45547/record.json"
+    },
+    {
+      "name": "Flex Sensor",
+      "kind": "component",
+      "record_json": "components/flex-sensor--sensorFlex/record.json"
+    },
+    {
+      "name": "Force Sensor",
+      "kind": "component",
+      "record_json": "components/force-sensor--sensorForce/record.json"
+    },
+    {
+      "name": "Smoothing",
+      "kind": "starter-device",
+      "record_json": "starter-devices/smoothing--starterArduinoSmoothing/record.json"
+    }
+  ],
+  "knob": [
+    {
+      "name": "Potentiometer",
+      "kind": "component",
+      "record_json": "components/potentiometer--45547/record.json"
+    },
+    {
+      "name": "Smoothing",
+      "kind": "starter-device",
+      "record_json": "starter-devices/smoothing--starterArduinoSmoothing/record.json"
+    }
+  ],
+  "dial": [
+    {
+      "name": "Potentiometer",
+      "kind": "component",
+      "record_json": "components/potentiometer--45547/record.json"
+    },
+    {
+      "name": "Smoothing",
+      "kind": "starter-device",
+      "record_json": "starter-devices/smoothing--starterArduinoSmoothing/record.json"
+    }
+  ],
+  "diode": [
+    {
+      "name": "LED",
+      "kind": "component",
+      "record_json": "components/led--58422/record.json"
+    },
+    {
+      "name": "LED RGB",
+      "kind": "component",
+      "record_json": "components/led-rgb--58456/record.json"
+    }
+  ],
+  "scope": [
+    {
+      "name": "Oscilloscope",
+      "kind": "component",
+      "record_json": "components/oscilloscope--58630/record.json"
+    }
+  ],
+  "i2c": [
+    {
+      "name": "7-Segment Clock Display",
+      "kind": "component",
+      "record_json": "components/7-segment-clock-display--display7SegmentI2C/record.json"
+    },
+    {
+      "name": "LCD 16 x 2 (I2C)",
+      "kind": "component",
+      "record_json": "components/lcd-16-x-2-i2c--displayLCD16x2I2C/record.json"
+    },
+    {
+      "name": "8-port I2C expander",
+      "kind": "component",
+      "record_json": "components/8-port-i2c-expander--icPCF8574/record.json"
+    }
+  ],
+  "74HC283": [
+    {
+      "name": "4-Bit Adder",
+      "kind": "component",
+      "record_json": "components/4-bit-adder--ic74hc283/record.json"
+    }
+  ],
+  "74283": [
+    {
+      "name": "4-Bit Adder",
+      "kind": "component",
+      "record_json": "components/4-bit-adder--ic74hc283/record.json"
+    }
+  ],
+  "74HC75": [
+    {
+      "name": "4-Bit Latch",
+      "kind": "component",
+      "record_json": "components/4-bit-latch--ic74hc75/record.json"
+    }
+  ],
+  "7475": [
+    {
+      "name": "4-Bit Latch",
+      "kind": "component",
+      "record_json": "components/4-bit-latch--ic74hc75/record.json"
+    }
+  ],
+  "port": [
+    {
+      "name": "8-port I2C expander",
+      "kind": "component",
+      "record_json": "components/8-port-i2c-expander--icPCF8574/record.json"
+    }
+  ],
+  "expander": [
+    {
+      "name": "8-port I2C expander",
+      "kind": "component",
+      "record_json": "components/8-port-i2c-expander--icPCF8574/record.json"
+    }
+  ],
+  "pcf8574": [
+    {
+      "name": "8-port I2C expander",
+      "kind": "component",
+      "record_json": "components/8-port-i2c-expander--icPCF8574/record.json"
+    }
+  ],
+  "microbit": [
+    {
+      "name": "micro:bit",
+      "kind": "component",
+      "record_json": "components/micro-bit--microbit/record.json"
+    },
+    {
+      "name": "micro:bit with Breakout",
+      "kind": "component",
+      "record_json": "components/micro-bit-with-breakout--microbitBreakout/record.json"
+    },
+    {
+      "name": "Moisture",
+      "kind": "starter-device",
+      "record_json": "starter-devices/moisture--starterMicrobitMoisture/record.json"
+    }
+  ],
+  "bend": [
+    {
+      "name": "Flex Sensor",
+      "kind": "component",
+      "record_json": "components/flex-sensor--sensorFlex/record.json"
+    }
+  ],
+  "pressure": [
+    {
+      "name": "Force Sensor",
+      "kind": "component",
+      "record_json": "components/force-sensor--sensorForce/record.json"
+    }
+  ],
+  "": [
+    {
+      "name": "Solar Cell",
+      "kind": "component",
+      "record_json": "components/solar-cell--solarCell/record.json"
+    }
+  ],
+  "Arduino Uno R3": [
+    {
+      "name": "Smoothing",
+      "kind": "starter-device",
+      "record_json": "starter-devices/smoothing--starterArduinoSmoothing/record.json"
+    }
+  ],
+  "Potentiometer": [
+    {
+      "name": "Smoothing",
+      "kind": "starter-device",
+      "record_json": "starter-devices/smoothing--starterArduinoSmoothing/record.json"
+    }
+  ],
+  "micro:bit": [
+    {
+      "name": "Moisture",
+      "kind": "starter-device",
+      "record_json": "starter-devices/moisture--starterMicrobitMoisture/record.json"
+    }
+  ],
+  "Soil Moisture Sensor": [
+    {
+      "name": "Moisture",
+      "kind": "starter-device",
+      "record_json": "starter-devices/moisture--starterMicrobitMoisture/record.json"
+    }
+  ]
+}

@@ -1,0 +1,786 @@
+[
+  {
+    "device_id": "111209",
+    "simulation_model": "optoCoupler_4N35",
+    "implementation_found": false,
+    "module_id": null,
+    "model_file": null
+  },
+  {
+    "device_id": "111211",
+    "simulation_model": null,
+    "implementation_found": false,
+    "module_id": null,
+    "model_file": null
+  },
+  {
+    "device_id": "111724",
+    "simulation_model": "powerSupply",
+    "implementation_found": true,
+    "module_id": "66667",
+    "model_file": "models/powerSupply--module-66667.js"
+  },
+  {
+    "device_id": "112324",
+    "simulation_model": "TMP36",
+    "implementation_found": true,
+    "module_id": "84820",
+    "model_file": "models/TMP36--module-84820.js"
+  },
+  {
+    "device_id": "112326",
+    "simulation_model": "L293D",
+    "implementation_found": false,
+    "module_id": null,
+    "model_file": null
+  },
+  {
+    "device_id": "113878",
+    "simulation_model": "LCD_HD44780",
+    "implementation_found": true,
+    "module_id": "12130",
+    "model_file": "models/LCD_HD44780--module-12130.js"
+  },
+  {
+    "device_id": "114067",
+    "simulation_model": "piezoSound",
+    "implementation_found": false,
+    "module_id": null,
+    "model_file": null
+  },
+  {
+    "device_id": "114158",
+    "simulation_model": "dc_motor_arduino",
+    "implementation_found": true,
+    "module_id": "80722",
+    "model_file": "models/dc_motor_arduino--module-80722.js"
+  },
+  {
+    "device_id": "116648",
+    "simulation_model": null,
+    "implementation_found": false,
+    "module_id": null,
+    "model_file": null
+  },
+  {
+    "device_id": "116655",
+    "simulation_model": "zenerDiode",
+    "implementation_found": true,
+    "module_id": "1660",
+    "model_file": "models/zenerDiode--module-1660.js"
+  },
+  {
+    "device_id": "116662",
+    "simulation_model": "multimeter_v2",
+    "implementation_found": true,
+    "module_id": "16603",
+    "model_file": "models/multimeter_v2--module-16603.js"
+  },
+  {
+    "device_id": "116686",
+    "simulation_model": "USBstandard",
+    "implementation_found": true,
+    "module_id": "70394",
+    "model_file": "models/USBstandard--module-70394.js"
+  },
+  {
+    "device_id": "116689",
+    "simulation_model": "Timer555",
+    "implementation_found": true,
+    "module_id": "27251",
+    "model_file": "models/Timer555--module-27251.js"
+  },
+  {
+    "device_id": "116691",
+    "simulation_model": "ldr_v2",
+    "implementation_found": true,
+    "module_id": "35963",
+    "model_file": "models/ldr_v2--module-35963.js"
+  },
+  {
+    "device_id": "116692",
+    "simulation_model": "opAmp_UA741",
+    "implementation_found": true,
+    "module_id": "72622",
+    "model_file": "models/opAmp_UA741--module-72622.js"
+  },
+  {
+    "device_id": "116693",
+    "simulation_model": "lightBulb",
+    "implementation_found": true,
+    "module_id": "9482",
+    "model_file": "models/lightBulb--module-9482.js"
+  },
+  {
+    "device_id": "116695",
+    "simulation_model": "74HC595",
+    "implementation_found": true,
+    "module_id": "97929",
+    "model_file": "models/74HC595--module-97929.js"
+  },
+  {
+    "device_id": "116696",
+    "simulation_model": "74HC00",
+    "implementation_found": true,
+    "module_id": "59866",
+    "model_file": "models/74HC00--module-59866.js"
+  },
+  {
+    "device_id": "116698",
+    "simulation_model": "74HC02",
+    "implementation_found": true,
+    "module_id": "39440",
+    "model_file": "models/74HC02--module-39440.js"
+  },
+  {
+    "device_id": "116701",
+    "simulation_model": "74HC04",
+    "implementation_found": true,
+    "module_id": "21529",
+    "model_file": "models/74HC04--module-21529.js"
+  },
+  {
+    "device_id": "116702",
+    "simulation_model": "74HC08",
+    "implementation_found": true,
+    "module_id": "27970",
+    "model_file": "models/74HC08--module-27970.js"
+  },
+  {
+    "device_id": "116705",
+    "simulation_model": "74HC10",
+    "implementation_found": true,
+    "module_id": "14551",
+    "model_file": "models/74HC10--module-14551.js"
+  },
+  {
+    "device_id": "116707",
+    "simulation_model": "74HC11",
+    "implementation_found": true,
+    "module_id": "73248",
+    "model_file": "models/74HC11--module-73248.js"
+  },
+  {
+    "device_id": "116709",
+    "simulation_model": "74HC14",
+    "implementation_found": true,
+    "module_id": "14803",
+    "model_file": "models/74HC14--module-14803.js"
+  },
+  {
+    "device_id": "116714",
+    "simulation_model": "74HC20",
+    "implementation_found": true,
+    "module_id": "27688",
+    "model_file": "models/74HC20--module-27688.js"
+  },
+  {
+    "device_id": "116716",
+    "simulation_model": "74HC21",
+    "implementation_found": true,
+    "module_id": "62303",
+    "model_file": "models/74HC21--module-62303.js"
+  },
+  {
+    "device_id": "116719",
+    "simulation_model": "74HC27",
+    "implementation_found": true,
+    "module_id": "7901",
+    "model_file": "models/74HC27--module-7901.js"
+  },
+  {
+    "device_id": "116721",
+    "simulation_model": "74HC32",
+    "implementation_found": true,
+    "module_id": "8491",
+    "model_file": "models/74HC32--module-8491.js"
+  },
+  {
+    "device_id": "116723",
+    "simulation_model": "74HC73",
+    "implementation_found": true,
+    "module_id": "96232",
+    "model_file": "models/74HC73--module-96232.js"
+  },
+  {
+    "device_id": "116725",
+    "simulation_model": "74HC74",
+    "implementation_found": true,
+    "module_id": "92285",
+    "model_file": "models/74HC74--module-92285.js"
+  },
+  {
+    "device_id": "116727",
+    "simulation_model": "74HC86",
+    "implementation_found": true,
+    "module_id": "89988",
+    "model_file": "models/74HC86--module-89988.js"
+  },
+  {
+    "device_id": "116728",
+    "simulation_model": "74HC93",
+    "implementation_found": true,
+    "module_id": "45266",
+    "model_file": "models/74HC93--module-45266.js"
+  },
+  {
+    "device_id": "116730",
+    "simulation_model": "74HC132",
+    "implementation_found": true,
+    "module_id": "49834",
+    "model_file": "models/74HC132--module-49834.js"
+  },
+  {
+    "device_id": "116732",
+    "simulation_model": "photodiode_v2",
+    "implementation_found": true,
+    "module_id": "43050",
+    "model_file": "models/photodiode_v2--module-43050.js"
+  },
+  {
+    "device_id": "116838",
+    "simulation_model": "nmos",
+    "implementation_found": true,
+    "module_id": "68610",
+    "model_file": "models/nmos--module-68610.js"
+  },
+  {
+    "device_id": "116839",
+    "simulation_model": "pmos",
+    "implementation_found": true,
+    "module_id": "87092",
+    "model_file": "models/pmos--module-87092.js"
+  },
+  {
+    "device_id": "116840",
+    "simulation_model": "ATtiny",
+    "implementation_found": true,
+    "module_id": "56486",
+    "model_file": "models/ATtiny--module-56486.js"
+  },
+  {
+    "device_id": "116841",
+    "simulation_model": "battery9V",
+    "implementation_found": true,
+    "module_id": "72563",
+    "model_file": "models/battery9V--module-72563.js"
+  },
+  {
+    "device_id": "116842",
+    "simulation_model": null,
+    "implementation_found": false,
+    "module_id": null,
+    "model_file": null
+  },
+  {
+    "device_id": "116859",
+    "simulation_model": "null_device",
+    "implementation_found": true,
+    "module_id": "50438",
+    "model_file": "models/null_device--module-50438.js"
+  },
+  {
+    "device_id": "121827",
+    "simulation_model": "CD4511",
+    "implementation_found": true,
+    "module_id": "43434",
+    "model_file": "models/CD4511--module-43434.js"
+  },
+  {
+    "device_id": "122164",
+    "simulation_model": "relay_dpdt",
+    "implementation_found": true,
+    "module_id": "73776",
+    "model_file": "models/relay_dpdt--module-73776.js"
+  },
+  {
+    "device_id": "122167",
+    "simulation_model": "relay_spdt",
+    "implementation_found": true,
+    "module_id": "24939",
+    "model_file": "models/relay_spdt--module-24939.js"
+  },
+  {
+    "device_id": "129343",
+    "simulation_model": "74HC4017",
+    "implementation_found": true,
+    "module_id": "85658",
+    "model_file": "models/74HC4017--module-85658.js"
+  },
+  {
+    "device_id": "129710",
+    "simulation_model": "seven_segment_digit_5011bh",
+    "implementation_found": true,
+    "module_id": "28034",
+    "model_file": "models/seven_segment_digit_5011bh--module-28034.js"
+  },
+  {
+    "device_id": "132486",
+    "simulation_model": "sensor_tilt_sw200d",
+    "implementation_found": true,
+    "module_id": "59844",
+    "model_file": "models/sensor_tilt_sw200d--module-59844.js"
+  },
+  {
+    "device_id": "132521",
+    "simulation_model": "arduinoUnoRev3",
+    "implementation_found": true,
+    "module_id": "62891",
+    "model_file": "models/arduinoUnoRev3--module-62891.js"
+  },
+  {
+    "device_id": "138097",
+    "simulation_model": "IRremote",
+    "implementation_found": true,
+    "module_id": "27505",
+    "model_file": "models/IRremote--module-27505.js"
+  },
+  {
+    "device_id": "138714",
+    "simulation_model": "tip120",
+    "implementation_found": true,
+    "module_id": "94047",
+    "model_file": "models/tip120--module-94047.js"
+  },
+  {
+    "device_id": "142073",
+    "simulation_model": "servo_SG90",
+    "implementation_found": true,
+    "module_id": "53417",
+    "model_file": "models/servo_SG90--module-53417.js"
+  },
+  {
+    "device_id": "142078",
+    "simulation_model": "phototransistor",
+    "implementation_found": true,
+    "module_id": "49109",
+    "model_file": "models/phototransistor--module-49109.js"
+  },
+  {
+    "device_id": "144786",
+    "simulation_model": "button",
+    "implementation_found": true,
+    "module_id": "77617",
+    "model_file": "models/button--module-77617.js"
+  },
+  {
+    "device_id": "146812",
+    "simulation_model": "dip_switch_spdt",
+    "implementation_found": true,
+    "module_id": "83883",
+    "model_file": "models/dip_switch_spdt--module-83883.js"
+  },
+  {
+    "device_id": "148342",
+    "simulation_model": "dip_switch_4",
+    "implementation_found": true,
+    "module_id": "64570",
+    "model_file": "models/dip_switch_4--module-64570.js"
+  },
+  {
+    "device_id": "148343",
+    "simulation_model": "dip_switch_6",
+    "implementation_found": true,
+    "module_id": "27248",
+    "model_file": "models/dip_switch_6--module-27248.js"
+  },
+  {
+    "device_id": "153670",
+    "simulation_model": "dc_motor_encoder_small",
+    "implementation_found": true,
+    "module_id": "3179",
+    "model_file": "models/dc_motor_encoder_small--module-3179.js"
+  },
+  {
+    "device_id": "165360",
+    "simulation_model": "coinCell",
+    "implementation_found": true,
+    "module_id": "42520",
+    "model_file": "models/coinCell--module-42520.js"
+  },
+  {
+    "device_id": "196401",
+    "simulation_model": "IRsensor",
+    "implementation_found": true,
+    "module_id": "76617",
+    "model_file": "models/IRsensor--module-76617.js"
+  },
+  {
+    "device_id": "202163",
+    "simulation_model": "ws2812b_ring12",
+    "implementation_found": true,
+    "module_id": "84263",
+    "model_file": "models/ws2812b_ring12--module-84263.js"
+  },
+  {
+    "device_id": "202580",
+    "simulation_model": "timer556",
+    "implementation_found": true,
+    "module_id": "73430",
+    "model_file": "models/timer556--module-73430.js"
+  },
+  {
+    "device_id": "203761",
+    "simulation_model": "keypad_4x4",
+    "implementation_found": true,
+    "module_id": "58745",
+    "model_file": "models/keypad_4x4--module-58745.js"
+  },
+  {
+    "device_id": "209278",
+    "simulation_model": "function_generator",
+    "implementation_found": true,
+    "module_id": "85044",
+    "model_file": "models/function_generator--module-85044.js"
+  },
+  {
+    "device_id": "212155",
+    "simulation_model": "voltageRegulator5V",
+    "implementation_found": true,
+    "module_id": "34639",
+    "model_file": "models/voltageRegulator5V--module-34639.js"
+  },
+  {
+    "device_id": "212156",
+    "simulation_model": "voltageRegulator3p3V",
+    "implementation_found": true,
+    "module_id": "50330",
+    "model_file": "models/voltageRegulator3p3V--module-50330.js"
+  },
+  {
+    "device_id": "215824",
+    "simulation_model": "ws2812b_ring24",
+    "implementation_found": true,
+    "module_id": "57962",
+    "model_file": "models/ws2812b_ring24--module-57962.js"
+  },
+  {
+    "device_id": "215830",
+    "simulation_model": "ws2812b_ring16",
+    "implementation_found": true,
+    "module_id": "41699",
+    "model_file": "models/ws2812b_ring16--module-41699.js"
+  },
+  {
+    "device_id": "215842",
+    "simulation_model": "ws2812_breadboard",
+    "implementation_found": true,
+    "module_id": "97228",
+    "model_file": "models/ws2812_breadboard--module-97228.js"
+  },
+  {
+    "device_id": "219294",
+    "simulation_model": "sensor_ultrasonic_ping",
+    "implementation_found": true,
+    "module_id": "81629",
+    "model_file": "models/sensor_ultrasonic_ping--module-81629.js"
+  },
+  {
+    "device_id": "234203",
+    "simulation_model": "sensor_pir",
+    "implementation_found": true,
+    "module_id": "61384",
+    "model_file": "models/sensor_pir--module-61384.js"
+  },
+  {
+    "device_id": "239306",
+    "simulation_model": "sensor_gas",
+    "implementation_found": true,
+    "module_id": "58766",
+    "model_file": "models/sensor_gas--module-58766.js"
+  },
+  {
+    "device_id": "241925",
+    "simulation_model": "AABattery",
+    "implementation_found": true,
+    "module_id": "9058",
+    "model_file": "models/AABattery--module-9058.js"
+  },
+  {
+    "device_id": "248005",
+    "simulation_model": "lm339",
+    "implementation_found": true,
+    "module_id": "46173",
+    "model_file": "models/lm339--module-46173.js"
+  },
+  {
+    "device_id": "286515",
+    "simulation_model": "lm393",
+    "implementation_found": true,
+    "module_id": "43877",
+    "model_file": "models/lm393--module-43877.js"
+  },
+  {
+    "device_id": "311892",
+    "simulation_model": "vibration_motor",
+    "implementation_found": true,
+    "module_id": "45616",
+    "model_file": "models/vibration_motor--module-45616.js"
+  },
+  {
+    "device_id": "330000",
+    "simulation_model": "dc_motor_hobby_gear",
+    "implementation_found": true,
+    "module_id": "10069",
+    "model_file": "models/dc_motor_hobby_gear--module-10069.js"
+  },
+  {
+    "device_id": "45547",
+    "simulation_model": "potentiometer_v2",
+    "implementation_found": true,
+    "module_id": "30148",
+    "model_file": "models/potentiometer_v2--module-30148.js"
+  },
+  {
+    "device_id": "53184",
+    "simulation_model": "resistor",
+    "implementation_found": true,
+    "module_id": "23274",
+    "model_file": "models/resistor--module-23274.js"
+  },
+  {
+    "device_id": "57752",
+    "simulation_model": "capacitor",
+    "implementation_found": true,
+    "module_id": "5737",
+    "model_file": "models/capacitor--module-5737.js"
+  },
+  {
+    "device_id": "57950",
+    "simulation_model": "capacitor_polarized",
+    "implementation_found": true,
+    "module_id": "20243",
+    "model_file": "models/capacitor_polarized--module-20243.js"
+  },
+  {
+    "device_id": "58208",
+    "simulation_model": "inductor",
+    "implementation_found": true,
+    "module_id": "91271",
+    "model_file": "models/inductor--module-91271.js"
+  },
+  {
+    "device_id": "58320",
+    "simulation_model": "diode",
+    "implementation_found": true,
+    "module_id": "8338",
+    "model_file": "models/diode--module-8338.js"
+  },
+  {
+    "device_id": "58422",
+    "simulation_model": "led2",
+    "implementation_found": true,
+    "module_id": "2292",
+    "model_file": "models/led2--module-2292.js"
+  },
+  {
+    "device_id": "58456",
+    "simulation_model": "ledRGB",
+    "implementation_found": true,
+    "module_id": "37833",
+    "model_file": "models/ledRGB--module-37833.js"
+  },
+  {
+    "device_id": "58458",
+    "simulation_model": "slide_switch_v2",
+    "implementation_found": true,
+    "module_id": "40360",
+    "model_file": "models/slide_switch_v2--module-40360.js"
+  },
+  {
+    "device_id": "58468",
+    "simulation_model": "npn",
+    "implementation_found": true,
+    "module_id": "72885",
+    "model_file": "models/npn--module-72885.js"
+  },
+  {
+    "device_id": "58571",
+    "simulation_model": "pnp",
+    "implementation_found": true,
+    "module_id": "86523",
+    "model_file": "models/pnp--module-86523.js"
+  },
+  {
+    "device_id": "58627",
+    "simulation_model": "power_nmos",
+    "implementation_found": true,
+    "module_id": "24531",
+    "model_file": "models/power_nmos--module-24531.js"
+  },
+  {
+    "device_id": "58630",
+    "simulation_model": "oscilloscope",
+    "implementation_found": true,
+    "module_id": "63909",
+    "model_file": "models/oscilloscope--module-63909.js"
+  },
+  {
+    "device_id": "59076",
+    "simulation_model": "power_pmos",
+    "implementation_found": true,
+    "module_id": "53181",
+    "model_file": "models/power_pmos--module-53181.js"
+  },
+  {
+    "device_id": "annotation",
+    "simulation_model": "annotation",
+    "implementation_found": false,
+    "module_id": null,
+    "model_file": null
+  },
+  {
+    "device_id": "batteryLemon",
+    "simulation_model": "batteryLemon",
+    "implementation_found": true,
+    "module_id": "99737",
+    "model_file": "models/batteryLemon--module-99737.js"
+  },
+  {
+    "device_id": "batteryPotato",
+    "simulation_model": "batteryPotato",
+    "implementation_found": true,
+    "module_id": "33443",
+    "model_file": "models/batteryPotato--module-33443.js"
+  },
+  {
+    "device_id": "display7SegmentI2C",
+    "simulation_model": "seven-segment-i2c",
+    "implementation_found": true,
+    "module_id": "7403",
+    "model_file": "models/seven-segment-i2c--module-7403.js"
+  },
+  {
+    "device_id": "displayLCD16x2I2C",
+    "simulation_model": "LCD_HD44780_I2C",
+    "implementation_found": true,
+    "module_id": "78116",
+    "model_file": "models/LCD_HD44780_I2C--module-78116.js"
+  },
+  {
+    "device_id": "ic74hc283",
+    "simulation_model": "74HC283",
+    "implementation_found": true,
+    "module_id": "75903",
+    "model_file": "models/74HC283--module-75903.js"
+  },
+  {
+    "device_id": "ic74hc75",
+    "simulation_model": "74HC75",
+    "implementation_found": true,
+    "module_id": "82366",
+    "model_file": "models/74HC75--module-82366.js"
+  },
+  {
+    "device_id": "icPCF8574",
+    "simulation_model": "pcf8574",
+    "implementation_found": true,
+    "module_id": "44504",
+    "model_file": "models/pcf8574--module-44504.js"
+  },
+  {
+    "device_id": "microbit",
+    "simulation_model": "microbit",
+    "implementation_found": true,
+    "module_id": "59214",
+    "model_file": "models/microbit--module-59214.js"
+  },
+  {
+    "device_id": "microbitBreakout",
+    "simulation_model": "microbit",
+    "implementation_found": true,
+    "module_id": "59214",
+    "model_file": "models/microbit--module-59214.js"
+  },
+  {
+    "device_id": "neopixel_strip_10",
+    "simulation_model": "ws2812_strip10",
+    "implementation_found": true,
+    "module_id": "60331",
+    "model_file": "models/ws2812_strip10--module-60331.js"
+  },
+  {
+    "device_id": "neopixel_strip_12",
+    "simulation_model": "ws2812_strip12",
+    "implementation_found": true,
+    "module_id": "20365",
+    "model_file": "models/ws2812_strip12--module-20365.js"
+  },
+  {
+    "device_id": "neopixel_strip_16",
+    "simulation_model": "ws2812_strip16",
+    "implementation_found": true,
+    "module_id": "18961",
+    "model_file": "models/ws2812_strip16--module-18961.js"
+  },
+  {
+    "device_id": "neopixel_strip_20",
+    "simulation_model": "ws2812_strip20",
+    "implementation_found": true,
+    "module_id": "73964",
+    "model_file": "models/ws2812_strip20--module-73964.js"
+  },
+  {
+    "device_id": "neopixel_strip_4",
+    "simulation_model": "ws2812_strip4",
+    "implementation_found": true,
+    "module_id": "31784",
+    "model_file": "models/ws2812_strip4--module-31784.js"
+  },
+  {
+    "device_id": "neopixel_strip_6",
+    "simulation_model": "ws2812_strip6",
+    "implementation_found": true,
+    "module_id": "17074",
+    "model_file": "models/ws2812_strip6--module-17074.js"
+  },
+  {
+    "device_id": "neopixel_strip_8",
+    "simulation_model": "ws2812_strip8",
+    "implementation_found": true,
+    "module_id": "70508",
+    "model_file": "models/ws2812_strip8--module-70508.js"
+  },
+  {
+    "device_id": "sensorFlex",
+    "simulation_model": "sensorFlex",
+    "implementation_found": true,
+    "module_id": "28308",
+    "model_file": "models/sensorFlex--module-28308.js"
+  },
+  {
+    "device_id": "sensorForce",
+    "simulation_model": "sensorForce",
+    "implementation_found": true,
+    "module_id": "60952",
+    "model_file": "models/sensorForce--module-60952.js"
+  },
+  {
+    "device_id": "sensorSoilMoisture",
+    "simulation_model": "sensorSoilMoisture",
+    "implementation_found": true,
+    "module_id": "12798",
+    "model_file": "models/sensorSoilMoisture--module-12798.js"
+  },
+  {
+    "device_id": "solarCell",
+    "simulation_model": "solarCell",
+    "implementation_found": true,
+    "module_id": "27051",
+    "model_file": "models/solarCell--module-27051.js"
+  },
+  {
+    "device_id": "starterArduinoSmoothing",
+    "simulation_model": null,
+    "implementation_found": false,
+    "module_id": null,
+    "model_file": null
+  },
+  {
+    "device_id": "starterMicrobitMoisture",
+    "simulation_model": null,
+    "implementation_found": false,
+    "module_id": null,
+    "model_file": null
+  }
+]

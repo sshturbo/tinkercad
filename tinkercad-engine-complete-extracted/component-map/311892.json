@@ -1,0 +1,7 @@
+{
+  "device_id": "311892",
+  "simulation_model": "vibration_motor",
+  "implementation_found": true,
+  "module_id": "45616",
+  "model_file": "models/vibration_motor--module-45616.js"
+}

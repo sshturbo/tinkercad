@@ -1,0 +1,229 @@
+{
+  "url": "https://editor.tinkercad.com/packaged_devices/legacy/53025.json",
+  "payload": {
+    "created_at": "2014-06-18T15:26:43Z",
+    "datasheet_url": null,
+    "description": null,
+    "device_id": 16511,
+    "footprint_id": 2104,
+    "id": 53025,
+    "manufacturer": null,
+    "name": null,
+    "octo_uid": 956647241106,
+    "updated_at": "2014-06-18T15:26:43Z",
+    "use_count": 0,
+    "user_id": null,
+    "footprint_name": "0617/17",
+    "device": {
+      "base": "R",
+      "breadboard_id": 20380,
+      "circuitscribe_footprint_id": null,
+      "circuitscribe_footprint_rotation": 0,
+      "created_at": "2014-06-18T15:26:42Z",
+      "datasheet_urls": "[{\"filename\":\"ERJ6GEYJ103V-Panasonic-datasheet-5314550.pdf\",\"url\":\"http://datasheet.octopart.com/ERJ6GEYJ103V-Panasonic-datasheet-5314550.pdf\"}]",
+      "description": "Resist the flow of electrical energy in a circuit, changing the voltage and current as a result. ",
+      "id": 16511,
+      "name": "Resistor",
+      "programmable": false,
+      "programmable_settings": "",
+      "simulation_model": "resistor",
+      "summary": "",
+      "updated_at": "2015-06-30T12:57:32Z",
+      "usage": "",
+      "use_count": 8605,
+      "user_id": 1,
+      "version_root_id": 3,
+      "breadboard": {
+        "background": false,
+        "breadboard": true,
+        "created_at": "2015-06-30T12:56:54Z",
+        "generator_type": null,
+        "id": 20380,
+        "name": "breadboard_resistor",
+        "score": 0,
+        "svg": "<svg class=\"cgfx__resistor\" viewBox=\"-1000 -1000 2000 2000\" width=\"2000\" height=\"2000\" x=\"-1000\" y=\"-1000\"><line style='fill:none;stroke:#8C8C8C;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;' x1=\"0\" y1=\"-20\" x2=\"0\" y2=\"20\"/><line class=\"cgfx__selected\" display=\"none\" fill='none' stroke='#3b8ed7' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' x1=\"0\" y1=\"-20\" x2=\"0\" y2=\"20\"/><path class=\"cgfx__selected\" display=\"none\" fill='#3b8ed7' stroke='#3b8ed7' stroke-width='3.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' d=\"M3.69-3.66c0-2.16,1.11-2.67,1.11-5.53s-3.35-3.81-3.58-4.55c-0.17-0.53-0.19-0.95-0.19-0.95s0.05-0.25-0.56-0.28s-1.49,0.28-1.49,0.28s-0.02,0.41-0.19,0.95C-1.45-13.01-4.8-12.06-4.8-9.2s1.11,3.37,1.11,5.53c0,0.99,0,6.05,0,7.04c0,2.16-1.11,2.67-1.11,5.53s3.35,3.81,3.58,4.55c0.17,0.53,0.19,0.95,0.19,0.95s-0.01,0.42,0.5,0.42s1.55-0.42,1.55-0.42s0.02-0.41,0.19-0.95c0.23-0.74,3.58-1.69,3.58-4.55S3.69,5.53,3.69,3.38C3.69,2.39,3.69-2.68,3.69-3.66z\"/><path style=\"fill:#D9B477;\" d=\"M3.69-3.66c0-2.16,1.11-2.67,1.11-5.53s-3.35-3.81-3.58-4.55c-0.17-0.53-0.19-0.95-0.19-0.95s0.05-0.25-0.56-0.28s-1.49,0.28-1.49,0.28s-0.02,0.41-0.19,0.95C-1.45-13.01-4.8-12.06-4.8-9.2s1.11,3.37,1.11,5.53c0,0.99,0,6.05,0,7.04c0,2.16-1.11,2.67-1.11,5.53s3.35,3.81,3.58,4.55c0.17,0.53,0.19,0.95,0.19,0.95s-0.01,0.42,0.5,0.42s1.55-0.42,1.55-0.42s0.02-0.41,0.19-0.95c0.23-0.74,3.58-1.69,3.58-4.55S3.69,5.53,3.69,3.38C3.69,2.39,3.69-2.68,3.69-3.66z\"/><path class=\"cgfx__color2\" fill=\"red\" d=\"M3.69-3.06h-7.38c0,0.63,0,1.58,0,2.56h7.38C3.69-1.48,3.69-2.43,3.69-3.06z\"/><path class=\"cgfx__color1\" fill=\"black\" d=\"M3.69,3.38c0-0.24,0-0.71,0-1.31h-7.38c0,0.6,0,1.07,0,1.31c0,0.49-0.06,0.89-0.15,1.25h7.68C3.75,4.26,3.69,3.86,3.69,3.38z\"/><path class=\"cgfx__color0\" fill=\"saddlebrown\" d=\"M4.8,8.91c0-0.7-0.07-1.25-0.17-1.73h-9.26C-4.73,7.66-4.8,8.21-4.8,8.91c0,0.3,0.04,0.57,0.11,0.82h9.38C4.75,9.48,4.8,9.2,4.8,8.91z\"/><path style=\"fill:#AD9F4E;\" d=\"M-4.8-9.2c0,0.22,0.02,0.41,0.03,0.6h9.53c0.01-0.2,0.03-0.38,0.03-0.6c0-0.13-0.01-0.25-0.03-0.37h-9.53C-4.78-9.45-4.8-9.33-4.8-9.2z\"/><rect x=\"-0.16\" y=\"-9.57\" style=\"opacity:0.4;\" width=\"4.63\" height=\"0.97\"/><rect x=\"-4.65\" y=\"-9.57\" style=\"opacity:0.5;fill:#FFFF33;\" width=\"2.38\" height=\"0.97\"/><line class=\"cgfx__hitarea\" style='stroke:#ff0000;fill:none;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;' opacity='0' display='none' x1=\"0\" y1=\"-20\" x2=\"0\" y2=\"20\"/><path class=\"cgfx__hitarea\" style='fill:#ff0000;' opacity='0' display='none' d=\"M3.69-3.66c0-2.16,1.11-2.67,1.11-5.53s-3.35-3.81-3.58-4.55c-0.17-0.53-0.19-0.95-0.19-0.95s0.05-0.25-0.56-0.28s-1.49,0.28-1.49,0.28s-0.02,0.41-0.19,0.95C-1.45-13.01-4.8-12.06-4.8-9.2s1.11,3.37,1.11,5.53c0,0.99,0,6.05,0,7.04c0,2.16-1.11,2.67-1.11,5.53s3.35,3.81,3.58,4.55c0.17,0.53,0.19,0.95,0.19,0.95s-0.01,0.42,0.5,0.42s1.55-0.42,1.55-0.42s0.02-0.41,0.19-0.95c0.23-0.74,3.58-1.69,3.58-4.55S3.69,5.53,3.69,3.38C3.69,2.39,3.69-2.68,3.69-3.66z\"/><polygon class=\"cgfx__breakdown\" transform=\"translate(0,0)rotate(0) scale(1,1)\" display=\"none\" style=\"opacity:0.7;fill:#FF0000;stroke:#F7E60B;stroke-miterlimit:10;\" points=\"2.415,-5.161 7.901,-7.299 5.471,-2.294 11.953,-0.565 5.126,1.63 8.332,8.197 2.59,5.053 -0.137,10.527 -2.24,4.375 -7.565,7.957 -6.133,2.443 -11.953,0.87 -5.945,-1.796 -8.854,-7.513 -3.289,-5.371 -1.401,-10.527 \"/><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">Terminal 1</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"0\" y1=\"20\" x2=\"0\" y2=\"45\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">Terminal 2</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"0\" y1=\"-20\" x2=\"0\" y2=\"-45\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g></svg>",
+        "symbol_type": "breadboard",
+        "terminal_list": null,
+        "thumb_status": "--- !ruby/exception:ArgumentError\nmessage: could not find /tmp/schematic_symbol_20380_thumb.png\n",
+        "thumb_url": "https://123d-circuits-files.s3.amazonaws.com/1435677171a54a830953746dcb1008f9cdebbcb7ae/thumbnail20150630-15388-1t4ggs.png",
+        "updated_at": "2015-06-30T12:56:54Z",
+        "user_id": 1,
+        "thumbUrl": "https://123d-circuits-files.s3.amazonaws.com/1435677171a54a830953746dcb1008f9cdebbcb7ae/thumbnail20150630-15388-1t4ggs.png",
+        "thumbStatus": "ok",
+        "rootId": "19244",
+        "schematic_symbol_terminals_attributes": [
+          {
+            "created_at": "2015-06-30T12:56:54Z",
+            "dir": 90,
+            "id": 204371,
+            "label": null,
+            "name": "Terminal 1",
+            "schematic_symbol_id": 20380,
+            "terminal_type": "breadboard",
+            "updated_at": "2015-06-30T12:56:54Z",
+            "x": 0,
+            "y": 20
+          },
+          {
+            "created_at": "2015-06-30T12:56:54Z",
+            "dir": -90,
+            "id": 204372,
+            "label": null,
+            "name": "Terminal 2",
+            "schematic_symbol_id": 20380,
+            "terminal_type": "breadboard",
+            "updated_at": "2015-06-30T12:56:54Z",
+            "x": 0,
+            "y": -20
+          }
+        ]
+      },
+      "subdevices_attributes": [
+        {
+          "created_at": "2014-06-18T15:26:59Z",
+          "device_id": 16511,
+          "id": 21154,
+          "init_x": 0,
+          "init_y": 0,
+          "name": "",
+          "schematic_symbol_id": 5,
+          "updated_at": "2014-06-18T15:26:59Z",
+          "schematic_symbol_attributes": {
+            "background": false,
+            "breadboard": false,
+            "created_at": "2012-07-03T19:30:44Z",
+            "generator_type": "normal",
+            "id": 5,
+            "name": "resistor",
+            "score": 1,
+            "svg": "<g id=\"g7402\" transform=\"translate(-629.55695,-128.76803)\"><rect height=\"30\" id=\"rect8575\" style=\"fill:#ffffff;stroke:#000000;stroke-width:2\" width=\"10\" x=\"624.55695\" y=\"113.76803\"/><line id=\"line8577\" style=\"fill:#ffffff;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-opacity:1\" x1=\"629.55695\" x2=\"629.55695\" y1=\"113.76803\" y2=\"98.768028\"/><line id=\"line8579\" style=\"fill:#ffffff;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-opacity:1\" x1=\"629.55695\" x2=\"629.55695\" y1=\"143.76804\" y2=\"158.76804\"/></g>",
+            "symbol_type": "schematic",
+            "terminal_list": "",
+            "thumb_status": "rendered",
+            "thumb_url": "https://123d-circuits-files.s3.amazonaws.com/1436073490c09175a3e561730dd845ec012d752fae/thumbnail20150705-25308-1n9hq8d.png",
+            "updated_at": "2013-09-03T10:58:19Z",
+            "user_id": 1,
+            "thumbUrl": "https://123d-circuits-files.s3.amazonaws.com/1436073490c09175a3e561730dd845ec012d752fae/thumbnail20150705-25308-1n9hq8d.png",
+            "thumbStatus": "ok",
+            "rootId": "13326",
+            "schematic_symbol_terminals_attributes": [
+              {
+                "created_at": "2012-07-03T19:38:33Z",
+                "dir": 270,
+                "id": 6,
+                "label": null,
+                "name": "1",
+                "schematic_symbol_id": 5,
+                "terminal_type": "schematic",
+                "updated_at": "2012-07-03T19:38:33Z",
+                "x": 0,
+                "y": -30
+              },
+              {
+                "created_at": "2012-07-03T19:38:33Z",
+                "dir": 90,
+                "id": 7,
+                "label": null,
+                "name": "2",
+                "schematic_symbol_id": 5,
+                "terminal_type": "schematic",
+                "updated_at": "2012-07-03T19:38:33Z",
+                "x": 0,
+                "y": 30
+              }
+            ]
+          }
+        }
+      ],
+      "properties_attributes": [
+        {
+          "created_at": "2014-06-18T15:26:59Z",
+          "default": 1,
+          "default_prefix": "k",
+          "default_show": false,
+          "device_id": 16511,
+          "id": 259,
+          "name": "resistance",
+          "unit": "ohm",
+          "updated_at": "2014-06-18T15:26:59Z"
+        }
+      ]
+    },
+    "root_id": 3,
+    "footprint": {
+      "created_at": "2013-02-20T21:45:35Z",
+      "id": 2104,
+      "name": "0617/17",
+      "outline": "<g><g><line x1=\"-8890.0\" y1=\"-0.0\" x2=\"-8636.0\" y2=\"-0.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:812.8;\"/><line x1=\"-7874.0\" y1=\"-3048.0\" x2=\"-6985.0\" y2=\"-3048.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><line x1=\"-6731.0\" y1=\"-2794.0\" x2=\"-6985.0\" y2=\"-3048.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><line x1=\"-7874.0\" y1=\"3048.0\" x2=\"-6985.0\" y2=\"3048.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><line x1=\"-6731.0\" y1=\"2794.0\" x2=\"-6985.0\" y2=\"3048.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><line x1=\"6731.0\" y1=\"-2794.0\" x2=\"6985.0\" y2=\"-3048.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><line x1=\"6731.0\" y1=\"-2794.0\" x2=\"-6731.0\" y2=\"-2794.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><line x1=\"6731.0\" y1=\"2794.0\" x2=\"6985.0\" y2=\"3048.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><line x1=\"6731.0\" y1=\"2794.0\" x2=\"-6731.0\" y2=\"2794.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><line x1=\"7874.0\" y1=\"-3048.0\" x2=\"6985.0\" y2=\"-3048.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><line x1=\"7874.0\" y1=\"3048.0\" x2=\"6985.0\" y2=\"3048.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><line x1=\"-8255.0\" y1=\"2667.0\" x2=\"-8255.0\" y2=\"1016.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><line x1=\"-8255.0\" y1=\"-1016.0\" x2=\"-8255.0\" y2=\"1016.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><line x1=\"-8255.0\" y1=\"-1016.0\" x2=\"-8255.0\" y2=\"-2667.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><line x1=\"8255.0\" y1=\"2667.0\" x2=\"8255.0\" y2=\"1016.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><line x1=\"8255.0\" y1=\"-1016.0\" x2=\"8255.0\" y2=\"1016.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><line x1=\"8255.0\" y1=\"-1016.0\" x2=\"8255.0\" y2=\"-2667.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><line x1=\"8636.0\" y1=\"-0.0\" x2=\"8890.0\" y2=\"-0.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:812.8;\"/><path d=\"M -8255.0,-2667.0 A -381.00000000000006,-381.00000000000006 0 0,1 -7874.0,-3048.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><path d=\"M 7874.0,-3048.0 A -381.00000000000006,-381.00000000000006 0 0,1 8255.0,-2667.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><path d=\"M -8255.0,2667.0 A 381.00000000000006,381.00000000000006 0 0,0 -7874.0,3048.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><path d=\"M 7874.0,3048.0 A 381.00000000000006,381.00000000000006 0 0,0 8255.0,2667.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:152.4;\"/><rect x=\"-8534.4\" y=\"-406.4\" width=\"304.7999999999993\" height=\"812.8\" style=\"fill:white;stroke:white;stroke-width:0;\"/><rect x=\"8229.6\" y=\"-406.4\" width=\"304.7999999999993\" height=\"812.8\" style=\"fill:white;stroke:white;stroke-width:0;\"/></g></g>",
+      "thumb_status": "rendered",
+      "thumb_url": "https://123d-circuits-files.s3.amazonaws.com/14338543122ca6720e47d6a34bedec064f18338642/thumbnail20150609-11049-owgqt8.png",
+      "updated_at": "2013-09-03T19:27:20Z",
+      "user_id": 1578,
+      "thumbUrl": "https://123d-circuits-files.s3.amazonaws.com/14338543122ca6720e47d6a34bedec064f18338642/thumbnail20150609-11049-owgqt8.png",
+      "thumbStatus": "ok",
+      "rootId": "6733",
+      "pads_attributes": [
+        {
+          "col_pitch": null,
+          "cols": null,
+          "created_at": "2013-02-20T21:45:35Z",
+          "dir": 0,
+          "drill": "1016.0",
+          "footprint_id": 2104,
+          "generator_type": "single",
+          "id": 8061,
+          "layer0": "<polygon points=\"652.7339138151923,263.7216196733627 275.0732311526236,648.0319223856924 -263.72161967336274,652.7339138151923 -648.0319223856924,275.07323115262363 -652.7339138151923,-263.7216196733627 -275.0732311526237,-648.0319223856923 263.7216196733626,-652.7339138151923 648.0319223856923,-275.07323115262375 \"/>",
+          "layer1": "<polygon points=\"652.7339138151923,263.7216196733627 275.0732311526236,648.0319223856924 -263.72161967336274,652.7339138151923 -648.0319223856924,275.07323115262363 -652.7339138151923,-263.7216196733627 -275.0732311526237,-648.0319223856923 263.7216196733626,-652.7339138151923 648.0319223856923,-275.07323115262375 \"/>",
+          "name": "1",
+          "number": null,
+          "pad_type_id": 527,
+          "pin_spacing": null,
+          "row_pitch": null,
+          "rows": null,
+          "updated_at": "2013-09-02T21:38:30Z",
+          "x": -8890,
+          "y": 0
+        },
+        {
+          "col_pitch": null,
+          "cols": null,
+          "created_at": "2013-02-20T21:45:35Z",
+          "dir": 0,
+          "drill": "1016.0",
+          "footprint_id": 2104,
+          "generator_type": "single",
+          "id": 8062,
+          "layer0": "<polygon points=\"652.7339138151923,263.7216196733627 275.0732311526236,648.0319223856924 -263.72161967336274,652.7339138151923 -648.0319223856924,275.07323115262363 -652.7339138151923,-263.7216196733627 -275.0732311526237,-648.0319223856923 263.7216196733626,-652.7339138151923 648.0319223856923,-275.07323115262375 \"/>",
+          "layer1": "<polygon points=\"652.7339138151923,263.7216196733627 275.0732311526236,648.0319223856924 -263.72161967336274,652.7339138151923 -648.0319223856924,275.07323115262363 -652.7339138151923,-263.7216196733627 -275.0732311526237,-648.0319223856923 263.7216196733626,-652.7339138151923 648.0319223856923,-275.07323115262375 \"/>",
+          "name": "2",
+          "number": null,
+          "pad_type_id": 527,
+          "pin_spacing": null,
+          "row_pitch": null,
+          "rows": null,
+          "updated_at": "2013-09-02T21:38:30Z",
+          "x": 8890,
+          "y": 0
+        }
+      ]
+    },
+    "pinmaps_attributes": [
+      {
+        "pmid": 226361,
+        "did": 53025,
+        "ppid": 8062,
+        "sdid": 21154,
+        "spid": 7,
+        "bbid": 204372
+      },
+      {
+        "pmid": 226362,
+        "did": 53025,
+        "ppid": 8061,
+        "sdid": 21154,
+        "spid": 6,
+        "bbid": 204371
+      }
+    ]
+  }
+}

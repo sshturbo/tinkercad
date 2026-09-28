@@ -1,0 +1,7 @@
+{
+  "device_id": "234203",
+  "simulation_model": "sensor_pir",
+  "implementation_found": true,
+  "module_id": "61384",
+  "model_file": "models/sensor_pir--module-61384.js"
+}

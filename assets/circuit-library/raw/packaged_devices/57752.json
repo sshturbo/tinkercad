@@ -1,0 +1,232 @@
+{
+  "created_at": "2014-07-30T10:09:35Z",
+  "datasheet_url": null,
+  "description": null,
+  "device_id": 17910,
+  "footprint_id": 1077,
+  "id": 57752,
+  "manufacturer": null,
+  "name": null,
+  "octo_uid": 19509041479,
+  "updated_at": "2014-07-30T10:09:35Z",
+  "use_count": 0,
+  "user_id": null,
+  "footprint_name": "C1206K",
+  "device": {
+    "base": "C",
+    "breadboard_id": 20218,
+    "circuitscribe_footprint_id": null,
+    "circuitscribe_footprint_rotation": 0,
+    "created_at": "2014-07-30T10:09:29Z",
+    "datasheet_urls": "[{\"filename\":\"08055C103KAT2A-AVX-datasheet-12509786.pdf\",\"url\":\"http://datasheet.octopart.com/08055C103KAT2A-AVX-datasheet-12509786.pdf\"}]",
+    "description": "Store and release electrical energy in a circuit. Often places across power and ground close to a sensor or motor to help smooth fluctuations in voltage.",
+    "id": 17910,
+    "name": "Capacitor",
+    "programmable": false,
+    "programmable_settings": "",
+    "simulation_model": "capacitor",
+    "summary": "",
+    "updated_at": "2015-06-23T11:42:34Z",
+    "usage": "",
+    "use_count": 1674,
+    "user_id": 1,
+    "version_root_id": 4,
+    "breadboard": {
+      "background": false,
+      "breadboard": true,
+      "created_at": "2015-06-23T11:42:05Z",
+      "extents": {
+        "top": -26.40999984741211,
+        "left": -9.619999885559082,
+        "width": 19.239999771118164,
+        "height": 26.529998779296875
+      },
+      "generator_type": null,
+      "id": 20218,
+      "name": "breadboard_v2_capacitor",
+      "score": 0,
+      "svg": "<svg class=\"cgfx__capacitor-ceramic\" viewBox=\"-1000 -1000 2000 2000\" width=\"2000\" height=\"2000\" x=\"-1000\" y=\"-1000\"><g class=\"cgfx__wireview\" display=\"inline\"><line  style='fill:none;stroke:#8C8C8C;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;' x1=\"-5\" y1=\"0.12\" x2=\"-5\" y2=\"-12.9\"/><line  style='fill:none;stroke:#8C8C8C;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;' x1=\"5\" y1=\"0\" x2=\"5\" y2=\"-12.9\"/><line class=\"cgfx__selected\"  fill='none' stroke='#3b8ed7' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' display='none' x1=\"-5\" y1=\"0.12\" x2=\"-5\" y2=\"-12.9\"/><line class=\"cgfx__selected\"  fill='none' stroke='#3b8ed7' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' display='none' x1=\"5\" y1=\"0\" x2=\"5\" y2=\"-12.9\"/><path class=\"cgfx__selected\"  fill='#3b8ed7' stroke='#3b8ed7' stroke-width='3.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' display='none' d=\"M9.62-16.79c0-5.32-4.31-9.62-9.62-9.62s-9.62,4.31-9.62,9.62c0,3.36,2.47,7.99,2.87,9.94c0.26,1.27-0.1,1.71,0.34,2.36C-6.29-4.31-6.15-4.19-6-4.13c0.77-0.92,1.74-0.71,1.99-0.47C-3.33-4.93-2.23-5.67,0-5.71c2.23-0.04,3.67,0.94,4.01,0.96C4.36-5.11,5.93-5.56,6-5.03c0.45-0.33,0.92-1.01,0.99-2.22C7.15-10.59,9.62-12.42,9.62-16.79z\"/><path style=\"fill:#165696;\" d=\"M9.62-16.79c0-5.32-4.31-9.62-9.62-9.62s-9.62,4.31-9.62,9.62c0,3.36,2.47,7.99,2.87,9.94c0.26,1.27-0.1,1.71,0.34,2.36C-6.29-4.31-6.15-4.19-6-4.13c0.77-0.92,1.74-0.71,1.99-0.47C-3.33-4.93-2.23-5.67,0-5.71c2.23-0.04,3.67,0.94,4.01,0.96C4.36-5.11,5.93-5.56,6-5.03c0.45-0.33,0.92-1.01,0.99-2.22C7.15-10.59,9.62-12.42,9.62-16.79z\"/><path class=\"cgfx__highlight\" style='opacity:0.4;fill:#FFFFFF;' d=\"M-3.44-24.46c0,0-5.46,2.11-4.77,8.23c0.71-3.71,2.13-4.84,3.34-5.84C-3.67-23.07-3.44-24.46-3.44-24.46z\"/><line class=\"cgfx__hitarea cgfx__wireview\" style='stroke:#ff0000;fill:none;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;' opacity='0' display='none' x1=\"-5\" y1=\"0.12\" x2=\"-5\" y2=\"-12.9\"/><line class=\"cgfx__hitarea cgfx__wireview\" style='stroke:#ff0000;fill:none;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;' opacity='0' display='none' x1=\"5\" y1=\"0\" x2=\"5\" y2=\"-12.9\"/><path class=\"cgfx__hitarea cgfx__wireview\" style='fill:#ff0000;' opacity='0' display='none' d=\"M9.62-16.79c0-5.32-4.31-9.62-9.62-9.62s-9.62,4.31-9.62,9.62c0,3.36,2.47,7.99,2.87,9.94c0.26,1.27-0.1,1.71,0.34,2.36C-6.29-4.31-6.15-4.19-6-4.13c0.77-0.92,1.74-0.71,1.99-0.47C-3.33-4.93-2.23-5.67,0-5.71c2.23-0.04,3.67,0.94,4.01,0.96C4.36-5.11,5.93-5.56,6-5.03c0.45-0.33,0.92-1.01,0.99-2.22C7.15-10.59,9.62-12.42,9.62-16.79z\"/><polygon class=\"cgfx__breakdown\" transform=\"translate(0,-14)rotate(0) scale(1,1)\" display=\"none\" style=\"opacity:0.7;fill:#FF0000;stroke:#F7E60B;stroke-miterlimit:10;\" points=\"2.415,-5.161 7.901,-7.299 5.471,-2.294 11.953,-0.565 5.126,1.63 8.332,8.197 2.59,5.053 -0.137,10.527 -2.24,4.375 -7.565,7.957 -6.133,2.443 -11.953,0.87 -5.945,-1.796 -8.854,-7.513 -3.289,-5.371 -1.401,-10.527 \"/></g><g class=\"cgfx__topview\" display=\"none\"><ellipse class=\"cgfx__selected\" fill='#3b8ed7' stroke='#3b8ed7' stroke-width='3.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' cx=\"0\" cy=\"0\" rx=\"9.62\" ry=\"4.79\"/><ellipse class=\"cgfx__selected\" fill='#3b8ed7' stroke='#3b8ed7' stroke-width='3.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' display='none' cx=\"0\" cy=\"0\" rx=\"9.62\" ry=\"4.79\"/><ellipse style=\"fill:#165696;\" cx=\"0\" cy=\"0\" rx=\"9.62\" ry=\"4.79\"/><path class=\"cgfx__highlight\" style='opacity:0.4;fill:#FFFFFF;' d=\"M0.94-3.93c0,0-5.69-0.49-8.78,2.13c2.32-1,3.57-1.08,4.7-0.76C-0.06-1.7,0.94-3.93,0.94-3.93z\"/><ellipse class=\"cgfx__hitarea\" style='fill:#ff0000;' opacity='0' display='none' cx=\"0\" cy=\"0\" rx=\"9.62\" ry=\"4.79\"/><polygon class=\"cgfx__breakdown\" transform=\"translate(0,0)rotate(0) scale(1,1)\" display=\"none\" style=\"opacity:0.7;fill:#FF0000;stroke:#F7E60B;stroke-miterlimit:10;\" points=\"2.415,-5.161 7.901,-7.299 5.471,-2.294 11.953,-0.565 5.126,1.63 8.332,8.197 2.59,5.053 -0.137,10.527 -2.24,4.375 -7.565,7.957 -6.133,2.443 -11.953,0.87 -5.945,-1.796 -8.854,-7.513 -3.289,-5.371 -1.401,-10.527 \"/></g><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">Terminal 1</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"-5\" y1=\"0\" x2=\"-5\" y2=\"25\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">Terminal 2</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"5\" y1=\"0\" x2=\"5\" y2=\"25\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g></svg>",
+      "symbol_type": "breadboard",
+      "terminal_list": null,
+      "thumb_status": "--- !ruby/exception:ArgumentError\nmessage: could not find /tmp/schematic_symbol_20218_thumb.png\n",
+      "thumb_url": "https://123d-circuits-files.s3.amazonaws.com/1435059896a3622764602ac2dc7a6859e2fd856863/thumbnail20150623-5132-k4l9bl.png",
+      "updated_at": "2015-06-23T11:42:05Z",
+      "user_id": null,
+      "thumbUrl": "https://123d-circuits-files.s3.amazonaws.com/1435059896a3622764602ac2dc7a6859e2fd856863/thumbnail20150623-5132-k4l9bl.png",
+      "thumbStatus": "ok",
+      "rootId": "280270",
+      "schematic_symbol_terminals_attributes": [
+        {
+          "created_at": "2015-06-23T11:42:05Z",
+          "dir": 90,
+          "id": 202926,
+          "label": null,
+          "name": "Terminal 1",
+          "schematic_symbol_id": 20218,
+          "terminal_type": "breadboard",
+          "updated_at": "2015-06-23T11:42:05Z",
+          "x": -5,
+          "y": 0
+        },
+        {
+          "created_at": "2015-06-23T11:42:05Z",
+          "dir": 90,
+          "id": 202927,
+          "label": null,
+          "name": "Terminal 2",
+          "schematic_symbol_id": 20218,
+          "terminal_type": "breadboard",
+          "updated_at": "2015-06-23T11:42:05Z",
+          "x": 5,
+          "y": 0
+        }
+      ]
+    },
+    "subdevices_attributes": [
+      {
+        "created_at": "2014-07-30T10:09:38Z",
+        "device_id": 17910,
+        "id": 22929,
+        "init_x": 0,
+        "init_y": 0,
+        "name": "",
+        "schematic_symbol_id": 6,
+        "updated_at": "2014-07-30T10:09:38Z",
+        "schematic_symbol_attributes": {
+          "background": false,
+          "breadboard": false,
+          "created_at": "2012-07-03T19:31:22Z",
+          "generator_type": "normal",
+          "id": 6,
+          "name": "capacitor",
+          "score": 1,
+          "svg": "<g id=\"g7344\" transform=\"translate(-524.73969,-127.64669)\"><rect height=\"3.5999999\" id=\"rect8558\" style=\"fill:#000000;stroke:#000000;stroke-width:1\" width=\"16\" x=\"516.73969\" y=\"129.04672\"/><rect height=\"3.5999999\" id=\"rect8560\" style=\"fill:#000000;stroke:#000000;stroke-width:1\" width=\"16\" x=\"516.73969\" y=\"122.64672\"/><line id=\"line8562\" style=\"fill:#ffffff;stroke:#000000;stroke-width:1;stroke-linecap:round\" x1=\"524.73969\" x2=\"524.73969\" y1=\"122.8467\" y2=\"107.8467\"/><line id=\"line8564\" style=\"fill:#ffffff;stroke:#000000;stroke-width:1;stroke-linecap:round\" x1=\"524.73969\" x2=\"524.73969\" y1=\"132.44672\" y2=\"147.44672\"/></g>",
+          "symbol_type": "schematic",
+          "terminal_list": "",
+          "thumb_status": "rendered",
+          "thumb_url": "https://123d-circuits-files.s3.amazonaws.com/1431754581569ba28a55cf9151a79b4f9f26b6fffe/thumbnail20150516-8452-1ac1co3.png",
+          "updated_at": "2013-09-03T10:58:22Z",
+          "user_id": 1,
+          "thumbUrl": "https://123d-circuits-files.s3.amazonaws.com/1431754581569ba28a55cf9151a79b4f9f26b6fffe/thumbnail20150516-8452-1ac1co3.png",
+          "thumbStatus": "ok",
+          "rootId": "13327",
+          "schematic_symbol_terminals_attributes": [
+            {
+              "created_at": "2012-07-03T19:39:37Z",
+              "dir": 270,
+              "id": 8,
+              "label": null,
+              "name": "1",
+              "schematic_symbol_id": 6,
+              "terminal_type": "schematic",
+              "updated_at": "2012-07-03T19:39:37Z",
+              "x": 0,
+              "y": -19.8
+            },
+            {
+              "created_at": "2012-07-03T19:39:37Z",
+              "dir": 90,
+              "id": 9,
+              "label": null,
+              "name": "2",
+              "schematic_symbol_id": 6,
+              "terminal_type": "schematic",
+              "updated_at": "2012-07-03T19:39:37Z",
+              "x": 0,
+              "y": 19.8
+            }
+          ]
+        }
+      }
+    ],
+    "properties_attributes": [
+      {
+        "created_at": "2014-07-30T10:09:38Z",
+        "default": 100,
+        "default_prefix": "n",
+        "default_show": false,
+        "device_id": 17910,
+        "id": 279,
+        "name": "capacitance",
+        "unit": "F",
+        "updated_at": "2014-07-30T10:09:38Z"
+      }
+    ]
+  },
+  "root_id": 4,
+  "footprint": {
+    "created_at": "2013-02-18T14:49:29Z",
+    "id": 1077,
+    "name": "C1206K",
+    "outline": "<g><g></g></g>",
+    "thumb_status": "rendered",
+    "thumb_url": "https://123d-circuits-files.s3.amazonaws.com/14338675469c4174b588def57acfd8d869d2a05ae1/thumbnail20150609-19042-1lado4o.png",
+    "updated_at": "2013-09-03T18:19:47Z",
+    "user_id": 1,
+    "thumbUrl": "https://123d-circuits-files.s3.amazonaws.com/14338675469c4174b588def57acfd8d869d2a05ae1/thumbnail20150609-19042-1lado4o.png",
+    "thumbStatus": "ok",
+    "rootId": "5587",
+    "pads_attributes": [
+      {
+        "col_pitch": null,
+        "cols": null,
+        "created_at": "2013-02-18T14:49:29Z",
+        "dir": 0,
+        "drill": null,
+        "footprint_id": 1077,
+        "generator_type": "single",
+        "id": 3262,
+        "layer0": "<rect x=\"-750.0\" y=\"-1000.0\" width=\"1500.0\" height=\"2000.0\"/>",
+        "layer1": null,
+        "name": "1",
+        "number": null,
+        "pad_type_id": 533,
+        "pin_spacing": null,
+        "row_pitch": null,
+        "rows": null,
+        "updated_at": "2013-09-02T21:45:59Z",
+        "x": -1500,
+        "y": 0
+      },
+      {
+        "col_pitch": null,
+        "cols": null,
+        "created_at": "2013-02-18T14:49:29Z",
+        "dir": 0,
+        "drill": null,
+        "footprint_id": 1077,
+        "generator_type": "single",
+        "id": 3263,
+        "layer0": "<rect x=\"-750.0\" y=\"-1000.0\" width=\"1500.0\" height=\"2000.0\"/>",
+        "layer1": null,
+        "name": "2",
+        "number": null,
+        "pad_type_id": 533,
+        "pin_spacing": null,
+        "row_pitch": null,
+        "rows": null,
+        "updated_at": "2013-09-02T21:45:59Z",
+        "x": 1500,
+        "y": 0
+      }
+    ]
+  },
+  "pinmaps_attributes": [
+    {
+      "pmid": 245179,
+      "did": 57752,
+      "ppid": 3263,
+      "sdid": 22929,
+      "spid": 9,
+      "bbid": 202927
+    },
+    {
+      "pmid": 245180,
+      "did": 57752,
+      "ppid": 3262,
+      "sdid": 22929,
+      "spid": 8,
+      "bbid": 202926
+    }
+  ]
+}

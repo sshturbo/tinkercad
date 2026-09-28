@@ -1,0 +1,21 @@
+{
+  "http_requests": 351,
+  "json_payloads_preserved": 128,
+  "thumbnails_png": 177,
+  "catalog_records_total": 277,
+  "catalog_components": 110,
+  "catalog_starters": 67,
+  "catalog_category_rows": 2,
+  "packaged_devices_total": 112,
+  "packaged_components": 109,
+  "packaged_starter_devices": 2,
+  "packaged_helpers": 1,
+  "basic_components": 18,
+  "starters_basic": 21,
+  "starters_arduino": 33,
+  "starters_microbit": 10,
+  "starters_circuit_assemblies": 3,
+  "svg_files_extracted": 113,
+  "simulation_models_indexed": 106,
+  "tag_groups_indexed": 127
+}

@@ -1,0 +1,229 @@
+{
+  "url": "https://editor.tinkercad.com/packaged_devices/legacy/58449.json",
+  "payload": {
+    "created_at": "2014-07-30T12:43:19Z",
+    "datasheet_url": null,
+    "description": null,
+    "device_id": 17916,
+    "footprint_id": 372,
+    "id": 58449,
+    "manufacturer": null,
+    "name": null,
+    "octo_uid": 4195864210,
+    "updated_at": "2014-07-30T12:43:19Z",
+    "use_count": 0,
+    "user_id": null,
+    "footprint_name": "LED5MM",
+    "device": {
+      "base": "D",
+      "breadboard_id": 20212,
+      "circuitscribe_footprint_id": null,
+      "circuitscribe_footprint_rotation": 0,
+      "created_at": "2014-07-30T12:43:16Z",
+      "datasheet_urls": "[{\"filename\":\"FQP6N90C-Fairchild-datasheet-50039.pdf\",\"url\":\"http://datasheet.octopart.com/FQP6N90C-Fairchild-datasheet-50039.pdf\"}]",
+      "description": "A type of diode that illuminates when electricity passes through it. Unlike an RGB Led, this one has a defined color.",
+      "id": 17916,
+      "name": "LED",
+      "programmable": false,
+      "programmable_settings": "",
+      "simulation_model": "led2",
+      "summary": "",
+      "updated_at": "2015-06-23T10:53:50Z",
+      "usage": "",
+      "use_count": 6512,
+      "user_id": 1,
+      "version_root_id": 2942,
+      "breadboard": {
+        "background": false,
+        "breadboard": true,
+        "created_at": "2015-06-23T10:53:17Z",
+        "generator_type": null,
+        "id": 20212,
+        "name": "breadboard_v2_led",
+        "score": 0,
+        "svg": "<svg class=\"cgfx__led\" viewBox=\"-1000 -1000 2000 2000\" width=\"2000\" height=\"2000\" x=\"-1000\" y=\"-1000\"><path style='fill:none;stroke:#8C8C8C;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;' d=\"M5,0c0,0,0-1.13,0-2.06S2.5-4.48,2.5-5.72s0-4.54,0-4.54\"/><line style='fill:none;stroke:#8C8C8C;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;' x1=\"-5\" y1=\"-10\" x2=\"-5\" y2=\"0\"/><path class=\"cgfx__selected\" display=\"none\" fill='none' stroke='#3b8ed7' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' d=\"M5,0c0,0,0-1.13,0-2.06S2.5-4.48,2.5-5.72s0-4.54,0-4.54\" /><line class=\"cgfx__selected\" display=\"none\" fill='none' stroke='#3b8ed7' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' x1=\"-5\" y1=\"-10.26\" x2=\"-5\" y2=\"0\" /><path class=\"cgfx__selected\" display=\"none\" fill='#3b8ed7' stroke='#3b8ed7' stroke-width='3.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' d=\"M5.55-13.41v-8.26c0-3.76-3.04-6.8-6.8-6.8c-3.76,0-6.8,3.04-6.8,6.8v8.26v2.03v3.37c1.38,1.14,3.9,1.91,6.8,1.91c4.37,0,7.91-1.74,7.91-3.88c0-0.23,0-1.15,0-1.4C6.66-12.12,6.25-12.81,5.55-13.41z\"/><path class=\"cgfx__basecolor\" fill=\"#ff4040\" d=\"M5.55-13.41v-8.26c0-3.76-3.04-6.8-6.8-6.8c-3.76,0-6.8,3.04-6.8,6.8v8.26v2.03v3.37c1.38,1.14,3.9,1.91,6.8,1.91c4.37,0,7.91-1.74,7.91-3.88c0-0.23,0-1.15,0-1.4C6.66-12.12,6.25-12.81,5.55-13.41z\"/><path style=\"opacity:0.3;fill:#FFFFFF;\" d=\"M-1.25-14.34c3.76,0,6.8,1.33,6.8,2.96v-2.03c-1.38-1.17-3.9-1.96-6.8-1.96c-2.9,0-5.42,0.79-6.8,1.96v2.03C-8.05-13.02-5.01-14.34-1.25-14.34z\"/><path style=\"opacity:0.5;\" d=\"M5.55-13.41v-1.97c0,1.64-3.04,2.96-6.8,2.96c-3.76,0-6.8-1.33-6.8-2.96h0v7.37c1.38,1.14,3.9,1.91,6.8,1.91c4.37,0,7.91-1.74,7.91-3.88c0-0.23,0-1.15,0-1.4C6.66-12.12,6.25-12.81,5.55-13.41z\"/><path style=\"opacity:0.2;fill:#FFFFFF;\" d=\"M5.55-13.41v2.03c0,1.64-3.04,2.96-6.8,2.96c-3.76,0-6.8-1.33-6.8-2.96v2.03c1.38,1.17,3.9,1.96,6.8,1.96c4.37,0,7.91-1.79,7.91-3.99C6.66-12.12,6.25-12.81,5.55-13.41z\"/><path style=\"opacity:0.7;fill:#FFFFFF;\" d=\"M-6.26-13.38c1.24,0.59,3.02,0.96,5.01,0.96c1.99,0,3.77-0.37,5.01-0.96c-1.24-0.59-3.02-0.96-5.01-0.96C-3.24-14.34-5.02-13.97-6.26-13.38z\"/><path class=\"cgfx__mask\" fill-opacity=\"1\" fill=\"#802020\" d=\"M-1.25-8.41c3.76,0,6.8-1.33,6.8-2.96v-10.29c0-3.76-3.04-6.8-6.8-6.8c-3.76,0-6.8,3.04-6.8,6.8l0,10.29C-8.05-9.74-5.01-8.41-1.25-8.41z\"/><path class=\"cgfx__hitarea\" display=\"none\" style='stroke:#ff0000;fill:none;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;' opacity='0' display='none' d=\"M5,0c0,0,0-1.13,0-2.06S2.5-4.48,2.5-5.72s0-4.54,0-4.54\" /><line class=\"cgfx__hitarea\" display=\"none\" style='stroke:#ff0000;fill:none;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;' opacity='0' display='none' x1=\"-5\" y1=\"-10.26\" x2=\"-5\" y2=\"0\" /><path class=\"cgfx__hitarea\" display=\"none\" style='fill:#ff0000;' opacity='0' display='none' d=\"M5.55-13.41v-8.26c0-3.76-3.04-6.8-6.8-6.8c-3.76,0-6.8,3.04-6.8,6.8v8.26v2.03v3.37c1.38,1.14,3.9,1.91,6.8,1.91c4.37,0,7.91-1.74,7.91-3.88c0-0.23,0-1.15,0-1.4C6.66-12.12,6.25-12.81,5.55-13.41z\"/><polygon class=\"cgfx__breakdown\" transform=\"translate(-1,-17)rotate(0) scale(1,1)\" display=\"none\" style=\"opacity:0.7;fill:#FF0000;stroke:#F7E60B;stroke-miterlimit:10;\" points=\"2.415,-5.161 7.901,-7.299 5.471,-2.294 11.953,-0.565 5.126,1.63 8.332,8.197 2.59,5.053 -0.137,10.527 -2.24,4.375 -7.565,7.957 -6.133,2.443 -11.953,0.87 -5.945,-1.796 -8.854,-7.513 -3.289,-5.371 -1.401,-10.527 \"/><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">Cathode</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"-5\" y1=\"0\" x2=\"-5\" y2=\"25\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">Anode</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"5\" y1=\"0\" x2=\"5\" y2=\"25\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g></svg>",
+        "symbol_type": "breadboard",
+        "terminal_list": null,
+        "thumb_status": "--- !ruby/exception:ArgumentError\nmessage: could not find /tmp/schematic_symbol_20212_thumb.png\n",
+        "thumb_url": "https://123d-circuits-files.s3.amazonaws.com/1435057620820c0681cb3409c15f64ba0351613cfd/thumbnail20150623-5122-tbwhl0.png",
+        "updated_at": "2015-06-23T10:53:17Z",
+        "user_id": null,
+        "thumbUrl": "https://123d-circuits-files.s3.amazonaws.com/1435057620820c0681cb3409c15f64ba0351613cfd/thumbnail20150623-5122-tbwhl0.png",
+        "thumbStatus": "ok",
+        "rootId": "280402",
+        "schematic_symbol_terminals_attributes": [
+          {
+            "created_at": "2015-06-23T10:53:17Z",
+            "dir": 90,
+            "id": 202872,
+            "label": null,
+            "name": "Cathode",
+            "schematic_symbol_id": 20212,
+            "terminal_type": "breadboard",
+            "updated_at": "2015-06-23T10:53:17Z",
+            "x": -5,
+            "y": 0
+          },
+          {
+            "created_at": "2015-06-23T10:53:17Z",
+            "dir": 90,
+            "id": 202873,
+            "label": null,
+            "name": "Anode",
+            "schematic_symbol_id": 20212,
+            "terminal_type": "breadboard",
+            "updated_at": "2015-06-23T10:53:17Z",
+            "x": 5,
+            "y": 0
+          }
+        ]
+      },
+      "subdevices_attributes": [
+        {
+          "created_at": "2014-07-30T12:43:19Z",
+          "device_id": 17916,
+          "id": 22944,
+          "init_x": 0,
+          "init_y": 0,
+          "name": "",
+          "schematic_symbol_id": 9,
+          "updated_at": "2014-07-30T12:43:19Z",
+          "schematic_symbol_attributes": {
+            "background": false,
+            "breadboard": false,
+            "created_at": "2012-07-03T19:32:38Z",
+            "generator_type": "normal",
+            "id": 9,
+            "name": "LED",
+            "score": 1,
+            "svg": "<g id=\"g7669\" transform=\"translate(-428.39261,-249.75253)\"><rect height=\"2.5\" id=\"rect3194\" style=\"fill:#000000;stroke:#000000;stroke-width:0.99999994\" width=\"13\" x=\"421.89264\" y=\"253.31818\"/><path d=\"m 434.89261,243.56818 -6.5,11 -6.5,-11 z\" id=\"path3196\" style=\"stroke:#000000;stroke-width:1;stroke-linecap:round\"/><line id=\"line3198\" style=\"stroke:#000000;stroke-width:1;stroke-linecap:round\" x1=\"428.39264\" x2=\"428.39264\" y1=\"243.56818\" y2=\"232.62756\"/><line id=\"line3200\" style=\"stroke:#000000;stroke-width:1;stroke-linecap:round\" x1=\"428.39264\" x2=\"428.39264\" y1=\"255.81818\" y2=\"266.8775\"/><line id=\"line3206\" style=\"stroke:#000000;stroke-width:0.99999994;stroke-linecap:butt\" x1=\"440.37759\" x2=\"434.43219\" y1=\"253.8222\" y2=\"250.43369\"/><path d=\"m 437.96395,254.05105 3.67755,0.57626 -2.26339,-2.97922 z\" id=\"path3208\" style=\"fill-opacity:1;stroke:#000000;stroke-width:0.40000001;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none\"/><line id=\"line3222\" style=\"stroke:#000000;stroke-width:0.99999994;stroke-linecap:butt\" x1=\"442.81271\" x2=\"436.86731\" y1=\"249.54956\" y2=\"246.16104\"/><path d=\"m 440.39907,249.77842 3.67757,0.57626 -2.2634,-2.97922 z\" id=\"path3224\" style=\"fill-opacity:1;stroke:#000000;stroke-width:0.40000001;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none\"/></g>",
+            "symbol_type": "schematic",
+            "terminal_list": "",
+            "thumb_status": "rendered",
+            "thumb_url": "https://123d-circuits-files.s3.amazonaws.com/1437380213b84ef2c888560734395fb9a2c5a3f0b1/thumbnail20150720-9453-11s8z1v.png",
+            "updated_at": "2013-09-03T12:09:09Z",
+            "user_id": 1,
+            "thumbUrl": "https://123d-circuits-files.s3.amazonaws.com/1437380213b84ef2c888560734395fb9a2c5a3f0b1/thumbnail20150720-9453-11s8z1v.png",
+            "thumbStatus": "ok",
+            "rootId": "16150",
+            "schematic_symbol_terminals_attributes": [
+              {
+                "created_at": "2012-07-03T19:43:14Z",
+                "dir": 270,
+                "id": 14,
+                "label": null,
+                "name": "anode",
+                "schematic_symbol_id": 9,
+                "terminal_type": "schematic",
+                "updated_at": "2012-07-03T19:43:14Z",
+                "x": 0,
+                "y": -17.125
+              },
+              {
+                "created_at": "2012-07-03T19:43:14Z",
+                "dir": 90,
+                "id": 15,
+                "label": null,
+                "name": "cathode",
+                "schematic_symbol_id": 9,
+                "terminal_type": "schematic",
+                "updated_at": "2012-07-03T19:43:14Z",
+                "x": 0,
+                "y": 17.125
+              }
+            ]
+          }
+        }
+      ],
+      "properties_attributes": [
+        {
+          "created_at": "2014-07-30T12:43:19Z",
+          "default": 650,
+          "default_prefix": "red",
+          "default_show": null,
+          "device_id": 17916,
+          "id": 283,
+          "name": "color",
+          "unit": "[[\"green\",\"Green\"],[\"yellow\",\"Yellow\"],[\"orange\",\"Orange\"],[\"blue\",\"Blue\"],[\"red\",\"Red\"]]",
+          "updated_at": "2014-07-30T12:43:19Z"
+        }
+      ]
+    },
+    "root_id": 2942,
+    "footprint": {
+      "created_at": "2013-01-30T17:37:13Z",
+      "id": 372,
+      "name": "LED5MM",
+      "outline": "<g><g><line x1=\"2540.0\" y1=\"1905.0\" x2=\"2540.0\" y2=\"-1905.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:203.2;\"/><path d=\"M 2540.0,1905.0 A 3175.0000107757724,3175.0000107757724 0 0,1 2540.0,-1905.0\" style=\"fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:254.0;\"/><circle cx=\"0.0\" cy=\"-0.0\" r=\"2540.0\" style=\"fill:none;stroke:white;stroke-width:152.4;\"/></g></g>",
+      "thumb_status": "rendered",
+      "thumb_url": "https://123d-circuits-files.s3.amazonaws.com/1433862879215c8c66c9db1c244dd5898aaee99d33/thumbnail20150609-11029-72nwqp.png",
+      "updated_at": "2013-09-03T17:44:35Z",
+      "user_id": 7,
+      "thumbUrl": "https://123d-circuits-files.s3.amazonaws.com/1433862879215c8c66c9db1c244dd5898aaee99d33/thumbnail20150609-11029-72nwqp.png",
+      "thumbStatus": "ok",
+      "rootId": "4813",
+      "pads_attributes": [
+        {
+          "col_pitch": null,
+          "cols": null,
+          "created_at": "2013-01-30T17:37:13Z",
+          "dir": 0,
+          "drill": "812.8",
+          "footprint_id": 372,
+          "generator_type": "single",
+          "id": 1091,
+          "layer0": "<path d=\"M649.9929694055006 262.61420624829094 L273.91815031612043 645.3107224642988 L-262.614206248291 649.9929694055006 L-645.3107224642988 273.9181503161205 L-649.9929694055006 -262.61420624829094 L-273.91815031612055 -645.3107224642988 L262.6142062482909 -649.9929694055006 L645.3107224642988 -273.91815031612055 L649.9929694055006 262.61420624829094 Z\"/>",
+          "layer1": "<path d=\"M649.9929694055006 262.61420624829094 L273.91815031612043 645.3107224642988 L-262.614206248291 649.9929694055006 L-645.3107224642988 273.9181503161205 L-649.9929694055006 -262.61420624829094 L-273.91815031612055 -645.3107224642988 L262.6142062482909 -649.9929694055006 L645.3107224642988 -273.91815031612055 L649.9929694055006 262.61420624829094 Z\"/>",
+          "name": "A",
+          "number": null,
+          "pad_type_id": 123,
+          "pin_spacing": null,
+          "row_pitch": null,
+          "rows": null,
+          "updated_at": "2013-09-02T21:37:59Z",
+          "x": -1270,
+          "y": 0
+        },
+        {
+          "col_pitch": null,
+          "cols": null,
+          "created_at": "2013-01-30T17:37:13Z",
+          "dir": 0,
+          "drill": "812.8",
+          "footprint_id": 372,
+          "generator_type": "single",
+          "id": 1092,
+          "layer0": "<path d=\"M649.9929694055006 262.61420624829094 L273.91815031612043 645.3107224642988 L-262.614206248291 649.9929694055006 L-645.3107224642988 273.9181503161205 L-649.9929694055006 -262.61420624829094 L-273.91815031612055 -645.3107224642988 L262.6142062482909 -649.9929694055006 L645.3107224642988 -273.91815031612055 L649.9929694055006 262.61420624829094 Z\"/>",
+          "layer1": "<path d=\"M649.9929694055006 262.61420624829094 L273.91815031612043 645.3107224642988 L-262.614206248291 649.9929694055006 L-645.3107224642988 273.9181503161205 L-649.9929694055006 -262.61420624829094 L-273.91815031612055 -645.3107224642988 L262.6142062482909 -649.9929694055006 L645.3107224642988 -273.91815031612055 L649.9929694055006 262.61420624829094 Z\"/>",
+          "name": "K",
+          "number": null,
+          "pad_type_id": 123,
+          "pin_spacing": null,
+          "row_pitch": null,
+          "rows": null,
+          "updated_at": "2013-09-02T21:37:59Z",
+          "x": 1270,
+          "y": 0
+        }
+      ]
+    },
+    "pinmaps_attributes": [
+      {
+        "pmid": 246596,
+        "did": 58449,
+        "ppid": 1091,
+        "sdid": 22944,
+        "spid": 14,
+        "bbid": 202873
+      },
+      {
+        "pmid": 246597,
+        "did": 58449,
+        "ppid": 1092,
+        "sdid": 22944,
+        "spid": 15,
+        "bbid": 202872
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "device_id": "121827",
+  "simulation_model": "CD4511",
+  "implementation_found": true,
+  "module_id": "43434",
+  "model_file": "models/CD4511--module-43434.js"
+}

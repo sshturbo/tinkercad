@@ -1,0 +1,7 @@
+{
+  "device_id": "58320",
+  "simulation_model": "diode",
+  "implementation_found": true,
+  "module_id": "8338",
+  "model_file": "models/diode--module-8338.js"
+}

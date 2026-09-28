@@ -1,0 +1,7 @@
+{
+  "device_id": "116840",
+  "simulation_model": "ATtiny",
+  "implementation_found": true,
+  "module_id": "56486",
+  "model_file": "models/ATtiny--module-56486.js"
+}

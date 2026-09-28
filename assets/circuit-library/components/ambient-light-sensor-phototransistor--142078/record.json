@@ -1,0 +1,173 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 33961,
+  "device_id": "142078",
+  "name": "Ambient Light Sensor [Phototransistor]",
+  "description": "Uses ambient light to control the base of an internal NPN transistor.",
+  "tags": [
+    "input",
+    "light",
+    "detector",
+    "sensor"
+  ],
+  "thumbnail": "photoTransistor.png",
+  "thumbnail_source": "/photoTransistor.png",
+  "footprint": {
+    "name": "Phototransistor",
+    "id": 142078
+  },
+  "simulation_model": "phototransistor",
+  "extents": {
+    "top": -25.475000381469727,
+    "left": -10.125,
+    "width": 20.25,
+    "height": 25.475000381469727
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-10-29T21:57:09Z",
+      "dir": 90,
+      "id": 227883,
+      "label": null,
+      "name": "Collector",
+      "schematic_symbol_id": 23579,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-10-29T21:57:41Z",
+      "x": -5,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-10-29T21:57:09Z",
+      "dir": 90,
+      "id": 227884,
+      "label": null,
+      "name": "Emitter",
+      "schematic_symbol_id": 23579,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-10-29T21:57:41Z",
+      "x": 5,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-10-29T21:47:17Z",
+      "dir": -90,
+      "id": 227879,
+      "label": null,
+      "name": "collector",
+      "schematic_symbol_id": 23578,
+      "terminal_type": "schematic",
+      "updated_at": "2015-10-29T21:52:24Z",
+      "x": 12.7,
+      "y": -25.4
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-10-29T21:47:17Z",
+      "dir": -90,
+      "id": 227880,
+      "label": null,
+      "name": "C",
+      "schematic_symbol_id": 23578,
+      "terminal_type": "schematic",
+      "updated_at": "2015-10-29T21:47:17Z",
+      "x": 12.7,
+      "y": -25.4
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.2",
+      "created_at": "2015-10-29T21:47:17Z",
+      "dir": 90,
+      "id": 227881,
+      "label": null,
+      "name": "emitter",
+      "schematic_symbol_id": 23578,
+      "terminal_type": "schematic",
+      "updated_at": "2015-10-29T21:52:24Z",
+      "x": 12.7,
+      "y": 25.4
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-10-29T21:54:41Z",
+      "dir": null,
+      "drill": "750",
+      "footprint_id": 33338,
+      "generator_type": null,
+      "id": 286308,
+      "layer0": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "emitter",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-10-29T21:54:41Z",
+      "x": 0,
+      "y": 1270
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-10-29T21:54:41Z",
+      "dir": null,
+      "drill": "750",
+      "footprint_id": 33338,
+      "generator_type": null,
+      "id": 286307,
+      "layer0": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "collector",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-10-29T21:54:41Z",
+      "x": 0,
+      "y": -1270
+    }
+  ],
+  "properties": [],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14461565834d124e9c325993f65cce25056fac005b/thumbnail20151029-26942-6324tj.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14461565834d124e9c325993f65cce25056fac005b/thumbnail20151029-26942-6324tj.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/144615658361d82b55090d79c0a1bb3ec876476c21/thumbnail20151029-26897-1vr2t83.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/144615658361d82b55090d79c0a1bb3ec876476c21/thumbnail20151029-26897-1vr2t83.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14472849684b3eba17fcfe93d78ee9a1f6b87a6b14/thumbnail20151111-4070-37uiy9.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14472849684b3eba17fcfe93d78ee9a1f6b87a6b14/thumbnail20151111-4070-37uiy9.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/142078.json"
+}

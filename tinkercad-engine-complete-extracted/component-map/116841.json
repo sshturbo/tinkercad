@@ -1,0 +1,7 @@
+{
+  "device_id": "116841",
+  "simulation_model": "battery9V",
+  "implementation_found": true,
+  "module_id": "72563",
+  "model_file": "models/battery9V--module-72563.js"
+}

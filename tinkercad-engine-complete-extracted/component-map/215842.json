@@ -1,0 +1,7 @@
+{
+  "device_id": "215842",
+  "simulation_model": "ws2812_breadboard",
+  "implementation_found": true,
+  "module_id": "97228",
+  "model_file": "models/ws2812_breadboard--module-97228.js"
+}

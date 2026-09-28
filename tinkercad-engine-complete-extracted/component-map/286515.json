@@ -1,0 +1,7 @@
+{
+  "device_id": "286515",
+  "simulation_model": "lm393",
+  "implementation_found": true,
+  "module_id": "43877",
+  "model_file": "models/lm393--module-43877.js"
+}

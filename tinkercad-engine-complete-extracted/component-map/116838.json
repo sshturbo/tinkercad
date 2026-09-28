@@ -1,0 +1,7 @@
+{
+  "device_id": "116838",
+  "simulation_model": "nmos",
+  "implementation_found": true,
+  "module_id": "68610",
+  "model_file": "models/nmos--module-68610.js"
+}

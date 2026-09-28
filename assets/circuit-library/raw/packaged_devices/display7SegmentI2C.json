@@ -1,0 +1,279 @@
+{
+  "device_id": "display7SegmentI2Cid",
+  "footprint_id": "display7SegmentI2Cfpid",
+  "id": "display7SegmentI2C",
+  "footprint_name": "7-Segment Clock Display connector",
+  "root_id": "display7SegmentI2Cpdrid",
+  "device": {
+    "base": "U",
+    "breadboard_id": "display7SegmentI2Cbbid",
+    "circuitscribe_footprint_id": null,
+    "circuitscribe_footprint_rotation": 0,
+    "description": "A 4-digit 7-segment LED display controlled by I2C.",
+    "id": "display7SegmentI2Cid",
+    "name": "7-Segment Clock Display",
+    "programmable": false,
+    "programmable_settings": "",
+    "simulation_model": "seven-segment-i2c",
+    "version_root_id": "display7SegmentI2Cpdrid",
+    "breadboard": {
+      "background": false,
+      "breadboard": false,
+      "extents": {
+        "top": -8,
+        "left": -99,
+        "width": 198,
+        "height": 105
+      },
+      "id": "display7SegmentI2Cbbid",
+      "name": "breadboard_display7SegmentI2C",
+      "svg": "<svg class=\"cgfx__display-sevensegment-i2c\" viewbox=\"-1000 -1000 2000 2000\" width=\"2000\" height=\"2000\" x=\"-1000\" y=\"-1000\"><path class=\"cgfx__selected\" fill-rule=\"evenodd\" display=\"none\" fill='#3b8ed7' stroke='#3b8ed7' stroke-width='3.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' d=\"m-99 2a10 10 0 0110-10h178a10 10 0 0110 10v85a10 10 0 01-10 10h-178a10 10 0 01-10-10zm9.25-2a3.25 3.25 0 017.5 0 3.25 3.25 0 01-7.5 0zm172 0a3.25 3.25 0 017.5 0 3.25 3.25 0 01-7.5 0zm-172 90a3.25 3.25 0 017.5 0 3.25 3.25 0 01-7.5 0zm172 0a3.25 3.25 0 017.5 0 3.25 3.25 0 01-7.5 0zm-99.25-90a2 2 0 014 0 2 2 0 01-4 0zm10 0a2 2 0 014 0 2 2 0 01-4 0zm10 0a2 2 0 014 0 2 2 0 01-4 0zm10 0a2 2 0 014 0 2 2 0 01-4 0z\"/><path fill=\"#212223\" fill-rule=\"evenodd\" d=\"m-99 2a10 10 0 0110-10h178a10 10 0 0110 10v85a10 10 0 01-10 10h-178a10 10 0 01-10-10zm9.25-2a3.25 3.25 0 017.5 0 3.25 3.25 0 01-7.5 0zm172 0a3.25 3.25 0 017.5 0 3.25 3.25 0 01-7.5 0zm-172 90a3.25 3.25 0 017.5 0 3.25 3.25 0 01-7.5 0zm172 0a3.25 3.25 0 017.5 0 3.25 3.25 0 01-7.5 0zm-99.25-90a2 2 0 014 0 2 2 0 01-4 0zm10 0a2 2 0 014 0 2 2 0 01-4 0zm10 0a2 2 0 014 0 2 2 0 01-4 0zm10 0a2 2 0 014 0 2 2 0 01-4 0z\"/><rect fill=\"#3C4042\" x=\"-99\" y=\"7\" width=\"198\" height=\"75\" rx=\"1.5\" ry=\"1.5\"/><g fill=\"#B2B3B4\" transform=\"translate(-75,44.5)\"><path class=\"cgfx__led cgfx__leda1\" d=\"m-6.89-22.7-2.94-3.2 2.52-2.1 22.41 0 1.93 2.1-3.84 3.2z\"/><path class=\"cgfx__led cgfx__ledb1\" d=\"m17.57-25.31 1.82 1.97-2.85 20.22-3.07 2.57-2.29-2.49 2.7-19.19z\"/><path class=\"cgfx__led cgfx__ledc1\" d=\"m12.82 23.41-2.37 1.98-2.83-3.08 2.7-19.19 3.07-2.57 2.29 2.49z\"/><path class=\"cgfx__led cgfx__ledd1\" d=\"m-15.1 28-1.93-2.1 3.84-3.2 20.08 0 2.94 3.2-2.52 2.1z\"/><path class=\"cgfx__led cgfx__lede1\" d=\"m-13.88 22.23-3.69 3.08-1.82-1.97 2.85-20.22 3.07-2.57 2.29 2.49z\"/><path class=\"cgfx__led cgfx__ledf1\" d=\"m-12.82-23.41 2.37-1.98 2.83 3.08-2.7 19.19-3.07 2.57-2.29-2.49z\"/><path class=\"cgfx__led cgfx__ledg1\" d=\"m-12.85.04 3.22-2.69 20.08 0 2.4 2.61-3.22 2.69-20.08 0z\"/><circle class=\"cgfx__led cgfx__leddp1\" cx=\"17.57\" cy=\"25.35\" r=\"2.65\"/></g><g fill=\"#B2B3B4\" transform=\"translate(-25,44.5)\"><path class=\"cgfx__led cgfx__leda2\" d=\"m-6.89-22.7-2.94-3.2 2.52-2.1 22.41 0 1.93 2.1-3.84 3.2z\"/><path class=\"cgfx__led cgfx__ledb2\" d=\"m17.57-25.31 1.82 1.97-2.85 20.22-3.07 2.57-2.29-2.49 2.7-19.19z\"/><path class=\"cgfx__led cgfx__ledc2\" d=\"m12.82 23.41-2.37 1.98-2.83-3.08 2.7-19.19 3.07-2.57 2.29 2.49z\"/><path class=\"cgfx__led cgfx__ledd2\" d=\"m-15.1 28-1.93-2.1 3.84-3.2 20.08 0 2.94 3.2-2.52 2.1z\"/><path class=\"cgfx__led cgfx__lede2\" d=\"m-13.88 22.23-3.69 3.08-1.82-1.97 2.85-20.22 3.07-2.57 2.29 2.49z\"/><path class=\"cgfx__led cgfx__ledf2\" d=\"m-12.82-23.41 2.37-1.98 2.83 3.08-2.7 19.19-3.07 2.57-2.29-2.49z\"/><path class=\"cgfx__led cgfx__ledg2\" d=\"m-12.85.04 3.22-2.69 20.08 0 2.4 2.61-3.22 2.69-20.08 0z\"/><circle class=\"cgfx__led cgfx__leddp2\" cx=\"17.57\" cy=\"25.35\" r=\"2.65\"/></g><g fill=\"#B2B3B4\" transform=\"translate(25,44.5)\"><path class=\"cgfx__led cgfx__leda3\" d=\"m-6.89-22.7-2.94-3.2 2.52-2.1 22.41 0 1.93 2.1-3.84 3.2z\"/><path class=\"cgfx__led cgfx__ledb3\" d=\"m17.57-25.31 1.82 1.97-2.85 20.22-3.07 2.57-2.29-2.49 2.7-19.19z\"/><path class=\"cgfx__led cgfx__ledc3\" d=\"m12.82 23.41-2.37 1.98-2.83-3.08 2.7-19.19 3.07-2.57 2.29 2.49z\"/><path class=\"cgfx__led cgfx__ledd3\" d=\"m-15.1 28-1.93-2.1 3.84-3.2 20.08 0 2.94 3.2-2.52 2.1z\"/><path class=\"cgfx__led cgfx__lede3\" d=\"m-13.88 22.23-3.69 3.08-1.82-1.97 2.85-20.22 3.07-2.57 2.29 2.49z\"/><path class=\"cgfx__led cgfx__ledf3\" d=\"m-12.82-23.41 2.37-1.98 2.83 3.08-2.7 19.19-3.07 2.57-2.29-2.49z\"/><path class=\"cgfx__led cgfx__ledg3\" d=\"m-12.85.04 3.22-2.69 20.08 0 2.4 2.61-3.22 2.69-20.08 0z\"/><circle class=\"cgfx__led cgfx__leddp3\" cx=\"17.57\" cy=\"25.35\" r=\"2.65\"/></g><g fill=\"#B2B3B4\" transform=\"translate(75,44.5)\"><path class=\"cgfx__led cgfx__leda4\" d=\"m-6.89-22.7-2.94-3.2 2.52-2.1 22.41 0 1.93 2.1-3.84 3.2z\"/><path class=\"cgfx__led cgfx__ledb4\" d=\"m17.57-25.31 1.82 1.97-2.85 20.22-3.07 2.57-2.29-2.49 2.7-19.19z\"/><path class=\"cgfx__led cgfx__ledc4\" d=\"m12.82 23.41-2.37 1.98-2.83-3.08 2.7-19.19 3.07-2.57 2.29 2.49z\"/><path class=\"cgfx__led cgfx__ledd4\" d=\"m-15.1 28-1.93-2.1 3.84-3.2 20.08 0 2.94 3.2-2.52 2.1z\"/><path class=\"cgfx__led cgfx__lede4\" d=\"m-13.88 22.23-3.69 3.08-1.82-1.97 2.85-20.22 3.07-2.57 2.29 2.49z\"/><path class=\"cgfx__led cgfx__ledf4\" d=\"m-12.82-23.41 2.37-1.98 2.83 3.08-2.7 19.19-3.07 2.57-2.29-2.49z\"/><path class=\"cgfx__led cgfx__ledg4\" d=\"m-12.85.04 3.22-2.69 20.08 0 2.4 2.61-3.22 2.69-20.08 0z\"/><circle class=\"cgfx__led cgfx__leddp4\" cx=\"17.57\" cy=\"25.35\" r=\"2.65\"/></g><g class=\"cgfx__led cgfx__ledcolon\" transform=\"translate(0,44.5)\" fill=\"#B2B3B4\"><circle cx=\"2.16\" cy=\"-15.36\" r=\"2.65\"/><circle cx=\"-2.16\" cy=\"15.36\" r=\"2.65\"/></g><g class=\"throughholeplate\" transform=\"translate(-15,0)\"> <circle class=\"highlight\" fill=\"none\" stroke=\"#D1C690\" stroke-width=\"1.5\" cx=\"0\" cy=\"0\" r=\"2.25\"/></g><g class=\"throughholeplate\" transform=\"translate(-5,0)\"> <circle class=\"highlight\" fill=\"none\" stroke=\"#D1C690\" stroke-width=\"1.5\" cx=\"0\" cy=\"0\" r=\"2.25\"/></g><g class=\"throughholeplate\" transform=\"translate(5,0)\"> <circle class=\"highlight\" fill=\"none\" stroke=\"#D1C690\" stroke-width=\"1.5\" cx=\"0\" cy=\"0\" r=\"2.25\"/></g><g class=\"throughholeplate\" transform=\"translate(15,0)\"> <circle class=\"highlight\" fill=\"none\" stroke=\"#D1C690\" stroke-width=\"1.5\" cx=\"0\" cy=\"0\" r=\"2.25\"/></g><g  transform=\"rotate(0, -20,-5)\" style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:1.3' stroke=\"#e3e4e5\"><g transform=\"translate(-21.5,-5) scale(0.5)\"><g class=\"plus\" transform=\"translate(3,0)\"><path d=\"M-1.5.5l3 0m-1.5-1.5l0 3\"/></g></g></g><g  transform=\"rotate(0, -10,-5)\" style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:1.3' stroke=\"#e3e4e5\"><g transform=\"translate(-11.5,-5) scale(0.5)\"><g class=\"minus\" transform=\"translate(3,0)\"><path d=\"M-1.5.5l3 0\"/></g></g></g><g  transform=\"rotate(0, 10,-5)\" style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:1.3' stroke=\"#e3e4e5\"><g transform=\"translate(8.375,-5) scale(0.5)\"><g class=\"D\" transform=\"translate(3.25,0)\"><path d=\"M-1.71-2.68l-.03 5.79c0 0 2.68.45 3.31-.71.5-.92.55-3.88-.2-4.62s-3.08-.46-3.08-.46z\"/></g></g></g><g  transform=\"rotate(0, 20,-5)\" style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:1.3' stroke=\"#e3e4e5\"><g transform=\"translate(18.5,-5) scale(0.5)\"><g class=\"C\" transform=\"translate(3,0)\"><path d=\"M1.52-2.76c.09-.13-2.1-.78-2.85.52-.52.9-.56 3.44-.28 4.19.69 1.83 3.14.85 3.14.85\"/></g></g></g><g  transform=\"rotate(0, 0,90)\" style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:1.3' stroke=\"#e3e4e5\"><g transform=\"translate(-81,90) scale(0.8)\"><g class=\"num0\" transform=\"translate(3,0)\"><path d=\"M.05 3.17h-.11c-.95 0-1.71-.77-1.71-1.71v-2.95c0-.94.77-1.71 1.71-1.71h.11c.95 0 1.71.77 1.71 1.71v2.95c0 .94-.76 1.71-1.71 1.71zm-1.05-.3l2-5.74\"/></g><g class=\"point\" transform=\"translate(7,0)\"><path d=\"M0 2.6l0 .01\"/></g><g class=\"num5\" transform=\"translate(11,0)\"><path d=\"M1.24-3.02h-2.61v2.8c0 0 1.79-.92 2.64.47.67 1.1.22 2.08-.38 2.5-.96.67-2.48-.15-2.48-.15\"/></g><g class=\"num6\" transform=\"translate(17,0)\"><path d=\"M1.17-3.15c0 0-1.09-.27-1.83.36s-.87 1.91-.87 3.53.5 2.41 1.48 2.41 1.61-.77 1.61-2-.8-1.7-1.54-1.7c-1-.01-1.52.36-1.55 1.06\"/></g><g class=\"quote\" transform=\"translate(22,0)\"><path d=\"M-1-3.05v1.5M1,-3.05v1.5\"/></g><g class=\"num7\" transform=\"translate(30,0)\"><path d=\"M-1.73-3.01l3.46 0l-2.48 6.01\"/></g><g class=\"minus\" transform=\"translate(36,0)\"><path d=\"M-1.5.5l3 0\"/></g><g class=\"S\" transform=\"translate(42,0)\"><path d=\"M1.77-2.69c0 0-2.12-1.02-2.9.27s.45 2.2 1.13 2.42 1.76.4 1.76 1.67c0 1.14-.92 1.63-1.7 1.56-.77-.08-1.82-.54-1.82-.54\"/></g><g class=\"E\" transform=\"translate(48,0)\"><path d=\"M1.52 3.05l-2.93 0l0-6.05l2.93 0m-.4 3.02l-2.45 0\"/></g><g class=\"G\" transform=\"translate(54.5,0)\"><path d=\"M1.29-2.76c0 0-1.54-.76-2.65.1s-.7 2.17-.7 4.15c0 1.05 1.24 1.53 2.25 1.5.89-.03 1.56-.54 1.56-.54v-2.45h-1.75\"/></g><g class=\"M\" transform=\"translate(62,0)\"><path d=\"M-2.5 3.05l0-6.1l2.5 4.33l2.5-4.33l0 6.1\"/></g><g class=\"E\" transform=\"translate(69,0)\"><path d=\"M1.52 3.05l-2.93 0l0-6.05l2.93 0m-.4 3.02l-2.45 0\"/></g><g class=\"N\" transform=\"translate(75.25,0)\"><path d=\"M-1.86 3.05l0-6.1l3.71 6.1l0-6.16\"/></g><g class=\"T\" transform=\"translate(81.5,0)\"><path d=\"M-0-3.05l0 6.1m-1.78-6.1l3.56 0\"/></g><g class=\"L\" transform=\"translate(91,0)\"><path d=\"M-1.52-3.05l0 6.1l3.04 0\"/></g><g class=\"E\" transform=\"translate(97.5,0)\"><path d=\"M1.52 3.05l-2.93 0l0-6.05l2.93 0m-.4 3.02l-2.45 0\"/></g><g class=\"D\" transform=\"translate(103.75,0)\"><path d=\"M-1.71-2.68l-.03 5.79c0 0 2.68.45 3.31-.71.5-.92.55-3.88-.2-4.62s-3.08-.46-3.08-.46z\"/></g><g class=\"H\" transform=\"translate(113.5,0)\"><path d=\"M-1.8-3.05l0 6.1m0-3.25l3.6 0m.05-2.85l0 6.1\"/></g><g class=\"T\" transform=\"translate(120,0)\"><path d=\"M-0-3.05l0 6.1m-1.78-6.1l3.56 0\"/></g><g class=\"num1\" transform=\"translate(125.5,0)\"><path d=\"M-.86-2.11l1.71-.99l0 6.19\"/></g><g class=\"num6\" transform=\"translate(131,0)\"><path d=\"M1.17-3.15c0 0-1.09-.27-1.83.36s-.87 1.91-.87 3.53.5 2.41 1.48 2.41 1.61-.77 1.61-2-.8-1.7-1.54-1.7c-1-.01-1.52.36-1.55 1.06\"/></g><g class=\"K\" transform=\"translate(137,0)\"><path d=\"M-1.5-2.85l0 6.1m3-6.08l-2.66 2.83l2.66 3.214\"/></g><g class=\"num3\" transform=\"translate(143,0)\"><path d=\"M-1.4-2.81c0 0 2.92-.84 2.92 1.07 0 1.74-1.9 1.74-1.9 1.74s2.01-.23 2.01 1.65c0 2.06-3.24 1.12-3.24 1.12\"/></g><g class=\"num3\" transform=\"translate(149,0)\"><path d=\"M-1.4-2.81c0 0 2.92-.84 2.92 1.07 0 1.74-1.9 1.74-1.9 1.74s2.01-.23 2.01 1.65c0 2.06-3.24 1.12-3.24 1.12\"/></g><g class=\"B\" transform=\"translate(157.75,0)\"><path d=\"M.38 0c.68 0 1.06-.55 1.06-1.69 0-1.33-1.27-1.27-1.27-1.27h-1.66v5.93h1.87c0 0 1.34 0 1.34-1.35 0-1.47-1.34-1.62-1.34-1.62h-1.83z\"/></g><g class=\"A\" transform=\"translate(163.5,0)\"><path d=\"M-2.22 3.06l2.22-6.13l2.16 6.13m-3.65-1.88l2.98 0\"/></g><g class=\"C\" transform=\"translate(169.5,0)\"><path d=\"M1.52-2.76c.09-.13-2.1-.78-2.85.52-.52.9-.56 3.44-.28 4.19.69 1.83 3.14.85 3.14.85\"/></g><g class=\"K\" transform=\"translate(175.5,0)\"><path d=\"M-1.5-2.85l0 6.1m3-6.08l-2.66 2.83l2.66 3.214\"/></g><g class=\"P\" transform=\"translate(181.5,0)\"><path d=\"M-1.66 3.03v-6.05h1.92c0 0 1.45-.1 1.45 1.47 0 1.31-.23 1.83-1.56 1.83h-1.8\"/></g><g class=\"A\" transform=\"translate(187.5,0)\"><path d=\"M-2.22 3.06l2.22-6.13l2.16 6.13m-3.65-1.88l2.98 0\"/></g><g class=\"C\" transform=\"translate(193.5,0)\"><path d=\"M1.52-2.76c.09-.13-2.1-.78-2.85.52-.52.9-.56 3.44-.28 4.19.69 1.83 3.14.85 3.14.85\"/></g><g class=\"K\" transform=\"translate(199.5,0)\"><path d=\"M-1.5-2.85l0 6.1m3-6.08l-2.66 2.83l2.66 3.214\"/></g></g></g><path class=\"cgfx__hitarea\" style='fill:#ff0000;' opacity='0' display='none' fill-rule=\"evenodd\" d=\"m-99 2a10 10 0 0110-10h178a10 10 0 0110 10v85a10 10 0 01-10 10h-178a10 10 0 01-10-10zm9.25-2a3.25 3.25 0 017.5 0 3.25 3.25 0 01-7.5 0zm172 0a3.25 3.25 0 017.5 0 3.25 3.25 0 01-7.5 0zm-172 90a3.25 3.25 0 017.5 0 3.25 3.25 0 01-7.5 0zm172 0a3.25 3.25 0 017.5 0 3.25 3.25 0 01-7.5 0zm-99.25-90a2 2 0 014 0 2 2 0 01-4 0zm10 0a2 2 0 014 0 2 2 0 01-4 0zm10 0a2 2 0 014 0 2 2 0 01-4 0zm10 0a2 2 0 014 0 2 2 0 01-4 0z\"/><polygon class=\"cgfx__breakdown\" transform=\"translate(0,44.5)rotate(0) scale(3.5,3.5)\" display=\"none\" style=\"opacity:0.7;fill:#FF0000;stroke:#F7E60B;stroke-miterlimit:10;\" points=\"2.415,-5.161 7.901,-7.299 5.471,-2.294 11.953,-0.565 5.126,1.63 8.332,8.197 2.59,5.053 -0.137,10.527 -2.24,4.375 -7.565,7.957 -6.133,2.443 -11.953,0.87 -5.945,-1.796 -8.854,-7.513 -3.289,-5.371 -1.401,-10.527 \"/><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">Power</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"-15\" y1=\"0\" x2=\"-15\" y2=\"-25\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">Ground</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"-5\" y1=\"0\" x2=\"-5\" y2=\"-25\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">SDA</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"5\" y1=\"0\" x2=\"5\" y2=\"-25\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">SCL</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"15\" y1=\"0\" x2=\"15\" y2=\"-25\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g></svg>",
+      "symbol_type": "breadboard",
+      "terminal_list": null,
+      "rootId": "display7SegmentI2Cbbrid",
+      "schematic_symbol_terminals_attributes": [
+        {
+          "dir": -90,
+          "id": "display7SegmentI2Cstid0",
+          "label": null,
+          "name": "Power",
+          "schematic_symbol_id": "display7SegmentI2Cbbid",
+          "terminal_type": "breadboard",
+          "x": -15,
+          "y": 0
+        },
+        {
+          "dir": -90,
+          "id": "display7SegmentI2Cstid1",
+          "label": null,
+          "name": "Ground",
+          "schematic_symbol_id": "display7SegmentI2Cbbid",
+          "terminal_type": "breadboard",
+          "x": -5,
+          "y": 0
+        },
+        {
+          "dir": -90,
+          "id": "display7SegmentI2Cstid2",
+          "label": null,
+          "name": "SDA",
+          "schematic_symbol_id": "display7SegmentI2Cbbid",
+          "terminal_type": "breadboard",
+          "x": 5,
+          "y": 0
+        },
+        {
+          "dir": -90,
+          "id": "display7SegmentI2Cstid3",
+          "label": null,
+          "name": "SCL",
+          "schematic_symbol_id": "display7SegmentI2Cbbid",
+          "terminal_type": "breadboard",
+          "x": 15,
+          "y": 0
+        }
+      ]
+    },
+    "subdevices_attributes": [
+      {
+        "device_id": "display7SegmentI2Cid",
+        "id": "display7SegmentI2Csaid",
+        "init_x": 0,
+        "init_y": 0,
+        "name": null,
+        "schematic_symbol_id": "display7SegmentI2Cssid",
+        "schematic_symbol_attributes": {
+          "background": false,
+          "breadboard": false,
+          "generator_type": "normal",
+          "id": "display7SegmentI2Cssid",
+          "name": "7-Segment Clock Display",
+          "svg": "<circle stroke=\"#000000\" stroke-width=\"2\" fill=\"none\" cx=\"0\" cy=\"0\" r=\"10\"/>",
+          "symbol_type": "schematic",
+          "terminal_list": null,
+          "rootId": "display7SegmentI2Cssrid",
+          "schematic_symbol_terminals_attributes": [
+            {
+              "dir": -90,
+              "id": "display7SegmentI2Cspid0",
+              "label": null,
+              "name": "Power",
+              "schematic_symbol_id": "display7SegmentI2Cssid",
+              "terminal_type": "schematic",
+              "x": -15,
+              "y": 0
+            },
+            {
+              "dir": -90,
+              "id": "display7SegmentI2Cspid1",
+              "label": null,
+              "name": "Ground",
+              "schematic_symbol_id": "display7SegmentI2Cssid",
+              "terminal_type": "schematic",
+              "x": -5,
+              "y": 0
+            },
+            {
+              "dir": -90,
+              "id": "display7SegmentI2Cspid2",
+              "label": null,
+              "name": "SDA",
+              "schematic_symbol_id": "display7SegmentI2Cssid",
+              "terminal_type": "schematic",
+              "x": 5,
+              "y": 0
+            },
+            {
+              "dir": -90,
+              "id": "display7SegmentI2Cspid3",
+              "label": null,
+              "name": "SCL",
+              "schematic_symbol_id": "display7SegmentI2Cssid",
+              "terminal_type": "schematic",
+              "x": 15,
+              "y": 0
+            }
+          ]
+        }
+      }
+    ],
+    "properties_attributes": [
+      {
+        "default": 0,
+        "default_prefix": "RED",
+        "default_show": true,
+        "device_id": "display7SegmentI2Cid",
+        "id": "display7SegmentI2Cppid0",
+        "name": "color",
+        "unit": "[[\"RED\",\"Red\"],[\"YELLOW\",\"Yellow\"],[\"GREEN\",\"Green\"],[\"BLUE\",\"Blue\"],[\"WHITE\",\"White\"]]"
+      },
+      {
+        "default": 0,
+        "default_prefix": "112",
+        "default_show": true,
+        "device_id": "display7SegmentI2Cid",
+        "id": "display7SegmentI2Cppid1",
+        "name": "address",
+        "unit": "[[\"112\",\"112 (0x70)\"],[\"113\",\"113 (0x71)\"],[\"114\",\"114 (0x72)\"],[\"115\",\"115 (0x73)\"],[\"116\",\"116 (0x74)\"],[\"117\",\"117 (0x75)\"],[\"118\",\"118 (0x76)\"],[\"119\",\"119 (0x77)\"]]"
+      }
+    ]
+  },
+  "footprint": {
+    "id": "display7SegmentI2Cfpid",
+    "name": "7-Segment Clock Display connector",
+    "outline": "<g></g>",
+    "rootId": "display7SegmentI2Cfprid",
+    "pads_attributes": [
+      {
+        "col_pitch": null,
+        "cols": null,
+        "dir": null,
+        "drill": "900",
+        "footprint_id": "display7SegmentI2Cfpid",
+        "generator_type": null,
+        "id": "display7SegmentI2Cpaid0",
+        "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+        "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+        "name": 0,
+        "number": null,
+        "pad_type_id": null,
+        "pin_spacing": null,
+        "row_pitch": null,
+        "rows": null,
+        "x": -3810,
+        "y": 0
+      },
+      {
+        "col_pitch": null,
+        "cols": null,
+        "dir": null,
+        "drill": "900",
+        "footprint_id": "display7SegmentI2Cfpid",
+        "generator_type": null,
+        "id": "display7SegmentI2Cpaid1",
+        "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+        "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+        "name": 1,
+        "number": null,
+        "pad_type_id": null,
+        "pin_spacing": null,
+        "row_pitch": null,
+        "rows": null,
+        "x": -1270,
+        "y": 0
+      },
+      {
+        "col_pitch": null,
+        "cols": null,
+        "dir": null,
+        "drill": "900",
+        "footprint_id": "display7SegmentI2Cfpid",
+        "generator_type": null,
+        "id": "display7SegmentI2Cpaid2",
+        "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+        "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+        "name": 2,
+        "number": null,
+        "pad_type_id": null,
+        "pin_spacing": null,
+        "row_pitch": null,
+        "rows": null,
+        "x": 1270,
+        "y": 0
+      },
+      {
+        "col_pitch": null,
+        "cols": null,
+        "dir": null,
+        "drill": "900",
+        "footprint_id": "display7SegmentI2Cfpid",
+        "generator_type": null,
+        "id": "display7SegmentI2Cpaid3",
+        "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+        "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+        "name": 3,
+        "number": null,
+        "pad_type_id": null,
+        "pin_spacing": null,
+        "row_pitch": null,
+        "rows": null,
+        "x": 3810,
+        "y": 0
+      }
+    ]
+  },
+  "pinmaps_attributes": [
+    {
+      "pmid": "display7SegmentI2Cpmid0",
+      "did": "display7SegmentI2C",
+      "ppid": "display7SegmentI2Cpaid0",
+      "sdid": "display7SegmentI2Csaid",
+      "spid": "display7SegmentI2Cspid0",
+      "bbid": "display7SegmentI2Cstid0"
+    },
+    {
+      "pmid": "display7SegmentI2Cpmid1",
+      "did": "display7SegmentI2C",
+      "ppid": "display7SegmentI2Cpaid1",
+      "sdid": "display7SegmentI2Csaid",
+      "spid": "display7SegmentI2Cspid1",
+      "bbid": "display7SegmentI2Cstid1"
+    },
+    {
+      "pmid": "display7SegmentI2Cpmid2",
+      "did": "display7SegmentI2C",
+      "ppid": "display7SegmentI2Cpaid2",
+      "sdid": "display7SegmentI2Csaid",
+      "spid": "display7SegmentI2Cspid2",
+      "bbid": "display7SegmentI2Cstid2"
+    },
+    {
+      "pmid": "display7SegmentI2Cpmid3",
+      "did": "display7SegmentI2C",
+      "ppid": "display7SegmentI2Cpaid3",
+      "sdid": "display7SegmentI2Csaid",
+      "spid": "display7SegmentI2Cspid3",
+      "bbid": "display7SegmentI2Cstid3"
+    }
+  ]
+}

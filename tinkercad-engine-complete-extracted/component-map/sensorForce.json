@@ -1,0 +1,7 @@
+{
+  "device_id": "sensorForce",
+  "simulation_model": "sensorForce",
+  "implementation_found": true,
+  "module_id": "60952",
+  "model_file": "models/sensorForce--module-60952.js"
+}

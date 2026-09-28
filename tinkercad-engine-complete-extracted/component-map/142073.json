@@ -1,0 +1,7 @@
+{
+  "device_id": "142073",
+  "simulation_model": "servo_SG90",
+  "implementation_found": true,
+  "module_id": "53417",
+  "model_file": "models/servo_SG90--module-53417.js"
+}

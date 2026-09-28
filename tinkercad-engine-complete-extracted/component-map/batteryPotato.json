@@ -1,0 +1,7 @@
+{
+  "device_id": "batteryPotato",
+  "simulation_model": "batteryPotato",
+  "implementation_found": true,
+  "module_id": "33443",
+  "model_file": "models/batteryPotato--module-33443.js"
+}

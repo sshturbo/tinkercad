@@ -1,0 +1,26 @@
+{
+  "url": "https://api-reader-prd.tinkercad.com/users",
+  "payload": {
+    "id": "339dFH3rIqF",
+    "screen_name": "Emerald Scribe Polar Bear 4121",
+    "name": "fivey2019",
+    "status": "0",
+    "btime": "1786148103037000000",
+    "mtime": "1786148103037000000",
+    "bio": "",
+    "googleClassroomEnabled": false,
+    "authprovider": "",
+    "isAutodeskAccount": null,
+    "thingiverseEnabled": false,
+    "miniFactoryEnabled": false,
+    "profile_image_url_200": "/img/avatar-active_200.png",
+    "profile_image_url_40": "/img/avatar-active_40.png",
+    "profile_image_url_75": "/img/avatar-active_200.png",
+    "age": -4,
+    "restrictions": "0",
+    "classSeat": false,
+    "social_links": null,
+    "role": null,
+    "isAdmin": false
+  }
+}

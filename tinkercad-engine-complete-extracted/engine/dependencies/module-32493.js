@@ -1,0 +1,1 @@
+32493(e,t,i){var n=i(77078),o=i(81118).inherit;n.NPN=function(e,t,i,o){n.AbstractComponent.call(this,e),this.type=n.ComponentType.npn,this.addTerminal("base").connect(t),this.addTerminal("emitter").connect(i),this.addTerminal("collector").connect(o)},n.NPN.prototype=o(n.AbstractComponent.prototype),n.NPN.prototype.constructor=n.NPN

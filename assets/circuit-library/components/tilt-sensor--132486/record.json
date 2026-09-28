@@ -1,0 +1,157 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 31873,
+  "device_id": "132486",
+  "name": "Tilt Sensor",
+  "description": "Tilt-sensitive trigger switch. SW200D.",
+  "tags": [
+    "input"
+  ],
+  "thumbnail": "sensorTilt.png",
+  "thumbnail_source": "/sensorTilt.png",
+  "footprint": {
+    "name": "Tilt sensor",
+    "id": 132486
+  },
+  "simulation_model": "sensor_tilt_sw200d",
+  "extents": {
+    "top": -4.800000190734863,
+    "left": -25,
+    "width": 50,
+    "height": 9.5
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-09-17T21:02:01Z",
+      "dir": 0,
+      "id": 219250,
+      "label": null,
+      "name": "Terminal 2",
+      "schematic_symbol_id": 22338,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-09-17T21:02:01Z",
+      "x": 25,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-09-17T21:02:01Z",
+      "dir": 180,
+      "id": 219249,
+      "label": null,
+      "name": "Terminal 1",
+      "schematic_symbol_id": 22338,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-09-17T21:02:01Z",
+      "x": -25,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-09-17T20:48:36Z",
+      "dir": 0,
+      "id": 219248,
+      "label": null,
+      "name": "2",
+      "schematic_symbol_id": 22337,
+      "terminal_type": "schematic",
+      "updated_at": "2015-09-17T20:48:36Z",
+      "x": 60,
+      "y": 20
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-09-17T20:48:36Z",
+      "dir": 180,
+      "id": 219247,
+      "label": null,
+      "name": "1",
+      "schematic_symbol_id": 22337,
+      "terminal_type": "schematic",
+      "updated_at": "2015-09-17T20:48:36Z",
+      "x": -60,
+      "y": 20
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-09-17T20:59:01Z",
+      "dir": null,
+      "drill": "750",
+      "footprint_id": 32347,
+      "generator_type": null,
+      "id": 275448,
+      "layer0": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-09-17T20:59:01Z",
+      "x": 7620,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-09-17T20:59:01Z",
+      "dir": null,
+      "drill": "750",
+      "footprint_id": 32347,
+      "generator_type": null,
+      "id": 275447,
+      "layer0": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-09-17T20:59:01Z",
+      "x": -7620,
+      "y": 0
+    }
+  ],
+  "properties": [],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/144675512904fc2c34939071fd728d15bbaa288536/thumbnail20151105-24917-pz36mn.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/144675512904fc2c34939071fd728d15bbaa288536/thumbnail20151105-24917-pz36mn.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/144675512914929fb3f243dc6499a59e2d3051ef3c/thumbnail20151105-24903-1nh2o22.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/144675512914929fb3f243dc6499a59e2d3051ef3c/thumbnail20151105-24903-1nh2o22.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1443844835d5b4a559255e9f41eeaf369a4e69ac6e/thumbnail20151003-31095-1abf4zc.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1443844835d5b4a559255e9f41eeaf369a4e69ac6e/thumbnail20151003-31095-1abf4zc.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/132486.json"
+}

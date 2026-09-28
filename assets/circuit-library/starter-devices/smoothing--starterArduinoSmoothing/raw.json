@@ -1,0 +1,1167 @@
+{
+  "device_id": "starterArduinoSmoothing",
+  "footprint_id": "starterArduinoSmoothing",
+  "id": "starterArduinoSmoothing",
+  "footprint_name": "starterArduinoSmoothing",
+  "device": {
+    "base": "PROXY",
+    "breadboard_id": "starterArduinoSmoothing",
+    "description": "Proxy object",
+    "id": "starterArduinoSmoothing",
+    "name": "Proxy",
+    "version_root_id": "starterArduinoSmoothing",
+    "breadboard": {
+      "background": false,
+      "breadboard": false,
+      "id": "starterArduinoSmoothing",
+      "name": "proxy",
+      "svg": "<svg viewBox=\"-1000 -1000 2000 2000\" width=\"2000\" height=\"2000\" x=\"-1000\" y=\"-1000\"><path class=\"cgfx__proxy\" d=\"m-171.89-130.96c-1.92 0-3.5 1.58-3.5 3.51l0 203.97c0 2.49 2.04 4.52 4.53 4.52l148.89 0 18.85 39.98a2.5 2.5 0 001.26 1.22l0 4.44c-8.59 4.09-14.57 12.81-14.71 22.93a1.75 1.75 0 00-.04.34 1.75 1.75 0 00.04.35c.19 14.04 11.63 25.4 25.71 25.4 14.21 0 25.75-11.55 25.75-25.75 0-10.26-6.03-19.14-14.75-23.27l0-4.44a2.5 2.5 0 00.01 0 2.5 2.5 0 00.06-.03 2.5 2.5 0 001.2-3.32l-5.46-11.58 8.66-26.27 57.07 0 .01 0c2.71 0 4.93-2.22 4.93-4.93l0-4.43c0-.77.18-1.22.32-1.47.14-.25.17-.24.17-.24a1 1 0 00.11-.1l8.03-8.03-.05.04c0 0 1.41-1.25 1.41-3.36l0-126.31a1 1 0 000 0c0-1.52-1.04-2.49-1.04-2.49l-8.76-8.76c0 0-.19-.21-.19-.53l0-43.69c0-1.14-.74-1.85-.74-1.85a1 1 0 00-.03-.04l-4.89-4.89c0 0-.93-.92-2.38-.92l-250.47 0zm57.55 5.95c2.91 0 5.25 2.34 5.25 5.25 0 2.91-2.34 5.24-5.25 5.24-2.91 0-5.25-2.33-5.25-5.24 0-2.91 2.34-5.25 5.25-5.25zm200.41 60.05c2.91 0 5.25 2.34 5.25 5.25 0 2.91-2.34 5.25-5.25 5.25-2.91 0-5.24-2.34-5.24-5.25 0-2.91 2.33-5.25 5.24-5.25zm0 110.1c2.91 0 5.25 2.34 5.25 5.25 0 2.91-2.34 5.24-5.25 5.24-2.91 0-5.24-2.33-5.24-5.24 0-2.91 2.33-5.25 5.24-5.25zm-205.41 20.02c2.91 0 5.24 2.34 5.24 5.25 0 2.91-2.33 5.24-5.24 5.24-2.91 0-5.25-2.34-5.25-5.24 0-2.91 2.34-5.25 5.25-5.25zm102.9 15.88 14.47 0 12.54 26.6-3.8 11.53a2.5 2.5 0 001.37 3.07l0 1.99c-2.8.11-5.49.66-8 1.6l0-3.59a2.5 2.5 0 00.01 0 2.5 2.5 0 00.06-.03 2.5 2.5 0 001.2-3.32l-17.85-37.85zm20 0 15.79 0-6.5 19.7-9.29-19.7zm10.11 33.17 3.21 6.81a2.5 2.5 0 001.26 1.22l0 3.59c-2.5-.94-5.19-1.49-8-1.6l0-1.99a2.5 2.5 0 001.38-1.5l2.15-6.53z\" style=\"fill:#3b8ed7;fill-opacity:.4;fill-rule:nonzero;stroke:#3b8ed7;stroke-width:1px;\"/></svg>\n",
+      "symbol_type": "breadboard",
+      "terminal_list": null,
+      "rootId": "starterArduinoSmoothing",
+      "schematic_symbol_terminals_attributes": []
+    },
+    "subdevices_attributes": [],
+    "properties_attributes": []
+  },
+  "root_id": "starterArduinoSmoothing",
+  "pinmaps_attributes": [],
+  "proxy": {
+    "starter": {
+      "name": "Smoothing",
+      "$id": "1599143698f-0-c8830f86-f6b9-438d-b8df-02db427740f4",
+      "$local_id": "Circuit_0",
+      "$class": "Circuit",
+      "circuit_type": "breadboard",
+      "version": 5,
+      "number_of_layers": 2,
+      "outline": {
+        "$id": "15991436993-2-7bde78a1-e532-454d-8e4e-2f469f8542a7",
+        "$local_id": "BezierOutline_0",
+        "$class": "BezierOutline",
+        "upperLeft": {
+          "x": 0,
+          "y": 0,
+          "$class": "Coordinate"
+        },
+        "lowerRight": {
+          "x": 57150.00000000001,
+          "y": 53340.00000000001,
+          "$class": "Coordinate"
+        },
+        "points": [
+          {
+            "$id": "15991436994-4-dce9bb5b-0bb7-4466-bf9a-386c8080a9b0",
+            "$local_id": "BezierVertex_0",
+            "$class": "BezierVertex",
+            "point": {
+              "x": 0,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "tan_0": {
+              "x": 0,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "tan_1": {
+              "x": 0,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "mode": 0
+          },
+          {
+            "$id": "15991436994-5-28358e17-f1de-45cd-b541-c3b06fe39b3e",
+            "$local_id": "BezierVertex_1",
+            "$class": "BezierVertex",
+            "point": {
+              "x": 57150,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "tan_0": {
+              "x": 0,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "tan_1": {
+              "x": 0,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "mode": 0
+          },
+          {
+            "$id": "15991436994-6-18fdb4c0-4edc-4dc6-91f4-573818a3bf4f",
+            "$local_id": "BezierVertex_2",
+            "$class": "BezierVertex",
+            "point": {
+              "x": 57150,
+              "y": 53340,
+              "$class": "Coordinate"
+            },
+            "tan_0": {
+              "x": 0,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "tan_1": {
+              "x": 0,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "mode": 0
+          },
+          {
+            "$id": "15991436994-7-f6a1a455-a701-4cb2-b1f1-c3aeebf420e0",
+            "$local_id": "BezierVertex_3",
+            "$class": "BezierVertex",
+            "point": {
+              "x": 0,
+              "y": 53340,
+              "$class": "Coordinate"
+            },
+            "tan_0": {
+              "x": 0,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "tan_1": {
+              "x": 0,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "mode": 0
+          }
+        ]
+      },
+      "silkscreen": {
+        "$id": "15991436995-8-b38c6873-9dce-429c-bded-f7011e309aee",
+        "$local_id": "SVG_0",
+        "$class": "SVG",
+        "elements": []
+      },
+      "bottomsilk": {
+        "$id": "15991436995-9-d985f9b7-7a82-4015-a47a-a115e1f50289",
+        "$local_id": "SVG_1",
+        "$class": "SVG",
+        "elements": []
+      },
+      "schematicSvg": {
+        "$id": "15991436995-a-bb05ddfa-dfd3-476c-a87f-5e7549fa4ae3",
+        "$local_id": "SVG_2",
+        "$class": "SVG",
+        "elements": []
+      },
+      "pcbOrigin": {
+        "$id": "15991436992-1-1c678919-4b7f-4b0c-9877-376399859edf",
+        "$local_id": "OriginModel_0",
+        "$class": "OriginModel",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "$class": "Coordinate"
+        },
+        "grid_value": 100,
+        "grid_unit": "mil",
+        "grid_show": true,
+        "grid_thickness": 1
+      },
+      "drc_error": true,
+      "lib": [
+        132521,
+        45547
+      ],
+      "module_terminals": [],
+      "devices": {
+        "1599145cc54-36c-daa898d4-3967-4293-8330-5677d2d7f437": {
+          "$id": "1599145cc54-36c-daa898d4-3967-4293-8330-5677d2d7f437",
+          "$local_id": "Device_1",
+          "$class": "Device",
+          "name": "1",
+          "did": 132521,
+          "breadboard": {
+            "$id": "1599145cc59-36e-e1348398-60cb-45af-8f51-01d3a0f3654e",
+            "$local_id": "BreadboardElement_1",
+            "$class": "BreadboardElement",
+            "pos": {
+              "x": -39.393103448275895,
+              "y": -24.957762198612613,
+              "$class": "Coordinate"
+            },
+            "angle": 0,
+            "flip": 1
+          },
+          "footprint": {
+            "$id": "1599145cc5a-36f-f478c3f4-a6a4-4234-b359-cfeb639e09ad",
+            "$local_id": "PCBElement_0",
+            "$class": "PCBElement",
+            "pos": {
+              "x": 5000,
+              "y": 5000,
+              "$class": "Coordinate"
+            },
+            "angle": 0,
+            "flip": 1
+          },
+          "terminals": {
+            "521288_43397_219363_275980_null_219402": {
+              "$id": "1599145cc5a-370-1fd9e3ad-cd36-4066-afe2-a3d298554437",
+              "$local_id": "Terminal_840",
+              "$class": "Terminal",
+              "pmid": 521288,
+              "sdid": 43397,
+              "spid": 219363,
+              "ppid": 275980,
+              "bbid": 219402,
+              "endings": {},
+              "wires": {}
+            },
+            "521295_43397_219356_275950_null_219409": {
+              "$id": "1599145cc5b-371-afc1c4d6-6bf1-495a-8777-db876ddc519f",
+              "$local_id": "Terminal_841",
+              "$class": "Terminal",
+              "pmid": 521295,
+              "sdid": 43397,
+              "spid": 219356,
+              "ppid": 275950,
+              "bbid": 219409,
+              "endings": {},
+              "wires": {}
+            },
+            "521299_43397_219352_275981_null_219413": {
+              "$id": "1599145cc5c-372-ae44ce61-9bf5-4b0a-92be-9065b1429f7b",
+              "$local_id": "Terminal_842",
+              "$class": "Terminal",
+              "pmid": 521299,
+              "sdid": 43397,
+              "spid": 219352,
+              "ppid": 275981,
+              "bbid": 219413,
+              "endings": {},
+              "wires": {}
+            },
+            "521300_43397_219351_275975_null_219414": {
+              "$id": "1599145cc5c-373-4c0b9b71-94fa-4608-8773-51a08f02896c",
+              "$local_id": "Terminal_843",
+              "$class": "Terminal",
+              "pmid": 521300,
+              "sdid": 43397,
+              "spid": 219351,
+              "ppid": 275975,
+              "bbid": 219414,
+              "endings": {},
+              "wires": {}
+            },
+            "521297_43397_219354_275974_null_219411": {
+              "$id": "1599145cc5d-374-72c80f99-7044-45d3-9edf-c119d35af1bf",
+              "$local_id": "Terminal_844",
+              "$class": "Terminal",
+              "pmid": 521297,
+              "sdid": 43397,
+              "spid": 219354,
+              "ppid": 275974,
+              "bbid": 219411,
+              "endings": {},
+              "wires": {}
+            },
+            "521290_43397_219361_275962_null_219404": {
+              "$id": "1599145cc60-375-30a89503-cab3-4e20-9389-7fbd857497f6",
+              "$local_id": "Terminal_845",
+              "$class": "Terminal",
+              "pmid": 521290,
+              "sdid": 43397,
+              "spid": 219361,
+              "ppid": 275962,
+              "bbid": 219404,
+              "endings": {},
+              "wires": {}
+            },
+            "521292_43397_219359_275955_null_219406": {
+              "$id": "1599145cc60-376-a6d218d6-53fe-4ab6-a3c5-c40b40754b0e",
+              "$local_id": "Terminal_846",
+              "$class": "Terminal",
+              "pmid": 521292,
+              "sdid": 43397,
+              "spid": 219359,
+              "ppid": 275955,
+              "bbid": 219406,
+              "endings": {},
+              "wires": {}
+            },
+            "521293_43397_219358_275956_null_219407": {
+              "$id": "1599145cc60-377-18389ad2-6d5f-454b-ae82-df8dcb9e7b41",
+              "$local_id": "Terminal_847",
+              "$class": "Terminal",
+              "pmid": 521293,
+              "sdid": 43397,
+              "spid": 219358,
+              "ppid": 275956,
+              "bbid": 219407,
+              "endings": {},
+              "wires": {}
+            },
+            "521298_43397_219353_275957_null_219412": {
+              "$id": "1599145cc60-378-673d2ae9-56d5-42fb-8d2a-35846f3bf3c0",
+              "$local_id": "Terminal_848",
+              "$class": "Terminal",
+              "pmid": 521298,
+              "sdid": 43397,
+              "spid": 219353,
+              "ppid": 275957,
+              "bbid": 219412,
+              "endings": {},
+              "wires": {}
+            },
+            "521301_43397_219350_275976_null_219415": {
+              "$id": "1599145cc60-379-f6535d96-9e63-45e2-a291-142c7c023f6c",
+              "$local_id": "Terminal_849",
+              "$class": "Terminal",
+              "pmid": 521301,
+              "sdid": 43397,
+              "spid": 219350,
+              "ppid": 275976,
+              "bbid": 219415,
+              "endings": {},
+              "wires": {}
+            },
+            "521304_43397_219347_275967_null_219429": {
+              "$id": "1599145cc60-37a-6a20e403-3ace-4bd6-acde-684b902475e7",
+              "$local_id": "Terminal_850",
+              "$class": "Terminal",
+              "pmid": 521304,
+              "sdid": 43397,
+              "spid": 219347,
+              "ppid": 275967,
+              "bbid": 219429,
+              "endings": {},
+              "wires": {}
+            },
+            "521309_43397_219342_275958_null_219424": {
+              "$id": "1599145cc60-37b-014a3dc4-fa17-4ad7-a800-89f680d154aa",
+              "$local_id": "Terminal_851",
+              "$class": "Terminal",
+              "pmid": 521309,
+              "sdid": 43397,
+              "spid": 219342,
+              "ppid": 275958,
+              "bbid": 219424,
+              "endings": {},
+              "wires": {}
+            },
+            "521285_43397_219366_275953_null_219399": {
+              "$id": "1599145cc60-37c-3b822ff5-8869-4ce5-a5bd-b7b398868cee",
+              "$local_id": "Terminal_852",
+              "$class": "Terminal",
+              "pmid": 521285,
+              "sdid": 43397,
+              "spid": 219366,
+              "ppid": 275953,
+              "bbid": 219399,
+              "endings": {},
+              "wires": {}
+            },
+            "521287_43397_219364_275979_null_219401": {
+              "$id": "1599145cc61-37d-65adb7f9-8029-4b8d-ace6-52b5c5751bbc",
+              "$local_id": "Terminal_853",
+              "$class": "Terminal",
+              "pmid": 521287,
+              "sdid": 43397,
+              "spid": 219364,
+              "ppid": 275979,
+              "bbid": 219401,
+              "endings": {},
+              "wires": {}
+            },
+            "521314_43397_219337_275977_null_219419": {
+              "$id": "1599145cc61-37e-7d44186f-7c5f-4754-9b98-36d413b9c24f",
+              "$local_id": "Terminal_854",
+              "$class": "Terminal",
+              "pmid": 521314,
+              "sdid": 43397,
+              "spid": 219337,
+              "ppid": 275977,
+              "bbid": 219419,
+              "endings": {},
+              "wires": {}
+            },
+            "521286_43397_219365_275960_null_219400": {
+              "$id": "1599145cc61-37f-466f951b-eda4-45dd-b2f7-7ffe679200cc",
+              "$local_id": "Terminal_855",
+              "$class": "Terminal",
+              "pmid": 521286,
+              "sdid": 43397,
+              "spid": 219365,
+              "ppid": 275960,
+              "bbid": 219400,
+              "endings": {},
+              "wires": {}
+            },
+            "521306_43397_219345_275968_null_219427": {
+              "$id": "1599145cc62-380-3d38229f-c748-4811-ac77-0a7d6422ee38",
+              "$local_id": "Terminal_856",
+              "$class": "Terminal",
+              "pmid": 521306,
+              "sdid": 43397,
+              "spid": 219345,
+              "ppid": 275968,
+              "bbid": 219427,
+              "endings": {},
+              "wires": {}
+            },
+            "521313_43397_219338_275969_null_219420": {
+              "$id": "1599145cc62-381-de0b81cb-feb9-4c6d-86c5-8b839d4a5eb7",
+              "$local_id": "Terminal_857",
+              "$class": "Terminal",
+              "pmid": 521313,
+              "sdid": 43397,
+              "spid": 219338,
+              "ppid": 275969,
+              "bbid": 219420,
+              "endings": {},
+              "wires": {}
+            },
+            "521316_43397_219335_275954_null_219417": {
+              "$id": "1599145cc62-382-d5852d7d-6c77-4b0d-b170-1560d1f5ebac",
+              "$local_id": "Terminal_858",
+              "$class": "Terminal",
+              "pmid": 521316,
+              "sdid": 43397,
+              "spid": 219335,
+              "ppid": 275954,
+              "bbid": 219417,
+              "endings": {},
+              "wires": {}
+            },
+            "521302_43397_219349_275961_null_219416": {
+              "$id": "1599145cc62-383-d6a796dc-5495-40fa-8d99-02458c4af378",
+              "$local_id": "Terminal_859",
+              "$class": "Terminal",
+              "pmid": 521302,
+              "sdid": 43397,
+              "spid": 219349,
+              "ppid": 275961,
+              "bbid": 219416,
+              "endings": {},
+              "wires": {}
+            },
+            "521294_43397_219357_275970_null_219408": {
+              "$id": "1599145cc62-384-5b740554-e445-4f7e-8335-99cc40888a69",
+              "$local_id": "Terminal_860",
+              "$class": "Terminal",
+              "pmid": 521294,
+              "sdid": 43397,
+              "spid": 219357,
+              "ppid": 275970,
+              "bbid": 219408,
+              "endings": {},
+              "wires": {}
+            },
+            "521289_43397_219362_275963_null_219403": {
+              "$id": "1599145cc63-385-91206279-b165-4c4b-b23e-ef6e283fa868",
+              "$local_id": "Terminal_861",
+              "$class": "Terminal",
+              "pmid": 521289,
+              "sdid": 43397,
+              "spid": 219362,
+              "ppid": 275963,
+              "bbid": 219403,
+              "endings": {},
+              "wires": {}
+            },
+            "521305_43397_219346_275964_null_219428": {
+              "$id": "1599145cc63-386-df9a2cce-c7a0-420d-9eca-f7450b0fdefa",
+              "$local_id": "Terminal_862",
+              "$class": "Terminal",
+              "pmid": 521305,
+              "sdid": 43397,
+              "spid": 219346,
+              "ppid": 275964,
+              "bbid": 219428,
+              "endings": {},
+              "wires": {}
+            },
+            "521310_43397_219341_275959_null_219423": {
+              "$id": "1599145cc66-387-26d5ad12-e8c3-4a5c-9693-a275b1b769f3",
+              "$local_id": "Terminal_863",
+              "$class": "Terminal",
+              "pmid": 521310,
+              "sdid": 43397,
+              "spid": 219341,
+              "ppid": 275959,
+              "bbid": 219423,
+              "endings": {},
+              "wires": {
+                "15991468846-59d-95338539-f7fb-422d-b93c-6d4822960dd2": {
+                  "$idref": "15991468846-59d-95338539-f7fb-422d-b93c-6d4822960dd2",
+                  "$class": "BendableBreadboardWire"
+                }
+              },
+              "net": {
+                "$idref": "1599146884a-5a6-22a40b0c-1049-4a04-b5f9-cc3dee293acc",
+                "$class": "Net"
+              },
+              "subnet": {
+                "$idref": "1599146884b-5a7-e3f6a429-a325-47a1-a3ed-461e7e8c0943",
+                "$class": "SchematicNet"
+              }
+            },
+            "521291_43397_219360_275978_null_219405": {
+              "$id": "1599145cc66-388-85f01b21-71c8-4ddf-b0f0-fda4990de445",
+              "$local_id": "Terminal_864",
+              "$class": "Terminal",
+              "pmid": 521291,
+              "sdid": 43397,
+              "spid": 219360,
+              "ppid": 275978,
+              "bbid": 219405,
+              "endings": {},
+              "wires": {}
+            },
+            "521296_43397_219355_275973_null_219410": {
+              "$id": "1599145cc67-389-06b04c26-6ddb-48df-b169-e535ec240094",
+              "$local_id": "Terminal_865",
+              "$class": "Terminal",
+              "pmid": 521296,
+              "sdid": 43397,
+              "spid": 219355,
+              "ppid": 275973,
+              "bbid": 219410,
+              "endings": {},
+              "wires": {}
+            },
+            "521303_43397_219348_275965_null_219430": {
+              "$id": "1599145cc67-38a-d46e8f57-a1a2-40b4-9d3e-e4c767332766",
+              "$local_id": "Terminal_866",
+              "$class": "Terminal",
+              "pmid": 521303,
+              "sdid": 43397,
+              "spid": 219348,
+              "ppid": 275965,
+              "bbid": 219430,
+              "endings": {},
+              "wires": {}
+            },
+            "521307_43397_219344_275966_null_219426": {
+              "$id": "1599145cc67-38b-57451efe-0169-45a8-8fe9-ccb1a6c41f8f",
+              "$local_id": "Terminal_867",
+              "$class": "Terminal",
+              "pmid": 521307,
+              "sdid": 43397,
+              "spid": 219344,
+              "ppid": 275966,
+              "bbid": 219426,
+              "endings": {},
+              "wires": {}
+            },
+            "521311_43397_219340_275951_null_219422": {
+              "$id": "1599145cc68-38c-25d75cf4-7001-4b38-81df-345f03803d35",
+              "$local_id": "Terminal_868",
+              "$class": "Terminal",
+              "pmid": 521311,
+              "sdid": 43397,
+              "spid": 219340,
+              "ppid": 275951,
+              "bbid": 219422,
+              "endings": {},
+              "wires": {}
+            },
+            "521315_43397_219336_275982_null_219418": {
+              "$id": "1599145cc68-38d-dafd42d3-b268-4a24-ad38-3004481c28f4",
+              "$local_id": "Terminal_869",
+              "$class": "Terminal",
+              "pmid": 521315,
+              "sdid": 43397,
+              "spid": 219336,
+              "ppid": 275982,
+              "bbid": 219418,
+              "endings": {},
+              "wires": {}
+            },
+            "521308_43397_219343_275949_null_219425": {
+              "$id": "1599145cc68-38e-2c21253f-e0b7-460e-be84-4ae49c0a49c4",
+              "$local_id": "Terminal_870",
+              "$class": "Terminal",
+              "pmid": 521308,
+              "sdid": 43397,
+              "spid": 219343,
+              "ppid": 275949,
+              "bbid": 219425,
+              "endings": {},
+              "wires": {
+                "15991466cf8-4fc-ce64ac22-e6b9-4ec1-b5bf-7a069f61b1f9": {
+                  "$idref": "15991466cf8-4fc-ce64ac22-e6b9-4ec1-b5bf-7a069f61b1f9",
+                  "$class": "BendableBreadboardWire"
+                }
+              },
+              "net": {
+                "$idref": "15991466cfe-505-ee0b3d75-0b0c-4383-a6a5-535e49043997",
+                "$class": "Net"
+              },
+              "subnet": {
+                "$idref": "15991466cff-506-daccb159-a329-4a5d-aeb4-02567538118b",
+                "$class": "SchematicNet"
+              }
+            },
+            "521312_43397_219339_275952_null_219421": {
+              "$id": "1599145cc68-38f-e2003636-1707-40e8-9e42-c9dd3978d305",
+              "$local_id": "Terminal_871",
+              "$class": "Terminal",
+              "pmid": 521312,
+              "sdid": 43397,
+              "spid": 219339,
+              "ppid": 275952,
+              "bbid": 219421,
+              "endings": {},
+              "wires": {
+                "15991469393-60e-b5d1d232-59fe-484e-b6c9-b58df4a4fef7": {
+                  "$idref": "15991469393-60e-b5d1d232-59fe-484e-b6c9-b58df4a4fef7",
+                  "$class": "BendableBreadboardWire"
+                }
+              },
+              "net": {
+                "$idref": "15991469396-617-c6dd9f95-8a95-4357-a3e4-72fc7a8d753c",
+                "$class": "Net"
+              },
+              "subnet": {
+                "$idref": "15991469397-618-9f436306-7388-4bee-aad3-c6f7dd6464b1",
+                "$class": "SchematicNet"
+              }
+            },
+            "null_null_null_275971_null_null": {
+              "$id": "1599145cc68-390-33fc9517-2449-4663-8716-3c9a36825873",
+              "$local_id": "Terminal_872",
+              "$class": "Terminal",
+              "ppid": 275971,
+              "endings": {},
+              "wires": {}
+            },
+            "null_null_null_275972_null_null": {
+              "$id": "1599145cc69-391-a3e59f45-ffdc-4bda-9c63-a40bb1d5a844",
+              "$local_id": "Terminal_873",
+              "$class": "Terminal",
+              "ppid": 275972,
+              "endings": {},
+              "wires": {}
+            },
+            "null_null_null_275948_null_null": {
+              "$id": "1599145cc69-392-f0f5684a-aa3b-4cd0-812f-80334e773a60",
+              "$local_id": "Terminal_874",
+              "$class": "Terminal",
+              "ppid": 275948,
+              "endings": {},
+              "wires": {}
+            },
+            "null_null_null_275947_null_null": {
+              "$id": "1599145cc69-393-7da0d72b-2b75-49b5-8df2-c9b84fb5be9d",
+              "$local_id": "Terminal_875",
+              "$class": "Terminal",
+              "ppid": 275947,
+              "endings": {},
+              "wires": {}
+            }
+          },
+          "subdevice": {
+            "43397": {
+              "$id": "1599145cc59-36d-fbc18abb-020e-43af-8ee5-16f1df1b15f8",
+              "$local_id": "SchematicElement_0",
+              "$class": "SchematicElement",
+              "pos": {
+                "x": 0,
+                "y": 0,
+                "$class": "Coordinate"
+              },
+              "angle": 0,
+              "flip": 1,
+              "sdid": 43397
+            }
+          },
+          "properties": {
+            "995": {
+              "id": 995,
+              "name": "Code",
+              "unit": "code",
+              "value": "/*\n\n  Smoothing\n\n  Reads repeatedly from an analog input, calculating a running average\n  and printing it to the computer.  Keeps ten readings in an array and\n  continually averages them.\n\n  The circuit:\n    * Analog sensor (potentiometer will do) attached to analog input 0\n\n  Created 22 April 2007\n  By David A. Mellis  <dam@mellis.org>\n  modified 9 Apr 2012\n  by Tom Igoe\n  http://www.arduino.cc/en/Tutorial/Smoothing\n\n  This example code is in the public domain.\n\n\n*/\n\n\n// Define the number of samples to keep track of.  The higher the number,\n// the more the readings will be smoothed, but the slower the output will\n// respond to the input.  Using a constant rather than a normal variable lets\n// use this value to determine the size of the readings array.\nconst int numReadings = 10;\n\nint readings[numReadings];      // the readings from the analog input\nint readIndex = 0;              // the index of the current reading\nint total = 0;                  // the running total\nint average = 0;                // the average\n\nint inputPin = A0;\n\nvoid setup() {\n  // initialize serial communication with computer:\n  Serial.begin(9600);\n  // initialize all the readings to 0:\n  for (int thisReading = 0; thisReading < numReadings; thisReading++) {\n    readings[thisReading] = 0;\n  }\n}\n\nvoid loop() {\n  // subtract the last reading:\n  total = total - readings[readIndex];\n  // read from the sensor:\n  readings[readIndex] = analogRead(inputPin);\n  // add the reading to the total:\n  total = total + readings[readIndex];\n  // advance to the next position in the array:\n  readIndex = readIndex + 1;\n\n  // if we're at the end of the array...\n  if (readIndex >= numReadings) {\n    // ...wrap around to the beginning:\n    readIndex = 0;\n  }\n\n  // calculate the average:\n  average = total / numReadings;\n  // send it to the computer as ASCII digits\n  Serial.println(average);\n  delay(1);        // delay in between reads for stability\n}",
+              "show": false,
+              "prefix": ""
+            }
+          }
+        },
+        "15991465321-4c4-e8957bdc-8a0b-4b47-9da0-74ed7d009f7b": {
+          "$id": "15991465321-4c4-e8957bdc-8a0b-4b47-9da0-74ed7d009f7b",
+          "$local_id": "Device_4",
+          "$class": "Device",
+          "name": "1",
+          "did": 45547,
+          "breadboard": {
+            "$id": "15991465322-4c6-7e17db8f-a747-40b6-bc78-d777516979fd",
+            "$local_id": "BreadboardElement_4",
+            "$class": "BreadboardElement",
+            "pos": {
+              "x": 9.144827586206873,
+              "y": 119.95258262897357,
+              "$class": "Coordinate"
+            },
+            "angle": 180,
+            "flip": 1
+          },
+          "footprint": {
+            "$id": "15991465322-4c7-e0cfe4b2-54f1-4c5e-9e6b-97c58531f58d",
+            "$local_id": "PCBElement_3",
+            "$class": "PCBElement",
+            "pos": {
+              "x": 20000,
+              "y": 5000,
+              "$class": "Coordinate"
+            },
+            "angle": 0,
+            "flip": 1
+          },
+          "terminals": {
+            "198526_18470_182_23953_null_202855": {
+              "$id": "15991465322-4c8-a77a0943-46d8-47ba-9906-a583d657b03e",
+              "$local_id": "Terminal_880",
+              "$class": "Terminal",
+              "pmid": 198526,
+              "sdid": 18470,
+              "spid": 182,
+              "ppid": 23953,
+              "bbid": 202855,
+              "endings": {},
+              "wires": {
+                "15991469393-60e-b5d1d232-59fe-484e-b6c9-b58df4a4fef7": {
+                  "$idref": "15991469393-60e-b5d1d232-59fe-484e-b6c9-b58df4a4fef7",
+                  "$class": "BendableBreadboardWire"
+                }
+              },
+              "net": {
+                "$idref": "15991469396-617-c6dd9f95-8a95-4357-a3e4-72fc7a8d753c",
+                "$class": "Net"
+              },
+              "subnet": {
+                "$idref": "15991469397-618-9f436306-7388-4bee-aad3-c6f7dd6464b1",
+                "$class": "SchematicNet"
+              }
+            },
+            "198525_18470_183_23955_null_202853": {
+              "$id": "15991465322-4c9-9ac62620-d1cb-4383-a95c-039ae7bffc37",
+              "$local_id": "Terminal_881",
+              "$class": "Terminal",
+              "pmid": 198525,
+              "sdid": 18470,
+              "spid": 183,
+              "ppid": 23955,
+              "bbid": 202853,
+              "endings": {},
+              "wires": {
+                "15991468846-59d-95338539-f7fb-422d-b93c-6d4822960dd2": {
+                  "$idref": "15991468846-59d-95338539-f7fb-422d-b93c-6d4822960dd2",
+                  "$class": "BendableBreadboardWire"
+                }
+              },
+              "net": {
+                "$idref": "1599146884a-5a6-22a40b0c-1049-4a04-b5f9-cc3dee293acc",
+                "$class": "Net"
+              },
+              "subnet": {
+                "$idref": "1599146884b-5a7-e3f6a429-a325-47a1-a3ed-461e7e8c0943",
+                "$class": "SchematicNet"
+              }
+            },
+            "198524_18470_181_23954_null_202854": {
+              "$id": "15991465323-4ca-91dde1b2-9a6d-45f1-91d4-8c218e065476",
+              "$local_id": "Terminal_882",
+              "$class": "Terminal",
+              "pmid": 198524,
+              "sdid": 18470,
+              "spid": 181,
+              "ppid": 23954,
+              "bbid": 202854,
+              "endings": {},
+              "wires": {
+                "15991466cf8-4fc-ce64ac22-e6b9-4ec1-b5bf-7a069f61b1f9": {
+                  "$idref": "15991466cf8-4fc-ce64ac22-e6b9-4ec1-b5bf-7a069f61b1f9",
+                  "$class": "BendableBreadboardWire"
+                }
+              },
+              "net": {
+                "$idref": "15991466cfe-505-ee0b3d75-0b0c-4383-a6a5-535e49043997",
+                "$class": "Net"
+              },
+              "subnet": {
+                "$idref": "15991466cff-506-daccb159-a329-4a5d-aeb4-02567538118b",
+                "$class": "SchematicNet"
+              }
+            }
+          },
+          "subdevice": {
+            "18470": {
+              "$id": "15991465322-4c5-4af38527-0c2f-470d-ac92-291e291b4a2d",
+              "$local_id": "SchematicElement_3",
+              "$class": "SchematicElement",
+              "pos": {
+                "x": 150,
+                "y": 0,
+                "$class": "Coordinate"
+              },
+              "angle": 0,
+              "flip": 1,
+              "sdid": 18470
+            }
+          },
+          "properties": {
+            "202": {
+              "id": 202,
+              "name": "resistance",
+              "unit": "Ohm",
+              "value": 250,
+              "show": null,
+              "prefix": "k"
+            },
+            "1807": {
+              "id": 1807,
+              "name": "Position",
+              "unit": "hidden",
+              "value": 0.56,
+              "show": false,
+              "prefix": ""
+            }
+          }
+        }
+      },
+      "nets": {
+        "15991460900-3ac-2839a559-3f18-4a5b-8a8f-85f59dce3f28": {
+          "$id": "15991460900-3ac-2839a559-3f18-4a5b-8a8f-85f59dce3f28",
+          "$local_id": "Net_0",
+          "$class": "Net",
+          "subnets": {
+            "15991460903-3ad-40b860d4-dc4a-44e6-81fb-21936834e120": {
+              "$id": "15991460903-3ad-40b860d4-dc4a-44e6-81fb-21936834e120",
+              "$local_id": "SchematicNet_0",
+              "$class": "SchematicNet",
+              "terminals": {}
+            }
+          },
+          "segments": {},
+          "vias": {},
+          "pins": {}
+        },
+        "15991461aea-3b7-f7477a91-1750-4078-acd3-53c3b3536161": {
+          "$id": "15991461aea-3b7-f7477a91-1750-4078-acd3-53c3b3536161",
+          "$local_id": "Net_1",
+          "$class": "Net",
+          "subnets": {
+            "15991461aea-3b8-293ca480-705a-4863-857f-0dd63ecb0aaa": {
+              "$id": "15991461aea-3b8-293ca480-705a-4863-857f-0dd63ecb0aaa",
+              "$local_id": "SchematicNet_1",
+              "$class": "SchematicNet",
+              "terminals": {}
+            }
+          },
+          "segments": {},
+          "vias": {},
+          "pins": {}
+        },
+        "15991462943-4c2-5f178a87-f428-49d7-abec-e0b05be1157a": {
+          "$id": "15991462943-4c2-5f178a87-f428-49d7-abec-e0b05be1157a",
+          "$local_id": "Net_2",
+          "$class": "Net",
+          "subnets": {
+            "15991462943-4c3-e796f1b8-7386-442d-9426-d1e0a9b2a880": {
+              "$id": "15991462943-4c3-e796f1b8-7386-442d-9426-d1e0a9b2a880",
+              "$local_id": "SchematicNet_2",
+              "$class": "SchematicNet",
+              "terminals": {}
+            }
+          },
+          "segments": {},
+          "vias": {},
+          "pins": {}
+        },
+        "15991466cfe-505-ee0b3d75-0b0c-4383-a6a5-535e49043997": {
+          "$id": "15991466cfe-505-ee0b3d75-0b0c-4383-a6a5-535e49043997",
+          "$local_id": "Net_3",
+          "$class": "Net",
+          "subnets": {
+            "15991466cff-506-daccb159-a329-4a5d-aeb4-02567538118b": {
+              "$id": "15991466cff-506-daccb159-a329-4a5d-aeb4-02567538118b",
+              "$local_id": "SchematicNet_3",
+              "$class": "SchematicNet",
+              "terminals": {
+                "15991465323-4ca-91dde1b2-9a6d-45f1-91d4-8c218e065476": {
+                  "$idref": "15991465323-4ca-91dde1b2-9a6d-45f1-91d4-8c218e065476",
+                  "$class": "Terminal"
+                },
+                "1599145cc68-38e-2c21253f-e0b7-460e-be84-4ae49c0a49c4": {
+                  "$idref": "1599145cc68-38e-2c21253f-e0b7-460e-be84-4ae49c0a49c4",
+                  "$class": "Terminal"
+                }
+              }
+            }
+          },
+          "segments": {},
+          "vias": {},
+          "pins": {}
+        },
+        "1599146884a-5a6-22a40b0c-1049-4a04-b5f9-cc3dee293acc": {
+          "$id": "1599146884a-5a6-22a40b0c-1049-4a04-b5f9-cc3dee293acc",
+          "$local_id": "Net_4",
+          "$class": "Net",
+          "subnets": {
+            "1599146884b-5a7-e3f6a429-a325-47a1-a3ed-461e7e8c0943": {
+              "$id": "1599146884b-5a7-e3f6a429-a325-47a1-a3ed-461e7e8c0943",
+              "$local_id": "SchematicNet_4",
+              "$class": "SchematicNet",
+              "terminals": {
+                "15991465322-4c9-9ac62620-d1cb-4383-a95c-039ae7bffc37": {
+                  "$idref": "15991465322-4c9-9ac62620-d1cb-4383-a95c-039ae7bffc37",
+                  "$class": "Terminal"
+                },
+                "1599145cc66-387-26d5ad12-e8c3-4a5c-9693-a275b1b769f3": {
+                  "$idref": "1599145cc66-387-26d5ad12-e8c3-4a5c-9693-a275b1b769f3",
+                  "$class": "Terminal"
+                }
+              }
+            }
+          },
+          "segments": {},
+          "vias": {},
+          "pins": {}
+        },
+        "15991469396-617-c6dd9f95-8a95-4357-a3e4-72fc7a8d753c": {
+          "$id": "15991469396-617-c6dd9f95-8a95-4357-a3e4-72fc7a8d753c",
+          "$local_id": "Net_5",
+          "$class": "Net",
+          "subnets": {
+            "15991469397-618-9f436306-7388-4bee-aad3-c6f7dd6464b1": {
+              "$id": "15991469397-618-9f436306-7388-4bee-aad3-c6f7dd6464b1",
+              "$local_id": "SchematicNet_5",
+              "$class": "SchematicNet",
+              "terminals": {
+                "15991465322-4c8-a77a0943-46d8-47ba-9906-a583d657b03e": {
+                  "$idref": "15991465322-4c8-a77a0943-46d8-47ba-9906-a583d657b03e",
+                  "$class": "Terminal"
+                },
+                "1599145cc68-38f-e2003636-1707-40e8-9e42-c9dd3978d305": {
+                  "$idref": "1599145cc68-38f-e2003636-1707-40e8-9e42-c9dd3978d305",
+                  "$class": "Terminal"
+                }
+              }
+            }
+          },
+          "segments": {},
+          "vias": {},
+          "pins": {}
+        }
+      },
+      "wires": {
+        "15991466cf8-4fc-ce64ac22-e6b9-4ec1-b5bf-7a069f61b1f9": {
+          "$id": "15991466cf8-4fc-ce64ac22-e6b9-4ec1-b5bf-7a069f61b1f9",
+          "$local_id": "BendableBreadboardWire_3",
+          "$class": "BendableBreadboardWire",
+          "closed": false,
+          "fill": false,
+          "strokeWidth": 2.5,
+          "begin": {
+            "$idref": "15991465323-4ca-91dde1b2-9a6d-45f1-91d4-8c218e065476",
+            "$class": "Terminal"
+          },
+          "end": {
+            "$idref": "1599145cc68-38e-2c21253f-e0b7-460e-be84-4ae49c0a49c4",
+            "$class": "Terminal"
+          },
+          "insert": false,
+          "color": "green",
+          "objects": [
+            {
+              "$id": "15991466cf9-4fd-84a6b248-4d08-490b-8836-266c37ecc64d",
+              "$local_id": "PathObject_216",
+              "$class": "PathObject",
+              "endpoint": {
+                "x": 9.144827586206873,
+                "y": 119.95258262897357,
+                "$class": "Coordinate"
+              },
+              "tan_0": {
+                "x": 9.144827586206873,
+                "y": 119.95258262897357,
+                "$class": "Coordinate"
+              },
+              "tan_1": {
+                "x": 9.144827586206873,
+                "y": 119.95258262897357,
+                "$class": "Coordinate"
+              },
+              "type": 0
+            },
+            {
+              "$id": "15991466cf9-4fe-f9492abf-b435-4e24-bcf7-7c20d80a14ac",
+              "$local_id": "PathObject_217",
+              "$class": "PathObject",
+              "endpoint": {
+                "x": 25.606896551724105,
+                "y": 70.04223780138739,
+                "$class": "Coordinate"
+              },
+              "tan_0": {
+                "x": 25.606896551724105,
+                "y": 70.04223780138739,
+                "$class": "Coordinate"
+              },
+              "tan_1": {
+                "x": 25.606896551724105,
+                "y": 70.04223780138739,
+                "$class": "Coordinate"
+              },
+              "type": 4
+            }
+          ]
+        },
+        "15991468846-59d-95338539-f7fb-422d-b93c-6d4822960dd2": {
+          "$id": "15991468846-59d-95338539-f7fb-422d-b93c-6d4822960dd2",
+          "$local_id": "BendableBreadboardWire_4",
+          "$class": "BendableBreadboardWire",
+          "closed": false,
+          "fill": false,
+          "strokeWidth": 2.5,
+          "begin": {
+            "$idref": "15991465322-4c9-9ac62620-d1cb-4383-a95c-039ae7bffc37",
+            "$class": "Terminal"
+          },
+          "end": {
+            "$idref": "1599145cc66-387-26d5ad12-e8c3-4a5c-9693-a275b1b769f3",
+            "$class": "Terminal"
+          },
+          "insert": false,
+          "color": "black",
+          "objects": [
+            {
+              "$id": "15991468846-59e-76c161f2-6c6d-4f92-bf4a-b219c0c80595",
+              "$local_id": "PathObject_318",
+              "$class": "PathObject",
+              "endpoint": {
+                "x": 19.144827586206873,
+                "y": 119.95258262897357,
+                "$class": "Coordinate"
+              },
+              "tan_0": {
+                "x": 19.144827586206873,
+                "y": 119.95258262897357,
+                "$class": "Coordinate"
+              },
+              "tan_1": {
+                "x": 19.144827586206873,
+                "y": 119.95258262897357,
+                "$class": "Coordinate"
+              },
+              "type": 0
+            },
+            {
+              "$id": "15991468847-59f-67563364-eb43-47ad-89dc-6cd64374e366",
+              "$local_id": "PathObject_319",
+              "$class": "PathObject",
+              "endpoint": {
+                "x": -4.393103448275895,
+                "y": 70.04223780138739,
+                "$class": "Coordinate"
+              },
+              "tan_0": {
+                "x": -4.393103448275895,
+                "y": 70.04223780138739,
+                "$class": "Coordinate"
+              },
+              "tan_1": {
+                "x": -4.393103448275895,
+                "y": 70.04223780138739,
+                "$class": "Coordinate"
+              },
+              "type": 4
+            }
+          ]
+        },
+        "15991469393-60e-b5d1d232-59fe-484e-b6c9-b58df4a4fef7": {
+          "$id": "15991469393-60e-b5d1d232-59fe-484e-b6c9-b58df4a4fef7",
+          "$local_id": "BendableBreadboardWire_5",
+          "$class": "BendableBreadboardWire",
+          "closed": false,
+          "fill": false,
+          "strokeWidth": 2.5,
+          "begin": {
+            "$idref": "15991465322-4c8-a77a0943-46d8-47ba-9906-a583d657b03e",
+            "$class": "Terminal"
+          },
+          "end": {
+            "$idref": "1599145cc68-38f-e2003636-1707-40e8-9e42-c9dd3978d305",
+            "$class": "Terminal"
+          },
+          "insert": false,
+          "color": "red",
+          "objects": [
+            {
+              "$id": "15991469394-60f-a2fa0997-01bc-4c4b-ba79-cc36905d723b",
+              "$local_id": "PathObject_388",
+              "$class": "PathObject",
+              "endpoint": {
+                "x": -0.8551724137931274,
+                "y": 119.95258262897357,
+                "$class": "Coordinate"
+              },
+              "tan_0": {
+                "x": -0.8551724137931274,
+                "y": 119.95258262897357,
+                "$class": "Coordinate"
+              },
+              "tan_1": {
+                "x": -0.8551724137931274,
+                "y": 119.95258262897357,
+                "$class": "Coordinate"
+              },
+              "type": 0
+            },
+            {
+              "$id": "15991469394-610-41b0f716-7aab-4dc1-9670-e50e3f6799db",
+              "$local_id": "PathObject_389",
+              "$class": "PathObject",
+              "endpoint": {
+                "x": -24.393103448275895,
+                "y": 70.04223780138739,
+                "$class": "Coordinate"
+              },
+              "tan_0": {
+                "x": -24.393103448275895,
+                "y": 70.04223780138739,
+                "$class": "Coordinate"
+              },
+              "tan_1": {
+                "x": -24.393103448275895,
+                "y": 70.04223780138739,
+                "$class": "Coordinate"
+              },
+              "type": 4
+            }
+          ]
+        }
+      },
+      "drills": {},
+      "localDeviceDescriptions": {},
+      "undo": [],
+      "redo": [],
+      "users": {
+        "25ecd370805f12eb3eb05974afcffaeb": {
+          "name": "",
+          "last_active": 1484200833270
+        },
+        "45f5f880e17c99e00add1b414415c79b": {
+          "name": "",
+          "last_active": 1484201120271
+        },
+        "9ca84be9b267e80851d6c368a5a4c3a0": {
+          "name": "",
+          "last_active": 1484202122171
+        }
+      },
+      "runHeavies": "--"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "device_id": "212155",
+  "simulation_model": "voltageRegulator5V",
+  "implementation_found": true,
+  "module_id": "34639",
+  "model_file": "models/voltageRegulator5V--module-34639.js"
+}

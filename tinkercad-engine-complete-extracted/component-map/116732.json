@@ -1,0 +1,7 @@
+{
+  "device_id": "116732",
+  "simulation_model": "photodiode_v2",
+  "implementation_found": true,
+  "module_id": "43050",
+  "model_file": "models/photodiode_v2--module-43050.js"
+}

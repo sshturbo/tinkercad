@@ -1,0 +1,7 @@
+{
+  "device_id": "239306",
+  "simulation_model": "sensor_gas",
+  "implementation_found": true,
+  "module_id": "58766",
+  "model_file": "models/sensor_gas--module-58766.js"
+}

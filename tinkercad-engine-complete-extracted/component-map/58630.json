@@ -1,0 +1,7 @@
+{
+  "device_id": "58630",
+  "simulation_model": "oscilloscope",
+  "implementation_found": true,
+  "module_id": "63909",
+  "model_file": "models/oscilloscope--module-63909.js"
+}

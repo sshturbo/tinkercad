@@ -1,0 +1,7 @@
+{
+  "device_id": "58422",
+  "simulation_model": "led2",
+  "implementation_found": true,
+  "module_id": "2292",
+  "model_file": "models/led2--module-2292.js"
+}

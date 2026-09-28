@@ -1,0 +1,7 @@
+{
+  "device_id": "146812",
+  "simulation_model": "dip_switch_spdt",
+  "implementation_found": true,
+  "module_id": "83883",
+  "model_file": "models/dip_switch_spdt--module-83883.js"
+}

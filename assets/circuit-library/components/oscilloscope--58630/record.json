@@ -1,0 +1,133 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 17927,
+  "device_id": "58630",
+  "name": "Oscilloscope",
+  "description": "Electronic test equipment for measuring output signals.",
+  "tags": [
+    "instrument",
+    "measure",
+    "voltage",
+    "scope"
+  ],
+  "thumbnail": "oscilloscope.png",
+  "thumbnail_source": "/oscilloscope.png",
+  "footprint": {
+    "name": "no footprint",
+    "id": 58630
+  },
+  "simulation_model": "oscilloscope",
+  "extents": {
+    "top": -181,
+    "left": -83,
+    "width": 173,
+    "height": 181
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-23T10:38:45Z",
+      "dir": 90,
+      "id": 202858,
+      "label": null,
+      "name": "Negative",
+      "schematic_symbol_id": 20209,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T10:38:45Z",
+      "x": -5,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-23T10:38:45Z",
+      "dir": 90,
+      "id": 202859,
+      "label": null,
+      "name": "Positive",
+      "schematic_symbol_id": 20209,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T10:38:45Z",
+      "x": 5,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2014-04-23T18:58:41Z",
+      "dir": 90,
+      "id": 116769,
+      "label": null,
+      "name": "neg",
+      "schematic_symbol_id": 10328,
+      "terminal_type": "schematic",
+      "updated_at": "2014-04-23T18:59:03Z",
+      "x": 10,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2014-04-23T18:57:11Z",
+      "dir": 90,
+      "id": 116768,
+      "label": null,
+      "name": "pos",
+      "schematic_symbol_id": 10328,
+      "terminal_type": "schematic",
+      "updated_at": "2014-04-23T19:09:21Z",
+      "x": -10,
+      "y": 0
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "created_at": "2014-07-30T14:05:43Z",
+      "default": 1,
+      "default_prefix": "none",
+      "default_show": false,
+      "device_id": 17927,
+      "id": 285,
+      "name": "Volt per division",
+      "unit": "hidden",
+      "updated_at": "2015-12-17T22:21:16Z"
+    },
+    {
+      "path": "device.properties_attributes.1",
+      "created_at": "2014-07-30T14:05:43Z",
+      "default": 100,
+      "default_prefix": "m",
+      "default_show": false,
+      "device_id": 17927,
+      "id": 286,
+      "name": "Time per division",
+      "unit": "s",
+      "updated_at": "2014-07-30T14:05:43Z"
+    }
+  ],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14543724610c8db7f0747658a12ee73ae0f9c49206/thumbnail20160202-18701-u9fgva.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14543724610c8db7f0747658a12ee73ae0f9c49206/thumbnail20160202-18701-u9fgva.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/145437246276a4ecae1e4337effb3dc6ad43a60ee3/thumbnail20160202-32523-gsg0oi.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/145437246276a4ecae1e4337effb3dc6ad43a60ee3/thumbnail20160202-32523-gsg0oi.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/58630.json"
+}

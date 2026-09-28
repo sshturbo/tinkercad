@@ -1,0 +1,71 @@
+[
+  {
+    "id": "starterCircuitAssemblyGlow",
+    "name": "Glow Circuit Assembly",
+    "description": "Create a simple glowing design with an LED and battery.",
+    "tags": [
+      "power",
+      "voltage",
+      "supply",
+      "Coin Cell 3V Battery",
+      "output",
+      "light",
+      "diode",
+      "display",
+      "LED"
+    ],
+    "thumbnail": "starters/circuit-assemblies/starterCircuitAssemblyGlow.png",
+    "thumbnail_source": "/starterCircuitAssemblyGlow.png",
+    "category": "circuit-assemblies",
+    "footprint_name": "starterCircuitAssemblyGlow",
+    "footprint_id": "starterCircuitAssemblyGlow",
+    "has_detailed_packaged_device": false
+  },
+  {
+    "id": "starterCircuitAssemblyMove",
+    "name": "Move Circuit Assembly",
+    "description": "Build a design that moves with a vibration motor and switch.",
+    "tags": [
+      "power",
+      "voltage",
+      "supply",
+      "Coin Cell 3V Battery",
+      "output",
+      "motion",
+      "vibrate",
+      "move",
+      "wiggle",
+      "Vibration Motor",
+      "input",
+      "button",
+      "Slideswitch"
+    ],
+    "thumbnail": "starters/circuit-assemblies/starterCircuitAssemblyMove.png",
+    "thumbnail_source": "/starterCircuitAssemblyMove.png",
+    "category": "circuit-assemblies",
+    "footprint_name": "starterCircuitAssemblyMove",
+    "footprint_id": "starterCircuitAssemblyMove",
+    "has_detailed_packaged_device": false
+  },
+  {
+    "id": "starterCircuitAssemblySpin",
+    "name": "Spin Circuit Assembly",
+    "description": "Create a spinning design with a hobby gearmotor and battery box.",
+    "tags": [
+      "power",
+      "voltage",
+      "supply",
+      "1.5V Battery",
+      "output",
+      "motion",
+      "spin",
+      "Hobby Gearmotor"
+    ],
+    "thumbnail": "starters/circuit-assemblies/starterCircuitAssemblySpin.png",
+    "thumbnail_source": "/starterCircuitAssemblySpin.png",
+    "category": "circuit-assemblies",
+    "footprint_name": "starterCircuitAssemblySpin",
+    "footprint_id": "starterCircuitAssemblySpin",
+    "has_detailed_packaged_device": false
+  }
+]

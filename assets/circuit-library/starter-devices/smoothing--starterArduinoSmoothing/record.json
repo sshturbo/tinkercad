@@ -1,0 +1,65 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "starter-device",
+  "id": "starterArduinoSmoothing",
+  "device_id": "starterArduinoSmoothing",
+  "name": "Smoothing",
+  "description": "Average analog input over time to create a smoother signal.",
+  "tags": [
+    "microcontroller",
+    "Arduino Uno R3",
+    "input",
+    "variable",
+    "resistor",
+    "knob",
+    "dial",
+    "Potentiometer"
+  ],
+  "thumbnail": "starterArduinoSmoothing.png",
+  "thumbnail_source": "/starterArduinoSmoothing.png",
+  "footprint": {
+    "name": "starterArduinoSmoothing",
+    "id": "starterArduinoSmoothing"
+  },
+  "simulation_model": null,
+  "extents": null,
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [],
+  "properties": [
+    {
+      "path": "proxy.starter.devices.1599145cc54-36c-daa898d4-3967-4293-8330-5677d2d7f437.properties.995",
+      "id": 995,
+      "name": "Code",
+      "unit": "code",
+      "value": "/*\n\n  Smoothing\n\n  Reads repeatedly from an analog input, calculating a running average\n  and printing it to the computer.  Keeps ten readings in an array and\n  continually averages them.\n\n  The circuit:\n    * Analog sensor (potentiometer will do) attached to analog input 0\n\n  Created 22 April 2007\n  By David A. Mellis  <dam@mellis.org>\n  modified 9 Apr 2012\n  by Tom Igoe\n  http://www.arduino.cc/en/Tutorial/Smoothing\n\n  This example code is in the public domain.\n\n\n*/\n\n\n// Define the number of samples to keep track of.  The higher the number,\n// the more the readings will be smoothed, but the slower the output will\n// respond to the input.  Using a constant rather than a normal variable lets\n// use this value to determine the size of the readings array.\nconst int numReadings = 10;\n\nint readings[numReadings];      // the readings from the analog input\nint readIndex = 0;              // the index of the current reading\nint total = 0;                  // the running total\nint average = 0;                // the average\n\nint inputPin = A0;\n\nvoid setup() {\n  // initialize serial communication with computer:\n  Serial.begin(9600);\n  // initialize all the readings to 0:\n  for (int thisReading = 0; thisReading < numReadings; thisReading++) {\n    readings[thisReading] = 0;\n  }\n}\n\nvoid loop() {\n  // subtract the last reading:\n  total = total - readings[readIndex];\n  // read from the sensor:\n  readings[readIndex] = analogRead(inputPin);\n  // add the reading to the total:\n  total = total + readings[readIndex];\n  // advance to the next position in the array:\n  readIndex = readIndex + 1;\n\n  // if we're at the end of the array...\n  if (readIndex >= numReadings) {\n    // ...wrap around to the beginning:\n    readIndex = 0;\n  }\n\n  // calculate the average:\n  average = total / numReadings;\n  // send it to the computer as ASCII digits\n  Serial.println(average);\n  delay(1);        // delay in between reads for stability\n}",
+      "show": false,
+      "prefix": ""
+    },
+    {
+      "path": "proxy.starter.devices.15991465321-4c4-e8957bdc-8a0b-4b47-9da0-74ed7d009f7b.properties.202",
+      "id": 202,
+      "name": "resistance",
+      "unit": "Ohm",
+      "value": 250,
+      "show": null,
+      "prefix": "k"
+    },
+    {
+      "path": "proxy.starter.devices.15991465321-4c4-e8957bdc-8a0b-4b47-9da0-74ed7d009f7b.properties.1807",
+      "id": 1807,
+      "name": "Position",
+      "unit": "hidden",
+      "value": 0.56,
+      "show": false,
+      "prefix": ""
+    }
+  ],
+  "datasheets_or_references": [],
+  "raw_device_json": "../../raw/packaged_devices/starterArduinoSmoothing.json"
+}

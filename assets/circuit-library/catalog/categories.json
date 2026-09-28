@@ -1,0 +1,56 @@
+{
+  "menus": [
+    {
+      "id": "components",
+      "label": "Componentes",
+      "items": [
+        {
+          "id": "basic",
+          "label": "Básico",
+          "source": "catalog/components-basic.json"
+        },
+        {
+          "id": "all",
+          "label": "Todos",
+          "source": "catalog/components-all.json"
+        }
+      ]
+    },
+    {
+      "id": "starters",
+      "label": "Disparadores",
+      "items": [
+        {
+          "id": "basic",
+          "label": "Básico",
+          "source": "catalog/starters-basic.json"
+        },
+        {
+          "id": "arduino",
+          "label": "Arduino",
+          "source": "catalog/starters-arduino.json"
+        },
+        {
+          "id": "microbit",
+          "label": "Micro:Bit",
+          "source": "catalog/starters-microbit.json"
+        },
+        {
+          "id": "circuit-assemblies",
+          "label": "Montagens de Circuito",
+          "source": "catalog/starters-circuit-assemblies.json"
+        },
+        {
+          "id": "all",
+          "label": "Todos",
+          "source": "catalog/starters-all.json"
+        }
+      ]
+    }
+  ],
+  "advanced_sources": {
+    "detailed_starter_devices": "catalog/starter-devices-detailed.json",
+    "helpers": "catalog/helpers.json",
+    "all_packaged_devices": "catalog/all-packaged-devices.json"
+  }
+}

@@ -1,0 +1,193 @@
+[
+  {
+    "id": "starterMicrobitAlarm",
+    "name": "Alarm",
+    "description": "micro:bit, PIR sensor, and piezo buzzer alarm.",
+    "tags": [
+      "microbit",
+      "micro:bit",
+      "input",
+      "infrared",
+      "motion",
+      "detector",
+      "PIR Sensor",
+      "output",
+      "sound",
+      "speaker",
+      "buzzer",
+      "Piezo"
+    ],
+    "thumbnail": "starters/microbit/starterMicrobitAlarm.png",
+    "thumbnail_source": "/starterMicrobitAlarm.png",
+    "category": "microbit",
+    "footprint_name": "starterMicrobitAlarm",
+    "footprint_id": "starterMicrobitAlarm",
+    "has_detailed_packaged_device": false
+  },
+  {
+    "id": "starterMicrobitAnalog",
+    "name": "Analog",
+    "description": "micro:bit analog input/output example.",
+    "tags": [
+      "microbit",
+      "micro:bit",
+      "output",
+      "light",
+      "diode",
+      "display",
+      "LED",
+      "input",
+      "variable",
+      "resistor",
+      "knob",
+      "dial",
+      "Potentiometer"
+    ],
+    "thumbnail": "starters/microbit/starterMicrobitAnalog.png",
+    "thumbnail_source": "/starterMicrobitAnalog.png",
+    "category": "microbit",
+    "footprint_name": "starterMicrobitAnalog",
+    "footprint_id": "starterMicrobitAnalog",
+    "has_detailed_packaged_device": false
+  },
+  {
+    "id": "starterMicrobitBreadboard",
+    "name": "Breadboard",
+    "description": "micro:bit and a breadboard.",
+    "tags": [
+      "microbit",
+      "micro:bit",
+      "Breadboard Small"
+    ],
+    "thumbnail": "starters/microbit/starterMicrobitBreadboard.png",
+    "thumbnail_source": "/starterMicrobitBreadboard.png",
+    "category": "microbit",
+    "footprint_name": "starterMicrobitBreadboard",
+    "footprint_id": "starterMicrobitBreadboard",
+    "has_detailed_packaged_device": false
+  },
+  {
+    "id": "starterMicrobitCompass",
+    "name": "Compass",
+    "description": "micro:bit magnetic sensor example.",
+    "tags": [
+      "microbit",
+      "micro:bit"
+    ],
+    "thumbnail": "starters/microbit/starterMicrobitCompass.png",
+    "thumbnail_source": "/starterMicrobitCompass.png",
+    "category": "microbit",
+    "footprint_name": "starterMicrobitCompass",
+    "footprint_id": "starterMicrobitCompass",
+    "has_detailed_packaged_device": false
+  },
+  {
+    "id": "starterMicrobitGestures",
+    "name": "Gestures",
+    "description": "micro:bit accelerometer, pushbutton, and touch example.",
+    "tags": [
+      "microbit",
+      "micro:bit",
+      "input",
+      "switch",
+      "press",
+      "key",
+      "Pushbutton"
+    ],
+    "thumbnail": "starters/microbit/starterMicrobitGestures.png",
+    "thumbnail_source": "/starterMicrobitGestures.png",
+    "category": "microbit",
+    "footprint_name": "starterMicrobitGestures",
+    "footprint_id": "starterMicrobitGestures",
+    "has_detailed_packaged_device": false
+  },
+  {
+    "id": "starterMicrobitLight",
+    "name": "Light",
+    "description": "micro:bit light sensor example.",
+    "tags": [
+      "microbit",
+      "micro:bit"
+    ],
+    "thumbnail": "starters/microbit/starterMicrobitLight.png",
+    "thumbnail_source": "/starterMicrobitLight.png",
+    "category": "microbit",
+    "footprint_name": "starterMicrobitLight",
+    "footprint_id": "starterMicrobitLight",
+    "has_detailed_packaged_device": false
+  },
+  {
+    "id": "starterMicrobitBreakout",
+    "name": "micro:bit breakout",
+    "description": "micro:bit and a breadboard.",
+    "tags": [
+      "microbit",
+      "micro:bit",
+      "Breadboard",
+      "instrument",
+      "voltage",
+      "Power Supply"
+    ],
+    "thumbnail": "starters/microbit/starterMicrobitBreakout.png",
+    "thumbnail_source": "/starterMicrobitBreakout.png",
+    "category": "microbit",
+    "footprint_name": "starterMicrobitBreakout",
+    "footprint_id": "starterMicrobitBreakout",
+    "has_detailed_packaged_device": false
+  },
+  {
+    "id": "starterMicrobitMoisture",
+    "name": "Moisture",
+    "description": "micro:bit soil moisture sensor example.",
+    "tags": [
+      "microbit",
+      "micro:bit",
+      "Soil Moisture Sensor"
+    ],
+    "thumbnail": "starters/microbit/starterMicrobitMoisture.png",
+    "thumbnail_source": "/starterMicrobitMoisture.png",
+    "category": "microbit",
+    "footprint_name": "starterMicrobitMoisture",
+    "footprint_id": "starterMicrobitMoisture",
+    "has_detailed_packaged_device": true
+  },
+  {
+    "id": "starterMicrobitRadio",
+    "name": "Radio",
+    "description": "micro:bit bluetooth radio.",
+    "tags": [
+      "microbit",
+      "micro:bit"
+    ],
+    "thumbnail": "starters/microbit/starterMicrobitRadio.png",
+    "thumbnail_source": "/starterMicrobitRadio.png",
+    "category": "microbit",
+    "footprint_name": "starterMicrobitRadio",
+    "footprint_id": "starterMicrobitRadio",
+    "has_detailed_packaged_device": false
+  },
+  {
+    "id": "starterMicrobitServo",
+    "name": "Servo",
+    "description": "micro:bit thermometer using a servo motor.",
+    "tags": [
+      "microbit",
+      "micro:bit",
+      "output",
+      "motion",
+      "pwm",
+      "pulse width modulation",
+      "Micro Servo",
+      "power",
+      "voltage",
+      "supply",
+      "1.5V Battery"
+    ],
+    "thumbnail": "starters/microbit/starterMicrobitServo.png",
+    "thumbnail_source": "/starterMicrobitServo.png",
+    "category": "microbit",
+    "footprint_name": "starterMicrobitServo",
+    "footprint_id": "starterMicrobitServo",
+    "has_detailed_packaged_device": false
+  }
+]

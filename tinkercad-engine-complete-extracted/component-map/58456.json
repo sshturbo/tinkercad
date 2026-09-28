@@ -1,0 +1,7 @@
+{
+  "device_id": "58456",
+  "simulation_model": "ledRGB",
+  "implementation_found": true,
+  "module_id": "37833",
+  "model_file": "models/ledRGB--module-37833.js"
+}

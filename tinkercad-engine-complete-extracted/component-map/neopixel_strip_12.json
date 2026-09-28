@@ -1,0 +1,7 @@
+{
+  "device_id": "neopixel_strip_12",
+  "simulation_model": "ws2812_strip12",
+  "implementation_found": true,
+  "module_id": "20365",
+  "model_file": "models/ws2812_strip12--module-20365.js"
+}

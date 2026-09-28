@@ -1,0 +1,1 @@
+12572(e,t,i){const n=i(77627).create;e.exports=function(e,t){return attributes={name:e},Object.assign(attributes,t),n("part",attributes)}

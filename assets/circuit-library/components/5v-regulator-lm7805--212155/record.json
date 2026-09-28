@@ -1,0 +1,228 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 48952,
+  "device_id": "212155",
+  "name": "5V Regulator [LM7805]",
+  "description": "Used to provide a fixed 5V output voltage.",
+  "tags": [
+    "power control",
+    "voltage"
+  ],
+  "thumbnail": "regulator5V.png",
+  "thumbnail_source": "/regulator5V.png",
+  "footprint": {
+    "name": "TO220",
+    "id": 212155
+  },
+  "simulation_model": "voltageRegulator5V",
+  "extents": {
+    "top": -44,
+    "left": -15,
+    "width": 30,
+    "height": 44
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2016-06-03T21:39:06Z",
+      "dir": 90,
+      "id": 283340,
+      "label": null,
+      "name": "In",
+      "schematic_symbol_id": 31029,
+      "terminal_type": "breadboard",
+      "updated_at": "2016-06-03T21:39:06Z",
+      "x": -10,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2016-06-03T21:39:06Z",
+      "dir": 90,
+      "id": 283341,
+      "label": null,
+      "name": "Ground",
+      "schematic_symbol_id": 31029,
+      "terminal_type": "breadboard",
+      "updated_at": "2016-06-03T21:39:06Z",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.2",
+      "created_at": "2016-06-03T21:39:06Z",
+      "dir": 90,
+      "id": 283342,
+      "label": null,
+      "name": "Out",
+      "schematic_symbol_id": 31029,
+      "terminal_type": "breadboard",
+      "updated_at": "2016-06-03T21:39:06Z",
+      "x": 10,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2016-06-03T21:31:22Z",
+      "dir": 180,
+      "id": 283334,
+      "label": null,
+      "name": "in",
+      "schematic_symbol_id": 31027,
+      "terminal_type": "schematic",
+      "updated_at": "2016-06-03T21:31:22Z",
+      "x": -40,
+      "y": 30
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2016-06-03T21:31:22Z",
+      "dir": 90,
+      "id": 283335,
+      "label": null,
+      "name": "gnd",
+      "schematic_symbol_id": 31027,
+      "terminal_type": "schematic",
+      "updated_at": "2016-06-03T21:31:22Z",
+      "x": 0,
+      "y": 60
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.2",
+      "created_at": "2016-06-03T21:31:22Z",
+      "dir": 0,
+      "id": 283336,
+      "label": null,
+      "name": "out",
+      "schematic_symbol_id": 31027,
+      "terminal_type": "schematic",
+      "updated_at": "2016-06-03T21:31:22Z",
+      "x": 40,
+      "y": 30
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-09-12T01:38:42Z",
+      "dir": null,
+      "drill": "3302.0",
+      "footprint_id": 10008270,
+      "generator_type": "single",
+      "id": 10045968,
+      "layer0": null,
+      "layer1": null,
+      "name": "hole-5.08-12.446-3.302",
+      "number": null,
+      "pad_type_id": 392,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-12-11T13:19:35Z",
+      "x": 5080,
+      "y": -12446
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-09-12T01:38:42Z",
+      "dir": 90,
+      "drill": "1117.6",
+      "footprint_id": 10008270,
+      "generator_type": "single",
+      "id": 10045967,
+      "layer0": "<rect x=\"-1676.3999999999999\" y=\"-838.1999999999999\" width=\"3352.7999999999997\" height=\"1676.3999999999999\"/>",
+      "layer1": "<rect x=\"-1676.3999999999999\" y=\"-838.1999999999999\" width=\"3352.7999999999997\" height=\"1676.3999999999999\"/>",
+      "name": "3",
+      "number": null,
+      "pad_type_id": 1574,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-12-11T13:20:28Z",
+      "x": 7620,
+      "y": 2540
+    },
+    {
+      "path": "footprint.pads_attributes.2",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-09-12T01:38:42Z",
+      "dir": 90,
+      "drill": "1117.6",
+      "footprint_id": 10008270,
+      "generator_type": "single",
+      "id": 10045966,
+      "layer0": "<rect x=\"-1676.3999999999999\" y=\"-838.1999999999999\" width=\"3352.7999999999997\" height=\"1676.3999999999999\"/>",
+      "layer1": "<rect x=\"-1676.3999999999999\" y=\"-838.1999999999999\" width=\"3352.7999999999997\" height=\"1676.3999999999999\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": 1574,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-12-11T13:20:28Z",
+      "x": 5080,
+      "y": 2540
+    },
+    {
+      "path": "footprint.pads_attributes.3",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-09-12T01:38:42Z",
+      "dir": 90,
+      "drill": "1117.6",
+      "footprint_id": 10008270,
+      "generator_type": "single",
+      "id": 10045965,
+      "layer0": "<rect x=\"-1676.3999999999999\" y=\"-838.1999999999999\" width=\"3352.7999999999997\" height=\"1676.3999999999999\"/>",
+      "layer1": "<rect x=\"-1676.3999999999999\" y=\"-838.1999999999999\" width=\"3352.7999999999997\" height=\"1676.3999999999999\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": 1574,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-12-11T13:20:28Z",
+      "x": 2540,
+      "y": 2540
+    }
+  ],
+  "properties": [],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1465275850e0a46b6f894075bf68ff7a7d2cfc7a81/thumbnail20160607-8035-sfvyb3.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1465275850e0a46b6f894075bf68ff7a7d2cfc7a81/thumbnail20160607-8035-sfvyb3.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14652758517e0d1bf7e1a529f1e757a6d202df8b96/thumbnail20160607-7998-1ebr065.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14652758517e0d1bf7e1a529f1e757a6d202df8b96/thumbnail20160607-7998-1ebr065.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/144551792936ba8c1ed9da7b8ac1354ff89d965c7c/thumbnail20151022-8353-6m7iwk.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/144551792936ba8c1ed9da7b8ac1354ff89d965c7c/thumbnail20151022-8353-6m7iwk.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/212155.json"
+}

@@ -1,0 +1,1 @@
+30787(e,t,i){var n=i(2250);n.Event=function(e,t,i){this.time=e,this.signal=t,this.value=i,this.removed=!1},n.Event.prototype.execute=function(){this.signal.execute(this)},n.Event.prototype.cancel=function(){this.removed=!0}

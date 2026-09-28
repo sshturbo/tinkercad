@@ -1,0 +1,7 @@
+{
+  "device_id": "sensorFlex",
+  "simulation_model": "sensorFlex",
+  "implementation_found": true,
+  "module_id": "28308",
+  "model_file": "models/sensorFlex--module-28308.js"
+}

@@ -1,0 +1,7 @@
+{
+  "device_id": "129343",
+  "simulation_model": "74HC4017",
+  "implementation_found": true,
+  "module_id": "85658",
+  "model_file": "models/74HC4017--module-85658.js"
+}

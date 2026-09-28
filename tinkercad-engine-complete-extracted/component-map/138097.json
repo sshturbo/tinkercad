@@ -1,0 +1,7 @@
+{
+  "device_id": "138097",
+  "simulation_model": "IRremote",
+  "implementation_found": true,
+  "module_id": "27505",
+  "model_file": "models/IRremote--module-27505.js"
+}

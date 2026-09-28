@@ -1,0 +1,7 @@
+{
+  "device_id": "241925",
+  "simulation_model": "AABattery",
+  "implementation_found": true,
+  "module_id": "9058",
+  "model_file": "models/AABattery--module-9058.js"
+}

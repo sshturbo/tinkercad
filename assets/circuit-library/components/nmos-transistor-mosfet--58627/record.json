@@ -1,0 +1,205 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 17924,
+  "device_id": "58627",
+  "name": "nMOS Transistor (MOSFET)",
+  "description": "Large signal voltage controlled transistor.",
+  "tags": [
+    "power control"
+  ],
+  "thumbnail": "transistorNMOSFET.png",
+  "thumbnail_source": "/transistorNMOSFET.png",
+  "footprint": {
+    "name": "TO220",
+    "id": 58627
+  },
+  "simulation_model": "power_nmos",
+  "extents": {
+    "top": -44,
+    "left": -15,
+    "width": 30,
+    "height": 44
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-24T10:13:39Z",
+      "dir": 90,
+      "id": 203506,
+      "label": null,
+      "name": "Gate",
+      "schematic_symbol_id": 20276,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-24T10:13:39Z",
+      "x": -10,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-24T10:13:39Z",
+      "dir": 90,
+      "id": 203507,
+      "label": null,
+      "name": "Drain",
+      "schematic_symbol_id": 20276,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-24T10:13:39Z",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.2",
+      "created_at": "2015-06-24T10:13:39Z",
+      "dir": 90,
+      "id": 203508,
+      "label": null,
+      "name": "Source",
+      "schematic_symbol_id": 20276,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-24T10:13:39Z",
+      "x": 10,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2012-07-03T19:47:38Z",
+      "dir": 90,
+      "id": 22,
+      "label": null,
+      "name": "source",
+      "schematic_symbol_id": 12,
+      "terminal_type": "schematic",
+      "updated_at": "2012-07-03T19:47:38Z",
+      "x": 18,
+      "y": 23.593
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2012-07-03T19:47:38Z",
+      "dir": 270,
+      "id": 23,
+      "label": null,
+      "name": "drain",
+      "schematic_symbol_id": 12,
+      "terminal_type": "schematic",
+      "updated_at": "2012-07-03T19:47:38Z",
+      "x": 18,
+      "y": -23.593
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.2",
+      "created_at": "2012-07-03T19:47:38Z",
+      "dir": 180,
+      "id": 24,
+      "label": null,
+      "name": "gate",
+      "schematic_symbol_id": 12,
+      "terminal_type": "schematic",
+      "updated_at": "2012-07-03T19:47:38Z",
+      "x": -18,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-02-24T22:51:10Z",
+      "dir": 90,
+      "drill": "1016.0",
+      "footprint_id": 3859,
+      "generator_type": "single",
+      "id": 17524,
+      "layer0": "<rect x=\"-1524.0\" y=\"-762.0\" width=\"3048.0\" height=\"1524.0\"/>",
+      "layer1": "<rect x=\"-1524.0\" y=\"-762.0\" width=\"3048.0\" height=\"1524.0\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": 499,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:46:19Z",
+      "x": -2540,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-02-24T22:51:10Z",
+      "dir": 90,
+      "drill": "1016.0",
+      "footprint_id": 3859,
+      "generator_type": "single",
+      "id": 17525,
+      "layer0": "<rect x=\"-1524.0\" y=\"-762.0\" width=\"3048.0\" height=\"1524.0\"/>",
+      "layer1": "<rect x=\"-1524.0\" y=\"-762.0\" width=\"3048.0\" height=\"1524.0\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": 499,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:46:19Z",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.2",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-02-24T22:51:10Z",
+      "dir": 90,
+      "drill": "1016.0",
+      "footprint_id": 3859,
+      "generator_type": "single",
+      "id": 17526,
+      "layer0": "<rect x=\"-1524.0\" y=\"-762.0\" width=\"3048.0\" height=\"1524.0\"/>",
+      "layer1": "<rect x=\"-1524.0\" y=\"-762.0\" width=\"3048.0\" height=\"1524.0\"/>",
+      "name": "3",
+      "number": null,
+      "pad_type_id": 499,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:46:19Z",
+      "x": 2540,
+      "y": 0
+    }
+  ],
+  "properties": [],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435142808bc84f306d92982798221fb9aaba86e3c/thumbnail20150624-5132-1unfzeq.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435142808bc84f306d92982798221fb9aaba86e3c/thumbnail20150624-5132-1unfzeq.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1431740435eae32ff971006344de994f2c8dc7680c/thumbnail20150516-1147-1921ekc.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1431740435eae32ff971006344de994f2c8dc7680c/thumbnail20150516-1147-1921ekc.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1434121599719323d27d6008c34b2281c94a12d532/thumbnail20150612-11902-fviq7k.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1434121599719323d27d6008c34b2281c94a12d532/thumbnail20150612-11902-fviq7k.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/58627.json"
+}

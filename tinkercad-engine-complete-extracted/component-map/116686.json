@@ -1,0 +1,7 @@
+{
+  "device_id": "116686",
+  "simulation_model": "USBstandard",
+  "implementation_found": true,
+  "module_id": "70394",
+  "model_file": "models/USBstandard--module-70394.js"
+}

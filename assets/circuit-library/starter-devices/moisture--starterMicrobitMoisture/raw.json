@@ -1,0 +1,1061 @@
+{
+  "device_id": "starterMicrobitMoisture",
+  "footprint_id": "starterMicrobitMoisture",
+  "id": "starterMicrobitMoisture",
+  "footprint_name": "starterMicrobitMoisture",
+  "device": {
+    "base": "PROXY",
+    "breadboard_id": "starterMicrobitMoisture",
+    "description": "Proxy object",
+    "id": "starterMicrobitMoisture",
+    "name": "Proxy",
+    "version_root_id": "starterMicrobitMoisture",
+    "breadboard": {
+      "background": false,
+      "breadboard": false,
+      "id": "starterMicrobitMoisture",
+      "name": "proxy",
+      "svg": "<svg viewBox=\"-1000 -1000 2000 2000\" width=\"2000\" height=\"2000\" x=\"-1000\" y=\"-1000\"><path class=\"cgfx__proxy\" d=\"m-81.1-105.72c-7.57 0-13.75 6.18-13.75 13.75l0 141c0 7.57 6.18 13.75 13.75 13.75l40.5 0 0 14.75c0 6.88 5.63 12.5 12.5 12.5l10.5 0c4.17 0 7.5 3.33 7.5 7.5l0 4.4-18 0c-6.33 0-11.5 5.17-11.5 11.5l0 200a1.5 1.5 0 00.08.48l10 30a1.5 1.5 0 001.42 1.02l10 0a1.5 1.5 0 001.42-1.02l10-30a1.5 1.5 0 00.08-.48l0-145c0-1.95 1.55-3.5 3.5-3.5l20 0c1.95 0 3.5 1.55 3.5 3.5l0 145a1.5 1.5 0 00.08.48l10 30a1.5 1.5 0 001.42 1.02l10 0a1.5 1.5 0 001.42-1.02l10-30a1.5 1.5 0 00.08-.48l0-200c0-6.33-5.17-11.5-11.5-11.5l-18 0 0-11.9 58 0c6.87 0 12.5-5.62 12.5-12.5l0-14.75.5 0c7.57 0 13.75-6.18 13.75-13.75l0-141c0-7.57-6.18-13.75-13.75-13.75l-176 0zm-7 84.12c.03.02.08.04.11.07.05.06.04.07.04.06 0-.01.01 0-.04.06-.03.03-.08.05-.11.07-.03-.02-.08-.04-.11-.07-.05-.06-.04-.07-.04-.06 0 .01-.01 0 .04-.06.03-.03.08-.05.11-.07zm190 0c.03.02.08.04.11.07.05.06.04.07.04.06 0-.01.01 0-.04.06-.03.03-.08.05-.11.07-.03-.02-.08-.04-.11-.07-.05-.06-.04-.07-.04-.06 0 .01-.01 0 .04-.06.03-.03.08-.05.11-.07zm-7.18 9.61 0 0-.03 0c.01 0 .02 0 .03 0zm-172.82 38.77c3.47 0 6.25 2.78 6.25 6.25 0 3.47-2.78 6.25-6.25 6.25-3.47 0-6.25-2.78-6.25-6.25 0-3.47 2.78-6.25 6.25-6.25zm40 0c3.47 0 6.25 2.78 6.25 6.25 0 3.47-2.78 6.25-6.25 6.25-3.47 0-6.25-2.78-6.25-6.25 0-3.47 2.78-6.25 6.25-6.25zm45 0c3.47 0 6.25 2.78 6.25 6.25 0 3.47-2.78 6.25-6.25 6.25-3.47 0-6.25-2.78-6.25-6.25 0-3.47 2.78-6.25 6.25-6.25zm45 0c3.47 0 6.25 2.78 6.25 6.25 0 3.47-2.78 6.25-6.25 6.25-3.47 0-6.25-2.78-6.25-6.25 0-3.47 2.78-6.25 6.25-6.25zm40 0c3.47 0 6.25 2.78 6.25 6.25 0 3.47-2.78 6.25-6.25 6.25-3.47 0-6.25-2.78-6.25-6.25 0-3.47 2.78-6.25 6.25-6.25zm-127.5 36 40 0 0 7.5c0 5.36 4.4 9.75 9.75 9.75 2.65 0 4.75 2.1 4.75 4.75l0 .25-2 0c-6.87 0-12.5 5.63-12.5 12.5l0 4.4-9.5 0 0-4.4c0-6.87-5.63-12.5-12.5-12.5l-10.5 0c-4.17 0-7.5-3.33-7.5-7.5l0-14.75zm45 0 80 0 0 14.75c0 4.17-3.33 7.5-7.5 7.5l-58 0 0-.25c0-5.35-4.39-9.75-9.75-9.75-2.65 0-4.75-2.1-4.75-4.75l0-7.5zm7.5 27.25 2 0 0 11.9-9.5 0 0-4.4c0-4.17 3.33-7.5 7.5-7.5z\" style=\"fill:#3b8ed7;fill-opacity:.4;fill-rule:nonzero;stroke:#3b8ed7;stroke-width:1px;\"/></svg>\n",
+      "symbol_type": "breadboard",
+      "terminal_list": null,
+      "rootId": "starterMicrobitMoisture",
+      "schematic_symbol_terminals_attributes": []
+    },
+    "subdevices_attributes": [],
+    "properties_attributes": []
+  },
+  "root_id": "starterMicrobitMoisture",
+  "pinmaps_attributes": [],
+  "proxy": {
+    "starter": {
+      "$id": "17fe135fb3f-0-cc212b01-06f7-4b6f-8c4d-395544635d62",
+      "$local_id": "Circuit_0",
+      "$class": "Circuit",
+      "circuit_type": "breadboard",
+      "version": 5,
+      "number_of_layers": 2,
+      "outline": {
+        "$id": "17fe135fb40-2-3abe3c08-2319-48d9-9c4c-d07840025a4b",
+        "$local_id": "BezierOutline_0",
+        "$class": "BezierOutline",
+        "upperLeft": {
+          "x": 0,
+          "y": 0,
+          "$class": "Coordinate"
+        },
+        "lowerRight": {
+          "x": 57150.00000000001,
+          "y": 53340.00000000001,
+          "$class": "Coordinate"
+        },
+        "points": [
+          {
+            "$id": "17fe135fb41-4-28324b4e-2605-47e6-b04e-481d12922eab",
+            "$local_id": "BezierVertex_0",
+            "$class": "BezierVertex",
+            "point": {
+              "x": 0,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "tan_0": {
+              "x": 0,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "tan_1": {
+              "x": 0,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "mode": 0
+          },
+          {
+            "$id": "17fe135fb41-5-4eb88205-af90-4bb1-91c0-7c6e3c921561",
+            "$local_id": "BezierVertex_1",
+            "$class": "BezierVertex",
+            "point": {
+              "x": 57150,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "tan_0": {
+              "x": 0,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "tan_1": {
+              "x": 0,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "mode": 0
+          },
+          {
+            "$id": "17fe135fb41-6-4b1a9658-104d-4b78-b3f3-0b301ee34460",
+            "$local_id": "BezierVertex_2",
+            "$class": "BezierVertex",
+            "point": {
+              "x": 57150,
+              "y": 53340,
+              "$class": "Coordinate"
+            },
+            "tan_0": {
+              "x": 0,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "tan_1": {
+              "x": 0,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "mode": 0
+          },
+          {
+            "$id": "17fe135fb41-7-166489ed-2f24-4f5c-8f00-89c1ea3f1c23",
+            "$local_id": "BezierVertex_3",
+            "$class": "BezierVertex",
+            "point": {
+              "x": 0,
+              "y": 53340,
+              "$class": "Coordinate"
+            },
+            "tan_0": {
+              "x": 0,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "tan_1": {
+              "x": 0,
+              "y": 0,
+              "$class": "Coordinate"
+            },
+            "mode": 0
+          }
+        ]
+      },
+      "silkscreen": {
+        "$id": "17fe135fb41-8-70463968-e8b5-4ee8-8c08-1d474e3c5f77",
+        "$local_id": "SVG_0",
+        "$class": "SVG",
+        "elements": []
+      },
+      "bottomsilk": {
+        "$id": "17fe135fb41-9-b272e1b0-ef60-4d98-934a-fd3e526dcd60",
+        "$local_id": "SVG_1",
+        "$class": "SVG",
+        "elements": []
+      },
+      "schematicSvg": {
+        "$id": "17fe135fb42-a-1dbc8a0d-1791-4601-9bf5-90eaab9835ef",
+        "$local_id": "SVG_2",
+        "$class": "SVG",
+        "elements": []
+      },
+      "pcbOrigin": {
+        "$id": "17fe135fb40-1-5f6502e1-2e79-4a2b-89c9-e4b6803cb4da",
+        "$local_id": "OriginModel_0",
+        "$class": "OriginModel",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "$class": "Coordinate"
+        },
+        "grid_value": 100,
+        "grid_unit": "mil",
+        "grid_show": true,
+        "grid_thickness": 1
+      },
+      "drc_error": true,
+      "lib": [
+        "annotation",
+        "microbit",
+        "sensorSoilMoisture"
+      ],
+      "module_terminals": [],
+      "devices": {
+        "17fe136ae5d-17-482ecbf9-be15-4e80-9a62-f7e158ff1c49": {
+          "$id": "17fe136ae5d-17-482ecbf9-be15-4e80-9a62-f7e158ff1c49",
+          "$local_id": "Device_0",
+          "$class": "Device",
+          "name": "1",
+          "did": "microbit",
+          "breadboard": {
+            "$id": "17fe136ae5e-19-aa9efe6c-e2c4-4d0c-9dc7-feecea82b23f",
+            "$local_id": "BreadboardElement_0",
+            "$class": "BreadboardElement",
+            "pos": {
+              "x": 6.900773195876241,
+              "y": -21.469072164948443,
+              "$class": "Coordinate"
+            },
+            "angle": 0,
+            "flip": 1
+          },
+          "footprint": {
+            "$id": "17fe136ae5e-1a-4636ab9d-c215-4c72-b6b7-853d04f63ed5",
+            "$local_id": "PCBElement_0",
+            "$class": "PCBElement",
+            "pos": {
+              "x": 5000,
+              "y": 5000,
+              "$class": "Coordinate"
+            },
+            "angle": 0,
+            "flip": 1
+          },
+          "terminals": {
+            "microbitpmid0_microbitsaid_microbitspid0_microbitpaid0_null_microbitstid0": {
+              "$id": "17fe136ae5f-1b-a55d5f34-4967-487d-963e-fe5ec03a7ff5",
+              "$local_id": "Terminal_0",
+              "$class": "Terminal",
+              "pmid": "microbitpmid0",
+              "sdid": "microbitsaid",
+              "spid": "microbitspid0",
+              "ppid": "microbitpaid0",
+              "bbid": "microbitstid0",
+              "endings": {},
+              "wires": {}
+            },
+            "microbitpmid1_microbitsaid_microbitspid1_microbitpaid1_null_microbitstid1": {
+              "$id": "17fe136ae5f-1c-cc39b646-dccc-4b8a-a52f-bce9a8fb1ef4",
+              "$local_id": "Terminal_1",
+              "$class": "Terminal",
+              "pmid": "microbitpmid1",
+              "sdid": "microbitsaid",
+              "spid": "microbitspid1",
+              "ppid": "microbitpaid1",
+              "bbid": "microbitstid1",
+              "endings": {},
+              "wires": {
+                "17fe5df5c29-395-ebe7ab14-acb5-44db-88ee-12240388d988": {
+                  "$idref": "17fe5df5c29-395-ebe7ab14-acb5-44db-88ee-12240388d988",
+                  "$class": "BendableBreadboardWire"
+                }
+              },
+              "net": {
+                "$idref": "17fe5df5c30-3a8-8300b56a-5714-4a7f-b562-2786fc692330",
+                "$class": "Net"
+              },
+              "subnet": {
+                "$idref": "17fe5df5c3a-3a9-2b0caf9f-cd4e-4d87-9c95-772b32798abb",
+                "$class": "SchematicNet"
+              }
+            },
+            "microbitpmid2_microbitsaid_microbitspid2_microbitpaid2_null_microbitstid2": {
+              "$id": "17fe136ae5f-1d-32a83daa-eb8d-425a-825b-2c3b62645c98",
+              "$local_id": "Terminal_2",
+              "$class": "Terminal",
+              "pmid": "microbitpmid2",
+              "sdid": "microbitsaid",
+              "spid": "microbitspid2",
+              "ppid": "microbitpaid2",
+              "bbid": "microbitstid2",
+              "endings": {},
+              "wires": {
+                "17fe5df97c0-5ba-20edc299-7cbb-48a8-8473-5f7523101b3d": {
+                  "$idref": "17fe5df97c0-5ba-20edc299-7cbb-48a8-8473-5f7523101b3d",
+                  "$class": "BendableBreadboardWire"
+                }
+              },
+              "net": {
+                "$idref": "17fe5df97c9-5cd-689805c4-98bb-4bc7-b19d-fca6c9bee07e",
+                "$class": "Net"
+              },
+              "subnet": {
+                "$idref": "17fe5df97ca-5ce-85bfe8f5-ba02-4976-a232-61404fc58d77",
+                "$class": "SchematicNet"
+              }
+            },
+            "microbitpmid3_microbitsaid_microbitspid3_microbitpaid3_null_microbitstid3": {
+              "$id": "17fe136ae60-1e-54c4842d-9255-4df7-9e91-6ff08d56689e",
+              "$local_id": "Terminal_3",
+              "$class": "Terminal",
+              "pmid": "microbitpmid3",
+              "sdid": "microbitsaid",
+              "spid": "microbitspid3",
+              "ppid": "microbitpaid3",
+              "bbid": "microbitstid3",
+              "endings": {},
+              "wires": {}
+            },
+            "microbitpmid4_microbitsaid_microbitspid4_microbitpaid4_null_microbitstid4": {
+              "$id": "17fe136ae60-1f-ab5a560a-22f0-4abb-8a1e-fb9e19847caf",
+              "$local_id": "Terminal_4",
+              "$class": "Terminal",
+              "pmid": "microbitpmid4",
+              "sdid": "microbitsaid",
+              "spid": "microbitspid4",
+              "ppid": "microbitpaid4",
+              "bbid": "microbitstid4",
+              "endings": {},
+              "wires": {
+                "17fe5df162a-19f-205de63e-9c74-4269-80af-a1afa6fb44a7": {
+                  "$idref": "17fe5df162a-19f-205de63e-9c74-4269-80af-a1afa6fb44a7",
+                  "$class": "BendableBreadboardWire"
+                }
+              },
+              "net": {
+                "$idref": "17fe5df1631-1b2-efd87dce-ff66-4228-8939-9c0bf83f4a8a",
+                "$class": "Net"
+              },
+              "subnet": {
+                "$idref": "17fe5df1631-1b3-884f5030-9ba9-4b40-8378-13c121bbebf0",
+                "$class": "SchematicNet"
+              }
+            }
+          },
+          "subdevice": {
+            "microbitsaid": {
+              "$id": "17fe136ae5e-18-58f0ebe9-26cc-43dd-a628-d263199c5abf",
+              "$local_id": "SchematicElement_0",
+              "$class": "SchematicElement",
+              "pos": {
+                "x": 0,
+                "y": 0,
+                "$class": "Coordinate"
+              },
+              "angle": 0,
+              "flip": 1,
+              "sdid": "microbitsaid"
+            }
+          },
+          "properties": {
+            "microbitppid0": {
+              "id": "microbitppid0",
+              "name": "color",
+              "unit": "[[\"red\",\"Red\"],[\"yellow\",\"Yellow\"],[\"green\",\"Green\"],[\"blue\",\"Blue\"]]",
+              "value": 0,
+              "show": true,
+              "prefix": "red"
+            },
+            "microbitppid1": {
+              "id": "microbitppid1",
+              "name": "Code",
+              "unit": "code",
+              "value": "# Python code\n#\nmoisture = 0\nx = 0\ny = 0\n\ndef on_forever():\n  global moisture\n  global x\n  global y\n  pins.digital_write_pin(DigitalPin.P1, 1)\n  basic.pause(10)\n  moisture = Math.map(pins.analog_read_pin(AnalogPin.P2), 0, 813, 0, 100)\n  pins.digital_write_pin(DigitalPin.P1, 0)\n  if moisture < 50:\n    x = randint(0, 4)\n    y = 0\n    for index in range(9):\n      led.plot_brightness(x, y, 255)\n      led.plot_brightness(x, (y - 1), 32)\n      led.plot_brightness(x, (y - 2), 8)\n      led.plot_brightness(x, (y - 3), 2)\n      led.plot_brightness(x, (y - 4), 0)\n      y += 1\n      basic.pause(50)\n  else:\n    basic.pause(1000)\nbasic.forever(on_forever)\n//BLOCK_CODE_XML:<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables><variable type=\"\" id=\"r25LfFC$~$I,0U`QPX[0\">moisture</variable><variable type=\"\" id=\"bh|.{Af_vj0Dg8QBk_+M\">x</variable><variable type=\"\" id=\"nDiu)6Z:0PRoz{y]OR#(\">y</variable></variables><block type=\"microbit_forever\" id=\"2MmU{CTr~(!F%UGD]qA]\" x=\"50\" y=\"-377\"><statement name=\"DO\"><block type=\"microbit_digital_write_pin\" id=\"1/`FTroEG:qV;Mi`uq)I\"><field name=\"PIN\">P1</field><field name=\"VALUE\">HIGH</field><next><block type=\"control_wait_seconds\" id=\"y5Nm4e_/`:iU~mr)csi9\"><field name=\"UNITS\">MS</field><value name=\"DURATION\"><shadow type=\"math_positive_number\" id=\"C{6f^O;o9^FJoa*H7QZk\"><field name=\"NUM\">10</field></shadow></value><next><block type=\"data_setvariableto\" id=\"?KsLd)$ml)E$.do6zp;7\"><field name=\"VARIABLE\" id=\"r25LfFC$~$I,0U`QPX[0\" variabletype=\"\">moisture</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\"hRvz_`eugsP,8id5:9AT\"><field name=\"NUM\">0</field></shadow><block type=\"math_map_range_to_range\" id=\"@qObjgl_0K9]4Crgvu8d\"><value name=\"IN\"><shadow type=\"math_number\" id=\"CgR]VkKzH}4EV$Ghk}Z7\"><field name=\"NUM\">0</field></shadow><block type=\"microbit_read_analog\" id=\"sTG+,JuHNtD9g(Eq)+K~\"><field name=\"PIN\">P2</field></block></value><value name=\"IN_MIN\"><shadow type=\"math_number\" id=\"k0rV]90`xT^t;|UhLir,\"><field name=\"NUM\">0</field></shadow></value><value name=\"IN_MAX\"><shadow type=\"math_number\" id=\".OS:]oiuW~zfIk;I-FNA\"><field name=\"NUM\">813</field></shadow></value><value name=\"OUT_MIN\"><shadow type=\"math_number\" id=\"I-zik.SFdaOIJZURk]A.\"><field name=\"NUM\">0</field></shadow></value><value name=\"OUT_MAX\"><shadow type=\"math_number\" id=\"#AXd/tPfdzqRxP+}a.Mp\"><field name=\"NUM\">100</field></shadow></value></block></value><next><block type=\"microbit_digital_write_pin\" id=\"1d11LEYpk]jVfZ_ZfHRE\"><field name=\"PIN\">P1</field><field name=\"VALUE\">LOW</field><next><block type=\"control_if_else\" id=\"jn4HBod)fv(H8KOvmV,N\"><value name=\"CONDITION\"><shadow type=\"math_true_false\" id=\"8:*v.x@@t-!;UYFg)Gt)\"><field name=\"BOOL\">true</field></shadow><block type=\"math_compare_number_or_string\" id=\"mC!!C@rw4X5HZfRQF=a:\"><field name=\"OP\">LT</field><value name=\"A\"><shadow type=\"common_text\" id=\"AmC7:LJ`.wR8Ne!jugkQ\"><field name=\"TEXT\">1</field></shadow><block type=\"data_variable\" id=\"31SE)[aT[$v1:,b01Rxv\"><field name=\"VARIABLE\" id=\"r25LfFC$~$I,0U`QPX[0\" variabletype=\"\">moisture</field></block></value><value name=\"B\"><shadow type=\"common_text\" id=\"~Lto{fKxoE6Ym%Fcngq2\"><field name=\"TEXT\">50</field></shadow></value></block></value><statement name=\"DO\"><block type=\"data_setvariableto\" id=\"yc0zo1d!c./$UE{wCY;U\"><field name=\"VARIABLE\" id=\"bh|.{Af_vj0Dg8QBk_+M\" variabletype=\"\">x</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\"q3}/cPAqI=Z2vb{n^PL8\"><field name=\"NUM\">0</field></shadow><block type=\"math_random\" id=\"6!d$CBM,.!wckzI%b6`U\"><value name=\"LOW\"><shadow type=\"math_number\" id=\"7fV}TlkaSB:SdCtIqV=7\"><field name=\"NUM\">0</field></shadow></value><value name=\"HIGH\"><shadow type=\"math_number\" id=\"%/f=CCsko1W)0]_7Kg1k\"><field name=\"NUM\">4</field></shadow></value></block></value><next><block type=\"data_setvariableto\" id=\"6Iq@yU}WoS(*|s/B4!3V\"><field name=\"VARIABLE\" id=\"nDiu)6Z:0PRoz{y]OR#(\" variabletype=\"\">y</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\"vBocO6$H1IB5{hSx)ntp\"><field name=\"NUM\">0</field></shadow></value><next><block type=\"control_repeat\" id=\"EfN@DHsZ?G}38RX3a=Sy\"><value name=\"TIMES\"><shadow type=\"math_whole_number\" id=\"Tsh3Lk.~s?V[8/)rBW:B\"><field name=\"NUM\">9</field></shadow></value><statement name=\"DO\"><block type=\"microbit_plot_brightness\" id=\",KM)2L[SMs8v]_9Dpr|l\"><value name=\"X\"><shadow type=\"math_positive_number\" id=\"Rc%k[pu2JExx4ZG,Iss+\"><field name=\"NUM\">0</field></shadow><block type=\"data_variable\" id=\"SWh}pb*@o^y+-7]86pm?\"><field name=\"VARIABLE\" id=\"bh|.{Af_vj0Dg8QBk_+M\" variabletype=\"\">x</field></block></value><value name=\"Y\"><shadow type=\"math_positive_number\" id=\"p3yzNvup{GWz+{X/GvVA\"><field name=\"NUM\">0</field></shadow><block type=\"data_variable\" id=\"Xp:L.=E`,!Q~o@^~~2Q,\"><field name=\"VARIABLE\" id=\"nDiu)6Z:0PRoz{y]OR#(\" variabletype=\"\">y</field></block></value><value name=\"BRIGHTNESS\"><shadow type=\"math_positive_number\" id=\"r{7YwbYD(uN=~TP/eA)+\"><field name=\"NUM\">255</field></shadow></value><next><block type=\"microbit_plot_brightness\" id=\"oW]ufatK1rk%{nMc*)vS\"><value name=\"X\"><shadow type=\"math_positive_number\" id=\"aVwE6LRt#oAi49S::@b{\"><field name=\"NUM\">0</field></shadow><block type=\"data_variable\" id=\")?*/BVSK/QanM^$TMoJ;\"><field name=\"VARIABLE\" id=\"bh|.{Af_vj0Dg8QBk_+M\" variabletype=\"\">x</field></block></value><value name=\"Y\"><shadow type=\"math_positive_number\" id=\"CQ?%IYw#fm[|)*)!H1^_\"><field name=\"NUM\">0</field></shadow><block type=\"math_arithmetic\" id=\"^v7!@FM+Fw2]?RGO,bh}\"><field name=\"OP\">SUBTRACT</field><value name=\"A\"><shadow type=\"math_number\" id=\"*bJiEpyHd9#7Z:yE=-/D\"><field name=\"NUM\">1</field></shadow><block type=\"data_variable\" id=\"NUxYYmJ1acu~5rE7K=f5\"><field name=\"VARIABLE\" id=\"nDiu)6Z:0PRoz{y]OR#(\" variabletype=\"\">y</field></block></value><value name=\"B\"><shadow type=\"math_number\" id=\"C?`s2IrqQXYT+0#yt%_a\"><field name=\"NUM\">1</field></shadow></value></block></value><value name=\"BRIGHTNESS\"><shadow type=\"math_positive_number\" id=\"4rP7vg)QMJ?K{kH0/eHr\"><field name=\"NUM\">32</field></shadow></value><next><block type=\"microbit_plot_brightness\" id=\"uo[#o`3?J+s[9/H$0%UZ\"><value name=\"X\"><shadow type=\"math_positive_number\" id=\"tEIWdAy`vv2U~2^V#7y%\"><field name=\"NUM\">0</field></shadow><block type=\"data_variable\" id=\"mPk)u|K{Y$QIJV9f9,GK\"><field name=\"VARIABLE\" id=\"bh|.{Af_vj0Dg8QBk_+M\" variabletype=\"\">x</field></block></value><value name=\"Y\"><shadow type=\"math_positive_number\" id=\"N$^PuXj|1{U8?qV$oeiw\"><field name=\"NUM\">0</field></shadow><block type=\"math_arithmetic\" id=\"~Pw|y1Gg_o4bVj{7?I98\"><field name=\"OP\">SUBTRACT</field><value name=\"A\"><shadow type=\"math_number\" id=\"c~-j{Vz`,W-Dp.neV(b}\"><field name=\"NUM\">1</field></shadow><block type=\"data_variable\" id=\"a=J`q_DjEB6)GD4W1..{\"><field name=\"VARIABLE\" id=\"nDiu)6Z:0PRoz{y]OR#(\" variabletype=\"\">y</field></block></value><value name=\"B\"><shadow type=\"math_number\" id=\"Yw=SYel-@U(O9LeNjU69\"><field name=\"NUM\">2</field></shadow></value></block></value><value name=\"BRIGHTNESS\"><shadow type=\"math_positive_number\" id=\"$i(s!*,qCmV047ujAl%K\"><field name=\"NUM\">8</field></shadow></value><next><block type=\"microbit_plot_brightness\" id=\"1MbBl(9E=[eN({sb,+Po\"><value name=\"X\"><shadow type=\"math_positive_number\" id=\",58IHb$+~p*Q6SOy9:1B\"><field name=\"NUM\">0</field></shadow><block type=\"data_variable\" id=\"0=gW,g]+8RLRc1dhCje{\"><field name=\"VARIABLE\" id=\"bh|.{Af_vj0Dg8QBk_+M\" variabletype=\"\">x</field></block></value><value name=\"Y\"><shadow type=\"math_positive_number\" id=\"`Lgc-3rLIO0R)S$Y(YIc\"><field name=\"NUM\">0</field></shadow><block type=\"math_arithmetic\" id=\"DDwNm~^lR?-q0edgEBo`\"><field name=\"OP\">SUBTRACT</field><value name=\"A\"><shadow type=\"math_number\" id=\"u1{Q~UbR}Mq6+JlxH~3q\"><field name=\"NUM\">1</field></shadow><block type=\"data_variable\" id=\"oy{|ano}c.i`;0-EQAop\"><field name=\"VARIABLE\" id=\"nDiu)6Z:0PRoz{y]OR#(\" variabletype=\"\">y</field></block></value><value name=\"B\"><shadow type=\"math_number\" id=\"bHLUEjoZq_fA_:C`v@+M\"><field name=\"NUM\">3</field></shadow></value></block></value><value name=\"BRIGHTNESS\"><shadow type=\"math_positive_number\" id=\"P6_@uW+#%G?$`o;MWl]B\"><field name=\"NUM\">2</field></shadow></value><next><block type=\"microbit_plot_brightness\" id=\"wTK^JDsTw]0wt.z1b!!m\"><value name=\"X\"><shadow type=\"math_positive_number\" id=\"N1~A}wV/G#[b9dYITrDX\"><field name=\"NUM\">0</field></shadow><block type=\"data_variable\" id=\"K{n5whGx6zv2m77H_C_o\"><field name=\"VARIABLE\" id=\"bh|.{Af_vj0Dg8QBk_+M\" variabletype=\"\">x</field></block></value><value name=\"Y\"><shadow type=\"math_positive_number\" id=\"}};i2FhdXoY#_#P2)PN]\"><field name=\"NUM\">0</field></shadow><block type=\"math_arithmetic\" id=\"}IU4fBsqH%NT{sag!-2d\"><field name=\"OP\">SUBTRACT</field><value name=\"A\"><shadow type=\"math_number\" id=\"b`/gzWUbc.wsEtBVETpS\"><field name=\"NUM\">1</field></shadow><block type=\"data_variable\" id=\"ch2eakY7g?#pP!aC44ld\"><field name=\"VARIABLE\" id=\"nDiu)6Z:0PRoz{y]OR#(\" variabletype=\"\">y</field></block></value><value name=\"B\"><shadow type=\"math_number\" id=\"M(~eLs*EE@5N9*]v|T%)\"><field name=\"NUM\">4</field></shadow></value></block></value><value name=\"BRIGHTNESS\"><shadow type=\"math_positive_number\" id=\"G|K`(l|8wCYQszRVdK3]\"><field name=\"NUM\">0</field></shadow></value><next><block type=\"data_changevariableby\" id=\"15hi)Rxgeu9g-!:?TN`7\"><field name=\"VARIABLE\" id=\"nDiu)6Z:0PRoz{y]OR#(\" variabletype=\"\">y</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\".cOh1`qnWL/s+**c}*2+\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"control_wait_seconds\" id=\",{@urC$;G2FS0$b_6cvd\"><field name=\"UNITS\">MS</field><value name=\"DURATION\"><shadow type=\"math_positive_number\" id=\"@$yqYMU/O2?!QyK}SJGB\"><field name=\"NUM\">50</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></next></block></next></block></statement><statement name=\"ELSE\"><block type=\"control_wait_seconds\" id=\"Pc@[OcwnF;BOxyNPu[iz\"><field name=\"UNITS\">S</field><value name=\"DURATION\"><shadow type=\"math_positive_number\" id=\"=$vm*dm=Omn`xs_tDL.O\"><field name=\"NUM\">1</field></shadow></value></block></statement></block></next></block></next></block></next></block></next></block></statement></block></xml>",
+              "show": false,
+              "prefix": ""
+            },
+            "microbitppid2": {
+              "id": "microbitppid2",
+              "name": "Panel X",
+              "unit": "hidden",
+              "value": 240.37241379310342,
+              "show": false,
+              "prefix": ""
+            },
+            "microbitppid3": {
+              "id": "microbitppid3",
+              "name": "Panel Y",
+              "unit": "hidden",
+              "value": -5.151724137930998,
+              "show": false,
+              "prefix": ""
+            }
+          }
+        },
+        "17fe13b6b0f-21-3dab6459-e153-4921-9f25-693a5a2fd34a": {
+          "$id": "17fe13b6b0f-21-3dab6459-e153-4921-9f25-693a5a2fd34a",
+          "$local_id": "Device_1",
+          "$class": "Device",
+          "name": "1",
+          "did": "annotation",
+          "breadboard": {
+            "$id": "17fe13b6b0f-22-9b08920c-bb18-436b-9826-8bc75568be88",
+            "$local_id": "BreadboardElement_1",
+            "$class": "BreadboardElement",
+            "pos": {
+              "x": -124.98067010309279,
+              "y": -21.469072164948443,
+              "$class": "Coordinate"
+            },
+            "angle": 0,
+            "flip": 1
+          },
+          "footprint": {
+            "$id": "17fe13b6b0f-23-b123a676-51f0-4a14-a311-b0cdeda81b62",
+            "$local_id": "PCBElement_1",
+            "$class": "PCBElement",
+            "pos": {
+              "x": 10000,
+              "y": 5000,
+              "$class": "Coordinate"
+            },
+            "angle": 0,
+            "flip": 1
+          },
+          "terminals": {},
+          "subdevice": {},
+          "properties": {
+            "4320": {
+              "id": 4320,
+              "name": "collapsed",
+              "unit": "hidden",
+              "value": 0,
+              "show": false
+            },
+            "4321": {
+              "id": 4321,
+              "name": "x",
+              "unit": "hidden",
+              "value": -94,
+              "show": false
+            },
+            "4322": {
+              "id": 4322,
+              "name": "y",
+              "unit": "hidden",
+              "value": 0.5,
+              "show": false
+            },
+            "4323": {
+              "id": 4323,
+              "name": "content",
+              "unit": "hidden",
+              "value": "Press \"Start Simulation\"<div>and rain will fall on the</div><div>screen when it is time</div><div>to water the soil!</div>",
+              "show": false
+            }
+          }
+        },
+        "17fe13bc890-25-05831f24-9e54-49a5-bb8c-11c6beb3acdc": {
+          "$id": "17fe13bc890-25-05831f24-9e54-49a5-bb8c-11c6beb3acdc",
+          "$local_id": "Device_2",
+          "$class": "Device",
+          "name": "2",
+          "did": "annotation",
+          "breadboard": {
+            "$id": "17fe13bc891-26-4b252d33-98bc-4bcb-8f9d-dd72152a751a",
+            "$local_id": "BreadboardElement_2",
+            "$class": "BreadboardElement",
+            "pos": {
+              "x": 77.61870043405202,
+              "y": 194.7020173094055,
+              "$class": "Coordinate"
+            },
+            "angle": 0,
+            "flip": 1
+          },
+          "footprint": {
+            "$id": "17fe13bc891-27-a9135a41-73dc-4d68-abda-13e8e1be4932",
+            "$local_id": "PCBElement_2",
+            "$class": "PCBElement",
+            "pos": {
+              "x": 15000,
+              "y": 5000,
+              "$class": "Coordinate"
+            },
+            "angle": 0,
+            "flip": 1
+          },
+          "terminals": {},
+          "subdevice": {},
+          "properties": {
+            "4320": {
+              "id": 4320,
+              "name": "collapsed",
+              "unit": "hidden",
+              "value": 0,
+              "show": false
+            },
+            "4321": {
+              "id": 4321,
+              "name": "x",
+              "unit": "hidden",
+              "value": 88,
+              "show": false
+            },
+            "4322": {
+              "id": 4322,
+              "name": "y",
+              "unit": "hidden",
+              "value": 0.5,
+              "show": false
+            },
+            "4323": {
+              "id": 4323,
+              "name": "content",
+              "unit": "hidden",
+              "value": "Select the sensor and<div>adjust the moisture.</div>",
+              "show": false
+            }
+          }
+        },
+        "17fe5dec999-1a-e55f0f26-a9ad-4336-88d6-a6683d3c1c9f": {
+          "$id": "17fe5dec999-1a-e55f0f26-a9ad-4336-88d6-a6683d3c1c9f",
+          "$local_id": "Device_3",
+          "$class": "Device",
+          "name": "1",
+          "did": "sensorSoilMoisture",
+          "breadboard": {
+            "$id": "17fe5dec999-1c-3f386a23-dcb0-4d7c-81fe-99b4065bb590",
+            "$local_id": "BreadboardElement_3",
+            "$class": "BreadboardElement",
+            "pos": {
+              "x": 6.900773195876241,
+              "y": 117.53092783505156,
+              "$class": "Coordinate"
+            },
+            "angle": 0,
+            "flip": 1
+          },
+          "footprint": {
+            "$id": "17fe5dec99a-1d-c8470f02-6684-48b4-a16a-f52479793208",
+            "$local_id": "PCBElement_3",
+            "$class": "PCBElement",
+            "pos": {
+              "x": 5000,
+              "y": 5000,
+              "$class": "Coordinate"
+            },
+            "angle": 0,
+            "flip": 1
+          },
+          "terminals": {
+            "sensorSoilMoisturepmid0_sensorSoilMoisturesaid_sensorSoilMoisturespid0_sensorSoilMoisturepaid0_null_sensorSoilMoisturestid0": {
+              "$id": "17fe5dec99a-1e-aa2de2b1-fd49-4c80-93fb-cc6b05b428c4",
+              "$local_id": "Terminal_5",
+              "$class": "Terminal",
+              "pmid": "sensorSoilMoisturepmid0",
+              "sdid": "sensorSoilMoisturesaid",
+              "spid": "sensorSoilMoisturespid0",
+              "ppid": "sensorSoilMoisturepaid0",
+              "bbid": "sensorSoilMoisturestid0",
+              "endings": {},
+              "wires": {
+                "17fe5df5c29-395-ebe7ab14-acb5-44db-88ee-12240388d988": {
+                  "$idref": "17fe5df5c29-395-ebe7ab14-acb5-44db-88ee-12240388d988",
+                  "$class": "BendableBreadboardWire"
+                }
+              },
+              "net": {
+                "$idref": "17fe5df5c30-3a8-8300b56a-5714-4a7f-b562-2786fc692330",
+                "$class": "Net"
+              },
+              "subnet": {
+                "$idref": "17fe5df5c3a-3a9-2b0caf9f-cd4e-4d87-9c95-772b32798abb",
+                "$class": "SchematicNet"
+              }
+            },
+            "sensorSoilMoisturepmid1_sensorSoilMoisturesaid_sensorSoilMoisturespid1_sensorSoilMoisturepaid1_null_sensorSoilMoisturestid1": {
+              "$id": "17fe5dec99a-1f-8a7321cc-7f97-4b13-92fb-5d0a0c9547a0",
+              "$local_id": "Terminal_6",
+              "$class": "Terminal",
+              "pmid": "sensorSoilMoisturepmid1",
+              "sdid": "sensorSoilMoisturesaid",
+              "spid": "sensorSoilMoisturespid1",
+              "ppid": "sensorSoilMoisturepaid1",
+              "bbid": "sensorSoilMoisturestid1",
+              "endings": {},
+              "wires": {
+                "17fe5df162a-19f-205de63e-9c74-4269-80af-a1afa6fb44a7": {
+                  "$idref": "17fe5df162a-19f-205de63e-9c74-4269-80af-a1afa6fb44a7",
+                  "$class": "BendableBreadboardWire"
+                }
+              },
+              "net": {
+                "$idref": "17fe5df1631-1b2-efd87dce-ff66-4228-8939-9c0bf83f4a8a",
+                "$class": "Net"
+              },
+              "subnet": {
+                "$idref": "17fe5df1631-1b3-884f5030-9ba9-4b40-8378-13c121bbebf0",
+                "$class": "SchematicNet"
+              }
+            },
+            "sensorSoilMoisturepmid2_sensorSoilMoisturesaid_sensorSoilMoisturespid2_sensorSoilMoisturepaid2_null_sensorSoilMoisturestid2": {
+              "$id": "17fe5dec99a-20-abf6011b-1113-4b5e-932e-07a19f55a43c",
+              "$local_id": "Terminal_7",
+              "$class": "Terminal",
+              "pmid": "sensorSoilMoisturepmid2",
+              "sdid": "sensorSoilMoisturesaid",
+              "spid": "sensorSoilMoisturespid2",
+              "ppid": "sensorSoilMoisturepaid2",
+              "bbid": "sensorSoilMoisturestid2",
+              "endings": {},
+              "wires": {
+                "17fe5df97c0-5ba-20edc299-7cbb-48a8-8473-5f7523101b3d": {
+                  "$idref": "17fe5df97c0-5ba-20edc299-7cbb-48a8-8473-5f7523101b3d",
+                  "$class": "BendableBreadboardWire"
+                }
+              },
+              "net": {
+                "$idref": "17fe5df97c9-5cd-689805c4-98bb-4bc7-b19d-fca6c9bee07e",
+                "$class": "Net"
+              },
+              "subnet": {
+                "$idref": "17fe5df97ca-5ce-85bfe8f5-ba02-4976-a232-61404fc58d77",
+                "$class": "SchematicNet"
+              }
+            },
+            "sensorSoilMoisturepmid3_sensorSoilMoisturesaid_sensorSoilMoisturespid3_sensorSoilMoisturepaid3_null_sensorSoilMoisturestid3": {
+              "$id": "17fe5dec99a-21-62de1e01-8e9c-4d84-9d31-421614467c36",
+              "$local_id": "Terminal_8",
+              "$class": "Terminal",
+              "pmid": "sensorSoilMoisturepmid3",
+              "sdid": "sensorSoilMoisturesaid",
+              "spid": "sensorSoilMoisturespid3",
+              "ppid": "sensorSoilMoisturepaid3",
+              "bbid": "sensorSoilMoisturestid3",
+              "endings": {},
+              "wires": {}
+            },
+            "sensorSoilMoisturepmid4_sensorSoilMoisturesaid_sensorSoilMoisturespid4_sensorSoilMoisturepaid4_null_sensorSoilMoisturestid4": {
+              "$id": "17fe5dec99a-22-2f02fb29-ca70-48f4-9087-b70349f86e69",
+              "$local_id": "Terminal_9",
+              "$class": "Terminal",
+              "pmid": "sensorSoilMoisturepmid4",
+              "sdid": "sensorSoilMoisturesaid",
+              "spid": "sensorSoilMoisturespid4",
+              "ppid": "sensorSoilMoisturepaid4",
+              "bbid": "sensorSoilMoisturestid4",
+              "endings": {},
+              "wires": {}
+            },
+            "sensorSoilMoisturepmid5_sensorSoilMoisturesaid_sensorSoilMoisturespid5_sensorSoilMoisturepaid5_null_sensorSoilMoisturestid5": {
+              "$id": "17fe5dec99a-23-d762421d-b583-418f-94dd-4b6ca4cdc59e",
+              "$local_id": "Terminal_10",
+              "$class": "Terminal",
+              "pmid": "sensorSoilMoisturepmid5",
+              "sdid": "sensorSoilMoisturesaid",
+              "spid": "sensorSoilMoisturespid5",
+              "ppid": "sensorSoilMoisturepaid5",
+              "bbid": "sensorSoilMoisturestid5",
+              "endings": {},
+              "wires": {}
+            }
+          },
+          "subdevice": {
+            "sensorSoilMoisturesaid": {
+              "$id": "17fe5dec999-1b-497eff8d-6f36-40a6-90cc-5c39937e4540",
+              "$local_id": "SchematicElement_1",
+              "$class": "SchematicElement",
+              "pos": {
+                "x": 0,
+                "y": 0,
+                "$class": "Coordinate"
+              },
+              "angle": 0,
+              "flip": 1,
+              "sdid": "sensorSoilMoisturesaid"
+            }
+          },
+          "properties": {}
+        }
+      },
+      "nets": {
+        "17fe5ded534-2e-ae593f5a-da6b-4049-9ef3-28f245a8fad7": {
+          "$id": "17fe5ded534-2e-ae593f5a-da6b-4049-9ef3-28f245a8fad7",
+          "$local_id": "Net_0",
+          "$class": "Net",
+          "subnets": {
+            "17fe5ded535-2f-193eca11-c934-47b1-a358-f724a5bdc1bb": {
+              "$id": "17fe5ded535-2f-193eca11-c934-47b1-a358-f724a5bdc1bb",
+              "$local_id": "SchematicNet_0",
+              "$class": "SchematicNet",
+              "terminals": {}
+            }
+          },
+          "segments": {},
+          "vias": {},
+          "pins": {}
+        },
+        "17fe5df1631-1b2-efd87dce-ff66-4228-8939-9c0bf83f4a8a": {
+          "$id": "17fe5df1631-1b2-efd87dce-ff66-4228-8939-9c0bf83f4a8a",
+          "$local_id": "Net_1",
+          "$class": "Net",
+          "subnets": {
+            "17fe5df1631-1b3-884f5030-9ba9-4b40-8378-13c121bbebf0": {
+              "$id": "17fe5df1631-1b3-884f5030-9ba9-4b40-8378-13c121bbebf0",
+              "$local_id": "SchematicNet_1",
+              "$class": "SchematicNet",
+              "terminals": {
+                "17fe5dec99a-1f-8a7321cc-7f97-4b13-92fb-5d0a0c9547a0": {
+                  "$idref": "17fe5dec99a-1f-8a7321cc-7f97-4b13-92fb-5d0a0c9547a0",
+                  "$class": "Terminal"
+                },
+                "17fe136ae60-1f-ab5a560a-22f0-4abb-8a1e-fb9e19847caf": {
+                  "$idref": "17fe136ae60-1f-ab5a560a-22f0-4abb-8a1e-fb9e19847caf",
+                  "$class": "Terminal"
+                }
+              }
+            }
+          },
+          "segments": {},
+          "vias": {},
+          "pins": {}
+        },
+        "17fe5df5c30-3a8-8300b56a-5714-4a7f-b562-2786fc692330": {
+          "$id": "17fe5df5c30-3a8-8300b56a-5714-4a7f-b562-2786fc692330",
+          "$local_id": "Net_2",
+          "$class": "Net",
+          "subnets": {
+            "17fe5df5c3a-3a9-2b0caf9f-cd4e-4d87-9c95-772b32798abb": {
+              "$id": "17fe5df5c3a-3a9-2b0caf9f-cd4e-4d87-9c95-772b32798abb",
+              "$local_id": "SchematicNet_2",
+              "$class": "SchematicNet",
+              "terminals": {
+                "17fe5dec99a-1e-aa2de2b1-fd49-4c80-93fb-cc6b05b428c4": {
+                  "$idref": "17fe5dec99a-1e-aa2de2b1-fd49-4c80-93fb-cc6b05b428c4",
+                  "$class": "Terminal"
+                },
+                "17fe136ae5f-1c-cc39b646-dccc-4b8a-a52f-bce9a8fb1ef4": {
+                  "$idref": "17fe136ae5f-1c-cc39b646-dccc-4b8a-a52f-bce9a8fb1ef4",
+                  "$class": "Terminal"
+                }
+              }
+            }
+          },
+          "segments": {},
+          "vias": {},
+          "pins": {}
+        },
+        "17fe5df97c9-5cd-689805c4-98bb-4bc7-b19d-fca6c9bee07e": {
+          "$id": "17fe5df97c9-5cd-689805c4-98bb-4bc7-b19d-fca6c9bee07e",
+          "$local_id": "Net_3",
+          "$class": "Net",
+          "subnets": {
+            "17fe5df97ca-5ce-85bfe8f5-ba02-4976-a232-61404fc58d77": {
+              "$id": "17fe5df97ca-5ce-85bfe8f5-ba02-4976-a232-61404fc58d77",
+              "$local_id": "SchematicNet_3",
+              "$class": "SchematicNet",
+              "terminals": {
+                "17fe5dec99a-20-abf6011b-1113-4b5e-932e-07a19f55a43c": {
+                  "$idref": "17fe5dec99a-20-abf6011b-1113-4b5e-932e-07a19f55a43c",
+                  "$class": "Terminal"
+                },
+                "17fe136ae5f-1d-32a83daa-eb8d-425a-825b-2c3b62645c98": {
+                  "$idref": "17fe136ae5f-1d-32a83daa-eb8d-425a-825b-2c3b62645c98",
+                  "$class": "Terminal"
+                }
+              }
+            }
+          },
+          "segments": {},
+          "vias": {},
+          "pins": {}
+        }
+      },
+      "wires": {
+        "17fe5df162a-19f-205de63e-9c74-4269-80af-a1afa6fb44a7": {
+          "$id": "17fe5df162a-19f-205de63e-9c74-4269-80af-a1afa6fb44a7",
+          "$local_id": "BendableBreadboardWire_1",
+          "$class": "BendableBreadboardWire",
+          "closed": false,
+          "fill": false,
+          "strokeWidth": 2.5,
+          "begin": {
+            "$idref": "17fe5dec99a-1f-8a7321cc-7f97-4b13-92fb-5d0a0c9547a0",
+            "$class": "Terminal"
+          },
+          "end": {
+            "$idref": "17fe136ae60-1f-ab5a560a-22f0-4abb-8a1e-fb9e19847caf",
+            "$class": "Terminal"
+          },
+          "insert": false,
+          "color": "black",
+          "objects": [
+            {
+              "$id": "17fe5df162a-1a0-ba528a61-0a2b-472e-877b-0ebe9ccb4b5c",
+              "$local_id": "PathObject_279",
+              "$class": "PathObject",
+              "endpoint": {
+                "x": 6.900773195876241,
+                "y": 117.53092783505156,
+                "$class": "Coordinate"
+              },
+              "tan_0": {
+                "x": 6.900773195876241,
+                "y": 117.53092783505156,
+                "$class": "Coordinate"
+              },
+              "tan_1": {
+                "x": 6.900773195876241,
+                "y": 117.53092783505156,
+                "$class": "Coordinate"
+              },
+              "type": 0
+            },
+            {
+              "$id": "17fe5df162b-1a2-d3da7feb-5413-4577-96d4-c8d1c7f83af0",
+              "$local_id": "PathObject_281",
+              "$class": "PathObject",
+              "endpoint": {
+                "x": 6.900773195876241,
+                "y": 87.53092783505156,
+                "$class": "Coordinate"
+              },
+              "tan_0": {
+                "x": 6.900773195876241,
+                "y": 84.58519086822108,
+                "$class": "Coordinate"
+              },
+              "tan_1": {
+                "x": 6.900773195876241,
+                "y": 87.53092783505156,
+                "$class": "Coordinate"
+              },
+              "type": 4
+            },
+            {
+              "$id": "17fe5df162b-1a3-a80fcfea-7e44-4cc5-8c1d-ebfe832142ee",
+              "$local_id": "PathObject_282",
+              "$class": "PathObject",
+              "endpoint": {
+                "x": 91.90077319587624,
+                "y": 87.53092783505156,
+                "$class": "Coordinate"
+              },
+              "tan_0": {
+                "x": 90.98531467442353,
+                "y": 87.53092783505156,
+                "$class": "Coordinate"
+              },
+              "tan_1": {
+                "x": 91.90077319587624,
+                "y": 87.53092783505156,
+                "$class": "Coordinate"
+              },
+              "type": 4
+            },
+            {
+              "$id": "17fe5df162b-1a1-a164b201-8f28-41f4-b14e-a909d95b71da",
+              "$local_id": "PathObject_280",
+              "$class": "PathObject",
+              "endpoint": {
+                "x": 91.90077319587624,
+                "y": 57.53092783505156,
+                "$class": "Coordinate"
+              },
+              "tan_0": {
+                "x": 92.81623171732895,
+                "y": 60.47666480188204,
+                "$class": "Coordinate"
+              },
+              "tan_1": {
+                "x": 91.90077319587624,
+                "y": 57.53092783505156,
+                "$class": "Coordinate"
+              },
+              "type": 4
+            }
+          ]
+        },
+        "17fe5df5c29-395-ebe7ab14-acb5-44db-88ee-12240388d988": {
+          "$id": "17fe5df5c29-395-ebe7ab14-acb5-44db-88ee-12240388d988",
+          "$local_id": "BendableBreadboardWire_2",
+          "$class": "BendableBreadboardWire",
+          "closed": false,
+          "fill": false,
+          "strokeWidth": 2.5,
+          "begin": {
+            "$idref": "17fe5dec99a-1e-aa2de2b1-fd49-4c80-93fb-cc6b05b428c4",
+            "$class": "Terminal"
+          },
+          "end": {
+            "$idref": "17fe136ae5f-1c-cc39b646-dccc-4b8a-a52f-bce9a8fb1ef4",
+            "$class": "Terminal"
+          },
+          "insert": false,
+          "color": "orange",
+          "objects": [
+            {
+              "$id": "17fe5df5c29-396-dfb46b4e-4908-484c-9ca1-43e530f27bff",
+              "$local_id": "PathObject_643",
+              "$class": "PathObject",
+              "endpoint": {
+                "x": -7.599226804123759,
+                "y": 117.53092783505156,
+                "$class": "Coordinate"
+              },
+              "tan_0": {
+                "x": -7.599226804123759,
+                "y": 117.53092783505156,
+                "$class": "Coordinate"
+              },
+              "tan_1": {
+                "x": -7.599226804123759,
+                "y": 117.53092783505156,
+                "$class": "Coordinate"
+              },
+              "type": 0
+            },
+            {
+              "$id": "17fe5df5c2a-398-f7d0c162-39ba-4440-a695-274107913fcb",
+              "$local_id": "PathObject_645",
+              "$class": "PathObject",
+              "endpoint": {
+                "x": -7.599226804123759,
+                "y": 87.53092783505156,
+                "$class": "Coordinate"
+              },
+              "tan_0": {
+                "x": -7.599226804123759,
+                "y": 90.31008000221678,
+                "$class": "Coordinate"
+              },
+              "tan_1": {
+                "x": -7.599226804123759,
+                "y": 87.53092783505156,
+                "$class": "Coordinate"
+              },
+              "type": 4
+            },
+            {
+              "$id": "17fe5df5c2a-399-b2624cc7-5486-44c9-ab9e-c4d9eb8de951",
+              "$local_id": "PathObject_646",
+              "$class": "PathObject",
+              "endpoint": {
+                "x": -38.09922680412376,
+                "y": 87.53092783505156,
+                "$class": "Coordinate"
+              },
+              "tan_0": {
+                "x": -38.18249641135483,
+                "y": 87.53092783505156,
+                "$class": "Coordinate"
+              },
+              "tan_1": {
+                "x": -38.09922680412376,
+                "y": 87.53092783505156,
+                "$class": "Coordinate"
+              },
+              "type": 4
+            },
+            {
+              "$id": "17fe5df5c2a-397-e0dd0b40-f388-42a3-80bc-96897df28ac8",
+              "$local_id": "PathObject_644",
+              "$class": "PathObject",
+              "endpoint": {
+                "x": -38.09922680412376,
+                "y": 57.53092783505156,
+                "$class": "Coordinate"
+              },
+              "tan_0": {
+                "x": -38.015957196892685,
+                "y": 54.751775667886335,
+                "$class": "Coordinate"
+              },
+              "tan_1": {
+                "x": -38.09922680412376,
+                "y": 57.53092783505156,
+                "$class": "Coordinate"
+              },
+              "type": 4
+            }
+          ]
+        },
+        "17fe5df97c0-5ba-20edc299-7cbb-48a8-8473-5f7523101b3d": {
+          "$id": "17fe5df97c0-5ba-20edc299-7cbb-48a8-8473-5f7523101b3d",
+          "$local_id": "BendableBreadboardWire_3",
+          "$class": "BendableBreadboardWire",
+          "closed": false,
+          "fill": false,
+          "strokeWidth": 2.5,
+          "begin": {
+            "$idref": "17fe5dec99a-20-abf6011b-1113-4b5e-932e-07a19f55a43c",
+            "$class": "Terminal"
+          },
+          "end": {
+            "$idref": "17fe136ae5f-1d-32a83daa-eb8d-425a-825b-2c3b62645c98",
+            "$class": "Terminal"
+          },
+          "insert": false,
+          "color": "green",
+          "objects": [
+            {
+              "$id": "17fe5df97c1-5bb-01ae34f4-d000-4080-bb99-c68190f7c5c0",
+              "$local_id": "PathObject_1030",
+              "$class": "PathObject",
+              "endpoint": {
+                "x": 21.40077319587624,
+                "y": 117.53092783505156,
+                "$class": "Coordinate"
+              },
+              "tan_0": {
+                "x": 21.40077319587624,
+                "y": 117.53092783505156,
+                "$class": "Coordinate"
+              },
+              "tan_1": {
+                "x": 21.40077319587624,
+                "y": 117.53092783505156,
+                "$class": "Coordinate"
+              },
+              "type": 0
+            },
+            {
+              "$id": "17fe5df97c1-5bd-bd28a462-6cfb-42f0-a64a-9ca9bc775453",
+              "$local_id": "PathObject_1032",
+              "$class": "PathObject",
+              "endpoint": {
+                "x": 21.40077319587624,
+                "y": 77.53092783505156,
+                "$class": "Coordinate"
+              },
+              "tan_0": {
+                "x": 21.40077319587624,
+                "y": 75.64005159635276,
+                "$class": "Coordinate"
+              },
+              "tan_1": {
+                "x": 21.40077319587624,
+                "y": 77.53092783505156,
+                "$class": "Coordinate"
+              },
+              "type": 4
+            },
+            {
+              "$id": "17fe5df97c1-5be-a2a94c20-facf-453e-9439-878f0824b3e8",
+              "$local_id": "PathObject_1033",
+              "$class": "PathObject",
+              "endpoint": {
+                "x": 6.900773195876241,
+                "y": 77.53092783505156,
+                "$class": "Coordinate"
+              },
+              "tan_0": {
+                "x": 7.974422231485619,
+                "y": 77.53092783505156,
+                "$class": "Coordinate"
+              },
+              "tan_1": {
+                "x": 6.900773195876241,
+                "y": 77.53092783505156,
+                "$class": "Coordinate"
+              },
+              "type": 4
+            },
+            {
+              "$id": "17fe5df97c1-5bc-a9a5360f-f5fa-41d7-8a0e-bd0bcf0e1926",
+              "$local_id": "PathObject_1031",
+              "$class": "PathObject",
+              "endpoint": {
+                "x": 6.900773195876241,
+                "y": 57.53092783505156,
+                "$class": "Coordinate"
+              },
+              "tan_0": {
+                "x": 5.827124160266862,
+                "y": 59.42180407375035,
+                "$class": "Coordinate"
+              },
+              "tan_1": {
+                "x": 6.900773195876241,
+                "y": 57.53092783505156,
+                "$class": "Coordinate"
+              },
+              "type": 4
+            }
+          ]
+        }
+      },
+      "drills": {},
+      "localDeviceDescriptions": {},
+      "undo": [],
+      "redo": [],
+      "users": {},
+      "runHeavies": "--"
+    }
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 33955,
+  "device_id": "142073",
+  "name": "Micro Servo",
+  "description": "A motor whose position can be controlled using a microcontroller like an Arduino.",
+  "tags": [
+    "output",
+    "motion",
+    "pwm",
+    "pulse width modulation"
+  ],
+  "thumbnail": "motorServoDFRobotKit.png",
+  "thumbnail_source": "/motorServoDFRobotKit.png",
+  "footprint": {
+    "name": "Servo Connector",
+    "id": 142073
+  },
+  "simulation_model": "servo_SG90",
+  "extents": {
+    "top": -6,
+    "left": -82.17353057861328,
+    "width": 164.34706115722656,
+    "height": 179.64999389648438
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-10-29T21:27:03Z",
+      "dir": -90,
+      "id": 227869,
+      "label": null,
+      "name": "Ground",
+      "schematic_symbol_id": 23575,
+      "terminal_type": "breadboard_female",
+      "updated_at": "2015-10-29T21:27:03Z",
+      "x": -10,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-10-29T21:27:03Z",
+      "dir": -90,
+      "id": 227870,
+      "label": null,
+      "name": "Power",
+      "schematic_symbol_id": 23575,
+      "terminal_type": "breadboard_female",
+      "updated_at": "2015-10-29T21:27:03Z",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.2",
+      "created_at": "2015-10-29T21:27:03Z",
+      "dir": -90,
+      "id": 227871,
+      "label": null,
+      "name": "Signal",
+      "schematic_symbol_id": 23575,
+      "terminal_type": "breadboard_female",
+      "updated_at": "2015-10-29T21:27:03Z",
+      "x": 10,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-09T19:49:10Z",
+      "dir": 90,
+      "id": 198836,
+      "label": null,
+      "name": "Ground",
+      "schematic_symbol_id": 19813,
+      "terminal_type": "schematic",
+      "updated_at": "2015-06-09T19:49:28Z",
+      "x": -10,
+      "y": 39.856421804676
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-09T19:49:10Z",
+      "dir": 180,
+      "id": 198837,
+      "label": null,
+      "name": "Signal",
+      "schematic_symbol_id": 19813,
+      "terminal_type": "schematic",
+      "updated_at": "2015-06-09T19:49:28Z",
+      "x": -30,
+      "y": 20
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.2",
+      "created_at": "2015-06-09T19:49:10Z",
+      "dir": 270,
+      "id": 198838,
+      "label": null,
+      "name": "Power",
+      "schematic_symbol_id": 19813,
+      "terminal_type": "schematic",
+      "updated_at": "2015-06-09T19:49:28Z",
+      "x": -10,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-10-29T21:23:49Z",
+      "dir": null,
+      "drill": "1000",
+      "footprint_id": 33337,
+      "generator_type": null,
+      "id": 286289,
+      "layer0": "<rect x=\"-1000\" y=\"-1000\" width=\"2000\" height=\"2000\" rx=\"1000\" ry=\"1000\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-1000\" y=\"-1000\" width=\"2000\" height=\"2000\" rx=\"1000\" ry=\"1000\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-10-29T21:23:49Z",
+      "x": 0,
+      "y": 2540
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-10-29T21:23:49Z",
+      "dir": null,
+      "drill": "1000",
+      "footprint_id": 33337,
+      "generator_type": null,
+      "id": 286288,
+      "layer0": "<rect x=\"-1000\" y=\"-1000\" width=\"2000\" height=\"2000\" rx=\"1000\" ry=\"1000\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-1000\" y=\"-1000\" width=\"2000\" height=\"2000\" rx=\"1000\" ry=\"1000\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-10-29T21:23:49Z",
+      "x": 0,
+      "y": 5080
+    },
+    {
+      "path": "footprint.pads_attributes.2",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-10-29T21:23:49Z",
+      "dir": null,
+      "drill": "1000",
+      "footprint_id": 33337,
+      "generator_type": null,
+      "id": 286287,
+      "layer0": "<rect x=\"-1000\" y=\"-1000\" width=\"2000\" height=\"2000\" rx=\"1000\" ry=\"1000\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-1000\" y=\"-1000\" width=\"2000\" height=\"2000\" rx=\"1000\" ry=\"1000\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "3",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-10-29T21:23:49Z",
+      "x": 0,
+      "y": 7620
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "default": 0,
+      "default_prefix": "positional",
+      "default_show": true,
+      "device_id": 33955,
+      "id": "33955ppid0",
+      "name": "type",
+      "unit": "[[\"positional\",\"Positional\"],[\"continuous\",\"Continuous\"]]"
+    }
+  ],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1446154841a77d03fb50d64931fd5aa597fcd2d627/thumbnail20151029-21519-18xdu5j.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1446154841a77d03fb50d64931fd5aa597fcd2d627/thumbnail20151029-21519-18xdu5j.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14461548413c1bebdbc5517f6fdc82cfcc5f735c12/thumbnail20151029-24181-175mglo.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14461548413c1bebdbc5517f6fdc82cfcc5f735c12/thumbnail20151029-24181-175mglo.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/146022345328a922ab9655f8d62fc645e08ddd759f/thumbnail20160409-25413-1fyc8dg.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/146022345328a922ab9655f8d62fc645e08ddd759f/thumbnail20160409-25413-1fyc8dg.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/142073.json"
+}

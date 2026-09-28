@@ -1,0 +1,7 @@
+{
+  "device_id": "58627",
+  "simulation_model": "power_nmos",
+  "implementation_found": true,
+  "module_id": "24531",
+  "model_file": "models/power_nmos--module-24531.js"
+}

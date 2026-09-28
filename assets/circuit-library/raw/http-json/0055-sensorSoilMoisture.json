@@ -1,0 +1,357 @@
+{
+  "url": "https://editor.tinkercad.com/assets_cc_1faad5n/js/packaged_devices/sensorSoilMoisture.json",
+  "payload": {
+    "device_id": "sensorSoilMoistureid",
+    "footprint_id": "sensorSoilMoisturefpid",
+    "id": "sensorSoilMoisture",
+    "footprint_name": "Soil Moisture Sensor connector",
+    "root_id": "sensorSoilMoisturepdrid",
+    "device": {
+      "base": "SEN",
+      "breadboard_id": "sensorSoilMoisturebbid",
+      "circuitscribe_footprint_id": null,
+      "circuitscribe_footprint_rotation": 0,
+      "description": "A sensor whose signal voltage changes as it gets wet.",
+      "id": "sensorSoilMoistureid",
+      "name": "Soil Moisture Sensor",
+      "programmable": false,
+      "programmable_settings": "",
+      "simulation_model": "sensorSoilMoisture",
+      "version_root_id": "sensorSoilMoisturepdrid",
+      "breadboard": {
+        "background": true,
+        "breadboard": false,
+        "extents": {
+          "top": -14.1,
+          "left": -45,
+          "width": 90,
+          "height": 239.5
+        },
+        "id": "sensorSoilMoisturebbid",
+        "name": "breadboard_sensorSoilMoisture",
+        "svg": "<svg class=\"cgfx__sensor-soil-moisture\" viewbox=\"-1000 -1000 2000 2000\" width=\"2000\" height=\"2000\" x=\"-1000\" y=\"-1000\"><path class=\"cgfx__selected\" fill='none' stroke='#3b8ed7' stroke-linecap='round' stroke-linejoin='round' display='none' stroke-width='3' d=\"M-35,225.9l-10,-30v-200a10,10,0,0,1,10,-10h70a10,10,0,0,1,10,10v200l-10,30h-10l-10,-30v-145a5,5,0,0,0,-5,-5h-20a5,5,0,0,0,-5,5v145l-10,30zm0,-223a7,7,0,0,1,0,-14a7,7,0,0,1,0,14zm70,0a7,7,0,0,1,0,-14a7,7,0,0,1,0,14zM-16.85,0a2.35,2.35,0,0,1,4.7,0a2.35,2.35,0,0,1,-4.7,0zM-2.35,0a2.35,2.35,0,0,1,4.7,0a2.35,2.35,0,0,1,-4.7,0zM12.15,0a2.35,2.35,0,0,1,4.7,0a2.35,2.35,0,0,1,-4.7,0zM-12,10.9a2,2,0,0,1,4,0a2,2,0,0,1,-4,0zM-2,10.9a2,2,0,0,1,4,0a2,2,0,0,1,-4,0zM8,10.9a2,2,0,0,1,4,0a2,2,0,0,1,-4,0z\"/><path fill=\"#CDCECF\" stroke=\"#E0B783\" stroke-width=\"1\" d=\"M-34.7,225.4 l -9.8 -29.5 v -146 h 29 v 146 l -9.8 29.5 z\"/><path fill=\"none\" stroke=\"black\" stroke-width=\".1\" d=\"M-34.7,225.4\"/><g opacity=\".1\" fill=\"#000000\"><circle cx=\"-40\" cy=\"55.9\" r=\"1.5\"/><circle cx=\"-30\" cy=\"55.9\" r=\"1.5\"/><circle cx=\"-20\" cy=\"55.9\" r=\"1.5\"/><circle cx=\"-35\" cy=\"75.9\" r=\"1.5\"/><circle cx=\"-25\" cy=\"75.9\" r=\"1.5\"/><circle cx=\"-40\" cy=\"95.9\" r=\"1.5\"/><circle cx=\"-30\" cy=\"95.9\" r=\"1.5\"/><circle cx=\"-20\" cy=\"95.9\" r=\"1.5\"/><circle cx=\"-35\" cy=\"115.9\" r=\"1.5\"/><circle cx=\"-25\" cy=\"115.9\" r=\"1.5\"/><circle cx=\"-40\" cy=\"135.9\" r=\"1.5\"/><circle cx=\"-30\" cy=\"135.9\" r=\"1.5\"/><circle cx=\"-20\" cy=\"135.9\" r=\"1.5\"/><circle cx=\"-35\" cy=\"155.9\" r=\"1.5\"/><circle cx=\"-25\" cy=\"155.9\" r=\"1.5\"/><circle cx=\"-40\" cy=\"175.9\" r=\"1.5\"/><circle cx=\"-30\" cy=\"175.9\" r=\"1.5\"/><circle cx=\"-20\" cy=\"175.9\" r=\"1.5\"/><circle cx=\"-35\" cy=\"195.9\" r=\"1.5\"/><circle cx=\"-25\" cy=\"195.9\" r=\"1.5\"/><circle cx=\"-30\" cy=\"215.9\" r=\"1.5\"/></g><path fill=\"#CDCECF\" stroke=\"#E0B783\" stroke-width=\"1\" d=\"M25.3,225.4 l -9.8 -29.5 v -146 h 29 v 146 l -9.8 29.5 z\"/><path fill=\"none\" stroke=\"black\" stroke-width=\".1\" d=\"M25.3,225.4\"/><g opacity=\".1\" fill=\"#000000\"><circle cx=\"20\" cy=\"55.9\" r=\"1.5\"/><circle cx=\"30\" cy=\"55.9\" r=\"1.5\"/><circle cx=\"40\" cy=\"55.9\" r=\"1.5\"/><circle cx=\"25\" cy=\"75.9\" r=\"1.5\"/><circle cx=\"35\" cy=\"75.9\" r=\"1.5\"/><circle cx=\"20\" cy=\"95.9\" r=\"1.5\"/><circle cx=\"30\" cy=\"95.9\" r=\"1.5\"/><circle cx=\"40\" cy=\"95.9\" r=\"1.5\"/><circle cx=\"25\" cy=\"115.9\" r=\"1.5\"/><circle cx=\"35\" cy=\"115.9\" r=\"1.5\"/><circle cx=\"20\" cy=\"135.9\" r=\"1.5\"/><circle cx=\"30\" cy=\"135.9\" r=\"1.5\"/><circle cx=\"40\" cy=\"135.9\" r=\"1.5\"/><circle cx=\"25\" cy=\"155.9\" r=\"1.5\"/><circle cx=\"35\" cy=\"155.9\" r=\"1.5\"/><circle cx=\"20\" cy=\"175.9\" r=\"1.5\"/><circle cx=\"30\" cy=\"175.9\" r=\"1.5\"/><circle cx=\"40\" cy=\"175.9\" r=\"1.5\"/><circle cx=\"25\" cy=\"195.9\" r=\"1.5\"/><circle cx=\"35\" cy=\"195.9\" r=\"1.5\"/><circle cx=\"30\" cy=\"215.9\" r=\"1.5\"/></g><path fill-rule=\"evenodd\" fill=\"#D82416\" d=\"M-45,50.9v-55a10,10,0,0,1,10,-10h70a10,10,0,0,1,10,10v55h-30a5,5,0,0,0,-5,-5h-20a5,5,0,0,0,-5,5zm10,-48a7,7,0,0,1,0,-14a7,7,0,0,1,0,14zm70,0a7,7,0,0,1,0,-14a7,7,0,0,1,0,14zM-16.85,0a2.35,2.35,0,0,1,4.7,0a2.35,2.35,0,0,1,-4.7,0zM-2.35,0a2.35,2.35,0,0,1,4.7,0a2.35,2.35,0,0,1,-4.7,0zM12.15,0a2.35,2.35,0,0,1,4.7,0a2.35,2.35,0,0,1,-4.7,0zM-12,10.9a2,2,0,0,1,4,0a2,2,0,0,1,-4,0zM-2,10.9a2,2,0,0,1,4,0a2,2,0,0,1,-4,0zM8,10.9a2,2,0,0,1,4,0a2,2,0,0,1,-4,0z\"/><g fill=\"#CDCECF\" fill-rule=\"evenodd\"><path d=\"M-18.6,0a4.1,4.1,0,0,1,8.2,0a4.1,4.1,0,0,1,-8.2,0zm1.8,0a2.3,2.3,0,0,1,4.6,0a2.3,2.3,0,0,1,-4.6,0z\"/><path d=\"M-4.1,0a4.1,4.1,0,0,1,8.2,0a4.1,4.1,0,0,1,-8.2,0zm1.8,0a2.3,2.3,0,0,1,4.6,0a2.3,2.3,0,0,1,-4.6,0z\"/><path d=\"M10.4,-4.1h8.2v8.2h-8.2zm1.8,4.1a2.3,2.3,0,0,1,4.6,0a2.3,2.3,0,0,1,-4.6,0z\"/><path d=\"M-13.7,7.2h7.4v7.4h-7.4zm1.75,3.7a1.95,1.95,0,0,1,3.9,0a1.95,1.95,0,0,1,-3.9,0z\"/><path d=\"M-3.7,10.9a3.7,3.7,0,0,1,7.4,0a3.7,3.7,0,0,1,-7.4,0zm1.75,0a1.95,1.95,0,0,1,3.9,0a1.95,1.95,0,0,1,-3.9,0z\"/><path d=\"M6.3,10.9a3.7,3.7,0,0,1,7.4,0a3.7,3.7,0,0,1,-7.4,0zm1.75,0a1.95,1.95,0,0,1,3.9,0a1.95,1.95,0,0,1,-3.9,0z\"/><circle cx=\"-40\" cy=\"5.4\" r=\"2\"/><circle cx=\"40\" cy=\"30.4\" r=\"2\"/></g><g fill=\"none\" stroke=\"#E3E4E5\" stroke-width=\".5\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"><path d=\"M-23,-13.6v26.6h8.5m9,0h1.5m8,0h2.5m7.5,0h9v-26.6M-23,-11.6h46\"/><path d=\"M-15,4.4v16h30v-16M-10,-1.6h5m10,0h5M-10,20.4v-5h20v5\"/><path fill=\"#E3E4E5\" stroke-width=\".25\" d=\"m26.3,29.4l3.8,-4.3a2.8,2.8,0,0,1,2.1,-0.9a6.7,6.7,0,0,0,5,-11.8a1,1,0,0,1,-1.1,1.4a2.1,2.1,0,0,1,-1.8,-2.9a1.3,1.3,0,0,1,2.1,-0.5a3.6,3.6,0,0,0,-5.2,-0.1a3.1,3.1,0,0,0,0.6,4.7a1.8,1.8,0,0,1,-1.9,3a1.3,1.3,0,0,1,0.5,-2.2a2.9,2.9,0,0,0,-4.1,2.8z\"/></g><g  transform=\"translate(-9.4,-9.7) rotate(0, -9.4,-9.7)\" fill=\"none\" stroke=\"#E3E4E5\" stroke-width=\"0.8999999999999999\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><g transform=\"scale(0.5333333333333333) translate(-16.5,0)\"><path d=\"m0,0v4l2,2l2,-2v-4\"/><path d=\"m9.5,5l-1,1h-2l-1,-1v-4l1,-1h2l1,1\"/><path d=\"m15,5l-1,1h-2l-1,-1v-4l1,-1h2l1,1\"/></g></g><g  transform=\"translate(5,-9.7) rotate(0, 5,-9.7)\" fill=\"none\" stroke=\"#E3E4E5\" stroke-width=\"0.8999999999999999\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><g transform=\"scale(0.5333333333333333) translate(-16.5,0)\"><path d=\"m4,1l-1,-1h-2l-1,1v4l1,1h2l1,-1v-2h-2\"/><path d=\"m5.5,6v-6l4,6v-6\"/><path d=\"m11,0h3l1,1v4l-1,1h-3z\"/></g></g><g  transform=\"translate(18.8,-9.7) rotate(0, 18.8,-9.7)\" fill=\"none\" stroke=\"#E3E4E5\" stroke-width=\"0.8999999999999999\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><g transform=\"scale(0.5333333333333333) translate(-14.5,0)\"><path d=\"m4,1l-1,-1h-2l-1,1v1l1,1h2l1,1v1l-1,1h-2l-1,-1\"/><path d=\"m5.5,0h2m-1,0v6m-1,0h2\"/><path d=\"m13,1l-1,-1h-2l-1,1v4l1,1h2l1,-1v-2h-2\"/></g></g><g  transform=\"translate(-41,43.4) rotate(0, -41,43.4)\" fill=\"none\" stroke=\"#E3E4E5\" stroke-width=\"0.8999999999999999\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><g transform=\"scale(0.8333333333333334) translate(0,-6)\"><path d=\"m4,1l-1,-1h-2l-1,1v1l1,1h2l1,1v1l-1,1h-2l-1,-1\"/><path d=\"m5.5,3l1,-1h2l1,1v2l-1,1h-2l-1,-1z\"/><path d=\"m12,-1v1m-1,2h1v4m-1,0h2\"/><path d=\"m14.5,0h1v6m-1,0h2\"/><path d=\"m23.5,6v-6l2,2l2,-2v6\"/><path d=\"m29,3l1,-1h2l1,1v2l-1,1h-2l-1,-1z\"/><path d=\"m35.5,-1v1m-1,2h1v4m-1,0h2\"/><path d=\"m42,2h-3l-1,1l1,1h2l1,1l-1,1h-3\"/><path d=\"m43.5,2h2m-1,-1v4l1,1\"/><path d=\"m47,2v3l1,1h3v-4\"/><path d=\"m52.5,2v4m0,-2l2,-2h1\"/><path d=\"m57,4h4v-1l-1,-1h-2l-1,1v2l1,1h2\"/><path d=\"m72,1l-1,-1h-2l-1,1v1l1,1h2l1,1v1l-1,1h-2l-1,-1\"/><path d=\"m73.5,4h4v-1l-1,-1h-2l-1,1v2l1,1h2\"/><path d=\"m79,6v-4h3l1,1v3\"/><path d=\"m88.5,2h-3l-1,1l1,1h2l1,1l-1,1h-3\"/><path d=\"m90,3l1,-1h2l1,1v2l-1,1h-2l-1,-1z\"/><path d=\"m95.5,2v4m0,-2l2,-2h1\"/></g></g><g class=\"cgfx__transistor cgfx__eg-transistor-onboard\" transform=\"translate(0,30.9) rotate(-90)\"><path fill=\"#3C4042\" d=\"M-3.2,-5.6c0,-0.321,0.262,-0.583,0.583,-0.583h5.22c0.321,0,0.583,0.262,0.583,0.583v11.203c0,0.321,-0.262,0.583,-0.583,0.583h-5.22c-0.321,0,-0.583,-0.262,-0.583,-0.583v-11.203z\"/><path fill=\"#BABABA\" d=\"M-4.253,2.68c0,-0.16,-0.131,-0.292,-0.292,-0.292h-1.749c-0.16,0,-0.292,0.131,-0.292,0.292v1.749c0,0.16,0.131,0.292,0.292,0.292h1.749c0.16,0,0.292,-0.131,0.292,-0.292v-1.749z\"/><path fill=\"#DDDDDD\" d=\"M-3.2,4.283h-2.624c-0.16,0,-0.292,-0.131,-0.292,-0.292v-0.875c0,-0.16,0.131,-0.292,0.292,-0.292h2.624z\"/><path fill=\"#BABABA\" d=\"M-4.253,-4.316c0,-0.16,-0.131,-0.292,-0.292,-0.292h-1.749c-0.16,0,-0.292,0.131,-0.292,0.292v1.749c0,0.16,0.131,0.292,0.292,0.292h1.749c0.16,0,0.292,-0.131,0.292,-0.292v-1.749z\"/><path fill=\"#DDDDDD\" d=\"M-3.2,-2.713h-2.624c-0.16,0,-0.292,-0.131,-0.292,-0.292v-0.875c0,-0.16,0.131,-0.292,0.292,-0.292h2.624z\"/><rect x=\"-3.783\" y=\"2.826\" opacity=\"0.6\" fill=\"#FFFFFF\" width=\"0.583\" height=\"1.458\"/><rect x=\"-3.783\" y=\"-4.17\" opacity=\"0.6\" fill=\"#FFFFFF\" width=\"0.583\" height=\"1.458\"/><path fill=\"#BABABA\" d=\"M4.238,0.876c0,0.16,0.131,0.292,0.292,0.292h1.749c0.16,0,0.292,-0.131,0.292,-0.292v-1.749c0,-0.16,-0.131,-0.292,-0.292,-0.292h-1.749c-0.16,0,-0.292,0.131,-0.292,0.292v1.749z\"/><path fill=\"#DDDDDD\" d=\"M3.186,-0.728h2.624c0.16,0,0.292,0.131,0.292,0.292v0.875c0,0.16,-0.131,0.292,-0.292,0.292h-2.624z\"/><rect x=\"3.186\" y=\"-.727\" opacity=\"0.6\" fill=\"#FFFFFF\" width=\"0.583\" height=\"1.458\"/></g><g class=\"cgfx__resistor0 cgfx__eg-resistor-onboard\" transform=\"translate(-10,30.9) rotate(0)\"><rect fill=\"#bfbfbf\" x=\"-1.6\" y=\"-4.8\" width=\"3.2\" height=\"9.6\" rx=\"0.5\" ry=\"0.5\"/><rect fill=\"#333333\" x=\"-1.6\" y=\"-2\" width=\"3.2\" height=\"4\"/></g><g class=\"cgfx__resistor1 cgfx__eg-resistor-onboard\" transform=\"translate(10,30.9) rotate(0)\"><rect fill=\"#bfbfbf\" x=\"-1.6\" y=\"-4.8\" width=\"3.2\" height=\"9.6\" rx=\"0.5\" ry=\"0.5\"/><rect fill=\"#333333\" x=\"-1.6\" y=\"-2\" width=\"3.2\" height=\"4\"/></g><g class=\"cgfx__moisture cgfx__inspector cgfx__slider-undefined\" transform=\"translate(0, 125.9) rotate(0)\" display=\"none\"><g class=\"flip-mirrorX\"><g transform=\"translate(-45)\"><path fill=\"#000000\" d=\"m -6.485 -0.25 h 0 c -0.655 1.14 -1.03 2.46 -1.01 3.87 c 0.065 3.925 3.265 7.215 7.19 7.37 c 4.285 0.175 7.81 -3.25 7.81 -7.495 c 0 -1.365 -0.37 -2.645 -1.01 -3.745 h 0 l -6.06 -10.505 c -0.19 -0.335 -0.675 -0.335 -0.865 0 l -6.06 10.5 z\"/><path fill=\"#79CDFD\" d=\"m -5.405 4.5 c 0.47 2.555 2.715 4.5 5.405 4.5 s 4.93 -1.945 5.405 -4.5 h -10.81 z\"/><path fill=\"#4DB5F0\" d=\"m 5.405 4.5 c 0.06 -0.325 0.095 -0.66 0.095 -1 h -11 c 0 0.34 0.035 0.675 0.095 1 h 10.81 z\"/><path fill=\"#F2F3F5\" d=\"m 4.76 0.755 l -1.005 -1.735 h 0.005 l -3.765 -6.52 l -3.765 6.52 h 0 l -1 1.735 c -0.485 0.84 -0.74 1.785 -0.74 2.745 h 11 c 0 -0.96 -0.255 -1.91 -0.74 -2.745 z\"/></g><g transform=\"translate(45)\"><path fill=\"#000000\" d=\"m -6.485 -0.25 h 0 c -0.655 1.14 -1.03 2.46 -1.01 3.87 c 0.065 3.925 3.265 7.215 7.19 7.37 c 4.285 0.175 7.81 -3.25 7.81 -7.495 c 0 -1.365 -0.37 -2.645 -1.01 -3.745 h 0 l -6.06 -10.505 c -0.19 -0.335 -0.675 -0.335 -0.865 0 l -6.06 10.5 z\"/><path fill=\"#79CDFD\" d=\"m 0 -7.5 l 3.765 6.52 h -0.005 l 1.005 1.735 c 0.485 0.84 0.74 1.785 0.74 2.745 c 0 3.035 -2.465 5.5 -5.5 5.5 s -5.5 -2.465 -5.5 -5.5 c 0 -0.96 0.255 -1.91 0.74 -2.745 l 1 -1.735 h 0 l 3.765 -6.52\"/></g><rect class=\"cgfx__bounds\" fill=\"#f4f5f6\" stroke=\"#333333\" stroke-width=\"1.5\" x=\"-30\" y=\"-4\" width=\"60\" height=\"8\" rx=\"4\" ry=\"4\" /><circle class=\"cgfx__knob\" transform=\"\" fill=\"#333333\" cx=\"-26\" cy=\"0\" r=\"7.5\"/><text class=\"cgfx__knoblabel\" transform=\"\" x=\"-26\" y=\"1.3\" dy=\"0\" text-anchor=\"middle\" style=\"font-family:Arial;font-size:4;fill:#E3e3e3;font-weight:regular;\"></text><g class=\"cgfx__arrow\" opacity=\"1\" transform=\"translate(-11.25,0)\"><line fill=\"none\" stroke=\"#333333\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" x1=\"1.539\" y1=\"0\" x2=\"-1.539\" y2=\"0\"/><polyline fill=\"none\" stroke=\"#333333\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" points=\"1,-1 2,0 1,1\"/></g></g><rect class=\"cgfx__hitarea-interaction cgfx__moisture cgfx__inspector cgfx__bounds\" style='fill:#ff0000;stroke:#ff0000;' opacity='0' display='none' stroke-width=\"1.5\" x=\"-30\" y=\"-4\" width=\"60\" height=\"8\" rx=\"4\" ry=\"4\" /><circle class=\"cgfx__hitarea-interaction cgfx__moisture cgfx__inspector cgfx__knob\" style='fill:#ff0000;' opacity='0' display='none' cx=\"-26\" cy=\"0\" r=\"7.5\" /></g><path class=\"cgfx__hitarea cgfx__body\" fill-rule=\"evenodd\"  style='fill:#ff0000;' opacity='0' display='none' d=\"M-35,225.9l-10,-30v-200a10,10,0,0,1,10,-10h70a10,10,0,0,1,10,10v200l-10,30h-10l-10,-30v-145a5,5,0,0,0,-5,-5h-20a5,5,0,0,0,-5,5v145l-10,30zm0,-223a7,7,0,0,1,0,-14a7,7,0,0,1,0,14zm70,0a7,7,0,0,1,0,-14a7,7,0,0,1,0,14z\"/><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">vcc1</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"-14.5\" y1=\"0\" x2=\"-14.5\" y2=\"-25\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">gnd1</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"-25\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">sig1</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"14.5\" y1=\"0\" x2=\"14.5\" y2=\"-25\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">vcc2</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"-10\" y1=\"10.9\" x2=\"-10\" y2=\"-14.1\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">gnd2</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"0\" y1=\"10.9\" x2=\"0\" y2=\"-14.1\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">sig2</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"10\" y1=\"10.9\" x2=\"10\" y2=\"-14.1\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g></svg>",
+        "symbol_type": "breadboard_background",
+        "terminal_list": null,
+        "rootId": "sensorSoilMoisturebbrid",
+        "schematic_symbol_terminals_attributes": [
+          {
+            "dir": -90,
+            "id": "sensorSoilMoisturestid0",
+            "label": null,
+            "name": "Power",
+            "schematic_symbol_id": "sensorSoilMoisturebbid",
+            "terminal_type": "breadboard",
+            "x": -14.5,
+            "y": 0
+          },
+          {
+            "dir": -90,
+            "id": "sensorSoilMoisturestid1",
+            "label": null,
+            "name": "Ground",
+            "schematic_symbol_id": "sensorSoilMoisturebbid",
+            "terminal_type": "breadboard",
+            "x": 0,
+            "y": 0
+          },
+          {
+            "dir": -90,
+            "id": "sensorSoilMoisturestid2",
+            "label": null,
+            "name": "Signal",
+            "schematic_symbol_id": "sensorSoilMoisturebbid",
+            "terminal_type": "breadboard",
+            "x": 14.5,
+            "y": 0
+          },
+          {
+            "dir": -90,
+            "id": "sensorSoilMoisturestid3",
+            "label": null,
+            "name": "Power",
+            "schematic_symbol_id": "sensorSoilMoisturebbid",
+            "terminal_type": "breadboard",
+            "x": -10,
+            "y": 10.9
+          },
+          {
+            "dir": -90,
+            "id": "sensorSoilMoisturestid4",
+            "label": null,
+            "name": "Ground",
+            "schematic_symbol_id": "sensorSoilMoisturebbid",
+            "terminal_type": "breadboard",
+            "x": 0,
+            "y": 10.9
+          },
+          {
+            "dir": -90,
+            "id": "sensorSoilMoisturestid5",
+            "label": null,
+            "name": "Signal",
+            "schematic_symbol_id": "sensorSoilMoisturebbid",
+            "terminal_type": "breadboard",
+            "x": 10,
+            "y": 10.9
+          }
+        ]
+      },
+      "subdevices_attributes": [
+        {
+          "device_id": "sensorSoilMoistureid",
+          "id": "sensorSoilMoisturesaid",
+          "init_x": 0,
+          "init_y": 0,
+          "name": null,
+          "schematic_symbol_id": "sensorSoilMoisturessid",
+          "schematic_symbol_attributes": {
+            "background": false,
+            "breadboard": false,
+            "generator_type": "normal",
+            "id": "sensorSoilMoisturessid",
+            "name": "Soil Moisture Sensor",
+            "svg": "<circle stroke=\"#000000\" stroke-width=\"2\" fill=\"none\" cx=\"0\" cy=\"0\" r=\"10\"/>",
+            "symbol_type": "schematic",
+            "terminal_list": null,
+            "rootId": "sensorSoilMoisturessrid",
+            "schematic_symbol_terminals_attributes": [
+              {
+                "dir": -90,
+                "id": "sensorSoilMoisturespid0",
+                "label": null,
+                "name": "vcc1",
+                "schematic_symbol_id": "sensorSoilMoisturessid",
+                "terminal_type": "schematic",
+                "x": -14.5,
+                "y": 0
+              },
+              {
+                "dir": -90,
+                "id": "sensorSoilMoisturespid1",
+                "label": null,
+                "name": "gnd1",
+                "schematic_symbol_id": "sensorSoilMoisturessid",
+                "terminal_type": "schematic",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "dir": -90,
+                "id": "sensorSoilMoisturespid2",
+                "label": null,
+                "name": "sig1",
+                "schematic_symbol_id": "sensorSoilMoisturessid",
+                "terminal_type": "schematic",
+                "x": 14.5,
+                "y": 0
+              },
+              {
+                "dir": -90,
+                "id": "sensorSoilMoisturespid3",
+                "label": null,
+                "name": "vcc2",
+                "schematic_symbol_id": "sensorSoilMoisturessid",
+                "terminal_type": "schematic",
+                "x": -10,
+                "y": 10.9
+              },
+              {
+                "dir": -90,
+                "id": "sensorSoilMoisturespid4",
+                "label": null,
+                "name": "gnd2",
+                "schematic_symbol_id": "sensorSoilMoisturessid",
+                "terminal_type": "schematic",
+                "x": 0,
+                "y": 10.9
+              },
+              {
+                "dir": -90,
+                "id": "sensorSoilMoisturespid5",
+                "label": null,
+                "name": "sig2",
+                "schematic_symbol_id": "sensorSoilMoisturessid",
+                "terminal_type": "schematic",
+                "x": 10,
+                "y": 10.9
+              }
+            ]
+          }
+        }
+      ],
+      "properties_attributes": []
+    },
+    "footprint": {
+      "id": "sensorSoilMoisturefpid",
+      "name": "Soil Moisture Sensor connector",
+      "outline": "<g></g>",
+      "rootId": "sensorSoilMoisturefprid",
+      "pads_attributes": [
+        {
+          "col_pitch": null,
+          "cols": null,
+          "dir": null,
+          "drill": "900",
+          "footprint_id": "sensorSoilMoisturefpid",
+          "generator_type": null,
+          "id": "sensorSoilMoisturepaid0",
+          "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "name": 0,
+          "number": null,
+          "pad_type_id": null,
+          "pin_spacing": null,
+          "row_pitch": null,
+          "rows": null,
+          "x": -3683,
+          "y": 0
+        },
+        {
+          "col_pitch": null,
+          "cols": null,
+          "dir": null,
+          "drill": "900",
+          "footprint_id": "sensorSoilMoisturefpid",
+          "generator_type": null,
+          "id": "sensorSoilMoisturepaid1",
+          "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "name": 1,
+          "number": null,
+          "pad_type_id": null,
+          "pin_spacing": null,
+          "row_pitch": null,
+          "rows": null,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "col_pitch": null,
+          "cols": null,
+          "dir": null,
+          "drill": "900",
+          "footprint_id": "sensorSoilMoisturefpid",
+          "generator_type": null,
+          "id": "sensorSoilMoisturepaid2",
+          "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "name": 2,
+          "number": null,
+          "pad_type_id": null,
+          "pin_spacing": null,
+          "row_pitch": null,
+          "rows": null,
+          "x": 3683,
+          "y": 0
+        },
+        {
+          "col_pitch": null,
+          "cols": null,
+          "dir": null,
+          "drill": "900",
+          "footprint_id": "sensorSoilMoisturefpid",
+          "generator_type": null,
+          "id": "sensorSoilMoisturepaid3",
+          "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "name": 3,
+          "number": null,
+          "pad_type_id": null,
+          "pin_spacing": null,
+          "row_pitch": null,
+          "rows": null,
+          "x": -2540,
+          "y": 2768.6
+        },
+        {
+          "col_pitch": null,
+          "cols": null,
+          "dir": null,
+          "drill": "900",
+          "footprint_id": "sensorSoilMoisturefpid",
+          "generator_type": null,
+          "id": "sensorSoilMoisturepaid4",
+          "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "name": 4,
+          "number": null,
+          "pad_type_id": null,
+          "pin_spacing": null,
+          "row_pitch": null,
+          "rows": null,
+          "x": 0,
+          "y": 2768.6
+        },
+        {
+          "col_pitch": null,
+          "cols": null,
+          "dir": null,
+          "drill": "900",
+          "footprint_id": "sensorSoilMoisturefpid",
+          "generator_type": null,
+          "id": "sensorSoilMoisturepaid5",
+          "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "name": 5,
+          "number": null,
+          "pad_type_id": null,
+          "pin_spacing": null,
+          "row_pitch": null,
+          "rows": null,
+          "x": 2540,
+          "y": 2768.6
+        }
+      ]
+    },
+    "pinmaps_attributes": [
+      {
+        "pmid": "sensorSoilMoisturepmid0",
+        "did": "sensorSoilMoisture",
+        "ppid": "sensorSoilMoisturepaid0",
+        "sdid": "sensorSoilMoisturesaid",
+        "spid": "sensorSoilMoisturespid0",
+        "bbid": "sensorSoilMoisturestid0"
+      },
+      {
+        "pmid": "sensorSoilMoisturepmid1",
+        "did": "sensorSoilMoisture",
+        "ppid": "sensorSoilMoisturepaid1",
+        "sdid": "sensorSoilMoisturesaid",
+        "spid": "sensorSoilMoisturespid1",
+        "bbid": "sensorSoilMoisturestid1"
+      },
+      {
+        "pmid": "sensorSoilMoisturepmid2",
+        "did": "sensorSoilMoisture",
+        "ppid": "sensorSoilMoisturepaid2",
+        "sdid": "sensorSoilMoisturesaid",
+        "spid": "sensorSoilMoisturespid2",
+        "bbid": "sensorSoilMoisturestid2"
+      },
+      {
+        "pmid": "sensorSoilMoisturepmid3",
+        "did": "sensorSoilMoisture",
+        "ppid": "sensorSoilMoisturepaid3",
+        "sdid": "sensorSoilMoisturesaid",
+        "spid": "sensorSoilMoisturespid3",
+        "bbid": "sensorSoilMoisturestid3"
+      },
+      {
+        "pmid": "sensorSoilMoisturepmid4",
+        "did": "sensorSoilMoisture",
+        "ppid": "sensorSoilMoisturepaid4",
+        "sdid": "sensorSoilMoisturesaid",
+        "spid": "sensorSoilMoisturespid4",
+        "bbid": "sensorSoilMoisturestid4"
+      },
+      {
+        "pmid": "sensorSoilMoisturepmid5",
+        "did": "sensorSoilMoisture",
+        "ppid": "sensorSoilMoisturepaid5",
+        "sdid": "sensorSoilMoisturesaid",
+        "spid": "sensorSoilMoisturespid5",
+        "bbid": "sensorSoilMoisturestid5"
+      }
+    ]
+  }
+}

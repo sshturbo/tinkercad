@@ -1,0 +1,267 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 35130,
+  "device_id": "146812",
+  "name": "DIP Switch DPST",
+  "description": "A single DIP switch.",
+  "tags": [
+    "input",
+    "button"
+  ],
+  "thumbnail": "dipSwitchDPST.png",
+  "thumbnail_source": "/dipSwitchDPST.png",
+  "footprint": {
+    "name": "DIP Switch SPDT",
+    "id": 146812
+  },
+  "simulation_model": "dip_switch_spdt",
+  "extents": {
+    "top": -19,
+    "left": -14,
+    "width": 28,
+    "height": 38
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-11-19T00:29:21Z",
+      "dir": 90,
+      "id": 232813,
+      "label": null,
+      "name": "1A",
+      "schematic_symbol_id": 24183,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-11-19T00:29:21Z",
+      "x": -5,
+      "y": 15
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-11-19T00:29:21Z",
+      "dir": -90,
+      "id": 232814,
+      "label": null,
+      "name": "1B",
+      "schematic_symbol_id": 24183,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-11-19T00:29:21Z",
+      "x": -5,
+      "y": -15
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.2",
+      "created_at": "2015-11-19T00:29:21Z",
+      "dir": 90,
+      "id": 232815,
+      "label": null,
+      "name": "2A",
+      "schematic_symbol_id": 24183,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-11-19T00:29:21Z",
+      "x": 5,
+      "y": 15
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.3",
+      "created_at": "2015-11-19T00:29:21Z",
+      "dir": -90,
+      "id": 232816,
+      "label": null,
+      "name": "2B",
+      "schematic_symbol_id": 24183,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-11-19T00:29:21Z",
+      "x": 5,
+      "y": -15
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-11-19T00:24:54Z",
+      "dir": 180,
+      "id": 232809,
+      "label": null,
+      "name": "1a",
+      "schematic_symbol_id": 24182,
+      "terminal_type": "schematic",
+      "updated_at": "2015-11-19T00:24:54Z",
+      "x": -30,
+      "y": 10
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-11-19T00:24:54Z",
+      "dir": 180,
+      "id": 232810,
+      "label": null,
+      "name": "2a",
+      "schematic_symbol_id": 24182,
+      "terminal_type": "schematic",
+      "updated_at": "2015-11-19T00:24:54Z",
+      "x": -30,
+      "y": 20
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.2",
+      "created_at": "2015-11-19T00:24:54Z",
+      "dir": 0,
+      "id": 232811,
+      "label": null,
+      "name": "1b",
+      "schematic_symbol_id": 24182,
+      "terminal_type": "schematic",
+      "updated_at": "2015-11-19T00:24:54Z",
+      "x": 30,
+      "y": 10
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.3",
+      "created_at": "2015-11-19T00:24:54Z",
+      "dir": 0,
+      "id": 232812,
+      "label": null,
+      "name": "2b",
+      "schematic_symbol_id": 24182,
+      "terminal_type": "schematic",
+      "updated_at": "2015-11-19T00:24:54Z",
+      "x": 30,
+      "y": 20
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-11-19T00:27:27Z",
+      "dir": null,
+      "drill": "750",
+      "footprint_id": 33866,
+      "generator_type": null,
+      "id": 290160,
+      "layer0": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "4",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-11-19T00:27:27Z",
+      "x": -1270,
+      "y": -3810
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-11-19T00:27:27Z",
+      "dir": null,
+      "drill": "750",
+      "footprint_id": 33866,
+      "generator_type": null,
+      "id": 290159,
+      "layer0": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "3",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-11-19T00:27:27Z",
+      "x": 1270,
+      "y": -3810
+    },
+    {
+      "path": "footprint.pads_attributes.2",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-11-19T00:27:27Z",
+      "dir": null,
+      "drill": "750",
+      "footprint_id": 33866,
+      "generator_type": null,
+      "id": 290158,
+      "layer0": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-11-19T00:27:27Z",
+      "x": 1270,
+      "y": 3810
+    },
+    {
+      "path": "footprint.pads_attributes.3",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-11-19T00:27:27Z",
+      "dir": null,
+      "drill": "750",
+      "footprint_id": 33866,
+      "generator_type": null,
+      "id": 290157,
+      "layer0": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-11-19T00:27:27Z",
+      "x": -1270,
+      "y": 3810
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "created_at": "2015-11-23T21:25:14Z",
+      "default": 0,
+      "default_prefix": "",
+      "default_show": false,
+      "device_id": 35130,
+      "id": 1251,
+      "name": "Switch",
+      "unit": "hidden",
+      "updated_at": "2015-11-23T21:25:14Z"
+    }
+  ],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14478966055fcbb0cb452bae033af8479612fdc75e/thumbnail20151119-21885-1sih2ly.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14478966055fcbb0cb452bae033af8479612fdc75e/thumbnail20151119-21885-1sih2ly.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14478966054b576e861f300f070f1e8c4f5ec9aedb/thumbnail20151119-10316-5wftxp.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14478966054b576e861f300f070f1e8c4f5ec9aedb/thumbnail20151119-10316-5wftxp.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1451343257379937e11a6bff05213f62c6fc99adb1/thumbnail20151228-26440-xleni2.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1451343257379937e11a6bff05213f62c6fc99adb1/thumbnail20151228-26440-xleni2.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/146812.json"
+}

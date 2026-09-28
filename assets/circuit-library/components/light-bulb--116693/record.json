@@ -1,0 +1,158 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 28714,
+  "device_id": "116693",
+  "name": "Light bulb",
+  "description": "A 12V / 3W incadescent light bulb.",
+  "tags": [
+    "output",
+    "display"
+  ],
+  "thumbnail": "lightBulb.png",
+  "thumbnail_source": "/lightBulb.png",
+  "footprint": {
+    "name": "2 pin",
+    "id": 116693
+  },
+  "simulation_model": "lightBulb",
+  "extents": {
+    "top": -103.05999755859375,
+    "left": -29.630001068115234,
+    "width": 59.2599983215332,
+    "height": 103.05999755859375
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-23T12:36:41Z",
+      "dir": 90,
+      "id": 203010,
+      "label": null,
+      "name": "Terminal 1",
+      "schematic_symbol_id": 20226,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T12:36:41Z",
+      "x": -5,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-23T12:36:41Z",
+      "dir": 90,
+      "id": 203011,
+      "label": null,
+      "name": "Terminal 2",
+      "schematic_symbol_id": 20226,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T12:36:41Z",
+      "x": 5,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2014-10-13T14:10:49Z",
+      "dir": 0,
+      "id": 153153,
+      "label": null,
+      "name": "2",
+      "schematic_symbol_id": 14243,
+      "terminal_type": "schematic",
+      "updated_at": "2014-10-13T14:10:49Z",
+      "x": 39.8907791115557,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2014-10-13T14:10:49Z",
+      "dir": 180,
+      "id": 153154,
+      "label": null,
+      "name": "1",
+      "schematic_symbol_id": 14243,
+      "terminal_type": "schematic",
+      "updated_at": "2014-10-13T14:10:49Z",
+      "x": -40,
+      "y": -0.0557514569649255
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2014-10-13T14:22:49Z",
+      "dir": null,
+      "drill": "500",
+      "footprint_id": 23548,
+      "generator_type": null,
+      "id": 190135,
+      "layer0": "<rect x=\"-500\" y=\"-500\" width=\"1000\" height=\"1000\" rx=\"500\" ry=\"500\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-500\" y=\"-500\" width=\"1000\" height=\"1000\" rx=\"500\" ry=\"500\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2014-10-13T14:22:49Z",
+      "x": 1270,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2014-10-13T14:22:49Z",
+      "dir": null,
+      "drill": "500",
+      "footprint_id": 23548,
+      "generator_type": null,
+      "id": 190134,
+      "layer0": "<rect x=\"-500\" y=\"-500\" width=\"1000\" height=\"1000\" rx=\"500\" ry=\"500\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-500\" y=\"-500\" width=\"1000\" height=\"1000\" rx=\"500\" ry=\"500\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2014-10-13T14:22:49Z",
+      "x": -1270,
+      "y": 0
+    }
+  ],
+  "properties": [],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435063063ab7d94375352520691c609786cee751c/thumbnail20150623-27414-11yeo6l.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435063063ab7d94375352520691c609786cee751c/thumbnail20150623-27414-11yeo6l.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1433870292c8cb8fde253e362972e0ff5c972eb8af/thumbnail20150609-19048-9388ee.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1433870292c8cb8fde253e362972e0ff5c972eb8af/thumbnail20150609-19048-9388ee.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1434895817835603a85273286ecfbf49aa7c7bb6cf/thumbnail20150621-31286-6a3qqv.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1434895817835603a85273286ecfbf49aa7c7bb6cf/thumbnail20150621-31286-6a3qqv.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/116693.json"
+}

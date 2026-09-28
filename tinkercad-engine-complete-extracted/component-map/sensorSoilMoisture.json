@@ -1,0 +1,7 @@
+{
+  "device_id": "sensorSoilMoisture",
+  "simulation_model": "sensorSoilMoisture",
+  "implementation_found": true,
+  "module_id": "12798",
+  "model_file": "models/sensorSoilMoisture--module-12798.js"
+}

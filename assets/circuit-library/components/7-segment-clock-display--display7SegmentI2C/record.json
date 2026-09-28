@@ -1,0 +1,228 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": "display7SegmentI2C",
+  "device_id": "display7SegmentI2C",
+  "name": "7-Segment Clock Display",
+  "description": "A 4-digit 7-segment LED display controlled by I2C.",
+  "tags": [
+    "output",
+    "display",
+    "i2c",
+    "led"
+  ],
+  "thumbnail": "display7SegmentI2C.png",
+  "thumbnail_source": "/display7SegmentI2C.png",
+  "footprint": {
+    "name": "display7SegmentI2C",
+    "id": "display7SegmentI2C"
+  },
+  "simulation_model": "seven-segment-i2c",
+  "extents": {
+    "top": -8,
+    "left": -99,
+    "width": 198,
+    "height": 105
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "dir": -90,
+      "id": "display7SegmentI2Cstid0",
+      "label": null,
+      "name": "Power",
+      "schematic_symbol_id": "display7SegmentI2Cbbid",
+      "terminal_type": "breadboard",
+      "x": -15,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "dir": -90,
+      "id": "display7SegmentI2Cstid1",
+      "label": null,
+      "name": "Ground",
+      "schematic_symbol_id": "display7SegmentI2Cbbid",
+      "terminal_type": "breadboard",
+      "x": -5,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.2",
+      "dir": -90,
+      "id": "display7SegmentI2Cstid2",
+      "label": null,
+      "name": "SDA",
+      "schematic_symbol_id": "display7SegmentI2Cbbid",
+      "terminal_type": "breadboard",
+      "x": 5,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.3",
+      "dir": -90,
+      "id": "display7SegmentI2Cstid3",
+      "label": null,
+      "name": "SCL",
+      "schematic_symbol_id": "display7SegmentI2Cbbid",
+      "terminal_type": "breadboard",
+      "x": 15,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "dir": -90,
+      "id": "display7SegmentI2Cspid0",
+      "label": null,
+      "name": "Power",
+      "schematic_symbol_id": "display7SegmentI2Cssid",
+      "terminal_type": "schematic",
+      "x": -15,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "dir": -90,
+      "id": "display7SegmentI2Cspid1",
+      "label": null,
+      "name": "Ground",
+      "schematic_symbol_id": "display7SegmentI2Cssid",
+      "terminal_type": "schematic",
+      "x": -5,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.2",
+      "dir": -90,
+      "id": "display7SegmentI2Cspid2",
+      "label": null,
+      "name": "SDA",
+      "schematic_symbol_id": "display7SegmentI2Cssid",
+      "terminal_type": "schematic",
+      "x": 5,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.3",
+      "dir": -90,
+      "id": "display7SegmentI2Cspid3",
+      "label": null,
+      "name": "SCL",
+      "schematic_symbol_id": "display7SegmentI2Cssid",
+      "terminal_type": "schematic",
+      "x": 15,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "dir": null,
+      "drill": "900",
+      "footprint_id": "display7SegmentI2Cfpid",
+      "generator_type": null,
+      "id": "display7SegmentI2Cpaid0",
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": 0,
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "x": -3810,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "dir": null,
+      "drill": "900",
+      "footprint_id": "display7SegmentI2Cfpid",
+      "generator_type": null,
+      "id": "display7SegmentI2Cpaid1",
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": 1,
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "x": -1270,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.2",
+      "col_pitch": null,
+      "cols": null,
+      "dir": null,
+      "drill": "900",
+      "footprint_id": "display7SegmentI2Cfpid",
+      "generator_type": null,
+      "id": "display7SegmentI2Cpaid2",
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": 2,
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "x": 1270,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.3",
+      "col_pitch": null,
+      "cols": null,
+      "dir": null,
+      "drill": "900",
+      "footprint_id": "display7SegmentI2Cfpid",
+      "generator_type": null,
+      "id": "display7SegmentI2Cpaid3",
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": 3,
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "x": 3810,
+      "y": 0
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "default": 0,
+      "default_prefix": "RED",
+      "default_show": true,
+      "device_id": "display7SegmentI2Cid",
+      "id": "display7SegmentI2Cppid0",
+      "name": "color",
+      "unit": "[[\"RED\",\"Red\"],[\"YELLOW\",\"Yellow\"],[\"GREEN\",\"Green\"],[\"BLUE\",\"Blue\"],[\"WHITE\",\"White\"]]"
+    },
+    {
+      "path": "device.properties_attributes.1",
+      "default": 0,
+      "default_prefix": "112",
+      "default_show": true,
+      "device_id": "display7SegmentI2Cid",
+      "id": "display7SegmentI2Cppid1",
+      "name": "address",
+      "unit": "[[\"112\",\"112 (0x70)\"],[\"113\",\"113 (0x71)\"],[\"114\",\"114 (0x72)\"],[\"115\",\"115 (0x73)\"],[\"116\",\"116 (0x74)\"],[\"117\",\"117 (0x75)\"],[\"118\",\"118 (0x76)\"],[\"119\",\"119 (0x77)\"]]"
+    }
+  ],
+  "datasheets_or_references": [],
+  "raw_device_json": "../../raw/packaged_devices/display7SegmentI2C.json"
+}

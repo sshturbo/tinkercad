@@ -1,0 +1,7 @@
+{
+  "device_id": "57752",
+  "simulation_model": "capacitor",
+  "implementation_found": true,
+  "module_id": "5737",
+  "model_file": "models/capacitor--module-5737.js"
+}

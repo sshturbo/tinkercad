@@ -1,0 +1,186 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 17911,
+  "device_id": "57950",
+  "name": "Polarized Capacitor",
+  "description": "A direction capacitor used to store and release electric energy in a circuit.",
+  "tags": [
+    "general"
+  ],
+  "thumbnail": "capacitorPolarized.png",
+  "thumbnail_source": "/capacitorPolarized.png",
+  "footprint": {
+    "name": "E45-21",
+    "id": 57950
+  },
+  "simulation_model": "capacitor_polarized",
+  "extents": {
+    "top": -49.869998931884766,
+    "left": -14.710000991821289,
+    "width": 29.420001983642578,
+    "height": 49.869998931884766
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-23T11:39:50Z",
+      "dir": 90,
+      "id": 202922,
+      "label": null,
+      "name": "Negative",
+      "schematic_symbol_id": 20217,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T11:39:50Z",
+      "x": -10,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-23T11:39:50Z",
+      "dir": 90,
+      "id": 202923,
+      "label": null,
+      "name": "Positive",
+      "schematic_symbol_id": 20217,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T11:39:50Z",
+      "x": 10,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2012-07-03T19:40:46Z",
+      "dir": 270,
+      "id": 10,
+      "label": null,
+      "name": "+",
+      "schematic_symbol_id": 7,
+      "terminal_type": "schematic",
+      "updated_at": "2012-07-03T19:40:46Z",
+      "x": 0,
+      "y": -19.8
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2012-07-03T19:40:46Z",
+      "dir": 90,
+      "id": 11,
+      "label": null,
+      "name": "-",
+      "schematic_symbol_id": 7,
+      "terminal_type": "schematic",
+      "updated_at": "2012-07-03T19:40:46Z",
+      "x": 0,
+      "y": 19.8
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-02-21T14:15:26Z",
+      "dir": 0,
+      "drill": "1117.6",
+      "footprint_id": 2796,
+      "generator_type": "single",
+      "id": 11051,
+      "layer0": "<circle r=\"1905.0\"/>",
+      "layer1": "<circle r=\"1905.0\"/>",
+      "name": "+",
+      "number": null,
+      "pad_type_id": 1420,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:38:42Z",
+      "x": -22860,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-02-21T14:15:26Z",
+      "dir": 0,
+      "drill": "1117.6",
+      "footprint_id": 2796,
+      "generator_type": "single",
+      "id": 11052,
+      "layer0": "<polygon points=\"1631.834784537981,659.3040491834067 687.683077881559,1620.0798059642311 -659.3040491834068,1631.834784537981 -1620.0798059642311,687.6830778815591 -1631.834784537981,-659.3040491834067 -687.6830778815593,-1620.079805964231 659.3040491834067,-1631.834784537981 1620.079805964231,-687.6830778815593 \"/>",
+      "layer1": "<polygon points=\"1631.834784537981,659.3040491834067 687.683077881559,1620.0798059642311 -659.3040491834068,1631.834784537981 -1620.0798059642311,687.6830778815591 -1631.834784537981,-659.3040491834067 -687.6830778815593,-1620.079805964231 659.3040491834067,-1631.834784537981 1620.079805964231,-687.6830778815593 \"/>",
+      "name": "-",
+      "number": null,
+      "pad_type_id": 240,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:38:42Z",
+      "x": 22860,
+      "y": 0
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "created_at": "2014-07-30T11:35:09Z",
+      "default": 16,
+      "default_prefix": "none",
+      "default_show": false,
+      "device_id": 17911,
+      "id": 281,
+      "name": "voltage rating",
+      "unit": "V",
+      "updated_at": "2014-07-30T11:35:09Z"
+    },
+    {
+      "path": "device.properties_attributes.1",
+      "created_at": "2014-07-30T11:35:09Z",
+      "default": 1,
+      "default_prefix": "u",
+      "default_show": false,
+      "device_id": 17911,
+      "id": 280,
+      "name": "capacitance",
+      "unit": "F",
+      "updated_at": "2014-07-30T11:35:09Z"
+    }
+  ],
+  "datasheets_or_references": [
+    {
+      "path": "device.datasheet_urls",
+      "url": "[{\"filename\":\"TAJD106K025RNJ-AVX-datasheet-8359467.pdf\",\"url\":\"http://datasheet.octopart.com/TAJD106K025RNJ-AVX-datasheet-8359467.pdf\"}]"
+    },
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435059896587688b15f3388de2b49d7a7ff0e8a8c/thumbnail20150623-5104-1srzwwi.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435059896587688b15f3388de2b49d7a7ff0e8a8c/thumbnail20150623-5104-1srzwwi.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1431779886b6b17ada878511381177c5865852d2fc/thumbnail20150516-8458-xxm01a.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1431779886b6b17ada878511381177c5865852d2fc/thumbnail20150516-8458-xxm01a.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14338545007feb224bc3019f302ac48e61adac5e78/thumbnail20150609-11049-1mlybif.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14338545007feb224bc3019f302ac48e61adac5e78/thumbnail20150609-11049-1mlybif.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/57950.json"
+}

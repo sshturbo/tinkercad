@@ -1,0 +1,207 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 45398,
+  "device_id": "196401",
+  "name": "IR sensor",
+  "description": "Detects IR signals emitted by devices like remote controls.",
+  "tags": [
+    "input",
+    "infrared",
+    "remote"
+  ],
+  "thumbnail": "sensorInfrared.png",
+  "thumbnail_source": "/sensorInfrared.png",
+  "footprint": {
+    "name": "TSOP41",
+    "id": 196401
+  },
+  "simulation_model": "IRsensor",
+  "extents": {
+    "top": -37.875,
+    "left": -11.73799991607666,
+    "width": 23.46500015258789,
+    "height": 37.875
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-10-13T17:41:57Z",
+      "dir": 90,
+      "id": 224018,
+      "label": null,
+      "name": "Power",
+      "schematic_symbol_id": 22952,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-10-13T17:41:57Z",
+      "x": 10,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-10-13T17:41:57Z",
+      "dir": 90,
+      "id": 224019,
+      "label": null,
+      "name": "GND",
+      "schematic_symbol_id": 22952,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-10-13T17:41:57Z",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.2",
+      "created_at": "2015-10-13T17:41:57Z",
+      "dir": 90,
+      "id": 224020,
+      "label": null,
+      "name": "Out",
+      "schematic_symbol_id": 22952,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-10-13T17:41:57Z",
+      "x": -10,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-10-13T18:01:21Z",
+      "dir": 90,
+      "id": 224021,
+      "label": null,
+      "name": "Vcc",
+      "schematic_symbol_id": 22954,
+      "terminal_type": "schematic",
+      "updated_at": "2015-10-13T18:01:21Z",
+      "x": -20,
+      "y": -0.830675107297058
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-10-13T18:01:21Z",
+      "dir": 90,
+      "id": 224022,
+      "label": null,
+      "name": "Gnd",
+      "schematic_symbol_id": 22954,
+      "terminal_type": "schematic",
+      "updated_at": "2015-10-13T18:01:21Z",
+      "x": 0,
+      "y": -0.830675107297058
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.2",
+      "created_at": "2015-10-13T18:01:21Z",
+      "dir": 90,
+      "id": 224023,
+      "label": null,
+      "name": "Out",
+      "schematic_symbol_id": 22954,
+      "terminal_type": "schematic",
+      "updated_at": "2015-10-13T18:01:33Z",
+      "x": 20,
+      "y": -0.830675107297058
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-10-13T17:26:40Z",
+      "dir": null,
+      "drill": "750",
+      "footprint_id": 32833,
+      "generator_type": null,
+      "id": 279522,
+      "layer0": "<rect x=\"-500\" y=\"-1000\" width=\"1000\" height=\"2000\" rx=\"500\" ry=\"500\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-500\" y=\"-1000\" width=\"1000\" height=\"2000\" rx=\"500\" ry=\"500\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "3",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-10-13T17:26:40Z",
+      "x": 2540,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-10-13T17:26:40Z",
+      "dir": null,
+      "drill": "750",
+      "footprint_id": 32833,
+      "generator_type": null,
+      "id": 279521,
+      "layer0": "<rect x=\"-500\" y=\"-1000\" width=\"1000\" height=\"2000\" rx=\"500\" ry=\"500\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-500\" y=\"-1000\" width=\"1000\" height=\"2000\" rx=\"500\" ry=\"500\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-10-13T17:26:40Z",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.2",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-10-13T17:26:40Z",
+      "dir": null,
+      "drill": "750",
+      "footprint_id": 32833,
+      "generator_type": null,
+      "id": 279520,
+      "layer0": "<rect x=\"-500\" y=\"-1000\" width=\"1000\" height=\"2000\" rx=\"500\" ry=\"500\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-500\" y=\"-1000\" width=\"1000\" height=\"2000\" rx=\"500\" ry=\"500\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-10-13T17:26:40Z",
+      "x": -2540,
+      "y": 0
+    }
+  ],
+  "properties": [],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1445209816a224112f542df6420dd7e424faa4e907/thumbnail20151018-6382-a6h93e.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1445209816a224112f542df6420dd7e424faa4e907/thumbnail20151018-6382-a6h93e.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1445209825ce8b245a1f333ee9adb58267c999f023/thumbnail20151018-6364-bbpvy3.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1445209825ce8b245a1f333ee9adb58267c999f023/thumbnail20151018-6364-bbpvy3.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14447592824f2ed1d66b9b64743586b79a47fa8d82/thumbnail20151013-11634-s37ovm.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14447592824f2ed1d66b9b64743586b79a47fa8d82/thumbnail20151013-11634-s37ovm.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/196401.json"
+}

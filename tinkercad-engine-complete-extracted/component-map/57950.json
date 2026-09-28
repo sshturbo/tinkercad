@@ -1,0 +1,7 @@
+{
+  "device_id": "57950",
+  "simulation_model": "capacitor_polarized",
+  "implementation_found": true,
+  "module_id": "20243",
+  "model_file": "models/capacitor_polarized--module-20243.js"
+}

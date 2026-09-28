@@ -1,0 +1,1 @@
+57266(e,t,i){const n=i(77627).create;e.exports=function(e,t,i,o,r,a,s){r=r||0;return n("instance",{part:e,gate:t,x:""+i,y:""+o,rot:r=s?"MR"+r:r?"R"+r:void 0,smashed:"yes"},(a=a||[]).map(e=>{var t=n("attribute",e);if(s){var i=t.attribute("rot")||"R0";t.attribute("rot",i.replace("R","MR"))}return t}))}

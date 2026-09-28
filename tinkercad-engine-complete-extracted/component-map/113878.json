@@ -1,0 +1,7 @@
+{
+  "device_id": "113878",
+  "simulation_model": "LCD_HD44780",
+  "implementation_found": true,
+  "module_id": "12130",
+  "model_file": "models/LCD_HD44780--module-12130.js"
+}

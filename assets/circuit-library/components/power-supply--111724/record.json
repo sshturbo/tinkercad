@@ -1,0 +1,183 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 27571,
+  "device_id": "111724",
+  "name": "Power Supply",
+  "description": "Electronic test equipment for supplying power to your circuit.",
+  "tags": [
+    "instrument",
+    "voltage"
+  ],
+  "thumbnail": "powerSupply.png",
+  "thumbnail_source": "/powerSupply.png",
+  "footprint": {
+    "name": "Power Header 0.1\" through hole 3",
+    "id": 111724
+  },
+  "simulation_model": "powerSupply",
+  "extents": {
+    "top": -79.5,
+    "left": -54,
+    "width": 108,
+    "height": 87
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-09T13:14:17Z",
+      "dir": 90,
+      "id": 198625,
+      "label": null,
+      "name": "Positive",
+      "schematic_symbol_id": 19777,
+      "terminal_type": "breadboard_female",
+      "updated_at": "2015-06-09T13:14:17Z",
+      "x": -5,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-09T13:14:17Z",
+      "dir": 90,
+      "id": 198624,
+      "label": null,
+      "name": "Negative",
+      "schematic_symbol_id": 19777,
+      "terminal_type": "breadboard_female",
+      "updated_at": "2015-06-09T13:14:17Z",
+      "x": 5,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-05-29T00:14:14Z",
+      "dir": 90,
+      "id": 195874,
+      "label": null,
+      "name": "GND",
+      "schematic_symbol_id": 19501,
+      "terminal_type": "schematic",
+      "updated_at": "2015-05-29T00:14:14Z",
+      "x": 0,
+      "y": 40.6024096385543
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-05-29T00:14:14Z",
+      "dir": 270,
+      "id": 195873,
+      "label": null,
+      "name": "Vcc",
+      "schematic_symbol_id": 19501,
+      "terminal_type": "schematic",
+      "updated_at": "2015-05-29T00:16:25Z",
+      "x": 0,
+      "y": -40
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-05-28T18:48:17Z",
+      "dir": null,
+      "drill": "1000",
+      "footprint_id": 29813,
+      "generator_type": null,
+      "id": 246065,
+      "layer0": "<rect x=\"-950\" y=\"-950\" width=\"1900\" height=\"1900\" rx=\"0\" ry=\"0\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-950\" y=\"-950\" width=\"1900\" height=\"1900\" rx=\"0\" ry=\"0\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-05-28T18:48:17Z",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-05-28T18:48:17Z",
+      "dir": null,
+      "drill": "1000",
+      "footprint_id": 29813,
+      "generator_type": null,
+      "id": 246064,
+      "layer0": "<rect x=\"-950\" y=\"-950\" width=\"1900\" height=\"1900\" rx=\"950\" ry=\"950\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-950\" y=\"-950\" width=\"1900\" height=\"1900\" rx=\"950\" ry=\"950\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-05-28T18:48:17Z",
+      "x": 2540,
+      "y": 0
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "created_at": "2016-03-25T19:56:33Z",
+      "default": 5,
+      "default_prefix": "",
+      "default_show": false,
+      "device_id": 27571,
+      "id": 1799,
+      "name": "Current",
+      "unit": "",
+      "updated_at": "2016-04-07T01:08:45Z"
+    },
+    {
+      "path": "device.properties_attributes.1",
+      "created_at": "2016-03-25T19:40:57Z",
+      "default": 5,
+      "default_prefix": "",
+      "default_show": false,
+      "device_id": 27571,
+      "id": 1798,
+      "name": "Voltage",
+      "unit": "",
+      "updated_at": "2016-04-07T01:08:52Z"
+    }
+  ],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435076970bacb7911e71ac0c79c1172a500913dda/thumbnail20150623-5132-u2fg5r.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435076970bacb7911e71ac0c79c1172a500913dda/thumbnail20150623-5132-u2fg5r.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14328586834575da7ebfca3b5fee58c02781afb803/thumbnail20150529-304-nq5cnu.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14328586834575da7ebfca3b5fee58c02781afb803/thumbnail20150529-304-nq5cnu.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1433891774f5391e3a5ce844c8e9fb097767b268c6/thumbnail20150609-4233-mphic3.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1433891774f5391e3a5ce844c8e9fb097767b268c6/thumbnail20150609-4233-mphic3.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/111724.json"
+}

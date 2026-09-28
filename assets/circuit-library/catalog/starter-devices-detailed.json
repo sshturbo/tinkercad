@@ -1,0 +1,28 @@
+[
+  {
+    "kind": "starter-device",
+    "id": "starterArduinoSmoothing",
+    "device_id": "starterArduinoSmoothing",
+    "name": "Smoothing",
+    "path": "starter-devices/smoothing--starterArduinoSmoothing",
+    "record_json": "starter-devices/smoothing--starterArduinoSmoothing/record.json",
+    "thumbnail": "starter-devices/smoothing--starterArduinoSmoothing/starterArduinoSmoothing.png",
+    "simulation_model": null,
+    "svg_count": 1,
+    "pin_record_count": 0,
+    "property_record_count": 3
+  },
+  {
+    "kind": "starter-device",
+    "id": "starterMicrobitMoisture",
+    "device_id": "starterMicrobitMoisture",
+    "name": "Moisture",
+    "path": "starter-devices/moisture--starterMicrobitMoisture",
+    "record_json": "starter-devices/moisture--starterMicrobitMoisture/record.json",
+    "thumbnail": "starter-devices/moisture--starterMicrobitMoisture/starterMicrobitMoisture.png",
+    "simulation_model": null,
+    "svg_count": 1,
+    "pin_record_count": 0,
+    "property_record_count": 12
+  }
+]

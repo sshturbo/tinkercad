@@ -1,0 +1,209 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 17920,
+  "device_id": "58468",
+  "name": "NPN Transistor (BJT)",
+  "description": "A component used to amplify or switch electronic signals. Commonly used with motors.",
+  "tags": [
+    "power control"
+  ],
+  "thumbnail": "transistorNPN.png",
+  "thumbnail_source": "/transistorNPN.png",
+  "footprint": {
+    "name": "TO5",
+    "id": 58468
+  },
+  "simulation_model": "npn",
+  "extents": {
+    "top": -37.92000198364258,
+    "left": -11.739998817443848,
+    "width": 23.479997634887695,
+    "height": 37.92000198364258
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-23T10:08:13Z",
+      "dir": 90,
+      "id": 202699,
+      "label": null,
+      "name": "Emitter",
+      "schematic_symbol_id": 20201,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T10:08:13Z",
+      "x": 10,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-23T10:08:13Z",
+      "dir": 90,
+      "id": 202700,
+      "label": null,
+      "name": "Base",
+      "schematic_symbol_id": 20201,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T10:08:13Z",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.2",
+      "created_at": "2015-06-23T10:08:13Z",
+      "dir": 90,
+      "id": 202701,
+      "label": null,
+      "name": "Collector",
+      "schematic_symbol_id": 20201,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T10:08:13Z",
+      "x": -10,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2012-07-03T19:44:58Z",
+      "dir": 90,
+      "id": 16,
+      "label": null,
+      "name": "emitter",
+      "schematic_symbol_id": 10,
+      "terminal_type": "schematic",
+      "updated_at": "2012-07-03T19:44:58Z",
+      "x": 16,
+      "y": 27.186
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2012-07-03T19:44:58Z",
+      "dir": 180,
+      "id": 17,
+      "label": null,
+      "name": "base",
+      "schematic_symbol_id": 10,
+      "terminal_type": "schematic",
+      "updated_at": "2012-07-03T19:44:58Z",
+      "x": -16,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.2",
+      "created_at": "2012-07-03T19:44:58Z",
+      "dir": 270,
+      "id": 18,
+      "label": null,
+      "name": "collector",
+      "schematic_symbol_id": 10,
+      "terminal_type": "schematic",
+      "updated_at": "2012-07-03T19:44:58Z",
+      "x": 16,
+      "y": -27.186
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-02-21T13:41:30Z",
+      "dir": 0,
+      "drill": "812.8",
+      "footprint_id": 2652,
+      "generator_type": "single",
+      "id": 10629,
+      "layer0": "<polygon points=\"565.7027253065002,228.55873705024766 238.39680033227378,561.6276660676001 -228.55873705024771,565.7027253065002 -561.6276660676001,238.3968003322738 -565.7027253065002,-228.55873705024766 -238.39680033227387,-561.6276660676001 228.55873705024763,-565.7027253065002 561.6276660676001,-238.3968003322739 \"/>",
+      "layer1": "<polygon points=\"565.7027253065002,228.55873705024766 238.39680033227378,561.6276660676001 -228.55873705024771,565.7027253065002 -561.6276660676001,238.3968003322738 -565.7027253065002,-228.55873705024766 -238.39680033227387,-561.6276660676001 228.55873705024763,-565.7027253065002 561.6276660676001,-238.3968003322739 \"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": 525,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:38:40Z",
+      "x": 0,
+      "y": 2540
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-02-21T13:41:30Z",
+      "dir": 0,
+      "drill": "812.8",
+      "footprint_id": 2652,
+      "generator_type": "single",
+      "id": 10630,
+      "layer0": "<polygon points=\"565.7027253065002,228.55873705024766 238.39680033227378,561.6276660676001 -228.55873705024771,565.7027253065002 -561.6276660676001,238.3968003322738 -565.7027253065002,-228.55873705024766 -238.39680033227387,-561.6276660676001 228.55873705024763,-565.7027253065002 561.6276660676001,-238.3968003322739 \"/>",
+      "layer1": "<polygon points=\"565.7027253065002,228.55873705024766 238.39680033227378,561.6276660676001 -228.55873705024771,565.7027253065002 -561.6276660676001,238.3968003322738 -565.7027253065002,-228.55873705024766 -238.39680033227387,-561.6276660676001 228.55873705024763,-565.7027253065002 561.6276660676001,-238.3968003322739 \"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": 525,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:38:40Z",
+      "x": 2540,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.2",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-02-21T13:41:30Z",
+      "dir": 0,
+      "drill": "812.8",
+      "footprint_id": 2652,
+      "generator_type": "single",
+      "id": 10631,
+      "layer0": "<polygon points=\"565.7027253065002,228.55873705024766 238.39680033227378,561.6276660676001 -228.55873705024771,565.7027253065002 -561.6276660676001,238.3968003322738 -565.7027253065002,-228.55873705024766 -238.39680033227387,-561.6276660676001 228.55873705024763,-565.7027253065002 561.6276660676001,-238.3968003322739 \"/>",
+      "layer1": "<polygon points=\"565.7027253065002,228.55873705024766 238.39680033227378,561.6276660676001 -228.55873705024771,565.7027253065002 -561.6276660676001,238.3968003322738 -565.7027253065002,-228.55873705024766 -238.39680033227387,-561.6276660676001 228.55873705024763,-565.7027253065002 561.6276660676001,-238.3968003322739 \"/>",
+      "name": "3",
+      "number": null,
+      "pad_type_id": 525,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:38:40Z",
+      "x": 0,
+      "y": -2540
+    }
+  ],
+  "properties": [],
+  "datasheets_or_references": [
+    {
+      "path": "device.datasheet_urls",
+      "url": "[{\"filename\":\"ULN2803A-STMicroelectronics-datasheet-8508263.pdf\",\"url\":\"http://datasheet.octopart.com/ULN2803A-STMicroelectronics-datasheet-8508263.pdf\"}]"
+    },
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14351438668f7c6a188141e72422383563f7fc25ce/thumbnail20150624-5116-1klnyum.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14351438668f7c6a188141e72422383563f7fc25ce/thumbnail20150624-5116-1klnyum.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435778284ff872f3409187ac9e6e990197f557dca/thumbnail20150701-31339-9jppjo.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435778284ff872f3409187ac9e6e990197f557dca/thumbnail20150701-31339-9jppjo.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1433879502903fdaf3c1e9efa29f1762b01ef60d72/thumbnail20150609-13389-28uit7.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1433879502903fdaf3c1e9efa29f1762b01ef60d72/thumbnail20150609-13389-28uit7.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/58468.json"
+}

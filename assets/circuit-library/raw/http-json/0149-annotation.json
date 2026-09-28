@@ -1,0 +1,103 @@
+{
+  "url": "https://editor.tinkercad.com/assets_cc_1faad5n/js/packaged_devices/annotation.json",
+  "payload": {
+    "description": null,
+    "device_id": "annotation",
+    "footprint_id": "annotation",
+    "id": "annotation",
+    "name": null,
+    "octo_uid": null,
+    "footprint_name": "ANNOTATION",
+    "device": {
+      "base": "",
+      "breadboard_id": "annotation",
+      "circuitscribe_footprint_id": null,
+      "circuitscribe_footprint_rotation": 0.0,
+      "datasheet_urls": "",
+      "description": "Add notes to your circuit.",
+      "id": "annotation",
+      "name": "Annotation",
+      "programmable": false,
+      "programmable_settings": "",
+      "simulation_model": "annotation",
+      "summary": "",
+      "version_root_id": 808229,
+      "breadboard": {
+        "background": false,
+        "breadboard": false,
+        "extents": {
+          "left": 0,
+          "top": 0,
+          "width": 0,
+          "height": 0
+        },
+        "generator_type": null,
+        "id": "annotation",
+        "name": "breadboard_annotation",
+        "svg": "<svg class=\"cgfx__annotation\" viewbox=\"-2000 -2000 4000 4000\" width=\"4000\" height=\"4000\" x=\"-2000\" y=\"-2000\"><defs><filter id=\"annotationDropShadow\" height=\"130%\"><feGaussianBlur in=\"SourceAlpha\" stdDeviation=\"3\"/><feOffset dx=\"2\" dy=\"2\" result=\"offsetblur\"/><feComponentTransfer><feFuncA type=\"linear\" slope=\"0.2\"/></feComponentTransfer><feMerge><feMergeNode></feMergeNode><feMergeNode in=\"SourceGraphic\"></feMergeNode></feMerge></filter></defs><g class=\"cgfx__selected cgfx__fixedscale\" style=\"fill:#3b8ed7;stroke:#3b8ed7;stroke-width:3.5px;\" display=\"none\"><path class=\"annotation_collapsed\" fill=\"none\" d=\"M-5,-16l5,7l5,-7h8a4,4 0 0 0 4,-4v-26a4,4 0 0 0 -4,-4h-26a4,4 0 0 0 -4,4v26a4,4 0 0 0 4,4z\"/><path class=\"annotation_expanded\" display=\"none\" fill=\"none\" d=\"M-5,-20l5,10l5,-10h37.765625a6,6 0 0 0 6-6v-25a6,6 0 0 0 -6-6h-85.53125a6,6 0 0 0 -6,6v25a6,6 0 0 0 6,6z\"/></g><g class=\"cgfx__fixedscale\"><circle class=\"annotation_handle annotation_hover\" cx=\"0\" cy=\"0\" r=\"15\" fill=\"none\" stroke=\"#3b8ed7\" stroke-width=\"3\" opacity=\"0\"/><circle class=\"annotation_handle\" cx=\"0\" cy=\"0\" r=\"15\" fill=\"#3b8ed7\" stroke=\"#3b8ed7\" stroke-width=\"1\" opacity=\".1\"/><g class=\"annotation_handle annotation_move annotation_collapsed\"><circle cx=\"0\" cy=\"0\" r=\"6\" fill=\"#ffffff\" stroke=\"#333333\" stroke-width=\"2\"/></g><g class=\"annotation_handle annotation_collapse annotation_expanded\" display=\"none\"><circle cx=\"0\" cy=\"0\" r=\"10\" fill=\"#ffffff\" stroke=\"#333333\" stroke-width=\"2\"/><rect fill=\"#333333\" x=\"-7\" y=\"-2\" width=\"14\" height=\"4\"/></g><g class=\"annotation_collapsed\"><path class=\"annotation_collapsed annotation_hover\" d=\"M-5,-16l5,7l5,-7h8a4,4 0 0 0 4,-4v-26a4,4 0 0 0 -4,-4h-26a4,4 0 0 0 -4,4v26a4,4 0 0 0 4,4z\" fill=\"none\" stroke=\"#3b8ed7\" stroke-width=\"7\" opacity=\"0\"/><path class=\"annotation_collapsed\" d=\"M-5,-16l5,7l5,-7h8a4,4 0 0 0 4,-4v-26a4,4 0 0 0 -4,-4h-26a4,4 0 0 0 -4,4v26a4,4 0 0 0 4,4z\" filter=\"url(#annotationDropShadow)\" fill=\"rgba(255,255,255,0.9)\" stroke=\"#e9ebef\" stroke-width=\"1\"/><g class=\"annotation_collapsed_icon\" transform=\"translate(0,-33.5)\"><rect fill=\"#556373\" x=\"-8\" y=\"-7.5\" width=\"16\" height=\"2\"/><rect fill=\"#556373\" x=\"-8\" y=\"-2.5\" width=\"14\" height=\"2\"/><rect fill=\"#556373\" x=\"-8\" y=\"2.5\" width=\"16\" height=\"2\"/><rect fill=\"#556373\" x=\"-8\" y=\"7.5\" width=\"11\" height=\"2\"/></g></g><g class=\"annotation_expanded\" display=\"none\"><path class=\"annotation_expanded annotation_hover\" d=\"M-5,-20l5,10l5,-10h37.765625a6,6 0 0 0 6-6v-25a6,6 0 0 0 -6-6h-85.53125a6,6 0 0 0 -6,6v25a6,6 0 0 0 6,6z\" fill=\"none\" stroke=\"#3b8ed7\" stroke-width=\"7\" opacity=\"0\"/><path class=\"annotation_expanded\" d=\"M-5,-20l5,10l5,-10h37.765625a6,6 0 0 0 6-6v-25a6,6 0 0 0 -6-6h-85.53125a6,6 0 0 0 -6,6v25a6,6 0 0 0 6,6z\" filter=\"url(#annotationDropShadow)\" fill=\"rgba(255,255,255,0.9)\" stroke=\"#e9ebef\" stroke-width=\"1\"/><foreignObject class=\"annotation\" x=\"-48.765625\" y=\"-57\" width=\"100%\" height=\"100%\" style=\"text-align:left;width:100%;height:0px\"><div xmlns=\"http://www.w3.org/1999/xhtml\" style=\"width:auto;display:inline-block;font-family:ArtifaktElement-Medium,sans-serif;font-size:15px;color:#34495e;padding:10px;text-align:left;\"><p xmlns=\"http://www.w3.org/1999/xhtml\" style=\"margin:0px;font-size:inherit;\" contenteditable=\"false\">Click to edit</p></div></foreignObject></g></g><g class=\"cgfx__hitarea cgfx__fixedscale\" style=\"fill:#ff0000;\" opacity=\"0\" display=\"inline\"><circle class=\"annotation_handle annotation_hover\" cx=\"0\" cy=\"0\" r=\"15\"/></g><g class=\"cgfx__hitarea_interaction cgfx__fixedscale\" style=\"#ff0000\" opacity=\"0\" display=\"inline\"><path class=\"annotation_collapsed annotation_expand annotation_hover\" d=\"M-5,-16l5,7l5,-7h8a4,4 0 0 0 4,-4v-26a4,4 0 0 0 -4,-4h-26a4,4 0 0 0 -4,4v26a4,4 0 0 0 4,4z\"/><path class=\"annotation_expanded annotation_orient annotation_hover\" display=\"none\" d=\"M-5,-20l5,10l5,-10h37.765625a6,6 0 0 0 6-6v-25a6,6 0 0 0 -6-6h-85.53125a6,6 0 0 0 -6,6v25a6,6 0 0 0 6,6z\" style=\"cursor:-webkit-grab;cursor:-moz-grab\"/><rect class=\"annotation_expanded annotation_text annotation_hover\" display=\"none\" x=\"-38.765625\" y=\"-47\" width=\"78\" height=\"17\" style=\"cursor:text\"/></g></svg>",
+        "symbol_type": "annotation",
+        "terminal_list": null,
+        "thumb_status": "",
+        "thumb_url": "",
+        "updated_at": "2015-06-09T13:44:19Z",
+        "user_id": null,
+        "thumbUrl": "",
+        "thumbStatus": "ok",
+        "rootId": "856126",
+        "schematic_symbol_terminals_attributes": []
+      },
+      "subdevices_attributes": [],
+      "properties_attributes": [
+        {
+          "default": 1,
+          "default_prefix": "",
+          "default_show": false,
+          "device_id": "annotation",
+          "id": 4320,
+          "name": "collapsed",
+          "unit": "hidden"
+        },
+        {
+          "default": 0,
+          "default_prefix": "",
+          "default_show": false,
+          "device_id": "annotation",
+          "id": 4321,
+          "name": "x",
+          "unit": "hidden"
+        },
+        {
+          "default": -30,
+          "default_prefix": "",
+          "default_show": false,
+          "device_id": "annotation",
+          "id": 4322,
+          "name": "y",
+          "unit": "hidden"
+        },
+        {
+          "default": "",
+          "default_prefix": "",
+          "default_show": false,
+          "device_id": "annotation",
+          "id": 4323,
+          "name": "content",
+          "unit": "hidden"
+        }
+      ]
+    },
+    "root_id": 808229,
+    "footprint": {
+      "id": "annotation",
+      "name": "ANNOTATION",
+      "outline": "",
+      "thumb_status": "",
+      "thumb_url": "",
+      "thumbUrl": "",
+      "thumbStatus": "ok",
+      "rootId": "856754",
+      "pads_attributes": []
+    },
+    "pinmaps_attributes": []
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "device_id": "248005",
+  "simulation_model": "lm339",
+  "implementation_found": true,
+  "module_id": "46173",
+  "model_file": "models/lm339--module-46173.js"
+}

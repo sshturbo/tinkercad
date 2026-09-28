@@ -1,0 +1,7 @@
+{
+  "device_id": "129710",
+  "simulation_model": "seven_segment_digit_5011bh",
+  "implementation_found": true,
+  "module_id": "28034",
+  "model_file": "models/seven_segment_digit_5011bh--module-28034.js"
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "kind": "helper",
+    "id": "annotation",
+    "device_id": "annotation",
+    "name": "annotation",
+    "path": "helpers/annotation--annotation",
+    "record_json": "helpers/annotation--annotation/record.json",
+    "thumbnail": null,
+    "simulation_model": "annotation",
+    "svg_count": 1,
+    "pin_record_count": 0,
+    "property_record_count": 4
+  }
+]

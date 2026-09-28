@@ -1,0 +1,19 @@
+{
+  "circuits_compiled_chars": 3280294,
+  "vendor_compiled_chars": 2482866,
+  "webpack_modules_detected": 667,
+  "simulation_models_extracted": 170,
+  "engine_modules_extracted": 332,
+  "engine_core_modules": 221,
+  "engine_dependency_modules": 111,
+  "packaged_devices": 112,
+  "packaged_devices_with_simulation_model": 107,
+  "packaged_devices_with_implementation_found": 103,
+  "packaged_devices_missing_implementation": 4,
+  "missing_models": [
+    "L293D",
+    "annotation",
+    "optoCoupler_4N35",
+    "piezoSound"
+  ]
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "17",
+    "name": "Other Components",
+    "description": "category",
+    "thumbUrl": "",
+    "rest_id": "",
+    "footprint_name": "Category",
+    "footprint_id": 241921,
+    "tags": null,
+    "raw": {
+      "hidden": true,
+      "id": "17",
+      "name": "Other Components",
+      "description": "category",
+      "thumbUrl": "",
+      "rest_id": "",
+      "footprint": {
+        "name": "Category",
+        "id": 241921
+      }
+    }
+  },
+  {
+    "id": "16",
+    "name": "Starters",
+    "description": "category",
+    "thumbUrl": "",
+    "rest_id": "",
+    "footprint_name": "Category",
+    "footprint_id": 241921,
+    "tags": null,
+    "raw": {
+      "hidden": true,
+      "id": "16",
+      "name": "Starters",
+      "description": "category",
+      "thumbUrl": "",
+      "rest_id": "",
+      "footprint": {
+        "name": "Category",
+        "id": 241921
+      }
+    }
+  }
+]

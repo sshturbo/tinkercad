@@ -1,0 +1,7 @@
+{
+  "device_id": "112324",
+  "simulation_model": "TMP36",
+  "implementation_found": true,
+  "module_id": "84820",
+  "model_file": "models/TMP36--module-84820.js"
+}

@@ -1,0 +1,160 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 28211,
+  "device_id": "114067",
+  "name": "Piezo",
+  "description": "A type of buzzer that makes noise at different frequencies.",
+  "tags": [
+    "output",
+    "sound",
+    "speaker",
+    "buzzer"
+  ],
+  "thumbnail": "piezo.png",
+  "thumbnail_source": "/piezo.png",
+  "footprint": {
+    "name": "PIEZO 22mm DIAMETER",
+    "id": 114067
+  },
+  "simulation_model": "piezoSound",
+  "extents": {
+    "top": -92.5,
+    "left": -42.5,
+    "width": 85,
+    "height": 92.5
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-09T13:44:23Z",
+      "dir": 0,
+      "id": 198666,
+      "label": null,
+      "name": "Negative",
+      "schematic_symbol_id": 19786,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-09T13:44:23Z",
+      "x": 25,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-09T13:44:23Z",
+      "dir": 180,
+      "id": 198665,
+      "label": null,
+      "name": "Positive",
+      "schematic_symbol_id": 19786,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-09T13:44:23Z",
+      "x": -25,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-09T20:00:02Z",
+      "dir": 180,
+      "id": 198850,
+      "label": null,
+      "name": "-",
+      "schematic_symbol_id": 19816,
+      "terminal_type": "schematic",
+      "updated_at": "2015-06-09T20:01:51Z",
+      "x": -10,
+      "y": 50
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-09T20:00:02Z",
+      "dir": 180,
+      "id": 198849,
+      "label": null,
+      "name": "+",
+      "schematic_symbol_id": 19816,
+      "terminal_type": "schematic",
+      "updated_at": "2015-06-09T20:01:51Z",
+      "x": -10,
+      "y": 30
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-06-09T20:38:25Z",
+      "dir": null,
+      "drill": "1000",
+      "footprint_id": 30091,
+      "generator_type": null,
+      "id": 248029,
+      "layer0": "<rect x=\"-1500\" y=\"-1500\" width=\"3000\" height=\"3000\" rx=\"1500\" ry=\"1500\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-1500\" y=\"-1500\" width=\"3000\" height=\"3000\" rx=\"1500\" ry=\"1500\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-06-09T20:38:52Z",
+      "x": -5000,
+      "y": 12700
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-06-09T20:38:25Z",
+      "dir": null,
+      "drill": "1000",
+      "footprint_id": 30091,
+      "generator_type": null,
+      "id": 248028,
+      "layer0": "<rect x=\"-1500\" y=\"-1500\" width=\"3000\" height=\"3000\" rx=\"1500\" ry=\"1500\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-1500\" y=\"-1500\" width=\"3000\" height=\"3000\" rx=\"1500\" ry=\"1500\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-06-09T20:38:52Z",
+      "x": 5000,
+      "y": 12700
+    }
+  ],
+  "properties": [],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/143387116329f5cd5064efcd263310e4a45a0e36ed/thumbnail20150609-9712-1b7oj2p.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/143387116329f5cd5064efcd263310e4a45a0e36ed/thumbnail20150609-9712-1b7oj2p.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1446066194a10b9f611e51104b89f0bf51e34d3653/thumbnail20151028-21931-2mbric.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1446066194a10b9f611e51104b89f0bf51e34d3653/thumbnail20151028-21931-2mbric.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/143396188223266cc979265737eab471847725eaf3/thumbnail20150610-22056-1ap7ayp.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/143396188223266cc979265737eab471847725eaf3/thumbnail20150610-22056-1ap7ayp.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/114067.json"
+}

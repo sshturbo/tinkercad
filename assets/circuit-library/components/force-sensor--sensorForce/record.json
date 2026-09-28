@@ -1,0 +1,121 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": "sensorForceid",
+  "device_id": "sensorForce",
+  "name": "Force Sensor",
+  "description": "A sensor whose resistance changes based on the amount of force applied.",
+  "tags": [
+    "pressure",
+    "resistor"
+  ],
+  "thumbnail": "sensorForce.png",
+  "thumbnail_source": "/sensorForce.png",
+  "footprint": {
+    "name": "Force Sensor",
+    "id": "sensorForce"
+  },
+  "simulation_model": "sensorForce",
+  "extents": {
+    "top": -136.9961395263672,
+    "left": -36.000003814697266,
+    "width": 72,
+    "height": 241.2461395263672
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "dir": 90,
+      "id": "sensorForcestid0",
+      "label": null,
+      "name": "1",
+      "schematic_symbol_id": "sensorForcebbid",
+      "terminal_type": "breadboard",
+      "x": -5,
+      "y": 103
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "dir": 90,
+      "id": "sensorForcestid1",
+      "label": null,
+      "name": "2",
+      "schematic_symbol_id": "sensorForcebbid",
+      "terminal_type": "breadboard",
+      "x": 5,
+      "y": 103
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "dir": 90,
+      "id": "sensorForcespid0",
+      "label": null,
+      "name": "1",
+      "schematic_symbol_id": "sensorForcessid",
+      "terminal_type": "schematic",
+      "x": -5,
+      "y": 103
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "dir": 90,
+      "id": "sensorForcespid1",
+      "label": null,
+      "name": "2",
+      "schematic_symbol_id": "sensorForcessid",
+      "terminal_type": "schematic",
+      "x": 5,
+      "y": 103
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "dir": null,
+      "drill": "900",
+      "footprint_id": "sensorForcefpid",
+      "generator_type": null,
+      "id": "sensorForcepaid0",
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": 0,
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "x": -1270,
+      "y": 26162
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "dir": null,
+      "drill": "900",
+      "footprint_id": "sensorForcefpid",
+      "generator_type": null,
+      "id": "sensorForcepaid1",
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": 1,
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "x": 1270,
+      "y": 26162
+    }
+  ],
+  "properties": [],
+  "datasheets_or_references": [],
+  "raw_device_json": "../../raw/packaged_devices/sensorForce.json"
+}

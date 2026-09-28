@@ -1,0 +1,404 @@
+{
+  "url": "https://app.launchdarkly.com/sdk/evalx/5d407e1b44690006c0951bb7/contexts/eyJrZXkiOiJITXpYMHpVZlBYeTFzMnZzZFU4YXJzNVYvSXd2UXpBRkpuYThCUUxkM3M0PSJ9",
+  "payload": {
+    "activity-attachments": {
+      "flagVersion": 4,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "bettermodals": {
+      "flagVersion": 5,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "challengehub": {
+      "flagVersion": 6,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "classmodals": {
+      "flagVersion": 5,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "client-export": {
+      "flagVersion": 3,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "codeblocks-app-render-refactor": {
+      "flagVersion": 10,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "codeblocks-new-control-types": {
+      "flagVersion": 4,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "codeblocks-tutorials": {
+      "flagVersion": 2,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "collapse-title": {
+      "flagVersion": 2,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "component-detail": {
+      "flagVersion": 5,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "contentful-slides": {
+      "flagVersion": 3,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "cruise": {
+      "flagVersion": 7,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "csg-retry": {
+      "flagVersion": 2,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "dashboard": {
+      "flagVersion": 6,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "dashboard-whats-new": {
+      "flagVersion": 3,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "db-ssl": {
+      "flagVersion": 5,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "designdetail": {
+      "flagVersion": 5,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "drive-picker": {
+      "flagVersion": 6,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "easy-tinkercad": {
+      "flagVersion": 2,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "enable-analytics": {
+      "flagVersion": 9,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "extended-tooltips": {
+      "flagVersion": 8,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "forge-login": {
+      "flagVersion": 14,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "global-showcase": {
+      "flagVersion": 2,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "image-plane": {
+      "flagVersion": 2,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "llm": {
+      "flagVersion": 4,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "mini-dash": {
+      "flagVersion": 4,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "motor": {
+      "flagVersion": 7,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "new-rotate-tool": {
+      "flagVersion": 3,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "opensearch": {
+      "flagVersion": 13,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "partner-elegoo": {
+      "flagVersion": 4,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "partner-merge3d": {
+      "flagVersion": 2,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "pending-approval": {
+      "flagVersion": 4,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "physics-preview": {
+      "flagVersion": 11,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "publish-shape": {
+      "flagVersion": 10,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "react-inspector": {
+      "flagVersion": 4,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "require-recaptcha": {
+      "flagVersion": 12,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "robotics": {
+      "flagVersion": 5,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "robotics-sections": {
+      "flagVersion": 3,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "robotics-showcase": {
+      "flagVersion": 2,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "send-smb-to-fusion": {
+      "flagVersion": 11,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "send-to-fusion-onboarding": {
+      "flagVersion": 5,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "send-to-fusion-team": {
+      "flagVersion": 5,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "send-to-fusion-team-circuits": {
+      "flagVersion": 6,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "send-triton-mesh": {
+      "flagVersion": 11,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "sendtoclassroom": {
+      "flagVersion": 5,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "sendtodrive": {
+      "flagVersion": 3,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "sensors": {
+      "flagVersion": 4,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "shape-panel-twopointoh": {
+      "flagVersion": 13,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "shape-panel-xrp": {
+      "flagVersion": 7,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "simlabmarketing": {
+      "flagVersion": 5,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "tinkercad-forma": {
+      "flagVersion": 12,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "tinkercad-forma-safemode": {
+      "flagVersion": 3,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "use-common-workspace": {
+      "flagVersion": 2,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "use-new-compiler-server": {
+      "flagVersion": 19,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    },
+    "use-oauth2": {
+      "flagVersion": 13,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "webgl-2": {
+      "flagVersion": 3,
+      "trackEvents": false,
+      "value": true,
+      "variation": 0,
+      "version": 574
+    },
+    "zoom-to-cursor": {
+      "flagVersion": 5,
+      "trackEvents": false,
+      "value": false,
+      "variation": 1,
+      "version": 574
+    }
+  }
+}

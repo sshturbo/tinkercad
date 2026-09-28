@@ -1,0 +1,74 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "helper",
+  "id": "annotation",
+  "device_id": "annotation",
+  "name": "annotation",
+  "description": null,
+  "tags": null,
+  "thumbnail": null,
+  "thumbnail_source": null,
+  "footprint": {
+    "name": null,
+    "id": "annotation"
+  },
+  "simulation_model": "annotation",
+  "extents": {
+    "left": 0,
+    "top": 0,
+    "width": 0,
+    "height": 0
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "default": 1,
+      "default_prefix": "",
+      "default_show": false,
+      "device_id": "annotation",
+      "id": 4320,
+      "name": "collapsed",
+      "unit": "hidden"
+    },
+    {
+      "path": "device.properties_attributes.1",
+      "default": 0,
+      "default_prefix": "",
+      "default_show": false,
+      "device_id": "annotation",
+      "id": 4321,
+      "name": "x",
+      "unit": "hidden"
+    },
+    {
+      "path": "device.properties_attributes.2",
+      "default": -30,
+      "default_prefix": "",
+      "default_show": false,
+      "device_id": "annotation",
+      "id": 4322,
+      "name": "y",
+      "unit": "hidden"
+    },
+    {
+      "path": "device.properties_attributes.3",
+      "default": "",
+      "default_prefix": "",
+      "default_show": false,
+      "device_id": "annotation",
+      "id": 4323,
+      "name": "content",
+      "unit": "hidden"
+    }
+  ],
+  "datasheets_or_references": [],
+  "raw_device_json": "../../raw/packaged_devices/annotation.json"
+}

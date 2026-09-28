@@ -1,0 +1,7 @@
+{
+  "device_id": "111724",
+  "simulation_model": "powerSupply",
+  "implementation_found": true,
+  "module_id": "66667",
+  "model_file": "models/powerSupply--module-66667.js"
+}

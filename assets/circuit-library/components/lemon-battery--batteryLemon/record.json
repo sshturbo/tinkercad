@@ -1,0 +1,143 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": "batteryLemonid",
+  "device_id": "batteryLemon",
+  "name": "Lemon Battery",
+  "description": "A chemical battery made from a lemon, and some copper and zinc metal.",
+  "tags": [
+    "power",
+    "voltage",
+    "supply"
+  ],
+  "thumbnail": "batteryLemon.png",
+  "thumbnail_source": "/batteryLemon.png",
+  "footprint": {
+    "name": "Lemon Battery Connector",
+    "id": "batteryLemon"
+  },
+  "simulation_model": "batteryLemon",
+  "extents": {
+    "top": -150,
+    "left": -143.96739196777344,
+    "width": 279.80438232421875,
+    "height": 262.79559326171875
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "dir": -90,
+      "id": "batteryLemonstid1",
+      "label": null,
+      "name": "Positive",
+      "schematic_symbol_id": "batteryLemonbbid",
+      "terminal_type": "breadboard",
+      "x": 5,
+      "y": -150
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "dir": -90,
+      "id": "batteryLemonstid2",
+      "label": null,
+      "name": "Negative",
+      "schematic_symbol_id": "batteryLemonbbid",
+      "terminal_type": "breadboard",
+      "x": -5,
+      "y": -150
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "dir": 270,
+      "id": "batteryLemonspid1",
+      "label": null,
+      "name": "+",
+      "schematic_symbol_id": "batteryLemonssid",
+      "terminal_type": "schematic",
+      "x": 0,
+      "y": -30
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "dir": 90,
+      "id": "batteryLemonspid2",
+      "label": null,
+      "name": "-",
+      "schematic_symbol_id": "batteryLemonssid",
+      "terminal_type": "schematic",
+      "x": 0,
+      "y": 37.5
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "dir": null,
+      "drill": "900",
+      "footprint_id": "batteryLemonfpid",
+      "generator_type": null,
+      "id": "batteryLemonpaid1",
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "x": 2540,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "dir": null,
+      "drill": "900",
+      "footprint_id": "batteryLemonfpid",
+      "generator_type": null,
+      "id": "batteryLemonpaid2",
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "x": -2540,
+      "y": 0
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "default": 0.52,
+      "default_prefix": "v",
+      "default_show": false,
+      "device_id": "batteryLemonid",
+      "id": "batteryLemonppid2",
+      "name": "voltage",
+      "unit": ""
+    },
+    {
+      "path": "device.properties_attributes.1",
+      "default": 5.9,
+      "default_prefix": "k",
+      "default_show": false,
+      "device_id": "batteryLemonid",
+      "id": "batteryLemonppid1",
+      "name": "resistance",
+      "unit": "ohm"
+    }
+  ],
+  "datasheets_or_references": [],
+  "raw_device_json": "../../raw/packaged_devices/batteryLemon.json"
+}

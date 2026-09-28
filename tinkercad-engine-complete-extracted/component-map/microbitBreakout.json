@@ -1,0 +1,7 @@
+{
+  "device_id": "microbitBreakout",
+  "simulation_model": "microbit",
+  "implementation_found": true,
+  "module_id": "59214",
+  "model_file": "models/microbit--module-59214.js"
+}

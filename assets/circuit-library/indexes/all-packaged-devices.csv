@@ -1,0 +1,113 @@
+﻿kind,id,device_id,name,path,record_json,thumbnail,simulation_model,svg_count,pin_record_count,property_record_count
+component,27266,111209,Optocoupler,components/optocoupler--111209,components/optocoupler--111209/record.json,components/optocoupler--111209/icOptocoupler4N35.png,optoCoupler_4N35,1,18,0
+component,27268,111211,Breadboard Small,components/breadboard-small--111211,components/breadboard-small--111211/record.json,components/breadboard-small--111211/breadboardSmall.png,,1,420,0
+component,27571,111724,Power Supply,components/power-supply--111724,components/power-supply--111724/record.json,components/power-supply--111724/powerSupply.png,powerSupply,1,6,2
+component,27664,112324,Temperature Sensor [TMP36],components/temperature-sensor-tmp36--112324,components/temperature-sensor-tmp36--112324/record.json,components/temperature-sensor-tmp36--112324/sensorTemperature.png,TMP36,1,9,0
+component,27263,112326,H-bridge Motor Driver,components/h-bridge-motor-driver--112326,components/h-bridge-motor-driver--112326/record.json,components/h-bridge-motor-driver--112326/icHBridgeL293D.png,L293D,1,48,0
+component,28098,113878,LCD 16 x 2,components/lcd-16-x-2--113878,components/lcd-16-x-2--113878/record.json,components/lcd-16-x-2--113878/displayLCD16x2.png,LCD_HD44780,1,52,0
+component,28211,114067,Piezo,components/piezo--114067,components/piezo--114067/record.json,components/piezo--114067/piezo.png,piezoSound,1,6,0
+component,28256,114158,DC Motor,components/dc-motor--114158,components/dc-motor--114158/record.json,components/dc-motor--114158/motorDCArduinoKit.png,dc_motor_arduino,1,6,0
+component,28704,116648,Breadboard,components/breadboard--116648,components/breadboard--116648/record.json,components/breadboard--116648/breadboard.png,,1,840,0
+component,28708,116655,Zener Diode,components/zener-diode--116655,components/zener-diode--116655/record.json,components/zener-diode--116655/diodeZener.png,zenerDiode,1,6,1
+component,28709,116662,Multimeter,components/multimeter--116662,components/multimeter--116662/record.json,components/multimeter--116662/multimeter.png,multimeter_v2,1,4,1
+component,28710,116686,USB standard A,components/usb-standard-a--116686,components/usb-standard-a--116686/record.json,components/usb-standard-a--116686/usbStandardA.png,USBstandard,1,14,0
+component,28711,116689,Timer,components/timer--116689,components/timer--116689/record.json,components/timer--116689/icTimer555.png,Timer555,1,24,0
+component,28712,116691,Photoresistor,components/photoresistor--116691,components/photoresistor--116691/record.json,components/photoresistor--116691/photoResistor.png,ldr_v2,1,6,0
+component,28713,116692,741 Operational Amplifier,components/741-operational-amplifier--116692,components/741-operational-amplifier--116692/record.json,components/741-operational-amplifier--116692/icOperationalAmplifier741.png,opAmp_UA741,1,24,0
+component,28714,116693,Light bulb,components/light-bulb--116693,components/light-bulb--116693/record.json,components/light-bulb--116693/lightBulb.png,lightBulb,1,6,0
+component,28715,116695,8-Bit Shift Register,components/8-bit-shift-register--116695,components/8-bit-shift-register--116695/record.json,components/8-bit-shift-register--116695/ic74HC595.png,74HC595,1,48,0
+component,28716,116696,Quad NAND gate,components/quad-nand-gate--116696,components/quad-nand-gate--116696/record.json,components/quad-nand-gate--116696/ic74HC00.png,74HC00,1,42,0
+component,28717,116698,Quad NOR gate,components/quad-nor-gate--116698,components/quad-nor-gate--116698/record.json,components/quad-nor-gate--116698/ic74HC02.png,74HC02,1,42,0
+component,28718,116701,Hex Inverter,components/hex-inverter--116701,components/hex-inverter--116701/record.json,components/hex-inverter--116701/ic74HC04.png,74HC04,1,42,0
+component,28719,116702,Quad AND gate,components/quad-and-gate--116702,components/quad-and-gate--116702/record.json,components/quad-and-gate--116702/ic74HC08.png,74HC08,1,42,0
+component,28720,116705,Triple 3-Input NAND gate,components/triple-3-input-nand-gate--116705,components/triple-3-input-nand-gate--116705/record.json,components/triple-3-input-nand-gate--116705/ic74HC10.png,74HC10,1,42,0
+component,28721,116707,Triple 3-Input AND gate,components/triple-3-input-and-gate--116707,components/triple-3-input-and-gate--116707/record.json,components/triple-3-input-and-gate--116707/ic74HC11.png,74HC11,1,42,0
+component,28722,116709,Inverting Schmitt Trigger,components/inverting-schmitt-trigger--116709,components/inverting-schmitt-trigger--116709/record.json,components/inverting-schmitt-trigger--116709/ic74HC14.png,74HC14,1,42,0
+component,28724,116714,Dual 4-Input NAND gate,components/dual-4-input-nand-gate--116714,components/dual-4-input-nand-gate--116714/record.json,components/dual-4-input-nand-gate--116714/ic74HC20.png,74HC20,1,42,0
+component,28725,116716,Dual 4-Input AND gate,components/dual-4-input-and-gate--116716,components/dual-4-input-and-gate--116716/record.json,components/dual-4-input-and-gate--116716/ic74HC21.png,74HC21,1,42,0
+component,28726,116719,Triple 3-Input NOR gate,components/triple-3-input-nor-gate--116719,components/triple-3-input-nor-gate--116719/record.json,components/triple-3-input-nor-gate--116719/ic74HC27.png,74HC27,1,42,0
+component,28727,116721,Quad OR gate,components/quad-or-gate--116721,components/quad-or-gate--116721/record.json,components/quad-or-gate--116721/ic74HC32.png,74HC32,1,42,0
+component,28729,116723,Dual J-K Flip-Flop,components/dual-j-k-flip-flop--116723,components/dual-j-k-flip-flop--116723/record.json,components/dual-j-k-flip-flop--116723/ic74HC73.png,74HC73,1,42,0
+component,28730,116725,Dual D Flip-Flop,components/dual-d-flip-flop--116725,components/dual-d-flip-flop--116725/record.json,components/dual-d-flip-flop--116725/ic74HC74.png,74HC74,1,42,0
+component,28731,116727,Quad XOR gate,components/quad-xor-gate--116727,components/quad-xor-gate--116727/record.json,components/quad-xor-gate--116727/ic74HC86.png,74HC86,1,42,0
+component,28732,116728,4-Bit Binary Counter,components/4-bit-binary-counter--116728,components/4-bit-binary-counter--116728/record.json,components/4-bit-binary-counter--116728/ic74HC93.png,74HC93,1,42,0
+component,28733,116730,Quad NAND Schmitt Trigger,components/quad-nand-schmitt-trigger--116730,components/quad-nand-schmitt-trigger--116730/record.json,components/quad-nand-schmitt-trigger--116730/ic74HC132.png,74HC132,1,42,0
+component,28734,116732,Photodiode,components/photodiode--116732,components/photodiode--116732/record.json,components/photodiode--116732/photoDiode.png,photodiode_v2,1,6,0
+component,28784,116838,Small Signal nMOS Transistor,components/small-signal-nmos-transistor--116838,components/small-signal-nmos-transistor--116838/record.json,components/small-signal-nmos-transistor--116838/transistorNMOS.png,nmos,1,9,0
+component,28785,116839,Small Signal pMOS Transistor,components/small-signal-pmos-transistor--116839,components/small-signal-pmos-transistor--116839/record.json,components/small-signal-pmos-transistor--116839/transistorPMOS.png,pmos,1,9,0
+component,28786,116840,ATtiny,components/attiny--116840,components/attiny--116840/record.json,components/attiny--116840/attiny.png,ATtiny,1,24,1
+component,28787,116841,9V Battery,components/9v-battery--116841,components/9v-battery--116841/record.json,components/9v-battery--116841/battery9V.png,battery9V,1,6,0
+component,28788,116842,Breadboard Mini,components/breadboard-mini--116842,components/breadboard-mini--116842/record.json,components/breadboard-mini--116842/breadboardMini.png,,1,170,0
+component,28789,116859,8 Pin Header,components/8-pin-header--116859,components/8-pin-header--116859/record.json,components/8-pin-header--116859/header8pin.png,null_device,1,24,0
+component,29726,121827,7-Segment Decoder,components/7-segment-decoder--121827,components/7-segment-decoder--121827/record.json,components/7-segment-decoder--121827/icCD4511.png,CD4511,1,48,0
+component,29956,122164,Relay DPDT,components/relay-dpdt--122164,components/relay-dpdt--122164/record.json,components/relay-dpdt--122164/relayDPDT.png,relay_dpdt,1,24,0
+component,29959,122167,Relay SPDT,components/relay-spdt--122167,components/relay-spdt--122167/record.json,components/relay-spdt--122167/relaySPDTBlack.png,relay_spdt,1,18,0
+component,31599,129343,Johnson Decade Counter,components/johnson-decade-counter--129343,components/johnson-decade-counter--129343/record.json,components/johnson-decade-counter--129343/ic74HC4017.png,74HC4017,1,48,0
+component,31738,129710,7 Segment Display,components/7-segment-display--129710,components/7-segment-display--129710/record.json,components/7-segment-display--129710/display7SegmentCommonAnode.png,seven_segment_digit_5011bh,1,30,1
+component,31873,132486,Tilt Sensor,components/tilt-sensor--132486,components/tilt-sensor--132486/record.json,components/tilt-sensor--132486/sensorTilt.png,sensor_tilt_sw200d,1,6,0
+component,31896,132521,Arduino Uno R3,components/arduino-uno-r3--132521,components/arduino-uno-r3--132521/record.json,components/arduino-uno-r3--132521/arduinoUnoR3.png,arduinoUnoRev3,1,100,1
+component,33016,138097,IR remote,components/ir-remote--138097,components/ir-remote--138097/record.json,components/ir-remote--138097/infraredRemoteControl.png,IRremote,1,0,0
+component,33187,138714,TIP120,components/tip120--138714,components/tip120--138714/record.json,components/tip120--138714/transistorTIP120.png,tip120,1,10,0
+component,33955,142073,Micro Servo,components/micro-servo--142073,components/micro-servo--142073/record.json,components/micro-servo--142073/motorServoDFRobotKit.png,servo_SG90,1,9,1
+component,33961,142078,Ambient Light Sensor [Phototransistor],components/ambient-light-sensor-phototransistor--142078,components/ambient-light-sensor-phototransistor--142078/record.json,components/ambient-light-sensor-phototransistor--142078/photoTransistor.png,phototransistor,1,7,0
+component,34360,144786,Pushbutton,components/pushbutton--144786,components/pushbutton--144786/record.json,components/pushbutton--144786/pushButton.png,button,1,12,0
+component,35130,146812,DIP Switch DPST,components/dip-switch-dpst--146812,components/dip-switch-dpst--146812/record.json,components/dip-switch-dpst--146812/dipSwitchDPST.png,dip_switch_spdt,1,12,1
+component,35401,148342,DIP Switch SPST x 4,components/dip-switch-spst-x-4--148342,components/dip-switch-spst-x-4--148342/record.json,components/dip-switch-spst-x-4--148342/dipSwitchSPSTx4.png,dip_switch_4,1,24,4
+component,35402,148343,DIP Switch SPST x 6,components/dip-switch-spst-x-6--148343,components/dip-switch-spst-x-6--148343/record.json,components/dip-switch-spst-x-6--148343/dipSwitchSPSTx6.png,dip_switch_6,1,36,6
+component,36242,153670,DC Motor with encoder,components/dc-motor-with-encoder--153670,components/dc-motor-with-encoder--153670/record.json,components/dc-motor-with-encoder--153670/motorDCEncoderSmall.png,dc_motor_encoder_small,1,18,1
+component,39041,165360,Coin Cell 3V Battery,components/coin-cell-3v-battery--165360,components/coin-cell-3v-battery--165360/record.json,components/coin-cell-3v-battery--165360/batteryCoinCell.png,coinCell,1,6,0
+component,45398,196401,IR sensor,components/ir-sensor--196401,components/ir-sensor--196401/record.json,components/ir-sensor--196401/sensorInfrared.png,IRsensor,1,9,0
+component,46828,202163,NeoPixel Ring 12,components/neopixel-ring-12--202163,components/neopixel-ring-12--202163/record.json,components/neopixel-ring-12--202163/neopixelRing12.png,ws2812b_ring12,1,12,0
+component,46936,202580,Dual Timer,components/dual-timer--202580,components/dual-timer--202580/record.json,components/dual-timer--202580/icTimer556.png,timer556,1,42,0
+component,47214,203761,Keypad 4x4,components/keypad-4x4--203761,components/keypad-4x4--203761/record.json,components/keypad-4x4--203761/keypad.png,keypad_4x4,1,24,0
+component,48698,209278,Function Generator,components/function-generator--209278,components/function-generator--209278/record.json,components/function-generator--209278/functionGenerator.png,function_generator,1,6,4
+component,48952,212155,5V Regulator [LM7805],components/5v-regulator-lm7805--212155,components/5v-regulator-lm7805--212155/record.json,components/5v-regulator-lm7805--212155/regulator5V.png,voltageRegulator5V,1,10,0
+component,48953,212156,3.3V Regulator [LD1117V33],components/3.3v-regulator-ld1117v33--212156,components/3.3v-regulator-ld1117v33--212156/record.json,components/3.3v-regulator-ld1117v33--212156/regulator3V.png,voltageRegulator3p3V,1,10,0
+component,49811,215824,NeoPixel Ring 24,components/neopixel-ring-24--215824,components/neopixel-ring-24--215824/record.json,components/neopixel-ring-24--215824/neopixelRing24.png,ws2812b_ring24,1,18,0
+component,49813,215830,NeoPixel Ring 16,components/neopixel-ring-16--215830,components/neopixel-ring-16--215830/record.json,components/neopixel-ring-16--215830/neopixelRing16.png,ws2812b_ring16,1,18,0
+component,49820,215842,NeoPixel,components/neopixel--215842,components/neopixel--215842/record.json,components/neopixel--215842/neopixelBreadboard.png,ws2812_breadboard,1,18,0
+component,50340,219294,Ultrasonic Distance Sensor,components/ultrasonic-distance-sensor--219294,components/ultrasonic-distance-sensor--219294/record.json,components/ultrasonic-distance-sensor--219294/sensorUltrasonicDistance.png,sensor_ultrasonic_ping,1,9,2
+component,52579,234203,PIR Sensor,components/pir-sensor--234203,components/pir-sensor--234203/record.json,components/pir-sensor--234203/sensorPassiveInfrared.png,sensor_pir,1,9,2
+component,53905,239306,Gas Sensor,components/gas-sensor--239306,components/gas-sensor--239306/record.json,components/gas-sensor--239306/sensorGas.png,sensor_gas,1,18,2
+component,54646,241925,1.5V Battery,components/1.5v-battery--241925,components/1.5v-battery--241925/record.json,components/1.5v-battery--241925/batteryAA.png,AABattery,1,6,3
+component,56250,248005,Quad comparator,components/quad-comparator--248005,components/quad-comparator--248005/record.json,components/quad-comparator--248005/icComparatorQuadLM339.png,lm339,1,42,0
+component,63927,286515,Dual comparator,components/dual-comparator--286515,components/dual-comparator--286515/record.json,components/dual-comparator--286515/icComparatorDualLM393.png,lm393,1,24,0
+component,71005,311892,Vibration Motor,components/vibration-motor--311892,components/vibration-motor--311892/record.json,components/vibration-motor--311892/motorVibration.png,vibration_motor,1,6,0
+component,330000,330000,Hobby Gearmotor,components/hobby-gearmotor--330000,components/hobby-gearmotor--330000/record.json,components/hobby-gearmotor--330000/motorDCHobbyGear.png,dc_motor_hobby_gear,1,6,0
+component,14416,45547,Potentiometer,components/potentiometer--45547,components/potentiometer--45547/record.json,components/potentiometer--45547/potentiometer.png,potentiometer_v2,1,9,2
+component,16511,53184,Resistor,components/resistor--53184,components/resistor--53184/record.json,components/resistor--53184/resistor.png,resistor,1,6,1
+component,17910,57752,Capacitor,components/capacitor--57752,components/capacitor--57752/record.json,components/capacitor--57752/capacitor.png,capacitor,1,6,1
+component,17911,57950,Polarized Capacitor,components/polarized-capacitor--57950,components/polarized-capacitor--57950/record.json,components/polarized-capacitor--57950/capacitorPolarized.png,capacitor_polarized,1,6,2
+component,17913,58208,Inductor,components/inductor--58208,components/inductor--58208/record.json,components/inductor--58208/inductor.png,inductor,1,6,1
+component,17914,58320,Diode,components/diode--58320,components/diode--58320/record.json,components/diode--58320/diode.png,diode,1,6,0
+component,17916,58422,LED,components/led--58422,components/led--58422/record.json,components/led--58422/led.png,led2,1,6,1
+component,17917,58456,LED RGB,components/led-rgb--58456,components/led-rgb--58456/record.json,components/led-rgb--58456/ledRGB.png,ledRGB,1,12,1
+component,17919,58458,Slideswitch,components/slideswitch--58458,components/slideswitch--58458/record.json,components/slideswitch--58458/slideSwitch.png,slide_switch_v2,2,9,1
+component,17920,58468,NPN Transistor (BJT),components/npn-transistor-bjt--58468,components/npn-transistor-bjt--58468/record.json,components/npn-transistor-bjt--58468/transistorNPN.png,npn,1,9,0
+component,17921,58571,PNP Transistor (BJT),components/pnp-transistor-bjt--58571,components/pnp-transistor-bjt--58571/record.json,components/pnp-transistor-bjt--58571/transistorPNP.png,pnp,1,9,0
+component,17924,58627,nMOS Transistor (MOSFET),components/nmos-transistor-mosfet--58627,components/nmos-transistor-mosfet--58627/record.json,components/nmos-transistor-mosfet--58627/transistorNMOSFET.png,power_nmos,1,9,0
+component,17927,58630,Oscilloscope,components/oscilloscope--58630,components/oscilloscope--58630/record.json,components/oscilloscope--58630/oscilloscope.png,oscilloscope,1,4,2
+component,18104,59076,pMOS Transistor (MOSFET),components/pmos-transistor-mosfet--59076,components/pmos-transistor-mosfet--59076/record.json,components/pmos-transistor-mosfet--59076/transistorPMOSFET.png,power_pmos,1,9,0
+helper,annotation,annotation,annotation,helpers/annotation--annotation,helpers/annotation--annotation/record.json,,annotation,1,0,4
+component,batteryLemonid,batteryLemon,Lemon Battery,components/lemon-battery--batteryLemon,components/lemon-battery--batteryLemon/record.json,components/lemon-battery--batteryLemon/batteryLemon.png,batteryLemon,1,6,2
+component,batteryPotatoid,batteryPotato,Potato Battery,components/potato-battery--batteryPotato,components/potato-battery--batteryPotato/record.json,components/potato-battery--batteryPotato/batteryPotato.png,batteryPotato,1,6,2
+component,display7SegmentI2C,display7SegmentI2C,7-Segment Clock Display,components/7-segment-clock-display--display7SegmentI2C,components/7-segment-clock-display--display7SegmentI2C/record.json,components/7-segment-clock-display--display7SegmentI2C/display7SegmentI2C.png,seven-segment-i2c,1,12,2
+component,displayLCD16x2I2C,displayLCD16x2I2C,LCD 16 x 2 (I2C),components/lcd-16-x-2-i2c--displayLCD16x2I2C,components/lcd-16-x-2-i2c--displayLCD16x2I2C/record.json,components/lcd-16-x-2-i2c--displayLCD16x2I2C/displayLCD16x2I2C.png,LCD_HD44780_I2C,1,12,2
+component,ic74hc283,ic74hc283,4-Bit Adder,components/4-bit-adder--ic74hc283,components/4-bit-adder--ic74hc283/record.json,components/4-bit-adder--ic74hc283/ic74HC283.png,74HC283,1,48,0
+component,ic74hc75,ic74hc75,4-Bit Latch,components/4-bit-latch--ic74hc75,components/4-bit-latch--ic74hc75/record.json,components/4-bit-latch--ic74hc75/ic74HC75.png,74HC75,1,48,0
+component,icPCF8574,icPCF8574,8-port I2C expander,components/8-port-i2c-expander--icPCF8574,components/8-port-i2c-expander--icPCF8574/record.json,components/8-port-i2c-expander--icPCF8574/icPCF8574.png,pcf8574,1,48,0
+component,microbitid,microbit,micro:bit,components/micro-bit--microbit,components/micro-bit--microbit/record.json,components/micro-bit--microbit/microbit.png,microbit,1,15,4
+component,microbitBreakoutid,microbitBreakout,micro:bit with Breakout,components/micro-bit-with-breakout--microbitBreakout,components/micro-bit-with-breakout--microbitBreakout/record.json,components/micro-bit-with-breakout--microbitBreakout/microbitBreakout.png,microbit,1,66,4
+component,neopixel_strip_10,neopixel_strip_10,NeoPixel Strip 10,components/neopixel-strip-10--neopixel_strip_10,components/neopixel-strip-10--neopixel_strip_10/record.json,components/neopixel-strip-10--neopixel_strip_10/neopixelStrip10.png,ws2812_strip10,1,12,0
+component,neopixel_strip_12,neopixel_strip_12,NeoPixel Strip 12,components/neopixel-strip-12--neopixel_strip_12,components/neopixel-strip-12--neopixel_strip_12/record.json,components/neopixel-strip-12--neopixel_strip_12/neopixelStrip12.png,ws2812_strip12,1,12,0
+component,neopixel_strip_16,neopixel_strip_16,NeoPixel Strip 16,components/neopixel-strip-16--neopixel_strip_16,components/neopixel-strip-16--neopixel_strip_16/record.json,components/neopixel-strip-16--neopixel_strip_16/neopixelStrip16.png,ws2812_strip16,1,12,0
+component,neopixel_strip_20,neopixel_strip_20,NeoPixel Strip 20,components/neopixel-strip-20--neopixel_strip_20,components/neopixel-strip-20--neopixel_strip_20/record.json,components/neopixel-strip-20--neopixel_strip_20/neopixelStrip20.png,ws2812_strip20,1,12,0
+component,neopixel_strip_4,neopixel_strip_4,NeoPixel Strip 4,components/neopixel-strip-4--neopixel_strip_4,components/neopixel-strip-4--neopixel_strip_4/record.json,components/neopixel-strip-4--neopixel_strip_4/neopixelStrip4.png,ws2812_strip4,1,12,0
+component,neopixel_strip_6,neopixel_strip_6,NeoPixel Strip 6,components/neopixel-strip-6--neopixel_strip_6,components/neopixel-strip-6--neopixel_strip_6/record.json,components/neopixel-strip-6--neopixel_strip_6/neopixelStrip6.png,ws2812_strip6,1,12,0
+component,neopixel_strip_8,neopixel_strip_8,NeoPixel Strip 8,components/neopixel-strip-8--neopixel_strip_8,components/neopixel-strip-8--neopixel_strip_8/record.json,components/neopixel-strip-8--neopixel_strip_8/neopixelStrip8.png,ws2812_strip8,1,12,0
+component,sensorFlexid,sensorFlex,Flex Sensor,components/flex-sensor--sensorFlex,components/flex-sensor--sensorFlex/record.json,components/flex-sensor--sensorFlex/sensorFlex.png,sensorFlex,1,6,1
+component,sensorForceid,sensorForce,Force Sensor,components/force-sensor--sensorForce,components/force-sensor--sensorForce/record.json,components/force-sensor--sensorForce/sensorForce.png,sensorForce,1,6,0
+component,sensorSoilMoistureid,sensorSoilMoisture,Soil Moisture Sensor,components/soil-moisture-sensor--sensorSoilMoisture,components/soil-moisture-sensor--sensorSoilMoisture/record.json,components/soil-moisture-sensor--sensorSoilMoisture/sensorSoilMoisture.png,sensorSoilMoisture,1,18,0
+component,solarCellid,solarCell,Solar Cell,components/solar-cell--solarCell,components/solar-cell--solarCell/record.json,components/solar-cell--solarCell/solarCell.png,solarCell,1,6,2
+starter-device,starterArduinoSmoothing,starterArduinoSmoothing,Smoothing,starter-devices/smoothing--starterArduinoSmoothing,starter-devices/smoothing--starterArduinoSmoothing/record.json,starter-devices/smoothing--starterArduinoSmoothing/starterArduinoSmoothing.png,,1,0,3
+starter-device,starterMicrobitMoisture,starterMicrobitMoisture,Moisture,starter-devices/moisture--starterMicrobitMoisture,starter-devices/moisture--starterMicrobitMoisture/record.json,starter-devices/moisture--starterMicrobitMoisture/starterMicrobitMoisture.png,,1,0,12

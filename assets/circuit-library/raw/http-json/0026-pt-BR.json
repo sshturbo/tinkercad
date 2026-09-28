@@ -1,0 +1,2935 @@
+{
+  "url": "https://editor.tinkercad.com/assets_cc_1faad5n/js/lang/pt-BR.json",
+  "payload": {
+    "Saved": "Salvo",
+    "Saving...": "Salvando...",
+    "All changes saved": "Todas as alterações salvas",
+    "Connection lost! Changes will be saved on reconnect.": "Conexão perdida. As alterações serão salvas ao reconectar.",
+    "Connection failed! Please contact support!": "Falha na conexão. Entre em contato com o suporte.",
+    "Start Simulation": "Iniciar simulação",
+    "Stop Simulation": "Parar simulação",
+    "Upload & Run": "Carregar e executar",
+    "Initializing...": "Inicializando...",
+    "Compiling...": "Compilando...",
+    "Code": "Código",
+    "Export": "Exportar",
+    "Send To": "Enviar para",
+    "Find more components": "Localizar mais componentes",
+    "Switch to compact view": "Alternar para vista compacta",
+    "Switch to detail view": "Alternar para vista de detalhe",
+    "Search for components <shortcut>Ctrl + F</shortcut>": "Procurar componentes <shortcut>Ctrl + F</shortcut>",
+    "Clear search": "Limpar pesquisa",
+    "Hide components panel": "Ocultar painel de componentes",
+    "Show components panel": "Mostrar painel de componentes",
+    "Components": "Componentes",
+    "Basic": "Básico",
+    "All": "Todos",
+    "Starters": "Disparadores",
+    "Circuit Assemblies": "Montagens de circuito",
+    "Arduino": "Arduino",
+    "Component List": "Lista de componentes",
+    "Download CSV": "Fazer download de CSV",
+    "Name": "Nome",
+    "Quantity": "Quantidade",
+    "Component": "Componente",
+    "Circuit View": "Vista do circuito",
+    "Rotate <shortcut>R</shortcut>": "Rotacionar <shortcut>R</shortcut>",
+    "Mirror component <shortcut>M</shortcut>": "Espelhar componente <shortcut>M</shortcut>",
+    "Copy <shortcut>Ctrl + C</shortcut>": "Copiar <shortcut>Ctrl + C</shortcut>",
+    "Paste <shortcut>Ctrl + V</shortcut>": "Colar <shortcut>Ctrl + V</shortcut>",
+    "Delete <shortcut>Delete</shortcut>": "Excluir <shortcut>Delete</shortcut>",
+    "Undo <shortcut>Ctrl + Z</shortcut>": "Desfazer <shortcut>Ctrl + Z</shortcut>",
+    "Redo <shortcut>Ctrl + Y</shortcut>": "Refazer <shortcut>Ctrl + Y</shortcut>",
+    "Note": "Nota",
+    "Zoom to fit <shortcut>F</shortcut>": "Zoom para ajustar <shortcut>F</shortcut>",
+    "Discover pre-made circuits to<br>build from under <b>Starters</b>": "Descubra circuitos pré-fabricados para<br>construir em <b>Disparadores</b>",
+    "Search": "Pesquisar",
+    "Oops! We encountered an error.": "Ops! Encontramos um erro.",
+    "Close this dialog and try again.": "Feche esta caixa de diálogo e tente novamente.",
+    "New link created.\nThis link will be available for %1 hours": "Novo link criado.\nEste link estará disponível por %1 horas",
+    "About %1 hours till the link expires.": "Aproximadamente %1 horas até que o link expire.",
+    "This link will not expire.": "Este link não expirará.",
+    "Collaborate": "Colaborar",
+    "New link created.": "Novo link criado.",
+    "Share this link over IM or Email": "Compartilhar este link por mensagem instantânea ou email",
+    "People with this link may view and make changes to your design.": "Pessoas com este link podem ver e fazer mudanças no seu desenho.",
+    "Copy": "Copiar",
+    "Link copied to your clipboard": "Link copiado para a área de transferência",
+    "Generate new link": "Gerar novo link",
+    "Picture of your design": "Imagem do seu projeto",
+    "Electrical design files": "Arquivos de projeto elétrico",
+    "Take your designs further with Autodesk": "Leve seus projetos mais longe com a Autodesk",
+    "Autodesk Fusion": "Autodesk Fusion",
+    "Share over IM or email": "Compartilhar por mensagem instantânea ou e-mail",
+    "Create with others by sharing a link to your design. People with the link may view and make changes to your design.": "Crie com outros usuários compartilhando um link para o seu projeto. As pessoas que possuem esse link podem ver e alterar seu projeto.",
+    "Invite people": "Convidar pessoas",
+    "Download": "Baixar",
+    "Download an EAGLE .BRD for circuit board layout.": "Baixe um EAGLE .BRD para o layout de placa de circuito.",
+    "The part %1 is not included in the Tinkercad library in Fusion. We have replaced it with a simple header.": "A peça %1 não está incluída na biblioteca do Tinkercad no Fusion. Ela foi substituída por um cabeçalho simples.",
+    "The parts %1 are not included in the Tinkercad library in Fusion. We have replaced them with simple headers.": "As peças %1 não estão incluídas na biblioteca do Tinkercad no Fusion. Elas foram substituídas por cabeçalhos simples.",
+    "Opening your design in Fusion": "Como abrir seu projeto no Fusion",
+    "Please click <strong>Open in Fusion</strong> in the browser dialog.<br>If you do not see a dialog, or if you do not have the app installed:": "Clique em <strong>Abrir no Fusion</strong> na caixa de diálogo do navegador. <br>Se você não vir uma caixa de diálogo ou se não tiver o aplicativo instalado:",
+    "Download and run Fusion": "Baixe e execute o Fusion",
+    "Send to": "Enviar para",
+    "Card Title": "Título do cartão",
+    "Open in Fusion": "Abrir no Fusion",
+    "No teams found": "Nenhuma equipe encontrada",
+    "Select your team or class": "Selecione sua equipe ou aula",
+    "Learn more and get the application.": "Saiba mais e obtenha o aplicativo.",
+    "Render amazing images, refine your ideas, and make your designs real.": "Projete placas de circuito impresso, aperfeiçoe suas ideias e torne seus projetos reais.",
+    "Only basic shapes and groups of basic shapes will transfer to Fusion.": "Os painéis serão transferidos para o Fusion como suas conexões de fio equivalentes.",
+    "Name already exists": "O nome já existe",
+    "Team": "Equipe",
+    "Teams": "Equipes",
+    "optional": "opcional",
+    "Select a project": "Selecione um projeto",
+    "As a student, select a Team location to upload your design and open it on Chromebooks with": "Como estudante, selecione uma localização de equipe para carregar seu projeto e abri-lo no Chromebooks com",
+    "Fusion web.": "Fusion Web.",
+    "Send to destination": "Enviar para o destino",
+    "Select a project folder": "Selecionar uma pasta de projeto",
+    "Select this project folder": "Selecionar esta pasta de projeto",
+    "There are no more folders here.": "Não há mais pastas aqui.",
+    "View on Fusion Team": "Visualizar no Fusion Team",
+    "Open in local desktop": "Abrir na área de trabalho local",
+    "Sending...": "Enviando...",
+    "We were unable to send your design to Fusion at this time. Please try again later.": "Não foi possível enviar seu projeto para o Fusion no momento. Tente novamente mais tarde.",
+    "Your design has been sent to": "Seu projeto foi enviado para",
+    "in project": "no projeto",
+    "Clicking \"Continue\" will take you outside of Tinkercad.": "Clicar em \"Continuar\" o levará para fora do Tinkercad.",
+    "The process is taking longer than expected. Please refresh your view in Fusion if you do not see your designs right away.": "O processo está levando mais tempo do que o esperado. Atualize sua vista no Fusion se não visualizar seus projetos imediatamente.",
+    "Continue to Fusion": "Continuar com o Fusion",
+    "Return to Tinkercad": "Voltar ao Tinkercad",
+    "Click here to retry": "Clique aqui para tentar novamente",
+    "Opening design": "Abrindo projeto",
+    "Please click Open in Fusion in the browser dialog.": "Clique em Abrir no Fusion na caixa de diálogo do navegador.",
+    "If you do not see a prompt, or if you do not have Fusion installed:": "Se você não vir um prompt ou se não tiver o Fusion instalado:",
+    "Retry opening in Fusion desktop": "Tente abrir novamente na área de trabalho do Fusion",
+    "Learn more and get Fusion": "Saiba mais e obtenha o Fusion",
+    "Get the most out of Fusion": "Aproveite ao máximo o Fusion",
+    "Fusion for modeling.": "Fusion para modelagem.",
+    "If you need some extra details that you can't achieve in Tinkercad, Fusion can smooth and bevel edges, hollow models, and add more control to your design.": "Se você precisar de detalhes adicionais que não possam ser obtidos no Tinkercad, o Fusion poderá suavizar e chanfrar arestas, modelos ocos e adicionar mais controle ao seu projeto.",
+    "Fusion for creating images.": "Fusion para a criação de imagens.",
+    "Make your models look real with Fusion. You will be able to apply materials, control lights and backgrounds, and create images of professional quality.": "Faça seus modelos parecerem reais com o Fusion. Você poderá aplicar materiais, controlar luzes, planos de fundo e criar imagens com qualidade profissional.",
+    "Fusion for animations.": "Fusion para animações.",
+    "If you are looking for a great storytelling tool, you can use Fusion animation to make your design come to life.": "Se você está buscando uma excelente ferramenta de criação de roteiros, saiba que pode usar os recursos de animação do Fusion para dar vida ao seu projeto.",
+    "Fusion for simulation.": "Fusion para simulação.",
+    "If you are curious about how your design with behave in the real world, you can use Fusion simulation to verify how it reacts to different forces applied to it.": "Se você está curioso sobre o comportamento do seu projeto no mundo real, saiba que pode usar os recursos de simulação do Fusion para verificar como ele reage a diferentes forças aplicadas.",
+    "Fusion for documentation.": "Fusion para documentação.",
+    "Once you are ready to document your design, you can create drawings and dimensions directly from your design with Fusion.": "Quando você estiver pronto para documentar seu projeto, poderá criar desenhos e cotas diretamente desse projeto com o Fusion.",
+    "Fusion for making.": "Fusion para criação.",
+    "If you need more control of resolution for 3D printing, Fusion is the perfect tool. Fusion makes it easy to program CNC machines from 2D up to 5 axis.": "Se você precisa de mais controle sobre a resolução para impressão 3D, o Fusion é a ferramenta perfeita. O Fusion facilita a programação de máquinas CNC de 2D até cinco eixos.",
+    "Install Fusion": "Instalar Fusion",
+    "Fusion on Chromebooks": "Fusion no Chromebooks",
+    "Extend": "Estender",
+    "Render": "Renderizar",
+    "Animate": "Animar",
+    "Simulate": "Simular",
+    "Document": "Documento",
+    "Make": "Criar",
+    "No programmable components in this circuit": "Não há componentes programáveis neste circuito.",
+    "Change the edit mode": "Alterar o modo de edição",
+    "Edit mode": "Modo de edição",
+    "Select device": "Selecionar dispositivo",
+    "Download code": "Baixar código",
+    "Libraries": "Bibliotecas",
+    "Python documentation": "Documentação do Python",
+    "Font size": "Tamanho da fonte",
+    "Small": "Pequena",
+    "Medium": "Média",
+    "Large": "Grande",
+    "Debugger": "Depurador",
+    "Resume execution": "Retomar execução",
+    "Pause execution": "Pausar execução",
+    "Step over next line": "Passar sobre a próxima linha",
+    "Deactivate Breakpoints": "Desativar interrupções",
+    "Activate Breakpoints": "Ativar interrupções",
+    "Close": "Fechar",
+    "How the debugger works": "Como o depurador funciona",
+    "Add breakpoints by clicking on the line numbers.": "Adicione interrupções clicando nos números da linha.",
+    "Start simulation.": "Iniciar simulação.",
+    "Hover over the variables while paused to see their value.": "Passe o mouse sobre as variáveis durante a pausa para ver seu valor.",
+    "Use the buttons above to resume simulation or step one line at a time.": "Use os botões acima para retomar a simulação ou execute a etapa uma linha de cada vez.",
+    "All available libraries": "Todas as bibliotecas disponíveis",
+    "None": "Nenhum",
+    "none": "nenhum",
+    "Blocks": "Blocos",
+    "Blocks + Text": "Blocos + texto",
+    "Text": "Texto",
+    "Are you sure?": "Tem certeza?",
+    "Enabling the blocks editor will clear any code you have in the text editor. Are you sure you want to continue?": "A ativação do editor de blocos limpará qualquer código que você tenha no editor de texto. Tem certeza de que deseja continuar?",
+    "Continue": "Continuar",
+    "Cancel": "Cancelar",
+    "Are you sure you want to close the Blocks editor? Any blocks you currently have will be lost. The code in the text editor will remain and become editable.": "Tem certeza de que deseja fechar o editor de Blocos? Todos os seus blocos atuais serão perdidos. O código no editor de texto permanecerá e se tornará editável.",
+    "No programmable components found": "Não foram localizados componentes programáveis",
+    "Add an Arduino or other microcontroller using the Components Overlay.": "Adicione um microcontrolador Arduino ou outro, usando a Sobreposição de componentes.",
+    "Reading and writing to \"permanent\" storage": "Lendo e gravando para armazenamento \"permanente\"",
+    "Library to decode IR sensors": "Biblioteca para decodificar sensores de infravermelho",
+    "Controlling liquid crystal displays (LCDs)": "Controlando telas de cristal líquido (LCDs)",
+    "Allows reading keypad button pushes": "Permite ler cliques no botão do teclado",
+    "Controlling NeoPixel LEDs": "Controlando LEDs NeoPixel",
+    "Controlling servo motors": "Controlando servomotores",
+    "Allow serial communication on other digital pins of the Arduino": "Permitir comunicação em série em outros pinos digitais do Arduino",
+    "This library allows you to communicate with I2C / TWI devices": "Esta biblioteca permite comunicação com dispositivos I2C/TWI.",
+    "The SD library allows for reading from and writing to SD cards": "A biblioteca SD permite ler e gravar em placas SD.",
+    "Communicating with devices using the Serial Peripheral Interface (SPI) Bus": "Comunicação com dispositivos usando o barramento SPI (Serial Peripheral Interface)",
+    "Controlling stepper motors": "Controlando motores de passo",
+    "Library for 8x8 matrix and 7-segment LED backpacks": "Biblioteca para matriz 8x8 e pacotes de LED com 7 segmentos",
+    "Controlling liquid crystal displays using MCP23008-based I2C": "Controle de telas de cristal líquido com o uso de I2C baseado em MCP23008",
+    "Controlling liquid crystal displays using PCF8574-based I2C": "Controle de telas de cristal líquido com o uso de I2C baseado em PCF8574",
+    "Include": "Incluir",
+    "Link to documentation": "Link para documentação",
+    "Leaving Tinkercad": "Saindo do Tinkercad",
+    "This link will open in a new tab. You will be leaving Tinkercad to an external site when you click \"Continue\".": "Este link será aberto em uma nova guia. Você sairá do Tinkercad e entrará em um site externo ao clicar em \"Continuar\".",
+    "Documentation for this library will open in a new tab. You will be leaving Tinkercad to an external site when you click \"Continue\".": "A documentação desta biblioteca será aberta em uma nova guia. Você sairá do Tinkercad e irá para um site externo ao clicar em \"Continuar\".",
+    "Cancel and return to Tinkercad": "Cancelar e voltar ao Tinkercad",
+    "Show / hide serial monitor": "Mostrar/ocultar monitor serial",
+    "Serial Monitor": "Monitor serial",
+    "Text input": "Entrada de texto",
+    "Send": "Env.",
+    "Send text": "Enviar texto",
+    "Clear": "Apag.",
+    "Clear text": "Limpar texto",
+    "Graph": "Gráfico",
+    "Toggle graph": "Alternar gráfico",
+    "Simulation Start Error": "Erro de início de simulação",
+    "We are very sorry but this circuit can not be simulated.": "Desculpe, mas este circuito não pode ser simulado.",
+    "An unexpected simulator error occurred, please reload the page and try again ...": "Ocorreu um erro inesperado com o simulador. Recarregue a página e tente novamente...",
+    "Compile Server Error": "Erro do servidor de compilação",
+    "Unable to compile code for this circuit. <br><br>Please try again later or contact us if the problem persists.": "Não é possível compilar o código para este circuito. <br><br>Tente novamente mais tarde ou entre em contato conosco se o problema persistir.",
+    "Connection failed to the tinkercad.com servers. Make sure you have internet connectivity or try again later": "Falha na conexão com os servidores da tinkercad.com. Verifique se você tem conexão com a Internet ou tente novamente mais tarde",
+    "A compilation error occurred and the .hex file could not be built. Try simulating the circuit for more information.": "Ocorreu um erro de compilação, e o arquivo .hex não pôde ser criado. Tente simular o circuito para obter mais informações.",
+    "Connection Error": "Erro de conexão",
+    "Unable to contact the code compilation service. <br><br>Please try again later or contact us if the problem persists.": "Não foi possível entrar em contato com o serviço de compilação de código. <br><br>Tente novamente mais tarde ou entre em contato conosco se o problema persistir.",
+    "Toggle code editor": "Alternar editor de código",
+    "Start / stop simulation <shortcut>Spacebar</shortcut>": "Iniciar/parar a <shortcut>barra de espaço</shortcut> da simulação",
+    "Download .PDF": "Fazer download do .PDF",
+    "Download .brd file": "Baixar arquivo .brd",
+    "Share with people and apps": "Compartilhar com pessoas e aplicativos",
+    "comment %1": "comentário %1",
+    "helpful single-line comment here": "comentário útil de uma só linha aqui",
+    "red %1": "vermelho %1",
+    "green %1": "verde %1",
+    "blue %1": "azul %1",
+    "title block comment %1": "comentário em bloco de legenda %1",
+    "describe your code here": "descreva seu código aqui",
+    "count %1 by %2 for %3 from %4 to %5 do": "contagem %1 por %2 para %3 de %4 a %5 fazer",
+    "if %1 then": "se %1, então",
+    "else": "outro",
+    "repeat %1 times": "repetir %1 vezes",
+    "wait %1 %2": "aguardar %1 %2",
+    "secs": "s",
+    "milliseconds": "milissegundos",
+    "repeat %1 %2": "repetir %1 %2",
+    "while": "enquanto",
+    "until": "até",
+    "read analog pin %1": "ler pino analógico %1",
+    "write analog pin %1 to %2": "gravar pino analógico %1 em %2",
+    "read digital pin %1": "ler pino digital %1",
+    "read degrees of servo on pin %1": "ler graus de servo no pino %1",
+    "read temperature sensor on pin %1 in units %2": "ler sensor de temperatura no pino %1 em unidades %2",
+    "°C": "°C",
+    "°F": "°F",
+    "read ultrasonic distance sensor on trigger pin %1 echo pin %3 in units %2": "ler sensor de distância ultrassônico no pino acionador %1 pino de eco %3 em unidades %2",
+    "cm": "cm",
+    "in": "pol.",
+    "same as trigger": "mesmo o acionador",
+    "number of serial characters available": "número de caracteres seriais disponíveis",
+    "read from serial": "ler do serial",
+    "constrain %1 to range %2 to %3": "restringir %1 à faixa de %2 a %3",
+    "%1 of %2": "%1 de %2",
+    "map %1 to range %2 to %3": "mapear %1 para a faixa de %2 a %3",
+    "map %1 from low %2 high %3 to low %4 high %5": "mapear %1 de baixo %2 alto %3 a baixo %4 alto %5",
+    "not %1": "não %1",
+    "pick random %1 to %2": "seleção aleatória de %1 a %2",
+    "play speaker on pin %1 with tone %2 for %3 sec": "reproduzir alto-falante no pino %1 com tom %2 por %3 segundos",
+    "print to serial monitor %1 %2 newline": "imprimir no monitor serial %1 %2 nova linha",
+    "with": "com",
+    "without": "sem",
+    "rotate servo on pin %1 to %2 degrees": "girar servo no pino %1 em %2 graus",
+    "set pin %1 to %2": "definir pino %1 como %2",
+    "set built-in LED to %1": "definir LED incorporado como %1",
+    "set RGB LED in pins %1 %2 %3 to color %4": "definir LED RGB nos pinos %1 %2 %3 com a cor %4",
+    "turn off speaker on pin %1": "desativar alto-falante no pino %1",
+    "change %1 by %2": "alterar %1 por %2",
+    "set %1 to %2": "definir %1 como %2",
+    "read infrared sensor pin %1": "ler pino do sensor infravermelho %1",
+    "Total current through I/O pins is %1, while maximum is %2. This may permanently damage the Arduino.": "O total de pinos de E/S de corrente é %1, enquanto o máximo é %2. Isso pode danificar permanentemente o Arduino.",
+    "Current through I/O pin(s) %1 exceeds the absolute maximum of %2. This may permanently damage the Arduino.": "Os pinos de E/S atuais através de %1 excedem o máximo absoluto de %2. Isso pode danificar permanentemente o Arduino.",
+    "Current through I/O pin(s) %1 exceeds the recommended maximum of %2. This may reduce the usable lifetime of the Arduino.": "Os pinos de E/S atuais através de %1 excedem o máximo recomendado de %2. Isso pode reduzir a vida útil utilizável do Arduino.",
+    "Current through the LED is %1, while recommended maximum is %2. The usable lifetime of the LED may be reduced.": "A corrente no LED atual é de %1, enquanto o máximo recomendado é de %2. A vida útil do LED pode ser reduzida.",
+    "Current through the LED is %1, while absolute maximum is %2.": "A corrente no LED atual é de %1, enquanto o máximo absoluto é de %2.",
+    "LED broke because of:": "O LED quebrou devido a:",
+    "LED %1 is driven by %2 while maximum current is %3.": "O LED %1 é acionado por %2, enquanto a corrente máxima é de %3.",
+    "red": "vermelho",
+    "green": "verde",
+    "blue": "azul",
+    "Voltage at the power pins is %1, while maximum is %2.": "A voltagem no pino de força é de %1, enquanto o máximo é de %2.",
+    "Capacitor picked up %1, while maximum voltage rating is %2.": "O capacitor captou %1, enquanto a classificação de voltagem máxima é de %2.",
+    "Reverse Voltage over the LED is %1, while maximum is %2.": "A voltagem invertida no LED é de %1, enquanto o máximo é de %2.",
+    "Voltage over buzzer is %1, while maximum is %2.": "A voltagem no buzzer é de %1, enquanto o máximo é de %2.",
+    "Voltage at the power pins is %1, while minimum is %2.": "A voltagem nos pinos de força é de %1, enquanto o mínimo é de %2.",
+    "This device broke because of:": "Este dispositivo quebrou devido a:",
+    "Supply voltage is %1, while permitted range is between %2 and %3.": "O suprimento de voltagem é de %1, enquanto a faixa permitida está entre %2 e %3.",
+    "Voltage at pin %1 is %2, while maximum is Vcc = %3.": "A voltagem no pino %1 é de %2, enquanto o máximo é de VCC = %3.",
+    "Current through pin %1 is %2, while maximum is %3.": "A corrente no pino %1 é de %2, enquanto o máximo é de %3.",
+    "Total current through power pins is %1, while maximum is %2.": "A corrente total nos pinos de força é de %1, enquanto o máximo é de %2.",
+    "Voltage at %1-pin is %2, while maximum is %3.": "A voltagem no pino %1 é de %2, enquanto o máximo é de %3.",
+    "Voltage at pin %1 (%2) is higher than Voltage at Vcc (%3).": "A voltagem no pino %1 (%2) é maior do que a voltagem em VCC (%3).",
+    "Current through backlight led is %1, while maximum is %2.": "A corrente no led de luz de fundo é de %1, enquanto o máximo é de %2.",
+    "Current through the light bulb is %1, while maximum is %2.": "A corrente na lâmpada é de %1, enquanto o máximo é de %2.",
+    "Supply voltage of %1 exceeds maximum of %2.": "O suprimento de voltagem de %1 excede o máximo de %2.",
+    "Output %1 current of %2 exceeds maximum of %3.": "A corrente de saída %1 de %2 excede o máximo de %3.",
+    "Encoder voltage is %1, while permitted maximum is %2.": "A voltagem do codificador é de %1, enquanto o máximo permitido é de %2.",
+    "Voltage across the switch coil %1 exceeds max of %2.": "A voltagem através da bobina de comutação %1 excede o máximo de %2.",
+    "Voltage across the relay %1 exceeds max of %2.": "A voltagem através do relé %1 excede o máximo de %2.",
+    "Heater voltage is %1, while permitted maximum is %2.": "A voltagem no aquecedor é de %1, enquanto o máximo permitido é de %2.",
+    "Current through LED %1 is %2.": "A corrente através do LED %1 é de %2.",
+    "The maximum is %1.": "O máximo é de %1.",
+    "Collector-base voltage is %1, while permitted maximum is %2.": "A voltagem na base do coletor é de %1, enquanto o máximo permitido é de %2.",
+    "Collector-emitter voltage is %1, while permitted maximum is %2.": "A voltagem no emissor do coletor é de %1, enquanto o máximo permitido é de %2.",
+    "Base-emitter voltage is %1, while permitted maximum is %2.": "A voltagem no emissor da base é de %1, enquanto o máximo permitido é de %2.",
+    "Current sourced by USB port is %1, while maximum is %2.": "A corrente liberada pela porta USB é de %1, enquanto o máximo é de %2.",
+    "Input voltage is %1, while the permitted range is %2 to %3.": "A voltagem de entrada é de %1, enquanto a faixa permitida é de %2 a %3.",
+    "Output current is %1, while the maximum is %2.": "A corrente de saída é de %1, enquanto o máximo é de %2.",
+    "Current through the motor is %1, while maximum is %2.": "A corrente pelo motor é de %1, enquanto o máximo é de %2.",
+    "You are about to delete one or more programmable components from your design. Any code that you have written for these components will be permanently lost and will not be restored by undo. Are you sure you want to continue?": "Você está prestes a excluir um ou mais componentes programáveis do seu projeto. Qualquer código gravado para esses componentes serão perdidos definitivamente e não serão restaurados pela ação de desfazer. Tem certeza de que deseja continuar?",
+    "Write your note here.": "Grave suas anotação aqui.",
+    "Notes tool <shortcut>N</shortcut>": "Ferramenta de Notas <shortcut>N</shortcut>",
+    "Toggle notes visibility <shortcut>Shift + N</shortcut>": "Alternar visibilidade das notas <shortcut>Shift + N</shortcut>",
+    "Output": "Saída",
+    "Input": "Entrada",
+    "Notation": "Notação",
+    "Control": "Controlar",
+    "Math": "Matemática",
+    "Variables": "Variáveis",
+    "Activate Interactive Mode": "Ativar modo interativo",
+    "Simulator time: %1": "Hora do simulador: %1",
+    "HIGH": "ALTO",
+    "LOW": "BAIXO",
+    "false": "falso",
+    "true": "verdadeira",
+    "up": "para cima",
+    "down": "para baixo",
+    "Color": "Cor",
+    "Type": "Tipo",
+    "normal": "normal",
+    "automatic": "automático",
+    "alligator": "aligátor",
+    "hookup": "desligar",
+    "wire color": "cor do fio",
+    "wire type": "tipo de fio",
+    "Wire color <shortcut>1234…</shortcut>": "Cor do fio <shortcut>1234…</shortcut>",
+    "Wire type <shortcut>Shift + 1234</shortcut>": "Tipo de fio <shortcut>Shift + 1234</shortcut>",
+    "WiFi Module no longer supported": "O módulo WiFi não é mais compatível",
+    "This design contains the ESP8266 WiFi Module, which is no longer supported due to security concerns.<br><br>Although the design can still be simulated, the WiFi Module will not be able to communicate with the internet.": "Este projeto contém o ESP8266 WiFi Module, que não mais é compatível  devido a preocupações de segurança.<br><br>Embora o projeto ainda possa ser simulado, o WiFi Module não vai conseguir se comunicar com a Internet.",
+    "micro:bit broke because of:": "micro:bit rompido devido a:",
+    "micro:bit": "micro:bit",
+    "forever": "para sempre",
+    "on start": "no início",
+    "on pin %1 pressed": "no pino %1 pressionado",
+    "on pin %1 changed to %2": "no pino %1 alterado para %2",
+    "on button %1 %2": "no botão %1 %2",
+    "pressed": "pressionado",
+    "digital write pin %1 to %2": "pino de gravação digital %1 a %2",
+    "plot x %1 y %2": "plotar x %1 y %2",
+    "plot x %1 y %2 brightness %3": "plotar x %1 y %2 brilho %3",
+    "unplot x %1 y %2": "cancelar plotagem x %1 y %2",
+    "clear screen": "limpar tela",
+    "show leds": "mostrar leds",
+    "show icon": "mostrar ícone",
+    "show number %1": "mostrar número %1",
+    "show string %1": "mostrar sequência de caracteres %1",
+    "plot bar graph of %1 up to %2": "plotar gráfico de barra de %1 até %2",
+    "write servo pin %1 to pulse %2 μs": "gravar pino do servo de %1 com impulso %2 μs",
+    "analog set pitch pin %1": "pino de passo de conjunto analógico %1",
+    "analog set pitch volume to %1": "volume de passo de conjunto analógico para %1",
+    "analog pitch volume": "volume de passo analógico",
+    "analog pitch %1 for %2 ms": "passo analógico %1 para %2 ms",
+    "set pull pin %1 to %2": "definir pino de extração %1 como %2",
+    "text": "texto",
+    "value": "valor",
+    "key": "chave",
+    "Radio": "Rádio",
+    "radio set group %1": "grupo de conjunto de opções %1",
+    "on radio received number %1": "na opção recebeu o número %1",
+    "on radio received string %1": "na opção recebeu a sequência de caracteres %1",
+    "on radio received %1 %2": "na opção recebida %1 %2",
+    "radio send number %1": "número de envio de rádio %1",
+    "radio send string %1": "sequência de envio de caracteres %1",
+    "radio send value %1 = %2": "valor de envio de rádio %1 = %2",
+    "light level": "nível de luz",
+    "temperature (°C)": "temperatura (°C)",
+    "compass heading (°)": "cabeçalho da bússola (°)",
+    "Compass %1°": "Bússola %1°",
+    "on %1": "em %1",
+    "shake": "agitar",
+    "logo up": "logotipo acima",
+    "logo down": "logotipo abaixo",
+    "screen up": "tela acima",
+    "screen down": "tela abaixo",
+    "tilt left": "inclinação para esquerda",
+    "tilt right": "inclinação para direita",
+    "free fall": "queda livre",
+    "1g": "1g",
+    "2g": "2g",
+    "3g": "3g",
+    "4g": "4g",
+    "6g": "6g",
+    "8g": "8g",
+    "set accelerometer range %1": "definir intervalo do acelerômetro %1",
+    "acceleration (mg) %1": "aceleração (mg) %1",
+    "x": "x",
+    "y": "y",
+    "z": "z",
+    "strength": "resistência",
+    "digital pin %1 is %2": "o pin digital %1 é %2",
+    "gesture is %1": "o gesto é %1",
+    "button %1 pressed": "botão %1 pressionado",
+    "rotation (°) %1": "rotação (°) %1",
+    "pitch": "passo",
+    "roll": "rolagem",
+    "This block has been turned off. Attach it to an Event block to turn it back on.": "Este bloco foi desativado. Anexe-o a um bloco de eventos para ativá-lo novamente.",
+    "configure LCD %1 type to %2": "configurar LCD do tipo %1 para %2",
+    "with address %1": "com endereço %1",
+    "with pins: RS %1 E %2 DB4 %3 DB5 %4 DB6 %5 DB7 %6": "com pinos: RS %1 E %2 DB4 %3 DB5 %4 DB6 %5 DB7 %6",
+    "Standard": "Padrão",
+    "print to LCD %1 %2": "imprimir no LCD %1 %2",
+    "set position on LCD %1 to column %2 row %3": "definir posição no LCD %1 para coluna %2, linha %3",
+    "on LCD %1 %2": "no LCD %1 %2",
+    "clear the screen": "limpar a tela",
+    "turn on the backlight": "ativar a luz de fundo",
+    "turn off the backlight": "desativar a luz de fundo",
+    "turn on the display": "ativar a tela",
+    "turn off the display": "desativar a tela",
+    "turn on the cursor": "ativar o cursor",
+    "turn off the cursor": "desativar o cursor",
+    "turn on cursor blinking": "ativar intermitência do cursor",
+    "turn off cursor blinking": "desativar intermitência do cursor",
+    "turn on autoscrolling": "ativar rolagem automática",
+    "turn off autoscrolling": "desativar rolagem automática",
+    "scroll the display to the left": "rolar a tela para a esquerda",
+    "scroll the display to the right": "rolar a tela para a direita",
+    "set print direction left to right": "definir direção de impressão da esquerda para a direita",
+    "set print direction right to left": "definir direção de impressão da direita para a esquerda",
+    "configure LED display %1 type to %2 with address %3": "configurar tipo de tela de LED %1 para %2 com endereço %3",
+    "7-segment clock": "relógio de 7 segmentos",
+    "set the brightness to low": "definir o brilho como baixo",
+    "set the brightness to medium": "definir o brilho como médio",
+    "set the brightness to high": "definir o brilho como alto",
+    "turn off blinking": "desativar intermitência",
+    "set blink rate to slow": "definir taxa de intermitência como lenta",
+    "set blink rate to medium": "definir taxa de intermitência como média",
+    "set blink rate to fast": "definir taxa de piscar como rápida",
+    "turn the colon on": "ativar os dois-pontos",
+    "turn the colon off": "desativar os dois-pontos",
+    "print to LED display %1 %2": "imprimir na tela de LED %1 %2",
+    "on LED display %1 %2": "na tela de LED %1 %2",
+    "NEW micro:bit component": "NOVO componente micro:bit",
+    "Add a micro:bit to your design to begin. Code it with blocks and Simulate to see it work. Look in Starters for examples to build with.": "Adicione um micro:bit ao projeto para começar. Codifique-o com blocos e simule para ver seu trabalho. Procure no Starters exemplos para criar.",
+    "Change name": "Alterar nome",
+    "Tinkercad dashboard": "Painel do TinkerCAD",
+    "Schematic View": "Vista esquemática",
+    "Sheet %1": "Folha %1",
+    "Failed to open schematic view": "Falha ao abrir a vista esquemática",
+    "Empty circuit": "Circuito vazio",
+    "Description": "Descrição",
+    "How it works": "Como funciona",
+    "Connect it": "Conectar",
+    "How it is used": "Como é utilizado",
+    "Get started": "Introdução",
+    "More information": "Mais informações",
+    "Learn more": "Saiba mais",
+    "pinout": "Pinagem",
+    "More workspaces": "Mais espaços de trabalho",
+    "Switch workspace": "Alternar o espaço de trabalho",
+    "Circuits": "Circuitos",
+    "Schematic": "Esquemático",
+    "Help": "Ajuda",
+    "Start / stop simulation": "Iniciar/parar simulação",
+    "Circuits help": "Ajuda de circuitos",
+    "First publish": "Primeira publicação",
+    "We noticed you're publishing something for the first time. Please choose a public display name.": "Notamos que você está publicando algo pela primeira vez. Escolha um nome de exibição público.",
+    "3 or more characters, numbers, or letters. We recommend using something fun and avoiding your real name.": "3 ou mais caracteres, números ou letras. Recomendamos usar algo divertido e evitar seu nome verdadeiro.",
+    "More options": "Mais opções",
+    "Save display name": "Salvar nome de exibição",
+    "Submit": "Enviar",
+    "Submit challenge": "Enviar desafio",
+    "Welcome": "Boas-vindas",
+    "_resistanceUnits": {
+      "pΩ": "pΩ",
+      "nΩ": "nΩ",
+      "μΩ": "μΩ",
+      "mΩ": "mΩ",
+      "Ω": "Ω",
+      "kΩ": "kΩ",
+      "MΩ": "MΩ",
+      "GΩ": "GΩ"
+    },
+    "_capacitanceUnits": {
+      "pF": "pF",
+      "nF": "nF",
+      "μF": "μF",
+      "mF": "mF",
+      "F": "F",
+      "kF": "kF",
+      "MF": "MF",
+      "GF": "GF"
+    },
+    "_voltageUnit": "V",
+    "_voltageUnits": {
+      "pV": "pV",
+      "nV": "nV",
+      "μV": "μV",
+      "mV": "mV",
+      "V": "V",
+      "kV": "kV",
+      "MV": "MV",
+      "GV": "GV"
+    },
+    "_inductanceUnits": {
+      "pH": "pH",
+      "nH": "nH",
+      "μH": "uH",
+      "mH": "mH",
+      "H": "H",
+      "kH": "kH",
+      "MH": "MH",
+      "GH": "GH"
+    },
+    "_hertzUnit": "Hz",
+    "_secondsUnits": {
+      "ps": "ps",
+      "ns": "ns",
+      "μs": "μs",
+      "ms": "ms",
+      "s": "s",
+      "ks": "ks",
+      "Ms": "Ms",
+      "Gs": "Gs"
+    },
+    "_yesNo": {
+      "yes": "sim",
+      "no": "não"
+    },
+    "_terminals": {
+      "Terminal 1": "Terminal 1",
+      "Terminal 2": "Terminal 2",
+      "Terminal 3": "Terminal 3",
+      "Terminal 4": "Terminal 4",
+      "Terminal 5": "Terminal 5",
+      "Terminal 6": "Terminal 6",
+      "Terminal 7": "Terminal 7",
+      "Terminal 8": "Terminal 8",
+      "Terminal 9": "Terminal 9",
+      "Terminal 10": "Terminal 10",
+      "Terminal 11": "Terminal 11",
+      "Terminal 12": "Terminal 12",
+      "Terminal 13": "Terminal 13",
+      "Terminal 14": "Terminal 14",
+      "Terminal 15": "Terminal 15",
+      "Terminal 16": "Terminal 16",
+      "1A": "1A",
+      "2A": "2A",
+      "3A": "3A",
+      "4A": "4A",
+      "5A": "5A",
+      "6A": "6A",
+      "1B": "1B",
+      "2B": "2B",
+      "3B": "3B",
+      "4B": "4B",
+      "5B": "5B",
+      "6B": "6B",
+      "Anode": "Anodo",
+      "Cathode": "Catódica",
+      "Positive": "Positivo",
+      "Negative": "Negativo",
+      "Wiper": "Limpador",
+      "Common": "Comum",
+      "Ground": "Solo",
+      "GND": "GND",
+      "Power": "Potência",
+      "Signal": "Sinal",
+      "Vin": "Vin",
+      "5V": "5V",
+      "3.3V": "3,3v",
+      "Vout": "Vout",
+      "UNUSED": "NÃO USADO",
+      "Collector": "Coletor",
+      "Base": "Base",
+      "Emitter": "Emissor",
+      "In": "Dentro",
+      "Out": "Fora",
+      "Input": "Entrada",
+      "Input 0A": "Entrada 0A",
+      "Input 0B": "Entrada 0B",
+      "Input 1": "Entrada 1",
+      "Input 1A": "Entrada 1A",
+      "Input 1B": "Entrada 1B",
+      "Input 1C": "Entrada 1C",
+      "Input 1D": "Entrada 1D",
+      "Input 2": "Entrada 2",
+      "Input 2A": "Entrada 2A",
+      "Input 2B": "Entrada 2B",
+      "Input 2C": "Entrada 2C",
+      "Input 2D": "Entrada 2D",
+      "Input 3": "Entrada 3",
+      "Input 3A": "Entrada 3A",
+      "Input 3B": "Entrada 3B",
+      "Input 3C": "Entrada 3C",
+      "Input 4": "Entrada 4",
+      "Input 4A": "Entrada 4A",
+      "Input 4B": "Entrada 4B",
+      "Input 5": "Entrada 5",
+      "Input 6": "Entrada 6",
+      "Output 1": "Saída 1",
+      "Output 2": "Saída 2",
+      "Output 3": "Saída 3",
+      "Output 4": "Saída 4",
+      "Output 5": "Saída 5",
+      "Output 6": "Saída 6",
+      "Output 7": "Saída 7",
+      "Output 8": "Saída 8",
+      "Output 9": "Saída 9",
+      "Output 10": "Saída 10",
+      "Inverted Output 1": "Saída invertida 1",
+      "Inverted Output 2": "Saída invertida 2",
+      "Inverted Output 3": "Saída invertida 3",
+      "Inverted Output 4": "Saída invertida 4",
+      "Inverted Output 5": "Saída invertida 5",
+      "Inverted Output 6": "Saída invertida 6",
+      "Inverted Output 7": "Saída invertida 7",
+      "Inverted Output 8": "Saída invertida 8",
+      "Inverted Output 9": "Saída invertida 9",
+      "Inverted Output 10": "Saída invertida 10",
+      "Output Bit 0": "Bit de saída 0",
+      "Output Bit 1": "Bit de saída 1",
+      "Output Bit 2": "Bit de saída 2",
+      "Output Bit 3": "Bit de saída 3",
+      "Power 1": "Potência 1",
+      "Power 2": "Potência 2",
+      "Clock": "Relógio",
+      "Clock 0": "Relógio 0",
+      "Clock 1": "Relógio 1",
+      "Clock 2": "Relógio 2",
+      "Clock Enable": "Ativar relógio",
+      "Enable": "Ativar",
+      "Enable 1": "Ativar 1",
+      "Enable 2": "Ativar 2",
+      "Latch Enable": "Ativação da trava",
+      "Trigger": "Acionador",
+      "Reset": "Redefinir",
+      "Reset 1": "Redefinir 1",
+      "Reset 2": "Redefinir 2",
+      "Set 1": "Definir 1",
+      "Set 2": "Definir 2",
+      "Motor Positive": "Positivo do motor",
+      "Motor Negative": "Negativo do motor",
+      "Encoder Power": "Potência do codificador",
+      "Encoder Ground": "Terra do codificador",
+      "Channel A": "Canal A",
+      "Channel B": "Canal B",
+      "Not Connected": "Não conectado",
+      "Drain": "Dreno",
+      "Gate": "Porta",
+      "Source": "Fonte",
+      "Error": "Erro",
+      "TX": "TX",
+      "RX": "RX"
+    },
+    "_components": {
+      "1": {
+        "name": "Geral"
+      },
+      "2": {
+        "name": "Entrada"
+      },
+      "3": {
+        "name": "Saída"
+      },
+      "4": {
+        "name": "Potência"
+      },
+      "5": {
+        "name": "Placas de ensaio"
+      },
+      "6": {
+        "name": "Microcontroladores"
+      },
+      "7": {
+        "name": "Instrumentos"
+      },
+      "8": {
+        "name": "Circuitos integrados"
+      },
+      "9": {
+        "name": "Controle de potência"
+      },
+      "10": {
+        "name": "Redes"
+      },
+      "11": {
+        "name": "Conectores"
+      },
+      "12": {
+        "name": "Lógica"
+      },
+      "13": {
+        "name": "Montagens de circuito"
+      },
+      "14": {
+        "name": "Disparadores básicos"
+      },
+      "15": {
+        "name": "Disparadores Arduino"
+      },
+      "16": {
+        "name": "Disparadores"
+      },
+      "17": {
+        "name": "Outros componentes"
+      },
+      "18": {
+        "name": "Outros disparadores"
+      },
+      "19": {
+        "name": "Disparadores de micro:bits"
+      },
+      "20": {
+        "name": "Disparadores variados"
+      },
+      "14416": {
+        "name": "Potenciômetro",
+        "description": "Tipo de resistor cuja resistência muda quando se vira uma chave.",
+        "properties": {
+          "resistance": {
+            "name": "resistência",
+            "list": "_resistanceUnits"
+          }
+        },
+        "detail": {
+          "Description": "Este dispositivo é um resistor variável controlado por uma chave.%0",
+          "How it works": "O potenciômetro funciona alterando-se a posição de um contato móvel em um material resistivo em relação a um contato fixo, resultando em uma resistência que varia conforme a movimentação do contato.",
+          "Connect it": "Esse dispositivo tem associados a ele três fios condutores. Conecte os pinos externos à fonte de alimentação e ao Terra (Ground); o pino de Sinal (Signal) é conectado diretamente a um dispositivo ou a qualquer terminal digital ou analógico de um Arduino.%1",
+          "How it is used": "Clique no dispositivo durante a simulação para realçá-lo e, em seguida, clique e arraste o limpador para alterar a resistência simulada.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre potenciômetros e seu uso nestas páginas:%4%5%6",
+          "%4": "Ler um Potenciômetro com a Entrada analógica do Arduino",
+          "%5": "Tutorial de Resistores variáveis",
+          "%6": "Guia de Potenciômetros"
+        }
+      },
+      "16511": {
+        "name": "Resistor",
+        "description": "Restringe o fluxo de eletricidade em um circuito, reduzindo a voltagem e, consequentemente, a corrente.",
+        "properties": {
+          "resistance": {
+            "name": "resistência",
+            "list": "_resistanceUnits"
+          }
+        },
+        "detail": {
+          "Description": "O resistor limita o fluxo de corrente elétrica em um circuito.%0",
+          "How it works": "O resistor usa parte da corrente de um circuito e a converte em calor. Ele faz isso fornecendo à eletricidade um trajeto mais longo, delgado e um pouco menos condutivo. Os resistores são usados em todos os tipos de circuitos, desde o auxílio para que LEDs não queimem, até o ajuste de frequência de sinais de rádio.",
+          "Connect it": "O resistor tem dois fios condutores e deve ser conectado em série com o dispositivo que ele deve suportar. Os resistores não são polarizados, o que significa que podem ser conectados de qualquer forma sem afetar seu funcionamento.%1",
+          "How it is used": "Selecione o dispositivo para editar seus dados de nome e resistência.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre resistores e seu uso nestas páginas:%4%5%6",
+          "%4": "Resistores",
+          "%5": "Lei de Ohm",
+          "%6": "Calculadora de código de cores do resistor"
+        }
+      },
+      "17910": {
+        "name": "Capacitor",
+        "description": "Armazena e libera energia elétrica em um circuito.",
+        "properties": {
+          "capacitance": {
+            "name": "capacitância",
+            "list": "_capacitanceUnits"
+          }
+        },
+        "detail": {
+          "Description": "Este dispositivo armazena energia elétrica temporariamente. As \"tampas\" cerâmicas são normalmente usadas para baixos valores de capacitância.%0",
+          "How it works": "O capacitor armazena energia elétrica coletando partículas carregadas em duas placas condutoras separadas por um material não condutor (neste caso, a cerâmica).",
+          "Connect it": "O capacitor tem dois fios condutores e pode ser conectado em paralelo ou em série com o dispositivo que ele deve suportar, dependendo da aplicação. Os capacitores cerâmicos não são polarizados, o que significa que podem ser conectados de qualquer forma sem afetar seu funcionamento.%1",
+          "How it is used": "Selecione o dispositivo para editar seus dados de nome e capacitância.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre capacitores e seu uso nestas páginas:%4%5",
+          "%4": "Capacitores",
+          "%5": "Circuit Playground: C significa Capacitor"
+        }
+      },
+      "17911": {
+        "name": "Capacitor polarizado",
+        "description": "Capacitor direcional usado para armazenar e liberar energia elétrica em um circuito.",
+        "properties": {
+          "capacitance": {
+            "name": "capacitância",
+            "list": "_capacitanceUnits"
+          },
+          "voltage rating": {
+            "name": "classificação de tensão",
+            "list": "_voltageUnits"
+          }
+        },
+        "detail": {
+          "Description": "Este dispositivo armazena energia elétrica temporariamente. As \"tampas\" eletrolíticas são normalmente usadas para altos valores de capacitância.%0",
+          "How it works": "O capacitor armazena energia elétrica coletando partículas carregadas em duas placas condutoras separadas por um material não condutor (neste caso, um eletrólito e óxido metálico).",
+          "Connect it": "O capacitor tem dois fios condutores e pode ser conectado em paralelo ou em série com o dispositivo que ele deve suportar, dependendo da aplicação. O capacitor eletrolítico é polarizado, o que significa que ele tem um lado positivo e outro negativo, que precisam ser conectados corretamente para que ele funcione.%1",
+          "How it is used": "Selecione o dispositivo para editar seus dados de nome e capacitância.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre capacitores e seu uso nestas páginas:%4%5",
+          "%4": "Capacitores",
+          "%5": "Circuit Playground: C significa Capacitor"
+        }
+      },
+      "17913": {
+        "name": "Indutor",
+        "description": "Resiste à mudança no fluxo de corrente.",
+        "properties": {
+          "inductance": {
+            "name": "indutância",
+            "list": "_inductanceUnits"
+          }
+        },
+        "detail": {
+          "Description": "Um indutor é uma bobina de fio que se opõe às alterações na corrente elétrica.%0",
+          "How it works": "Esse dispositivo armazena energia em um campo magnético quando é aplicada eletricidade. Esse campo magnético resiste a mudanças no fluxo de corrente que passa pelo indutor.",
+          "Connect it": "O indutor tem dois fios condutores e deve ser conectado em série com o dispositivo que ele deve suportar.%1",
+          "How it is used": "Selecione o dispositivo para editar seus dados de nome e indutância.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre indutores e seu uso nestas páginas:%4%5",
+          "%4": "Indutores",
+          "%5": "Calculadora de conversão de indutância"
+        }
+      },
+      "17914": {
+        "name": "Diodo",
+        "description": "Permite o fluxo de eletricidade em uma única direção.",
+        "properties": {
+          "zener voltage": {
+            "name": "tensão Zener",
+            "list": "_voltageUnits"
+          }
+        },
+        "detail": {
+          "Description": "Um diodo é como uma válvula unidirecional que permite que a corrente flua através de um circuito em uma direção, mas não na outra.%0",
+          "How it works": "Esse dispositivo contém um material semicondutor que conduz eletricidade em uma direção, mas bloqueia quase completamente o fluxo na direção oposta.",
+          "Connect it": "O diodo tem dois fios condutores e pode ser conectado em paralelo ou em série com o dispositivo que ele deve suportar, dependendo da aplicação. Os diodos são polarizados, o que significa que cada um deles tem um polo positivo e outro negativo, que devem ser conectados de forma específica.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre diodos e seu uso nestas páginas:%4%5",
+          "%4": "Diodos",
+          "%5": "Circuit Playground: D significa Diodo"
+        }
+      },
+      "17916": {
+        "name": "LED",
+        "description": "Diodo emissor de luz que se acende quando a eletricidade passa através dele na direção correta.",
+        "properties": {
+          "color": {
+            "name": "cor",
+            "list": {
+              "Green": "Verde",
+              "Yellow": "Amarelo",
+              "Orange": "Laranja",
+              "Blue": "Azul",
+              "Red": "Vermelho",
+              "White": "Branco"
+            }
+          }
+        },
+        "detail": {
+          "Description": "Este dispositivo é um diodo emissor de luz.%0",
+          "How it works": "Os LEDs são feitos de materiais semicondutores que emitem luz quando a corrente flui através deles na direção correta. Uma corrente excessiva pode danificá-los ou mesmo quebrá-los; por isso, adicione um resistor em série para limitar o fluxo de corrente.",
+          "Connect it": "Este dispositivo tem dois fios condutores. Conecte o Ânodo positivo a uma voltagem maior e o Cátodo negativo a uma voltagem menor para aumentar a iluminação. Limite o fluxo de corrente com um resistor. Os LEDs são polarizados e não se acendem quando conectados de trás para frente.%1",
+          "How it is used": "Selecione o dispositivo para editar seus dados de nome e cor.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6%7",
+          "%4": "LEDs",
+          "%5": "Lei de Ohm",
+          "%6": "Calculadora de resistores em série para LED",
+          "%7": "Circuit Playground: L significa LED"
+        }
+      },
+      "17917": {
+        "name": "LED RGB",
+        "description": "Tipo de LED que combina vermelho, azul e verde para produzir qualquer cor.",
+        "properties": {
+          "pinout": {
+            "name": "pinagem",
+            "list": {
+              "RCBG": "RCBG",
+              "RCGB": "RCGB",
+              "BRCG": "BRCG"
+            }
+          }
+        },
+        "terminals": {
+          "Red": "Vermelho",
+          "Green": "Verde",
+          "Blue": "Azul"
+        },
+        "detail": {
+          "Description": "Este dispositivo é composto por três diodos emissores de luz em um pacote.%0",
+          "How it works": "Os LEDs são feitos de materiais semicondutores que emitem luz quando a corrente flui através deles na direção correta. Os LEDs RGB contêm três LEDs separados: vermelho, verde e azul, que compartilham um pino catódico comum. Sua luz pode ser misturada para criar qualquer cor de luz visível. Uma corrente excessiva pode danificar ou mesmo quebrar os LEDs; por isso, adicione resistores em série para limitar o fluxo de corrente.",
+          "Connect it": "Este dispositivo tem quatro fios condutores. O pino Cátodo é ligado a uma tensão mais baixa e cada um dos três pinos coloridos é ligado a uma tensão mais alta para alimentar cada LED colorido. Certifique-se de limitar o fluxo de corrente com resistores.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "LED RGB mistura de cores com o Arduino no Tinkercad",
+          "%5": "Folha de dados, RGB LED"
+        }
+      },
+      "17919": {
+        "name": "Interruptor deslizante",
+        "description": "Interruptor com duas posições: aberta e fechada.",
+        "terminals": {},
+        "detail": {
+          "Description": "Este dispositivo é um interruptor de alternância com duas posições.%0",
+          "How it works": "O interruptor de alternância contém contatos de metal que se unem eletricamente quando o controle deslizante é movido, permitindo que a corrente elétrica flua.",
+          "Connect it": "Este dispositivo tem três fios condutores. Conecte o pino Comum (Common) no meio ao seu dispositivo. Os pinos de Força (Power) e Terra (Ground) são conectados aos Terminais 1 e 2; a ordem determina qual direção está ATIVADA ou DESATIVADA.%1",
+          "How it is used": "Clique no dispositivo durante a simulação para alterar a posição da chave.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre interruptores e seu uso nestas páginas:%4",
+          "%4": "Interruptores"
+        }
+      },
+      "17920": {
+        "name": "Transistor NPN (BJT)",
+        "description": "Componente usado para amplificar ou trocar sinais eletrônicos. Usado comumente com motores.",
+        "detail": {
+          "Description": "Os transistores amplificam a potência e podem atuar como interruptores eletricamente controlados. Os transistores de junção bipolar (BJTs, bipolar junction transistors) possuem três camadas de silício, cuja disposição determina a direção do fluxo de corrente.%0",
+          "How it works": "Os transistores NPN BJT consistem em uma camada de silício tipo P posicionada entre duas camadas de silício tipo N. A corrente relativamente pequena que flui da base para o emissor aciona uma corrente significativamente maior para fluir do coletor para o emissor.",
+          "Connect it": "Este dispositivo tem três pinos. Conecte a base (B) ao seu sinal, como um pino de interruptor ou microcontrolador. Conecte o coletor (C) à sua fonte de alimentação e o emissor (E) através do dispositivo que você deseja controlar ao aterramento.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Transistores 101",
+          "%5": "Transistores"
+        }
+      },
+      "17921": {
+        "name": "Transistor PNP (BJT)",
+        "description": "Componente usado para amplificar ou trocar sinais eletrônicos. Usado comumente com motores.",
+        "detail": {
+          "Description": "Os transistores amplificam a potência e podem atuar como interruptores eletricamente controlados. Os transistores de junção bipolar (BJTs, bipolar junction transistors) possuem três camadas de silício, cuja disposição determina a direção do fluxo de corrente.%0",
+          "How it works": "Os transistores PNP BJT consistem em uma camada de silício tipo N posicionada entre duas camadas de silício do tipo P. A corrente relativamente pequena que flui da base para o emissor aciona uma corrente significativamente maior para fluir do emissor para o coletor.",
+          "Connect it": "Este dispositivo tem três pinos. Conecte a base (B) ao seu sinal, como um pino de interruptor ou microcontrolador. Conecte o emissor (E) à sua fonte de alimentação e o coletor (C) através do dispositivo que você deseja controlar ao aterramento.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Transistores 101",
+          "%5": "Transistores"
+        }
+      },
+      "17924": {
+        "name": "Transistor nMOS (MOSFET)",
+        "description": "Transistor para grandes sinais controlado por voltagem.",
+        "detail": {
+          "Description": "Os transistores amplificam a energia e podem atuar como interruptores eletricamente controlados. MOSFET (metal-oxide-semiconductor field-effect transistor) significa transistor de efeitos de campo com semicondutores de óxido metálico. Os transistores de efeitos de campo (FETs, Field-effect transistors) são mais eficientes do que os BJTs pelo uso de um campo elétrico para controlar o fluxo de corrente.%0",
+          "How it works": "A tensão de porta controla o fluxo de corrente entre a fonte e o dreno. Os transistores MOS negativos criam um circuito fechado quando a tensão é aplicada.",
+          "Connect it": "Este dispositivo tem três pinos. Conecte a porta (G) ao seu sinal, como um pino de interruptor ou microcontrolador. Conecte o dispositivo que você deseja controlar à fonte de alimentação e seu aterramento ao dreno (D). Conecte a fonte (S) ao aterramento.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6",
+          "%4": "Transistores 101",
+          "%5": "M significa MOSFET",
+          "%6": "Transistores NMOS e PMOS explicados"
+        }
+      },
+      "17927": {
+        "name": "Osciloscópio",
+        "description": "Equipamento de teste eletrônico que mede sinais de saída.",
+        "properties": {
+          "Time per division": {
+            "name": "Tempo por divisão",
+            "list": "_secondsUnits"
+          }
+        },
+        "detail": {
+          "Description": "Este dispositivo é um equipamento de teste eletrônico para medição de sinais de saída.%0",
+          "How it works": "O osciloscópio de armazenamento digital (DSO, digital storage oscilloscope) converte um sinal analógico em digital para fins de armazenamento, exibição e análise por amostragem do sinal a uma taxa variável.",
+          "Connect it": "Este dispositivo tem dois fios condutores. Conecte o fio Positivo (Positive) ao terminal positivo no dispositivo que você deseja medir e conecte o fio Negativo (Negative) ao aterramento. %1",
+          "How it is used": "Selecione o dispositivo para editar seus dados de nome e tempo por divisão.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4",
+          "%4": "Como usar um osciloscópio"
+        }
+      },
+      "18104": {
+        "name": "Transistor pMOS (MOSFET)",
+        "description": "Transistor para grandes sinais controlado por voltagem.",
+        "detail": {
+          "Description": "Os transistores amplificam a energia e podem atuar como interruptores eletricamente controlados. MOSFET (metal-oxide-semiconductor field-effect transistor) significa transistor de efeitos de campo com semicondutores de óxido metálico. Os transistores de efeitos de campo (FETs, Field-effect transistors) são mais eficientes do que os BJTs pelo uso de um campo elétrico para controlar o fluxo de corrente.%0",
+          "How it works": "A tensão de porta controla o fluxo de corrente entre a fonte e o dreno. Os transistores MOS positivos criam um circuito aberto quando a tensão é aplicada.",
+          "Connect it": "Este dispositivo tem três pinos. Conecte a porta (G) ao seu sinal, como um pino de interruptor ou microcontrolador. Conecte o dispositivo que você deseja controlar à fonte de alimentação e seu aterramento ao dreno (D). Conecte a fonte (S) ao aterramento.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6",
+          "%4": "Transistores 101",
+          "%5": "M significa MOSFET",
+          "%6": "Transistores NMOS e PMOS explicados"
+        }
+      },
+      "27263": {
+        "name": "Acionador de motor de ponte H",
+        "description": "Capaz de acionar dois motores CC ou um motor de passo bipolar ou unipolar.",
+        "terminals": {
+          "Enable 1 & 2": "Ativar 1 e 2",
+          "Enable 3 & 4": "Ativar 3 e 4"
+        }
+      },
+      "27266": {
+        "name": "Optoacoplador",
+        "description": "Transfere sinais entre dois circuitos usando luz.",
+        "detail": {
+          "Description": "O optoacoplador permite a transferência de sinal entre dois circuitos isolados com o uso de luz infravermelha. Eles são usados para evitar que sistemas elétricos diferentes afetem uns aos outros, como nos circuitos de fonte de alimentação e nas entradas de microcontroladores.%0",
+          "How it works": "Este dispositivo consiste em um LED infravermelho e um fototransistor dentro dele. Quando o fototransistor detecta luz infravermelha do sinal aplicado ao LED, uma corrente elétrica flui pelo fototransistor.",
+          "Connect it": "Este dispositivo tem seis pinos: dois para o LED (ânodo e cátodo), três para o fototransistor (base, emissor, coletor) e o pino restante não é conectado.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6",
+          "%4": "Tutorial do optoacoplador",
+          "%5": "Circuitos integrados (ICs)",
+          "%6": "Folha de dados, 4N35"
+        }
+      },
+      "27268": {
+        "name": "Placa de ensaio pequena",
+        "description": "Placa de ensaio com metade do tamanho, com 30 linhas, 10 colunas e dois pares de linhas de corrente.",
+        "detail": {
+          "Description": "As placas de ensaio sem solda são usadas para prototipagem de circuitos de forma rápida e fácil.%0",
+          "How it works": "As placas de ensaio permitem conectar componentes com o uso de soquetes de metal com várias portas. As partes condutivas da placa de ensaio permitem o fluxo de elétrons entre os itens a ela conectados. ",
+          "Connect it": "Duas linhas longas descem em cada lado. Esses conectores longos normalmente servem para conexões de energia e aterramento, usadas com muita frequência. As pequenas colunas verticais que compõem o meio da placa destinam-se à conexão de fios e componentes. Observe o divisor no meio da placa: ele é um ponto de fixação para os chips, fornecendo acesso independente a cada um dos pinos.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome. Passe o mouse sobre os furos para ver quais estão conectados eletricamente no interior da placa de ensaio.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6",
+          "%4": "Introdução à placa de ensaio",
+          "%5": "Vários LEDs e placas de ensaio com Arduino no Tinkercad",
+          "%6": "Aula sobre Arduino: seus primeiros experimentos com uma placa de ensaio sem solda"
+        }
+      },
+      "27571": {
+        "name": "Fonte de energia",
+        "description": "Equipamento de teste eletrônico para fornecimento de energia ao circuito",
+        "properties": {
+          "Voltage": "Tensão",
+          "Current": "Corrente"
+        },
+        "detail": {
+          "Description": "Este dispositivo é um equipamento de teste eletrônico para fornecimento de energia ao circuito.%0",
+          "How it works": "As fontes de alimentação convertem a CA da parede em CC regulada em tensão determinada e corrente máxima.",
+          "Connect it": "Este dispositivo tem dois fios condutores. Conecte o fio Positivo (Positive) ao terminal positivo no dispositivo que você deseja alimentar e o fio Negativo (Negative) ao aterramento.%1",
+          "How it is used": "Selecione o dispositivo para editar seus dados de nome, tensão e corrente.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4",
+          "%4": "Guia de fontes de alimentação"
+        }
+      },
+      "27664": {
+        "name": "Sensor de temperatura [TMP36]",
+        "description": "Sensor que emite diferentes voltagens com base na temperatura ambiente.",
+        "detail": {
+          "Description": "Este sensor mede a temperatura.%0",
+          "How it works": "Este dispositivo contém material semicondutor que altera propriedades elétricas de forma consistente com a alteração de temperaturas. O sinal do pino central muda conforme a mudança de temperatura, e o programa do microcontrolador pode converter esse sinal de 0 a 1023 em uma temperatura em °C ou °F.",
+          "Connect it": "Há três pinos conectados ao dispositivo. Gire o sensor para que o lado plano e rotulado fique de frente para você. Ligue o dispositivo conectando o pino mais à esquerda à alimentação, o pino mais à direita ao aterramento e o pino central ao seu multímetro ou microcontrolador.%1",
+          "How it is used": "Selecione o dispositivo durante a simulação para exibir um controle deslizante que representa a temperatura. Deslize o alvo para alterar a temperatura simulada.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6",
+          "%4": "Sensor de temperatura TMP36 com Arduino no Tinkercad",
+          "%5": "Uso de um sensor de temperatura",
+          "%6": "Folha de dados, TMP36"
+        }
+      },
+      "28098": {
+        "name": "LCD 16 x 2",
+        "description": "Tela de cristal líquido que exibe duas linhas de 16 caracteres.",
+        "terminals": {
+          "Contrast": "Contraste",
+          "Register Select": "Seleção de registro",
+          "Read/Write": "Leitura/gravação",
+          "DB0": "DB0",
+          "DB1": "DB1",
+          "DB2": "DB2",
+          "DB3": "DB3",
+          "DB4": "DB4",
+          "DB5": "DB5",
+          "DB6": "DB6",
+          "DB7": "DB7",
+          "LED Anode": "LED anodo",
+          "LED Cathode": "LED catódico"
+        },
+        "detail": {
+          "Description": "Este dispositivo é um Visualizador de cristal líquido capaz de exibir duas linhas de texto com 16 caracteres cada.%0",
+          "How it works": "Os LCDs contêm muitas camadas de materiais. Há uma luz de fundo LED e um \"sanduíche\" de vidro polarizado em torno de cristais líquidos, que pode girar eletronicamente a luz polarizada para permitir que a luz de fundo passe e seja vista, ou seja bloqueada pelo polarizador na parte superior.",
+          "Connect it": "Este dispositivo tem 16 fios condutores. Conecte o VCC a 5V em um Arduino e o GND a qualquer terminal GND em um Arduino. Os outros pinos controlam o contraste da tela, a comunicação de dados com o microcontrolador e a luz de fundo do LED. %1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Guia de LCDs de caracteres",
+          "%5": "Folha de dados, módulo LCD"
+        }
+      },
+      "28101": {
+        "name": "Sensor de inclinação de 4 pinos",
+        "description": "Interruptor acionador de 4 pinos sensível à inclinação, encontrado nos kits Arduino."
+      },
+      "28211": {
+        "name": "Piezo",
+        "description": "Tipo de buzzer que emite ruído em diferentes frequências.",
+        "detail": {
+          "Description": "Piezos são um tipo de buzzer que produz ruído em diferentes frequências.%0",
+          "How it works": "Os piezos podem converter corrente elétrica alternada em som (vibração) e vice-versa.",
+          "Connect it": "Este dispositivo tem dois fios condutores. Ele pode ser conectado de qualquer forma para produzir som. Um terminal é conectado a um sinal PWM (por exemplo, de um Arduino) e o outro é conectado ao aterramento. %1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Detectar um deslocamento",
+          "%5": "Reproduzir uma melodia usando a função de tom()"
+        }
+      },
+      "28256": {
+        "name": "Motor CC",
+        "description": "Motor que converte energia elétrica em energia mecânica.",
+        "detail": {
+          "Description": "O motor CC converte corrente elétrica em movimento rotacional.%0",
+          "How it works": "Quando o motor é alimentado por corrente direta, é criado um campo magnético que atrai e repele os ímãs no interior, fazendo com que o rotor gire.",
+          "Connect it": "Este dispositivo tem dois fios condutores. Conecte o Positivo (Positive) à alimentação e o Negativo (Negative) ao aterramento para fazer o motor girar.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Motores e movimento",
+          "%5": "Folha de dados, motor CC"
+        }
+      },
+      "28257": {
+        "name": "Micro servo",
+        "description": "Motor cuja posição pode ser controlada com o uso de um microcontrolador, como um Arduino.",
+        "detail": {
+          "Description": "Os motores servo contêm um motor CC, uma placa controladora e uma caixa de engrenagens.%0",
+          "How it works": "Este dispositivo interpreta um sinal de pulso modulado por largura de pulso (PWM, pulse-width-modulated) para girar até determinada posição ou controlar a velocidade de rotação.",
+          "Connect it": "Este dispositivo tem três fios condutores. Ligue-o conectando o pino de Alimentação (Power) ao Arduino 5V e o Terra (Ground) a qualquer terminal GND de um Arduino. O pino de Sinal (Signal) é conectado a qualquer saída compatível com PWM no Arduino (marcada com ~).%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome e definir se ele é um servo de rotação posicional ou contínua.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Servo A-Go-Go!",
+          "%5": "Folha de dados, Micro servo"
+        }
+      },
+      "28704": {
+        "name": "Placa de ensaio",
+        "description": "Placa de ensaio com tamanho integral, 63 linhas, 10 colunas e dois pares de linhas de corrente.",
+        "detail": {
+          "Description": "As placas de ensaio sem solda são usadas para prototipagem de circuitos de forma rápida e fácil.%0",
+          "How it works": "As placas de ensaio permitem conectar componentes com o uso de soquetes de metal com várias portas. As partes condutivas da placa de ensaio permitem o fluxo de elétrons entre os itens a ela conectados. ",
+          "Connect it": "Duas linhas longas descem em cada lado. Esses conectores longos normalmente servem para conexões de energia e aterramento, usadas com muita frequência. As pequenas colunas verticais que compõem o meio da placa destinam-se à conexão de fios e componentes. Observe o divisor no meio da placa: ele é um ponto de fixação para os chips, fornecendo acesso independente a cada um dos pinos.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome. Passe o mouse sobre os furos para ver quais estão conectados eletricamente no interior da placa de ensaio.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6",
+          "%4": "Introdução à placa de ensaio",
+          "%5": "Vários LEDs e placas de ensaio com Arduino no Tinkercad",
+          "%6": "Aula sobre Arduino: seus primeiros experimentos com uma placa de ensaio sem solda"
+        }
+      },
+      "28708": {
+        "name": "Diodo Zener",
+        "description": "Assemelha-se a um diodo normal, mas permite o fluxo de corrente invertido, se a voltagem Zener for alcançada.",
+        "properties": {
+          "zener voltage": {
+            "name": "tensão Zener",
+            "list": "_voltageUnits"
+          }
+        },
+        "detail": {
+          "Description": "O diodo Zener permite que a corrente inverta o fluxo se for alcançada determinada tensão.%0",
+          "How it works": "Esse dispositivo contém material semicondutor que conduz eletricidade em uma direção, mas bloqueia quase completamente o fluxo na direção oposta, a menos que seja excedida determinada tensão.",
+          "Connect it": "O diodo Zener tem dois fios condutores e deve ser conectado em série com o dispositivo que ele deve suportar. Os diodos são polarizados, o que significa que cada um deles tem um polo positivo e outro negativo, que devem ser conectados de forma específica.%1",
+          "How it is used": "Selecione o dispositivo para editar seus dados de nome e tensão Zener.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre diodos Zener e seu uso nestas páginas:%4%5",
+          "%4": "Diodos",
+          "%5": "Introdução aos diodos Zener"
+        }
+      },
+      "28709": {
+        "name": "Multímetro",
+        "description": "Ferramenta usada para medir a voltagem, a corrente e a resistência no circuito.",
+        "properties": {
+          "Mode": {
+            "name": "Modo",
+            "list": {
+              "Amperage": "Amperagem",
+              "Voltage": "Tensão",
+              "Resistance": "Resistência"
+            }
+          }
+        },
+        "detail": {
+          "Description": "Este dispositivo é uma ferramenta para medir tensão, corrente e resistência no circuito.%0",
+          "How it works": "Os medidores usam a Lei de Ohm para calcular a tensão, a corrente ou a resistência que medem após aplicar uma corrente, resistência ou tensão conhecida, respectivamente. Os multimetros digitais medem a tensão usando um circuito de conversão analógico-digital (ADC).",
+          "Connect it": "Este dispositivo tem dois fios condutores. Conecte o fio Positivo ao terminal de tensão mais alta no dispositivo que você deseja medir e o Negativo ao terminal de tensão mais baixa. Frequentemente, a entrada negativa está conectada ao aterramento.%1",
+          "How it is used": "Selecione o dispositivo para editar seus dados de nome e modo.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Guia de multímetros",
+          "%5": "Como usar um multímetro"
+        }
+      },
+      "28710": {
+        "name": "USB padrão A",
+        "description": "Conector USB padrão macho do tipo A.",
+        "terminals": {
+          "Data -": "Dados -",
+          "Data +": "Dados +"
+        }
+      },
+      "28711": {
+        "name": "Cronômetro",
+        "description": "Tipo de medidor de tempo bipolar único de uso geral.",
+        "terminals": {
+          "Control Voltage": "Tensão de controle",
+          "Threshold": "Limite",
+          "Discharge": "Descarga"
+        },
+        "detail": {
+          "Description": "Este dispositivo é um circuito integrado (IC, integrated circuit) que contém um medidor de tempo bipolar único de uso geral. Ele pode ser usado para criar pulsos bem cronometrados.%0",
+          "How it works": "O cronômetro 555 é um tipo de Circuito integrado (IC, Integrated Circuit) que contém um circuito de sincronização composto por 25 transistores, dois diodos e 15 resistores.",
+          "Connect it": "Este dispositivo tem oito pinos, requer energia para seu pino de Força (Power), aterramento para seu pino Terra (Ground) e os pinos restantes configuram se o temporizador funciona como flip-flop, divisor de tensão ou comparador.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6",
+          "%4": "Conheça a 555",
+          "%5": "Calculadora de cronômetros 555",
+          "%6": "Circuitos integrados"
+        }
+      },
+      "28712": {
+        "name": "Fotorresistor",
+        "description": "Sensor cuja resistência muda segundo o volume de luz detectado.",
+        "terminals": {},
+        "detail": {
+          "Description": "Este dispositivo é um resistor variável que reage à luz.%0",
+          "How it works": "Quando a energia da luz entra em contato com o sensor, o material absorve parte da energia da luz e a converte em energia elétrica, tornando-se menos resistente.",
+          "Connect it": "O resistor tem dois fios condutores e deve ser conectado em série com o dispositivo que ele deve controlar. Os Fotorresistores não são polarizados, o que significa que podem ser conectados de qualquer forma.%1",
+          "How it is used": "Selecione o dispositivo durante a simulação para exibir um controle deslizante que representa o nível de luz. Deslize o alvo para alterar o nível de luz simulado. %2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre fotorresistores e seu uso nestas páginas:%4%5%6",
+          "%4": "Sensor de luz (fotorresistor) com Arduino no Tinkercad",
+          "%5": "Tutorial de fotocélulas",
+          "%6": "Folha de dados, fotocélula típica"
+        }
+      },
+      "28713": {
+        "name": "Amplificador operacional 741",
+        "description": "Utilizado para amplificar ou filtrar sinais analógicos.",
+        "terminals": {
+          "In-": "Ent-",
+          "In+": "Ent+",
+          "Power-": "Potência-",
+          "Power+": "Potência+",
+          "Offset 1": "Deslocamento 1",
+          "Offset 2": "Deslocamento 2",
+          "Out": "Fora"
+        },
+        "detail": {
+          "Description": "Esse dispositivo é um circuito integrado (IC, integrated circuit) usado para amplificar ou filtrar sinais analógicos.%0",
+          "How it works": "O amplificador operacional 741 é um tipo de circuito integrado (IC, integrated circuit) que contém um circuito de filtro de sinal formado por 20 transistores e 11 resistores.",
+          "Connect it": "Este dispositivo tem oito pinos e requer energia e aterramento para seus pinos de Alimentação+ (Alimentação+) e Alimentação- (Power-), respectivamente. As entradas Ent+ (In+) e Ent- (In-) destinam-se à conexão do sinal a ser amplificado ou filtrado. \"Out\" é a saída. Os pinos de Deslocamento 1 (Offset 1) e Deslocamento 2 (Offset 2) são opcionais e ajudam a estabilizar a variabilidade do sinal que flui pelas entradas.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6%7",
+          "%4": "Conceitos básicos sobre o amplificador operacional IC 741",
+          "%5": "O que é um amplificador operacional?",
+          "%6": "Circuitos integrados",
+          "%7": "Folha de dados, amplificador operacional 741"
+        }
+      },
+      "28714": {
+        "name": "Lâmpada",
+        "description": "Lâmpada incandescente de 12V/3W.",
+        "detail": {
+          "Description": "Este dispositivo é uma lâmpada incandescente.%0",
+          "How it works": "Este dispositivo emite luz quando é aplicada eletricidade e aquece um filamento metálico a uma temperatura que produz luz.",
+          "Connect it": "Este dispositivo tem dois fios condutores. Conecte o Terminal 1 à alimentação e o Terminal 2 ao aterramento (ou vice-versa; ele não é polarizado) para acender a lâmpada.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4",
+          "%4": "Lâmpadas"
+        }
+      },
+      "28715": {
+        "name": "Registrador de deslocamento de oito bits",
+        "description": "Permite adicionar saídas a um microcontrolador.",
+        "terminals": {
+          "Shift Register Clear": "Limpar registrador de deslocamento",
+          "Shift Register Clock": "Relógio do registrador de deslocamento",
+          "Output Register Clock": "Relógio do registrador de saída",
+          "Output Enable": "Ativação de saída"
+        }
+      },
+      "28716": {
+        "name": "Porta quad NAND",
+        "description": "Quatro portas lógicas, cada uma com saída ALTA quando qualquer uma de suas entradas for BAIXA."
+      },
+      "28717": {
+        "name": "Porta quad NOR",
+        "description": "Quatro portas lógicas, cada uma com saída ALTA quando todas as suas entradas forem BAIXAS."
+      },
+      "28718": {
+        "name": "Inversor hexadecimal",
+        "description": "Seis portas lógicas inversoras (NOT)."
+      },
+      "28719": {
+        "name": "Porta quad AND",
+        "description": "Quatro portas lógicas, cada uma com saída ALTA quando todas as suas entradas forem ALTAS."
+      },
+      "28720": {
+        "name": "Porta NAND de três entradas tripla",
+        "description": "Três portas lógicas, cada uma com saída ALTA quando qualquer uma de suas três entradas for BAIXA."
+      },
+      "28721": {
+        "name": "Porta AND de três entradas tripla",
+        "description": "Três portas lógicas, cada uma com saída ALTA quando todas as suas três entradas forem ALTAS."
+      },
+      "28722": {
+        "name": "Disparador Schmitt inversor",
+        "description": "Seis portas lógicas inversoras (NOT) com entradas de disparador Schmitt."
+      },
+      "28724": {
+        "name": "Porta NAND de quatro entradas dupla",
+        "description": "Duas portas lógicas, cada uma com saída ALTA quando qualquer uma das suas quatro entradas for BAIXA."
+      },
+      "28725": {
+        "name": "Porta AND de quatro entradas dupla",
+        "description": "Duas portas lógicas, cada uma com saída ALTA quando todas as suas quatro entradas forem ALTAS."
+      },
+      "28726": {
+        "name": "Porta NOR de três entradas tripla",
+        "description": "Três portas lógicas, cada uma com saída ALTA quando todas as suas três entradas forem BAIXAS."
+      },
+      "28727": {
+        "name": "Porta quad OR",
+        "description": "Quatro portas lógicas, cada uma com saída ALTA quando alguma das suas entradas for ALTA."
+      },
+      "28729": {
+        "name": "Flip-flop J-K duplo",
+        "description": "Flip-flop J-K duplo com reset. Disparador na borda negativa."
+      },
+      "28730": {
+        "name": "Flip-flop D duplo",
+        "description": "Dois flip-flops do tipo D com set/reset. Disparador na borda positiva."
+      },
+      "28731": {
+        "name": "Porta quad XOR",
+        "description": "Quatro portas lógicas, cada uma com saída ALTA quando somente uma das suas entradas for ALTA."
+      },
+      "28732": {
+        "name": "Contador binário de quatro bits",
+        "description": "Utilizado para contagem ascendente em modo binário."
+      },
+      "28733": {
+        "name": "Disparador Schmitt quad NAND",
+        "description": "Quatro portas lógicas, cada uma com saída ALTA quando qualquer uma das entradas do seu disparador Schmitt for BAIXA."
+      },
+      "28734": {
+        "name": "Fotodiodo",
+        "description": "Converte luz em corrente elétrica.",
+        "terminals": {},
+        "detail": {
+          "Description": "O fotodiodo permite que a corrente seja revertida através dele proporcionalmente à luz que ele absorve.%0",
+          "How it works": "Este dispositivo funciona como LED reverso: quando a junção de seus materiais é exposta à luz, é gerada corrente ou tensão elétrica, dependendo da forma de conexão.",
+          "Connect it": "Este dispositivo tem dois fios condutores e é polarizado. Frequentemente, ele é conectado de forma inversa (polarizado inversamente) para detectar alterações na corrente por meio de uma entrada analógica de um microcontrolador. %1",
+          "How it is used": "Selecione o dispositivo durante a simulação para exibir um controle deslizante que representa o nível de luz. Deslize o alvo para alterar o nível de luz simulado. %2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre fotodiodos e seu uso nesta página:%4",
+          "%4": "Conceitos básicos de fotodiodos, fototransistores e como aplicá-los"
+        }
+      },
+      "28784": {
+        "name": "Transistor nMOS de pequenos sinais",
+        "description": "Transistor para pequenos sinais controlado por voltagem.",
+        "detail": {
+          "Description": "Os transistores amplificam a energia e podem atuar como interruptores eletricamente controlados. MOSFET (metal-oxide-semiconductor field-effect transistor) significa transistor de efeitos de campo com semicondutores de óxido metálico. Os transistores de efeitos de campo (FETs, Field-effect transistors) são mais eficientes do que os BJTs pelo uso de um campo elétrico para controlar o fluxo de corrente.%0",
+          "How it works": "A tensão de porta controla o fluxo de corrente entre a fonte e o dreno. Os transistores MOS negativos criam um circuito fechado quando a tensão é aplicada.",
+          "Connect it": "Este dispositivo tem três pinos. Conecte a porta (G) ao seu sinal, como um pino de interruptor ou microcontrolador. Conecte o dispositivo que você deseja controlar à fonte de alimentação e seu aterramento ao dreno (D). Conecte a fonte (S) ao aterramento.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6%7",
+          "%4": "Transistores 101",
+          "%5": "M significa MOSFET",
+          "%6": "Transistores NMOS e PMOS explicados",
+          "%7": "Folha de dados, BS170"
+        }
+      },
+      "28785": {
+        "name": "Transistor pMOS para pequenos sinais",
+        "description": "Transistor para pequenos sinais controlado por voltagem.",
+        "detail": {
+          "Description": "Os transistores amplificam a energia e podem atuar como interruptores eletricamente controlados. MOSFET (metal-oxide-semiconductor field-effect transistor) significa transistor de efeitos de campo com semicondutores de óxido metálico. Os transistores de efeitos de campo (FETs, Field-effect transistors) são mais eficientes do que os BJTs pelo uso de um campo elétrico para controlar o fluxo de corrente.%0",
+          "How it works": "A tensão de porta controla o fluxo de corrente entre a fonte e o dreno. Os transistores MOS positivos criam um circuito aberto quando a tensão é aplicada.",
+          "Connect it": "Este dispositivo tem três pinos. Conecte a porta (G) ao seu sinal, como um pino de interruptor ou microcontrolador. Conecte o dispositivo que você deseja controlar à fonte de alimentação e seu aterramento ao dreno (D). Conecte a fonte (S) ao aterramento.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6",
+          "%4": "Transistores 101",
+          "%5": "M significa MOSFET",
+          "%6": "Transistores NMOS e PMOS explicados"
+        }
+      },
+      "28786": {
+        "name": "ATtiny",
+        "description": "ATTiny25/45/85 compatível com Arduino, com 512 bytes de memória RAM.",
+        "terminals": {
+          "PB0": "PB0",
+          "PB1": "PB1",
+          "PB2": "PB2",
+          "PB3": "PB3",
+          "PB4": "PB4",
+          "PB5": "PB5"
+        },
+        "detail": {
+          "Description": "Este dispositivo é um microcontrolador compatível com ATTiny25/45/85 Arduino.%0",
+          "How it works": "O ATTiny é um tipo de Circuito Integrado (IC, Integraded Circuit) que pode executar um programa. Ele pode ser programado usando-se o mesmo código que um Arduino Uno R3, mas tem menos pinos e não tem placa de circuito.%1",
+          "Connect it": "Este dispositivo tem oito pinos e requer entre 2,7V e 5,5V de potência para seu pino de Alimentação (Power) e aterramento para o pino Terra (Ground). Os pinos restantes são de entrada/saída (i/o) (mas PB5/Reset não deve ser usado como entrada).%1",
+          "How it is used": "Selecione o dispositivo e pressione o botão \"Código\" (\"Code\") para abrir o editor de código e editar seu programa.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6",
+          "%4": "Programar um ATTiny com Arduino",
+          "%5": "Circuitos integrados",
+          "%6": "Folha de dados, ATTiny"
+        }
+      },
+      "28787": {
+        "name": "Bateria 9V",
+        "description": "Bateria comum, ótima para aplicações que empregam maior potência, como motores.",
+        "detail": {
+          "Description": "Este dispositivo é uma bateria elétrica com tensão nominal de 9 volts.%0",
+          "How it works": "Esse aparelho armazena energia potencial e pode converter sua energia química em eletricidade quando conectado a um circuito. As pilhas têm potencial de tensão em seus dois eletrodos, o que faz com que os elétrons percorram o circuito para chegar ao outro lado.",
+          "Connect it": "Este dispositivo tem dois fios condutores. Conecte o fio Positivo (Positive) ao terminal positivo no dispositivo que você deseja alimentar e o Negativo (Negative) ao terminal negativo ou de aterramento no dispositivo.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6",
+          "%4": "Tudo sobre baterias",
+          "%5": "Circuit Playground: B significa Bateria",
+          "%6": "Calculadora de vida útil da bateria"
+        }
+      },
+      "28788": {
+        "name": "Placa de ensaio mini",
+        "description": "Placa de ensaio com um quarto do tamanho, 17 linhas e 10 colunas.",
+        "detail": {
+          "Description": "As placas de ensaio sem solda são usadas para prototipagem de circuitos de forma rápida e fácil.%0",
+          "How it works": "As placas de ensaio permitem conectar componentes com o uso de soquetes de metal com várias portas. As partes condutivas da placa de ensaio permitem o fluxo de elétrons entre os itens a ela conectados. ",
+          "Connect it": "Esta miniplaca de ensaio não tem linhas longas de energia/aterramento como as maiores. As pequenas colunas verticais que compõem o meio da placa destinam-se à conexão de fios e componentes. Observe o divisor no meio da placa: ele é um ponto de fixação para os chips, fornecendo acesso independente a cada um dos pinos.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome. Passe o mouse sobre os furos para ver quais estão conectados eletricamente no interior da placa de ensaio.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6",
+          "%4": "Introdução à placa de ensaio",
+          "%5": "Vários LEDs e placas de ensaio com Arduino no Tinkercad",
+          "%6": "Aula sobre Arduino: seus primeiros experimentos com uma placa de ensaio sem solda"
+        }
+      },
+      "28789": {
+        "name": "Conector de oito pinos",
+        "description": "Conector de oito pinos com espaçamento de 0,1\".",
+        "terminals": {
+          "1": "1",
+          "2": "2",
+          "3": "3",
+          "4": "4",
+          "5": "5",
+          "6": "6",
+          "7": "7",
+          "8": "8"
+        }
+      },
+      "29726": {
+        "name": "Decodificador de sete segmentos",
+        "description": "Aciona segmentos de LED para que iluminem números em um visor de sete segmentos.",
+        "terminals": {
+          "Lamp Test": "Teste da lâmpada",
+          "Blanking": "Limpando",
+          "A": "A",
+          "B": "B",
+          "C": "C",
+          "D": "D",
+          "E": "E",
+          "F": "F",
+          "G": "G"
+        }
+      },
+      "29956": {
+        "name": "Relé DPDT",
+        "description": "Relé de força DPDT de 5V em miniatura",
+        "detail": {
+          "Description": "Um relé é um tipo de chave física controlada por um sinal elétrico. Ele pode lidar com corrente maior do que os comutadores de transistor. DPDT significa Double Pole Double Throw, o que significa um par de comutadores que têm duas posições cada. %0",
+          "How it works": "Em geral, a alternância no interior dos relés é obtida com o uso de um eletroímã que move um pedaço ou duas linguetas de metal para abrir e fechar um circuito (relé eletromecânico) ou de componentes eletrônicos (relé de estado sólido).",
+          "Connect it": "Este dispositivo tem oito pinos: dois para a bobina (sinal de controle), um para cada fonte de alimentação do dispositivo e duas saídas para cada interruptor (normalmente abertas e normalmente fechadas).%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Tipos de relés e como usá-los",
+          "%5": "Folha de dados, relé DPDT série KS2E-M"
+        }
+      },
+      "29959": {
+        "name": "Relé SPDT",
+        "description": "Relé SPDT de 5V para alternância entre dois circuitos.",
+        "detail": {
+          "Description": "Um relé é uma chave física controlada por um sinal elétrico. Ela pode lidar com corrente maior do que as comutadores de transistor. SPDT significa Single Pole Double Throw, que significa uma chave única que tem duas posições.%0",
+          "How it works": "Em geral, a alternância no interior dos relés é obtida com o uso de um eletroímã que move um pedaço ou duas linguetas de metal para abrir e fechar um circuito (relé eletromecânico) ou de componentes eletrônicos (relé de estado sólido).",
+          "Connect it": "Esse dispositivo tem seis pinos: dois para a bobina (sinal de controle), dois para a fonte de alimentação do dispositivo e duas saídas (normalmente abertas e normalmente fechadas).%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Tipos de relés e como usá-los",
+          "%5": "Folha de dados, relé SPDT série LU"
+        }
+      },
+      "31599": {
+        "name": "Contador de décadas Johnson",
+        "description": "Alterna cada uma de dez saídas ALTAS em sequência."
+      },
+      "31738": {
+        "name": "Visor de sete segmentos",
+        "description": "LED único com sete segmentos usado para exibir um número ou uma letra.",
+        "properties": {
+          "common": {
+            "name": "comum",
+            "list": {
+              "Anode": "Anodo",
+              "Cathode": "Catódica"
+            }
+          }
+        },
+        "terminals": {
+          "A": "A",
+          "B": "B",
+          "C": "C",
+          "D": "D",
+          "E": "E",
+          "F": "F",
+          "G": "G",
+          "DP": "DP"
+        },
+        "detail": {
+          "Description": "Esse dispositivo é composto por oito LEDs e um gabinete de plástico para formar os segmentos de dígitos numéricos.%0",
+          "How it works": "Dependendo da configuração de quais LEDs se acendem por vez, são lidos diferentes números no visor.",
+          "Connect it": "Este dispositivo tem dez fios condutores. Dois deles estão conectados ao Comum (Common), que é o ânodo ou o cátodo compartilhado de todos os LEDs, dependendo da configuração selecionada. Os outros oito conectam-se separadamente ao outro lado de cada um dos oito LEDs.%1",
+          "How it is used": "Selecione o dispositivo para editar seus dados de nome e configuração de cátodo/ânodo.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Interface de uma tela de sete segmentos para um Arduino",
+          "%5": "Folha de dados, tela de sete segmentos"
+        }
+      },
+      "31873": {
+        "name": "Sensor de inclinação",
+        "description": "Interruptor acionador sensível à inclinação. SW200D.",
+        "detail": {
+          "Description": "Esse sensor detecta quando foi inclinado.%0",
+          "How it works": "Este dispositivo tem no seu interior uma esfera de metal condutor que, quando inclinada além de determinado ângulo, move-se para outra parte do gabinete, fechando ou abrindo o circuito entre as duas entradas.",
+          "Connect it": "Este dispositivo tem dois fios condutores e deve ser conectado em série com o dispositivo que ele deve controlar. Os sensores de inclinação não são polarizados, o que significa que podem ser conectados de qualquer forma.%1",
+          "How it is used": "Selecione o dispositivo durante a simulação para exibir uma barra deslizante que representa a inclinação. Deslize o alvo para alterar a inclinação simulada.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4",
+          "%4": "Guia do sensor de inclinação"
+        }
+      },
+      "31896": {
+        "name": "Arduino Uno R3",
+        "description": "Placa programável que pode ser usada para gerar circuitos interativos.",
+        "terminals": {},
+        "detail": {
+          "Description": "Este dispositivo é uma placa de microcontrolador Arduino Uno R3.%0",
+          "How it works": "Esse dispositivo tem um microcontrolador ATMega328, seis entradas analógicas e 13 entradas/saídas digitais.",
+          "Connect it": "Conecte os pinos 5V e GND à alimentação da placa de ensaio e às linhas de aterramento, respectivamente. Conecte outros componentes externos, dependendo do código. O código no ponto inicial pisca o LED conectado ao pino 13.%1",
+          "How it is used": "Selecione o dispositivo e pressione o botão \"Código\" (\"Code\") para abrir o editor de código e editar seu programa. Ao simular, o botão vermelho pode ser usado para redefinir o Arduino durante a simulação. Soltar o botão fará com que o programa seja totalmente reiniciado.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6",
+          "%4": "Iniciante do Arduino com circuitos do Tinkercad",
+          "%5": "Aula sobre o Arduino no Instructables",
+          "%6": "Folha de dados, Arduino Uno R3"
+        }
+      },
+      "33016": {
+        "name": "Infravermelho remoto",
+        "description": "Controle remoto que emite sinais em infravermelho, decodificados com o uso de um sensor de infravermelho.",
+        "properties": {
+          "inductance": {
+            "name": "indutância",
+            "list": "_inductanceUnits"
+          }
+        },
+        "detail": {
+          "Description": "Este dispositivo envia sinais usando luz infravermelha.%0",
+          "How it works": "Usado com um sensor de infravermelho; um infravermelho remoto envia padrões de luz para comunicação sem fio.",
+          "How it is used": "Selecione o dispositivo durante a simulação e clique nos botões para enviar seu sinal. Qualquer sensor de infravermelho na simulação receberá o sinal.%1",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%2",
+          "More information": "Veja mais informações sobre infravermelho remoto e seu uso nestas páginas:%3%4",
+          "%3": "Sensor de infravermelho e tutorial remoto",
+          "%4": "Tutorial do kit DFR0107 IR"
+        }
+      },
+      "33187": {
+        "name": "TIP120",
+        "description": "Transistor NPN Darlington usado para alternância em equipamentos eletrônicos de alta potência, como motores.",
+        "detail": {
+          "Description": "Os transistores amplificam a energia e podem atuar como interruptores controlados eletricamente. Pares de Darlington são dois transistores conectados de forma a criar uma saída muito maior do que um único transistor poderia fornecer sozinho.%0",
+          "How it works": "A corrente relativamente pequena que flui da base para o emissor aciona uma corrente significativamente maior que flui do coletor para o emissor. Espera-se que os transistores TIP120 se aqueçam; por isso, eles vêm com uma placa posterior de metal projetada para ser anexada a um dissipador de calor.",
+          "Connect it": "Este dispositivo tem três pinos. Conecte a base (B) ao seu sinal, como um pino de interruptor ou microcontrolador. Conecte o coletor (C) à sua fonte de alimentação e o emissor (E) através do dispositivo que você deseja controlar ao aterramento.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6%7",
+          "%4": "Transistores 101",
+          "%5": "Transistores",
+          "%6": "Circuito TIP120 Arduino",
+          "%7": "Folha de dados, TIP120"
+        }
+      },
+      "33955": {
+        "name": "Micro servo",
+        "description": "Motor cuja posição pode ser controlada com o uso de um microcontrolador, como um Arduino.",
+        "properties": {
+          "type": {
+            "name": "tipo",
+            "list": {
+              "Positional": "Posicional",
+              "Continuous": "Contínuo"
+            }
+          }
+        },
+        "detail": {
+          "Description": "Os motores servo contêm um motor CC, uma placa controladora e uma caixa de engrenagens.%0",
+          "How it works": "Este dispositivo interpreta um sinal de pulso modulado por largura de pulso (PWM, pulse-width-modulated) para girar até determinada posição ou controlar a velocidade de rotação.",
+          "Connect it": "Este dispositivo tem três fios condutores. Ligue-o conectando o pino de Alimentação (Power) ao Arduino 5V e o Terra (Ground) a qualquer terminal GND de um Arduino. O pino de Sinal (Signal) é conectado a qualquer saída compatível com PWM no Arduino (marcada com ~).%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome e definir se ele é um servo de rotação posicional ou contínua.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Servo A-Go-Go!",
+          "%5": "Folha de dados, Micro servo"
+        }
+      },
+      "33961": {
+        "name": "Sensor de luz ambiente [fototransistor]",
+        "description": "Utiliza a luz ambiente para controlar a base de um transistor NPN interno.",
+        "terminals": {},
+        "detail": {
+          "Description": "O sensor de luz ambiente, ou fototransistor, detecta alterações na intensidade da luz. O fluxo de corrente elétrica entre o emissor e o coletor varia com base na quantidade de luz recebida.%0",
+          "How it works": "Este dispositivo é um transistor NPN cuja conexão base é substituída por uma fonte óptica. A corrente base dos fótons é amplificada pelo ganho do transistor. ",
+          "Connect it": "Este dispositivo tem dois fios condutores. O Coletor (Collector) é conectado à alimentação e o Emissor (Emitter) conecta-se a um medidor de tensão ou a uma entrada analógica em um microcontrolador, e também ao aterramento por meio de um grande resistor. %1",
+          "How it is used": "Selecione o dispositivo durante a simulação para exibir um controle deslizante que representa o nível de luz. Deslize o alvo para alterar o nível de luz simulado. %2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre sensores de luz ambiente e seu uso nestas páginas:%4%5",
+          "%4": "Conceitos básicos de fotodiodos, fototransistores e como aplicá-los",
+          "%5": "Folha de dados, sensor de luz ambiente"
+        }
+      },
+      "34360": {
+        "name": "Botão",
+        "description": "Chave que fecha um circuito enquanto está na posição pressionada.",
+        "terminals": {
+          "Terminal 1a": "Terminal 1a",
+          "Terminal 1b": "Terminal 1b",
+          "Terminal 2a": "Terminal 2a",
+          "Terminal 2b": "Terminal 2b"
+        },
+        "detail": {
+          "Description": "Este dispositivo é um interruptor momentâneo.%0",
+          "How it works": "Um botão contém contatos de metal que são comprimidos quando o botão é pressionado, permitindo que a corrente elétrica flua. Este botão tem quatro fios condutores, com dois conjuntos sempre conectados internamente, e os dois conjuntos se tocam quando o botão é pressionado. ",
+          "Connect it": "Ligue um lado do interruptor à alimentação e o outro a um pino de entrada do microcontrolador, e também ao aterramento por meio de um grande resistor. O resistor mantém o pino BAIXO (LOW), a menos que o botão seja pressionado e, nesse ponto, o pino pode detectar um sinal ALTO (HIGH) ao conectar-se a 5V.%1",
+          "How it is used": "Clique no dispositivo durante a simulação para simular a pressão no interruptor. Pressione Shift e clique no dispositivo para simular, mantendo o interruptor pressionado.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre interruptores e seu uso nestas páginas:%4%5",
+          "%4": "Entrada digital com um botão com o Arduino no Tinkercad",
+          "%5": "Folha de dados, botão típico"
+        }
+      },
+      "34649": {
+        "name": "Módulo Wifi (ESP8266)",
+        "description": "Permite conectar um microcontrolador a uma rede WiFi.",
+        "terminals": {
+          "GPIO 0": "GPIO 0",
+          "GPIO 2": "GPIO 2"
+        }
+      },
+      "35130": {
+        "name": "Interruptor DIP DPST",
+        "description": "Interruptor DIP único.",
+        "detail": {
+          "Description": "Este dispositivo é um interruptor de alternância com duas posições.%0",
+          "How it works": "Uma chave DIP tem contatos de metal que se tocam quando o controle deslizante é movido, permitindo que a corrente elétrica flua. Este interruptor DIP funciona como dois interruptores de alternância separados com a mesma alavanca.",
+          "Connect it": "Este dispositivo tem quatro fios condutores. 1A e 1B formam o primeiro interruptor de alternância; 2A e 2B formam o segundo. Esses interruptores devem ser conectados em série com o dispositivo a ser controlado.%1",
+          "How it is used": "Clique no dispositivo durante a simulação para alterar a posição da chave.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Guia completo de interruptores DIP",
+          "%5": "Folha de dados, interruptor DIP"
+        }
+      },
+      "35401": {
+        "name": "Interruptor DIP DPST x 4",
+        "description": "Contém 4 interruptores individuais.",
+        "detail": {
+          "Description": "Esse dispositivo é composto de quatro interruptores de alternância com duas posições cada.%0",
+          "How it works": "O interruptor DIP tem contatos de metal que se tocam quando o controle deslizante é movido, permitindo que a corrente elétrica flua. Este interruptor DIP funciona como quatro interruptores de alternância separados.",
+          "Connect it": "Este dispositivo tem oito fios condutores. 1A e 1B formam o primeiro interruptor de alternância; 2A e 2B formam o segundo e assim sucessivamente. Esses interruptores devem ser conectados em série com o dispositivo a ser controlado.%1",
+          "How it is used": "Clique no dispositivo durante a simulação para alterar as posições do interruptor.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Guia completo de interruptores DIP",
+          "%5": "Folha de dados, interruptor DIP"
+        }
+      },
+      "35402": {
+        "name": "Interruptor DIP DPST x 6",
+        "description": "Contém 6 interruptores individuais.",
+        "detail": {
+          "Description": "Esse dispositivo é composto por seis interruptores de alternância com duas posições cada.%0",
+          "How it works": "O interruptor DIP contém contatos de metal que se tocam quando o controle deslizante é movido, permitindo que a corrente elétrica flua. Este interruptor DIP funciona como seis interruptores de alternância separados.",
+          "Connect it": "Este dispositivo tem doze fios condutores. 1A e 1B formam o primeiro interruptor de alternância; 2A e 2B formam o segundo e assim sucessivamente. Esses interruptores devem ser conectados em série com o dispositivo a ser controlado.%1",
+          "How it is used": "Clique no dispositivo durante a simulação para alterar as posições do interruptor.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Guia completo de interruptores DIP",
+          "%5": "Folha de dados, interruptor DIP"
+        }
+      },
+      "35991": {
+        "name": "Motor CC com codificador",
+        "description": "Motor de engrenagem planetária Actobotics de 6 a 12V com codificador para trabalhos pesados.",
+        "properties": {
+          "RPM": "RPM"
+        },
+        "detail": {
+          "Description": "O motor CC converte corrente elétrica em movimento rotacional. Um codificador fornece informações sobre a velocidade e a posição do motor.%0",
+          "How it works": "O codificador envia um par de sinais de retorno que medem com precisão o movimento do motor.",
+          "Connect it": "Este dispositivo tem seis fios condutores. Os fios de Alimentação (Power) e Terra (Ground) do codificador são conectados às entradas 5V e GND no Arduino, respectivamente; o Positivo do motor (Motor Positive) e o Negativo do motor (Motor Negative) são conectados a uma fonte de alimentação separada para acionar o motor; Canal A (Channel A) e Canal B (Channel B) são conectados a entradas digitais no seu Arduino.%1",
+          "How it is used": "Selecione o dispositivo para editar seus dados de nome e rotações por minuto.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4",
+          "%4": "O que é um codificador?"
+        }
+      },
+      "36242": {
+        "name": "Motor CC com codificador",
+        "description": "Motor de engrenagem planetária Actobotics de 3 a 12V com codificador.",
+        "properties": {
+          "RPM": "RPM"
+        },
+        "detail": {
+          "Description": "O motor CC converte corrente elétrica em movimento rotacional. Um codificador fornece informações sobre a velocidade e a posição do motor.%0",
+          "How it works": "O codificador envia um par de sinais de retorno que medem com precisão o movimento do motor.",
+          "Connect it": "Este dispositivo tem seis fios condutores. Os fios de Alimentação (Power) e Terra (Ground) do codificador são conectados às entradas 5V e GND no Arduino, respectivamente; o Positivo do motor (Motor Positive) e o Negativo do motor (Motor Negative) são conectados a uma fonte de alimentação separada para acionar o motor; Canal A (Channel A) e Canal B (Channel B) são conectados a entradas digitais no seu Arduino.%1",
+          "How it is used": "Selecione o dispositivo para editar seus dados de nome e rotações por minuto.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4",
+          "%4": "O que é um codificador?"
+        }
+      },
+      "36567": {
+        "name": "Controlador de motor simples Pololu",
+        "description": "Usado no controle bidirecional de um único motor CC.",
+        "terminals": {
+          "TX In": "TX Ent",
+          "Voltage In": "Tensão Ent",
+          "RC 1": "RC 1",
+          "RC 2": "RC 2",
+          "Potentiometer -": "Potenciômetro -",
+          "Potentiometer +": "Potenciômetro +",
+          "Analog Input Channel 1": "Canal de entrada analógica 1",
+          "Analog Input Channel 2": "Canal de entrada analógica 2",
+          "Out A": "Saída A",
+          "Out B": "Saída B"
+        }
+      },
+      "39041": {
+        "name": "Bateria 3V do tipo moeda",
+        "description": "Bateria de tamanho pequeno, ótima para aplicações que empregam menor potência, como o acendimento de LEDS.",
+        "detail": {
+          "Description": "Este dispositivo é uma bateria elétrica em formato de moeda com tensão nominal de 3 volts.%0",
+          "How it works": "As pilhas armazenam energia potencial e podem converter essa energia química em eletricidade quando conectadas a um circuito. Cada pilha tem potencial de tensão em seus dois eletrodos, o que faz com que os elétrons percorram o circuito para chegar ao outro lado.",
+          "Connect it": "Este dispositivo tem dois fios condutores. Conecte o fio Positivo (Positive) ao terminal positivo no dispositivo que você deseja alimentar e o Negativo (Negative) ao terminal negativo ou de aterramento no dispositivo.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6",
+          "%4": "Baterias de lítio e células em formato de moeda",
+          "%5": "Circuit Playground: B significa Bateria",
+          "%6": "Aula sobre impressão 3D com circuitos no Instructables"
+        }
+      },
+      "45398": {
+        "name": "Sensor de infravermelho",
+        "description": "Detecta sinais de infravermelho emitidos por dispositivos como controles remotos.",
+        "detail": {
+          "Description": "Este dispositivo detecta padrões de luz infravermelha criados por um controle remoto ou por uma comunicação sem fio.%0",
+          "How it works": "Usado com infravermelho remoto, um sensor de infravermelho detecta padrões de luz para comunicação sem fio.",
+          "Connect it": "Este dispositivo tem três fios condutores e é frequentemente conectado à entrada digital de um microcontrolador. Ligue o dispositivo conectando o pino de Alimentação (Power) à entrada 5V e GND ao aterramento. O pino de Saída (Out) é conectado a uma entrada digital em um Arduino.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome. Ele receberá o sinal de qualquer infravermelho remoto no seu circuito.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre sensores de infravermelho e seu uso nestas páginas:%4%5",
+          "%4": "Sensor de infravermelho e tutorial remoto",
+          "%5": "Folha de dados, sensor de infravermelho"
+        }
+      },
+      "46828": {
+        "name": "NeoPixel Ring 12",
+        "description": "Anel de 12 NeoPixels que podem ser controlados individualmente com o uso de um microcontrolador.",
+        "detail": {
+          "Description": "NeoPixels são LEDs RGB endereçáveis.%0",
+          "How it works": "Os LEDs são feitos de materiais semicondutores que emitem luz quando a corrente flui através deles na direção correta. Uma corrente excessiva pode danificá-los ou mesmo quebrá-los; por isso, adicione um resistor em série para limitar o fluxo de corrente.",
+          "Connect it": "Este dispositivo tem três fios condutores. Ligue-o conectando o pino de Alimentação (Power) ao Arduino 5V e o Terra (Ground) a qualquer terminal GND de um Arduino. O pino de Entrada (In) é conectado a qualquer pino de saída digital no Arduino.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4",
+          "%4": "Adafruit NeoPixel Überguide"
+        }
+      },
+      "46936": {
+        "name": "Cronômetro duplo",
+        "description": "Combina dois cronômetros 555 em um só pacote.",
+        "terminals": {
+          "Discharge A": "Descarga A",
+          "Threshold A": "Limite A",
+          "Control A": "Controle A",
+          "Reset A": "Redefinição A",
+          "Output A": "Saída A",
+          "Trigger A": "Acionador A",
+          "Discharge B": "Descarga B",
+          "Threshold B": "Limite B",
+          "Control B": "Controle B",
+          "Reset B": "Redefinição B",
+          "Output B": "Saída B",
+          "Trigger B": "Acionador B"
+        }
+      },
+      "47214": {
+        "name": "Teclado 4x4",
+        "description": "Teclado de 16 botões, com dígitos de 0 a 9, letras de A a D e os símbolos * e #.",
+        "terminals": {
+          "Row 1": "Linha 1",
+          "Row 2": "Linha 2",
+          "Row 3": "Linha 3",
+          "Row 4": "Linha 4",
+          "Column 1": "Coluna 1",
+          "Column 2": "Coluna 2",
+          "Column 3": "Coluna 3",
+          "Column 4": "Coluna 4"
+        },
+        "detail": {
+          "Description": "Este dispositivo é composto por 16 interruptores momentâneos organizados em padrão de grade.%0",
+          "How it works": "Os padrões de material condutor são impressos em camadas de plástico, e uma pequena membrana boleada pode ser comprimida ou pressionada para permitir o contato entre as duas superfícies.",
+          "Connect it": "Este dispositivo tem oito fios condutores que correspondem às linhas e colunas de interruptores internos. Conecte cada pino ao seu próprio pino digital no Arduino.%1",
+          "How it is used": "Clique nos botões do dispositivo durante a simulação para pressionar os interruptores.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6",
+          "%4": "Exemplo da biblioteca de teclados numéricos do Arduino",
+          "%5": "Guia do teclado matricial",
+          "%6": "Folha de dados, teclado de membrana 4 x 4"
+        }
+      },
+      "48698": {
+        "name": "Gerador de função",
+        "description": "Equipamento de teste eletrônico que gera diversas formas de onda de voltagem.",
+        "properties": {
+          "Frequency": {
+            "name": "Frequência",
+            "unit": "_hertzUnit"
+          },
+          "Amplitude": {
+            "name": "Amplitude",
+            "unit": "_voltageUnit"
+          },
+          "DC Offset": {
+            "name": "Deslocamento CC",
+            "unit": "_voltageUnit"
+          },
+          "Function": {
+            "name": "Função",
+            "list": {
+              "Square": "Quadrado",
+              "Sine": "Seno",
+              "Triangle": "Triângulo"
+            }
+          }
+        },
+        "detail": {
+          "Description": "Este dispositivo é um equipamento eletrônico de teste que gera várias formas de onda de tensão.%0",
+          "How it works": "O gerador de função utiliza um gerador de sinal e circuitos de oscilador eletrônico para gerar sinais.",
+          "Connect it": "Este dispositivo tem dois fios condutores. Conecte o fio Positivo (Positive) ao terminal positivo no dispositivo ao qual você deseja enviar o sinal e conecte o fio Negativo (Negative) ao aterramento.%1",
+          "How it is used": "Selecione o dispositivo para editar seus dados de nome, frequência, amplitude, deslocamento CC e forma de onda de função.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Geradores de função explicados",
+          "%5": "Circuit Playground: F significa Frequência"
+        }
+      },
+      "48952": {
+        "name": "Regulador 5V [LM7805]",
+        "description": "Usado para fornecer voltagem de saída fixa de 5V."
+      },
+      "48953": {
+        "name": "Regulador 3,3V [LD1117V33]",
+        "description": "Usado para fornecer voltagem de saída fixa de 3,3V."
+      },
+      "49811": {
+        "name": "NeoPixel Ring 24",
+        "description": "Anel de 24 NeoPixels que podem ser controlados individualmente com o uso de um microcontrolador.",
+        "detail": {
+          "Description": "NeoPixels são LEDs RGB endereçáveis.%0",
+          "How it works": "Os LEDs são feitos de materiais semicondutores que emitem luz quando a corrente flui através deles na direção correta. Uma corrente excessiva pode danificá-los ou mesmo quebrá-los; por isso, adicione um resistor em série para limitar o fluxo de corrente.",
+          "Connect it": "Este dispositivo tem três fios condutores. Ligue-o conectando o pino de Alimentação (Power) ao Arduino 5V e o Terra (Ground) a qualquer terminal GND de um Arduino. O pino de Entrada (In) é conectado a qualquer pino de saída digital no Arduino.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4",
+          "%4": "Adafruit NeoPixel Überguide"
+        }
+      },
+      "49813": {
+        "name": "NeoPixel Ring 16",
+        "description": "Anel de 16 NeoPixels que podem ser controlados individualmente com o uso de um microcontrolador.",
+        "detail": {
+          "Description": "NeoPixels são LEDs RGB endereçáveis.%0",
+          "How it works": "Os LEDs são feitos de materiais semicondutores que emitem luz quando a corrente flui através deles na direção correta. Uma corrente excessiva pode danificá-los ou mesmo quebrá-los; por isso, adicione um resistor em série para limitar o fluxo de corrente.",
+          "Connect it": "Este dispositivo tem três fios condutores. Ligue-o conectando o pino de Alimentação (Power) ao Arduino 5V e o Terra (Ground) a qualquer terminal GND de um Arduino. O pino de Entrada (In) é conectado a qualquer pino de saída digital no Arduino.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4",
+          "%4": "Adafruit NeoPixel Überguide"
+        }
+      },
+      "49819": {
+        "name": "NeoPixel Jewel",
+        "description": "Conjunto de 7 NeoPixels que podem ser controlados individualmente com o uso de um microcontrolador.",
+        "detail": {
+          "Description": "NeoPixels são LEDs RGB endereçáveis.%0",
+          "How it works": "Os LEDs são feitos de materiais semicondutores que emitem luz quando a corrente flui através deles na direção correta. Uma corrente excessiva pode danificá-los ou mesmo quebrá-los; por isso, adicione um resistor em série para limitar o fluxo de corrente.",
+          "Connect it": "Este dispositivo tem três fios condutores. Ligue-o conectando o pino de Alimentação (Power) ao Arduino 5V e o Terra (Ground) a qualquer terminal GND de um Arduino. O pino de Entrada (In) é conectado a qualquer pino de saída digital no Arduino.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4",
+          "%4": "Adafruit NeoPixel Überguide"
+        }
+      },
+      "49820": {
+        "name": "NeoPixel",
+        "description": "LED RGB único, que pode ser controlado com o uso de um microcontrolador.",
+        "detail": {
+          "Description": "NeoPixels são LEDs RGB endereçáveis.%0",
+          "How it works": "Os LEDs são feitos de materiais semicondutores que emitem luz quando a corrente flui através deles na direção correta. Uma corrente excessiva pode danificá-los ou mesmo quebrá-los; por isso, adicione um resistor em série para limitar o fluxo de corrente.",
+          "Connect it": "Este dispositivo tem três fios condutores. Ligue-o conectando o pino de Alimentação (Power) ao Arduino 5V e o Terra (Ground) a qualquer terminal GND de um Arduino. O pino de Entrada (In) é conectado a qualquer pino de saída digital no Arduino.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4",
+          "%4": "Adafruit NeoPixel Überguide"
+        }
+      },
+      "50340": {
+        "name": "Sensor de distância ultrassônico",
+        "description": "Sensor que utiliza ondas de som para determinar a que distância está um objeto.",
+        "terminals": {
+          "Echo": "Eco"
+        },
+        "detail": {
+          "Description": "Este sensor usa ondas sonoras para determinar a que distância está um objeto.%0",
+          "How it works": "Este dispositivo emite som muito agudo. Tão agudo que você não pode ouvir. O som leva algum tempo para se deslocar no ar. Este dispositivo inteligente detecta o primeiro eco produzido por um objeto próximo e calcula a distância até esse objeto medindo o tempo decorrido até que o som se reflita no alvo e volte a ele.%1",
+          "Connect it": "Há três pinos na parte inferior deste dispositivo. Para ligá-lo, conecte o pino de Força (Power) ao terminal Arduino 5V e o Terra (Ground) a qualquer terminal GND em um Arduino. O pino de Sinal (Signal) é conectado a qualquer terminal digital ou analógico no Arduino. %2",
+          "How it is used": "Selecione o dispositivo durante a simulação para exibir uma região com um círculo interno. A região representa o espaço no qual o sensor pode detectar um objeto grande. O círculo é o objeto alvo. Selecione o alvo para movê-lo na região e altere a distância entre ele e o sensor.%3",
+          "Get started": "Arraste o circuito inicial abaixo para o interior do seu projeto, para obter um exemplo funcional de como usar esta peça.%4",
+          "More information": "Veja mais informações sobre este dispositivo e como usá-lo nestas páginas:%5%6 %7",
+          "%5": "Sensor de distância ultrassônico no Arduino com o Tinkercad",
+          "%6": "Localizador de faixa ultrassônica de ping",
+          "%7": "PING))) Sensor de distância ultrassônico - downloads"
+        }
+      },
+      "50341": {
+        "name": "Sensor de distância ultrassônico (quatro pinos)",
+        "description": "Sensor que utiliza ondas de som para determinar a que distância está um objeto.",
+        "terminals": {
+          "Echo": "Eco"
+        },
+        "detail": {
+          "Description": "Este sensor usa ondas sonoras para determinar a que distância está um objeto.%0",
+          "How it works": "Este dispositivo emite som muito agudo. Tão agudo que você não pode ouvir. O som leva algum tempo para se deslocar no ar. Este dispositivo inteligente detecta o primeiro eco produzido por um objeto próximo e calcula a distância até esse objeto medindo o tempo decorrido até que o som se reflita no alvo e volte a ele.%1",
+          "Connect it": "Há quatro pinos na base deste dispositivo. Ligue-o conectando o pino de Alimentação (Power) ao terminal Arduino 5V e o Terra (Ground) a qualquer terminal GND de um Arduino. Os pinos Acionador (Trigger) e Eco (Echo) são conectados a qualquer terminal digital ou analógico do Arduino. O código informa ao sensor que deve emitir seu som usando o pino de acionamento e aguarda a detecção de eco do pino de eco. Ele converte o tempo gasto em um número que representa a distância em polegadas ou centímetros.%2",
+          "How it is used": "Selecione o dispositivo durante a simulação para exibir uma região com um círculo interno. A região representa o espaço no qual o sensor pode detectar um objeto grande. O círculo é o objeto alvo. Selecione o alvo para movê-lo na região e altere a distância entre ele e o sensor.%3",
+          "Get started": "Arraste o circuito inicial abaixo para o interior do seu projeto, para obter um exemplo funcional de como usar esta peça.%4",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%5%6",
+          "%5": "Sensor de distância ultrassônico no Arduino com o Tinkercad",
+          "%6": "Folha de dados, HC-SR04"
+        }
+      },
+      "52579": {
+        "name": "Sensor PIR",
+        "description": "Sensor infravermelho passivo usado para detectar movimento em frente ao mesmo.",
+        "detail": {
+          "Description": "Este dispositivo detecta alterações nos níveis de luz infravermelha sobre uma área ampla, como movimento em um ambiente.%0",
+          "How it works": "Os sensores de infravermelho passivo (PIR, Passive Infrared) detectam energia térmica comparando os sinais de um par de elementos piroelétricos. O circuito de suporte, então, envia um sinal de ALTO (HIGH) ao seu fio de sinal.",
+          "Connect it": "Há três pinos na parte inferior do dispositivo. Ligue-o conectando o pino de Alimentação (Power) ao ponto 5V e o Terra (Ground) ao aterramento. O pino de Sinal (Signal) é conectado diretamente a um dispositivo ou a qualquer terminal digital ou analógico de um Arduino.%1",
+          "How it is used": "Selecione o dispositivo durante a simulação para mostrar uma região com um círculo. Essa região representa o espaço no qual o sensor pode detectar movimento. O círculo é o objeto alvo. Selecione o alvo para movê-lo pela região e ative o sensor.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre sensores de movimento PIR e seu uso nestas páginas:%4%5%6",
+          "%4": "Sensor de movimento PIR com Arduino no Tinkercad",
+          "%5": "Tutorial sobre sensor de movimento PIR",
+          "%6": "Folha de dados, sensor de movimento PIR"
+        }
+      },
+      "53905": {
+        "name": "Sensor de gás",
+        "description": "Sensor de gás Winsen utilizado para detectar fugas de gás, como monóxido de carbono, álcool ou metano.",
+        "terminals": {
+          "A1": "A1",
+          "A2": "A2",
+          "B1": "B1",
+          "B2": "B2",
+          "H1": "H1",
+          "H2": "H2"
+        },
+        "detail": {
+          "Description": "Este sensor detecta partículas de uma substância específica no ar.%0",
+          "How it works": "Esse aparelho detecta a presença de um gás no ambiente medindo as propriedades elétricas do ar.",
+          "Connect it": "Este dispositivo tem seis fios condutores. Ligue o aquecedor conectando +5V a H1 ou H2 e o aterramento ao outro. A resistência entre A e B muda com a quantidade de gás detectada. Conecte um lado do circuito de detecção a A1 ou A2 e o outro a B1 ou B2.%1",
+          "How it is used": "Selecione o dispositivo durante a simulação para mostrar uma nuvem que representa a concentração de gás. Deslize o alvo para alterar o nível de gás simulado. %2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Exemplo de sensor de qualidade do ar MQ135",
+          "%5": "Folha de dados, sensor de gás MQ-6"
+        }
+      },
+      "54641": {
+        "name": "Disparadores",
+        "description": "categoria"
+      },
+      "54642": {
+        "name": "Outros componentes",
+        "description": "categoria"
+      },
+      "54646": {
+        "name": "Bateria 1,5V",
+        "description": "Pilhas padrão AA ou AAA; cada uma fornece 1,5V.",
+        "properties": {
+          "count": {
+            "name": "contagem",
+            "list": {
+              "1 battery": "1 bateria",
+              "2 batteries": "2 baterias",
+              "3 batteries": "3 baterias",
+              "4 batteries": "4 baterias"
+            }
+          },
+          "type": {
+            "name": "tipo",
+            "list": {
+              "AA": "AA",
+              "AAA": "AAA"
+            }
+          },
+          "built-in switch": {
+            "name": "chave incorporada",
+            "list": "_yesNo"
+          }
+        },
+        "detail": {
+          "Description": "Este dispositivo é um suporte de bateria para pilhas AA ou AAA com definições configuráveis.%0",
+          "How it works": "As pilhas armazenam energia potencial e podem converter essa energia química em eletricidade quando conectadas a um circuito. Cada pilha tem potencial de tensão em seus dois eletrodos, o que faz com que os elétrons percorram o circuito para chegar ao outro lado.",
+          "Connect it": "Este dispositivo tem dois fios condutores. Conecte o fio Positivo (Positive) ao terminal positivo no dispositivo que você deseja alimentar e o Negativo (Negative) ao terminal negativo ou de aterramento no dispositivo.%1",
+          "How it is used": "Selecione o dispositivo para editar seus dados de nome, contagem de bateria, tipo de bateria e selecionar se deseja ou não incluir um interruptor interno, que pode ser ativado ou desativado com um clique durante a simulação.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6%7",
+          "%4": "Tudo sobre baterias",
+          "%5": "Circuit Playground: B significa Bateria",
+          "%6": "Calculadora de vida útil da bateria",
+          "%7": "Página do produto suporte de bateria 4 x AA com capa e interruptor"
+        }
+      },
+      "56250": {
+        "name": "Comparador quad",
+        "description": "O LM339 consiste em quatro comparadores de voltagem, com uma única fonte de energia.",
+        "terminals": {
+          "Out 1": "Saída 1",
+          "Out 2": "Saída 2",
+          "Out 3": "Saída 3",
+          "Out 4": "Saída 4",
+          "In 1 -": "Ent 1 -",
+          "In 1 +": "Ent 1 +",
+          "In 2 -": "Ent 2 -",
+          "In 2 +": "Ent 2 +",
+          "In 3 -": "Ent 3 -",
+          "In 3 +": "Ent 3 +",
+          "In 4 -": "Ent 4 -",
+          "In 4 +": "Ent 4 +"
+        },
+        "detail": {
+          "Description": "O comparador quad é usado quando é preciso comparar vários sinais de tensão. %0",
+          "How it works": "Este dispositivo consiste em quatro comparadores de voltagem, para que possa comparar quatro pares de sinais por vez. Efetivamente, são dois LM393s em um pacote.",
+          "Connect it": "Este dispositivo tem 14 pinos e requer alimentação para seu pino de Alimentação (Power) e aterramento para seu pino Terra (Ground); os pinos restantes são as duas entradas e uma saída para cada um dos quatro comparadores de voltagem internos.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6",
+          "%4": "Circuito comparador de voltagem quad LM399",
+          "%5": "Circuitos integrados (ICs)",
+          "%6": "Folha de dados, LM339"
+        }
+      },
+      "63927": {
+        "name": "Comparador duplo",
+        "description": "LM393. Consiste em dois comparadores de voltagem independentes.",
+        "terminals": {
+          "Out 1": "Saída 1",
+          "Out 2": "Saída 2",
+          "In 1 -": "Ent 1 -",
+          "In 1 +": "Ent 1 +",
+          "In 2 -": "Ent 2 -",
+          "In 2 +": "Ent 2 +"
+        },
+        "detail": {
+          "Description": "O comparador duplo é usado quando é preciso comparar vários sinais de tensão.%0",
+          "How it works": "Esse dispositivo consiste em dois comparadores de tensão, para que possa comparar dois pares de sinais por vez.",
+          "Connect it": "Este dispositivo tem oito pinos e requer alimentação para seu pino de Alimentação (Power) e aterramento para seu pino Terra (Ground); os pinos restantes são as duas entradas e uma saída para cada um dos dois comparadores de tensão internos.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6",
+          "%4": "Como construir um circuito de comparador de tensão usando um LM393",
+          "%5": "Circuitos integrados (ICs)",
+          "%6": "Folha de dados, LM393"
+        }
+      },
+      "71005": {
+        "name": "Motor de vibração",
+        "description": "Motor que vibra quando acionado.",
+        "detail": {
+          "Description": "Este dispositivo é um tipo de motor CC frequentemente usado para comunicação tátil.%0",
+          "How it works": "Quando a alimentação é aplicada, esse dispositivo gira um peso descentralizado, causando vibração.",
+          "Connect it": "Este dispositivo tem dois fios condutores. Conecte o Positivo (Positive) à alimentação e o Negativo (Negative) ao aterramento para fazer o motor vibrar.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5%6",
+          "%4": "Motores de vibração",
+          "%5": "Montagem de circuito de movimento",
+          "%6": "Folha de dados, motor de vibração"
+        }
+      },
+      "330000": {
+        "name": "Motor de engrenagem de uso não profissional",
+        "description": "Motor com engrenagem usado com frequência para acionar rodas de robôs.",
+        "detail": {
+          "Description": "Os motores de engrenagem de uso não profissional contêm um motor CC e uma caixa de engrenagens.%0",
+          "How it works": "Quando o motor é alimentado por corrente CC, é criado um campo magnético que atrai e repele os ímãs no interior, fazendo com que o rotor gire. Uma caixa de engrenagens converte o motor CC de velocidade mais alta e baixo torque em uma saída de menor velocidade e maior torque, adequada a rodas robóticas.",
+          "Connect it": "Este dispositivo tem dois fios condutores. Conecte o Positivo (Positive) à alimentação e o Negativo (Negative) ao aterramento para fazer o motor girar.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Página do produto motor de engrenagem de uso não profissional",
+          "%5": "Folha de dados, motor de engrenagem de uso não profissional"
+        }
+      },
+      "wire": {
+        "name": "Fio",
+        "list": {
+          "black": "preto",
+          "red": "vermelho",
+          "orange": "laranja",
+          "yellow": "amarelo",
+          "green": "verde",
+          "turquoise": "turquesa",
+          "blue": "azul",
+          "purple": "roxo",
+          "pink": "rosa",
+          "brown": "marrom",
+          "grey": "cinza",
+          "white": "branco"
+        }
+      },
+      "annotation": {
+        "name": "Nota"
+      },
+      "neopixel_strip_4": {
+        "name": "Faixa de NeoPixel 4",
+        "description": "Uma faixa flexível de LEDs RGB que pode ser controlada usando-se um microcontrolador.",
+        "detail": {
+          "Description": "NeoPixels são LEDs RGB endereçáveis.%0",
+          "How it works": "Os LEDs são feitos de materiais semicondutores que emitem luz quando a corrente flui através deles na direção correta. Uma corrente excessiva pode danificá-los ou mesmo quebrá-los; por isso, adicione um resistor em série para limitar o fluxo de corrente.",
+          "Connect it": "Este dispositivo tem três fios condutores. Ligue-o conectando o pino de Alimentação (Power) ao Arduino 5V e o Terra (Ground) a qualquer terminal GND de um Arduino. O pino de Entrada (In) é conectado a qualquer pino de saída digital no Arduino.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4",
+          "%4": "Adafruit NeoPixel Überguide"
+        }
+      },
+      "neopixel_strip_6": {
+        "name": "Faixa de NeoPixel 6",
+        "description": "Uma faixa flexível de LEDs RGB que pode ser controlada usando-se um microcontrolador.",
+        "detail": {
+          "Description": "NeoPixels são LEDs RGB endereçáveis.%0",
+          "How it works": "Os LEDs são feitos de materiais semicondutores que emitem luz quando a corrente flui através deles na direção correta. Uma corrente excessiva pode danificá-los ou mesmo quebrá-los; por isso, adicione um resistor em série para limitar o fluxo de corrente.",
+          "Connect it": "Este dispositivo tem três fios condutores. Ligue-o conectando o pino de Alimentação (Power) ao Arduino 5V e o Terra (Ground) a qualquer terminal GND de um Arduino. O pino de Entrada (In) é conectado a qualquer pino de saída digital no Arduino.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4",
+          "%4": "Adafruit NeoPixel Überguide"
+        }
+      },
+      "neopixel_strip_8": {
+        "name": "Faixa de NeoPixel 8",
+        "description": "Uma faixa flexível de LEDs RGB que pode ser controlada usando-se um microcontrolador.",
+        "detail": {
+          "Description": "NeoPixels são LEDs RGB endereçáveis.%0",
+          "How it works": "Os LEDs são feitos de materiais semicondutores que emitem luz quando a corrente flui através deles na direção correta. Uma corrente excessiva pode danificá-los ou mesmo quebrá-los; por isso, adicione um resistor em série para limitar o fluxo de corrente.",
+          "Connect it": "Este dispositivo tem três fios condutores. Ligue-o conectando o pino de Alimentação (Power) ao Arduino 5V e o Terra (Ground) a qualquer terminal GND de um Arduino. O pino de Entrada (In) é conectado a qualquer pino de saída digital no Arduino.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4",
+          "%4": "Adafruit NeoPixel Überguide"
+        }
+      },
+      "neopixel_strip_10": {
+        "name": "Faixa de NeoPixel 10",
+        "description": "Uma faixa flexível de LEDs RGB que pode ser controlada usando-se um microcontrolador.",
+        "detail": {
+          "Description": "NeoPixels são LEDs RGB endereçáveis.%0",
+          "How it works": "Os LEDs são feitos de materiais semicondutores que emitem luz quando a corrente flui através deles na direção correta. Uma corrente excessiva pode danificá-los ou mesmo quebrá-los; por isso, adicione um resistor em série para limitar o fluxo de corrente.",
+          "Connect it": "Este dispositivo tem três fios condutores. Ligue-o conectando o pino de Alimentação (Power) ao Arduino 5V e o Terra (Ground) a qualquer terminal GND de um Arduino. O pino de Entrada (In) é conectado a qualquer pino de saída digital no Arduino.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4",
+          "%4": "Adafruit NeoPixel Überguide"
+        }
+      },
+      "neopixel_strip_12": {
+        "name": "Faixa de NeoPixel 12",
+        "description": "Uma faixa flexível de LEDs RGB que pode ser controlada usando-se um microcontrolador.",
+        "detail": {
+          "Description": "NeoPixels são LEDs RGB endereçáveis.%0",
+          "How it works": "Os LEDs são feitos de materiais semicondutores que emitem luz quando a corrente flui através deles na direção correta. Uma corrente excessiva pode danificá-los ou mesmo quebrá-los; por isso, adicione um resistor em série para limitar o fluxo de corrente.",
+          "Connect it": "Este dispositivo tem três fios condutores. Ligue-o conectando o pino de Alimentação (Power) ao Arduino 5V e o Terra (Ground) a qualquer terminal GND de um Arduino. O pino de Entrada (In) é conectado a qualquer pino de saída digital no Arduino.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4",
+          "%4": "Adafruit NeoPixel Überguide"
+        }
+      },
+      "neopixel_strip_16": {
+        "name": "Faixa de NeoPixel 16",
+        "description": "Uma faixa flexível de LEDs RGB que pode ser controlada usando-se um microcontrolador.",
+        "detail": {
+          "Description": "NeoPixels são LEDs RGB endereçáveis.%0",
+          "How it works": "Os LEDs são feitos de materiais semicondutores que emitem luz quando a corrente flui através deles na direção correta. Uma corrente excessiva pode danificá-los ou mesmo quebrá-los; por isso, adicione um resistor em série para limitar o fluxo de corrente.",
+          "Connect it": "Este dispositivo tem três fios condutores. Ligue-o conectando o pino de Alimentação (Power) ao Arduino 5V e o Terra (Ground) a qualquer terminal GND de um Arduino. O pino de Entrada (In) é conectado a qualquer pino de saída digital no Arduino.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4",
+          "%4": "Adafruit NeoPixel Überguide"
+        }
+      },
+      "neopixel_strip_20": {
+        "name": "Faixa de NeoPixel 20",
+        "description": "Uma faixa flexível de LEDs RGB que pode ser controlada usando-se um microcontrolador.",
+        "detail": {
+          "Description": "NeoPixels são LEDs RGB endereçáveis.%0",
+          "How it works": "Os LEDs são feitos de materiais semicondutores que emitem luz quando a corrente flui através deles na direção correta. Uma corrente excessiva pode danificá-los ou mesmo quebrá-los; por isso, adicione um resistor em série para limitar o fluxo de corrente.",
+          "Connect it": "Este dispositivo tem três fios condutores. Ligue-o conectando o pino de Alimentação (Power) ao Arduino 5V e o Terra (Ground) a qualquer terminal GND de um Arduino. O pino de Entrada (In) é conectado a qualquer pino de saída digital no Arduino.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4",
+          "%4": "Adafruit NeoPixel Überguide"
+        }
+      },
+      "ic74hc75": {
+        "name": "Trava de 4 bits",
+        "description": "Trava binária de 4 bits.",
+        "terminals": {
+          "Enable 1 & 2": "Ativar 1 e 2",
+          "Enable 3 & 4": "Ativar 3 e 4"
+        }
+      },
+      "ic74hc283": {
+        "name": "Inclusor de 4 bits",
+        "description": "Inclusor completo binário com transporte.",
+        "terminals": {
+          "Sum 0": "Soma 0",
+          "Sum 1": "Soma 1",
+          "Sum 2": "Soma 2",
+          "Sum 3": "Soma 3",
+          "Carry In": "Ent transporte",
+          "Carry Out": "Saída transporte"
+        }
+      },
+      "starterCircuitAssemblyGlow": {
+        "name": "Montagem de circuito de brilho",
+        "description": "Crie um projeto simples com brilho usando um LED e bateria."
+      },
+      "starterCircuitAssemblyMove": {
+        "name": "Montagem de circuito de movimento",
+        "description": "Construa um projeto que se move com um motor de vibração e um interruptor."
+      },
+      "starterCircuitAssemblySpin": {
+        "name": "Montagem de circuito de giro",
+        "description": "Crie um projeto giratório com um motor de engrenagem de uso não profissional e uma bateria."
+      },
+      "starterBasicLEDLightUp": {
+        "name": "Iluminação de LED",
+        "description": "Ilumine um LED com apenas uma bateria e um resistor."
+      },
+      "starterBasicLEDDimmer": {
+        "name": "Dimmer para LED",
+        "description": "Esmaeça e intensifique seu LED com uma bateria e um potenciômetro."
+      },
+      "starterBasicLEDSwitch": {
+        "name": "Interruptor para LED",
+        "description": "Ligue e desligue seu LED com um simples interruptor."
+      },
+      "starterBasicMultipleLEDs": {
+        "name": "LEDs múltiplos",
+        "description": "Ilumine vários LEDs conectando-os em paralelo."
+      },
+      "starterBasicRGBLED": {
+        "name": "LED RGB",
+        "description": "Misture cores com um LED RGB."
+      },
+      "starterBasicDCMotor": {
+        "name": "Motor CC",
+        "description": "Controle um motor CC com luz usando uma fotorresistor."
+      },
+      "starterBasicTemperatureSensor": {
+        "name": "Sensor de temperatura",
+        "description": "Meça a temperatura ambiente usando um sensor de temperatura."
+      },
+      "starterBasicTiltSensor": {
+        "name": "Sensor de inclinação",
+        "description": "Acenda um LED quando você detectar uma curva com o sensor de inclinação."
+      },
+      "starterBasicPIRSensor": {
+        "name": "Sensor PIR",
+        "description": "Detecte movimentos usando um sensor PIR."
+      },
+      "starterArduinoBreadboard": {
+        "name": "Placa de ensaio",
+        "description": "Arduino e uma placa de ensaio."
+      },
+      "starterArduinoBlink": {
+        "name": "Piscar",
+        "description": "Pisque um LED."
+      },
+      "starterArduinoFade": {
+        "name": "Esmaecer",
+        "description": "Esmaeça e intensifique um LED."
+      },
+      "starterArduinoButton": {
+        "name": "Botão",
+        "description": "Detecte entradas usando um botão."
+      },
+      "starterArduinoDebounce": {
+        "name": "Devolução",
+        "description": "Use o recurso de debounce em uma entrada, como o pressionar de um botão, para detectar com maior precisão uma alteração de estado."
+      },
+      "starterArduinoStateChangeDetection": {
+        "name": "Detecção de mudança de estado",
+        "description": "Detecte quando uma entrada mudar de ALTA para BAIXA ou vice-versa."
+      },
+      "starterArduinoAnalogInput": {
+        "name": "Entrada analógica",
+        "description": "Leia entradas analógicas usando um potenciômetro."
+      },
+      "starterArduinoDigitalReadSerial": {
+        "name": "Leitura digital serial",
+        "description": "Leia entradas digitais de um botão e imprima os resultados no monitor serial."
+      },
+      "starterArduinoAnalogReadSerial": {
+        "name": "Leitura analógica serial",
+        "description": "Leia entradas analógicas usando um potenciômetro e imprima os resultados no monitor serial."
+      },
+      "starterArduinoServo": {
+        "name": "Servo",
+        "description": "Controle um servomotor."
+      },
+      "starterArduinoToneKeyboard": {
+        "name": "Teclado de tom",
+        "description": "Reproduza tons do teclado usando um buzzer e botões."
+      },
+      "starterArduinoToneMelody": {
+        "name": "Melodia do tom",
+        "description": "Programe uma melodia usando um buzzer."
+      },
+      "starterArduinoToneMultiple": {
+        "name": "Múltiplos tons",
+        "description": "Reproduza vários tons em vários pinos em sequência."
+      },
+      "starterArduinoTonePitchFollower": {
+        "name": "Detector de frequência do tom",
+        "description": "Ajuste a frequência usando a entrada analógica com um fotorresistor."
+      },
+      "starterArduinoUltrasonicRangeFinder": {
+        "name": "Localizador de faixa ultrassônica",
+        "description": "Detecte a que distância um objeto está, usando um localizador de faixa ultrassônica."
+      },
+      "starterArduinoNeopixel": {
+        "name": "Neopixel",
+        "description": "Ilumine um Neopixel com as cores do arco-íris."
+      },
+      "starterArduinoLCD": {
+        "name": "LCD de 2 fios",
+        "description": "Controle o texto em uma tela de cristal líquido usando I2C de 2 fios."
+      },
+      "starterArduinoLCDI2C": {
+        "name": "LCD",
+        "description": "Controle o texto em uma tela de cristal líquido."
+      },
+      "starterArduinoAnalogInSerialOut": {
+        "name": "Entrada analógica, saída serial",
+        "description": "Controle um pino de saída de usando entrada analógica com um potenciômetro."
+      },
+      "starterArduinoCalibration": {
+        "name": "Calibragem",
+        "description": "Calibre a entrada de um sensor."
+      },
+      "starterArduinoSmoothing": {
+        "name": "Suavização",
+        "description": "Extraia a média de entrada analógica ao longo do tempo para criar um sinal mais suave."
+      },
+      "starterArduinoReadAnalogVoltage": {
+        "name": "Ler voltagem analógica",
+        "description": "Converta entrada analógica em voltagem e imprima o resultado no monitor serial."
+      },
+      "starterArduinoBlinkWithoutDelay": {
+        "name": "Piscar sem atraso",
+        "description": "Ative e desative um LED sem usar a função de atraso()."
+      },
+      "starterArduinoInternalSerialPullup": {
+        "name": "Entrada pull-up serial",
+        "description": "Use um resistor interno em um pino de entrada e imprima os resultados no monitor serial."
+      },
+      "solarCellid": {
+        "name": "Célula solar",
+        "description": "Dispositivo que converte luz em energia elétrica.",
+        "detail": {
+          "Description": "Esta fonte de energia gera eletricidade CC a partir da luz solar.%0",
+          "How it works": "Esse dispositivo é feito com base em uma matriz de células fotovoltaicas, que geram corrente elétrica quando expostas à luz. As células fotovoltaicas são formadas por dois tipos de semicondutores de silício empilhados em camadas planas largas, posicionadas entre um condutor sólido na parte traseira e conectores finos isolados magneticamente na parte dianteira (para que a luz possa ter contato direto com o silício).%1",
+          "Connect it": "Este dispositivo tem dois fios condutores. Conecte o fio Positivo (Positive) ao terminal positivo no dispositivo que você deseja alimentar e o Negativo (Negative) ao terminal negativo ou de aterramento no dispositivo.%1",
+          "How it is used": "Selecione o dispositivo para editar seus dados de nome, tensão de pico e corrente de pico.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Aula sobre energia solar no Instructables",
+          "%5": "Collin’s Lab: Solar"
+        }
+      },
+      "batteryLemonid": {
+        "name": "Bateria de limão",
+        "description": "Uma bateria química feita de um limão e de um metal de cobre e zinco.",
+        "detail": {
+          "Description": "Este dispositivo é uma bateria química feita com um limão e metal (cobre e zinco).%0",
+          "How it works": "O limão atua como eletrólito entre o prego revestido com zinco e a moeda de cobre, resultando no fluxo de elétrons pelo circuito.",
+          "Connect it": "Este dispositivo tem dois fios condutores. Conecte o fio Positivo (Positive) ao terminal positivo no dispositivo que você deseja alimentar e o fio Negativo (Negative) ao aterramento.%1",
+          "How it is used": "Selecione o dispositivo para editar seus dados de nome, tensão e resistência.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Bateria de batata (funciona tal como a de limão)",
+          "%5": "Circuit Playground: B significa Bateria"
+        }
+      },
+      "batteryPotatoid": {
+        "name": "Bateria de batata",
+        "description": "Uma bateria química feita de uma batata e de um metal de cobre e zinco.",
+        "detail": {
+          "Description": "Este dispositivo é uma bateria química feita com uma batata e metal de cobre e zinco.%0",
+          "How it works": "A batata atua como eletrólito entre o prego revestido com zinco e a moeda de cobre, resultando no fluxo de elétrons pelo circuito.",
+          "Connect it": "Este dispositivo tem dois fios condutores. Conecte o fio Positivo (Positive) ao terminal positivo no dispositivo que você deseja alimentar e o fio Negativo (Negative) ao aterramento.%1",
+          "How it is used": "Selecione o dispositivo para editar seus dados de nome, tensão e resistência.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Bateria de batata",
+          "%5": "Circuit Playground: B significa Bateria"
+        }
+      },
+      "microbitid": {
+        "name": "micro:bit",
+        "description": "Placa programável que pode ser usada para gerar circuitos interativos."
+      },
+      "microbitBreakoutid": {
+        "name": "micro:bit com corte parcial",
+        "description": "Uma placa programável que pode ser utilizada para criar circuitos interativos, com uma placa de corte parcial para facilitar a conexão com uma placa de distribuição.",
+        "terminals": {
+          "Not supported": "Não possui suporte"
+        }
+      },
+      "sensorFlexid": {
+        "name": "Sensor flexível",
+        "description": "Um sensor cuja resistência muda à medida que se dobra.",
+        "detail": {
+          "Description": "Este dispositivo é um resistor variável que reage à dobra.%0",
+          "How it works": "O material semicondutor existente neste sensor flexível torna-se mais condutor quando comprimido juntamente com a flexão do sensor.",
+          "Connect it": "Este dispositivo tem dois fios condutores e, frequentemente, é conectado à entrada analógica de um microcontrolador. Os sensores flexíveis não são polarizados, o que significa que podem ser conectados de qualquer forma.%1",
+          "How it is used": "Selecione o dispositivo durante a simulação e arraste-o para cima e para baixo para alterar seu ângulo de flexão.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre sensores flexíveis e seu uso nestas páginas:%4%5",
+          "%4": "Guia de desligamento do sensor flexível",
+          "%5": "Folha de dados, sensor flexível"
+        }
+      },
+      "displayLCD16x2I2C": {
+        "name": "LCD 16 x 2 (I2C)",
+        "description": "Tela de cristal líquido que exibe duas linhas de 16 caracteres.",
+        "properties": {
+          "address": {
+            "name": "Endereço"
+          },
+          "type": {
+            "name": "Tipo",
+            "list": {
+              "MCP23008": "Baseado em MCP23008",
+              "PCF8574": "Baseado em PCF8574"
+            }
+          }
+        },
+        "detail": {
+          "Description": "Este dispositivo é um Visualizador de cristal líquido capaz de exibir duas linhas de texto com 16 caracteres cada. Esta versão também tem uma placa de driver que usa menos saídas no seu microcontrolador conectado.%0",
+          "How it works": "Os LCDs contêm muitas camadas de materiais. Há uma luz de fundo LED e um \"sanduíche\" de vidro polarizado em torno de cristais líquidos, que pode girar eletronicamente a luz polarizada para permitir que a luz de fundo passe e seja vista, ou seja bloqueada pelo polarizador na parte superior.",
+          "Connect it": "Este dispositivo tem quatro fios condutores. Conecte o pino VCC ao pino 5V do Arduino e GND a qualquer terminal GND de um Arduino. Os pinos SDA e SCL são conectados aos seus respectivos pinos I2C no Arduino.%1",
+          "How it is used": "Selecione o dispositivo para editar seu nome.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nestas páginas:%4%5",
+          "%4": "Guia de pacotes I2C/SPI LCD",
+          "%5": "Placa de fundo de LCD I2C/SPI do Adafruit PCB no github"
+        }
+      },
+      "display7SegmentI2C": {
+        "name": "Tela de relógio com 7 segmentos",
+        "description": "Uma tela de LED de 4 dígitos com 7 segmentos controlada por I2C.",
+        "properties": {
+          "address": {
+            "name": "Endereço"
+          },
+          "color": {
+            "name": "Cor",
+            "list": {
+              "Red": "Vermelho",
+              "Yellow": "Amarelo",
+              "Green": "Verde",
+              "Blue": "Azul",
+              "White": "Branco"
+            }
+          }
+        },
+        "detail": {
+          "Description": "Este dispositivo é composto por quatro telas de sete segmentos e uma placa de driver. Cada tela de sete segmentos contém oito LEDs e um gabinete de plástico para formar os segmentos de dígitos numéricos.%0",
+          "How it works": "Dependendo da configuração de quais LEDs se acendem por vez, são lidos diferentes números no visor.",
+          "Connect it": "Este dispositivo tem quatro fios condutores. Conecte o pino VCC ao pino 5V do Arduino e GND a qualquer terminal GND de um Arduino. Os pinos SDA e SCL são conectados aos seus respectivos pinos I2C no Arduino.%1",
+          "How it is used": "Selecione o dispositivo para editar seus dados de nome, cor e endereço I2C.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre este dispositivo e seu uso nesta página:%4%5",
+          "%4": "Guia de pacotes de LED com sete segmentos",
+          "%5": "Placas de circuito impresso para pacotes LED Matrix Adafruit"
+        }
+      },
+      "starterMicrobitAlarm": {
+        "name": "Alarme",
+        "description": "micro:bit, sensor PIR e alarme piezoelétrico."
+      },
+      "starterMicrobitAnalog": {
+        "name": "Analógico",
+        "description": "exemplo de entrada/saída analógica de micro:bits."
+      },
+      "starterMicrobitBreadboard": {
+        "name": "Placa de ensaio",
+        "description": "micro:bit e quadro de distribuição."
+      },
+      "starterMicrobitBreakout": {
+        "name": "intervalo de micro:bit",
+        "description": "micro:bit e quadro de distribuição."
+      },
+      "starterMicrobitCompass": {
+        "name": "Bússola",
+        "description": "exemplo de sensor magnético de micro:bits."
+      },
+      "starterMicrobitGestures": {
+        "name": "Gestos",
+        "description": "exemplo de acelerômetro de micro:bit, botão e toque."
+      },
+      "starterMicrobitLight": {
+        "name": "Luz",
+        "description": "exemplo de sensor de luz micro:bit."
+      },
+      "starterMicrobitRadio": {
+        "name": "Rádio",
+        "description": "rádio bluetooth de micro:bit."
+      },
+      "starterMicrobitServo": {
+        "name": "Servo",
+        "description": "termômetro micro:bit usando servomotor."
+      },
+      "sensorSoilMoistureid": {
+        "name": "Sensor de umidade do solo",
+        "description": "Sensor cuja voltagem do sinal muda conforme ele se molha.",
+        "detail": {
+          "Description": "Este dispositivo detecta a quantidade de umidade presente no solo.%0",
+          "How it works": "Esse sensor de umidade do solo mede a resistência entre as duas sondas fixadas no solo, que diminuirá em presença de mais umidade.",
+          "Connect it": "Este dispositivo tem três plataformas de conexão identificadas como VCC, GND e SIG. Ligue-o conectando o pino VCC ao terminal 5V do Arduino (ou qualquer terminal analógico ou digital definido como HIGH) e o Terra (GND) a qualquer terminal GND em um Arduino. O pino de Sinal (Signal) é conectado a qualquer entrada analógica no Arduino.%1",
+          "How it is used": "Clique no dispositivo durante a simulação para realçá-lo e, em seguida, clique e arraste o limpador para alterar a resistência simulada.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre sensores de umidade do solo e seu uso nestas páginas:%4%5",
+          "%4": "Guia de desligamento do sensor de umidade do solo",
+          "%5": "Ler um Potenciômetro com a entrada analógica do Arduino",
+          "%6": "Informações sobre o produto do sensor de umidade do solo SparkFun"
+        }
+      },
+      "sensorForceid": {
+        "name": "Sensor de força",
+        "description": "Sensor cuja resistência muda com base na quantidade de força aplicada.",
+        "detail": {
+          "Description": "Este dispositivo é um resistor variável que reage quando pressionado.%0",
+          "How it works": "O material semicondutor existente neste sensor flexível torna-se mais condutor quando também é comprimido.",
+          "Connect it": "Este dispositivo tem dois fios condutores e, frequentemente, é conectado à entrada analógica de um microcontrolador. Os sensores de força não são polarizados, o que significa que podem ser conectados de qualquer forma.%1",
+          "How it is used": "Selecione o dispositivo durante a simulação e para exibir um controle deslizante que representa a força de pressão. Arraste o controle deslizante para cima e para baixo para alterar a quantidade de força.%2",
+          "Get started": "Arraste o circuito inicial abaixo para o seu projeto, para obter um exemplo funcional de como usar esta peça.%3",
+          "More information": "Veja mais informações sobre sensores de força e seu uso nestas páginas:%4%5",
+          "%4": "Guia de desligamento do resistor sensível à força",
+          "%5": "Folha de dados, FSR 402"
+        }
+      },
+      "icPCF8574": {
+        "name": "Expansor I2C de 8 portas",
+        "description": "Permite adicionar entradas ou saídas a um microcontrolador."
+      },
+      "starterArduinoMoisture": {
+        "name": "Umidade",
+        "description": "Exemplo de sensor de umidade do solo do Arduino."
+      },
+      "starterArduinoVoltageMeter": {
+        "name": "Medidor de tensão",
+        "description": "Meça uma tensão e exiba-a em uma tela de LED."
+      },
+      "starterMicrobitMoisture": {
+        "name": "Umidade",
+        "description": "exemplo de sensor de umidade do solo micro:bit."
+      }
+    },
+    "_blockly": {
+      "@metadata": {
+        "authors": [
+          "Espertus",
+          "Prilopes",
+          "Mordecaista",
+          "Amgauna",
+          "TheGabrielZaum",
+          "Cainamarques",
+          "Tuliouel",
+          "Rodrigo codignoli",
+          "Webysther",
+          "Fasouzafreitas",
+          "Almondega",
+          "Rogerio Melfi",
+          "Caçador de Palavras",
+          "Luk3",
+          "Cristofer Alves"
+        ]
+      },
+      "VARIABLES_DEFAULT_NAME": "item",
+      "TODAY": "Hoje",
+      "DUPLICATE_BLOCK": "Duplicar",
+      "ADD_COMMENT": "Adicionar comentário",
+      "REMOVE_COMMENT": "Remover comentário",
+      "EXTERNAL_INPUTS": "Entradas externas",
+      "INLINE_INPUTS": "Entradas incorporadas",
+      "DELETE_BLOCK": "Deletar bloco",
+      "DELETE_X_BLOCKS": "Deletar %1 blocos",
+      "DELETE_ALL_BLOCKS": "Deletar todos os blocos %1?",
+      "CLEAN_UP": "Limpar blocos",
+      "COLLAPSE_BLOCK": "Colapsar Bloco",
+      "COLLAPSE_ALL": "Colapsar Bloco",
+      "EXPAND_BLOCK": "Expandir bloco",
+      "EXPAND_ALL": "Expandir blocos",
+      "DISABLE_BLOCK": "Desabilitar bloco",
+      "ENABLE_BLOCK": "Habilitar bloco",
+      "HELP": "Ajuda",
+      "UNDO": "Desfazer",
+      "REDO": "Refazer",
+      "CHANGE_VALUE_TITLE": "Mudar valor:",
+      "RENAME_VARIABLE": "Renomear variável...",
+      "RENAME_VARIABLE_TITLE": "Renomear todas as variáveis '%1' para:",
+      "NEW_VARIABLE": "Criar variável...",
+      "NEW_VARIABLE_TITLE": "Nome da nova variável:",
+      "VARIABLE_ALREADY_EXISTS": "A variável chamada '%1' já existe.",
+      "DELETE_VARIABLE_CONFIRMATION": "Deletar %1 usos da variável '%2'?",
+      "DELETE_VARIABLE": "Deletar a variável '%1'",
+      "COLOUR_PICKER_HELPURL": "https://pt.wikipedia.org/wiki/Cor",
+      "COLOUR_PICKER_TOOLTIP": "Escolher uma cor da palheta de cores.",
+      "COLOUR_RANDOM_TITLE": "cor aleatória",
+      "COLOUR_RANDOM_TOOLTIP": "Escolher cor de forma aleatória.",
+      "COLOUR_RGB_TITLE": "colorir com",
+      "COLOUR_RGB_RED": "vermelho",
+      "COLOUR_RGB_GREEN": "verde",
+      "COLOUR_RGB_BLUE": "azul",
+      "COLOUR_RGB_TOOLTIP": "Criar uma cor com a quantidade especificada de vermelho, verde e azul. Todos os valores devem estar entre 0 e 100.",
+      "COLOUR_BLEND_TITLE": "misturar",
+      "COLOUR_BLEND_COLOUR1": "cor 1",
+      "COLOUR_BLEND_COLOUR2": "cor 2",
+      "COLOUR_BLEND_RATIO": "proporção",
+      "COLOUR_BLEND_TOOLTIP": "Mistura duas cores em uma dada proporção (0,0 - 1,0).",
+      "CONTROLS_REPEAT_HELPURL": "https://pt.wikipedia.org/wiki/Estrutura_de_repeti%C3%A7%C3%A3o#Repeti.C3.A7.C3.A3o_com_vari.C3.A1vel_de_controle",
+      "CONTROLS_REPEAT_TITLE": "repita %1 vezes",
+      "CONTROLS_REPEAT_INPUT_DO": "faça",
+      "CONTROLS_REPEAT_TOOLTIP": "Faça algumas instruções várias vezes.",
+      "CONTROLS_WHILEUNTIL_OPERATOR_WHILE": "repita enquanto",
+      "CONTROLS_WHILEUNTIL_OPERATOR_UNTIL": "repita até",
+      "CONTROLS_WHILEUNTIL_TOOLTIP_WHILE": "Enquanto um valor for verdadeiro, então faça algumas instruções.",
+      "CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL": "Enquanto um valor for falso, então faça algumas instruções.",
+      "CONTROLS_FOR_TOOLTIP": "Faz com que a variável '%1' assuma os valores do número inicial ao número final, contando de acordo com o intervalo especificado e executa os blocos especificados.",
+      "CONTROLS_FOR_TITLE": "contar com %1 de %2 até %3 por %4",
+      "CONTROLS_FOREACH_TITLE": "para cada item %1 na lista %2",
+      "CONTROLS_FOREACH_TOOLTIP": "Para cada item em uma lista, atribuir o item à variável '%1' e então realiza algumas instruções.",
+      "CONTROLS_FLOW_STATEMENTS_OPERATOR_BREAK": "encerra o laço",
+      "CONTROLS_FLOW_STATEMENTS_OPERATOR_CONTINUE": "continua com a próxima iteração do laço",
+      "CONTROLS_FLOW_STATEMENTS_TOOLTIP_BREAK": "Encerra o laço.",
+      "CONTROLS_FLOW_STATEMENTS_TOOLTIP_CONTINUE": "Ignora o resto deste laço, e continua com a próxima iteração.",
+      "CONTROLS_FLOW_STATEMENTS_WARNING": "Atenção: Este bloco só pode ser usado dentro de um laço.",
+      "CONTROLS_IF_TOOLTIP_1": "Se um valor for verdadeiro, então realize algumas instruções.",
+      "CONTROLS_IF_TOOLTIP_2": "Se um valor for verdadeiro, então realize o primeiro bloco de instruções. Senão, realize o segundo bloco de instruções.",
+      "CONTROLS_IF_TOOLTIP_3": "Se o primeiro valor é verdadeiro, então realize o primeiro bloco de instruções.  Senão, se o segundo valor é verdadeiro, realize o segundo bloco de instruções.",
+      "CONTROLS_IF_TOOLTIP_4": "Se o primeiro valor for verdadeiro, então realize o primeiro bloco de instruções. Senão, se o segundo valor é verdadeiro, realize o segundo bloco de instruções. Se nenhum dos blocos for verdadeiro, realize o último bloco de instruções.",
+      "CONTROLS_IF_MSG_IF": "se",
+      "CONTROLS_IF_MSG_ELSEIF": "senão se",
+      "CONTROLS_IF_MSG_ELSE": "senão",
+      "CONTROLS_IF_IF_TOOLTIP": "Acrescente, remova ou reordene seções para reconfigurar este bloco.",
+      "CONTROLS_IF_ELSEIF_TOOLTIP": "Acrescente uma condição para o bloco se.",
+      "CONTROLS_IF_ELSE_TOOLTIP": "Acrescente uma condição final para o bloco se.",
+      "LOGIC_COMPARE_HELPURL": "https://pt.wikipedia.org/wiki/Inequa%C3%A7%C3%A3o",
+      "LOGIC_COMPARE_TOOLTIP_EQ": "Retorna verdadeiro se ambas as entradas forem iguais.",
+      "LOGIC_COMPARE_TOOLTIP_NEQ": "Retorna verdadeiro se ambas as entradas forem diferentes.",
+      "LOGIC_COMPARE_TOOLTIP_LT": "Retorna verdadeiro se a primeira entrada for menor que a segunda entrada.",
+      "LOGIC_COMPARE_TOOLTIP_LTE": "Retorna verdadeiro se a primeira entrada for menor ou igual à segunda entrada.",
+      "LOGIC_COMPARE_TOOLTIP_GT": "Retorna verdadeiro se a primeira entrada for maior que a segunda entrada.",
+      "LOGIC_COMPARE_TOOLTIP_GTE": "Retorna verdadeiro se a primeira entrada for maior ou igual à segunda entrada.",
+      "LOGIC_OPERATION_TOOLTIP_AND": "Retorna verdadeiro se ambas as entradas forem verdadeiras.",
+      "LOGIC_OPERATION_AND": "e",
+      "LOGIC_OPERATION_TOOLTIP_OR": "Retorna verdadeiro se uma das estradas for verdadeira.",
+      "LOGIC_OPERATION_OR": "ou",
+      "LOGIC_NEGATE_TITLE": "não %1",
+      "LOGIC_NEGATE_TOOLTIP": "Retorna verdadeiro se a entrada for falsa.  Retorna falsa se a entrada for verdadeira.",
+      "LOGIC_BOOLEAN_TRUE": "verdadeiro",
+      "LOGIC_BOOLEAN_FALSE": "falso",
+      "LOGIC_BOOLEAN_TOOLTIP": "Retorna verdadeiro ou falso.",
+      "LOGIC_NULL": "nulo",
+      "LOGIC_NULL_TOOLTIP": "Retorna nulo.",
+      "LOGIC_TERNARY_CONDITION": "teste",
+      "LOGIC_TERNARY_IF_TRUE": "se verdadeiro",
+      "LOGIC_TERNARY_IF_FALSE": "se falso",
+      "LOGIC_TERNARY_TOOLTIP": "Avalia a condição em \"teste\". Se a condição for verdadeira retorna o valor \"se verdadeiro\", senão retorna o valor \"se falso\".",
+      "MATH_NUMBER_HELPURL": "https://pt.wikipedia.org/wiki/N%C3%BAmero",
+      "MATH_NUMBER_TOOLTIP": "Um número.",
+      "MATH_ARITHMETIC_HELPURL": "https://pt.wikipedia.org/wiki/Aritm%C3%A9tica",
+      "MATH_ARITHMETIC_TOOLTIP_ADD": "Retorna a soma dos dois números.",
+      "MATH_ARITHMETIC_TOOLTIP_MINUS": "Retorna a diferença entre os dois números.",
+      "MATH_ARITHMETIC_TOOLTIP_MULTIPLY": "Retorna o produto dos dois números.",
+      "MATH_ARITHMETIC_TOOLTIP_DIVIDE": "Retorna o quociente da divisão dos dois números.",
+      "MATH_ARITHMETIC_TOOLTIP_POWER": "Retorna o primeiro número elevado à potência do segundo número.",
+      "MATH_SINGLE_HELPURL": "https://pt.wikipedia.org/wiki/Raiz_quadrada",
+      "MATH_SINGLE_OP_ROOT": "raiz quadrada",
+      "MATH_SINGLE_TOOLTIP_ROOT": "Retorna a raiz quadrada de um número.",
+      "MATH_SINGLE_OP_ABSOLUTE": "absoluto",
+      "MATH_SINGLE_TOOLTIP_ABS": "Retorna o valor absoluto de um número.",
+      "MATH_SINGLE_TOOLTIP_NEG": "Retorna o oposto de um número.",
+      "MATH_SINGLE_TOOLTIP_LN": "Retorna o logaritmo natural de um número.",
+      "MATH_SINGLE_TOOLTIP_LOG10": "Retorna o logaritmo em base 10 de um número.",
+      "MATH_SINGLE_TOOLTIP_EXP": "Retorna o número e elevado à potência de um número.",
+      "MATH_SINGLE_TOOLTIP_POW10": "Retorna 10 elevado à potência de um número.",
+      "MATH_TRIG_HELPURL": "https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_trigonom%C3%A9trica",
+      "MATH_TRIG_TOOLTIP_SIN": "Retorna o seno de um grau (não radiano).",
+      "MATH_TRIG_TOOLTIP_COS": "Retorna o cosseno de um grau (não radiano).",
+      "MATH_TRIG_TOOLTIP_TAN": "Retorna a tangente de um grau (não radiano).",
+      "MATH_TRIG_TOOLTIP_ASIN": "Retorna o arco seno de um número.",
+      "MATH_TRIG_TOOLTIP_ACOS": "Retorna o arco cosseno de um número.",
+      "MATH_TRIG_TOOLTIP_ATAN": "Retorna o arco tangente de um número.",
+      "MATH_CONSTANT_HELPURL": "https://pt.wikipedia.org/wiki/Anexo:Lista_de_constantes_matem%C3%A1ticas",
+      "MATH_CONSTANT_TOOLTIP": "Retorna uma das constantes comuns: π (3.141…), e (2.718…), φ (1.618…), sqrt(2) (1.414…), sqrt(½) (0.707…), ou ∞ (infinito).",
+      "MATH_IS_EVEN": "é par",
+      "MATH_IS_ODD": "é ímpar",
+      "MATH_IS_PRIME": "é primo",
+      "MATH_IS_WHOLE": "é inteiro",
+      "MATH_IS_POSITIVE": "é positivo",
+      "MATH_IS_NEGATIVE": "é negativo",
+      "MATH_IS_DIVISIBLE_BY": "é divisível por",
+      "MATH_IS_TOOLTIP": "Verifica se um número é par, ímpar, inteiro, positivo, negativo, ou se é divisível por outro número.  Retorna verdadeiro ou falso.",
+      "MATH_CHANGE_HELPURL": "https://pt.wikipedia.org/wiki/Adi%C3%A7%C3%A3o",
+      "MATH_CHANGE_TITLE": "alterar %1 por %2",
+      "MATH_CHANGE_TOOLTIP": "Soma um número à variável \"%1\".",
+      "MATH_ROUND_HELPURL": "https://pt.wikipedia.org/wiki/Arredondamento",
+      "MATH_ROUND_TOOLTIP": "Arredonda um número para cima ou para baixo.",
+      "MATH_ROUND_OPERATOR_ROUND": "arredonda",
+      "MATH_ROUND_OPERATOR_ROUNDUP": "arredonda para cima",
+      "MATH_ROUND_OPERATOR_ROUNDDOWN": "arredonda para baixo",
+      "MATH_ONLIST_OPERATOR_SUM": "soma de uma lista",
+      "MATH_ONLIST_TOOLTIP_SUM": "Retorna a soma de todos os números na lista.",
+      "MATH_ONLIST_OPERATOR_MIN": "menor da lista",
+      "MATH_ONLIST_TOOLTIP_MIN": "Retorna o menor número da lista.",
+      "MATH_ONLIST_OPERATOR_MAX": "maior da lista",
+      "MATH_ONLIST_TOOLTIP_MAX": "Retorna o maior número da lista.",
+      "MATH_ONLIST_OPERATOR_AVERAGE": "média da lista",
+      "MATH_ONLIST_TOOLTIP_AVERAGE": "Retorna a média aritmética dos números da lista.",
+      "MATH_ONLIST_OPERATOR_MEDIAN": "mediana da lista",
+      "MATH_ONLIST_TOOLTIP_MEDIAN": "Retorna a mediana dos números da lista.",
+      "MATH_ONLIST_OPERATOR_MODE": "moda da lista",
+      "MATH_ONLIST_TOOLTIP_MODE": "Retorna uma lista do(s) item(ns) mais comum(ns) da lista.",
+      "MATH_ONLIST_OPERATOR_STD_DEV": "desvio padrão da lista",
+      "MATH_ONLIST_TOOLTIP_STD_DEV": "Retorna o desvio padrão dos números da lista.",
+      "MATH_ONLIST_OPERATOR_RANDOM": "item aleatório da lista",
+      "MATH_ONLIST_TOOLTIP_RANDOM": "Retorna um elemento aleatório da lista.",
+      "MATH_MODULO_HELPURL": "https://pt.wikipedia.org/wiki/Opera%C3%A7%C3%A3o_m%C3%B3dulo",
+      "MATH_MODULO_TITLE": "resto da divisão de %1 ÷ %2",
+      "MATH_MODULO_TOOLTIP": "Retorna o resto da divisão de dois números.",
+      "MATH_CONSTRAIN_TITLE": "restringe %1 inferior %2 superior %3",
+      "MATH_CONSTRAIN_TOOLTIP": "Restringe um número entre os limites especificados (inclusivo).",
+      "MATH_RANDOM_INT_HELPURL": "https://pt.wikipedia.org/wiki/Gerador_de_n%C3%BAmeros_pseudoaleat%C3%B3rios",
+      "MATH_RANDOM_INT_TITLE": "inteiro aleatório entre %1 e %2",
+      "MATH_RANDOM_INT_TOOLTIP": "Retorna um número inteiro entre os dois limites informados, inclusivo.",
+      "MATH_RANDOM_FLOAT_HELPURL": "https://pt.wikipedia.org/wiki/Gerador_de_n%C3%BAmeros_pseudoaleat%C3%B3rios",
+      "MATH_RANDOM_FLOAT_TITLE_RANDOM": "fração aleatória",
+      "MATH_RANDOM_FLOAT_TOOLTIP": "Retorna uma fração aleatória entre 0.0 (inclusivo) e 1.0 (exclusivo).",
+      "TEXT_TEXT_HELPURL": "https://pt.wikipedia.org/wiki/Cadeia_de_caracteres",
+      "TEXT_TEXT_TOOLTIP": "Uma letra, palavra ou linha de texto.",
+      "TEXT_JOIN_TITLE_CREATEWITH": "criar texto com",
+      "TEXT_JOIN_TOOLTIP": "Criar um pedaço de texto juntando qualquer número de itens.",
+      "TEXT_CREATE_JOIN_TITLE_JOIN": "unir",
+      "TEXT_CREATE_JOIN_TOOLTIP": "Acrescenta, remove ou reordena seções para reconfigurar este bloco de texto.",
+      "TEXT_CREATE_JOIN_ITEM_TOOLTIP": "Acrescentar um item ao texto.",
+      "TEXT_APPEND_TO": "para",
+      "TEXT_APPEND_APPENDTEXT": "acrescentar texto",
+      "TEXT_APPEND_TOOLTIP": "Acrescentar um pedaço de texto à variável \"%1\".",
+      "TEXT_LENGTH_TITLE": "tamanho de %1",
+      "TEXT_LENGTH_TOOLTIP": "Retorna o número de letras (incluindo espaços) no texto fornecido.",
+      "TEXT_ISEMPTY_TITLE": "%1 é vazio",
+      "TEXT_ISEMPTY_TOOLTIP": "Retorna verdadeiro se o texto fornecido for vazio.",
+      "TEXT_INDEXOF_TOOLTIP": "Retorna a posição da primeira/última ocorrência do primeiro texto no segundo texto.  Retorna %1 se o texto não for encontrado.",
+      "TEXT_INDEXOF_INPUT_INTEXT": "no texto",
+      "TEXT_INDEXOF_OPERATOR_FIRST": "encontre a primeira ocorrência do item",
+      "TEXT_INDEXOF_OPERATOR_LAST": "encontre a última ocorrência do texto",
+      "TEXT_CHARAT_INPUT_INTEXT": "no texto",
+      "TEXT_CHARAT_FROM_START": "obter letra nº",
+      "TEXT_CHARAT_FROM_END": "obter letra # a partir do final",
+      "TEXT_CHARAT_FIRST": "obter primeira letra",
+      "TEXT_CHARAT_LAST": "obter última letra",
+      "TEXT_CHARAT_RANDOM": "obter letra aleatória",
+      "TEXT_CHARAT_TOOLTIP": "Retorna a letra na posição especificada.",
+      "TEXT_GET_SUBSTRING_TOOLTIP": "Retorna o trecho de texto especificado.",
+      "TEXT_GET_SUBSTRING_INPUT_IN_TEXT": "no texto",
+      "TEXT_GET_SUBSTRING_START_FROM_START": "obter trecho de letra nº",
+      "TEXT_GET_SUBSTRING_START_FROM_END": "obter trecho de letra nº a partir do final",
+      "TEXT_GET_SUBSTRING_START_FIRST": "obter trecho de primeira letra",
+      "TEXT_GET_SUBSTRING_END_FROM_START": "até letra nº",
+      "TEXT_GET_SUBSTRING_END_FROM_END": "até letra nº a partir do final",
+      "TEXT_GET_SUBSTRING_END_LAST": "até última letra",
+      "TEXT_CHANGECASE_TOOLTIP": "Retorna uma cópia do texto em um formato diferente.",
+      "TEXT_CHANGECASE_OPERATOR_UPPERCASE": "para MAIÚSCULAS",
+      "TEXT_CHANGECASE_OPERATOR_LOWERCASE": "para minúsculas",
+      "TEXT_CHANGECASE_OPERATOR_TITLECASE": "para Nomes Próprios",
+      "TEXT_TRIM_TOOLTIP": "Retorna uma cópia do texto com os espaços removidos de uma ou ambas extremidades.",
+      "TEXT_TRIM_OPERATOR_BOTH": "remover espaços de ambos os lados de",
+      "TEXT_TRIM_OPERATOR_LEFT": "remover espaços à esquerda de",
+      "TEXT_TRIM_OPERATOR_RIGHT": "remover espaços à direita de",
+      "TEXT_PRINT_TITLE": "imprime %1",
+      "TEXT_PRINT_TOOLTIP": "Imprime o texto, número ou valor especificado.",
+      "TEXT_PROMPT_TYPE_TEXT": "Pede um texto com uma mensagem",
+      "TEXT_PROMPT_TYPE_NUMBER": "Pede um número com uma mensagem",
+      "TEXT_PROMPT_TOOLTIP_NUMBER": "Pede ao usuário um número.",
+      "TEXT_PROMPT_TOOLTIP_TEXT": "Pede ao usuário um texto.",
+      "LISTS_CREATE_EMPTY_TITLE": "criar lista vazia",
+      "LISTS_CREATE_EMPTY_TOOLTIP": "Retorna uma lista, de tamanho 0, contendo nenhum registro",
+      "LISTS_CREATE_WITH_TOOLTIP": "Cria uma lista com a quantidade de itens informada.",
+      "LISTS_CREATE_WITH_INPUT_WITH": "criar lista com",
+      "LISTS_CREATE_WITH_CONTAINER_TITLE_ADD": "lista",
+      "LISTS_CREATE_WITH_CONTAINER_TOOLTIP": "Acrescenta, remove ou reordena seções para reconfigurar este bloco de lista.",
+      "LISTS_CREATE_WITH_ITEM_TOOLTIP": "Acrescenta um item à lista.",
+      "LISTS_REPEAT_TOOLTIP": "Cria uma lista consistindo no valor informado repetido o número de vezes especificado.",
+      "LISTS_REPEAT_TITLE": "criar lista com item %1 repetido %2 vezes",
+      "LISTS_LENGTH_TITLE": "tamanho de %1",
+      "LISTS_LENGTH_TOOLTIP": "Retorna o tamanho de uma lista.",
+      "LISTS_ISEMPTY_TITLE": "%1 é vazia",
+      "LISTS_ISEMPTY_TOOLTIP": "Retorna ao verdadeiro se a lista estiver vazia.",
+      "LISTS_INLIST": "na lista",
+      "LISTS_INDEX_OF_FIRST": "encontre a primeira ocorrência do item",
+      "LISTS_INDEX_OF_LAST": "encontre a última ocorrência do item",
+      "LISTS_INDEX_OF_TOOLTIP": "Retorna o índice da primeira/última ocorrência do item na lista.  Retorna %1 se o item não for encontrado.",
+      "LISTS_GET_INDEX_GET": "obter",
+      "LISTS_GET_INDEX_GET_REMOVE": "obter e remover",
+      "LISTS_GET_INDEX_REMOVE": "remover",
+      "LISTS_GET_INDEX_FROM_START": "nº",
+      "LISTS_GET_INDEX_FROM_END": "nº a partir do final",
+      "LISTS_GET_INDEX_FIRST": "primeiro",
+      "LISTS_GET_INDEX_LAST": "último",
+      "LISTS_GET_INDEX_RANDOM": "aleatório",
+      "LISTS_INDEX_FROM_START_TOOLTIP": "%1 é o primeiro item.",
+      "LISTS_INDEX_FROM_END_TOOLTIP": "%1 é o último item.",
+      "LISTS_GET_INDEX_TOOLTIP_GET_FROM": "Retorna o item da lista na posição especificada.",
+      "LISTS_GET_INDEX_TOOLTIP_GET_FIRST": "Retorna o primeiro item em uma lista.",
+      "LISTS_GET_INDEX_TOOLTIP_GET_LAST": "Retorna o último item em uma lista.",
+      "LISTS_GET_INDEX_TOOLTIP_GET_RANDOM": "Retorna um item aleatório de uma lista.",
+      "LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FROM": "Remove e retorna o item na posição especificada em uma lista.",
+      "LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FIRST": "Remove e retorna o primeiro item de uma lista.",
+      "LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_LAST": "Remove e retorna o último item de uma lista.",
+      "LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_RANDOM": "Remove e retorna um item aleatório de uma lista.",
+      "LISTS_GET_INDEX_TOOLTIP_REMOVE_FROM": "Remove o item na posição especificada em uma lista.",
+      "LISTS_GET_INDEX_TOOLTIP_REMOVE_FIRST": "Remove o primeiro item de uma lista.",
+      "LISTS_GET_INDEX_TOOLTIP_REMOVE_LAST": "Remove o último item de uma lista.",
+      "LISTS_GET_INDEX_TOOLTIP_REMOVE_RANDOM": "Remove um item aleatório de uma lista.",
+      "LISTS_SET_INDEX_SET": "definir",
+      "LISTS_SET_INDEX_INSERT": "inserir em",
+      "LISTS_SET_INDEX_INPUT_TO": "como",
+      "LISTS_SET_INDEX_TOOLTIP_SET_FROM": "Define o item da posição especificada de uma lista.",
+      "LISTS_SET_INDEX_TOOLTIP_SET_FIRST": "Define o primeiro item de uma lista.",
+      "LISTS_SET_INDEX_TOOLTIP_SET_LAST": "Define o último item de uma lista.",
+      "LISTS_SET_INDEX_TOOLTIP_SET_RANDOM": "Define um item aleatório de uma lista.",
+      "LISTS_SET_INDEX_TOOLTIP_INSERT_FROM": "Insere o item na posição especificada em uma lista.",
+      "LISTS_SET_INDEX_TOOLTIP_INSERT_FIRST": "Insere o item no início de uma lista.",
+      "LISTS_SET_INDEX_TOOLTIP_INSERT_LAST": "Insere o item no final de uma lista.",
+      "LISTS_SET_INDEX_TOOLTIP_INSERT_RANDOM": "Insere o item em uma posição qualquer de uma lista.",
+      "LISTS_GET_SUBLIST_START_FROM_START": "obtém sublista de nº",
+      "LISTS_GET_SUBLIST_START_FROM_END": "obtém sublista de nº a partir do final",
+      "LISTS_GET_SUBLIST_START_FIRST": "obtém sublista a partir do primeiro",
+      "LISTS_GET_SUBLIST_END_FROM_START": "até nº",
+      "LISTS_GET_SUBLIST_END_FROM_END": "até nº a partir do final",
+      "LISTS_GET_SUBLIST_END_LAST": "até último",
+      "LISTS_GET_SUBLIST_TOOLTIP": "Cria uma cópia da porção especificada de uma lista.",
+      "LISTS_SORT_HELPURL": "https://github.com/google/blockly/wiki/Lists#sorting-a-list",
+      "LISTS_SORT_TITLE": "ordenar %1 %2 %3",
+      "LISTS_SORT_TOOLTIP": "Ordenar uma cópia de uma lista.",
+      "LISTS_SORT_ORDER_ASCENDING": "ascendente",
+      "LISTS_SORT_ORDER_DESCENDING": "descendente",
+      "LISTS_SORT_TYPE_NUMERIC": "numérico",
+      "LISTS_SORT_TYPE_TEXT": "alfabético",
+      "LISTS_SORT_TYPE_IGNORECASE": "alfabético, ignorar maiúscula/minúscula",
+      "LISTS_SPLIT_LIST_FROM_TEXT": "Fazer uma lista a partir do texto",
+      "LISTS_SPLIT_TEXT_FROM_LIST": "fazer um texto a partir da lista",
+      "LISTS_SPLIT_WITH_DELIMITER": "com delimitador",
+      "LISTS_SPLIT_TOOLTIP_SPLIT": "Dividir o texto em uma lista de textos, separando-o em cada delimitador.",
+      "LISTS_SPLIT_TOOLTIP_JOIN": "Juntar uma lista de textos em um único texto, separado por um delimitador.",
+      "VARIABLES_GET_TOOLTIP": "Retorna o valor desta variável.",
+      "VARIABLES_GET_CREATE_SET": "Criar \"definir %1\"",
+      "VARIABLES_SET": "definir %1 para %2",
+      "VARIABLES_SET_TOOLTIP": "Define esta variável para o valor da entrada.",
+      "VARIABLES_SET_CREATE_GET": "Criar \"obter %1\"",
+      "PROCEDURES_DEFNORETURN_TITLE": "para",
+      "PROCEDURES_DEFNORETURN_PROCEDURE": "faça algo",
+      "PROCEDURES_BEFORE_PARAMS": "com:",
+      "PROCEDURES_CALL_BEFORE_PARAMS": "com:",
+      "PROCEDURES_DEFNORETURN_TOOLTIP": "Cria uma função que não tem retorno.",
+      "PROCEDURES_DEFNORETURN_COMMENT": "Descreva esta função...",
+      "PROCEDURES_DEFRETURN_RETURN": "retorna",
+      "PROCEDURES_DEFRETURN_TOOLTIP": "Cria uma função que possui um valor de retorno.",
+      "PROCEDURES_ALLOW_STATEMENTS": "permitir declarações",
+      "PROCEDURES_DEF_DUPLICATE_WARNING": "Atenção: Esta função tem parâmetros duplicados.",
+      "PROCEDURES_CALLNORETURN_HELPURL": "https://pt.wikipedia.org/wiki/Sub-rotina",
+      "PROCEDURES_CALLNORETURN_TOOLTIP": "Executa a função definida pelo usuário \"%1\".",
+      "PROCEDURES_CALLRETURN_HELPURL": "https://pt.wikipedia.org/wiki/Sub-rotina",
+      "PROCEDURES_CALLRETURN_TOOLTIP": "Executa a função definida pelo usuário \"%1\" e usa seu retorno.",
+      "PROCEDURES_MUTATORCONTAINER_TITLE": "entradas",
+      "PROCEDURES_MUTATORCONTAINER_TOOLTIP": "Adiciona, remove, ou reordena as entradas para esta função.",
+      "PROCEDURES_MUTATORARG_TITLE": "nome da entrada:",
+      "PROCEDURES_MUTATORARG_TOOLTIP": "Adiciona uma entrada para esta função",
+      "PROCEDURES_HIGHLIGHT_DEF": "Destacar definição da função",
+      "PROCEDURES_CREATE_DO": "Criar \"%1\"",
+      "PROCEDURES_IFRETURN_TOOLTIP": "Se um valor é verdadeiro, então retorna um valor.",
+      "PROCEDURES_IFRETURN_HELPURL": "http://c2.com/cgi/wiki?GuardClause",
+      "PROCEDURES_IFRETURN_WARNING": "Atenção: Este bloco só pode ser utilizado dentro da definição de uma função."
+    }
+  }
+}

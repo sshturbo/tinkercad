@@ -1,0 +1,160 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 28712,
+  "device_id": "116691",
+  "name": "Photoresistor",
+  "description": "A sensor whose resistance changes based on the amount of light it senses.",
+  "tags": [
+    "input",
+    "light",
+    "detector",
+    "sensor"
+  ],
+  "thumbnail": "photoResistor.png",
+  "thumbnail_source": "/photoResistor.png",
+  "footprint": {
+    "name": "LDR",
+    "id": 116691
+  },
+  "simulation_model": "ldr_v2",
+  "extents": {
+    "top": -26.850000381469727,
+    "left": -11.5,
+    "width": 23,
+    "height": 26.850000381469727
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-23T12:16:49Z",
+      "dir": 90,
+      "id": 202982,
+      "label": null,
+      "name": "Terminal 1",
+      "schematic_symbol_id": 20224,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T12:16:49Z",
+      "x": -5,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-23T12:16:49Z",
+      "dir": 90,
+      "id": 202983,
+      "label": null,
+      "name": "Terminal 2",
+      "schematic_symbol_id": 20224,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T12:16:49Z",
+      "x": 5,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2013-09-02T21:45:21Z",
+      "dir": 0,
+      "id": 57457,
+      "label": null,
+      "name": "terminal-1",
+      "schematic_symbol_id": 4276,
+      "terminal_type": "schematic",
+      "updated_at": "2013-09-02T21:45:21Z",
+      "x": -29.972,
+      "y": -0.023
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2013-09-02T21:45:21Z",
+      "dir": 0,
+      "id": 57458,
+      "label": null,
+      "name": "terminal-2",
+      "schematic_symbol_id": 4276,
+      "terminal_type": "schematic",
+      "updated_at": "2013-09-02T21:45:21Z",
+      "x": 29.972,
+      "y": -0.023
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-09-08T18:43:51Z",
+      "dir": null,
+      "drill": "900",
+      "footprint_id": 8194,
+      "generator_type": null,
+      "id": 49838,
+      "layer0": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-08T18:43:51Z",
+      "x": 0,
+      "y": -1270
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-09-08T18:43:51Z",
+      "dir": null,
+      "drill": "900",
+      "footprint_id": 8194,
+      "generator_type": null,
+      "id": 49839,
+      "layer0": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-08T18:43:51Z",
+      "x": 0,
+      "y": 1270
+    }
+  ],
+  "properties": [],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/144624537748d1b51905a0c3e7e59f24e69c2533c0/thumbnail20151030-32732-1mqnzi2.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/144624537748d1b51905a0c3e7e59f24e69c2533c0/thumbnail20151030-32732-1mqnzi2.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/144624537749eb2ae12ffc7fdae07f15e6f6003522/thumbnail20151030-30353-1yjht1m.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/144624537749eb2ae12ffc7fdae07f15e6f6003522/thumbnail20151030-30353-1yjht1m.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435206981d21f462572172a7ea6fc21e7d6ca4bea/thumbnail20150625-5122-18zoswc.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435206981d21f462572172a7ea6fc21e7d6ca4bea/thumbnail20150625-5122-18zoswc.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/116691.json"
+}

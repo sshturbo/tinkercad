@@ -1,0 +1,7 @@
+{
+  "device_id": "202163",
+  "simulation_model": "ws2812b_ring12",
+  "implementation_found": true,
+  "module_id": "84263",
+  "model_file": "models/ws2812b_ring12--module-84263.js"
+}

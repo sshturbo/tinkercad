@@ -1,0 +1,132 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": "sensorFlexid",
+  "device_id": "sensorFlex",
+  "name": "Flex Sensor",
+  "description": "A sensor whose resistance changes as it bends.",
+  "tags": [
+    "bend",
+    "resistor"
+  ],
+  "thumbnail": "sensorFlex.png",
+  "thumbnail_source": "/sensorFlex.png",
+  "footprint": {
+    "name": "Flex Sensor",
+    "id": "sensorFlex"
+  },
+  "simulation_model": "sensorFlex",
+  "extents": {
+    "top": -145,
+    "left": -12.5,
+    "width": 25,
+    "height": 308
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "dir": 90,
+      "id": "sensorFlexstid0",
+      "label": null,
+      "name": "1",
+      "schematic_symbol_id": "sensorFlexbbid",
+      "terminal_type": "breadboard",
+      "x": -5,
+      "y": 161.75
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "dir": 90,
+      "id": "sensorFlexstid1",
+      "label": null,
+      "name": "2",
+      "schematic_symbol_id": "sensorFlexbbid",
+      "terminal_type": "breadboard",
+      "x": 5,
+      "y": 161.75
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "dir": 90,
+      "id": "sensorFlexspid0",
+      "label": null,
+      "name": "1",
+      "schematic_symbol_id": "sensorFlexssid",
+      "terminal_type": "schematic",
+      "x": -5,
+      "y": 161.75
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "dir": 90,
+      "id": "sensorFlexspid1",
+      "label": null,
+      "name": "2",
+      "schematic_symbol_id": "sensorFlexssid",
+      "terminal_type": "schematic",
+      "x": 5,
+      "y": 161.75
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "dir": null,
+      "drill": "900",
+      "footprint_id": "sensorFlexfpid",
+      "generator_type": null,
+      "id": "sensorFlexpaid0",
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": 0,
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "x": -1270,
+      "y": 41084.5
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "dir": null,
+      "drill": "900",
+      "footprint_id": "sensorFlexfpid",
+      "generator_type": null,
+      "id": "sensorFlexpaid1",
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": 1,
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "x": 1270,
+      "y": 41084.5
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "default": 30,
+      "default_prefix": "k",
+      "default_show": true,
+      "device_id": "sensorFlexid",
+      "id": "sensorFlexppid0",
+      "name": "flat resistance",
+      "unit": "hidden"
+    }
+  ],
+  "datasheets_or_references": [],
+  "raw_device_json": "../../raw/packaged_devices/sensorFlex.json"
+}

@@ -1,0 +1,161 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 71005,
+  "device_id": "311892",
+  "name": "Vibration Motor",
+  "description": "A motor that vibrates when powered.",
+  "tags": [
+    "output",
+    "motion",
+    "vibrate",
+    "move",
+    "wiggle"
+  ],
+  "thumbnail": "motorVibration.png",
+  "thumbnail_source": "/motorVibration.png",
+  "footprint": {
+    "name": "dummy",
+    "id": 311892
+  },
+  "simulation_model": "vibration_motor",
+  "extents": {
+    "top": -90,
+    "left": -25.025239944458008,
+    "width": 50.05047607421875,
+    "height": 90
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2017-03-21T20:16:45Z",
+      "dir": 90,
+      "id": 363351,
+      "label": null,
+      "name": "Negative",
+      "schematic_symbol_id": 41283,
+      "terminal_type": "breadboard",
+      "updated_at": "2017-03-21T20:17:23Z",
+      "x": -5,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2017-03-21T20:16:45Z",
+      "dir": 90,
+      "id": 363352,
+      "label": null,
+      "name": "Positive",
+      "schematic_symbol_id": 41283,
+      "terminal_type": "breadboard",
+      "updated_at": "2017-03-21T20:17:23Z",
+      "x": 5,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2017-03-21T19:41:49Z",
+      "dir": 270,
+      "id": 363349,
+      "label": null,
+      "name": "pos",
+      "schematic_symbol_id": 41281,
+      "terminal_type": "schematic",
+      "updated_at": "2017-03-21T19:41:49Z",
+      "x": 0,
+      "y": -40
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2017-03-21T19:41:49Z",
+      "dir": 90,
+      "id": 363350,
+      "label": null,
+      "name": "neg",
+      "schematic_symbol_id": 41281,
+      "terminal_type": "schematic",
+      "updated_at": "2017-03-21T19:41:49Z",
+      "x": 0,
+      "y": 40
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-05-15T14:35:10Z",
+      "dir": null,
+      "drill": "1000",
+      "footprint_id": 29397,
+      "generator_type": null,
+      "id": 242640,
+      "layer0": "<rect x=\"-950\" y=\"-950\" width=\"1900\" height=\"1900\" rx=\"0\" ry=\"0\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-950\" y=\"-950\" width=\"1900\" height=\"1900\" rx=\"0\" ry=\"0\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-05-15T14:35:10Z",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-05-15T14:35:10Z",
+      "dir": null,
+      "drill": "1000",
+      "footprint_id": 29397,
+      "generator_type": null,
+      "id": 242639,
+      "layer0": "<rect x=\"-950\" y=\"-950\" width=\"1900\" height=\"1900\" rx=\"950\" ry=\"950\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-950\" y=\"-950\" width=\"1900\" height=\"1900\" rx=\"950\" ry=\"950\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-05-15T14:35:10Z",
+      "x": 0,
+      "y": 2540
+    }
+  ],
+  "properties": [],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://s3-us-west-1.amazonaws.com/123d-circuits-assets/thumbnail-processing.gif"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://s3-us-west-1.amazonaws.com/123d-circuits-assets/thumbnail-processing.gif"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1490127686dfa309d0df2dc6fa9a61eff036087680/thumbnail20170321-12442-1qunyxj.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1490127686dfa309d0df2dc6fa9a61eff036087680/thumbnail20170321-12442-1qunyxj.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://s3-us-west-1.amazonaws.com/123d-circuits-assets/thumbnail-processing.gif"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://s3-us-west-1.amazonaws.com/123d-circuits-assets/thumbnail-processing.gif"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/311892.json"
+}

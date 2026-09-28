@@ -1,0 +1,1 @@
+6371(e,t,i){var n=i(77078),o=i(81118).inherit;n.PNP=function(e,t,i,o){n.AbstractComponent.call(this,e),this.type=n.ComponentType.pnp,this.addTerminal("base").connect(t),this.addTerminal("emitter").connect(i),this.addTerminal("collector").connect(o)},n.PNP.prototype=o(n.AbstractComponent.prototype),n.PNP.prototype.constructor=n.PNP

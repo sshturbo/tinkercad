@@ -1,0 +1,7 @@
+{
+  "device_id": "330000",
+  "simulation_model": "dc_motor_hobby_gear",
+  "implementation_found": true,
+  "module_id": "10069",
+  "model_file": "models/dc_motor_hobby_gear--module-10069.js"
+}

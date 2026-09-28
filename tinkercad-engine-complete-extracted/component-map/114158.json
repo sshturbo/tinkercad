@@ -1,0 +1,7 @@
+{
+  "device_id": "114158",
+  "simulation_model": "dc_motor_arduino",
+  "implementation_found": true,
+  "module_id": "80722",
+  "model_file": "models/dc_motor_arduino--module-80722.js"
+}

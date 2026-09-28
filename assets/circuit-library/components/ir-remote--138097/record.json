@@ -1,0 +1,61 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 33016,
+  "device_id": "138097",
+  "name": "IR remote",
+  "description": "A remote control that emits IR signals that can be decoded using an IR sensor.",
+  "tags": [
+    "output",
+    "infrared"
+  ],
+  "thumbnail": "infraredRemoteControl.png",
+  "thumbnail_source": "/infraredRemoteControl.png",
+  "footprint": {
+    "name": "dummy",
+    "id": 138097
+  },
+  "simulation_model": "IRremote",
+  "extents": {
+    "top": -162.33299255371094,
+    "left": -79.5999984741211,
+    "width": 159.1999969482422,
+    "height": 324.6669921875
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [],
+  "properties": [],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1445209785f88d0c13e612c26fed057ba027ceea2d/thumbnail20151018-6376-12wwqpm.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1445209785f88d0c13e612c26fed057ba027ceea2d/thumbnail20151018-6376-12wwqpm.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14452097857f629724cc1bc38af7460991f089f1c2/thumbnail20151018-29086-hki69d.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14452097857f629724cc1bc38af7460991f089f1c2/thumbnail20151018-29086-hki69d.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14462491582e039a2cb868de77ecfdd3cdcff9596f/thumbnail20151030-32738-ry3c0c.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14462491582e039a2cb868de77ecfdd3cdcff9596f/thumbnail20151030-32738-ry3c0c.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/138097.json"
+}

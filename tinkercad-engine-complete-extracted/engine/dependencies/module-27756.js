@@ -1,0 +1,1 @@
+27756(e,t,i){const n=i(52160);e.exports=function(e){return new n(e|=0,new Array(5*e))}

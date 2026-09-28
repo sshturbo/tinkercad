@@ -1,0 +1,223 @@
+{
+  "url": "https://editor.tinkercad.com/assets_cc_1faad5n/js/packaged_devices/132486.json",
+  "payload": {
+    "created_at": "2015-09-17T21:03:00Z",
+    "datasheet_url": null,
+    "description": null,
+    "device_id": 31873,
+    "footprint_id": 32347,
+    "id": 132486,
+    "manufacturer": null,
+    "name": null,
+    "octo_uid": null,
+    "updated_at": "2015-09-17T21:03:00Z",
+    "use_count": 0,
+    "user_id": 0,
+    "footprint_name": "Tilt sensor",
+    "device": {
+      "base": "TILT",
+      "breadboard_id": 22338,
+      "circuitscribe_footprint_id": null,
+      "circuitscribe_footprint_rotation": 0,
+      "created_at": "2015-09-17T21:03:00Z",
+      "datasheet_urls": null,
+      "description": "Tilt-sensitive trigger switch. SW200D.",
+      "id": 31873,
+      "name": "Tilt Sensor",
+      "programmable": false,
+      "programmable_settings": "",
+      "simulation_model": "sensor_tilt_sw200d",
+      "summary": "",
+      "updated_at": "2015-09-17T21:03:44Z",
+      "usage": "",
+      "use_count": 0,
+      "user_id": 0,
+      "version_root_id": 1028782,
+      "breadboard": {
+        "background": false,
+        "breadboard": false,
+        "created_at": "2015-09-17T21:01:23Z",
+        "extents": {
+          "top": -4.800000190734863,
+          "left": -25,
+          "width": 50,
+          "height": 9.5
+        },
+        "generator_type": null,
+        "id": 22338,
+        "name": "breadboard_sensor_tilt_sw200d",
+        "score": 0,
+        "svg": "<svg class=\"cgfx__sensor-tilt-sw200d\" viewBox=\"-1000 -1000 2000 2000\" width=\"2000\" height=\"2000\" x=\"-1000\" y=\"-1000\"><line fill=\"none\" stroke=\"#8C8C8C\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" x1=\"25\" y1=\"0\" x2=\"-25\" y2=\"0\"/><line class=\"cgfx__selected\" fill='none' stroke='#3b8ed7' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' display='none' x1=\"25\" y1=\"0\" x2=\"-25\" y2=\"0\"/><path class=\"cgfx__selected\" fill='none' stroke='#3b8ed7' stroke-linecap='round' stroke-linejoin='round' display='none' stroke-width='3' d=\"M-17.1,4.3c-0.9,0-2.1-0.3-2.9-1.3c0,0-0.1-0.1-0.3,0c-0.2,0-0.5,0-0.8-0.3l0-0.1v-5.1l0-0.1c0.2-0.3,0.6-0.3,0.8-0.3c0.2,0,0.2,0,0.3,0c1.5-1.9,4.2-1.2,4.5-1.1c0.3,0,0.3,0.4,0.3,0.9v6.3c0,0.5-0.1,0.9-0.3,0.9C-15.7,4.1-16.4,4.3-17.1,4.3z M-20.2,2.3c0.2,0,0.4,0,0.6,0.3c1.2,1.5,3.2,1.1,3.7,0.9c0-0.1,0-0.2,0-0.4v-6.3c0-0.2,0-0.3,0-0.4c-0.5-0.1-2.6-0.6-3.7,0.9c-0.2,0.3-0.6,0.3-0.8,0.3c-0.1,0-0.1,0-0.2,0v4.6c0,0,0.1,0,0.2,0C-20.3,2.3-20.3,2.3-20.2,2.3z\"/><path class=\"cgfx__selected\" fill='none' stroke='#3b8ed7' stroke-linecap='round' stroke-linejoin='round' display='none' stroke-width='3' d=\"M17.1,4.3c-0.8,0-1.4-0.2-1.6-0.2c-0.3,0-0.3-0.4-0.3-0.9v-6.3c0-0.5,0.1-0.9,0.3-0.9c0.3-0.1,3-0.9,4.5,1.1c0,0,0.1,0.1,0.3,0c0.2,0,0.5,0,0.8,0.3l0,0.1v5.1l0,0.1c-0.2,0.3-0.6,0.3-0.8,0.3c-0.2,0-0.2,0-0.3,0C19.2,4,18.1,4.3,17.1,4.3zM15.9,3.5c0.5,0.1,2.6,0.6,3.7-0.9c0.2-0.3,0.6-0.3,0.8-0.3c0.1,0,0.1,0,0.2,0v-4.6c0,0-0.1,0-0.2,0c-0.2,0-0.5,0-0.8-0.3c-1.2-1.5-3.2-1.1-3.7-0.9c0,0.1,0,0.2,0,0.4v6.3C15.8,3.3,15.9,3.4,15.9,3.5z\"/><path class=\"cgfx__selected\" fill='none' stroke='#3b8ed7' stroke-linecap='round' stroke-linejoin='round' display='none' stroke-width='3' d=\"M18.4-4.2c0.2,0,0.4,0.2,0.4,0.5v7.5c0,0.3-0.2,0.5-0.4,0.5h-36.8c-0.2,0-0.4-0.2-0.4-0.5v-7.5c0-0.3,0.2-0.5,0.4-0.5H18.4 M18.4-4.8h-36.8c-0.5,0-0.9,0.4-0.9,1v7.5c0,0.6,0.4,1,0.9,1h36.8c0.5,0,0.9-0.4,0.9-1v-7.5C19.2-4.3,18.9-4.8,18.4-4.8L18.4-4.8z\"/><path fill=\"#097F39\" d=\"M-15.6-3.8c0,0-2.7-0.9-4.2,1c-0.3,0.4-0.8-0.1-1,0.3v4.9c0.2,0.4,0.7,0,1,0.3c1.5,1.9,4.2,1,4.2,1c0,0,0.1-0.3,0.1-0.6V0v-3.1C-15.5-3.5-15.6-3.8-15.6-3.8z\"/><path fill=\"#17A34F\" d=\"M-17.1,4.3c-0.9,0-2.1-0.3-2.9-1.3c0,0-0.1-0.1-0.3,0c-0.2,0-0.5,0-0.8-0.3l0-0.1v-5.1l0-0.1c0.2-0.3,0.6-0.3,0.8-0.3c0.2,0,0.2,0,0.3,0c1.5-1.9,4.2-1.2,4.5-1.1c0.3,0,0.3,0.4,0.3,0.9v6.3c0,0.5-0.1,0.9-0.3,0.9C-15.7,4.1-16.4,4.3-17.1,4.3z M-20.2,2.3c0.2,0,0.4,0,0.6,0.3c1.2,1.5,3.2,1.1,3.7,0.9c0-0.1,0-0.2,0-0.4v-6.3c0-0.2,0-0.3,0-0.4c-0.5-0.1-2.6-0.6-3.7,0.9c-0.2,0.3-0.6,0.3-0.8,0.3c-0.1,0-0.1,0-0.2,0v4.6c0,0,0.1,0,0.2,0C-20.3,2.3-20.3,2.3-20.2,2.3z\"/><path fill=\"#097F39\" d=\"M15.6-3.8c0,0,2.7-0.9,4.2,1c0.3,0.4,0.8-0.1,1,0.3v4.9c-0.2,0.4-0.7,0-1,0.3c-1.5,1.9-4.2,1-4.2,1c0,0-0.1-0.3-0.1-0.6V0v-3.1C15.5-3.5,15.6-3.8,15.6-3.8z\"/><path fill=\"#17A34F\" d=\"M17.1,4.3c-0.8,0-1.4-0.2-1.6-0.2c-0.3,0-0.3-0.4-0.3-0.9v-6.3c0-0.5,0.1-0.9,0.3-0.9c0.3-0.1,3-0.9,4.5,1.1c0,0,0.1,0.1,0.3,0c0.2,0,0.5,0,0.8,0.3l0,0.1v5.1l0,0.1c-0.2,0.3-0.6,0.3-0.8,0.3c-0.2,0-0.2,0-0.3,0C19.2,4,18.1,4.3,17.1,4.3zM15.9,3.5c0.5,0.1,2.6,0.6,3.7-0.9c0.2-0.3,0.6-0.3,0.8-0.3c0.1,0,0.1,0,0.2,0v-4.6c0,0-0.1,0-0.2,0c-0.2,0-0.5,0-0.8-0.3c-1.2-1.5-3.2-1.1-3.7-0.9c0,0.1,0,0.2,0,0.4v6.3C15.8,3.3,15.9,3.4,15.9,3.5z\"/><path fill=\"#19BF5C\" d=\"M-18.3,4.5c-0.3,0-0.6-0.3-0.6-0.8v-7.5c0-0.4,0.3-0.8,0.6-0.8h36.6c0.3,0,0.6,0.3,0.6,0.8v7.5c0,0.4-0.3,0.8-0.6,0.8H-18.3z\"/><path fill=\"#19CC61\" d=\"M-18.3-3.2c-0.3,0-0.6,0-0.6-0.1v-1.1c0-0.1,0.3-0.1,0.6-0.1h37.1v1.3H-18.3z\"/><path fill=\"#19CC61\" d=\"M18.2,3.2c0.3,0,0.6,0,0.6,0.1v1.1c0,0.1-0.3,0.1-0.6,0.1h-37.1V3.2H18.2z\"/><path fill=\"#17A34F\" d=\"M18.4-4.2c0.2,0,0.4,0.2,0.4,0.5v7.5c0,0.3-0.2,0.5-0.4,0.5h-36.8c-0.2,0-0.4-0.2-0.4-0.5v-7.5c0-0.3,0.2-0.5,0.4-0.5H18.4 M18.4-4.8h-36.8c-0.5,0-0.9,0.4-0.9,1v7.5c0,0.6,0.4,1,0.9,1h36.8c0.5,0,0.9-0.4,0.9-1v-7.5C19.2-4.3,18.9-4.8,18.4-4.8L18.4-4.8z\"/><path fill=\"#EEEEEE\" d=\"M-8.9-0.01c-0.41-0.18-0.62-0.5-0.62-0.91c0-0.62,0.59-1,1.19-1c0.29,0,0.59,0.05,0.87,0.17c0.11,0.05,0.2,0.12,0.2,0.27c0,0.14-0.12,0.25-0.26,0.25c-0.03,0-0.06-0.01-0.1-0.02C-7.75-1.3-7.94-1.41-8.36-1.41c-0.26,0-0.6,0.1-0.6,0.46c0,0.25,0.12,0.36,0.33,0.45l0.6,0.26c0.4,0.17,0.78,0.42,0.78,0.98c0,0.63-0.46,1.11-1.16,1.11c-0.31,0-0.67-0.08-0.94-0.2c-0.1-0.04-0.16-0.13-0.16-0.25c0-0.15,0.09-0.27,0.25-0.27c0.07,0,0.12,0.02,0.17,0.04c0.22,0.09,0.44,0.16,0.68,0.16c0.38,0,0.6-0.18,0.6-0.53c0-0.26-0.22-0.45-0.46-0.55L-8.9-0.01z\"/><path fill=\"#EEEEEE\" d=\"M-4.98-0.74l-0.59,2.37C-5.6,1.76-5.73,1.86-5.87,1.86c-0.14,0-0.26-0.1-0.29-0.23l-0.85-3.21c-0.01-0.03-0.01-0.05-0.01-0.07c0-0.15,0.13-0.27,0.27-0.27c0.12,0,0.24,0.08,0.27,0.2l0.61,2.42l0.59-2.39c0.03-0.14,0.17-0.23,0.3-0.23c0.14,0,0.26,0.1,0.29,0.23l0.59,2.41l0.62-2.43c0.03-0.13,0.14-0.2,0.26-0.2c0.15,0,0.27,0.13,0.27,0.27c0,0.02-0.01,0.05-0.01,0.07l-0.85,3.21C-3.84,1.76-3.98,1.86-4.1,1.86c-0.14,0-0.26-0.1-0.29-0.23L-4.98-0.74z\"/><path fill=\"#EEEEEE\" d=\"M-1.13,1.8c-0.17,0-0.3-0.14-0.3-0.3c0-0.07,0.03-0.14,0.07-0.19l1.32-1.59c0.15-0.18,0.22-0.35,0.22-0.58c0-0.31-0.2-0.57-0.54-0.57c-0.23,0-0.39,0.03-0.62,0.15c-0.04,0.02-0.08,0.04-0.14,0.04c-0.14,0-0.26-0.1-0.26-0.25c0-0.09,0.05-0.19,0.15-0.24c0.32-0.17,0.58-0.2,0.87-0.2c0.31,0,0.59,0.1,0.78,0.3c0.2,0.2,0.3,0.47,0.3,0.79c0,0.41-0.19,0.66-0.37,0.89c-0.09,0.12-0.67,0.8-1.03,1.24h1.16c0.15,0,0.27,0.11,0.27,0.25c0,0.15-0.12,0.26-0.27,0.26H-1.13z\"/><path fill=\"#EEEEEE\" d=\"M3.73,0.65C3.73,1,3.61,1.31,3.4,1.52C3.18,1.74,2.87,1.86,2.52,1.86S1.87,1.74,1.65,1.52C1.44,1.31,1.32,1,1.32,0.65v-1.37c0-0.36,0.12-0.66,0.33-0.87c0.22-0.22,0.52-0.34,0.87-0.34s0.66,0.12,0.87,0.33c0.22,0.22,0.34,0.52,0.34,0.88V0.65z M3.19-0.76c0-0.42-0.25-0.66-0.67-0.66S1.86-1.19,1.86-0.76V0.7c0,0.42,0.24,0.66,0.66,0.66S3.19,1.12,3.19,0.7V-0.76z\"/><path fill=\"#EEEEEE\" d=\"M6.75,0.65c0,0.35-0.12,0.66-0.33,0.87C6.2,1.74,5.89,1.86,5.54,1.86c-0.35,0-0.65-0.12-0.87-0.34C4.46,1.31,4.34,1,4.34,0.65v-1.37c0-0.36,0.12-0.66,0.33-0.87c0.22-0.22,0.52-0.34,0.87-0.34c0.35,0,0.66,0.12,0.87,0.33c0.22,0.22,0.34,0.52,0.34,0.88V0.65z M6.21-0.76c0-0.42-0.25-0.66-0.67-0.66S4.88-1.19,4.88-0.76V0.7c0,0.42,0.24,0.66,0.66,0.66S6.21,1.12,6.21,0.7V-0.76z\"/><path fill=\"#EEEEEE\" d=\"M7.75,1.8c-0.19,0-0.34-0.15-0.34-0.34v-3c0-0.18,0.15-0.34,0.34-0.34h0.69c0.86,0,1.44,0.57,1.44,1.43v0.82c0,0.85-0.58,1.43-1.44,1.43H7.75z M9.33-0.46c0-0.56-0.32-0.89-0.88-0.89H7.97v2.62h0.48c0.56,0,0.88-0.34,0.88-0.89V-0.46z\"/><path class=\"cgfx__hitarea\" style='fill:#ff0000;' opacity='0' display='none' d=\"M-17.1,4.3c-0.9,0-2.1-0.3-2.9-1.3c0,0-0.1-0.1-0.3,0c-0.2,0-0.5,0-0.8-0.3l0-0.1v-5.1l0-0.1c0.2-0.3,0.6-0.3,0.8-0.3c0.2,0,0.2,0,0.3,0c1.5-1.9,4.2-1.2,4.5-1.1c0.3,0,0.3,0.4,0.3,0.9v6.3c0,0.5-0.1,0.9-0.3,0.9C-15.7,4.1-16.4,4.3-17.1,4.3z\"/><path class=\"cgfx__hitarea\" style='fill:#ff0000;' opacity='0' display='none' d=\"M-20.2,2.3c0.2,0,0.4,0,0.6,0.3c1.2,1.5,3.2,1.1,3.7,0.9c0-0.1,0-0.2,0-0.4v-6.3c0-0.2,0-0.3,0-0.4c-0.5-0.1-2.6-0.6-3.7,0.9c-0.2,0.3-0.6,0.3-0.8,0.3c-0.1,0-0.1,0-0.2,0v4.6c0,0,0.1,0,0.2,0C-20.3,2.3-20.3,2.3-20.2,2.3z\"/><path class=\"cgfx__hitarea\" style='fill:#ff0000;' opacity='0' display='none' d=\"M17.1,4.3c-0.8,0-1.4-0.2-1.6-0.2c-0.3,0-0.3-0.4-0.3-0.9v-6.3c0-0.5,0.1-0.9,0.3-0.9c0.3-0.1,3-0.9,4.5,1.1c0,0,0.1,0.1,0.3,0c0.2,0,0.5,0,0.8,0.3l0,0.1v5.1l0,0.1c-0.2,0.3-0.6,0.3-0.8,0.3c-0.2,0-0.2,0-0.3,0C19.2,4,18.1,4.3,17.1,4.3z\"/><path class=\"cgfx__hitarea\" style='fill:#ff0000;' opacity='0' display='none' d=\"M15.9,3.5c0.5,0.1,2.6,0.6,3.7-0.9c0.2-0.3,0.6-0.3,0.8-0.3c0.1,0,0.1,0,0.2,0v-4.6c0,0-0.1,0-0.2,0c-0.2,0-0.5,0-0.8-0.3c-1.2-1.5-3.2-1.1-3.7-0.9c0,0.1,0,0.2,0,0.4v6.3C15.8,3.3,15.9,3.4,15.9,3.5z\"/><path class=\"cgfx__hitarea\" style='fill:#ff0000;' opacity='0' display='none' d=\"M18.4-4.2c0.2,0,0.4,0.2,0.4,0.5v7.5c0,0.3-0.2,0.5-0.4,0.5h-36.8c-0.2,0-0.4-0.2-0.4-0.5v-7.5c0-0.3,0.2-0.5,0.4-0.5H18.4\"/><path class=\"cgfx__hitarea\" style='fill:#ff0000;' opacity='0' display='none' d=\"M18.4-4.8h-36.8c-0.5,0-0.9,0.4-0.9,1v7.5c0,0.6,0.4,1,0.9,1h36.8c0.5,0,0.9-0.4,0.9-1v-7.5C19.2-4.3,18.9-4.8,18.4-4.8L18.4-4.8z\"/><line class=\"cgfx__hitarea\" style='stroke:#ff0000;fill:none;stroke-linecap:round;stroke-miterlimit:10;' opacity='0' display='none' stroke-width=\"2\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" x1=\"25\" y1=\"0\" x2=\"-25\" y2=\"0\"/><g class=\"cgfx__tilt cgfx__inspector cgfx__slider-tilt\" transform=\"translate(0, -25) rotate(0)\" display=\"none\"><g transform=\"translate(-45)\"><rect x=\"-3.954\" y=\"-9.88\" fill=\"none\" stroke=\"#333333\" stroke-width=\"1.5\" stroke-miterlimit=\"10\" stroke-linejoin=\"round\" width=\"7.909\" height=\"19.733\"/></g><g transform=\"translate(45)\"><rect x=\"-1.1\" y=\"-8.903\" transform=\"matrix(0.6286 0.7778 -0.7778 0.6286 1.8094 -1.8624)\" fill=\"none\" stroke=\"#333333\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" width=\"7.909\" height=\"19.733\"/></g><rect class=\"cgfx__bounds\" fill=\"#f4f5f6\" stroke=\"#333333\" stroke-width=\"1.5\" x=\"-30\" y=\"-4\" width=\"60\" height=\"8\" rx=\"4\" ry=\"4\" /><circle class=\"cgfx__knob\" transform=\"\" fill=\"#333333\" cx=\"-26\" cy=\"0\" r=\"7.5\"/><g class=\"cgfx__arrow\" opacity=\"1\" transform=\"translate(-11.25,0)\"><line fill=\"none\" stroke=\"#333333\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" x1=\"1.539\" y1=\"0\" x2=\"-1.539\" y2=\"0\"/><polyline fill=\"none\" stroke=\"#333333\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" points=\"1,-1 2,0 1,1\"/></g><rect class=\"cgfx__hitarea-interaction cgfx__tilt cgfx__inspector cgfx__bounds\" style='fill:#ff0000;stroke:#ff0000;' opacity='0' display='none' stroke-width=\"1.5\" x=\"-30\" y=\"-4\" width=\"60\" height=\"8\" rx=\"4\" ry=\"4\" /><circle class=\"cgfx__hitarea-interaction cgfx__tilt cgfx__inspector cgfx__knob\" style='fill:#ff0000;' opacity='0' display='none' cx=\"-26\" cy=\"0\" r=\"7.5\" /></g><polygon class=\"cgfx__breakdown\" transform=\"translate(0,0)rotate(0) scale(1,1)\" display=\"none\" style=\"opacity:0.7;fill:#FF0000;stroke:#F7E60B;stroke-miterlimit:10;\" points=\"2.415,-5.161 7.901,-7.299 5.471,-2.294 11.953,-0.565 5.126,1.63 8.332,8.197 2.59,5.053 -0.137,10.527 -2.24,4.375 -7.565,7.957 -6.133,2.443 -11.953,0.87 -5.945,-1.796 -8.854,-7.513 -3.289,-5.371 -1.401,-10.527 \"/><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">Terminal 1</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"-25\" y1=\"0\" x2=\"-50\" y2=\"0\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">Terminal 2</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"25\" y1=\"0\" x2=\"50\" y2=\"0\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g></svg>",
+        "symbol_type": "breadboard",
+        "terminal_list": null,
+        "thumb_status": "--- !ruby/exception:ArgumentError\nmessage: could not find /tmp/schematic_symbol_22338_thumb.png\n",
+        "thumb_url": "https://123d-circuits-files.s3.amazonaws.com/144675512904fc2c34939071fd728d15bbaa288536/thumbnail20151105-24917-pz36mn.png",
+        "updated_at": "2015-11-05T20:24:19Z",
+        "user_id": null,
+        "thumbUrl": "https://123d-circuits-files.s3.amazonaws.com/144675512904fc2c34939071fd728d15bbaa288536/thumbnail20151105-24917-pz36mn.png",
+        "thumbStatus": "ok",
+        "rootId": "1028887",
+        "schematic_symbol_terminals_attributes": [
+          {
+            "created_at": "2015-09-17T21:02:01Z",
+            "dir": 0,
+            "id": 219250,
+            "label": null,
+            "name": "Terminal 2",
+            "schematic_symbol_id": 22338,
+            "terminal_type": "breadboard",
+            "updated_at": "2015-09-17T21:02:01Z",
+            "x": 25,
+            "y": 0
+          },
+          {
+            "created_at": "2015-09-17T21:02:01Z",
+            "dir": 180,
+            "id": 219249,
+            "label": null,
+            "name": "Terminal 1",
+            "schematic_symbol_id": 22338,
+            "terminal_type": "breadboard",
+            "updated_at": "2015-09-17T21:02:01Z",
+            "x": -25,
+            "y": 0
+          }
+        ]
+      },
+      "subdevices_attributes": [
+        {
+          "created_at": "2015-09-17T21:03:00Z",
+          "device_id": 31873,
+          "id": 43360,
+          "init_x": 0,
+          "init_y": 0,
+          "name": null,
+          "schematic_symbol_id": 22337,
+          "updated_at": "2015-09-17T21:03:00Z",
+          "schematic_symbol_attributes": {
+            "background": false,
+            "breadboard": false,
+            "created_at": "2015-09-17T20:41:48Z",
+            "generator_type": null,
+            "id": 22337,
+            "name": "Tilt sensor",
+            "score": 0,
+            "svg": "<g><path d=\"M34.534820688087734,20L60.1366294827978,20\" stroke-width=\"2\" fill=\"none\" stroke=\"black\" style=\"\" modes=\"[0,0]\"/><circle cx=\"20\" cy=\"20\" r=\"7.4999999999999964\" stroke-width=\"2\" fill=\"none\"stroke=\"black\" style=\"undefined\"/><path d=\"M-60,20L-40,20\" stroke-width=\"2\" fill=\"none\" stroke=\"black\" style=\"\" modes=\"[0,0]\"/><path d=\"M34.61296395536832,17.642797108521382L34.61296395536832,22.234717454837984\" stroke-width=\"2\" fill=\"none\" stroke=\"black\" style=\"\" modes=\"[0,0]\"/><text x=\"-30\" y=\"23.444498756579502\" transform=\"rotate(0 -30 23.444498756579502)\" stroke=\"black\"stroke-width=\"0\" font-size=\"10px\" style=\"\" font-family=\"verdana\">TILT</text><path d=\"M40,22.597585176332583L40,29.753086419753085L-40,29.753086419753085L-40,9.753086419753087L40,9.753086419753087L40,17.27165925040668\" stroke-width=\"2\" fill=\"none\" stroke=\"black\" style=\"\" modes=\"[0,0,0,0,0,0]\"/></g>",
+            "symbol_type": "schematic",
+            "terminal_list": null,
+            "thumb_status": "--- !ruby/exception:ArgumentError\nmessage: could not find /tmp/schematic_symbol_22337_thumb.png\n",
+            "thumb_url": "https://123d-circuits-files.s3.amazonaws.com/144675512914929fb3f243dc6499a59e2d3051ef3c/thumbnail20151105-24903-1nh2o22.png",
+            "updated_at": "2015-09-17T20:48:36Z",
+            "user_id": 0,
+            "thumbUrl": "https://123d-circuits-files.s3.amazonaws.com/144675512914929fb3f243dc6499a59e2d3051ef3c/thumbnail20151105-24903-1nh2o22.png",
+            "thumbStatus": "ok",
+            "rootId": "1028785",
+            "schematic_symbol_terminals_attributes": [
+              {
+                "created_at": "2015-09-17T20:48:36Z",
+                "dir": 0,
+                "id": 219248,
+                "label": null,
+                "name": "2",
+                "schematic_symbol_id": 22337,
+                "terminal_type": "schematic",
+                "updated_at": "2015-09-17T20:48:36Z",
+                "x": 60,
+                "y": 20
+              },
+              {
+                "created_at": "2015-09-17T20:48:36Z",
+                "dir": 180,
+                "id": 219247,
+                "label": null,
+                "name": "1",
+                "schematic_symbol_id": 22337,
+                "terminal_type": "schematic",
+                "updated_at": "2015-09-17T20:48:36Z",
+                "x": -60,
+                "y": 20
+              }
+            ]
+          }
+        }
+      ],
+      "properties_attributes": []
+    },
+    "root_id": 1028782,
+    "footprint": {
+      "created_at": "2015-09-17T20:50:15Z",
+      "id": 32347,
+      "name": "Tilt sensor",
+      "outline": "<g><rect x=\"-6000\" y=\"-1750.4\" width=\"12000\" height=\"3500.8\" rx=\"0\" ry=\"0\" stroke-width=\"100\" fill=\"none\" style=\"\"/><g x=\"-4947.436485606872\" y=\"0\" flip=\"1\" transform=\"rotate(0 -4947.436485606872 0)\"  stroke=\"white\" stroke-width=\"0\" font-size=\"1200px\" style=\"\" font-family=\"pcbfont\" text-data=\"A\"><path d=\"M -5397.436485606872,600 -5397.436485606872,0 -4997.436485606872,-600 -4897.436485606872,-600 -4497.436485606872,0 -4497.436485606872,600\" style=\"fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:200\" />\n<path d=\"M -5397.436485606872,300 -4497.436485606872,300\" style=\"fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:200\" />\n</g><g x=\"4975.50697617338\" y=\"0\" flip=\"1\" transform=\"rotate(0 4975.50697617338 0)\"  stroke=\"white\" stroke-width=\"0\" font-size=\"1200px\" style=\"\" font-family=\"pcbfont\" text-data=\"C\"><path d=\"M 5425.50697617338,300 5425.50697617338,400 5225.50697617338,600 4725.50697617338,600 4525.50697617338,400 4525.50697617338,-400 4725.50697617338,-600 5225.50697617338,-600 5425.50697617338,-400 5425.50697617338,-300\" style=\"fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:200\" />\n</g><path d=\"M6009.627000956271,0L7576.249181229602,0\" stroke-width=\"100\" fill=\"none\" stroke=\"white\" style=\"\" modes=\"[0,0]\"/><path d=\"M-5998.560012849646,0L-7620,0\" stroke-width=\"100\" fill=\"none\" stroke=\"white\" style=\"\" modes=\"[0,0]\"/></g>",
+      "thumb_status": "--- !ruby/exception:ArgumentError\nmessage: could not find /tmp/footprint_32347_thumb.png\n",
+      "thumb_url": "https://123d-circuits-files.s3.amazonaws.com/1443844835d5b4a559255e9f41eeaf369a4e69ac6e/thumbnail20151003-31095-1abf4zc.png",
+      "updated_at": "2015-09-17T20:59:01Z",
+      "user_id": 0,
+      "thumbUrl": "https://123d-circuits-files.s3.amazonaws.com/1443844835d5b4a559255e9f41eeaf369a4e69ac6e/thumbnail20151003-31095-1abf4zc.png",
+      "thumbStatus": "ok",
+      "rootId": "1028846",
+      "pads_attributes": [
+        {
+          "col_pitch": null,
+          "cols": null,
+          "created_at": "2015-09-17T20:59:01Z",
+          "dir": null,
+          "drill": "750",
+          "footprint_id": 32347,
+          "generator_type": null,
+          "id": 275448,
+          "layer0": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "layer1": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "name": "2",
+          "number": null,
+          "pad_type_id": null,
+          "pin_spacing": null,
+          "row_pitch": null,
+          "rows": null,
+          "updated_at": "2015-09-17T20:59:01Z",
+          "x": 7620,
+          "y": 0
+        },
+        {
+          "col_pitch": null,
+          "cols": null,
+          "created_at": "2015-09-17T20:59:01Z",
+          "dir": null,
+          "drill": "750",
+          "footprint_id": 32347,
+          "generator_type": null,
+          "id": 275447,
+          "layer0": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "layer1": "<rect x=\"-750\" y=\"-750\" width=\"1500\" height=\"1500\" rx=\"750\" ry=\"750\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "name": "1",
+          "number": null,
+          "pad_type_id": null,
+          "pin_spacing": null,
+          "row_pitch": null,
+          "rows": null,
+          "updated_at": "2015-09-17T20:59:01Z",
+          "x": -7620,
+          "y": 0
+        }
+      ]
+    },
+    "pinmaps_attributes": [
+      {
+        "pmid": 520949,
+        "did": 132486,
+        "ppid": 275448,
+        "sdid": 43360,
+        "spid": 219248,
+        "bbid": 219250
+      },
+      {
+        "pmid": 520948,
+        "did": 132486,
+        "ppid": 275447,
+        "sdid": 43360,
+        "spid": 219247,
+        "bbid": 219249
+      }
+    ]
+  }
+}

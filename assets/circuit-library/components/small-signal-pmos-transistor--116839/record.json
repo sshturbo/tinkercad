@@ -1,0 +1,206 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 28785,
+  "device_id": "116839",
+  "name": "Small Signal pMOS Transistor",
+  "description": "Small Signal voltage-controlled transistor.",
+  "tags": [
+    "power control",
+    "mosfet"
+  ],
+  "thumbnail": "transistorPMOS.png",
+  "thumbnail_source": "/transistorPMOS.png",
+  "footprint": {
+    "name": "TO92",
+    "id": 116839
+  },
+  "simulation_model": "pmos",
+  "extents": {
+    "top": -37.92000198364258,
+    "left": -11.739998817443848,
+    "width": 23.479997634887695,
+    "height": 37.92000198364258
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-24T10:56:16Z",
+      "dir": 90,
+      "id": 203518,
+      "label": null,
+      "name": "Source",
+      "schematic_symbol_id": 20279,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-24T10:56:16Z",
+      "x": -10,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-24T10:56:17Z",
+      "dir": 90,
+      "id": 203519,
+      "label": null,
+      "name": "Gate",
+      "schematic_symbol_id": 20279,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-24T10:56:17Z",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.2",
+      "created_at": "2015-06-24T10:56:17Z",
+      "dir": 90,
+      "id": 203520,
+      "label": null,
+      "name": "Drain",
+      "schematic_symbol_id": 20279,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-24T10:56:17Z",
+      "x": 10,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2014-08-07T08:06:49Z",
+      "dir": 270,
+      "id": 144613,
+      "label": null,
+      "name": "source",
+      "schematic_symbol_id": 13083,
+      "terminal_type": "schematic",
+      "updated_at": "2014-08-07T08:06:49Z",
+      "x": 18,
+      "y": -23.593
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2014-08-07T08:06:49Z",
+      "dir": 90,
+      "id": 144612,
+      "label": null,
+      "name": "drain",
+      "schematic_symbol_id": 13083,
+      "terminal_type": "schematic",
+      "updated_at": "2014-08-07T08:06:49Z",
+      "x": 18,
+      "y": 23.593
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.2",
+      "created_at": "2014-08-07T08:06:49Z",
+      "dir": 180,
+      "id": 144611,
+      "label": null,
+      "name": "gate",
+      "schematic_symbol_id": 13083,
+      "terminal_type": "schematic",
+      "updated_at": "2014-08-07T08:06:49Z",
+      "x": -18,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-04-08T11:57:37Z",
+      "dir": 0,
+      "drill": "812.8",
+      "footprint_id": 4750,
+      "generator_type": "single",
+      "id": 25685,
+      "layer0": "<polygon points=\"565.7027253065002,228.55873705024766 238.39680033227378,561.6276660676001 -228.55873705024771,565.7027253065002 -561.6276660676001,238.3968003322738 -565.7027253065002,-228.55873705024766 -238.39680033227387,-561.6276660676001 228.55873705024763,-565.7027253065002 561.6276660676001,-238.3968003322739 \"/>",
+      "layer1": "<polygon points=\"565.7027253065002,228.55873705024766 238.39680033227378,561.6276660676001 -228.55873705024771,565.7027253065002 -561.6276660676001,238.3968003322738 -565.7027253065002,-228.55873705024766 -238.39680033227387,-561.6276660676001 228.55873705024763,-565.7027253065002 561.6276660676001,-238.3968003322739 \"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": 525,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:39:44Z",
+      "x": 1270,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-04-08T11:57:37Z",
+      "dir": 0,
+      "drill": "812.8",
+      "footprint_id": 4750,
+      "generator_type": "single",
+      "id": 25686,
+      "layer0": "<polygon points=\"565.7027253065002,228.55873705024766 238.39680033227378,561.6276660676001 -228.55873705024771,565.7027253065002 -561.6276660676001,238.3968003322738 -565.7027253065002,-228.55873705024766 -238.39680033227387,-561.6276660676001 228.55873705024763,-565.7027253065002 561.6276660676001,-238.3968003322739 \"/>",
+      "layer1": "<polygon points=\"565.7027253065002,228.55873705024766 238.39680033227378,561.6276660676001 -228.55873705024771,565.7027253065002 -561.6276660676001,238.3968003322738 -565.7027253065002,-228.55873705024766 -238.39680033227387,-561.6276660676001 228.55873705024763,-565.7027253065002 561.6276660676001,-238.3968003322739 \"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": 525,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:39:44Z",
+      "x": 0,
+      "y": -1905
+    },
+    {
+      "path": "footprint.pads_attributes.2",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-04-08T11:57:37Z",
+      "dir": 0,
+      "drill": "812.8",
+      "footprint_id": 4750,
+      "generator_type": "single",
+      "id": 25687,
+      "layer0": "<polygon points=\"565.7027253065002,228.55873705024766 238.39680033227378,561.6276660676001 -228.55873705024771,565.7027253065002 -561.6276660676001,238.3968003322738 -565.7027253065002,-228.55873705024766 -238.39680033227387,-561.6276660676001 228.55873705024763,-565.7027253065002 561.6276660676001,-238.3968003322739 \"/>",
+      "layer1": "<polygon points=\"565.7027253065002,228.55873705024766 238.39680033227378,561.6276660676001 -228.55873705024771,565.7027253065002 -561.6276660676001,238.3968003322738 -565.7027253065002,-228.55873705024766 -238.39680033227387,-561.6276660676001 228.55873705024763,-565.7027253065002 561.6276660676001,-238.3968003322739 \"/>",
+      "name": "3",
+      "number": null,
+      "pad_type_id": 525,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:39:44Z",
+      "x": -1270,
+      "y": 0
+    }
+  ],
+  "properties": [],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435144335bb19e9a81927e32b4aecaa83a981784d/thumbnail20150624-27414-1llhpmb.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435144335bb19e9a81927e32b4aecaa83a981784d/thumbnail20150624-27414-1llhpmb.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1446245598066345294a1f6b40f25399e9e8b9c9f0/thumbnail20151030-782-10mj60t.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1446245598066345294a1f6b40f25399e9e8b9c9f0/thumbnail20151030-782-10mj60t.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1434687199f958e38e87d71cae6a3fa89fe1207959/thumbnail20150619-8542-1v7i5ds.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1434687199f958e38e87d71cae6a3fa89fe1207959/thumbnail20150619-8542-1v7i5ds.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/116839.json"
+}

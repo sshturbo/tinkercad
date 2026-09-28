@@ -1,0 +1,285 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 28710,
+  "device_id": "116686",
+  "name": "USB standard A",
+  "description": "A type A male standard USB connector.",
+  "tags": [
+    "connector",
+    "power",
+    "supply"
+  ],
+  "thumbnail": "usbStandardA.png",
+  "thumbnail_source": "/usbStandardA.png",
+  "footprint": {
+    "name": "USB-A-PCB",
+    "id": 116686
+  },
+  "simulation_model": "USBstandard",
+  "extents": {
+    "top": -31.201000213623047,
+    "left": -228.8719940185547,
+    "width": 228.8719940185547,
+    "height": 62.4010009765625
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-23T11:54:51Z",
+      "dir": 0,
+      "id": 202944,
+      "label": null,
+      "name": "Ground",
+      "schematic_symbol_id": 20221,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T11:54:51Z",
+      "x": 0,
+      "y": -15
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-23T11:54:51Z",
+      "dir": 0,
+      "id": 202945,
+      "label": null,
+      "name": "Data +",
+      "schematic_symbol_id": 20221,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T11:54:51Z",
+      "x": 0,
+      "y": -5
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.2",
+      "created_at": "2015-06-23T11:54:51Z",
+      "dir": 0,
+      "id": 202946,
+      "label": null,
+      "name": "Data -",
+      "schematic_symbol_id": 20221,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T11:54:51Z",
+      "x": 0,
+      "y": 5
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.3",
+      "created_at": "2015-06-23T11:54:51Z",
+      "dir": 0,
+      "id": 202947,
+      "label": null,
+      "name": "5V",
+      "schematic_symbol_id": 20221,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T11:54:51Z",
+      "x": 0,
+      "y": 15
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2014-06-18T13:19:46Z",
+      "dir": 180,
+      "id": 133583,
+      "label": null,
+      "name": "D+",
+      "schematic_symbol_id": 11937,
+      "terminal_type": "schematic",
+      "updated_at": "2014-06-18T13:19:46Z",
+      "x": -12.7,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2014-06-18T13:19:46Z",
+      "dir": 180,
+      "id": 133582,
+      "label": null,
+      "name": "D-",
+      "schematic_symbol_id": 11937,
+      "terminal_type": "schematic",
+      "updated_at": "2014-06-18T13:19:46Z",
+      "x": -12.7,
+      "y": -12.7
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.2",
+      "created_at": "2014-06-18T13:19:46Z",
+      "dir": 180,
+      "id": 133581,
+      "label": null,
+      "name": "5V",
+      "schematic_symbol_id": 11937,
+      "terminal_type": "schematic",
+      "updated_at": "2014-06-18T13:19:46Z",
+      "x": -12.7,
+      "y": -25.4
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.3",
+      "created_at": "2014-06-18T13:19:46Z",
+      "dir": 180,
+      "id": 133579,
+      "label": null,
+      "name": "GND",
+      "schematic_symbol_id": 11937,
+      "terminal_type": "schematic",
+      "updated_at": "2014-06-18T13:19:46Z",
+      "x": -12.7,
+      "y": 12.7
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.4",
+      "created_at": "2014-06-18T13:19:46Z",
+      "dir": 180,
+      "id": 133580,
+      "label": null,
+      "name": "Shield1",
+      "schematic_symbol_id": 11937,
+      "terminal_type": "schematic",
+      "updated_at": "2014-06-18T13:21:07Z",
+      "x": 0,
+      "y": 40
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.5",
+      "created_at": "2014-06-18T13:21:07Z",
+      "dir": 180,
+      "id": 133584,
+      "label": null,
+      "name": "Shield2",
+      "schematic_symbol_id": 11937,
+      "terminal_type": "schematic",
+      "updated_at": "2014-06-18T13:21:07Z",
+      "x": 0,
+      "y": 50
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-01-30T17:37:45Z",
+      "dir": 0,
+      "drill": null,
+      "footprint_id": 609,
+      "generator_type": "single",
+      "id": 1713,
+      "layer0": "<path d=\"M3750.0 750.0 L-3750.0 750.0 L-3750.0 -750.0 L3750.0 -750.0 L3750.0 750.0 Z\"/>",
+      "layer1": null,
+      "name": "5V",
+      "number": null,
+      "pad_type_id": 331,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:38:03Z",
+      "x": -200,
+      "y": 3500
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-01-30T17:37:45Z",
+      "dir": 0,
+      "drill": null,
+      "footprint_id": 609,
+      "generator_type": "single",
+      "id": 1714,
+      "layer0": "<path d=\"M3250.0 500.0 L-3250.0 500.0 L-3250.0 -500.0 L3250.0 -500.0 L3250.0 500.0 Z\"/>",
+      "layer1": null,
+      "name": "USB_M",
+      "number": null,
+      "pad_type_id": 332,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:38:03Z",
+      "x": 300,
+      "y": 1000
+    },
+    {
+      "path": "footprint.pads_attributes.2",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-01-30T17:37:45Z",
+      "dir": 0,
+      "drill": null,
+      "footprint_id": 609,
+      "generator_type": "single",
+      "id": 1715,
+      "layer0": "<path d=\"M3250.0 500.0 L-3250.0 500.0 L-3250.0 -500.0 L3250.0 -500.0 L3250.0 500.0 Z\"/>",
+      "layer1": null,
+      "name": "USB_P",
+      "number": null,
+      "pad_type_id": 332,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:38:03Z",
+      "x": 300,
+      "y": -1000
+    },
+    {
+      "path": "footprint.pads_attributes.3",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-01-30T17:37:45Z",
+      "dir": 0,
+      "drill": null,
+      "footprint_id": 609,
+      "generator_type": "single",
+      "id": 1716,
+      "layer0": "<path d=\"M3750.0 750.0 L-3750.0 750.0 L-3750.0 -750.0 L3750.0 -750.0 L3750.0 750.0 Z\"/>",
+      "layer1": null,
+      "name": "GND",
+      "number": null,
+      "pad_type_id": 331,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:38:03Z",
+      "x": -200,
+      "y": -3500
+    }
+  ],
+  "properties": [],
+  "datasheets_or_references": [
+    {
+      "path": "device.datasheet_urls",
+      "url": "[{\"filename\":\"67503-1230-Molex-datasheet-13746956.pdf\",\"url\":\"http://datasheet.octopart.com/67503-1230-Molex-datasheet-13746956.pdf\"}]"
+    },
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435060667dfe51c9567af7854d3c0fc35b8d4eba7/thumbnail20150623-27414-shi4tw.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435060667dfe51c9567af7854d3c0fc35b8d4eba7/thumbnail20150623-27414-shi4tw.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1433870294f3c5694255107afd836ff2ba97e9f2b5/thumbnail20150609-19042-1h8p6yo.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1433870294f3c5694255107afd836ff2ba97e9f2b5/thumbnail20150609-19042-1h8p6yo.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1433867924cce3d4388f78c6b2f1eb7c8b4c540f4b/thumbnail20150609-19054-1b6aryv.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1433867924cce3d4388f78c6b2f1eb7c8b4c540f4b/thumbnail20150609-19054-1b6aryv.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/116686.json"
+}

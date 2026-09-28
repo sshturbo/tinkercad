@@ -1,0 +1,196 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 54646,
+  "device_id": "241925",
+  "name": "1.5V Battery",
+  "description": "Standard AA or AAA batteries, with each battery providing 1.5V.",
+  "tags": [
+    "power",
+    "voltage",
+    "supply"
+  ],
+  "thumbnail": "batteryAA.png",
+  "thumbnail_source": "/batteryAA.png",
+  "footprint": {
+    "name": "Battery Connector AA ",
+    "id": 241925
+  },
+  "simulation_model": "AABattery",
+  "extents": {
+    "top": 0,
+    "left": -119,
+    "width": 238,
+    "height": 227.25
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2017-04-10T17:51:13Z",
+      "dir": -90.0,
+      "id": 308773,
+      "label": null,
+      "name": "Positive",
+      "schematic_symbol_id": 33746,
+      "terminal_type": "breadboard",
+      "updated_at": "2017-04-10T17:51:13Z",
+      "x": 5.0,
+      "y": 0.0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2017-04-10T17:51:13Z",
+      "dir": -90.0,
+      "id": 308772,
+      "label": null,
+      "name": "Negative",
+      "schematic_symbol_id": 33746,
+      "terminal_type": "breadboard",
+      "updated_at": "2017-04-10T17:51:13Z",
+      "x": -5.0,
+      "y": 0.0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2014-10-20T14:02:59Z",
+      "dir": 270.0,
+      "id": 154695,
+      "label": null,
+      "name": "+",
+      "schematic_symbol_id": 14366,
+      "terminal_type": "schematic",
+      "updated_at": "2014-10-20T14:06:36Z",
+      "x": 0.0,
+      "y": -30.0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2014-10-20T14:02:59Z",
+      "dir": 90.0,
+      "id": 154694,
+      "label": null,
+      "name": "-",
+      "schematic_symbol_id": 14366,
+      "terminal_type": "schematic",
+      "updated_at": "2014-10-20T14:06:36Z",
+      "x": 0.0,
+      "y": 37.5
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2016-01-26T23:43:39Z",
+      "dir": null,
+      "drill": "900",
+      "footprint_id": 35814,
+      "generator_type": null,
+      "id": 307506,
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2016-01-26T23:43:39Z",
+      "x": 2540.0,
+      "y": 0.0
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2016-01-26T23:43:39Z",
+      "dir": null,
+      "drill": "900",
+      "footprint_id": 35814,
+      "generator_type": null,
+      "id": 307505,
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2016-01-26T23:43:39Z",
+      "x": -2540.0,
+      "y": 0.0
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "created_at": "2017-04-10T17:51:44Z",
+      "default": 1.0,
+      "default_prefix": "1",
+      "default_show": null,
+      "device_id": 54646,
+      "id": 2559,
+      "name": "count",
+      "unit": "[[\"1\",\"1 battery\"],[\"2\",\"2 batteries\"],[\"3\",\"3 batteries\"],[\"4\",\"4 batteries\"]]",
+      "updated_at": "2017-04-10T17:51:44Z"
+    },
+    {
+      "path": "device.properties_attributes.1",
+      "created_at": "2017-04-10T17:51:44Z",
+      "default": 1.0,
+      "default_prefix": "AA",
+      "default_show": null,
+      "device_id": 54646,
+      "id": 2560,
+      "name": "type",
+      "unit": "[[\"AA\",\"AA\"],[\"AAA\",\"AAA\"]]",
+      "updated_at": "2017-04-10T17:51:44Z"
+    },
+    {
+      "path": "device.properties_attributes.2",
+      "created_at": "2014-07-30T12:43:19Z",
+      "default": 1.0,
+      "default_prefix": "no",
+      "default_show": null,
+      "device_id": 17916,
+      "id": 2561,
+      "name": "built-in switch",
+      "unit": "[[\"no\",\"no\"],[\"yes\",\"yes\"]]",
+      "updated_at": "2014-07-30T12:43:19Z"
+    }
+  ],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://s3-us-west-1.amazonaws.com/123d-circuits-assets/thumbnail-processing.gif"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://s3-us-west-1.amazonaws.com/123d-circuits-assets/thumbnail-processing.gif"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://s3-us-west-1.amazonaws.com/123d-circuits-assets/thumbnail-processing.gif"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://s3-us-west-1.amazonaws.com/123d-circuits-assets/thumbnail-processing.gif"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1453852116912c0c77c2cc28621f08f10296f7999a/thumbnail20160126-13747-ptcgza.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1453852116912c0c77c2cc28621f08f10296f7999a/thumbnail20160126-13747-ptcgza.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/241925.json"
+}

@@ -1,0 +1,143 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": "batteryPotatoid",
+  "device_id": "batteryPotato",
+  "name": "Potato Battery",
+  "description": "A chemical battery made from a potato, and some copper and zinc metal.",
+  "tags": [
+    "power",
+    "voltage",
+    "supply"
+  ],
+  "thumbnail": "batteryPotato.png",
+  "thumbnail_source": "/batteryPotato.png",
+  "footprint": {
+    "name": "Potato Battery Connector",
+    "id": "batteryPotato"
+  },
+  "simulation_model": "batteryPotato",
+  "extents": {
+    "top": -150,
+    "left": -179.9892578125,
+    "width": 349.99261474609375,
+    "height": 300.001953125
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "dir": -90,
+      "id": "batteryPotatostid1",
+      "label": null,
+      "name": "Positive",
+      "schematic_symbol_id": "batteryPotatobbid",
+      "terminal_type": "breadboard",
+      "x": 5,
+      "y": -150
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "dir": -90,
+      "id": "batteryPotatostid2",
+      "label": null,
+      "name": "Negative",
+      "schematic_symbol_id": "batteryPotatobbid",
+      "terminal_type": "breadboard",
+      "x": -5,
+      "y": -150
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "dir": 270,
+      "id": "batteryPotatospid1",
+      "label": null,
+      "name": "+",
+      "schematic_symbol_id": "batteryPotatossid",
+      "terminal_type": "schematic",
+      "x": 0,
+      "y": -30
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "dir": 90,
+      "id": "batteryPotatospid2",
+      "label": null,
+      "name": "-",
+      "schematic_symbol_id": "batteryPotatossid",
+      "terminal_type": "schematic",
+      "x": 0,
+      "y": 37.5
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "dir": null,
+      "drill": "900",
+      "footprint_id": "batteryPotatofpid",
+      "generator_type": null,
+      "id": "batteryPotatopaid1",
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "x": 2540,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "dir": null,
+      "drill": "900",
+      "footprint_id": "batteryPotatofpid",
+      "generator_type": null,
+      "id": "batteryPotatopaid2",
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "x": -2540,
+      "y": 0
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "default": 0.67,
+      "default_prefix": "v",
+      "default_show": false,
+      "device_id": "batteryPotatoid",
+      "id": "batteryPotatoppid2",
+      "name": "voltage",
+      "unit": ""
+    },
+    {
+      "path": "device.properties_attributes.1",
+      "default": 5.65,
+      "default_prefix": "k",
+      "default_show": false,
+      "device_id": "batteryPotatoid",
+      "id": "batteryPotatoppid1",
+      "name": "resistance",
+      "unit": "ohm"
+    }
+  ],
+  "datasheets_or_references": [],
+  "raw_device_json": "../../raw/packaged_devices/batteryPotato.json"
+}

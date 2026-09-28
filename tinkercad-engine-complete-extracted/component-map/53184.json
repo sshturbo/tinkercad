@@ -1,0 +1,7 @@
+{
+  "device_id": "53184",
+  "simulation_model": "resistor",
+  "implementation_found": true,
+  "module_id": "23274",
+  "model_file": "models/resistor--module-23274.js"
+}

@@ -1,0 +1,7 @@
+{
+  "device_id": "142078",
+  "simulation_model": "phototransistor",
+  "implementation_found": true,
+  "module_id": "49109",
+  "model_file": "models/phototransistor--module-49109.js"
+}

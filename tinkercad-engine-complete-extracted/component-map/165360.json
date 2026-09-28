@@ -1,0 +1,7 @@
+{
+  "device_id": "165360",
+  "simulation_model": "coinCell",
+  "implementation_found": true,
+  "module_id": "42520",
+  "model_file": "models/coinCell--module-42520.js"
+}

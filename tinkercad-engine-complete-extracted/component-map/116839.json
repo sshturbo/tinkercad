@@ -1,0 +1,7 @@
+{
+  "device_id": "116839",
+  "simulation_model": "pmos",
+  "implementation_found": true,
+  "module_id": "87092",
+  "model_file": "models/pmos--module-87092.js"
+}

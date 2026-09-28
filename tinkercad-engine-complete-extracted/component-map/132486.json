@@ -1,0 +1,7 @@
+{
+  "device_id": "132486",
+  "simulation_model": "sensor_tilt_sw200d",
+  "implementation_found": true,
+  "module_id": "59844",
+  "model_file": "models/sensor_tilt_sw200d--module-59844.js"
+}

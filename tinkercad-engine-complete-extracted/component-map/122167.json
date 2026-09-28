@@ -1,0 +1,7 @@
+{
+  "device_id": "122167",
+  "simulation_model": "relay_spdt",
+  "implementation_found": true,
+  "module_id": "24939",
+  "model_file": "models/relay_spdt--module-24939.js"
+}

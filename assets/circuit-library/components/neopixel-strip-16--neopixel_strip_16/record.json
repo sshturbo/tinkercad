@@ -1,0 +1,177 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": "neopixel_strip_16",
+  "device_id": "neopixel_strip_16",
+  "name": "NeoPixel Strip 16",
+  "description": "A flexible strip of RGB LEDs that can be controlled using a microcontroller.",
+  "tags": [
+    "output",
+    "light",
+    "display",
+    "led",
+    "ws2812"
+  ],
+  "thumbnail": "neopixelStrip16.png",
+  "thumbnail_source": "/neopixelStrip16.png",
+  "footprint": {
+    "name": "WS2812 strip",
+    "id": "neopixel_strip_16"
+  },
+  "simulation_model": "ws2812_strip16",
+  "extents": {
+    "top": -19.6,
+    "left": -524.8,
+    "width": 1049.6,
+    "height": 39.2
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "dir": 180,
+      "id": "neopixel_strip_16_5",
+      "label": null,
+      "name": "In",
+      "schematic_symbol_id": "neopixel_strip_16",
+      "terminal_type": "breadboard",
+      "x": -519.55,
+      "y": -10
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "dir": 180,
+      "id": "neopixel_strip_16_4",
+      "label": null,
+      "name": "Ground",
+      "schematic_symbol_id": "neopixel_strip_16",
+      "terminal_type": "breadboard",
+      "x": -519.55,
+      "y": 10
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.2",
+      "dir": 180,
+      "id": "neopixel_strip_16_3",
+      "label": null,
+      "name": "Power",
+      "schematic_symbol_id": "neopixel_strip_16",
+      "terminal_type": "breadboard",
+      "x": -519.55,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.3",
+      "dir": 90,
+      "id": "neopixel_strip_16_6",
+      "label": null,
+      "name": "Out",
+      "schematic_symbol_id": "neopixel_strip_16",
+      "terminal_type": "breadboard",
+      "x": 519.55,
+      "y": -10
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.4",
+      "dir": 90,
+      "id": "neopixel_strip_16_2",
+      "label": null,
+      "name": "Ground",
+      "schematic_symbol_id": "neopixel_strip_16",
+      "terminal_type": "breadboard",
+      "x": 519.55,
+      "y": 10
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.5",
+      "dir": 90,
+      "id": "neopixel_strip_16_1",
+      "label": null,
+      "name": "Power",
+      "schematic_symbol_id": "neopixel_strip_16",
+      "terminal_type": "breadboard",
+      "x": 519.55,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "dir": 270,
+      "id": "neopixel_strip_16_1",
+      "label": null,
+      "name": "vcc2",
+      "schematic_symbol_id": "neopixel_strip_16",
+      "terminal_type": "schematic",
+      "x": 20,
+      "y": 10
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "dir": 90,
+      "id": "neopixel_strip_16_2",
+      "label": null,
+      "name": "gnd2",
+      "schematic_symbol_id": "neopixel_strip_16",
+      "terminal_type": "schematic",
+      "x": 20,
+      "y": 150
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.2",
+      "dir": 270,
+      "id": "neopixel_strip_16_3",
+      "label": null,
+      "name": "vcc",
+      "schematic_symbol_id": "neopixel_strip_16",
+      "terminal_type": "schematic",
+      "x": 70,
+      "y": 99.7676942687458
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.3",
+      "dir": 90,
+      "id": "neopixel_strip_16_4",
+      "label": null,
+      "name": "gnd",
+      "schematic_symbol_id": "neopixel_strip_16",
+      "terminal_type": "schematic",
+      "x": -70,
+      "y": 100
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.4",
+      "dir": 180,
+      "id": "neopixel_strip_16_5",
+      "label": null,
+      "name": "din",
+      "schematic_symbol_id": "neopixel_strip_16",
+      "terminal_type": "schematic",
+      "x": -20,
+      "y": -150
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.5",
+      "dir": 0,
+      "id": "neopixel_strip_16_6",
+      "label": null,
+      "name": "dout",
+      "schematic_symbol_id": "neopixel_strip_16",
+      "terminal_type": "schematic",
+      "x": 70,
+      "y": 99.7676942687458
+    }
+  ],
+  "properties": [],
+  "datasheets_or_references": [
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14661128601bfdb73da900eb9ff011640539b4adf0/thumbnail20160616-8031-aggg14.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/neopixel_strip_16.json"
+}

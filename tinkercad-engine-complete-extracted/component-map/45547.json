@@ -1,0 +1,7 @@
+{
+  "device_id": "45547",
+  "simulation_model": "potentiometer_v2",
+  "implementation_found": true,
+  "module_id": "30148",
+  "model_file": "models/potentiometer_v2--module-30148.js"
+}

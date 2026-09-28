@@ -1,0 +1,7 @@
+{
+  "device_id": "solarCell",
+  "simulation_model": "solarCell",
+  "implementation_found": true,
+  "module_id": "27051",
+  "model_file": "models/solarCell--module-27051.js"
+}

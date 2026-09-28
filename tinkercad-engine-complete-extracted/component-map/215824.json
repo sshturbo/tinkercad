@@ -1,0 +1,7 @@
+{
+  "device_id": "215824",
+  "simulation_model": "ws2812b_ring24",
+  "implementation_found": true,
+  "module_id": "57962",
+  "model_file": "models/ws2812b_ring24--module-57962.js"
+}

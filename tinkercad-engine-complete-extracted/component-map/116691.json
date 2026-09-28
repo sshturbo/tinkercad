@@ -1,0 +1,7 @@
+{
+  "device_id": "116691",
+  "simulation_model": "ldr_v2",
+  "implementation_found": true,
+  "module_id": "35963",
+  "model_file": "models/ldr_v2--module-35963.js"
+}

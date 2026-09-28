@@ -1,0 +1,7 @@
+{
+  "device_id": "116693",
+  "simulation_model": "lightBulb",
+  "implementation_found": true,
+  "module_id": "9482",
+  "model_file": "models/lightBulb--module-9482.js"
+}

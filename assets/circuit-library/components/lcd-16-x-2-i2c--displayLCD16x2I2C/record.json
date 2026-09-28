@@ -1,0 +1,227 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": "displayLCD16x2I2C",
+  "device_id": "displayLCD16x2I2C",
+  "name": "LCD 16 x 2 (I2C)",
+  "description": "A Liquid Crystal Display capable of displaying two lines of 16 characters.",
+  "tags": [
+    "output",
+    "display",
+    "i2c"
+  ],
+  "thumbnail": "displayLCD16x2I2C.png",
+  "thumbnail_source": "/displayLCD16x2I2C.png",
+  "footprint": {
+    "name": "LCD 16 x 2",
+    "id": "displayLCD16x2I2C"
+  },
+  "simulation_model": "LCD_HD44780_I2C",
+  "extents": {
+    "top": -71,
+    "left": -162.5,
+    "width": 320,
+    "height": 142
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "dir": 180,
+      "id": "displayLCD16x2I2Cstid0",
+      "label": null,
+      "name": "Ground",
+      "schematic_symbol_id": "displayLCD16x2I2Cbbid",
+      "terminal_type": "breadboard",
+      "x": -162.5,
+      "y": -46
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "dir": 180,
+      "id": "displayLCD16x2I2Cstid1",
+      "label": null,
+      "name": "Power",
+      "schematic_symbol_id": "displayLCD16x2I2Cbbid",
+      "terminal_type": "breadboard",
+      "x": -162.5,
+      "y": -36
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.2",
+      "dir": 180,
+      "id": "displayLCD16x2I2Cstid2",
+      "label": null,
+      "name": "SDA",
+      "schematic_symbol_id": "displayLCD16x2I2Cbbid",
+      "terminal_type": "breadboard",
+      "x": -162.5,
+      "y": -26
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.3",
+      "dir": 180,
+      "id": "displayLCD16x2I2Cstid3",
+      "label": null,
+      "name": "SCL",
+      "schematic_symbol_id": "displayLCD16x2I2Cbbid",
+      "terminal_type": "breadboard",
+      "x": -162.5,
+      "y": -16
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "dir": 180,
+      "id": "displayLCD16x2I2Cspid0",
+      "label": null,
+      "name": "Ground",
+      "schematic_symbol_id": "displayLCD16x2I2Cssid",
+      "terminal_type": "schematic",
+      "x": -162.5,
+      "y": -46
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "dir": 180,
+      "id": "displayLCD16x2I2Cspid1",
+      "label": null,
+      "name": "Power",
+      "schematic_symbol_id": "displayLCD16x2I2Cssid",
+      "terminal_type": "schematic",
+      "x": -162.5,
+      "y": -36
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.2",
+      "dir": 180,
+      "id": "displayLCD16x2I2Cspid2",
+      "label": null,
+      "name": "SDA",
+      "schematic_symbol_id": "displayLCD16x2I2Cssid",
+      "terminal_type": "schematic",
+      "x": -162.5,
+      "y": -26
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.3",
+      "dir": 180,
+      "id": "displayLCD16x2I2Cspid3",
+      "label": null,
+      "name": "SCL",
+      "schematic_symbol_id": "displayLCD16x2I2Cssid",
+      "terminal_type": "schematic",
+      "x": -162.5,
+      "y": -16
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "dir": null,
+      "drill": "900",
+      "footprint_id": "displayLCD16x2I2Cfpid",
+      "generator_type": null,
+      "id": "displayLCD16x2I2Cpaid0",
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": 0,
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "x": -41275,
+      "y": -11684
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "dir": null,
+      "drill": "900",
+      "footprint_id": "displayLCD16x2I2Cfpid",
+      "generator_type": null,
+      "id": "displayLCD16x2I2Cpaid1",
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": 1,
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "x": -41275,
+      "y": -9144
+    },
+    {
+      "path": "footprint.pads_attributes.2",
+      "col_pitch": null,
+      "cols": null,
+      "dir": null,
+      "drill": "900",
+      "footprint_id": "displayLCD16x2I2Cfpid",
+      "generator_type": null,
+      "id": "displayLCD16x2I2Cpaid2",
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": 2,
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "x": -41275,
+      "y": -6604
+    },
+    {
+      "path": "footprint.pads_attributes.3",
+      "col_pitch": null,
+      "cols": null,
+      "dir": null,
+      "drill": "900",
+      "footprint_id": "displayLCD16x2I2Cfpid",
+      "generator_type": null,
+      "id": "displayLCD16x2I2Cpaid3",
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": 3,
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "x": -41275,
+      "y": -4064
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "default": 0,
+      "default_prefix": "MCP23008",
+      "default_show": true,
+      "device_id": "displayLCD16x2I2Cid",
+      "id": "displayLCD16x2I2Cppid0",
+      "name": "type",
+      "unit": "[[\"MCP23008\",\"MCP23008\"],[\"PCF8574\",\"PCF8574\"]]"
+    },
+    {
+      "path": "device.properties_attributes.1",
+      "default": 0,
+      "default_prefix": "32",
+      "default_show": true,
+      "device_id": "displayLCD16x2I2Cid",
+      "id": "displayLCD16x2I2Cppid1",
+      "name": "address",
+      "unit": "[[\"32\",\"32 (0x20)\"],[\"33\",\"33 (0x21)\"],[\"34\",\"34 (0x22)\"],[\"35\",\"35 (0x23)\"],[\"36\",\"36 (0x24)\"],[\"37\",\"37 (0x25)\"],[\"38\",\"38 (0x26)\"],[\"39\",\"39 (0x27)\"]]"
+    }
+  ],
+  "datasheets_or_references": [],
+  "raw_device_json": "../../raw/packaged_devices/displayLCD16x2I2C.json"
+}

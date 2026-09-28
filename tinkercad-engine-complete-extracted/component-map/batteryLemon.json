@@ -1,0 +1,7 @@
+{
+  "device_id": "batteryLemon",
+  "simulation_model": "batteryLemon",
+  "implementation_found": true,
+  "module_id": "99737",
+  "model_file": "models/batteryLemon--module-99737.js"
+}

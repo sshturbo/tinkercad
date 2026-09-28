@@ -1,0 +1,7 @@
+{
+  "device_id": "116689",
+  "simulation_model": "Timer555",
+  "implementation_found": true,
+  "module_id": "27251",
+  "model_file": "models/Timer555--module-27251.js"
+}

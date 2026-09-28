@@ -1,0 +1,7 @@
+{
+  "device_id": "58208",
+  "simulation_model": "inductor",
+  "implementation_found": true,
+  "module_id": "91271",
+  "model_file": "models/inductor--module-91271.js"
+}

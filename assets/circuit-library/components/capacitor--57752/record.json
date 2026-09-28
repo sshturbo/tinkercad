@@ -1,0 +1,174 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 17910,
+  "device_id": "57752",
+  "name": "Capacitor",
+  "description": "Stores and releases electrical energy in a circuit.",
+  "tags": [
+    "general"
+  ],
+  "thumbnail": "capacitor.png",
+  "thumbnail_source": "/capacitor.png",
+  "footprint": {
+    "name": "C1206K",
+    "id": 57752
+  },
+  "simulation_model": "capacitor",
+  "extents": {
+    "top": -26.40999984741211,
+    "left": -9.619999885559082,
+    "width": 19.239999771118164,
+    "height": 26.529998779296875
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-23T11:42:05Z",
+      "dir": 90,
+      "id": 202926,
+      "label": null,
+      "name": "Terminal 1",
+      "schematic_symbol_id": 20218,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T11:42:05Z",
+      "x": -5,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-23T11:42:05Z",
+      "dir": 90,
+      "id": 202927,
+      "label": null,
+      "name": "Terminal 2",
+      "schematic_symbol_id": 20218,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T11:42:05Z",
+      "x": 5,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2012-07-03T19:39:37Z",
+      "dir": 270,
+      "id": 8,
+      "label": null,
+      "name": "1",
+      "schematic_symbol_id": 6,
+      "terminal_type": "schematic",
+      "updated_at": "2012-07-03T19:39:37Z",
+      "x": 0,
+      "y": -19.8
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2012-07-03T19:39:37Z",
+      "dir": 90,
+      "id": 9,
+      "label": null,
+      "name": "2",
+      "schematic_symbol_id": 6,
+      "terminal_type": "schematic",
+      "updated_at": "2012-07-03T19:39:37Z",
+      "x": 0,
+      "y": 19.8
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-02-18T14:49:29Z",
+      "dir": 0,
+      "drill": null,
+      "footprint_id": 1077,
+      "generator_type": "single",
+      "id": 3262,
+      "layer0": "<rect x=\"-750.0\" y=\"-1000.0\" width=\"1500.0\" height=\"2000.0\"/>",
+      "layer1": null,
+      "name": "1",
+      "number": null,
+      "pad_type_id": 533,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:45:59Z",
+      "x": -1500,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-02-18T14:49:29Z",
+      "dir": 0,
+      "drill": null,
+      "footprint_id": 1077,
+      "generator_type": "single",
+      "id": 3263,
+      "layer0": "<rect x=\"-750.0\" y=\"-1000.0\" width=\"1500.0\" height=\"2000.0\"/>",
+      "layer1": null,
+      "name": "2",
+      "number": null,
+      "pad_type_id": 533,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:45:59Z",
+      "x": 1500,
+      "y": 0
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "created_at": "2014-07-30T10:09:38Z",
+      "default": 100,
+      "default_prefix": "n",
+      "default_show": false,
+      "device_id": 17910,
+      "id": 279,
+      "name": "capacitance",
+      "unit": "F",
+      "updated_at": "2014-07-30T10:09:38Z"
+    }
+  ],
+  "datasheets_or_references": [
+    {
+      "path": "device.datasheet_urls",
+      "url": "[{\"filename\":\"08055C103KAT2A-AVX-datasheet-12509786.pdf\",\"url\":\"http://datasheet.octopart.com/08055C103KAT2A-AVX-datasheet-12509786.pdf\"}]"
+    },
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435059896a3622764602ac2dc7a6859e2fd856863/thumbnail20150623-5132-k4l9bl.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435059896a3622764602ac2dc7a6859e2fd856863/thumbnail20150623-5132-k4l9bl.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1431754581569ba28a55cf9151a79b4f9f26b6fffe/thumbnail20150516-8452-1ac1co3.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1431754581569ba28a55cf9151a79b4f9f26b6fffe/thumbnail20150516-8452-1ac1co3.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14338675469c4174b588def57acfd8d869d2a05ae1/thumbnail20150609-19042-1lado4o.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14338675469c4174b588def57acfd8d869d2a05ae1/thumbnail20150609-19042-1lado4o.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/57752.json"
+}

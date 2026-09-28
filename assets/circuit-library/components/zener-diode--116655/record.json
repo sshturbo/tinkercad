@@ -1,0 +1,174 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 28708,
+  "device_id": "116655",
+  "name": "Zener Diode",
+  "description": "Like a regular diode but lets current flow in reverse if the Zener voltage is reached.",
+  "tags": [
+    "general"
+  ],
+  "thumbnail": "diodeZener.png",
+  "thumbnail_source": "/diodeZener.png",
+  "footprint": {
+    "name": "DIODE-ZENER",
+    "id": 116655
+  },
+  "simulation_model": "zenerDiode",
+  "extents": {
+    "top": -20,
+    "left": -4.75,
+    "width": 9.5,
+    "height": 40
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-23T11:11:40Z",
+      "dir": 90,
+      "id": 202918,
+      "label": null,
+      "name": "Cathode",
+      "schematic_symbol_id": 20216,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T11:11:40Z",
+      "x": 0,
+      "y": 20
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-23T11:11:40Z",
+      "dir": -90,
+      "id": 202919,
+      "label": null,
+      "name": "Anode",
+      "schematic_symbol_id": 20216,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T11:11:40Z",
+      "x": 0,
+      "y": -20
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2013-02-19T14:50:36Z",
+      "dir": 180,
+      "id": 1692,
+      "label": null,
+      "name": "A",
+      "schematic_symbol_id": 1484,
+      "terminal_type": "schematic",
+      "updated_at": "2013-02-19T14:50:36Z",
+      "x": -12.7,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2013-02-19T14:50:36Z",
+      "dir": 0,
+      "id": 1693,
+      "label": null,
+      "name": "C",
+      "schematic_symbol_id": 1484,
+      "terminal_type": "schematic",
+      "updated_at": "2013-02-19T14:50:36Z",
+      "x": 12.7,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-12-05T22:23:37Z",
+      "dir": 0,
+      "drill": "900.0",
+      "footprint_id": 12837,
+      "generator_type": "single",
+      "id": 82821,
+      "layer0": "<circle x=\"0\" y=\"0\" r=\"1092.2\"/>",
+      "layer1": "<circle x=\"0\" y=\"0\" r=\"1092.2\"/>",
+      "name": "P$2",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-12-05T22:23:37Z",
+      "x": 3556,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-12-05T22:23:37Z",
+      "dir": 0,
+      "drill": "900.0",
+      "footprint_id": 12837,
+      "generator_type": "single",
+      "id": 82820,
+      "layer0": "<circle x=\"0\" y=\"0\" r=\"1092.2\"/>",
+      "layer1": "<circle x=\"0\" y=\"0\" r=\"1092.2\"/>",
+      "name": "P$1",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-12-05T22:23:37Z",
+      "x": -3556,
+      "y": 0
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "created_at": "2015-10-07T22:56:01Z",
+      "default": 5.1,
+      "default_prefix": "none",
+      "default_show": false,
+      "device_id": 28708,
+      "id": 1053,
+      "name": "zener voltage",
+      "unit": "V",
+      "updated_at": "2015-10-07T22:56:01Z"
+    }
+  ],
+  "datasheets_or_references": [
+    {
+      "path": "device.datasheet_urls",
+      "url": "[{\"filename\":\"1SMB5934BT3G-ON-Semiconductor-datasheet-153452.pdf\",\"url\":\"http://datasheet.octopart.com/1SMB5934BT3G-ON-Semiconductor-datasheet-153452.pdf\"}]"
+    },
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/143505805829c98efe8a9ed3cc3fd41cd528b23c9f/thumbnail20150623-27426-117j2d6.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/143505805829c98efe8a9ed3cc3fd41cd528b23c9f/thumbnail20150623-27426-117j2d6.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1431907324248a8f39cf1327acb531fcab882bc8b4/thumbnail20150518-28799-1qvjz6q.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1431907324248a8f39cf1327acb531fcab882bc8b4/thumbnail20150518-28799-1qvjz6q.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1434969745b9a7f27cee16c87b31cd72bd74a0ee13/thumbnail20150622-31314-wz3npe.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1434969745b9a7f27cee16c87b31cd72bd74a0ee13/thumbnail20150622-31314-wz3npe.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/116655.json"
+}

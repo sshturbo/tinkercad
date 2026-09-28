@@ -1,0 +1,158 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 28256,
+  "device_id": "114158",
+  "name": "DC Motor",
+  "description": "A motor, which converts electrical energy into mechanical energy.",
+  "tags": [
+    "output",
+    "motion"
+  ],
+  "thumbnail": "motorDCArduinoKit.png",
+  "thumbnail_source": "/motorDCArduinoKit.png",
+  "footprint": {
+    "name": "Motor Connector 2.5mm holes",
+    "id": 114158
+  },
+  "simulation_model": "dc_motor_arduino",
+  "extents": {
+    "top": -81,
+    "left": -47.5,
+    "width": 95,
+    "height": 81
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-12T15:47:26Z",
+      "dir": 90,
+      "id": 199302,
+      "label": null,
+      "name": "Terminal 1",
+      "schematic_symbol_id": 19926,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-12T15:47:26Z",
+      "x": -10,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-12T15:47:26Z",
+      "dir": 90,
+      "id": 199303,
+      "label": null,
+      "name": "Terminal 2",
+      "schematic_symbol_id": 19926,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-12T15:47:26Z",
+      "x": 10,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-10T18:39:03Z",
+      "dir": 90,
+      "id": 198978,
+      "label": null,
+      "name": "2",
+      "schematic_symbol_id": 19856,
+      "terminal_type": "schematic",
+      "updated_at": "2015-06-10T18:51:04Z",
+      "x": -25.0575449768122,
+      "y": 30.0111111111111
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-10T18:39:03Z",
+      "dir": -90,
+      "id": 198979,
+      "label": null,
+      "name": "1",
+      "schematic_symbol_id": 19856,
+      "terminal_type": "schematic",
+      "updated_at": "2015-06-10T18:51:04Z",
+      "x": -25.0575449768122,
+      "y": -30
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-06-11T21:13:35Z",
+      "dir": null,
+      "drill": "2500",
+      "footprint_id": 30156,
+      "generator_type": null,
+      "id": 248286,
+      "layer0": "<rect x=\"-2000\" y=\"-2000\" width=\"4000\" height=\"4000\" rx=\"2000\" ry=\"2000\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-2000\" y=\"-2000\" width=\"4000\" height=\"4000\" rx=\"2000\" ry=\"2000\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-06-11T21:13:35Z",
+      "x": -2540,
+      "y": 2540
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2015-06-11T21:13:35Z",
+      "dir": null,
+      "drill": "2500",
+      "footprint_id": 30156,
+      "generator_type": null,
+      "id": 248287,
+      "layer0": "<rect x=\"-2000\" y=\"-2000\" width=\"4000\" height=\"4000\" rx=\"2000\" ry=\"2000\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-2000\" y=\"-2000\" width=\"4000\" height=\"4000\" rx=\"2000\" ry=\"2000\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2015-06-11T21:13:35Z",
+      "x": 2540,
+      "y": 2540
+    }
+  ],
+  "properties": [],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/144379402090adf40236621c377b7bb371e5f6dd1b/thumbnail20151002-10239-vqtvd0.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/144379402090adf40236621c377b7bb371e5f6dd1b/thumbnail20151002-10239-vqtvd0.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14467550508a43fc043c7e0a6106f9eb4bed639cbd/thumbnail20151105-24887-4r7nyv.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14467550508a43fc043c7e0a6106f9eb4bed639cbd/thumbnail20151105-24887-4r7nyv.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1436386759ca20b810e9556b8a38d1515b9af6e4cd/thumbnail20150708-20399-1pb229x.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1436386759ca20b810e9556b8a38d1515b9af6e4cd/thumbnail20150708-20399-1pb229x.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/114158.json"
+}

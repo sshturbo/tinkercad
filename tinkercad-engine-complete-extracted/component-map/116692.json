@@ -1,0 +1,7 @@
+{
+  "device_id": "116692",
+  "simulation_model": "opAmp_UA741",
+  "implementation_found": true,
+  "module_id": "72622",
+  "model_file": "models/opAmp_UA741--module-72622.js"
+}

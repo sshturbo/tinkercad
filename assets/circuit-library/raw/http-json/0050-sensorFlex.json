@@ -1,0 +1,179 @@
+{
+  "url": "https://editor.tinkercad.com/assets_cc_1faad5n/js/packaged_devices/sensorFlex.json",
+  "payload": {
+    "device_id": "sensorFlexid",
+    "footprint_id": "sensorFlexfpid",
+    "id": "sensorFlex",
+    "footprint_name": "Flex Sensor connector",
+    "root_id": "sensorFlexpdrid",
+    "device": {
+      "base": "R",
+      "breadboard_id": "sensorFlexbbid",
+      "circuitscribe_footprint_id": null,
+      "circuitscribe_footprint_rotation": 0,
+      "description": "A sensor whose resistance changes as it bends.",
+      "id": "sensorFlexid",
+      "name": "Flex Sensor",
+      "programmable": false,
+      "programmable_settings": "",
+      "simulation_model": "sensorFlex",
+      "version_root_id": "sensorFlexpdrid",
+      "breadboard": {
+        "background": false,
+        "breadboard": false,
+        "extents": {
+          "top": -145,
+          "left": -12.5,
+          "width": 25,
+          "height": 308
+        },
+        "id": "sensorFlexbbid",
+        "name": "breadboard_sensorFlex",
+        "svg": "<svg class=\"cgfx__sensor-flex\" viewbox=\"-1000 -1000 2000 2000\" width=\"2000\" height=\"2000\" x=\"-1000\" y=\"-1000\"><path class=\"cgfx__selected\" fill='none' stroke='#3b8ed7' stroke-linecap='round' stroke-linejoin='round' display='none' stroke-width='3' d=\"M-12.5,145v-277.5a12.5,12.5 0 1 1 25,0v277.5z\"/><path class=\"cgfx__flex_film\" d=\"M-12.5,95v-227.5a12.5,12.5 0 1 1 25,0v227.5z\" fill=\"#B46819\"/><path d=\"M-12.5,95v50h25v-50z\" fill=\"#B46819\" opacity=\".7\"/><path d=\"M-9.25,85v-7h12v7z\" fill=\"#2C2C2C\"/><path d=\"M-9,145v-57.5h-.75v-5h.5v2.5h12v-2.5h.5v2.5l-2.5,2.5h-1.75v57.5z\" fill=\"#BFBFBF\"/><path d=\"M1,145v-38l6,-6v-6h2v50z\" fill=\"#BFBFBF\"/><path class=\"cgfx__flex_silver\" d=\"M9,95h-2v-218.6h2z\" fill=\"#BFBFBF\"/><g class=\"cgfx__flex_segment_0\" transform=\"translate(0,78)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_1\" transform=\"translate(0,68.4)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_2\" transform=\"translate(0,58.8)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_3\" transform=\"translate(0,49.2)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_4\" transform=\"translate(0,39.6)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_5\" transform=\"translate(0,30)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_6\" transform=\"translate(0,20.400000000000006)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_7\" transform=\"translate(0,10.799999999999997)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_8\" transform=\"translate(0,1.2000000000000028)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_9\" transform=\"translate(0,-8.399999999999991)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_10\" transform=\"translate(0,-18)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_11\" transform=\"translate(0,-27.599999999999994)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_12\" transform=\"translate(0,-37.19999999999999)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_13\" transform=\"translate(0,-46.8)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_14\" transform=\"translate(0,-56.400000000000006)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_15\" transform=\"translate(0,-66)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_16\" transform=\"translate(0,-75.6)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_17\" transform=\"translate(0,-85.19999999999999)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_18\" transform=\"translate(0,-94.79999999999998)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_19\" transform=\"translate(0,-104.4)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_20\" transform=\"translate(0,-114)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-4.6h12v4.6z\" fill=\"#2C2C2C\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-9.6h25v9.6z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><g class=\"cgfx__flex_segment_21\" transform=\"translate(0,-123.6)\"><path d=\"M-9.5,0v-5h12.5v5z\" fill=\"#BFBFBF\"/><path d=\"M-9.25,-5v-6.4h12v6.4z\" fill=\"#2C2C2C\"/><path d=\"M7,0v-8.9h-4.25v-2.5h-12v2.5h-.5v-2.5l2.5,-2.5h13.75l2.5,2.5v11.4z\" fill=\"#BFBFBF\"/><path class=\"cgfx__flex_reflection\" d=\"M-12.5,0v-8.9a12.5,12.5 0 1 1 25,0v8.9z\" fill=\"#FFFFFF\" + opacity=\"0\" display=\"none\"/></g><path d=\"M-6.25,163v-14a2.78,2.78 0 0 0 -2,-2.67a.34,.34 0 0 1 -.25,-.33v-23l1,-1h5l1,1v23a.34,.34 0 0 1 -.25,.33a2.78,2.78 0 0 0 -2,2.67v14zM-6.5,140.5v-4h3v4zM-6.5,131v-4h3v4z\" fill=\"#8C8C8C\" fill-rule=\"evenodd\"/><path d=\"M3.75,163v-14a2.78,2.78 0 0 0 -2,-2.67a.34,.34 0 0 1 -.25,-.33v-23l1,-1h5l1,1v23a.34,.34 0 0 1 -.25,.33a2.78,2.78 0 0 0 -2,2.67v14zM3.5,140.5v-4h3v4zM3.5,131v-4h3v4z\" fill=\"#8C8C8C\" fill-rule=\"evenodd\"/><g class=\"cgfx__flex_bend\" transform=\"translate(0,110)\" display=\"none\"><g class=\"cgfx__norotate\"><rect x=\"-9.23\" y=\"-10.06\" width=\"18.47\" height=\"18.47\" rx=\"9.23\" fill=\"#ffffff\" opacity=\".8\"/><text fill=\"#000000\" style=\"dominant-baseline:middle;text-anchor:middle;font-size:11px\">0°</text></g></g><path class=\"cgfx__hitarea cgfx__body\"  style='fill:#ff0000;' opacity='0' display='none' d=\"M-12.5,145v-277.5a12.5,12.5 0 1 1 25,0v277.5z\"/><path class=\"cgfx__hitarea\"  style='fill:#ff0000;' opacity='0' display='none' d=\"M-6.25,163v-14a2.78,2.78 0 0 0 -2,-2.67a.34,.34 0 0 1 -.25,-.33v-23l1,-1h5l1,1v23a.34,.34 0 0 1 -.25,.33a2.78,2.78 0 0 0 -2,2.67v14zM-6.5,140.5v-4h3v4zM-6.5,131v-4h3v4z\"/><path class=\"cgfx__hitarea\"  style='fill:#ff0000;' opacity='0' display='none' d=\"M3.75,163v-14a2.78,2.78 0 0 0 -2,-2.67a.34,.34 0 0 1 -.25,-.33v-23l1,-1h5l1,1v23a.34,.34 0 0 1 -.25,.33a2.78,2.78 0 0 0 -2,2.67v14zM3.5,140.5v-4h3v4zM3.5,131v-4h3v4z\"/><g class=\"cgfx__hitarea-interaction\" style='fill:#ff0000;' opacity='0' display='none'><path d=\"M-12.5,95v-227.5a12.5,12.5 0 1 1 25,0v227.5z\"/><circle class=\"cgfx__reference_point_1\" cx=\"1\", cy=\"95\" r=\".01\" opacity=\"0\"/><circle class=\"cgfx__reference_point_2\" cx=\"1\", cy=\"-132.5\" r=\".01\" opacity=\"0\"/></g><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">1</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"-5\" y1=\"161.75\" x2=\"-5\" y2=\"186.75\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">2</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"5\" y1=\"161.75\" x2=\"5\" y2=\"186.75\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g></svg>",
+        "symbol_type": "breadboard",
+        "terminal_list": null,
+        "rootId": "sensorFlexbbrid",
+        "schematic_symbol_terminals_attributes": [
+          {
+            "dir": 90,
+            "id": "sensorFlexstid0",
+            "label": null,
+            "name": "1",
+            "schematic_symbol_id": "sensorFlexbbid",
+            "terminal_type": "breadboard",
+            "x": -5,
+            "y": 161.75
+          },
+          {
+            "dir": 90,
+            "id": "sensorFlexstid1",
+            "label": null,
+            "name": "2",
+            "schematic_symbol_id": "sensorFlexbbid",
+            "terminal_type": "breadboard",
+            "x": 5,
+            "y": 161.75
+          }
+        ]
+      },
+      "subdevices_attributes": [
+        {
+          "device_id": "sensorFlexid",
+          "id": "sensorFlexsaid",
+          "init_x": 0,
+          "init_y": 0,
+          "name": null,
+          "schematic_symbol_id": "sensorFlexssid",
+          "schematic_symbol_attributes": {
+            "background": false,
+            "breadboard": false,
+            "generator_type": "normal",
+            "id": "sensorFlexssid",
+            "name": "Flex Sensor",
+            "svg": "<circle stroke=\"#000000\" stroke-width=\"2\" fill=\"none\" cx=\"0\" cy=\"0\" r=\"10\"/>",
+            "symbol_type": "schematic",
+            "terminal_list": null,
+            "rootId": "sensorFlexssrid",
+            "schematic_symbol_terminals_attributes": [
+              {
+                "dir": 90,
+                "id": "sensorFlexspid0",
+                "label": null,
+                "name": "1",
+                "schematic_symbol_id": "sensorFlexssid",
+                "terminal_type": "schematic",
+                "x": -5,
+                "y": 161.75
+              },
+              {
+                "dir": 90,
+                "id": "sensorFlexspid1",
+                "label": null,
+                "name": "2",
+                "schematic_symbol_id": "sensorFlexssid",
+                "terminal_type": "schematic",
+                "x": 5,
+                "y": 161.75
+              }
+            ]
+          }
+        }
+      ],
+      "properties_attributes": [
+        {
+          "default": 30,
+          "default_prefix": "k",
+          "default_show": true,
+          "device_id": "sensorFlexid",
+          "id": "sensorFlexppid0",
+          "name": "flat resistance",
+          "unit": "hidden"
+        }
+      ]
+    },
+    "footprint": {
+      "id": "sensorFlexfpid",
+      "name": "Flex Sensor connector",
+      "outline": "<g></g>",
+      "rootId": "sensorFlexfprid",
+      "pads_attributes": [
+        {
+          "col_pitch": null,
+          "cols": null,
+          "dir": null,
+          "drill": "900",
+          "footprint_id": "sensorFlexfpid",
+          "generator_type": null,
+          "id": "sensorFlexpaid0",
+          "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "name": 0,
+          "number": null,
+          "pad_type_id": null,
+          "pin_spacing": null,
+          "row_pitch": null,
+          "rows": null,
+          "x": -1270,
+          "y": 41084.5
+        },
+        {
+          "col_pitch": null,
+          "cols": null,
+          "dir": null,
+          "drill": "900",
+          "footprint_id": "sensorFlexfpid",
+          "generator_type": null,
+          "id": "sensorFlexpaid1",
+          "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "name": 1,
+          "number": null,
+          "pad_type_id": null,
+          "pin_spacing": null,
+          "row_pitch": null,
+          "rows": null,
+          "x": 1270,
+          "y": 41084.5
+        }
+      ]
+    },
+    "pinmaps_attributes": [
+      {
+        "pmid": "sensorFlexpmid0",
+        "did": "sensorFlex",
+        "ppid": "sensorFlexpaid0",
+        "sdid": "sensorFlexsaid",
+        "spid": "sensorFlexspid0",
+        "bbid": "sensorFlexstid0"
+      },
+      {
+        "pmid": "sensorFlexpmid1",
+        "did": "sensorFlex",
+        "ppid": "sensorFlexpaid1",
+        "sdid": "sensorFlexsaid",
+        "spid": "sensorFlexspid1",
+        "bbid": "sensorFlexstid1"
+      }
+    ]
+  }
+}

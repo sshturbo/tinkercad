@@ -1,0 +1,7 @@
+{
+  "device_id": "59076",
+  "simulation_model": "power_pmos",
+  "implementation_found": true,
+  "module_id": "53181",
+  "model_file": "models/power_pmos--module-53181.js"
+}

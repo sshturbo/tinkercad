@@ -1,0 +1,7 @@
+{
+  "device_id": "ic74hc283",
+  "simulation_model": "74HC283",
+  "implementation_found": true,
+  "module_id": "75903",
+  "model_file": "models/74HC283--module-75903.js"
+}

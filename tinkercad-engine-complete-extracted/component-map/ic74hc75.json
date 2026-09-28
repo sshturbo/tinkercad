@@ -1,0 +1,7 @@
+{
+  "device_id": "ic74hc75",
+  "simulation_model": "74HC75",
+  "implementation_found": true,
+  "module_id": "82366",
+  "model_file": "models/74HC75--module-82366.js"
+}

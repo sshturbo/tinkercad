@@ -1,0 +1,7 @@
+{
+  "device_id": "icPCF8574",
+  "simulation_model": "pcf8574",
+  "implementation_found": true,
+  "module_id": "44504",
+  "model_file": "models/pcf8574--module-44504.js"
+}

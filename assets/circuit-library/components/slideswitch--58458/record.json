@@ -1,0 +1,222 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 17919,
+  "device_id": "58458",
+  "name": "Slideswitch",
+  "description": "A switch with two positions: open or closed.",
+  "tags": [
+    "input",
+    "button"
+  ],
+  "thumbnail": "slideSwitch.png",
+  "thumbnail_source": "/slideSwitch.png",
+  "footprint": {
+    "name": "SWITCH-SPDT",
+    "id": 58458
+  },
+  "simulation_model": "slide_switch_v2",
+  "extents": {
+    "top": -15,
+    "left": -14,
+    "width": 28,
+    "height": 15
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    },
+    {
+      "type": "schematic",
+      "file": "svg/schematic.svg",
+      "json_path": "device.subdevices_attributes.0.schematic_symbol_attributes.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-23T10:22:08Z",
+      "dir": 90,
+      "id": 202731,
+      "label": null,
+      "name": "Terminal 1",
+      "schematic_symbol_id": 20206,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T10:22:08Z",
+      "x": -10,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-23T10:22:08Z",
+      "dir": 90,
+      "id": 202732,
+      "label": null,
+      "name": "Terminal 2",
+      "schematic_symbol_id": 20206,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T10:22:08Z",
+      "x": 10,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.2",
+      "created_at": "2015-06-23T10:22:08Z",
+      "dir": 90,
+      "id": 202733,
+      "label": null,
+      "name": "Common",
+      "schematic_symbol_id": 20206,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T10:22:08Z",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2012-10-14T13:20:09Z",
+      "dir": 180,
+      "id": 91,
+      "label": null,
+      "name": "1",
+      "schematic_symbol_id": 74,
+      "terminal_type": "schematic",
+      "updated_at": "2012-10-14T13:20:42Z",
+      "x": 80,
+      "y": 50
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2012-10-14T13:20:09Z",
+      "dir": 180,
+      "id": 92,
+      "label": null,
+      "name": "2",
+      "schematic_symbol_id": 74,
+      "terminal_type": "schematic",
+      "updated_at": "2012-10-14T13:20:42Z",
+      "x": 80,
+      "y": 70
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.2",
+      "created_at": "2012-10-14T13:20:09Z",
+      "dir": 0,
+      "id": 93,
+      "label": null,
+      "name": "3",
+      "schematic_symbol_id": 74,
+      "terminal_type": "schematic",
+      "updated_at": "2012-10-14T13:20:42Z",
+      "x": 140,
+      "y": 60
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-02-21T18:26:04Z",
+      "dir": 0,
+      "drill": "1016.0",
+      "footprint_id": 3016,
+      "generator_type": "single",
+      "id": 12039,
+      "layer0": "<circle r=\"939.8\"/>",
+      "layer1": "<circle r=\"939.8\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": 611,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:38:45Z",
+      "x": 0,
+      "y": -2540
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-02-21T18:26:04Z",
+      "dir": 0,
+      "drill": "1016.0",
+      "footprint_id": 3016,
+      "generator_type": "single",
+      "id": 12040,
+      "layer0": "<circle r=\"939.8\"/>",
+      "layer1": "<circle r=\"939.8\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": 611,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:38:45Z",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.2",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-02-21T18:26:04Z",
+      "dir": 0,
+      "drill": "1016.0",
+      "footprint_id": 3016,
+      "generator_type": "single",
+      "id": 12041,
+      "layer0": "<circle r=\"939.8\"/>",
+      "layer1": "<circle r=\"939.8\"/>",
+      "name": "3",
+      "number": null,
+      "pad_type_id": 611,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:38:45Z",
+      "x": 0,
+      "y": 2540
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "default": 0,
+      "default_prefix": "",
+      "default_show": false,
+      "device_id": 17919,
+      "id": "Slideswitch-property-0",
+      "name": "Switch",
+      "unit": "hidden"
+    }
+  ],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1437016119cac3ea8d501530b3a6a52f9b9e962c69/thumbnail20150716-9228-p504m4.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1437016119cac3ea8d501530b3a6a52f9b9e962c69/thumbnail20150716-9228-p504m4.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/143701638995642bb9ce3910a0aa6faff169f393eb/thumbnail20150716-18841-1sek7s3.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/143701638995642bb9ce3910a0aa6faff169f393eb/thumbnail20150716-18841-1sek7s3.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14340458865ea3f20679fc8411b02adecf1b0057bc/thumbnail20150611-4136-1xw8weh.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14340458865ea3f20679fc8411b02adecf1b0057bc/thumbnail20150611-4136-1xw8weh.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/58458.json"
+}

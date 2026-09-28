@@ -1,0 +1,7 @@
+{
+  "device_id": "153670",
+  "simulation_model": "dc_motor_encoder_small",
+  "implementation_found": true,
+  "module_id": "3179",
+  "model_file": "models/dc_motor_encoder_small--module-3179.js"
+}

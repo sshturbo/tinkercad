@@ -1,0 +1,8 @@
+{
+  "url": "https://www.tinkercad.com/api/send",
+  "payload": {
+    "cache": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3ZWJzaXRlSWQiOiIzZTM0ODQwZi00ZDM5LTQyYTYtOGNmMS0xMmY0NDJmOTI4MzUiLCJzZXNzaW9uSWQiOiJjN2QyYzMwMS03MWQ3LTUwNTEtYWEwYy05ZjliMzQ2NTliNjciLCJ2aXNpdElkIjoiMzdiYzA3NzUtZDc2Ny01N2Q3LWI4MGItYTkwZWEyY2QwZjFkIiwiaWF0IjoxNzkwNDQwOTM5LCJ0eXBlIjoiY2FjaGUifQ.8P9P9xkMHfLt3kGIauYOS_xfVLOSeCxWcQ8NoCZp8pc",
+    "sessionId": "c7d2c301-71d7-5051-aa0c-9f9b34659b67",
+    "visitId": "37bc0775-d767-57d7-b80b-a90ea2cd0f1d"
+  }
+}

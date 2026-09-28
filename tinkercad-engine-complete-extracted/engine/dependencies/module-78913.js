@@ -1,0 +1,1 @@
+78913(e,t,i){const n=i(80635);e.exports=function(e){let t=pxsim.board().ledMatrixState.font,i=t.width,o=n(6*e.length-1),r=0;for(let n=0;n<e.length;n++){let a=e.charCodeAt(n),s=5*(a-32);(s<0||s+5>i)&&(a=" ".charCodeAt(0),s=5*(a-32)),t.copyTo(s,5,o,r),r+=5,n<e.length-1&&(r+=1)}return o}

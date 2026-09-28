@@ -1,0 +1,133 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "starter-device",
+  "id": "starterMicrobitMoisture",
+  "device_id": "starterMicrobitMoisture",
+  "name": "Moisture",
+  "description": "micro:bit soil moisture sensor example.",
+  "tags": [
+    "microbit",
+    "micro:bit",
+    "Soil Moisture Sensor"
+  ],
+  "thumbnail": "starterMicrobitMoisture.png",
+  "thumbnail_source": "/starterMicrobitMoisture.png",
+  "footprint": {
+    "name": "starterMicrobitMoisture",
+    "id": "starterMicrobitMoisture"
+  },
+  "simulation_model": null,
+  "extents": null,
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [],
+  "properties": [
+    {
+      "path": "proxy.starter.devices.17fe136ae5d-17-482ecbf9-be15-4e80-9a62-f7e158ff1c49.properties.microbitppid0",
+      "id": "microbitppid0",
+      "name": "color",
+      "unit": "[[\"red\",\"Red\"],[\"yellow\",\"Yellow\"],[\"green\",\"Green\"],[\"blue\",\"Blue\"]]",
+      "value": 0,
+      "show": true,
+      "prefix": "red"
+    },
+    {
+      "path": "proxy.starter.devices.17fe136ae5d-17-482ecbf9-be15-4e80-9a62-f7e158ff1c49.properties.microbitppid1",
+      "id": "microbitppid1",
+      "name": "Code",
+      "unit": "code",
+      "value": "# Python code\n#\nmoisture = 0\nx = 0\ny = 0\n\ndef on_forever():\n  global moisture\n  global x\n  global y\n  pins.digital_write_pin(DigitalPin.P1, 1)\n  basic.pause(10)\n  moisture = Math.map(pins.analog_read_pin(AnalogPin.P2), 0, 813, 0, 100)\n  pins.digital_write_pin(DigitalPin.P1, 0)\n  if moisture < 50:\n    x = randint(0, 4)\n    y = 0\n    for index in range(9):\n      led.plot_brightness(x, y, 255)\n      led.plot_brightness(x, (y - 1), 32)\n      led.plot_brightness(x, (y - 2), 8)\n      led.plot_brightness(x, (y - 3), 2)\n      led.plot_brightness(x, (y - 4), 0)\n      y += 1\n      basic.pause(50)\n  else:\n    basic.pause(1000)\nbasic.forever(on_forever)\n//BLOCK_CODE_XML:<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables><variable type=\"\" id=\"r25LfFC$~$I,0U`QPX[0\">moisture</variable><variable type=\"\" id=\"bh|.{Af_vj0Dg8QBk_+M\">x</variable><variable type=\"\" id=\"nDiu)6Z:0PRoz{y]OR#(\">y</variable></variables><block type=\"microbit_forever\" id=\"2MmU{CTr~(!F%UGD]qA]\" x=\"50\" y=\"-377\"><statement name=\"DO\"><block type=\"microbit_digital_write_pin\" id=\"1/`FTroEG:qV;Mi`uq)I\"><field name=\"PIN\">P1</field><field name=\"VALUE\">HIGH</field><next><block type=\"control_wait_seconds\" id=\"y5Nm4e_/`:iU~mr)csi9\"><field name=\"UNITS\">MS</field><value name=\"DURATION\"><shadow type=\"math_positive_number\" id=\"C{6f^O;o9^FJoa*H7QZk\"><field name=\"NUM\">10</field></shadow></value><next><block type=\"data_setvariableto\" id=\"?KsLd)$ml)E$.do6zp;7\"><field name=\"VARIABLE\" id=\"r25LfFC$~$I,0U`QPX[0\" variabletype=\"\">moisture</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\"hRvz_`eugsP,8id5:9AT\"><field name=\"NUM\">0</field></shadow><block type=\"math_map_range_to_range\" id=\"@qObjgl_0K9]4Crgvu8d\"><value name=\"IN\"><shadow type=\"math_number\" id=\"CgR]VkKzH}4EV$Ghk}Z7\"><field name=\"NUM\">0</field></shadow><block type=\"microbit_read_analog\" id=\"sTG+,JuHNtD9g(Eq)+K~\"><field name=\"PIN\">P2</field></block></value><value name=\"IN_MIN\"><shadow type=\"math_number\" id=\"k0rV]90`xT^t;|UhLir,\"><field name=\"NUM\">0</field></shadow></value><value name=\"IN_MAX\"><shadow type=\"math_number\" id=\".OS:]oiuW~zfIk;I-FNA\"><field name=\"NUM\">813</field></shadow></value><value name=\"OUT_MIN\"><shadow type=\"math_number\" id=\"I-zik.SFdaOIJZURk]A.\"><field name=\"NUM\">0</field></shadow></value><value name=\"OUT_MAX\"><shadow type=\"math_number\" id=\"#AXd/tPfdzqRxP+}a.Mp\"><field name=\"NUM\">100</field></shadow></value></block></value><next><block type=\"microbit_digital_write_pin\" id=\"1d11LEYpk]jVfZ_ZfHRE\"><field name=\"PIN\">P1</field><field name=\"VALUE\">LOW</field><next><block type=\"control_if_else\" id=\"jn4HBod)fv(H8KOvmV,N\"><value name=\"CONDITION\"><shadow type=\"math_true_false\" id=\"8:*v.x@@t-!;UYFg)Gt)\"><field name=\"BOOL\">true</field></shadow><block type=\"math_compare_number_or_string\" id=\"mC!!C@rw4X5HZfRQF=a:\"><field name=\"OP\">LT</field><value name=\"A\"><shadow type=\"common_text\" id=\"AmC7:LJ`.wR8Ne!jugkQ\"><field name=\"TEXT\">1</field></shadow><block type=\"data_variable\" id=\"31SE)[aT[$v1:,b01Rxv\"><field name=\"VARIABLE\" id=\"r25LfFC$~$I,0U`QPX[0\" variabletype=\"\">moisture</field></block></value><value name=\"B\"><shadow type=\"common_text\" id=\"~Lto{fKxoE6Ym%Fcngq2\"><field name=\"TEXT\">50</field></shadow></value></block></value><statement name=\"DO\"><block type=\"data_setvariableto\" id=\"yc0zo1d!c./$UE{wCY;U\"><field name=\"VARIABLE\" id=\"bh|.{Af_vj0Dg8QBk_+M\" variabletype=\"\">x</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\"q3}/cPAqI=Z2vb{n^PL8\"><field name=\"NUM\">0</field></shadow><block type=\"math_random\" id=\"6!d$CBM,.!wckzI%b6`U\"><value name=\"LOW\"><shadow type=\"math_number\" id=\"7fV}TlkaSB:SdCtIqV=7\"><field name=\"NUM\">0</field></shadow></value><value name=\"HIGH\"><shadow type=\"math_number\" id=\"%/f=CCsko1W)0]_7Kg1k\"><field name=\"NUM\">4</field></shadow></value></block></value><next><block type=\"data_setvariableto\" id=\"6Iq@yU}WoS(*|s/B4!3V\"><field name=\"VARIABLE\" id=\"nDiu)6Z:0PRoz{y]OR#(\" variabletype=\"\">y</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\"vBocO6$H1IB5{hSx)ntp\"><field name=\"NUM\">0</field></shadow></value><next><block type=\"control_repeat\" id=\"EfN@DHsZ?G}38RX3a=Sy\"><value name=\"TIMES\"><shadow type=\"math_whole_number\" id=\"Tsh3Lk.~s?V[8/)rBW:B\"><field name=\"NUM\">9</field></shadow></value><statement name=\"DO\"><block type=\"microbit_plot_brightness\" id=\",KM)2L[SMs8v]_9Dpr|l\"><value name=\"X\"><shadow type=\"math_positive_number\" id=\"Rc%k[pu2JExx4ZG,Iss+\"><field name=\"NUM\">0</field></shadow><block type=\"data_variable\" id=\"SWh}pb*@o^y+-7]86pm?\"><field name=\"VARIABLE\" id=\"bh|.{Af_vj0Dg8QBk_+M\" variabletype=\"\">x</field></block></value><value name=\"Y\"><shadow type=\"math_positive_number\" id=\"p3yzNvup{GWz+{X/GvVA\"><field name=\"NUM\">0</field></shadow><block type=\"data_variable\" id=\"Xp:L.=E`,!Q~o@^~~2Q,\"><field name=\"VARIABLE\" id=\"nDiu)6Z:0PRoz{y]OR#(\" variabletype=\"\">y</field></block></value><value name=\"BRIGHTNESS\"><shadow type=\"math_positive_number\" id=\"r{7YwbYD(uN=~TP/eA)+\"><field name=\"NUM\">255</field></shadow></value><next><block type=\"microbit_plot_brightness\" id=\"oW]ufatK1rk%{nMc*)vS\"><value name=\"X\"><shadow type=\"math_positive_number\" id=\"aVwE6LRt#oAi49S::@b{\"><field name=\"NUM\">0</field></shadow><block type=\"data_variable\" id=\")?*/BVSK/QanM^$TMoJ;\"><field name=\"VARIABLE\" id=\"bh|.{Af_vj0Dg8QBk_+M\" variabletype=\"\">x</field></block></value><value name=\"Y\"><shadow type=\"math_positive_number\" id=\"CQ?%IYw#fm[|)*)!H1^_\"><field name=\"NUM\">0</field></shadow><block type=\"math_arithmetic\" id=\"^v7!@FM+Fw2]?RGO,bh}\"><field name=\"OP\">SUBTRACT</field><value name=\"A\"><shadow type=\"math_number\" id=\"*bJiEpyHd9#7Z:yE=-/D\"><field name=\"NUM\">1</field></shadow><block type=\"data_variable\" id=\"NUxYYmJ1acu~5rE7K=f5\"><field name=\"VARIABLE\" id=\"nDiu)6Z:0PRoz{y]OR#(\" variabletype=\"\">y</field></block></value><value name=\"B\"><shadow type=\"math_number\" id=\"C?`s2IrqQXYT+0#yt%_a\"><field name=\"NUM\">1</field></shadow></value></block></value><value name=\"BRIGHTNESS\"><shadow type=\"math_positive_number\" id=\"4rP7vg)QMJ?K{kH0/eHr\"><field name=\"NUM\">32</field></shadow></value><next><block type=\"microbit_plot_brightness\" id=\"uo[#o`3?J+s[9/H$0%UZ\"><value name=\"X\"><shadow type=\"math_positive_number\" id=\"tEIWdAy`vv2U~2^V#7y%\"><field name=\"NUM\">0</field></shadow><block type=\"data_variable\" id=\"mPk)u|K{Y$QIJV9f9,GK\"><field name=\"VARIABLE\" id=\"bh|.{Af_vj0Dg8QBk_+M\" variabletype=\"\">x</field></block></value><value name=\"Y\"><shadow type=\"math_positive_number\" id=\"N$^PuXj|1{U8?qV$oeiw\"><field name=\"NUM\">0</field></shadow><block type=\"math_arithmetic\" id=\"~Pw|y1Gg_o4bVj{7?I98\"><field name=\"OP\">SUBTRACT</field><value name=\"A\"><shadow type=\"math_number\" id=\"c~-j{Vz`,W-Dp.neV(b}\"><field name=\"NUM\">1</field></shadow><block type=\"data_variable\" id=\"a=J`q_DjEB6)GD4W1..{\"><field name=\"VARIABLE\" id=\"nDiu)6Z:0PRoz{y]OR#(\" variabletype=\"\">y</field></block></value><value name=\"B\"><shadow type=\"math_number\" id=\"Yw=SYel-@U(O9LeNjU69\"><field name=\"NUM\">2</field></shadow></value></block></value><value name=\"BRIGHTNESS\"><shadow type=\"math_positive_number\" id=\"$i(s!*,qCmV047ujAl%K\"><field name=\"NUM\">8</field></shadow></value><next><block type=\"microbit_plot_brightness\" id=\"1MbBl(9E=[eN({sb,+Po\"><value name=\"X\"><shadow type=\"math_positive_number\" id=\",58IHb$+~p*Q6SOy9:1B\"><field name=\"NUM\">0</field></shadow><block type=\"data_variable\" id=\"0=gW,g]+8RLRc1dhCje{\"><field name=\"VARIABLE\" id=\"bh|.{Af_vj0Dg8QBk_+M\" variabletype=\"\">x</field></block></value><value name=\"Y\"><shadow type=\"math_positive_number\" id=\"`Lgc-3rLIO0R)S$Y(YIc\"><field name=\"NUM\">0</field></shadow><block type=\"math_arithmetic\" id=\"DDwNm~^lR?-q0edgEBo`\"><field name=\"OP\">SUBTRACT</field><value name=\"A\"><shadow type=\"math_number\" id=\"u1{Q~UbR}Mq6+JlxH~3q\"><field name=\"NUM\">1</field></shadow><block type=\"data_variable\" id=\"oy{|ano}c.i`;0-EQAop\"><field name=\"VARIABLE\" id=\"nDiu)6Z:0PRoz{y]OR#(\" variabletype=\"\">y</field></block></value><value name=\"B\"><shadow type=\"math_number\" id=\"bHLUEjoZq_fA_:C`v@+M\"><field name=\"NUM\">3</field></shadow></value></block></value><value name=\"BRIGHTNESS\"><shadow type=\"math_positive_number\" id=\"P6_@uW+#%G?$`o;MWl]B\"><field name=\"NUM\">2</field></shadow></value><next><block type=\"microbit_plot_brightness\" id=\"wTK^JDsTw]0wt.z1b!!m\"><value name=\"X\"><shadow type=\"math_positive_number\" id=\"N1~A}wV/G#[b9dYITrDX\"><field name=\"NUM\">0</field></shadow><block type=\"data_variable\" id=\"K{n5whGx6zv2m77H_C_o\"><field name=\"VARIABLE\" id=\"bh|.{Af_vj0Dg8QBk_+M\" variabletype=\"\">x</field></block></value><value name=\"Y\"><shadow type=\"math_positive_number\" id=\"}};i2FhdXoY#_#P2)PN]\"><field name=\"NUM\">0</field></shadow><block type=\"math_arithmetic\" id=\"}IU4fBsqH%NT{sag!-2d\"><field name=\"OP\">SUBTRACT</field><value name=\"A\"><shadow type=\"math_number\" id=\"b`/gzWUbc.wsEtBVETpS\"><field name=\"NUM\">1</field></shadow><block type=\"data_variable\" id=\"ch2eakY7g?#pP!aC44ld\"><field name=\"VARIABLE\" id=\"nDiu)6Z:0PRoz{y]OR#(\" variabletype=\"\">y</field></block></value><value name=\"B\"><shadow type=\"math_number\" id=\"M(~eLs*EE@5N9*]v|T%)\"><field name=\"NUM\">4</field></shadow></value></block></value><value name=\"BRIGHTNESS\"><shadow type=\"math_positive_number\" id=\"G|K`(l|8wCYQszRVdK3]\"><field name=\"NUM\">0</field></shadow></value><next><block type=\"data_changevariableby\" id=\"15hi)Rxgeu9g-!:?TN`7\"><field name=\"VARIABLE\" id=\"nDiu)6Z:0PRoz{y]OR#(\" variabletype=\"\">y</field><value name=\"VALUE\"><shadow type=\"math_number\" id=\".cOh1`qnWL/s+**c}*2+\"><field name=\"NUM\">1</field></shadow></value><next><block type=\"control_wait_seconds\" id=\",{@urC$;G2FS0$b_6cvd\"><field name=\"UNITS\">MS</field><value name=\"DURATION\"><shadow type=\"math_positive_number\" id=\"@$yqYMU/O2?!QyK}SJGB\"><field name=\"NUM\">50</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></next></block></next></block></statement><statement name=\"ELSE\"><block type=\"control_wait_seconds\" id=\"Pc@[OcwnF;BOxyNPu[iz\"><field name=\"UNITS\">S</field><value name=\"DURATION\"><shadow type=\"math_positive_number\" id=\"=$vm*dm=Omn`xs_tDL.O\"><field name=\"NUM\">1</field></shadow></value></block></statement></block></next></block></next></block></next></block></next></block></statement></block></xml>",
+      "show": false,
+      "prefix": ""
+    },
+    {
+      "path": "proxy.starter.devices.17fe136ae5d-17-482ecbf9-be15-4e80-9a62-f7e158ff1c49.properties.microbitppid2",
+      "id": "microbitppid2",
+      "name": "Panel X",
+      "unit": "hidden",
+      "value": 240.37241379310342,
+      "show": false,
+      "prefix": ""
+    },
+    {
+      "path": "proxy.starter.devices.17fe136ae5d-17-482ecbf9-be15-4e80-9a62-f7e158ff1c49.properties.microbitppid3",
+      "id": "microbitppid3",
+      "name": "Panel Y",
+      "unit": "hidden",
+      "value": -5.151724137930998,
+      "show": false,
+      "prefix": ""
+    },
+    {
+      "path": "proxy.starter.devices.17fe13b6b0f-21-3dab6459-e153-4921-9f25-693a5a2fd34a.properties.4320",
+      "id": 4320,
+      "name": "collapsed",
+      "unit": "hidden",
+      "value": 0,
+      "show": false
+    },
+    {
+      "path": "proxy.starter.devices.17fe13b6b0f-21-3dab6459-e153-4921-9f25-693a5a2fd34a.properties.4321",
+      "id": 4321,
+      "name": "x",
+      "unit": "hidden",
+      "value": -94,
+      "show": false
+    },
+    {
+      "path": "proxy.starter.devices.17fe13b6b0f-21-3dab6459-e153-4921-9f25-693a5a2fd34a.properties.4322",
+      "id": 4322,
+      "name": "y",
+      "unit": "hidden",
+      "value": 0.5,
+      "show": false
+    },
+    {
+      "path": "proxy.starter.devices.17fe13b6b0f-21-3dab6459-e153-4921-9f25-693a5a2fd34a.properties.4323",
+      "id": 4323,
+      "name": "content",
+      "unit": "hidden",
+      "value": "Press \"Start Simulation\"<div>and rain will fall on the</div><div>screen when it is time</div><div>to water the soil!</div>",
+      "show": false
+    },
+    {
+      "path": "proxy.starter.devices.17fe13bc890-25-05831f24-9e54-49a5-bb8c-11c6beb3acdc.properties.4320",
+      "id": 4320,
+      "name": "collapsed",
+      "unit": "hidden",
+      "value": 0,
+      "show": false
+    },
+    {
+      "path": "proxy.starter.devices.17fe13bc890-25-05831f24-9e54-49a5-bb8c-11c6beb3acdc.properties.4321",
+      "id": 4321,
+      "name": "x",
+      "unit": "hidden",
+      "value": 88,
+      "show": false
+    },
+    {
+      "path": "proxy.starter.devices.17fe13bc890-25-05831f24-9e54-49a5-bb8c-11c6beb3acdc.properties.4322",
+      "id": 4322,
+      "name": "y",
+      "unit": "hidden",
+      "value": 0.5,
+      "show": false
+    },
+    {
+      "path": "proxy.starter.devices.17fe13bc890-25-05831f24-9e54-49a5-bb8c-11c6beb3acdc.properties.4323",
+      "id": 4323,
+      "name": "content",
+      "unit": "hidden",
+      "value": "Select the sensor and<div>adjust the moisture.</div>",
+      "show": false
+    }
+  ],
+  "datasheets_or_references": [],
+  "raw_device_json": "../../raw/packaged_devices/starterMicrobitMoisture.json"
+}

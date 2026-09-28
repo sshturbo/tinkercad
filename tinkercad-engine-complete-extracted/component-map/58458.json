@@ -1,0 +1,7 @@
+{
+  "device_id": "58458",
+  "simulation_model": "slide_switch_v2",
+  "implementation_found": true,
+  "module_id": "40360",
+  "model_file": "models/slide_switch_v2--module-40360.js"
+}

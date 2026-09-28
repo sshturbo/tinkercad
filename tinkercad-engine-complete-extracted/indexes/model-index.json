@@ -1,0 +1,2456 @@
+[
+  {
+    "simulation_model": "74HC00",
+    "module_id": "59866",
+    "file": "models/74HC00--module-59866.js",
+    "chars": 981,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC02",
+    "module_id": "39440",
+    "file": "models/74HC02--module-39440.js",
+    "chars": 981,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC04",
+    "module_id": "21529",
+    "file": "models/74HC04--module-21529.js",
+    "chars": 959,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC08",
+    "module_id": "27970",
+    "file": "models/74HC08--module-27970.js",
+    "chars": 981,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC10",
+    "module_id": "14551",
+    "file": "models/74HC10--module-14551.js",
+    "chars": 1003,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC11",
+    "module_id": "73248",
+    "file": "models/74HC11--module-73248.js",
+    "chars": 1003,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC132",
+    "module_id": "49834",
+    "file": "models/74HC132--module-49834.js",
+    "chars": 993,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC14",
+    "module_id": "14803",
+    "file": "models/74HC14--module-14803.js",
+    "chars": 961,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC20",
+    "module_id": "27688",
+    "file": "models/74HC20--module-27688.js",
+    "chars": 1015,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC21",
+    "module_id": "62303",
+    "file": "models/74HC21--module-62303.js",
+    "chars": 1015,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC27",
+    "module_id": "7901",
+    "file": "models/74HC27--module-7901.js",
+    "chars": 1002,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC283",
+    "module_id": "75903",
+    "file": "models/74HC283--module-75903.js",
+    "chars": 1174,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC32",
+    "module_id": "8491",
+    "file": "models/74HC32--module-8491.js",
+    "chars": 980,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC4017",
+    "module_id": "85658",
+    "file": "models/74HC4017--module-85658.js",
+    "chars": 1163,
+    "features": [
+      "digital_edges"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC595",
+    "module_id": "97929",
+    "file": "models/74HC595--module-97929.js",
+    "chars": 1411,
+    "features": [
+      "digital_edges"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC73",
+    "module_id": "96232",
+    "file": "models/74HC73--module-96232.js",
+    "chars": 1331,
+    "features": [
+      "digital_edges"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC74",
+    "module_id": "92285",
+    "file": "models/74HC74--module-92285.js",
+    "chars": 1287,
+    "features": [
+      "digital_edges"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC75",
+    "module_id": "82366",
+    "file": "models/74HC75--module-82366.js",
+    "chars": 1198,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC86",
+    "module_id": "89988",
+    "file": "models/74HC86--module-89988.js",
+    "chars": 982,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "74HC93",
+    "module_id": "45266",
+    "file": "models/74HC93--module-45266.js",
+    "chars": 1237,
+    "features": [
+      "digital_edges"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "AABattery",
+    "module_id": "9058",
+    "file": "models/AABattery--module-9058.js",
+    "chars": 1855,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "AABattery2",
+    "module_id": "31332",
+    "file": "models/AABattery2--module-31332.js",
+    "chars": 540,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "AABattery3",
+    "module_id": "68418",
+    "file": "models/AABattery3--module-68418.js",
+    "chars": 544,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "AABattery4",
+    "module_id": "16110",
+    "file": "models/AABattery4--module-16110.js",
+    "chars": 540,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "arduinoMicro",
+    "module_id": "98989",
+    "file": "models/arduinoMicro--module-98989.js",
+    "chars": 3746,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "arduinoUno",
+    "module_id": "70985",
+    "file": "models/arduinoUno--module-70985.js",
+    "chars": 3589,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "arduinoUnoRev3",
+    "module_id": "62891",
+    "file": "models/arduinoUnoRev3--module-62891.js",
+    "chars": 5588,
+    "features": [
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "ATtiny",
+    "module_id": "56486",
+    "file": "models/ATtiny--module-56486.js",
+    "chars": 2037,
+    "features": [
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "battery9V",
+    "module_id": "72563",
+    "file": "models/battery9V--module-72563.js",
+    "chars": 534,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "batteryLemon",
+    "module_id": "99737",
+    "file": "models/batteryLemon--module-99737.js",
+    "chars": 927,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "batteryPotato",
+    "module_id": "33443",
+    "file": "models/batteryPotato--module-33443.js",
+    "chars": 935,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "button",
+    "module_id": "77617",
+    "file": "models/button--module-77617.js",
+    "chars": 1104,
+    "features": [
+      "signals",
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "capacitor",
+    "module_id": "5737",
+    "file": "models/capacitor--module-5737.js",
+    "chars": 828,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "capacitor_100n",
+    "module_id": "79828",
+    "file": "models/capacitor_100n--module-79828.js",
+    "chars": 659,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "capacitor_100p",
+    "module_id": "50618",
+    "file": "models/capacitor_100p--module-50618.js",
+    "chars": 660,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "capacitor_100u",
+    "module_id": "13797",
+    "file": "models/capacitor_100u--module-13797.js",
+    "chars": 1211,
+    "features": [
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "capacitor_polarized",
+    "module_id": "20243",
+    "file": "models/capacitor_polarized--module-20243.js",
+    "chars": 1549,
+    "features": [
+      "signals",
+      "nets",
+      "properties",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "CD4511",
+    "module_id": "43434",
+    "file": "models/CD4511--module-43434.js",
+    "chars": 1695,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "circuitScribe_and",
+    "module_id": "93432",
+    "file": "models/circuitScribe_and--module-93432.js",
+    "chars": 800,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "circuitScribe_battery9v",
+    "module_id": "21679",
+    "file": "models/circuitScribe_battery9v--module-21679.js",
+    "chars": 1772,
+    "features": [
+      "signals",
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "circuitScribe_blinker",
+    "module_id": "47628",
+    "file": "models/circuitScribe_blinker--module-47628.js",
+    "chars": 2725,
+    "features": [
+      "signals",
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "circuitScribe_buzzer",
+    "module_id": "32547",
+    "file": "models/circuitScribe_buzzer--module-32547.js",
+    "chars": 1100,
+    "features": [
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "circuitScribe_capacitor",
+    "module_id": "36677",
+    "file": "models/circuitScribe_capacitor--module-36677.js",
+    "chars": 877,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "circuitScribe_DCmotor",
+    "module_id": "84032",
+    "file": "models/circuitScribe_DCmotor--module-84032.js",
+    "chars": 2297,
+    "features": [
+      "signals",
+      "nets",
+      "properties",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "circuitScribe_doubleSwitch",
+    "module_id": "46502",
+    "file": "models/circuitScribe_doubleSwitch--module-46502.js",
+    "chars": 1506,
+    "features": [
+      "signals",
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "circuitScribe_LDR",
+    "module_id": "35207",
+    "file": "models/circuitScribe_LDR--module-35207.js",
+    "chars": 1571,
+    "features": [
+      "signals",
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "circuitScribe_NPN",
+    "module_id": "45932",
+    "file": "models/circuitScribe_NPN--module-45932.js",
+    "chars": 771,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "circuitScribe_or",
+    "module_id": "11644",
+    "file": "models/circuitScribe_or--module-11644.js",
+    "chars": 788,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "circuitScribe_photosensor",
+    "module_id": "93459",
+    "file": "models/circuitScribe_photosensor--module-93459.js",
+    "chars": 1734,
+    "features": [
+      "signals",
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "circuitScribe_potentiometer",
+    "module_id": "78032",
+    "file": "models/circuitScribe_potentiometer--module-78032.js",
+    "chars": 1688,
+    "features": [
+      "signals",
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "circuitScribe_resistor",
+    "module_id": "9686",
+    "file": "models/circuitScribe_resistor--module-9686.js",
+    "chars": 1098,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "circuitScribe_RGBLED",
+    "module_id": "47885",
+    "file": "models/circuitScribe_RGBLED--module-47885.js",
+    "chars": 1939,
+    "features": [
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "circuitScribe_switch",
+    "module_id": "34045",
+    "file": "models/circuitScribe_switch--module-34045.js",
+    "chars": 1144,
+    "features": [
+      "signals",
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "circuitScribe_USBpower",
+    "module_id": "91546",
+    "file": "models/circuitScribe_USBpower--module-91546.js",
+    "chars": 1457,
+    "features": [
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "circuitScribe_xor",
+    "module_id": "25872",
+    "file": "models/circuitScribe_xor--module-25872.js",
+    "chars": 797,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "coinCell",
+    "module_id": "42520",
+    "file": "models/coinCell--module-42520.js",
+    "chars": 525,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "dc_motor",
+    "module_id": "23316",
+    "file": "models/dc_motor--module-23316.js",
+    "chars": 2671,
+    "features": [
+      "signals",
+      "nets",
+      "properties",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "dc_motor_arduino",
+    "module_id": "80722",
+    "file": "models/dc_motor_arduino--module-80722.js",
+    "chars": 1855,
+    "features": [
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "dc_motor_dfrobot",
+    "module_id": "20553",
+    "file": "models/dc_motor_dfrobot--module-20553.js",
+    "chars": 1797,
+    "features": [
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "dc_motor_encoder",
+    "module_id": "6782",
+    "file": "models/dc_motor_encoder--module-6782.js",
+    "chars": 4563,
+    "features": [
+      "signals",
+      "nets",
+      "properties",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "dc_motor_encoder_large",
+    "module_id": "76995",
+    "file": "models/dc_motor_encoder_large--module-76995.js",
+    "chars": 1473,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "dc_motor_encoder_small",
+    "module_id": "3179",
+    "file": "models/dc_motor_encoder_small--module-3179.js",
+    "chars": 1497,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "dc_motor_hobby_gear",
+    "module_id": "10069",
+    "file": "models/dc_motor_hobby_gear--module-10069.js",
+    "chars": 1695,
+    "features": [
+      "signals",
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "dc_motor_v2",
+    "module_id": "23316",
+    "file": "models/dc_motor_v2--module-23316.js",
+    "chars": 2671,
+    "features": [
+      "signals",
+      "nets",
+      "properties",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "Default",
+    "module_id": "4502",
+    "file": "models/Default--module-4502.js",
+    "chars": 772,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "diode",
+    "module_id": "8338",
+    "file": "models/diode--module-8338.js",
+    "chars": 566,
+    "features": [
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "dip_switch_4",
+    "module_id": "64570",
+    "file": "models/dip_switch_4--module-64570.js",
+    "chars": 1543,
+    "features": [],
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "simulation_model": "dip_switch_6",
+    "module_id": "27248",
+    "file": "models/dip_switch_6--module-27248.js",
+    "chars": 1543,
+    "features": [],
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "simulation_model": "dip_switch_spdt",
+    "module_id": "83883",
+    "file": "models/dip_switch_spdt--module-83883.js",
+    "chars": 1527,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "ESP8266_01",
+    "module_id": "32303",
+    "file": "models/ESP8266_01--module-32303.js",
+    "chars": 11104,
+    "features": [
+      "digital_edges",
+      "signals",
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "function_generator",
+    "module_id": "85044",
+    "file": "models/function_generator--module-85044.js",
+    "chars": 9420,
+    "features": [
+      "signals",
+      "nets",
+      "properties",
+      "scheduler"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "inductor",
+    "module_id": "91271",
+    "file": "models/inductor--module-91271.js",
+    "chars": 716,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "IRremote",
+    "module_id": "27505",
+    "file": "models/IRremote--module-27505.js",
+    "chars": 2563,
+    "features": [
+      "signals",
+      "scheduler"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "IRsensor",
+    "module_id": "76617",
+    "file": "models/IRsensor--module-76617.js",
+    "chars": 1437,
+    "features": [
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "keypad_4x4",
+    "module_id": "58745",
+    "file": "models/keypad_4x4--module-58745.js",
+    "chars": 2509,
+    "features": [
+      "signals",
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "kittyEar",
+    "module_id": "59575",
+    "file": "models/kittyEar--module-59575.js",
+    "chars": 2568,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "LCD_HD44780",
+    "module_id": "12130",
+    "file": "models/LCD_HD44780--module-12130.js",
+    "chars": 3287,
+    "features": [
+      "signals",
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297",
+      "62612"
+    ]
+  },
+  {
+    "simulation_model": "LCD_HD44780_I2C",
+    "module_id": "78116",
+    "file": "models/LCD_HD44780_I2C--module-78116.js",
+    "chars": 2045,
+    "features": [
+      "signals",
+      "nets",
+      "properties",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "32583",
+      "62612"
+    ]
+  },
+  {
+    "simulation_model": "ldr",
+    "module_id": "35963",
+    "file": "models/ldr--module-35963.js",
+    "chars": 2558,
+    "features": [
+      "signals",
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "ldr_v2",
+    "module_id": "35963",
+    "file": "models/ldr_v2--module-35963.js",
+    "chars": 2558,
+    "features": [
+      "signals",
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "led",
+    "module_id": "55860",
+    "file": "models/led--module-55860.js",
+    "chars": 1611,
+    "features": [
+      "nets",
+      "properties",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "led2",
+    "module_id": "2292",
+    "file": "models/led2--module-2292.js",
+    "chars": 2131,
+    "features": [
+      "signals",
+      "nets",
+      "properties",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "led_blue",
+    "module_id": "95500",
+    "file": "models/led_blue--module-95500.js",
+    "chars": 1321,
+    "features": [
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "led_green",
+    "module_id": "92717",
+    "file": "models/led_green--module-92717.js",
+    "chars": 1316,
+    "features": [
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "led_red",
+    "module_id": "78637",
+    "file": "models/led_red--module-78637.js",
+    "chars": 1297,
+    "features": [
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "led_white",
+    "module_id": "59427",
+    "file": "models/led_white--module-59427.js",
+    "chars": 1406,
+    "features": [
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "led_yellow",
+    "module_id": "36316",
+    "file": "models/led_yellow--module-36316.js",
+    "chars": 1326,
+    "features": [
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "ledRGB",
+    "module_id": "37833",
+    "file": "models/ledRGB--module-37833.js",
+    "chars": 3118,
+    "features": [
+      "signals",
+      "nets",
+      "properties",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "ledRGB2",
+    "module_id": "57549",
+    "file": "models/ledRGB2--module-57549.js",
+    "chars": 1734,
+    "features": [
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "lightBulb",
+    "module_id": "9482",
+    "file": "models/lightBulb--module-9482.js",
+    "chars": 1410,
+    "features": [
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "lm339",
+    "module_id": "46173",
+    "file": "models/lm339--module-46173.js",
+    "chars": 2091,
+    "features": [
+      "signals",
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "LM35",
+    "module_id": "48439",
+    "file": "models/LM35--module-48439.js",
+    "chars": 2608,
+    "features": [
+      "signals",
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "lm393",
+    "module_id": "43877",
+    "file": "models/lm393--module-43877.js",
+    "chars": 2083,
+    "features": [
+      "signals",
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "microbit",
+    "module_id": "59214",
+    "file": "models/microbit--module-59214.js",
+    "chars": 12812,
+    "features": [
+      "properties",
+      "scheduler",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297",
+      "50830",
+      "91810"
+    ]
+  },
+  {
+    "simulation_model": "multimeter",
+    "module_id": "16603",
+    "file": "models/multimeter--module-16603.js",
+    "chars": 5182,
+    "features": [
+      "signals",
+      "nets",
+      "properties",
+      "scheduler",
+      "measurements",
+      "analog",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "multimeter_v2",
+    "module_id": "16603",
+    "file": "models/multimeter_v2--module-16603.js",
+    "chars": 5182,
+    "features": [
+      "signals",
+      "nets",
+      "properties",
+      "scheduler",
+      "measurements",
+      "analog",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "nmos",
+    "module_id": "68610",
+    "file": "models/nmos--module-68610.js",
+    "chars": 547,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "nmos_irf520",
+    "module_id": "10732",
+    "file": "models/nmos_irf520--module-10732.js",
+    "chars": 602,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "npn",
+    "module_id": "72885",
+    "file": "models/npn--module-72885.js",
+    "chars": 535,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "null_device",
+    "module_id": "50438",
+    "file": "models/null_device--module-50438.js",
+    "chars": 536,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "opAmp_UA741",
+    "module_id": "72622",
+    "file": "models/opAmp_UA741--module-72622.js",
+    "chars": 984,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "oscilloscope",
+    "module_id": "63909",
+    "file": "models/oscilloscope--module-63909.js",
+    "chars": 2441,
+    "features": [
+      "digital_edges",
+      "signals",
+      "nets",
+      "properties",
+      "scheduler",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "pcf8574",
+    "module_id": "44504",
+    "file": "models/pcf8574--module-44504.js",
+    "chars": 4000,
+    "features": [
+      "digital_edges",
+      "signals",
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297",
+      "32583"
+    ]
+  },
+  {
+    "simulation_model": "photodiode",
+    "module_id": "43050",
+    "file": "models/photodiode--module-43050.js",
+    "chars": 2653,
+    "features": [
+      "signals",
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "photodiode_v2",
+    "module_id": "43050",
+    "file": "models/photodiode_v2--module-43050.js",
+    "chars": 2653,
+    "features": [
+      "signals",
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "phototransistor",
+    "module_id": "49109",
+    "file": "models/phototransistor--module-49109.js",
+    "chars": 1574,
+    "features": [
+      "signals",
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "pmos",
+    "module_id": "87092",
+    "file": "models/pmos--module-87092.js",
+    "chars": 550,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "pnp",
+    "module_id": "86523",
+    "file": "models/pnp--module-86523.js",
+    "chars": 535,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "pololu_simple_motor_controller_18v7",
+    "module_id": "2733",
+    "file": "models/pololu_simple_motor_controller_18v7--module-2733.js",
+    "chars": 1644,
+    "features": [
+      "digital_edges",
+      "signals",
+      "nets",
+      "scheduler"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "potentiometer",
+    "module_id": "30148",
+    "file": "models/potentiometer--module-30148.js",
+    "chars": 2963,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "potentiometer_10k",
+    "module_id": "46320",
+    "file": "models/potentiometer_10k--module-46320.js",
+    "chars": 1702,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "potentiometer_dfrobot_10k",
+    "module_id": "79446",
+    "file": "models/potentiometer_dfrobot_10k--module-79446.js",
+    "chars": 1774,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "potentiometer_v2",
+    "module_id": "30148",
+    "file": "models/potentiometer_v2--module-30148.js",
+    "chars": 2963,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "power_nmos",
+    "module_id": "24531",
+    "file": "models/power_nmos--module-24531.js",
+    "chars": 586,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "power_pmos",
+    "module_id": "53181",
+    "file": "models/power_pmos--module-53181.js",
+    "chars": 591,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "powerSupply",
+    "module_id": "66667",
+    "file": "models/powerSupply--module-66667.js",
+    "chars": 5043,
+    "features": [
+      "signals",
+      "nets",
+      "properties",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "protoShieldDFRobot",
+    "module_id": "83827",
+    "file": "models/protoShieldDFRobot--module-83827.js",
+    "chars": 3940,
+    "features": [
+      "signals",
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "relay_dpdt",
+    "module_id": "73776",
+    "file": "models/relay_dpdt--module-73776.js",
+    "chars": 1679,
+    "features": [
+      "nets",
+      "scheduler",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "relay_dpdt_latching",
+    "module_id": "57486",
+    "file": "models/relay_dpdt_latching--module-57486.js",
+    "chars": 1757,
+    "features": [
+      "nets",
+      "scheduler",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "relay_spdt",
+    "module_id": "24939",
+    "file": "models/relay_spdt--module-24939.js",
+    "chars": 1572,
+    "features": [
+      "nets",
+      "scheduler",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "relay_spdt_hrs1h",
+    "module_id": "7098",
+    "file": "models/relay_spdt_hrs1h--module-7098.js",
+    "chars": 1623,
+    "features": [
+      "nets",
+      "scheduler",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "resistor",
+    "module_id": "23274",
+    "file": "models/resistor--module-23274.js",
+    "chars": 1028,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "resistor_10k",
+    "module_id": "34635",
+    "file": "models/resistor_10k--module-34635.js",
+    "chars": 598,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "resistor_10M",
+    "module_id": "401",
+    "file": "models/resistor_10M--module-401.js",
+    "chars": 596,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "resistor_1k",
+    "module_id": "26461",
+    "file": "models/resistor_1k--module-26461.js",
+    "chars": 589,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "resistor_1M",
+    "module_id": "6303",
+    "file": "models/resistor_1M--module-6303.js",
+    "chars": 588,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "resistor_220",
+    "module_id": "62737",
+    "file": "models/resistor_220--module-62737.js",
+    "chars": 598,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "resistor_4k7",
+    "module_id": "62119",
+    "file": "models/resistor_4k7--module-62119.js",
+    "chars": 599,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "resistor_560",
+    "module_id": "36524",
+    "file": "models/resistor_560--module-36524.js",
+    "chars": 598,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "sensor_gas",
+    "module_id": "58766",
+    "file": "models/sensor_gas--module-58766.js",
+    "chars": 4888,
+    "features": [
+      "signals",
+      "nets",
+      "properties",
+      "scheduler",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "sensor_pir",
+    "module_id": "61384",
+    "file": "models/sensor_pir--module-61384.js",
+    "chars": 4897,
+    "features": [
+      "signals",
+      "nets",
+      "properties",
+      "scheduler"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "sensor_tilt_sw200d",
+    "module_id": "59844",
+    "file": "models/sensor_tilt_sw200d--module-59844.js",
+    "chars": 1481,
+    "features": [
+      "signals",
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "sensor_ultrasonic_ping",
+    "module_id": "81629",
+    "file": "models/sensor_ultrasonic_ping--module-81629.js",
+    "chars": 5321,
+    "features": [
+      "signals",
+      "nets",
+      "properties",
+      "scheduler"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "sensorFlex",
+    "module_id": "28308",
+    "file": "models/sensorFlex--module-28308.js",
+    "chars": 2614,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "sensorForce",
+    "module_id": "60952",
+    "file": "models/sensorForce--module-60952.js",
+    "chars": 2776,
+    "features": [
+      "signals",
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "sensorSoilMoisture",
+    "module_id": "12798",
+    "file": "models/sensorSoilMoisture--module-12798.js",
+    "chars": 2083,
+    "features": [
+      "signals",
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "servo",
+    "module_id": "15064",
+    "file": "models/servo--module-15064.js",
+    "chars": 2024,
+    "features": [
+      "digital_edges",
+      "signals",
+      "nets",
+      "scheduler",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "servo_SG90",
+    "module_id": "53417",
+    "file": "models/servo_SG90--module-53417.js",
+    "chars": 2711,
+    "features": [
+      "digital_edges",
+      "signals",
+      "nets",
+      "properties",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "servo_SMS2309S",
+    "module_id": "36218",
+    "file": "models/servo_SMS2309S--module-36218.js",
+    "chars": 2010,
+    "features": [
+      "digital_edges",
+      "signals",
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "servo_v2",
+    "module_id": "15064",
+    "file": "models/servo_v2--module-15064.js",
+    "chars": 2024,
+    "features": [
+      "digital_edges",
+      "signals",
+      "nets",
+      "scheduler",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "seven-segment-i2c",
+    "module_id": "7403",
+    "file": "models/seven-segment-i2c--module-7403.js",
+    "chars": 3595,
+    "features": [
+      "signals",
+      "nets",
+      "properties",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297",
+      "32583"
+    ]
+  },
+  {
+    "simulation_model": "seven_segment_digit",
+    "module_id": "22179",
+    "file": "models/seven_segment_digit--module-22179.js",
+    "chars": 1958,
+    "features": [
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "seven_segment_digit_5011bh",
+    "module_id": "28034",
+    "file": "models/seven_segment_digit_5011bh--module-28034.js",
+    "chars": 2539,
+    "features": [
+      "signals",
+      "nets",
+      "properties",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "slide_switch",
+    "module_id": "40360",
+    "file": "models/slide_switch--module-40360.js",
+    "chars": 2304,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "slide_switch_v2",
+    "module_id": "40360",
+    "file": "models/slide_switch_v2--module-40360.js",
+    "chars": 2304,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "solarCell",
+    "module_id": "27051",
+    "file": "models/solarCell--module-27051.js",
+    "chars": 1970,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "sparkfun_mma7361",
+    "module_id": "26435",
+    "file": "models/sparkfun_mma7361--module-26435.js",
+    "chars": 4820,
+    "features": [
+      "signals",
+      "nets",
+      "scheduler",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "tiltSensor",
+    "module_id": "66811",
+    "file": "models/tiltSensor--module-66811.js",
+    "chars": 1558,
+    "features": [
+      "signals",
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "Timer555",
+    "module_id": "27251",
+    "file": "models/Timer555--module-27251.js",
+    "chars": 2360,
+    "features": [
+      "signals",
+      "nets",
+      "scheduler"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "timer556",
+    "module_id": "73430",
+    "file": "models/timer556--module-73430.js",
+    "chars": 2640,
+    "features": [
+      "signals",
+      "nets",
+      "scheduler"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "tip120",
+    "module_id": "94047",
+    "file": "models/tip120--module-94047.js",
+    "chars": 2000,
+    "features": [
+      "nets",
+      "scheduler",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "TMP36",
+    "module_id": "84820",
+    "file": "models/TMP36--module-84820.js",
+    "chars": 2149,
+    "features": [
+      "signals",
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "USBstandard",
+    "module_id": "70394",
+    "file": "models/USBstandard--module-70394.js",
+    "chars": 1177,
+    "features": [
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "vibration_motor",
+    "module_id": "45616",
+    "file": "models/vibration_motor--module-45616.js",
+    "chars": 1657,
+    "features": [
+      "nets",
+      "scheduler",
+      "measurements",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "voltageRegulator3p3V",
+    "module_id": "50330",
+    "file": "models/voltageRegulator3p3V--module-50330.js",
+    "chars": 2109,
+    "features": [
+      "signals",
+      "nets",
+      "scheduler",
+      "measurements",
+      "analog",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "voltageRegulator5V",
+    "module_id": "34639",
+    "file": "models/voltageRegulator5V--module-34639.js",
+    "chars": 2085,
+    "features": [
+      "signals",
+      "nets",
+      "scheduler",
+      "measurements",
+      "analog",
+      "ui_bridge"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "ws2812_breadboard",
+    "module_id": "97228",
+    "file": "models/ws2812_breadboard--module-97228.js",
+    "chars": 1032,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "ws2812_jewel7",
+    "module_id": "87222",
+    "file": "models/ws2812_jewel7--module-87222.js",
+    "chars": 902,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "ws2812_strip10",
+    "module_id": "60331",
+    "file": "models/ws2812_strip10--module-60331.js",
+    "chars": 1012,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "ws2812_strip12",
+    "module_id": "20365",
+    "file": "models/ws2812_strip12--module-20365.js",
+    "chars": 1012,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "ws2812_strip16",
+    "module_id": "18961",
+    "file": "models/ws2812_strip16--module-18961.js",
+    "chars": 1012,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "ws2812_strip20",
+    "module_id": "73964",
+    "file": "models/ws2812_strip20--module-73964.js",
+    "chars": 1012,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "ws2812_strip4",
+    "module_id": "31784",
+    "file": "models/ws2812_strip4--module-31784.js",
+    "chars": 1000,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "ws2812_strip6",
+    "module_id": "17074",
+    "file": "models/ws2812_strip6--module-17074.js",
+    "chars": 1000,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "ws2812_strip8",
+    "module_id": "70508",
+    "file": "models/ws2812_strip8--module-70508.js",
+    "chars": 1000,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "ws2812b",
+    "module_id": "52526",
+    "file": "models/ws2812b--module-52526.js",
+    "chars": 668,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "ws2812b_ring12",
+    "module_id": "84263",
+    "file": "models/ws2812b_ring12--module-84263.js",
+    "chars": 800,
+    "features": [],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "ws2812b_ring16",
+    "module_id": "41699",
+    "file": "models/ws2812b_ring16--module-41699.js",
+    "chars": 1012,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "ws2812b_ring24",
+    "module_id": "57962",
+    "file": "models/ws2812b_ring24--module-57962.js",
+    "chars": 1012,
+    "features": [
+      "nets"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "simulation_model": "zenerDiode",
+    "module_id": "1660",
+    "file": "models/zenerDiode--module-1660.js",
+    "chars": 954,
+    "features": [
+      "signals",
+      "nets",
+      "properties"
+    ],
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  }
+]

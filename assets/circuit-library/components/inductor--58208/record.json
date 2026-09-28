@@ -1,0 +1,174 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 17913,
+  "device_id": "58208",
+  "name": "Inductor",
+  "description": "Resists change in current flow.",
+  "tags": [
+    "general"
+  ],
+  "thumbnail": "inductor.png",
+  "thumbnail_source": "/inductor.png",
+  "footprint": {
+    "name": "0207/10",
+    "id": 58208
+  },
+  "simulation_model": "inductor",
+  "extents": {
+    "top": -4.889999866485596,
+    "left": -21.032001495361328,
+    "width": 42.06300354003906,
+    "height": 9.780000686645508
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-23T10:59:22Z",
+      "dir": 180,
+      "id": 202884,
+      "label": null,
+      "name": "Terminal 1",
+      "schematic_symbol_id": 20214,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T10:59:22Z",
+      "x": -20,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-23T10:59:22Z",
+      "dir": 0,
+      "id": 202885,
+      "label": null,
+      "name": "Terminal 2",
+      "schematic_symbol_id": 20214,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T10:59:22Z",
+      "x": 20,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2012-07-03T19:54:03Z",
+      "dir": 270,
+      "id": 31,
+      "label": null,
+      "name": "1",
+      "schematic_symbol_id": 15,
+      "terminal_type": "schematic",
+      "updated_at": "2012-07-03T19:54:03Z",
+      "x": 0,
+      "y": -30
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2012-07-03T19:54:03Z",
+      "dir": 90,
+      "id": 32,
+      "label": null,
+      "name": "2",
+      "schematic_symbol_id": 15,
+      "terminal_type": "schematic",
+      "updated_at": "2012-07-03T19:54:03Z",
+      "x": 0,
+      "y": 30
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-02-18T14:49:42Z",
+      "dir": 0,
+      "drill": "812.8",
+      "footprint_id": 1121,
+      "generator_type": "single",
+      "id": 3350,
+      "layer0": "<polygon points=\"565.7027253065002,228.55873705024766 238.39680033227378,561.6276660676001 -228.55873705024771,565.7027253065002 -561.6276660676001,238.3968003322738 -565.7027253065002,-228.55873705024766 -238.39680033227387,-561.6276660676001 228.55873705024763,-565.7027253065002 561.6276660676001,-238.3968003322739 \"/>",
+      "layer1": "<polygon points=\"565.7027253065002,228.55873705024766 238.39680033227378,561.6276660676001 -228.55873705024771,565.7027253065002 -561.6276660676001,238.3968003322738 -565.7027253065002,-228.55873705024766 -238.39680033227387,-561.6276660676001 228.55873705024763,-565.7027253065002 561.6276660676001,-238.3968003322739 \"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": 525,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:38:13Z",
+      "x": -5080,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-02-18T14:49:42Z",
+      "dir": 0,
+      "drill": "812.8",
+      "footprint_id": 1121,
+      "generator_type": "single",
+      "id": 3351,
+      "layer0": "<polygon points=\"565.7027253065002,228.55873705024766 238.39680033227378,561.6276660676001 -228.55873705024771,565.7027253065002 -561.6276660676001,238.3968003322738 -565.7027253065002,-228.55873705024766 -238.39680033227387,-561.6276660676001 228.55873705024763,-565.7027253065002 561.6276660676001,-238.3968003322739 \"/>",
+      "layer1": "<polygon points=\"565.7027253065002,228.55873705024766 238.39680033227378,561.6276660676001 -228.55873705024771,565.7027253065002 -561.6276660676001,238.3968003322738 -565.7027253065002,-228.55873705024766 -238.39680033227387,-561.6276660676001 228.55873705024763,-565.7027253065002 561.6276660676001,-238.3968003322739 \"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": 525,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:38:13Z",
+      "x": 5080,
+      "y": 0
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "created_at": "2014-07-30T11:51:35Z",
+      "default": 10,
+      "default_prefix": "u",
+      "default_show": false,
+      "device_id": 17913,
+      "id": 282,
+      "name": "inductance",
+      "unit": "H",
+      "updated_at": "2014-07-30T11:51:35Z"
+    }
+  ],
+  "datasheets_or_references": [
+    {
+      "path": "device.datasheet_urls",
+      "url": "[{\"filename\":\"B78108S1683J-EPCOS-datasheet-12497588.pdf\",\"url\":\"http://datasheet.octopart.com/B78108S1683J-EPCOS-datasheet-12497588.pdf\"}]"
+    },
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435057299e3722f1441c9a67dda4bc9b2c16ed0ab/thumbnail20150623-27441-1rfkkc1.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435057299e3722f1441c9a67dda4bc9b2c16ed0ab/thumbnail20150623-27441-1rfkkc1.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14370186633baa5bea0d53583ce9e1724ce735e42b/thumbnail20150716-9228-1j8o2mg.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14370186633baa5bea0d53583ce9e1724ce735e42b/thumbnail20150716-9228-1j8o2mg.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14338543064ae3d3b989dd4fec5d6b988059a1825a/thumbnail20150609-19167-17yktqt.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14338543064ae3d3b989dd4fec5d6b988059a1825a/thumbnail20150609-19167-17yktqt.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/58208.json"
+}

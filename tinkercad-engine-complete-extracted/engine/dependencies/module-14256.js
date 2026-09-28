@@ -1,0 +1,1 @@
+14256(e,t,i){const n=i(77627).create,o=i(19207),r=i(97353),a=function(e){this.drawing=o(e),this.compatibility=r(),this.eagle=n("eagle",{version:"9.7.0"},[this.drawing,this.compatibility])};a.prototype.toXML=function(){return'<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE eagle SYSTEM "eagle.dtd">\n'+this.eagle.toXML()},e.exports=a

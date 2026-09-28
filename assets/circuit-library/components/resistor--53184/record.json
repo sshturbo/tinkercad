@@ -1,0 +1,174 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 16511,
+  "device_id": "53184",
+  "name": "Resistor",
+  "description": "Restricts the flow of electricity in a circuit, reducing the voltage and current as a result.",
+  "tags": [
+    "general"
+  ],
+  "thumbnail": "resistor.png",
+  "thumbnail_source": "/resistor.png",
+  "footprint": {
+    "name": "R6332W",
+    "id": 53184
+  },
+  "simulation_model": "resistor",
+  "extents": {
+    "top": -20,
+    "left": -4.800000190734863,
+    "width": 9.600000381469727,
+    "height": 40
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-30T12:56:54Z",
+      "dir": 90,
+      "id": 204371,
+      "label": null,
+      "name": "Terminal 1",
+      "schematic_symbol_id": 20380,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-30T12:56:54Z",
+      "x": 0,
+      "y": 20
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-30T12:56:54Z",
+      "dir": -90,
+      "id": 204372,
+      "label": null,
+      "name": "Terminal 2",
+      "schematic_symbol_id": 20380,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-30T12:56:54Z",
+      "x": 0,
+      "y": -20
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2012-07-03T19:38:33Z",
+      "dir": 270,
+      "id": 6,
+      "label": null,
+      "name": "1",
+      "schematic_symbol_id": 5,
+      "terminal_type": "schematic",
+      "updated_at": "2012-07-03T19:38:33Z",
+      "x": 0,
+      "y": -30
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2012-07-03T19:38:33Z",
+      "dir": 90,
+      "id": 7,
+      "label": null,
+      "name": "2",
+      "schematic_symbol_id": 5,
+      "terminal_type": "schematic",
+      "updated_at": "2012-07-03T19:38:33Z",
+      "x": 0,
+      "y": 30
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-02-20T21:45:33Z",
+      "dir": 0,
+      "drill": null,
+      "footprint_id": 2080,
+      "generator_type": "single",
+      "id": 8013,
+      "layer0": "<rect x=\"-1000.0\" y=\"-1050.0\" width=\"2000.0\" height=\"2100.0\"/>",
+      "layer1": null,
+      "name": "1",
+      "number": null,
+      "pad_type_id": 551,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:46:05Z",
+      "x": -2896,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-02-20T21:45:33Z",
+      "dir": 0,
+      "drill": null,
+      "footprint_id": 2080,
+      "generator_type": "single",
+      "id": 8014,
+      "layer0": "<rect x=\"-1000.0\" y=\"-1050.0\" width=\"2000.0\" height=\"2100.0\"/>",
+      "layer1": null,
+      "name": "2",
+      "number": null,
+      "pad_type_id": 551,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:46:05Z",
+      "x": 2896,
+      "y": 0
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "created_at": "2014-06-18T15:26:59Z",
+      "default": 1,
+      "default_prefix": "k",
+      "default_show": false,
+      "device_id": 16511,
+      "id": 259,
+      "name": "resistance",
+      "unit": "ohm",
+      "updated_at": "2014-06-18T15:26:59Z"
+    }
+  ],
+  "datasheets_or_references": [
+    {
+      "path": "device.datasheet_urls",
+      "url": "[{\"filename\":\"ERJ6GEYJ103V-Panasonic-datasheet-5314550.pdf\",\"url\":\"http://datasheet.octopart.com/ERJ6GEYJ103V-Panasonic-datasheet-5314550.pdf\"}]"
+    },
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435677171a54a830953746dcb1008f9cdebbcb7ae/thumbnail20150630-15388-1t4ggs.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435677171a54a830953746dcb1008f9cdebbcb7ae/thumbnail20150630-15388-1t4ggs.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1436073490c09175a3e561730dd845ec012d752fae/thumbnail20150705-25308-1n9hq8d.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1436073490c09175a3e561730dd845ec012d752fae/thumbnail20150705-25308-1n9hq8d.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1433854362470f99003b3e9439bf94114a2af523ac/thumbnail20150609-11029-3ekz34.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1433854362470f99003b3e9439bf94114a2af523ac/thumbnail20150609-11029-3ekz34.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/53184.json"
+}

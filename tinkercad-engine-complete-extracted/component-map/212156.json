@@ -1,0 +1,7 @@
+{
+  "device_id": "212156",
+  "simulation_model": "voltageRegulator3p3V",
+  "implementation_found": true,
+  "module_id": "50330",
+  "model_file": "models/voltageRegulator3p3V--module-50330.js"
+}

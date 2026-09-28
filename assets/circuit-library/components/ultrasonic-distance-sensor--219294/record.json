@@ -1,0 +1,234 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 50340,
+  "device_id": "219294",
+  "name": "Ultrasonic Distance Sensor",
+  "description": "A sensor that uses sound waves to determine how far away an object is from it.",
+  "tags": [
+    "input",
+    "transducer",
+    "measure",
+    "detector",
+    "ping"
+  ],
+  "thumbnail": "sensorUltrasonicDistance.png",
+  "thumbnail_source": "/sensorUltrasonicDistance.png",
+  "footprint": {
+    "name": "Ultrasonic Distance Sensor",
+    "id": 219294
+  },
+  "simulation_model": "sensor_ultrasonic_ping",
+  "extents": {
+    "top": -44,
+    "left": -90,
+    "width": 180,
+    "height": 104
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2016-06-24T20:45:36Z",
+      "dir": 90,
+      "id": 289478,
+      "label": null,
+      "name": "Ground",
+      "schematic_symbol_id": 31759,
+      "terminal_type": "breadboard",
+      "updated_at": "2016-06-24T20:45:36Z",
+      "x": -10,
+      "y": 60
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2016-06-24T20:45:36Z",
+      "dir": 90,
+      "id": 289479,
+      "label": null,
+      "name": "Power",
+      "schematic_symbol_id": 31759,
+      "terminal_type": "breadboard",
+      "updated_at": "2016-06-24T20:45:36Z",
+      "x": 0,
+      "y": 60
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.2",
+      "created_at": "2016-06-24T20:45:36Z",
+      "dir": 90,
+      "id": 289480,
+      "label": null,
+      "name": "Signal",
+      "schematic_symbol_id": 31759,
+      "terminal_type": "breadboard",
+      "updated_at": "2016-06-24T20:45:36Z",
+      "x": 10,
+      "y": 60
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2016-06-24T20:39:27Z",
+      "dir": 90,
+      "id": 289475,
+      "label": null,
+      "name": "neg",
+      "schematic_symbol_id": 31758,
+      "terminal_type": "schematic",
+      "updated_at": "2016-06-24T20:39:27Z",
+      "x": -10,
+      "y": 80
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2016-06-24T20:39:27Z",
+      "dir": 90,
+      "id": 289476,
+      "label": null,
+      "name": "pos",
+      "schematic_symbol_id": 31758,
+      "terminal_type": "schematic",
+      "updated_at": "2016-06-24T20:39:27Z",
+      "x": 0,
+      "y": 80
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.2",
+      "created_at": "2016-06-24T20:39:27Z",
+      "dir": 90,
+      "id": 289477,
+      "label": null,
+      "name": "sig",
+      "schematic_symbol_id": 31758,
+      "terminal_type": "schematic",
+      "updated_at": "2016-06-24T20:39:27Z",
+      "x": 10,
+      "y": 80
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2016-06-24T20:43:41Z",
+      "dir": null,
+      "drill": "1000",
+      "footprint_id": 41611,
+      "generator_type": null,
+      "id": 357794,
+      "layer0": "<rect x=\"-1000\" y=\"-1500\" width=\"2000\" height=\"3000\" rx=\"1000\" ry=\"1000\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-1000\" y=\"-1500\" width=\"2000\" height=\"3000\" rx=\"1000\" ry=\"1000\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "SIG",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2016-06-24T20:43:41Z",
+      "x": 2540,
+      "y": 2540
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2016-06-24T20:43:41Z",
+      "dir": null,
+      "drill": "1000",
+      "footprint_id": 41611,
+      "generator_type": null,
+      "id": 357793,
+      "layer0": "<rect x=\"-1000\" y=\"-1500\" width=\"2000\" height=\"3000\" rx=\"1000\" ry=\"1000\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-1000\" y=\"-1500\" width=\"2000\" height=\"3000\" rx=\"1000\" ry=\"1000\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "5V",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2016-06-24T20:43:41Z",
+      "x": 0,
+      "y": 2540
+    },
+    {
+      "path": "footprint.pads_attributes.2",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2016-06-24T20:43:41Z",
+      "dir": null,
+      "drill": "1000",
+      "footprint_id": 41611,
+      "generator_type": null,
+      "id": 357792,
+      "layer0": "<rect x=\"-1000\" y=\"-1500\" width=\"2000\" height=\"3000\" rx=\"1000\" ry=\"1000\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-1000\" y=\"-1500\" width=\"2000\" height=\"3000\" rx=\"1000\" ry=\"1000\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "GND",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2016-06-24T20:43:41Z",
+      "x": -2540,
+      "y": 2540
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "created_at": "2016-06-27T17:47:01Z",
+      "default": -200,
+      "default_prefix": "",
+      "default_show": false,
+      "device_id": 50340,
+      "id": 2226,
+      "name": "Target Y",
+      "unit": "hidden",
+      "updated_at": "2016-06-27T17:47:01Z"
+    },
+    {
+      "path": "device.properties_attributes.1",
+      "created_at": "2016-06-27T17:46:11Z",
+      "default": 0,
+      "default_prefix": "",
+      "default_show": false,
+      "device_id": 50340,
+      "id": 2225,
+      "name": "Target X",
+      "unit": "hidden",
+      "updated_at": "2016-06-27T17:46:11Z"
+    }
+  ],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1467060228fc7c02eed13ecea187521ec1a009d3bd/thumbnail20160627-29279-153jbfk.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1467060228fc7c02eed13ecea187521ec1a009d3bd/thumbnail20160627-29279-153jbfk.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1467060228449275f0b41de28762855fd587097fe1/thumbnail20160627-7072-bk0bpa.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1467060228449275f0b41de28762855fd587097fe1/thumbnail20160627-7072-bk0bpa.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/146769818502c0be9ca0043ba9a39c6b3de131cdd1/thumbnail20160705-7152-17sxm9a.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/146769818502c0be9ca0043ba9a39c6b3de131cdd1/thumbnail20160705-7152-17sxm9a.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/219294.json"
+}

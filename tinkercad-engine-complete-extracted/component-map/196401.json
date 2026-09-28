@@ -1,0 +1,7 @@
+{
+  "device_id": "196401",
+  "simulation_model": "IRsensor",
+  "implementation_found": true,
+  "module_id": "76617",
+  "model_file": "models/IRsensor--module-76617.js"
+}

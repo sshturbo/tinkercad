@@ -1,0 +1,7 @@
+{
+  "device_id": "display7SegmentI2C",
+  "simulation_model": "seven-segment-i2c",
+  "implementation_found": true,
+  "module_id": "7403",
+  "model_file": "models/seven-segment-i2c--module-7403.js"
+}

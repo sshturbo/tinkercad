@@ -1,0 +1,7 @@
+{
+  "device_id": "219294",
+  "simulation_model": "sensor_ultrasonic_ping",
+  "implementation_found": true,
+  "module_id": "81629",
+  "model_file": "models/sensor_ultrasonic_ping--module-81629.js"
+}

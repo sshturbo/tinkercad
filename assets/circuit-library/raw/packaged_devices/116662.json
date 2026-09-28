@@ -1,0 +1,176 @@
+{
+  "created_at": "2015-06-23T11:49:34Z",
+  "datasheet_url": null,
+  "description": null,
+  "device_id": 28709,
+  "footprint_id": null,
+  "id": 116662,
+  "manufacturer": null,
+  "name": "multimeter(bb)",
+  "octo_uid": null,
+  "updated_at": "2015-06-23T11:49:34Z",
+  "use_count": 0,
+  "user_id": null,
+  "device": {
+    "base": "Meter",
+    "breadboard_id": 20219,
+    "circuitscribe_footprint_id": null,
+    "circuitscribe_footprint_rotation": 0,
+    "created_at": "2015-06-23T11:49:34Z",
+    "datasheet_urls": "",
+    "description": "Electronic measuring instrument that allows you to measure voltage and current.",
+    "id": 28709,
+    "name": "Multimeter",
+    "programmable": false,
+    "programmable_settings": "",
+    "simulation_model": "multimeter_v2",
+    "summary": "",
+    "updated_at": "2015-06-23T11:49:50Z",
+    "usage": "",
+    "use_count": 601,
+    "user_id": 1,
+    "version_root_id": 19269,
+    "breadboard": {
+      "background": false,
+      "breadboard": true,
+      "created_at": "2015-06-23T11:48:59Z",
+      "extents": {
+        "top": -54,
+        "left": -71,
+        "width": 142,
+        "height": 54
+      },
+      "generator_type": null,
+      "id": 20219,
+      "name": "breadboard_v2_multimeter",
+      "score": 0,
+      "svg": "<svg class=\"cgfx__multimeter\" viewBox=\"-1000 -1000 2000 2000\" width=\"2000\" height=\"2000\" x=\"-1000\" y=\"-1000\"><g class=\"cgfx__terminalred cgfx__wire-terminal\" transform=\"translate(5, 0) rotate(180)\"><line fill=\"none\" stroke=\"#8C8C8C\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" x1=\"0\" y1=\"7.934\" x2=\"0\" y2=\"0\"/><line class=\"cgfx__selected\" display=\"none\" fill='none' stroke='#3b8ed7' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' x1=\"0\" y1=\"7.934\" x2=\"0\" y2=\"0\"/><path fill=\"#AF1C1C\" d=\"M-2,2.72c0-0.55,0.45-1,1-1h2c0.55,0,1,0.45,1,1v2.483h-4V2.72z\"/><path class=\"cgfx__selected\" display=\"none\" style='fill:#3b8ed7;stroke:none;stroke-linejoin=round;stroke-miterlimit:10;' d=\"M-2,2.72c0-0.55,0.45-1,1-1h2c0.55,0,1,0.45,1,1v2.483h-4V2.72z\"/><path style='fill:#000;fill-opacity:0.3' d=\"M-2,3.488c0,0,0.828,0.372,2,0.372s2-0.372,2-0.372V5.22h-4V3.488z\"/><path fill=\"#AF1C1C\" d=\"M-3,5.22c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1v5.983h-6V5.22z\"/><path class=\"cgfx__selected\" display=\"none\" style='fill:#3b8ed7;stroke:none;stroke-linejoin=round;stroke-miterlimit:10;' d=\"M-3,5.22c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1v5.983h-6V5.22z\"/><path style='fill:#000;fill-opacity:0.3' d=\"M-3,6.443c0,0,1.415,0.536,3,0.536s3-0.536,3-0.536v4.761h-6V6.443z\"/><path class=\"cgfx__hitarea\" style='fill:#ff0000;' opacity='0' display='none' d=\"M2,4.22v-1.5c0-0.55-0.45-1-1-1V0c0-0.552-0.448-1-1-1s-1,0.448-1,1v1.72c-0.55,0-1,0.45-1,1v1.5c-0.55,0-1,0.45-1,1v5.983h6V5.22C3,4.67,2.55,4.22,2,4.22z\"/></g><g class=\"cgfx__terminalblack cgfx__wire-terminal\" transform=\"translate(-5, 0) rotate(180)\"><line fill=\"none\" stroke=\"#8C8C8C\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" x1=\"0\" y1=\"7.934\" x2=\"0\" y2=\"0\"/><line class=\"cgfx__selected\" display=\"none\" fill='none' stroke='#3b8ed7' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' x1=\"0\" y1=\"7.934\" x2=\"0\" y2=\"0\"/><path fill=\"#333333\" d=\"M-2,2.72c0-0.55,0.45-1,1-1h2c0.55,0,1,0.45,1,1v2.483h-4V2.72z\"/><path class=\"cgfx__selected\" display=\"none\" style='fill:#3b8ed7;stroke:none;stroke-linejoin=round;stroke-miterlimit:10;' d=\"M-2,2.72c0-0.55,0.45-1,1-1h2c0.55,0,1,0.45,1,1v2.483h-4V2.72z\"/><path style='fill:#000;fill-opacity:0.3' d=\"M-2,3.488c0,0,0.828,0.372,2,0.372s2-0.372,2-0.372V5.22h-4V3.488z\"/><path fill=\"#333333\" d=\"M-3,5.22c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1v5.983h-6V5.22z\"/><path class=\"cgfx__selected\" display=\"none\" style='fill:#3b8ed7;stroke:none;stroke-linejoin=round;stroke-miterlimit:10;' d=\"M-3,5.22c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1v5.983h-6V5.22z\"/><path style='fill:#000;fill-opacity:0.3' d=\"M-3,6.443c0,0,1.415,0.536,3,0.536s3-0.536,3-0.536v4.761h-6V6.443z\"/><path class=\"cgfx__hitarea\" style='fill:#ff0000;' opacity='0' display='none' d=\"M2,4.22v-1.5c0-0.55-0.45-1-1-1V0c0-0.552-0.448-1-1-1s-1,0.448-1,1v1.72c-0.55,0-1,0.45-1,1v1.5c-0.55,0-1,0.45-1,1v5.983h6V5.22C3,4.67,2.55,4.22,2,4.22z\"/></g><g display=\"inline\" transform=\"translate(0,-31)\"><rect class=\"cgfx__selected\" display=\"none\"  fill='#3b8ed7' stroke='#3b8ed7' stroke-width='3.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' x=\"-71\" y=\"-23\" width=\"142\" height=\"46\" rx=\"4\" ry=\"4\" /><rect x=\"-71\" y=\"-23\" fill=\"#F2AE16\" width=\"142\" height=\"46\" rx=\"4\" ry=\"4\" /><rect x=\"-66\" y=\"-18\" fill=\"#4E5251\" width=\"119\" height=\"36\" rx=\"1\" ry=\"1\" /><rect class=\"cgfx__screen\" x=\"-64\" y=\"-16\" style=\"fill:#DAE5E9;\" opacity=\"1\" width=\"115\" height=\"32\" rx=\"0\" ry=\"0\" /><text text-anchor=\"end\"><tspan class=\"cgfx__displaytext\" x=\"45\" y=\"7\" font-family=\"Arial\" style=\"fill:#4E5251; font-size:20; font-weight:bold;\">125.0 mA</tspan></text><rect class=\"cgfx__hitarea\" style='fill:#ff0000;' opacity='0' display='none' x=\"-71\" y=\"-23\" fill=\"#F2AE16\" width=\"142\" height=\"46\" rx=\"4\" ry=\"4\" /><g class=\"cgfx__button-ampere\" transform=\"translate(62,-13)\"><g class=\"cgfx__button-ampere-active\" display=\"inline\"><circle fill=\"#4E5251\" cx=\"0\" cy=\"0\" r=\"5\"/><g stroke=\"#F2AE16\" transform=\"scale(0.7)\"><polyline fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" points=\"-2.19,3.06 0.03,-3.06 2.19,3.06\"/><line fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" x1=\"-1.46\" y1=\"1.19\" x2=\"1.52\" y2=\"1.19\"/></g></g><g class=\"cgfx__button-ampere-inactive\" display=\"none\" ><circle stroke=\"#4E5251\" fill=\"#F2AE16\" cx=\"0\" cy=\"0\" r=\"4.5\"/><g stroke=\"#4E5251\" transform=\"scale(0.7)\"><polyline fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" points=\"-2.19,3.06 0.03,-3.06 2.19,3.06\"/><line fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" x1=\"-1.46\" y1=\"1.19\" x2=\"1.52\" y2=\"1.19\"/></g></g><circle class=\"cgfx__hitarea-interaction cgfx__button-ampere\" style='fill:#ff0000;' opacity='0' display='none' cx=\"0\" cy=\"0\" r=\"5\"/></g><g class=\"cgfx__button-volt\" transform=\"translate(62,0)\"><g class=\"cgfx__button-volt-active\" display=\"none\"><circle fill=\"#4E5251\" cx=\"0\" cy=\"0\" r=\"5\"/><g stroke=\"#F2AE16\" transform=\"scale(0.7)\"><polyline fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" points=\"1.97,-2.92 -0.01,2.92 -1.97,-2.92\"/></g></g><g class=\"cgfx__button-volt-inactive\" display=\"inline\"><circle stroke=\"#4E5251\" fill=\"#F2AE16\" cx=\"0\" cy=\"0\" r=\"4.5\"/><g stroke=\"#4E5251\" transform=\"scale(0.7)\"><polyline fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" points=\"1.97,-2.92 -0.01,2.92 -1.97,-2.92\"/></g></g><circle class=\"cgfx__hitarea-interaction cgfx__button-volt\" style='fill:#ff0000;' opacity='0' display='none' cx=\"0\" cy=\"0\" r=\"5\"/></g><g class=\"cgfx__button-resistance\" transform=\"translate(62,12)\"><g class=\"cgfx__button-resistance-active\" display=\"none\"><circle fill=\"#4E5251\" cx=\"0\" cy=\"0\" r=\"5\"/><g stroke=\"#F2AE16\" transform=\"scale(0.7)\"><path fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M-1.39,3.03v-6.05h1.92c0,0,1.45-0.02,1.45,1.2c0,1.31-0.58,1.7-1.56,1.7h-1.48\"/><line fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" x1=\"2.11\" y1=\"3.03\" x2=\"0.3\" y2=\"-0.12\"/></g></g><g class=\"cgfx__button-resistance-inactive\" display=\"inline\"><circle stroke=\"#4E5251\" fill=\"#F2AE16\" cx=\"0\" cy=\"0\" r=\"4.5\"/><g stroke=\"#4E5251\" transform=\"scale(0.7)\"><path fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M-1.39,3.03v-6.05h1.92c0,0,1.45-0.02,1.45,1.2c0,1.31-0.58,1.7-1.56,1.7h-1.48\"/><line fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" x1=\"2.11\" y1=\"3.03\" x2=\"0.3\" y2=\"-0.12\"/></g></g><circle class=\"cgfx__hitarea-interaction cgfx__button-resistance\" style='fill:#ff0000;' opacity='0' display='none' cx=\"0\" cy=\"0\" r=\"5\"/></g><polygon class=\"cgfx__breakdown\" transform=\"translate(0,0)rotate(0) scale(3,3)\" display=\"none\" style=\"opacity:0.7;fill:#FF0000;stroke:#F7E60B;stroke-miterlimit:10;\" points=\"2.415,-5.161 7.901,-7.299 5.471,-2.294 11.953,-0.565 5.126,1.63 8.332,8.197 2.59,5.053 -0.137,10.527 -2.24,4.375 -7.565,7.957 -6.133,2.443 -11.953,0.87 -5.945,-1.796 -8.854,-7.513 -3.289,-5.371 -1.401,-10.527 \"/></g><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">Negative</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"-5\" y1=\"0\" x2=\"-5\" y2=\"25\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">Positive</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"5\" y1=\"0\" x2=\"5\" y2=\"25\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g></svg>",
+      "symbol_type": "breadboard",
+      "terminal_list": null,
+      "thumb_status": "--- !ruby/exception:ArgumentError\nmessage: could not find /tmp/schematic_symbol_20219_thumb.png\n",
+      "thumb_url": "https://123d-circuits-files.s3.amazonaws.com/14350603221e74b93652e9e7493718320784759591/thumbnail20150623-5104-uh2hr5.png",
+      "updated_at": "2015-06-23T11:49:14Z",
+      "user_id": null,
+      "thumbUrl": "https://123d-circuits-files.s3.amazonaws.com/14350603221e74b93652e9e7493718320784759591/thumbnail20150623-5104-uh2hr5.png",
+      "thumbStatus": "ok",
+      "rootId": "280476",
+      "schematic_symbol_terminals_attributes": [
+        {
+          "created_at": "2015-06-23T11:49:20Z",
+          "dir": 90,
+          "id": 202930,
+          "label": null,
+          "name": "Negative",
+          "schematic_symbol_id": 20219,
+          "terminal_type": "breadboard",
+          "updated_at": "2015-06-23T11:49:20Z",
+          "x": -5,
+          "y": 0
+        },
+        {
+          "created_at": "2015-06-23T11:49:20Z",
+          "dir": 90,
+          "id": 202931,
+          "label": null,
+          "name": "Positive",
+          "schematic_symbol_id": 20219,
+          "terminal_type": "breadboard",
+          "updated_at": "2015-06-23T11:49:20Z",
+          "x": 5,
+          "y": 0
+        }
+      ]
+    },
+    "subdevices_attributes": [
+      {
+        "created_at": "2015-06-23T11:49:34Z",
+        "device_id": 28709,
+        "id": 39641,
+        "init_x": 0,
+        "init_y": 0,
+        "name": "",
+        "schematic_symbol_id": 4268,
+        "updated_at": "2015-06-23T11:49:34Z",
+        "schematic_symbol_attributes": {
+          "background": false,
+          "breadboard": false,
+          "created_at": "2013-09-02T21:45:21Z",
+          "generator_type": null,
+          "id": 4268,
+          "name": "schematic_multimeter(bb)",
+          "score": 0,
+          "svg": "<g id=\"multimeter\"><g display=\"none\"><circle id=\"terminal-neg\" display=\"inline\" fill=\"#FF0000\" cx=\"-22.957\" cy=\"0\" r=\"1.5\"/><line id=\"terminalroute-neg\" display=\"inline\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" x1=\"-27.985\" y1=\"0\" x2=\"-22.985\" y2=\"0\"/></g><g display=\"none\"><circle id=\"terminal-pos\" display=\"inline\" fill=\"#FF0000\" cx=\"22.957\" cy=\"0\" r=\"1.5\"/><line id=\"terminalroute-pos\" display=\"inline\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" x1=\"27.985\" y1=\"0\" x2=\"22.985\" y2=\"0\"/></g><line id=\"line\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" x1=\"22.985\" y1=\"0\" x2=\"-22.985\" y2=\"0\"/><circle fill=\"#FFFFFF\" stroke=\"#000000\" stroke-width=\"1.5\" cx=\"0\" cy=\"0\" r=\"16.512\"/><path d=\"M-13.65,0.39c-0.216,0-0.384-0.168-0.384-0.384c0-0.204,0.156-0.396,0.384-0.396h2.747c0.228,0,0.396,0.192,0.396,0.396   c0,0.216-0.18,0.384-0.396,0.384H-13.65z\"/><path d=\"M11.922,0.378v1.839c0,0.228-0.181,0.408-0.408,0.408s-0.407-0.18-0.407-0.408V0.378h-1.66   c-0.228,0-0.396-0.168-0.396-0.384c0-0.228,0.168-0.396,0.396-0.396h1.659v-1.814c0-0.216,0.18-0.408,0.407-0.408   s0.408,0.192,0.408,0.408v1.814h1.658c0.216,0,0.396,0.168,0.396,0.396c0,0.216-0.168,0.384-0.396,0.384   C13.579,0.378,11.922,0.378,11.922,0.378z\"/><path id=\"animate-label-a\" display=\"none\" d=\"M2.371,2.703H-2.37l-1.06,2.929c-0.154,0.405-0.52,0.655-0.944,0.655   c-0.52,0-0.982-0.443-0.982-1.002c0-0.115,0.019-0.212,0.058-0.327l4.24-11.833C-0.906-7.28-0.482-7.608,0-7.608   c0.443,0,0.906,0.309,1.06,0.751L5.3,4.958c0.039,0.096,0.058,0.23,0.058,0.327c0,0.521-0.424,1.002-1.002,1.002   c-0.405,0-0.79-0.25-0.944-0.655L2.371,2.703z M0-3.907l-1.677,4.664h3.354L0-3.907z\"/><path id=\"animate-label-v\" display=\"none\" d=\"M-5.116-5.241c-0.039-0.116-0.058-0.213-0.058-0.328c0-0.559,0.482-1.002,1.002-1.002   c0.404,0,0.809,0.27,0.944,0.675l3.218,9.731l3.238-9.731c0.135-0.405,0.52-0.675,0.925-0.675c0.578,0,1.021,0.501,1.021,1.021   c0,0.096-0.02,0.212-0.058,0.309L1.051,6.553c-0.155,0.481-0.598,0.77-1.061,0.77c-0.501,0-0.906-0.327-1.06-0.771L-5.116-5.241z\"/><path id=\"animate-label-m\" d=\"M4.103-3.121L1.137,2.258C0.939,2.614,0.543,2.852,0.128,2.852c-0.435,0-0.811-0.237-1.008-0.593l-2.966-5.379v8.642c0,0.574-0.494,1.048-1.048,1.048c-0.574,0-1.048-0.475-1.048-1.048V-6.542c0-0.633,0.534-1.147,1.147-1.147c0.455,0,0.831,0.257,1.028,0.613l3.896,6.961l3.896-6.961c0.198-0.356,0.613-0.613,1.028-0.613c0.633,0,1.147,0.515,1.147,1.147V5.521c0,0.574-0.494,1.048-1.068,1.048c-0.554,0-1.028-0.475-1.028-1.048V-3.121z\"/></g>",
+          "symbol_type": "schematic",
+          "terminal_list": null,
+          "thumb_status": "rendered",
+          "thumb_url": "https://123d-circuits-files.s3.amazonaws.com/14498026559568e5cc74861d61cb75fb0de28fc234/thumbnail20151211-11767-zch7lw.png",
+          "updated_at": "2015-12-10T16:43:34Z",
+          "user_id": 1,
+          "thumbUrl": "https://123d-circuits-files.s3.amazonaws.com/14498026559568e5cc74861d61cb75fb0de28fc234/thumbnail20151211-11767-zch7lw.png",
+          "thumbStatus": "ok",
+          "rootId": "19267",
+          "schematic_symbol_terminals_attributes": [
+            {
+              "created_at": "2013-09-02T21:45:21Z",
+              "dir": 0,
+              "id": 57433,
+              "label": null,
+              "name": "terminal-neg",
+              "schematic_symbol_id": 4268,
+              "terminal_type": "schematic",
+              "updated_at": "2013-09-02T21:45:21Z",
+              "x": -22.957,
+              "y": 0
+            },
+            {
+              "created_at": "2013-09-02T21:45:21Z",
+              "dir": 0,
+              "id": 57434,
+              "label": null,
+              "name": "terminal-pos",
+              "schematic_symbol_id": 4268,
+              "terminal_type": "schematic",
+              "updated_at": "2013-09-02T21:45:21Z",
+              "x": 22.957,
+              "y": 0
+            }
+          ]
+        }
+      }
+    ],
+    "properties_attributes": [
+      {
+        "created_at": "2015-06-23T11:49:34Z",
+        "default": 1,
+        "default_prefix": "1",
+        "default_show": null,
+        "device_id": 28709,
+        "id": 825,
+        "name": "Mode",
+        "unit": "[[0,\"Amperage\"],[1,\"Voltage\"],[2,\"Resistance\"]]",
+        "updated_at": "2015-06-23T11:49:34Z"
+      }
+    ]
+  },
+  "root_id": 19269,
+  "pinmaps_attributes": [
+    {
+      "pmid": 12563,
+      "did": 116662,
+      "ppid": null,
+      "sppid": null,
+      "sdid": 39641,
+      "spid": 57434,
+      "bbid": 202931
+    },
+    {
+      "pmid": 12564,
+      "did": 116662,
+      "ppid": null,
+      "sppid": null,
+      "sdid": 39641,
+      "spid": 57433,
+      "bbid": 202930
+    }
+  ]
+}

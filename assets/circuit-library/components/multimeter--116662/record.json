@@ -1,0 +1,122 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 28709,
+  "device_id": "116662",
+  "name": "Multimeter",
+  "description": "A tool for measuring voltage, current, and resistance in your circuit.",
+  "tags": [
+    "instrument",
+    "voltage",
+    "current",
+    "resistance",
+    "measure"
+  ],
+  "thumbnail": "multimeter.png",
+  "thumbnail_source": "/multimeter.png",
+  "footprint": {
+    "name": "no footprint",
+    "id": 116662
+  },
+  "simulation_model": "multimeter_v2",
+  "extents": {
+    "top": -54,
+    "left": -71,
+    "width": 142,
+    "height": 54
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-23T11:49:20Z",
+      "dir": 90,
+      "id": 202930,
+      "label": null,
+      "name": "Negative",
+      "schematic_symbol_id": 20219,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T11:49:20Z",
+      "x": -5,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-23T11:49:20Z",
+      "dir": 90,
+      "id": 202931,
+      "label": null,
+      "name": "Positive",
+      "schematic_symbol_id": 20219,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T11:49:20Z",
+      "x": 5,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2013-09-02T21:45:21Z",
+      "dir": 0,
+      "id": 57433,
+      "label": null,
+      "name": "terminal-neg",
+      "schematic_symbol_id": 4268,
+      "terminal_type": "schematic",
+      "updated_at": "2013-09-02T21:45:21Z",
+      "x": -22.957,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2013-09-02T21:45:21Z",
+      "dir": 0,
+      "id": 57434,
+      "label": null,
+      "name": "terminal-pos",
+      "schematic_symbol_id": 4268,
+      "terminal_type": "schematic",
+      "updated_at": "2013-09-02T21:45:21Z",
+      "x": 22.957,
+      "y": 0
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "created_at": "2015-06-23T11:49:34Z",
+      "default": 1,
+      "default_prefix": "1",
+      "default_show": null,
+      "device_id": 28709,
+      "id": 825,
+      "name": "Mode",
+      "unit": "[[0,\"Amperage\"],[1,\"Voltage\"],[2,\"Resistance\"]]",
+      "updated_at": "2015-06-23T11:49:34Z"
+    }
+  ],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14350603221e74b93652e9e7493718320784759591/thumbnail20150623-5104-uh2hr5.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14350603221e74b93652e9e7493718320784759591/thumbnail20150623-5104-uh2hr5.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14498026559568e5cc74861d61cb75fb0de28fc234/thumbnail20151211-11767-zch7lw.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14498026559568e5cc74861d61cb75fb0de28fc234/thumbnail20151211-11767-zch7lw.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/116662.json"
+}

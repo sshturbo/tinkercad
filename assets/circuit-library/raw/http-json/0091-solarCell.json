@@ -1,0 +1,185 @@
+{
+  "url": "https://editor.tinkercad.com/assets_cc_1faad5n/js/packaged_devices/solarCell.json",
+  "payload": {
+    "device_id": "solarCellid",
+    "footprint_id": "solarCellfpid",
+    "id": "solarCell",
+    "footprint_name": "Solar Cell connector",
+    "root_id": "solarCellpdrid",
+    "device": {
+      "base": "SC",
+      "breadboard_id": "solarCellbbid",
+      "circuitscribe_footprint_id": null,
+      "circuitscribe_footprint_rotation": 0,
+      "description": "A device that converts light into electrical energy.",
+      "id": "solarCellid",
+      "name": "Solar Cell",
+      "programmable": false,
+      "programmable_settings": "",
+      "simulation_model": "solarCell",
+      "version_root_id": "solarCellpdrid",
+      "breadboard": {
+        "background": false,
+        "breadboard": false,
+        "extents": null,
+        "id": "solarCellbbid",
+        "name": "breadboard_solarCell",
+        "svg": "<svg class=\"cgfx__solar-cell\" viewbox=\"-1000 -1000 2000 2000\" width=\"2000\" height=\"2000\" x=\"-1000\" y=\"-1000\"><path class=\"cgfx__selected\" fill='none' stroke='#3b8ed7' stroke-linecap='round' stroke-linejoin='round' display='none' stroke-width='3' d=\"m-157.5,47a7,7 0 0 1 7,-7h301a7,7 0 0 1 7,7v301a7,7 0 0 1 -7,7h-301a7,7 0 0 1 -7,-7zM-7.25,11a32.75,32.75 0 0 1 -17.72,29.1h8.23a37.25,37.25 0 0 0 14,-29.1zM7.25,11a32.75,32.75 0 0 0 17.72,29.1h-8.23a37.25,37.25 0 0 1 -14,-29.1z\"/><path fill=\"#333333\" d=\"M-7.25,11a32.75,32.75 0 0 1 -17.72,29.1h8.23a37.25,37.25 0 0 0 14,-29.1z\"/><path fill=\"#af1c1c\" d=\"M7.25,11a32.75,32.75 0 0 0 17.72,29.1h-8.23a37.25,37.25 0 0 1 -14,-29.1z\"/><path fill=\"#1D1E1F\" d=\"m-157.5,47a7,7 0 0 1 7,-7h301a7,7 0 0 1 7,7v301a7,7 0 0 1 -7,7h-301a7,7 0 0 1 -7,-7z\"/><path fill=\"#1f3059\" d=\"m-138,71.5h24v118h-24z\"/><line x1=\"-136\" y1=\"71.5\" x2=\"-136\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-126\" y1=\"71.5\" x2=\"-126\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-116\" y1=\"71.5\" x2=\"-116\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m-110,71.5h24v118h-24z\"/><line x1=\"-108\" y1=\"71.5\" x2=\"-108\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-98\" y1=\"71.5\" x2=\"-98\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-88\" y1=\"71.5\" x2=\"-88\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m-82,71.5h24v118h-24z\"/><line x1=\"-80\" y1=\"71.5\" x2=\"-80\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-70\" y1=\"71.5\" x2=\"-70\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-60\" y1=\"71.5\" x2=\"-60\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m-54,71.5h24v118h-24z\"/><line x1=\"-52\" y1=\"71.5\" x2=\"-52\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-42\" y1=\"71.5\" x2=\"-42\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-32\" y1=\"71.5\" x2=\"-32\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m-26,71.5h24v118h-24z\"/><line x1=\"-24\" y1=\"71.5\" x2=\"-24\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-14\" y1=\"71.5\" x2=\"-14\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-4\" y1=\"71.5\" x2=\"-4\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m2,71.5h24v118h-24z\"/><line x1=\"4\" y1=\"71.5\" x2=\"4\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"71.5\" x2=\"14\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"24\" y1=\"71.5\" x2=\"24\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m30,71.5h24v118h-24z\"/><line x1=\"32\" y1=\"71.5\" x2=\"32\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"42\" y1=\"71.5\" x2=\"42\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"52\" y1=\"71.5\" x2=\"52\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m58,71.5h24v118h-24z\"/><line x1=\"60\" y1=\"71.5\" x2=\"60\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"70\" y1=\"71.5\" x2=\"70\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"80\" y1=\"71.5\" x2=\"80\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m86,71.5h24v118h-24z\"/><line x1=\"88\" y1=\"71.5\" x2=\"88\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"98\" y1=\"71.5\" x2=\"98\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"108\" y1=\"71.5\" x2=\"108\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m114,71.5h24v118h-24z\"/><line x1=\"116\" y1=\"71.5\" x2=\"116\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"126\" y1=\"71.5\" x2=\"126\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"136\" y1=\"71.5\" x2=\"136\" y2=\"189.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m-138,205.5h24v118h-24z\"/><line x1=\"-136\" y1=\"205.5\" x2=\"-136\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-126\" y1=\"205.5\" x2=\"-126\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-116\" y1=\"205.5\" x2=\"-116\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m-110,205.5h24v118h-24z\"/><line x1=\"-108\" y1=\"205.5\" x2=\"-108\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-98\" y1=\"205.5\" x2=\"-98\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-88\" y1=\"205.5\" x2=\"-88\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m-82,205.5h24v118h-24z\"/><line x1=\"-80\" y1=\"205.5\" x2=\"-80\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-70\" y1=\"205.5\" x2=\"-70\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-60\" y1=\"205.5\" x2=\"-60\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m-54,205.5h24v118h-24z\"/><line x1=\"-52\" y1=\"205.5\" x2=\"-52\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-42\" y1=\"205.5\" x2=\"-42\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-32\" y1=\"205.5\" x2=\"-32\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m-26,205.5h24v118h-24z\"/><line x1=\"-24\" y1=\"205.5\" x2=\"-24\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-14\" y1=\"205.5\" x2=\"-14\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"-4\" y1=\"205.5\" x2=\"-4\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m2,205.5h24v118h-24z\"/><line x1=\"4\" y1=\"205.5\" x2=\"4\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"205.5\" x2=\"14\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"24\" y1=\"205.5\" x2=\"24\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m30,205.5h24v118h-24z\"/><line x1=\"32\" y1=\"205.5\" x2=\"32\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"42\" y1=\"205.5\" x2=\"42\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"52\" y1=\"205.5\" x2=\"52\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m58,205.5h24v118h-24z\"/><line x1=\"60\" y1=\"205.5\" x2=\"60\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"70\" y1=\"205.5\" x2=\"70\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"80\" y1=\"205.5\" x2=\"80\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m86,205.5h24v118h-24z\"/><line x1=\"88\" y1=\"205.5\" x2=\"88\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"98\" y1=\"205.5\" x2=\"98\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"108\" y1=\"205.5\" x2=\"108\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#1f3059\" d=\"m114,205.5h24v118h-24z\"/><line x1=\"116\" y1=\"205.5\" x2=\"116\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"126\" y1=\"205.5\" x2=\"126\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><line x1=\"136\" y1=\"205.5\" x2=\"136\" y2=\"323.5\" stroke=\"#6F7983\" stroke-linecap=\"butt\"/><path fill=\"#FFFFFF\" opacity=\".25\" d=\"m-155.44974746830584,42.05025253169417a7,7 0 0 1 4.949747468305833,-2.050252531694167h301a7,7 0 0 1 4.949747468305833,2.050252531694167l-4.949747468305833,4.949747468305832h-301z\"/><path fill=\"#000010\" opacity=\".75\" d=\"m-155.44974746830584,352.9497474683058a7,7 0 0 0 4.949747468305833,2.050252531694167h301a7,7 0 0 0 4.949747468305833,-2.050252531694167l-4.949747468305833,-4.949747468305832h-301z\"/><g class=\"cgfx__terminalred cgfx__wire-terminal\" transform=\"translate(5, 0) rotate(0)\"><line fill=\"none\" stroke=\"#8C8C8C\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" x1=\"0\" y1=\"7.934\" x2=\"0\" y2=\"0\"/><line class=\"cgfx__selected\" display=\"none\" fill='none' stroke='#3b8ed7' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' x1=\"0\" y1=\"7.934\" x2=\"0\" y2=\"0\"/><path fill=\"#AF1C1C\" d=\"M-2,2.72c0-0.55,0.45-1,1-1h2c0.55,0,1,0.45,1,1v2.483h-4V2.72z\"/><path class=\"cgfx__selected\" display=\"none\" style='fill:#3b8ed7;stroke:none;stroke-linejoin=round;stroke-miterlimit:10;' d=\"M-2,2.72c0-0.55,0.45-1,1-1h2c0.55,0,1,0.45,1,1v2.483h-4V2.72z\"/><path style='fill:#000;fill-opacity:0.2' d=\"M-2,3.488c0,0,0.828,0.372,2,0.372s2-0.372,2-0.372V5.22h-4V3.488z\"/><path fill=\"#AF1C1C\" d=\"M-3,5.22c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1v5.983h-6V5.22z\"/><path class=\"cgfx__selected\" display=\"none\" style='fill:#3b8ed7;stroke:none;stroke-linejoin=round;stroke-miterlimit:10;' d=\"M-3,5.22c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1v5.983h-6V5.22z\"/><path style='fill:#000;fill-opacity:0.2' d=\"M-3,6.443c0,0,1.415,0.536,3,0.536s3-0.536,3-0.536v4.761h-6V6.443z\"/><path class=\"cgfx__hitarea\" style='fill:#ff0000;' opacity='0' display='none' d=\"M2,4.22v-1.5c0-0.55-0.45-1-1-1V0c0-0.552-0.448-1-1-1s-1,0.448-1,1v1.72c-0.55,0-1,0.45-1,1v1.5c-0.55,0-1,0.45-1,1v5.983h6V5.22C3,4.67,2.55,4.22,2,4.22z\"/></g><g class=\"cgfx__terminalblack cgfx__wire-terminal\" transform=\"translate(-5, 0) rotate(0)\"><line fill=\"none\" stroke=\"#8C8C8C\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" x1=\"0\" y1=\"7.934\" x2=\"0\" y2=\"0\"/><line class=\"cgfx__selected\" display=\"none\" fill='none' stroke='#3b8ed7' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' x1=\"0\" y1=\"7.934\" x2=\"0\" y2=\"0\"/><path fill=\"#333333\" d=\"M-2,2.72c0-0.55,0.45-1,1-1h2c0.55,0,1,0.45,1,1v2.483h-4V2.72z\"/><path class=\"cgfx__selected\" display=\"none\" style='fill:#3b8ed7;stroke:none;stroke-linejoin=round;stroke-miterlimit:10;' d=\"M-2,2.72c0-0.55,0.45-1,1-1h2c0.55,0,1,0.45,1,1v2.483h-4V2.72z\"/><path style='fill:#000;fill-opacity:0.2' d=\"M-2,3.488c0,0,0.828,0.372,2,0.372s2-0.372,2-0.372V5.22h-4V3.488z\"/><path fill=\"#333333\" d=\"M-3,5.22c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1v5.983h-6V5.22z\"/><path class=\"cgfx__selected\" display=\"none\" style='fill:#3b8ed7;stroke:none;stroke-linejoin=round;stroke-miterlimit:10;' d=\"M-3,5.22c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1v5.983h-6V5.22z\"/><path style='fill:#000;fill-opacity:0.2' d=\"M-3,6.443c0,0,1.415,0.536,3,0.536s3-0.536,3-0.536v4.761h-6V6.443z\"/><path class=\"cgfx__hitarea\" style='fill:#ff0000;' opacity='0' display='none' d=\"M2,4.22v-1.5c0-0.55-0.45-1-1-1V0c0-0.552-0.448-1-1-1s-1,0.448-1,1v1.72c-0.55,0-1,0.45-1,1v1.5c-0.55,0-1,0.45-1,1v5.983h6V5.22C3,4.67,2.55,4.22,2,4.22z\"/></g><g transform=\"translate(0,197.5)\"><g class=\"cgfx__incominglight cgfx__inspector cgfx__norotate cgfx__slider-brightness\" transform=\"translate(0, 0) rotate(0)\" display=\"none\"><g class=\"flip-mirrorX\"><g transform=\"translate(-45)\"><circle fill=\"#FFD84F\" cx=\"0\" cy=\"0\" r=\"4.25\"/></g><g transform=\"translate(45)\"><circle fill=\"#f4f5f6\" stroke=\"#FFD84F\" stroke-width=\"1.5\" cx=\"0\" cy=\"0\" r=\"4.25\"/><path fill=\"#FFD84F\" d=\"M0-6.054c-0.408,0-0.74-0.331-0.74-0.739v-2.865c0-0.408,0.332-0.74,0.74-0.74c0.408,0,0.74,0.331,0.74,0.74v2.865C0.74-6.386,0.408-6.054,0-6.054z\"/><path fill=\"#FFD84F\" d=\"M0,10.398c-0.408,0-0.74-0.331-0.74-0.739V6.794c0-0.409,0.332-0.74,0.74-0.74c0.408,0,0.74,0.331,0.74,0.74v2.865C0.74,10.068,0.408,10.398,0,10.398z\"/><path fill=\"#FFD84F\" d=\"M-4.804-4.064c-0.189,0-0.379-0.072-0.522-0.217l-2.026-2.026c-0.288-0.289-0.288-0.757,0-1.045c0.289-0.289,0.757-0.289,1.046,0l2.026,2.026c0.289,0.288,0.289,0.757,0,1.045C-4.425-4.136-4.614-4.064-4.804-4.064z\"/><path fill=\"#FFD84F\" d=\"M6.83,7.57c-0.189,0-0.378-0.072-0.523-0.217L4.282,5.327c-0.289-0.289-0.289-0.757,0-1.045c0.288-0.289,0.757-0.289,1.045,0l2.026,2.026c0.288,0.288,0.288,0.757,0,1.045C7.209,7.497,7.019,7.57,6.83,7.57z\"/><path fill=\"#FFD84F\" d=\"M-6.794,0.74h-2.865c-0.408,0-0.74-0.331-0.74-0.74s0.332-0.739,0.74-0.739h2.865c0.408,0,0.74,0.331,0.74,0.739S-6.385,0.74-6.794,0.74z\"/><path fill=\"#FFD84F\" d=\"M9.659,0.74H6.795c-0.409,0-0.74-0.331-0.74-0.74s0.331-0.739,0.74-0.739h2.864c0.409,0,0.74,0.331,0.74,0.739S10.068,0.74,9.659,0.74z\"/><path fill=\"#FFD84F\" d=\"M-6.83,7.57c-0.189,0-0.379-0.072-0.523-0.217c-0.288-0.289-0.288-0.757,0-1.045l2.026-2.026c0.288-0.289,0.757-0.289,1.045,0c0.289,0.289,0.289,0.757,0,1.045l-2.026,2.026C-6.452,7.497-6.641,7.57-6.83,7.57z\"/><path fill=\"#FFD84F\" d=\"M4.804-4.065c-0.188,0-0.379-0.072-0.522-0.217c-0.289-0.288-0.289-0.757,0-1.045l2.025-2.025c0.289-0.289,0.757-0.289,1.046,0c0.288,0.288,0.288,0.757,0,1.045L5.327-4.282C5.183-4.137,4.994-4.065,4.804-4.065z\"/></g><rect class=\"cgfx__bounds\" fill=\"#f4f5f6\" stroke=\"#FFD84F\" stroke-width=\"1.5\" x=\"-30\" y=\"-4\" width=\"60\" height=\"8\" rx=\"4\" ry=\"4\" /><circle class=\"cgfx__knob\" transform=\"\" fill=\"#FFD84F\" cx=\"-26\" cy=\"0\" r=\"7.5\"/><text class=\"cgfx__knoblabel\" transform=\"\" x=\"-26\" y=\"1.3\" dy=\"0\" text-anchor=\"middle\" style=\"font-family:Arial;font-size:4;fill:#E3e3e3;font-weight:regular;\"></text><g class=\"cgfx__arrow\" opacity=\"1\" transform=\"translate(-11.25,0)\"><line fill=\"none\" stroke=\"#FFD84F\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" x1=\"1.539\" y1=\"0\" x2=\"-1.539\" y2=\"0\"/><polyline fill=\"none\" stroke=\"#FFD84F\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" points=\"1,-1 2,0 1,1\"/></g></g><rect class=\"cgfx__hitarea-interaction cgfx__incominglight cgfx__inspector cgfx__norotate cgfx__bounds\" style='fill:#ff0000;stroke:#ff0000;' opacity='0' display='none' stroke-width=\"1.5\" x=\"-30\" y=\"-4\" width=\"60\" height=\"8\" rx=\"4\" ry=\"4\" /><circle class=\"cgfx__hitarea-interaction cgfx__incominglight cgfx__inspector cgfx__norotate cgfx__knob\" style='fill:#ff0000;' opacity='0' display='none' cx=\"-26\" cy=\"0\" r=\"7.5\" /></g></g><path class=\"cgfx__hitarea\" style='fill:#ff0000;' opacity='0' display='none' d=\"m-157.5,47a7,7 0 0 1 7,-7h301a7,7 0 0 1 7,7v301a7,7 0 0 1 -7,7h-301a7,7 0 0 1 -7,-7zM-7.25,11a32.75,32.75 0 0 1 -17.72,29.1h8.23a37.25,37.25 0 0 0 14,-29.1zM7.25,11a32.75,32.75 0 0 0 17.72,29.1h-8.23a37.25,37.25 0 0 1 -14,-29.1z\"/><polygon class=\"cgfx__breakdown\" transform=\"translate(0,197.5)rotate(0) scale(5.5,5.5)\" display=\"none\" style=\"opacity:0.7;fill:#FF0000;stroke:#F7E60B;stroke-miterlimit:10;\" points=\"2.415,-5.161 7.901,-7.299 5.471,-2.294 11.953,-0.565 5.126,1.63 8.332,8.197 2.59,5.053 -0.137,10.527 -2.24,4.375 -7.565,7.957 -6.133,2.443 -11.953,0.87 -5.945,-1.796 -8.854,-7.513 -3.289,-5.371 -1.401,-10.527 \"/><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">Negative</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"-5\" y1=\"0\" x2=\"-5\" y2=\"-25\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g><g class=\"cgfx__terminal\"><desc class=\"cgfx__terminalname\">Positive</desc><desc class=\"cgfx__terminaltype\">breadboard</desc><line class=\"cgfx__origin cgfx__direction cgfx__reference cgfx__debug\" x1=\"5\" y1=\"0\" x2=\"5\" y2=\"-25\" stroke-dasharray=\"10,2,3,2,3,2,3\" style=\"stroke:rgb(255,0,0);stroke-width:2;opacity:0.5\" display=\"none\"/></g></svg>",
+        "symbol_type": "breadboard",
+        "terminal_list": null,
+        "rootId": "solarCellbbrid",
+        "schematic_symbol_terminals_attributes": [
+          {
+            "dir": -90,
+            "id": "solarCellstid0",
+            "label": null,
+            "name": "Negative",
+            "schematic_symbol_id": "solarCellbbid",
+            "terminal_type": "breadboard",
+            "x": -5,
+            "y": 0
+          },
+          {
+            "dir": -90,
+            "id": "solarCellstid1",
+            "label": null,
+            "name": "Positive",
+            "schematic_symbol_id": "solarCellbbid",
+            "terminal_type": "breadboard",
+            "x": 5,
+            "y": 0
+          }
+        ]
+      },
+      "subdevices_attributes": [
+        {
+          "device_id": "solarCellid",
+          "id": "solarCellsaid",
+          "init_x": 0,
+          "init_y": 0,
+          "name": null,
+          "schematic_symbol_id": "solarCellssid",
+          "schematic_symbol_attributes": {
+            "background": false,
+            "breadboard": false,
+            "generator_type": "normal",
+            "id": "solarCellssid",
+            "name": "Solar Cell",
+            "svg": "<circle stroke=\"#000000\" stroke-width=\"2\" fill=\"none\" cx=\"0\" cy=\"0\" r=\"10\"/>",
+            "symbol_type": "schematic",
+            "terminal_list": null,
+            "rootId": "solarCellssrid",
+            "schematic_symbol_terminals_attributes": [
+              {
+                "dir": -90,
+                "id": "solarCellspid0",
+                "label": null,
+                "name": "Negative",
+                "schematic_symbol_id": "solarCellssid",
+                "terminal_type": "schematic",
+                "x": -5,
+                "y": 0
+              },
+              {
+                "dir": -90,
+                "id": "solarCellspid1",
+                "label": null,
+                "name": "Positive",
+                "schematic_symbol_id": "solarCellssid",
+                "terminal_type": "schematic",
+                "x": 5,
+                "y": 0
+              }
+            ]
+          }
+        }
+      ],
+      "properties_attributes": [
+        {
+          "default": 5,
+          "default_prefix": "none",
+          "default_show": true,
+          "device_id": "solarCellid",
+          "id": "solarCellppid0",
+          "name": "peak voltage",
+          "unit": "V",
+          "sim_read_only": true
+        },
+        {
+          "default": 100,
+          "default_prefix": "m",
+          "default_show": true,
+          "device_id": "solarCellid",
+          "id": "solarCellppid1",
+          "name": "peak current",
+          "unit": "A",
+          "sim_read_only": true
+        }
+      ]
+    },
+    "footprint": {
+      "id": "solarCellfpid",
+      "name": "Solar Cell connector",
+      "outline": "<g></g>",
+      "rootId": "solarCellfprid",
+      "pads_attributes": [
+        {
+          "col_pitch": null,
+          "cols": null,
+          "dir": null,
+          "drill": "900",
+          "footprint_id": "solarCellfpid",
+          "generator_type": null,
+          "id": "solarCellpaid0",
+          "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "name": 0,
+          "number": null,
+          "pad_type_id": null,
+          "pin_spacing": null,
+          "row_pitch": null,
+          "rows": null,
+          "x": -1270,
+          "y": 0
+        },
+        {
+          "col_pitch": null,
+          "cols": null,
+          "dir": null,
+          "drill": "900",
+          "footprint_id": "solarCellfpid",
+          "generator_type": null,
+          "id": "solarCellpaid1",
+          "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+          "name": 1,
+          "number": null,
+          "pad_type_id": null,
+          "pin_spacing": null,
+          "row_pitch": null,
+          "rows": null,
+          "x": 1270,
+          "y": 0
+        }
+      ]
+    },
+    "pinmaps_attributes": [
+      {
+        "pmid": "solarCellpmid0",
+        "did": "solarCell",
+        "ppid": "solarCellpaid0",
+        "sdid": "solarCellsaid",
+        "spid": "solarCellspid0",
+        "bbid": "solarCellstid0"
+      },
+      {
+        "pmid": "solarCellpmid1",
+        "did": "solarCell",
+        "ppid": "solarCellpaid1",
+        "sdid": "solarCellsaid",
+        "spid": "solarCellspid1",
+        "bbid": "solarCellstid1"
+      }
+    ]
+  }
+}

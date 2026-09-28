@@ -1,0 +1,8178 @@
+[
+  {
+    "module_id": "247",
+    "class": "dependency",
+    "file": "engine/dependencies/module-247.js",
+    "chars": 2373,
+    "roles": [
+      "simulator_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "401",
+    "class": "core",
+    "file": "engine/core/module-401.js",
+    "chars": 596,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "1352",
+    "class": "dependency",
+    "file": "engine/dependencies/module-1352.js",
+    "chars": 24831,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "1660",
+    "class": "core",
+    "file": "engine/core/module-1660.js",
+    "chars": 954,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 1,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "2250",
+    "class": "core",
+    "file": "engine/core/module-2250.js",
+    "chars": 2126,
+    "roles": [
+      "simulator_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 9
+    },
+    "imported_by_model_modules": 163,
+    "dependencies": []
+  },
+  {
+    "module_id": "2292",
+    "class": "core",
+    "file": "engine/core/module-2292.js",
+    "chars": 2131,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "2297",
+    "class": "core",
+    "file": "engine/core/module-2297.js",
+    "chars": 18020,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 160,
+    "dependencies": [
+      "99418"
+    ]
+  },
+  {
+    "module_id": "2733",
+    "class": "core",
+    "file": "engine/core/module-2733.js",
+    "chars": 1644,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "digital_logic",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 3,
+      "simulation_model_base": 8,
+      "signal_core": 1,
+      "digital_logic": 2,
+      "net_core": 6,
+      "analog_solver": 1,
+      "scheduler": 2
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "2802",
+    "class": "dependency",
+    "file": "engine/dependencies/module-2802.js",
+    "chars": 817,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "2839",
+    "class": "core",
+    "file": "engine/core/module-2839.js",
+    "chars": 13045,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "digital_logic",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 3,
+      "simulation_model_base": 11,
+      "signal_core": 16,
+      "digital_logic": 2,
+      "net_core": 12,
+      "analog_solver": 5,
+      "scheduler": 20
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "247",
+      "2250",
+      "91810"
+    ]
+  },
+  {
+    "module_id": "3179",
+    "class": "dependency",
+    "file": "engine/dependencies/module-3179.js",
+    "chars": 1497,
+    "roles": [
+      "simulation_model_base"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 2,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "4502",
+    "class": "core",
+    "file": "engine/core/module-4502.js",
+    "chars": 772,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 1,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "4607",
+    "class": "core",
+    "file": "engine/core/module-4607.js",
+    "chars": 4416,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 6,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2297",
+      "29721",
+      "35450"
+    ]
+  },
+  {
+    "module_id": "4670",
+    "class": "dependency",
+    "file": "engine/dependencies/module-4670.js",
+    "chars": 818,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "5442",
+    "class": "dependency",
+    "file": "engine/dependencies/module-5442.js",
+    "chars": 4264,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "5500",
+    "class": "core",
+    "file": "engine/core/module-5500.js",
+    "chars": 780,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 6,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "77078"
+    ]
+  },
+  {
+    "module_id": "5737",
+    "class": "core",
+    "file": "engine/core/module-5737.js",
+    "chars": 828,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "6303",
+    "class": "core",
+    "file": "engine/core/module-6303.js",
+    "chars": 588,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "6371",
+    "class": "dependency",
+    "file": "engine/dependencies/module-6371.js",
+    "chars": 332,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "77078"
+    ]
+  },
+  {
+    "module_id": "6782",
+    "class": "core",
+    "file": "engine/core/module-6782.js",
+    "chars": 4563,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 5,
+      "simulation_model_base": 8,
+      "signal_core": 24,
+      "digital_logic": 0,
+      "net_core": 7,
+      "analog_solver": 2,
+      "scheduler": 2
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "7098",
+    "class": "core",
+    "file": "engine/core/module-7098.js",
+    "chars": 1623,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 8,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 6,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "7255",
+    "class": "dependency",
+    "file": "engine/dependencies/module-7255.js",
+    "chars": 886,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "7403",
+    "class": "core",
+    "file": "engine/core/module-7403.js",
+    "chars": 3595,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 5,
+      "simulation_model_base": 4,
+      "signal_core": 12,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 2
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297",
+      "32583"
+    ]
+  },
+  {
+    "module_id": "7545",
+    "class": "dependency",
+    "file": "engine/dependencies/module-7545.js",
+    "chars": 3375,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "7901",
+    "class": "core",
+    "file": "engine/core/module-7901.js",
+    "chars": 1002,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "8148",
+    "class": "core",
+    "file": "engine/core/module-8148.js",
+    "chars": 6010,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 7,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "38016",
+      "70974",
+      "87485",
+      "97357"
+    ]
+  },
+  {
+    "module_id": "8338",
+    "class": "core",
+    "file": "engine/core/module-8338.js",
+    "chars": 566,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "8491",
+    "class": "core",
+    "file": "engine/core/module-8491.js",
+    "chars": 980,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "8987",
+    "class": "dependency",
+    "file": "engine/dependencies/module-8987.js",
+    "chars": 64,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2643",
+      "21371",
+      "26008",
+      "27113",
+      "41263",
+      "83718"
+    ]
+  },
+  {
+    "module_id": "9058",
+    "class": "core",
+    "file": "engine/core/module-9058.js",
+    "chars": 1855,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 5,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 1,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "9092",
+    "class": "core",
+    "file": "engine/core/module-9092.js",
+    "chars": 121796,
+    "roles": [
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 41,
+      "scheduler": 13
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "80635"
+    ]
+  },
+  {
+    "module_id": "9305",
+    "class": "dependency",
+    "file": "engine/dependencies/module-9305.js",
+    "chars": 181,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "9686",
+      "11644",
+      "21679",
+      "25872",
+      "32547",
+      "34045",
+      "35207",
+      "36677",
+      "45932",
+      "46502",
+      "47628",
+      "47885",
+      "78032",
+      "84032",
+      "90215",
+      "91546",
+      "93432",
+      "93459",
+      "94299"
+    ]
+  },
+  {
+    "module_id": "9482",
+    "class": "core",
+    "file": "engine/core/module-9482.js",
+    "chars": 1410,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "9686",
+    "class": "core",
+    "file": "engine/core/module-9686.js",
+    "chars": 1098,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "10069",
+    "class": "core",
+    "file": "engine/core/module-10069.js",
+    "chars": 1695,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 2,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "10732",
+    "class": "core",
+    "file": "engine/core/module-10732.js",
+    "chars": 602,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 5,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "11519",
+    "class": "dependency",
+    "file": "engine/dependencies/module-11519.js",
+    "chars": 31,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "44122"
+    ]
+  },
+  {
+    "module_id": "11644",
+    "class": "dependency",
+    "file": "engine/dependencies/module-11644.js",
+    "chars": 788,
+    "roles": [
+      "simulation_model_base"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 2,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "12004",
+    "class": "core",
+    "file": "engine/core/module-12004.js",
+    "chars": 10523,
+    "roles": [
+      "simulator_core",
+      "signal_core",
+      "digital_logic",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 0,
+      "signal_core": 39,
+      "digital_logic": 38,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "12130",
+    "class": "core",
+    "file": "engine/core/module-12130.js",
+    "chars": 3287,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 11,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 11,
+      "analog_solver": 1,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297",
+      "62612"
+    ]
+  },
+  {
+    "module_id": "12363",
+    "class": "dependency",
+    "file": "engine/dependencies/module-12363.js",
+    "chars": 39,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "51946",
+      "52217",
+      "56341"
+    ]
+  },
+  {
+    "module_id": "12572",
+    "class": "dependency",
+    "file": "engine/dependencies/module-12572.js",
+    "chars": 137,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "12798",
+    "class": "core",
+    "file": "engine/core/module-12798.js",
+    "chars": 2083,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 8,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 6,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "12931",
+    "class": "core",
+    "file": "engine/core/module-12931.js",
+    "chars": 534,
+    "roles": [
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 1,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "78913"
+    ]
+  },
+  {
+    "module_id": "13123",
+    "class": "dependency",
+    "file": "engine/dependencies/module-13123.js",
+    "chars": 38,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "8987",
+      "48425",
+      "80299"
+    ]
+  },
+  {
+    "module_id": "13797",
+    "class": "core",
+    "file": "engine/core/module-13797.js",
+    "chars": 1211,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "13996",
+    "class": "core",
+    "file": "engine/core/module-13996.js",
+    "chars": 2900,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 4,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "14256",
+    "class": "dependency",
+    "file": "engine/dependencies/module-14256.js",
+    "chars": 335,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "19207",
+      "97353"
+    ]
+  },
+  {
+    "module_id": "14551",
+    "class": "core",
+    "file": "engine/core/module-14551.js",
+    "chars": 1003,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "14803",
+    "class": "core",
+    "file": "engine/core/module-14803.js",
+    "chars": 961,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "15064",
+    "class": "core",
+    "file": "engine/core/module-15064.js",
+    "chars": 2024,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "digital_logic",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 6,
+      "simulation_model_base": 6,
+      "signal_core": 4,
+      "digital_logic": 2,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 3
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "16110",
+    "class": "core",
+    "file": "engine/core/module-16110.js",
+    "chars": 540,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core",
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 1,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "16603",
+    "class": "core",
+    "file": "engine/core/module-16603.js",
+    "chars": 5182,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 8,
+      "simulation_model_base": 8,
+      "signal_core": 5,
+      "digital_logic": 0,
+      "net_core": 9,
+      "analog_solver": 2,
+      "scheduler": 2
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "16650",
+    "class": "core",
+    "file": "engine/core/module-16650.js",
+    "chars": 430,
+    "roles": [
+      "simulator_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "17074",
+    "class": "core",
+    "file": "engine/core/module-17074.js",
+    "chars": 1000,
+    "roles": [
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 6,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "18186",
+    "class": "dependency",
+    "file": "engine/dependencies/module-18186.js",
+    "chars": 2942,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "18661",
+    "class": "dependency",
+    "file": "engine/dependencies/module-18661.js",
+    "chars": 5075,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "18961",
+    "class": "core",
+    "file": "engine/core/module-18961.js",
+    "chars": 1012,
+    "roles": [
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 6,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "19021",
+    "class": "dependency",
+    "file": "engine/dependencies/module-19021.js",
+    "chars": 3850,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "19956",
+    "class": "dependency",
+    "file": "engine/dependencies/module-19956.js",
+    "chars": 15733,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "20243",
+    "class": "core",
+    "file": "engine/core/module-20243.js",
+    "chars": 1549,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "20341",
+    "class": "dependency",
+    "file": "engine/dependencies/module-20341.js",
+    "chars": 39,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "20781",
+      "33019",
+      "42029"
+    ]
+  },
+  {
+    "module_id": "20365",
+    "class": "core",
+    "file": "engine/core/module-20365.js",
+    "chars": 1012,
+    "roles": [
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 6,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "20553",
+    "class": "core",
+    "file": "engine/core/module-20553.js",
+    "chars": 1797,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 3,
+      "simulation_model_base": 4,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 2,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "20781",
+    "class": "dependency",
+    "file": "engine/dependencies/module-20781.js",
+    "chars": 182,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "5500",
+      "6371",
+      "29855",
+      "30258",
+      "32493",
+      "35386",
+      "35905",
+      "38784",
+      "39674",
+      "40092",
+      "40465",
+      "55757",
+      "59970",
+      "76991",
+      "77078",
+      "85557",
+      "90110",
+      "92362"
+    ]
+  },
+  {
+    "module_id": "21207",
+    "class": "core",
+    "file": "engine/core/module-21207.js",
+    "chars": 2845,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 11,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 12,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "21371",
+    "class": "core",
+    "file": "engine/core/module-21371.js",
+    "chars": 6218,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 15,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "21440",
+    "class": "dependency",
+    "file": "engine/dependencies/module-21440.js",
+    "chars": 5970,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "21529",
+    "class": "core",
+    "file": "engine/core/module-21529.js",
+    "chars": 959,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "21679",
+    "class": "core",
+    "file": "engine/core/module-21679.js",
+    "chars": 1772,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 5,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 1,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "22179",
+    "class": "core",
+    "file": "engine/core/module-22179.js",
+    "chars": 1958,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 5,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "22197",
+    "class": "dependency",
+    "file": "engine/dependencies/module-22197.js",
+    "chars": 38,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "7545",
+      "39002",
+      "42204"
+    ]
+  },
+  {
+    "module_id": "22884",
+    "class": "core",
+    "file": "engine/core/module-22884.js",
+    "chars": 127366,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 11,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "72958"
+    ]
+  },
+  {
+    "module_id": "22997",
+    "class": "dependency",
+    "file": "engine/dependencies/module-22997.js",
+    "chars": 21,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "96161"
+    ]
+  },
+  {
+    "module_id": "23274",
+    "class": "core",
+    "file": "engine/core/module-23274.js",
+    "chars": 1028,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "23316",
+    "class": "core",
+    "file": "engine/core/module-23316.js",
+    "chars": 2671,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 5,
+      "signal_core": 5,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 2,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "24048",
+    "class": "core",
+    "file": "engine/core/module-24048.js",
+    "chars": 5020,
+    "roles": [
+      "signal_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 4,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 4
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "24531",
+    "class": "core",
+    "file": "engine/core/module-24531.js",
+    "chars": 586,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 5,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "24725",
+    "class": "core",
+    "file": "engine/core/module-24725.js",
+    "chars": 4969,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 7,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2297",
+      "29721",
+      "35450"
+    ]
+  },
+  {
+    "module_id": "24939",
+    "class": "core",
+    "file": "engine/core/module-24939.js",
+    "chars": 1572,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 8,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 6,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "25416",
+    "class": "core",
+    "file": "engine/core/module-25416.js",
+    "chars": 16583,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 15,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "25796",
+    "class": "dependency",
+    "file": "engine/dependencies/module-25796.js",
+    "chars": 21,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "89248"
+    ]
+  },
+  {
+    "module_id": "25872",
+    "class": "dependency",
+    "file": "engine/dependencies/module-25872.js",
+    "chars": 797,
+    "roles": [
+      "simulation_model_base"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 2,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "26435",
+    "class": "core",
+    "file": "engine/core/module-26435.js",
+    "chars": 4820,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 8,
+      "simulation_model_base": 11,
+      "signal_core": 23,
+      "digital_logic": 0,
+      "net_core": 9,
+      "analog_solver": 4,
+      "scheduler": 6
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "26461",
+    "class": "core",
+    "file": "engine/core/module-26461.js",
+    "chars": 589,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "27051",
+    "class": "core",
+    "file": "engine/core/module-27051.js",
+    "chars": 1970,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 1,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "27251",
+    "class": "core",
+    "file": "engine/core/module-27251.js",
+    "chars": 2360,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 10,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 8,
+      "analog_solver": 0,
+      "scheduler": 3
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "27505",
+    "class": "core",
+    "file": "engine/core/module-27505.js",
+    "chars": 2563,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 2,
+      "simulation_model_base": 2,
+      "signal_core": 14,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "27688",
+    "class": "core",
+    "file": "engine/core/module-27688.js",
+    "chars": 1015,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "27756",
+    "class": "dependency",
+    "file": "engine/dependencies/module-27756.js",
+    "chars": 86,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "27884",
+    "class": "dependency",
+    "file": "engine/dependencies/module-27884.js",
+    "chars": 55,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "7255",
+      "25796",
+      "38914",
+      "87262"
+    ]
+  },
+  {
+    "module_id": "27970",
+    "class": "core",
+    "file": "engine/core/module-27970.js",
+    "chars": 981,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "28034",
+    "class": "core",
+    "file": "engine/core/module-28034.js",
+    "chars": 2539,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 3,
+      "simulation_model_base": 5,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "28308",
+    "class": "core",
+    "file": "engine/core/module-28308.js",
+    "chars": 2614,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 5,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "28742",
+    "class": "dependency",
+    "file": "engine/dependencies/module-28742.js",
+    "chars": 48,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "22997",
+      "42827",
+      "54318",
+      "54500"
+    ]
+  },
+  {
+    "module_id": "29721",
+    "class": "dependency",
+    "file": "engine/dependencies/module-29721.js",
+    "chars": 186,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "29855",
+    "class": "dependency",
+    "file": "engine/dependencies/module-29855.js",
+    "chars": 533,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "77078"
+    ]
+  },
+  {
+    "module_id": "30148",
+    "class": "core",
+    "file": "engine/core/module-30148.js",
+    "chars": 2963,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 6,
+      "signal_core": 5,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "30258",
+    "class": "dependency",
+    "file": "engine/dependencies/module-30258.js",
+    "chars": 854,
+    "roles": [
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 1,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "77078"
+    ]
+  },
+  {
+    "module_id": "30787",
+    "class": "dependency",
+    "file": "engine/dependencies/module-30787.js",
+    "chars": 223,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "31250",
+    "class": "core",
+    "file": "engine/core/module-31250.js",
+    "chars": 3606,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 5,
+      "simulation_model_base": 5,
+      "signal_core": 4,
+      "digital_logic": 0,
+      "net_core": 5,
+      "analog_solver": 0,
+      "scheduler": 2
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "31332",
+    "class": "core",
+    "file": "engine/core/module-31332.js",
+    "chars": 540,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core",
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 1,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "31784",
+    "class": "core",
+    "file": "engine/core/module-31784.js",
+    "chars": 1000,
+    "roles": [
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 6,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "32157",
+    "class": "core",
+    "file": "engine/core/module-32157.js",
+    "chars": 2026,
+    "roles": [
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 3,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 1,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "32303",
+    "class": "core",
+    "file": "engine/core/module-32303.js",
+    "chars": 11104,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "digital_logic",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 8,
+      "simulation_model_base": 10,
+      "signal_core": 3,
+      "digital_logic": 4,
+      "net_core": 10,
+      "analog_solver": 0,
+      "scheduler": 5
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "32493",
+    "class": "dependency",
+    "file": "engine/dependencies/module-32493.js",
+    "chars": 333,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "77078"
+    ]
+  },
+  {
+    "module_id": "32547",
+    "class": "core",
+    "file": "engine/core/module-32547.js",
+    "chars": 1100,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "32583",
+    "class": "core",
+    "file": "engine/core/module-32583.js",
+    "chars": 2176,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "digital_logic",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 2,
+      "simulation_model_base": 1,
+      "signal_core": 3,
+      "digital_logic": 4,
+      "net_core": 1,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 3,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "32986",
+    "class": "core",
+    "file": "engine/core/module-32986.js",
+    "chars": 1375,
+    "roles": [
+      "simulator_core",
+      "signal_core",
+      "digital_logic",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 2,
+      "simulation_model_base": 0,
+      "signal_core": 4,
+      "digital_logic": 3,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "33019",
+    "class": "dependency",
+    "file": "engine/dependencies/module-33019.js",
+    "chars": 48,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "22801",
+      "54718",
+      "67107",
+      "74933"
+    ]
+  },
+  {
+    "module_id": "33443",
+    "class": "core",
+    "file": "engine/core/module-33443.js",
+    "chars": 935,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 1,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "33954",
+    "class": "core",
+    "file": "engine/core/module-33954.js",
+    "chars": 9917,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 6,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "33973",
+    "class": "dependency",
+    "file": "engine/dependencies/module-33973.js",
+    "chars": 7656,
+    "roles": [
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 2
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2297"
+    ]
+  },
+  {
+    "module_id": "34007",
+    "class": "dependency",
+    "file": "engine/dependencies/module-34007.js",
+    "chars": 6656,
+    "roles": [
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "22884",
+      "65934"
+    ]
+  },
+  {
+    "module_id": "34045",
+    "class": "core",
+    "file": "engine/core/module-34045.js",
+    "chars": 1144,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "34544",
+    "class": "dependency",
+    "file": "engine/dependencies/module-34544.js",
+    "chars": 613,
+    "roles": [
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 3
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "34635",
+    "class": "core",
+    "file": "engine/core/module-34635.js",
+    "chars": 598,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "34639",
+    "class": "core",
+    "file": "engine/core/module-34639.js",
+    "chars": 2085,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 5,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 3,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "35207",
+    "class": "core",
+    "file": "engine/core/module-35207.js",
+    "chars": 1571,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "35386",
+    "class": "core",
+    "file": "engine/core/module-35386.js",
+    "chars": 786,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 6,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "77078"
+    ]
+  },
+  {
+    "module_id": "35450",
+    "class": "dependency",
+    "file": "engine/dependencies/module-35450.js",
+    "chars": 58,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "58602",
+      "74149",
+      "98166"
+    ]
+  },
+  {
+    "module_id": "35905",
+    "class": "dependency",
+    "file": "engine/dependencies/module-35905.js",
+    "chars": 828,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "77078"
+    ]
+  },
+  {
+    "module_id": "35938",
+    "class": "dependency",
+    "file": "engine/dependencies/module-35938.js",
+    "chars": 13865,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "35450"
+    ]
+  },
+  {
+    "module_id": "35963",
+    "class": "core",
+    "file": "engine/core/module-35963.js",
+    "chars": 2558,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 2,
+      "simulation_model_base": 8,
+      "signal_core": 6,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "35983",
+    "class": "core",
+    "file": "engine/core/module-35983.js",
+    "chars": 6054,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "digital_logic",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 9,
+      "simulation_model_base": 4,
+      "signal_core": 2,
+      "digital_logic": 2,
+      "net_core": 22,
+      "analog_solver": 0,
+      "scheduler": 5
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "36184",
+    "class": "dependency",
+    "file": "engine/dependencies/module-36184.js",
+    "chars": 2608,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "82663"
+    ]
+  },
+  {
+    "module_id": "36207",
+    "class": "dependency",
+    "file": "engine/dependencies/module-36207.js",
+    "chars": 47,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "4670",
+      "16650",
+      "30787",
+      "82727"
+    ]
+  },
+  {
+    "module_id": "36218",
+    "class": "core",
+    "file": "engine/core/module-36218.js",
+    "chars": 2010,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "digital_logic",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 6,
+      "simulation_model_base": 5,
+      "signal_core": 3,
+      "digital_logic": 2,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 3
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "36316",
+    "class": "core",
+    "file": "engine/core/module-36316.js",
+    "chars": 1326,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "36524",
+    "class": "core",
+    "file": "engine/core/module-36524.js",
+    "chars": 598,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "36677",
+    "class": "core",
+    "file": "engine/core/module-36677.js",
+    "chars": 877,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "37663",
+    "class": "core",
+    "file": "engine/core/module-37663.js",
+    "chars": 6274,
+    "roles": [
+      "signal_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 13,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 13
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "37833",
+    "class": "core",
+    "file": "engine/core/module-37833.js",
+    "chars": 3118,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 3,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "38016",
+    "class": "dependency",
+    "file": "engine/dependencies/module-38016.js",
+    "chars": 1035,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 3,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "36184",
+      "64215",
+      "82663"
+    ]
+  },
+  {
+    "module_id": "38784",
+    "class": "core",
+    "file": "engine/core/module-38784.js",
+    "chars": 704,
+    "roles": [
+      "simulator_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "77078"
+    ]
+  },
+  {
+    "module_id": "38914",
+    "class": "dependency",
+    "file": "engine/dependencies/module-38914.js",
+    "chars": 15805,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "39002",
+    "class": "dependency",
+    "file": "engine/dependencies/module-39002.js",
+    "chars": 1206,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "39440",
+    "class": "core",
+    "file": "engine/core/module-39440.js",
+    "chars": 981,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "39674",
+    "class": "dependency",
+    "file": "engine/dependencies/module-39674.js",
+    "chars": 463,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "77078"
+    ]
+  },
+  {
+    "module_id": "40076",
+    "class": "dependency",
+    "file": "engine/dependencies/module-40076.js",
+    "chars": 360,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "40092",
+    "class": "dependency",
+    "file": "engine/dependencies/module-40092.js",
+    "chars": 463,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "77078"
+    ]
+  },
+  {
+    "module_id": "40360",
+    "class": "core",
+    "file": "engine/core/module-40360.js",
+    "chars": 2304,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 6,
+      "signal_core": 4,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "40465",
+    "class": "dependency",
+    "file": "engine/dependencies/module-40465.js",
+    "chars": 421,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "77078"
+    ]
+  },
+  {
+    "module_id": "40560",
+    "class": "dependency",
+    "file": "engine/dependencies/module-40560.js",
+    "chars": 610,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "41354",
+    "class": "dependency",
+    "file": "engine/dependencies/module-41354.js",
+    "chars": 7514,
+    "roles": [
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2297"
+    ]
+  },
+  {
+    "module_id": "41543",
+    "class": "dependency",
+    "file": "engine/dependencies/module-41543.js",
+    "chars": 832,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2297",
+      "29721"
+    ]
+  },
+  {
+    "module_id": "41699",
+    "class": "core",
+    "file": "engine/core/module-41699.js",
+    "chars": 1012,
+    "roles": [
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 6,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "42029",
+    "class": "dependency",
+    "file": "engine/dependencies/module-42029.js",
+    "chars": 65,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "1526",
+      "25199",
+      "27161",
+      "29056",
+      "44535",
+      "69232"
+    ]
+  },
+  {
+    "module_id": "42204",
+    "class": "dependency",
+    "file": "engine/dependencies/module-42204.js",
+    "chars": 1000,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "42213",
+    "class": "dependency",
+    "file": "engine/dependencies/module-42213.js",
+    "chars": 1079,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "1660",
+      "2292",
+      "2733",
+      "3179",
+      "5737",
+      "6782",
+      "7098",
+      "7403",
+      "7901",
+      "8338",
+      "8491",
+      "9058",
+      "9482",
+      "10069",
+      "12130",
+      "12798",
+      "13996",
+      "14551",
+      "14803",
+      "15064",
+      "16110",
+      "16603",
+      "17074",
+      "18961",
+      "20243",
+      "20365",
+      "21207",
+      "21529",
+      "22179",
+      "23274",
+      "23316",
+      "24531",
+      "24939",
+      "26435",
+      "27051",
+      "27248",
+      "27251",
+      "27688",
+      "27970",
+      "28034",
+      "28308",
+      "30148",
+      "31250",
+      "31332",
+      "31784",
+      "32303",
+      "33443",
+      "34639",
+      "35963",
+      "35983",
+      "37833",
+      "39440",
+      "40360",
+      "41699",
+      "42520",
+      "43050",
+      "43434",
+      "43877",
+      "44504",
+      "45266",
+      "45616",
+      "46173",
+      "49834",
+      "50330",
+      "50438",
+      "52526",
+      "53181",
+      "55860",
+      "56486",
+      "57486",
+      "57962",
+      "58745",
+      "58766",
+      "59214",
+      "59575",
+      "59844",
+      "59866",
+      "60331",
+      "60952",
+      "61384",
+      "62303",
+      "62891",
+      "63372",
+      "63909",
+      "64570",
+      "66667",
+      "68418",
+      "68610",
+      "70394",
+      "70508",
+      "70985",
+      "72563",
+      "72622",
+      "72885",
+      "73248",
+      "73430",
+      "73776",
+      "73964",
+      "75903",
+      "76995",
+      "77617",
+      "78116",
+      "81629",
+      "82366",
+      "83883",
+      "84263",
+      "85044",
+      "85658",
+      "86523",
+      "87092",
+      "87222",
+      "89988",
+      "91271",
+      "92285",
+      "94047",
+      "96232",
+      "97228",
+      "97929",
+      "98989",
+      "99737"
+    ]
+  },
+  {
+    "module_id": "42417",
+    "class": "dependency",
+    "file": "engine/dependencies/module-42417.js",
+    "chars": 93,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "19956",
+      "27884",
+      "28742",
+      "35450",
+      "44643",
+      "49955",
+      "69784",
+      "80444",
+      "94302"
+    ]
+  },
+  {
+    "module_id": "42520",
+    "class": "core",
+    "file": "engine/core/module-42520.js",
+    "chars": 525,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core",
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 1,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "42827",
+    "class": "dependency",
+    "file": "engine/dependencies/module-42827.js",
+    "chars": 226,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "5154",
+      "7225",
+      "11771",
+      "13864",
+      "14382",
+      "18460",
+      "22575",
+      "27695",
+      "33025",
+      "38913",
+      "51330",
+      "57141",
+      "58613",
+      "59280",
+      "60901",
+      "61923",
+      "64935",
+      "69295",
+      "70636",
+      "73930",
+      "77300",
+      "81866",
+      "83366",
+      "85744"
+    ]
+  },
+  {
+    "module_id": "43050",
+    "class": "core",
+    "file": "engine/core/module-43050.js",
+    "chars": 2653,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 2,
+      "simulation_model_base": 8,
+      "signal_core": 6,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 1,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "43434",
+    "class": "core",
+    "file": "engine/core/module-43434.js",
+    "chars": 1695,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "43877",
+    "class": "core",
+    "file": "engine/core/module-43877.js",
+    "chars": 2083,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 7,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 7,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "43990",
+    "class": "dependency",
+    "file": "engine/dependencies/module-43990.js",
+    "chars": 956,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "18572",
+      "30863",
+      "46492",
+      "52052",
+      "71809"
+    ]
+  },
+  {
+    "module_id": "44122",
+    "class": "dependency",
+    "file": "engine/dependencies/module-44122.js",
+    "chars": 5080,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "12572",
+      "14256",
+      "56379",
+      "57266",
+      "67766",
+      "90407"
+    ]
+  },
+  {
+    "module_id": "44504",
+    "class": "core",
+    "file": "engine/core/module-44504.js",
+    "chars": 4000,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "digital_logic",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 5,
+      "simulation_model_base": 7,
+      "signal_core": 10,
+      "digital_logic": 1,
+      "net_core": 6,
+      "analog_solver": 0,
+      "scheduler": 2
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297",
+      "32583"
+    ]
+  },
+  {
+    "module_id": "44643",
+    "class": "dependency",
+    "file": "engine/dependencies/module-44643.js",
+    "chars": 48,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "12363",
+      "43990",
+      "82394",
+      "89689"
+    ]
+  },
+  {
+    "module_id": "45266",
+    "class": "core",
+    "file": "engine/core/module-45266.js",
+    "chars": 1237,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "digital_logic"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 5,
+      "digital_logic": 2,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "45616",
+    "class": "core",
+    "file": "engine/core/module-45616.js",
+    "chars": 1657,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "45932",
+    "class": "core",
+    "file": "engine/core/module-45932.js",
+    "chars": 771,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 5,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "46173",
+    "class": "core",
+    "file": "engine/core/module-46173.js",
+    "chars": 2091,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 7,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 7,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "46320",
+    "class": "core",
+    "file": "engine/core/module-46320.js",
+    "chars": 1702,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 5,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "46502",
+    "class": "core",
+    "file": "engine/core/module-46502.js",
+    "chars": 1506,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 8,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 6,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "47628",
+    "class": "core",
+    "file": "engine/core/module-47628.js",
+    "chars": 2725,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 5,
+      "simulation_model_base": 5,
+      "signal_core": 7,
+      "digital_logic": 0,
+      "net_core": 5,
+      "analog_solver": 0,
+      "scheduler": 2
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "47885",
+    "class": "core",
+    "file": "engine/core/module-47885.js",
+    "chars": 1939,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "48425",
+    "class": "core",
+    "file": "engine/core/module-48425.js",
+    "chars": 7138,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 6,
+      "simulation_model_base": 13,
+      "signal_core": 6,
+      "digital_logic": 0,
+      "net_core": 42,
+      "analog_solver": 5,
+      "scheduler": 4
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "48439",
+    "class": "core",
+    "file": "engine/core/module-48439.js",
+    "chars": 2608,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 5,
+      "signal_core": 4,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 1,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "48920",
+    "class": "dependency",
+    "file": "engine/dependencies/module-48920.js",
+    "chars": 1761,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "49109",
+    "class": "core",
+    "file": "engine/core/module-49109.js",
+    "chars": 1574,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 1,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "49834",
+    "class": "core",
+    "file": "engine/core/module-49834.js",
+    "chars": 993,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "49955",
+    "class": "dependency",
+    "file": "engine/dependencies/module-49955.js",
+    "chars": 2669,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "50330",
+    "class": "core",
+    "file": "engine/core/module-50330.js",
+    "chars": 2109,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 5,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 3,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "50438",
+    "class": "core",
+    "file": "engine/core/module-50438.js",
+    "chars": 536,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "50618",
+    "class": "core",
+    "file": "engine/core/module-50618.js",
+    "chars": 660,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "50830",
+    "class": "dependency",
+    "file": "engine/dependencies/module-50830.js",
+    "chars": 30,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 1,
+    "dependencies": [
+      "8148"
+    ]
+  },
+  {
+    "module_id": "50918",
+    "class": "core",
+    "file": "engine/core/module-50918.js",
+    "chars": 10693,
+    "roles": [
+      "signal_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 12,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 2
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "51335",
+    "class": "dependency",
+    "file": "engine/dependencies/module-51335.js",
+    "chars": 4892,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 4,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2297",
+      "29721"
+    ]
+  },
+  {
+    "module_id": "51830",
+    "class": "core",
+    "file": "engine/core/module-51830.js",
+    "chars": 14751,
+    "roles": [
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 11
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "35450"
+    ]
+  },
+  {
+    "module_id": "52523",
+    "class": "dependency",
+    "file": "engine/dependencies/module-52523.js",
+    "chars": 32934,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "52526",
+    "class": "dependency",
+    "file": "engine/dependencies/module-52526.js",
+    "chars": 668,
+    "roles": [
+      "simulation_model_base"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 2,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "53181",
+    "class": "core",
+    "file": "engine/core/module-53181.js",
+    "chars": 591,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 5,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "53417",
+    "class": "core",
+    "file": "engine/core/module-53417.js",
+    "chars": 2711,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "digital_logic",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 6,
+      "simulation_model_base": 5,
+      "signal_core": 4,
+      "digital_logic": 2,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 3
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "54140",
+    "class": "dependency",
+    "file": "engine/dependencies/module-54140.js",
+    "chars": 93,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "18186",
+      "21440",
+      "34544",
+      "40560",
+      "48920",
+      "56566",
+      "61456"
+    ]
+  },
+  {
+    "module_id": "54318",
+    "class": "dependency",
+    "file": "engine/dependencies/module-54318.js",
+    "chars": 57,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "27261",
+      "43637",
+      "46807",
+      "70486",
+      "71444"
+    ]
+  },
+  {
+    "module_id": "54500",
+    "class": "dependency",
+    "file": "engine/dependencies/module-54500.js",
+    "chars": 21,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "69776"
+    ]
+  },
+  {
+    "module_id": "54718",
+    "class": "core",
+    "file": "engine/core/module-54718.js",
+    "chars": 19311,
+    "roles": [
+      "simulator_core",
+      "signal_core",
+      "digital_logic",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 2,
+      "simulation_model_base": 0,
+      "signal_core": 1,
+      "digital_logic": 2,
+      "net_core": 1,
+      "analog_solver": 38,
+      "scheduler": 2
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "20781"
+    ]
+  },
+  {
+    "module_id": "55267",
+    "class": "core",
+    "file": "engine/core/module-55267.js",
+    "chars": 14107,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 5,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "35450"
+    ]
+  },
+  {
+    "module_id": "55757",
+    "class": "core",
+    "file": "engine/core/module-55757.js",
+    "chars": 788,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 6,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "77078"
+    ]
+  },
+  {
+    "module_id": "55860",
+    "class": "core",
+    "file": "engine/core/module-55860.js",
+    "chars": 1611,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "56379",
+    "class": "dependency",
+    "file": "engine/dependencies/module-56379.js",
+    "chars": 68952,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "73731"
+    ]
+  },
+  {
+    "module_id": "56486",
+    "class": "core",
+    "file": "engine/core/module-56486.js",
+    "chars": 2037,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 2,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 5,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "56566",
+    "class": "dependency",
+    "file": "engine/dependencies/module-56566.js",
+    "chars": 1387,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "56976",
+    "class": "core",
+    "file": "engine/core/module-56976.js",
+    "chars": 3680,
+    "roles": [
+      "signal_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 3
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "57266",
+    "class": "dependency",
+    "file": "engine/dependencies/module-57266.js",
+    "chars": 301,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "57486",
+    "class": "core",
+    "file": "engine/core/module-57486.js",
+    "chars": 1757,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 10,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 8,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "57549",
+    "class": "core",
+    "file": "engine/core/module-57549.js",
+    "chars": 1734,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "57962",
+    "class": "core",
+    "file": "engine/core/module-57962.js",
+    "chars": 1012,
+    "roles": [
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 6,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "58110",
+    "class": "dependency",
+    "file": "engine/dependencies/module-58110.js",
+    "chars": 84,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "20553",
+      "27505",
+      "48439",
+      "49109",
+      "53417",
+      "76617",
+      "79446",
+      "83827"
+    ]
+  },
+  {
+    "module_id": "58602",
+    "class": "dependency",
+    "file": "engine/dependencies/module-58602.js",
+    "chars": 1015,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "54140"
+    ]
+  },
+  {
+    "module_id": "58745",
+    "class": "core",
+    "file": "engine/core/module-58745.js",
+    "chars": 2509,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 10,
+      "signal_core": 6,
+      "digital_logic": 0,
+      "net_core": 8,
+      "analog_solver": 2,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "58766",
+    "class": "core",
+    "file": "engine/core/module-58766.js",
+    "chars": 4888,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 8,
+      "signal_core": 8,
+      "digital_logic": 0,
+      "net_core": 6,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "59214",
+    "class": "core",
+    "file": "engine/core/module-59214.js",
+    "chars": 12812,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 2,
+      "signal_core": 31,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 6,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297",
+      "50830",
+      "91810"
+    ]
+  },
+  {
+    "module_id": "59280",
+    "class": "core",
+    "file": "engine/core/module-59280.js",
+    "chars": 24406,
+    "roles": [
+      "signal_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 20,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2297",
+      "2802",
+      "29721",
+      "35450"
+    ]
+  },
+  {
+    "module_id": "59427",
+    "class": "core",
+    "file": "engine/core/module-59427.js",
+    "chars": 1406,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "59575",
+    "class": "core",
+    "file": "engine/core/module-59575.js",
+    "chars": 2568,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 32,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 30,
+      "analog_solver": 1,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "59844",
+    "class": "core",
+    "file": "engine/core/module-59844.js",
+    "chars": 1481,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "59866",
+    "class": "core",
+    "file": "engine/core/module-59866.js",
+    "chars": 981,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "59970",
+    "class": "core",
+    "file": "engine/core/module-59970.js",
+    "chars": 1306,
+    "roles": [
+      "net_core",
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 9,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "77078"
+    ]
+  },
+  {
+    "module_id": "60044",
+    "class": "dependency",
+    "file": "engine/dependencies/module-60044.js",
+    "chars": 138801,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 4,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "5442",
+      "42417",
+      "79541",
+      "94302"
+    ]
+  },
+  {
+    "module_id": "60331",
+    "class": "core",
+    "file": "engine/core/module-60331.js",
+    "chars": 1012,
+    "roles": [
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 6,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "60901",
+    "class": "core",
+    "file": "engine/core/module-60901.js",
+    "chars": 11053,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 5,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "60952",
+    "class": "core",
+    "file": "engine/core/module-60952.js",
+    "chars": 2776,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 5,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "61384",
+    "class": "core",
+    "file": "engine/core/module-61384.js",
+    "chars": 4897,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 2,
+      "simulation_model_base": 5,
+      "signal_core": 8,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "61456",
+    "class": "dependency",
+    "file": "engine/dependencies/module-61456.js",
+    "chars": 1993,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "61669",
+    "class": "core",
+    "file": "engine/core/module-61669.js",
+    "chars": 1641,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 7,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 7,
+      "analog_solver": 1,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "62119",
+    "class": "core",
+    "file": "engine/core/module-62119.js",
+    "chars": 599,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "62303",
+    "class": "core",
+    "file": "engine/core/module-62303.js",
+    "chars": 1015,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "62448",
+    "class": "core",
+    "file": "engine/core/module-62448.js",
+    "chars": 38469,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 7,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "5442",
+      "54140"
+    ]
+  },
+  {
+    "module_id": "62612",
+    "class": "core",
+    "file": "engine/core/module-62612.js",
+    "chars": 3967,
+    "roles": [
+      "simulator_core",
+      "signal_core",
+      "digital_logic",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 0,
+      "signal_core": 4,
+      "digital_logic": 2,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 4
+    },
+    "imported_by_model_modules": 2,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "62737",
+    "class": "core",
+    "file": "engine/core/module-62737.js",
+    "chars": 598,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "62891",
+    "class": "core",
+    "file": "engine/core/module-62891.js",
+    "chars": 5588,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 9,
+      "signal_core": 6,
+      "digital_logic": 0,
+      "net_core": 8,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "63909",
+    "class": "core",
+    "file": "engine/core/module-63909.js",
+    "chars": 2441,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "digital_logic",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 6,
+      "simulation_model_base": 6,
+      "signal_core": 13,
+      "digital_logic": 2,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 3
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "64215",
+    "class": "dependency",
+    "file": "engine/dependencies/module-64215.js",
+    "chars": 1248,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "82663"
+    ]
+  },
+  {
+    "module_id": "65934",
+    "class": "core",
+    "file": "engine/core/module-65934.js",
+    "chars": 41238,
+    "roles": [
+      "signal_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 12
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "66667",
+    "class": "core",
+    "file": "engine/core/module-66667.js",
+    "chars": 5043,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 13,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 1,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "66811",
+    "class": "core",
+    "file": "engine/core/module-66811.js",
+    "chars": 1558,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 6,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "67766",
+    "class": "dependency",
+    "file": "engine/dependencies/module-67766.js",
+    "chars": 2525,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "68418",
+    "class": "core",
+    "file": "engine/core/module-68418.js",
+    "chars": 544,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core",
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 1,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "68610",
+    "class": "core",
+    "file": "engine/core/module-68610.js",
+    "chars": 547,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 5,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "69776",
+    "class": "dependency",
+    "file": "engine/dependencies/module-69776.js",
+    "chars": 10680,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 3,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "35450",
+      "54140"
+    ]
+  },
+  {
+    "module_id": "69784",
+    "class": "core",
+    "file": "engine/core/module-69784.js",
+    "chars": 87587,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 15,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "70394",
+    "class": "core",
+    "file": "engine/core/module-70394.js",
+    "chars": 1177,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 6,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 5,
+      "analog_solver": 1,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "70508",
+    "class": "core",
+    "file": "engine/core/module-70508.js",
+    "chars": 1000,
+    "roles": [
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 6,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "70833",
+    "class": "core",
+    "file": "engine/core/module-70833.js",
+    "chars": 1636,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 5,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2297",
+      "29721",
+      "35450"
+    ]
+  },
+  {
+    "module_id": "70960",
+    "class": "dependency",
+    "file": "engine/dependencies/module-70960.js",
+    "chars": 11017,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 4,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "70974",
+    "class": "core",
+    "file": "engine/core/module-70974.js",
+    "chars": 5175,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 5,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "36184",
+      "64215"
+    ]
+  },
+  {
+    "module_id": "70985",
+    "class": "core",
+    "file": "engine/core/module-70985.js",
+    "chars": 3589,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 6,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "72563",
+    "class": "core",
+    "file": "engine/core/module-72563.js",
+    "chars": 534,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core",
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 1,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "72622",
+    "class": "core",
+    "file": "engine/core/module-72622.js",
+    "chars": 984,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 10,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 8,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "72885",
+    "class": "core",
+    "file": "engine/core/module-72885.js",
+    "chars": 535,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 5,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "72948",
+    "class": "core",
+    "file": "engine/core/module-72948.js",
+    "chars": 4412,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 7,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "72958",
+    "class": "core",
+    "file": "engine/core/module-72958.js",
+    "chars": 27598,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 12,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "97675"
+    ]
+  },
+  {
+    "module_id": "73248",
+    "class": "core",
+    "file": "engine/core/module-73248.js",
+    "chars": 1003,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "73430",
+    "class": "core",
+    "file": "engine/core/module-73430.js",
+    "chars": 2640,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 16,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 14,
+      "analog_solver": 0,
+      "scheduler": 3
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "73776",
+    "class": "core",
+    "file": "engine/core/module-73776.js",
+    "chars": 1679,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 10,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 8,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "73964",
+    "class": "core",
+    "file": "engine/core/module-73964.js",
+    "chars": 1012,
+    "roles": [
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 6,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "74149",
+    "class": "dependency",
+    "file": "engine/dependencies/module-74149.js",
+    "chars": 4521,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "54140"
+    ]
+  },
+  {
+    "module_id": "75903",
+    "class": "core",
+    "file": "engine/core/module-75903.js",
+    "chars": 1174,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 5,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "76617",
+    "class": "core",
+    "file": "engine/core/module-76617.js",
+    "chars": 1437,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 5,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "76991",
+    "class": "core",
+    "file": "engine/core/module-76991.js",
+    "chars": 939,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 7,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "77078"
+    ]
+  },
+  {
+    "module_id": "76995",
+    "class": "dependency",
+    "file": "engine/dependencies/module-76995.js",
+    "chars": 1473,
+    "roles": [
+      "simulation_model_base"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 2,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "77003",
+    "class": "core",
+    "file": "engine/core/module-77003.js",
+    "chars": 8591,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 6,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "11519"
+    ]
+  },
+  {
+    "module_id": "77078",
+    "class": "core",
+    "file": "engine/core/module-77078.js",
+    "chars": 7331,
+    "roles": [
+      "simulator_core",
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 18,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "77587",
+    "class": "dependency",
+    "file": "engine/dependencies/module-77587.js",
+    "chars": 1242,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2297",
+      "29721"
+    ]
+  },
+  {
+    "module_id": "77617",
+    "class": "core",
+    "file": "engine/core/module-77617.js",
+    "chars": 1104,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 6,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "78032",
+    "class": "core",
+    "file": "engine/core/module-78032.js",
+    "chars": 1688,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 5,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "78116",
+    "class": "core",
+    "file": "engine/core/module-78116.js",
+    "chars": 2045,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 1,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "32583",
+      "62612"
+    ]
+  },
+  {
+    "module_id": "78637",
+    "class": "core",
+    "file": "engine/core/module-78637.js",
+    "chars": 1297,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "78913",
+    "class": "dependency",
+    "file": "engine/dependencies/module-78913.js",
+    "chars": 285,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 1,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "80635"
+    ]
+  },
+  {
+    "module_id": "79446",
+    "class": "core",
+    "file": "engine/core/module-79446.js",
+    "chars": 1774,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 5,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "79541",
+    "class": "dependency",
+    "file": "engine/dependencies/module-79541.js",
+    "chars": 13137,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "79828",
+    "class": "core",
+    "file": "engine/core/module-79828.js",
+    "chars": 659,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "80299",
+    "class": "dependency",
+    "file": "engine/dependencies/module-80299.js",
+    "chars": 209,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2438",
+      "12953",
+      "16192",
+      "21385",
+      "25049",
+      "32526",
+      "33072",
+      "37663",
+      "42889",
+      "43285",
+      "44774",
+      "48921",
+      "54825",
+      "58036",
+      "60061",
+      "60269",
+      "70876",
+      "76830",
+      "80307",
+      "87508",
+      "93030",
+      "94283"
+    ]
+  },
+  {
+    "module_id": "80444",
+    "class": "dependency",
+    "file": "engine/dependencies/module-80444.js",
+    "chars": 102,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "13123",
+      "20341",
+      "22197",
+      "32157",
+      "36207",
+      "81084",
+      "84563",
+      "96886"
+    ]
+  },
+  {
+    "module_id": "80635",
+    "class": "core",
+    "file": "engine/core/module-80635.js",
+    "chars": 6260,
+    "roles": [
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 19,
+      "scheduler": 9
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "27756"
+    ]
+  },
+  {
+    "module_id": "80722",
+    "class": "core",
+    "file": "engine/core/module-80722.js",
+    "chars": 1855,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 2,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "81084",
+    "class": "core",
+    "file": "engine/core/module-81084.js",
+    "chars": 3240,
+    "roles": [
+      "simulator_core",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 3,
+      "simulation_model_base": 0,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "20781"
+    ]
+  },
+  {
+    "module_id": "81629",
+    "class": "core",
+    "file": "engine/core/module-81629.js",
+    "chars": 5321,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 2,
+      "simulation_model_base": 7,
+      "signal_core": 5,
+      "digital_logic": 0,
+      "net_core": 5,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "81866",
+    "class": "dependency",
+    "file": "engine/dependencies/module-81866.js",
+    "chars": 2887,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 4,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2297",
+      "29721",
+      "35450"
+    ]
+  },
+  {
+    "module_id": "82366",
+    "class": "core",
+    "file": "engine/core/module-82366.js",
+    "chars": 1198,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "82394",
+    "class": "dependency",
+    "file": "engine/dependencies/module-82394.js",
+    "chars": 30,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "77167",
+      "80962"
+    ]
+  },
+  {
+    "module_id": "82663",
+    "class": "dependency",
+    "file": "engine/dependencies/module-82663.js",
+    "chars": 1685,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "82727",
+    "class": "core",
+    "file": "engine/core/module-82727.js",
+    "chars": 3738,
+    "roles": [
+      "simulator_core",
+      "signal_core",
+      "digital_logic",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 7,
+      "simulation_model_base": 0,
+      "signal_core": 4,
+      "digital_logic": 8,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 6
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "83827",
+    "class": "core",
+    "file": "engine/core/module-83827.js",
+    "chars": 3940,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 10,
+      "signal_core": 8,
+      "digital_logic": 0,
+      "net_core": 10,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "83883",
+    "class": "core",
+    "file": "engine/core/module-83883.js",
+    "chars": 1527,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 6,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "84030",
+    "class": "core",
+    "file": "engine/core/module-84030.js",
+    "chars": 9733,
+    "roles": [
+      "signal_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 4,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 6
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "84032",
+    "class": "core",
+    "file": "engine/core/module-84032.js",
+    "chars": 2297,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 6,
+      "signal_core": 4,
+      "digital_logic": 0,
+      "net_core": 5,
+      "analog_solver": 2,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "84263",
+    "class": "dependency",
+    "file": "engine/dependencies/module-84263.js",
+    "chars": 800,
+    "roles": [
+      "simulation_model_base"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 2,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "84563",
+    "class": "dependency",
+    "file": "engine/dependencies/module-84563.js",
+    "chars": 64,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "4502",
+      "9305",
+      "42213",
+      "58110",
+      "92060",
+      "99602"
+    ]
+  },
+  {
+    "module_id": "84636",
+    "class": "core",
+    "file": "engine/core/module-84636.js",
+    "chars": 464641,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 10,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "19021"
+    ]
+  },
+  {
+    "module_id": "84820",
+    "class": "core",
+    "file": "engine/core/module-84820.js",
+    "chars": 2149,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 5,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 1,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "85044",
+    "class": "core",
+    "file": "engine/core/module-85044.js",
+    "chars": 9420,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 2,
+      "simulation_model_base": 4,
+      "signal_core": 33,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 4,
+      "scheduler": 5
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "85185",
+    "class": "dependency",
+    "file": "engine/dependencies/module-85185.js",
+    "chars": 2885,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2297",
+      "29721"
+    ]
+  },
+  {
+    "module_id": "85557",
+    "class": "core",
+    "file": "engine/core/module-85557.js",
+    "chars": 623,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 5,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "77078"
+    ]
+  },
+  {
+    "module_id": "85658",
+    "class": "core",
+    "file": "engine/core/module-85658.js",
+    "chars": 1163,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "digital_logic"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 2,
+      "digital_logic": 2,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "85782",
+    "class": "core",
+    "file": "engine/core/module-85782.js",
+    "chars": 2868,
+    "roles": [
+      "simulator_core",
+      "signal_core",
+      "digital_logic",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 2,
+      "simulation_model_base": 0,
+      "signal_core": 8,
+      "digital_logic": 1,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 2
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "86523",
+    "class": "core",
+    "file": "engine/core/module-86523.js",
+    "chars": 535,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 5,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "87092",
+    "class": "core",
+    "file": "engine/core/module-87092.js",
+    "chars": 550,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 5,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "87222",
+    "class": "core",
+    "file": "engine/core/module-87222.js",
+    "chars": 902,
+    "roles": [
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 4,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "87262",
+    "class": "dependency",
+    "file": "engine/dependencies/module-87262.js",
+    "chars": 6082,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "87485",
+    "class": "dependency",
+    "file": "engine/dependencies/module-87485.js",
+    "chars": 1019,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 4,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "36184",
+      "82663"
+    ]
+  },
+  {
+    "module_id": "88706",
+    "class": "core",
+    "file": "engine/core/module-88706.js",
+    "chars": 13065,
+    "roles": [
+      "signal_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 6,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 2
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "89689",
+    "class": "dependency",
+    "file": "engine/dependencies/module-89689.js",
+    "chars": 47,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "7468",
+      "55252",
+      "91515",
+      "98524"
+    ]
+  },
+  {
+    "module_id": "89988",
+    "class": "core",
+    "file": "engine/core/module-89988.js",
+    "chars": 982,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "90110",
+    "class": "dependency",
+    "file": "engine/dependencies/module-90110.js",
+    "chars": 816,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "77078"
+    ]
+  },
+  {
+    "module_id": "90215",
+    "class": "core",
+    "file": "engine/core/module-90215.js",
+    "chars": 3015,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 6,
+      "signal_core": 5,
+      "digital_logic": 0,
+      "net_core": 7,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "90407",
+    "class": "dependency",
+    "file": "engine/dependencies/module-90407.js",
+    "chars": 1063,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "64280",
+      "74940"
+    ]
+  },
+  {
+    "module_id": "90477",
+    "class": "core",
+    "file": "engine/core/module-90477.js",
+    "chars": 4861,
+    "roles": [
+      "signal_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 4,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 2
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "91271",
+    "class": "core",
+    "file": "engine/core/module-91271.js",
+    "chars": 716,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "91515",
+    "class": "core",
+    "file": "engine/core/module-91515.js",
+    "chars": 9499,
+    "roles": [
+      "signal_core",
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 118,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "91546",
+    "class": "core",
+    "file": "engine/core/module-91546.js",
+    "chars": 1457,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 1,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "91810",
+    "class": "dependency",
+    "file": "engine/dependencies/module-91810.js",
+    "chars": 2889,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 1,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 1,
+    "dependencies": [
+      "9092",
+      "12931",
+      "34007"
+    ]
+  },
+  {
+    "module_id": "91881",
+    "class": "core",
+    "file": "engine/core/module-91881.js",
+    "chars": 7857,
+    "roles": [
+      "signal_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 4,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "92060",
+    "class": "dependency",
+    "file": "engine/dependencies/module-92060.js",
+    "chars": 225,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "401",
+      "6303",
+      "10732",
+      "13797",
+      "26461",
+      "34635",
+      "36218",
+      "36316",
+      "36524",
+      "46320",
+      "50618",
+      "57549",
+      "59427",
+      "61669",
+      "62119",
+      "62737",
+      "66811",
+      "78637",
+      "79828",
+      "80722",
+      "84820",
+      "92717",
+      "95500",
+      "97250"
+    ]
+  },
+  {
+    "module_id": "92254",
+    "class": "core",
+    "file": "engine/core/module-92254.js",
+    "chars": 17352,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 20,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "5442",
+      "80444"
+    ]
+  },
+  {
+    "module_id": "92285",
+    "class": "core",
+    "file": "engine/core/module-92285.js",
+    "chars": 1287,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "digital_logic"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 8,
+      "digital_logic": 1,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "92362",
+    "class": "dependency",
+    "file": "engine/dependencies/module-92362.js",
+    "chars": 1460,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "77078"
+    ]
+  },
+  {
+    "module_id": "92717",
+    "class": "core",
+    "file": "engine/core/module-92717.js",
+    "chars": 1316,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "93030",
+    "class": "core",
+    "file": "engine/core/module-93030.js",
+    "chars": 2654,
+    "roles": [
+      "simulator_core",
+      "signal_core",
+      "digital_logic",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 0,
+      "signal_core": 11,
+      "digital_logic": 6,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "93432",
+    "class": "dependency",
+    "file": "engine/dependencies/module-93432.js",
+    "chars": 800,
+    "roles": [
+      "simulation_model_base"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 2,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "93459",
+    "class": "core",
+    "file": "engine/core/module-93459.js",
+    "chars": 1734,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 5,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 1,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "94047",
+    "class": "core",
+    "file": "engine/core/module-94047.js",
+    "chars": 2000,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 5,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "94299",
+    "class": "core",
+    "file": "engine/core/module-94299.js",
+    "chars": 1933,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "94302",
+    "class": "dependency",
+    "file": "engine/dependencies/module-94302.js",
+    "chars": 127,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2297",
+      "2802",
+      "29721",
+      "33973",
+      "40076",
+      "41354",
+      "41543",
+      "51830",
+      "54140",
+      "84030",
+      "99418"
+    ]
+  },
+  {
+    "module_id": "95500",
+    "class": "core",
+    "file": "engine/core/module-95500.js",
+    "chars": 1321,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 1,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "96232",
+    "class": "core",
+    "file": "engine/core/module-96232.js",
+    "chars": 1331,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "digital_logic"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 8,
+      "digital_logic": 1,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "96886",
+    "class": "dependency",
+    "file": "engine/dependencies/module-96886.js",
+    "chars": 29,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2839",
+      "91810"
+    ]
+  },
+  {
+    "module_id": "97228",
+    "class": "core",
+    "file": "engine/core/module-97228.js",
+    "chars": 1032,
+    "roles": [
+      "simulation_model_base",
+      "net_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 6,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 4,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "97250",
+    "class": "core",
+    "file": "engine/core/module-97250.js",
+    "chars": 1475,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 4,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 3,
+      "analog_solver": 0,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "97329",
+    "class": "dependency",
+    "file": "engine/dependencies/module-97329.js",
+    "chars": 2744,
+    "roles": [
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 3,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "54140"
+    ]
+  },
+  {
+    "module_id": "97357",
+    "class": "dependency",
+    "file": "engine/dependencies/module-97357.js",
+    "chars": 1534,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 3,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "36184",
+      "64215"
+    ]
+  },
+  {
+    "module_id": "97675",
+    "class": "core",
+    "file": "engine/core/module-97675.js",
+    "chars": 13768,
+    "roles": [
+      "analog_solver",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 16,
+      "scheduler": 1
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "97929",
+    "class": "core",
+    "file": "engine/core/module-97929.js",
+    "chars": 1411,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "digital_logic"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 5,
+      "digital_logic": 4,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "98016",
+    "class": "core",
+    "file": "engine/core/module-98016.js",
+    "chars": 2836,
+    "roles": [
+      "simulator_core",
+      "signal_core",
+      "digital_logic",
+      "scheduler"
+    ],
+    "role_counts": {
+      "simulator_core": 4,
+      "simulation_model_base": 0,
+      "signal_core": 8,
+      "digital_logic": 3,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 2
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250"
+    ]
+  },
+  {
+    "module_id": "98166",
+    "class": "core",
+    "file": "engine/core/module-98166.js",
+    "chars": 27082,
+    "roles": [
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 37,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "98989",
+    "class": "core",
+    "file": "engine/core/module-98989.js",
+    "chars": 3746,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 2,
+      "signal_core": 5,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  },
+  {
+    "module_id": "99418",
+    "class": "dependency",
+    "file": "engine/dependencies/module-99418.js",
+    "chars": 1974,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": []
+  },
+  {
+    "module_id": "99602",
+    "class": "dependency",
+    "file": "engine/dependencies/module-99602.js",
+    "chars": 93,
+    "roles": [],
+    "role_counts": {
+      "simulator_core": 0,
+      "simulation_model_base": 0,
+      "signal_core": 0,
+      "digital_logic": 0,
+      "net_core": 0,
+      "analog_solver": 0,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "10771",
+      "12004",
+      "28434",
+      "32986",
+      "39504",
+      "70780",
+      "85782",
+      "98016",
+      "99757"
+    ]
+  },
+  {
+    "module_id": "99737",
+    "class": "core",
+    "file": "engine/core/module-99737.js",
+    "chars": 927,
+    "roles": [
+      "simulator_core",
+      "simulation_model_base",
+      "signal_core",
+      "net_core",
+      "analog_solver"
+    ],
+    "role_counts": {
+      "simulator_core": 1,
+      "simulation_model_base": 4,
+      "signal_core": 2,
+      "digital_logic": 0,
+      "net_core": 2,
+      "analog_solver": 1,
+      "scheduler": 0
+    },
+    "imported_by_model_modules": 0,
+    "dependencies": [
+      "2250",
+      "2297"
+    ]
+  }
+]

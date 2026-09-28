@@ -1,0 +1,234 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 14416,
+  "device_id": "45547",
+  "name": "Potentiometer",
+  "description": "A type of resistor whose resistance changes at the turn of a knob.",
+  "tags": [
+    "input",
+    "variable",
+    "resistor",
+    "knob",
+    "dial"
+  ],
+  "thumbnail": "potentiometer.png",
+  "thumbnail_source": "/potentiometer.png",
+  "footprint": {
+    "name": "TRIM_POT_PTH",
+    "id": 45547
+  },
+  "simulation_model": "potentiometer_v2",
+  "extents": {
+    "top": -55.484127044677734,
+    "left": -25.75282859802246,
+    "width": 51.23695373535156,
+    "height": 55.484127044677734
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-23T10:36:15Z",
+      "dir": 90,
+      "id": 202853,
+      "label": null,
+      "name": "Terminal 1",
+      "schematic_symbol_id": 20208,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T10:36:15Z",
+      "x": -10,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-23T10:36:15Z",
+      "dir": 90,
+      "id": 202854,
+      "label": null,
+      "name": "Wiper",
+      "schematic_symbol_id": 20208,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T10:36:15Z",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.2",
+      "created_at": "2015-06-23T10:36:15Z",
+      "dir": 90,
+      "id": 202855,
+      "label": null,
+      "name": "Terminal 2",
+      "schematic_symbol_id": 20208,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-23T10:36:15Z",
+      "x": 10,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2012-11-02T13:41:09Z",
+      "dir": 180,
+      "id": 181,
+      "label": null,
+      "name": "wiper",
+      "schematic_symbol_id": 531,
+      "terminal_type": "schematic",
+      "updated_at": "2012-11-02T13:41:09Z",
+      "x": -20.5,
+      "y": 0
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2012-11-02T13:41:09Z",
+      "dir": 90,
+      "id": 182,
+      "label": null,
+      "name": "term1",
+      "schematic_symbol_id": 531,
+      "terminal_type": "schematic",
+      "updated_at": "2012-11-02T13:41:09Z",
+      "x": 0,
+      "y": 30
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.2",
+      "created_at": "2012-11-02T13:41:09Z",
+      "dir": 270,
+      "id": 183,
+      "label": null,
+      "name": "term0",
+      "schematic_symbol_id": 531,
+      "terminal_type": "schematic",
+      "updated_at": "2012-11-02T13:41:09Z",
+      "x": 0,
+      "y": -30
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-03-24T20:21:59Z",
+      "dir": 180,
+      "drill": "1000.0",
+      "footprint_id": 4509,
+      "generator_type": "single",
+      "id": 23953,
+      "layer0": "<circle r=\"939.8\"/>",
+      "layer1": "<circle r=\"939.8\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": 1450,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:39:37Z",
+      "x": -2540,
+      "y": 2540
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-03-24T20:21:59Z",
+      "dir": 180,
+      "drill": "1000.0",
+      "footprint_id": 4509,
+      "generator_type": "single",
+      "id": 23954,
+      "layer0": "<circle r=\"939.8\"/>",
+      "layer1": "<circle r=\"939.8\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": 1450,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:39:37Z",
+      "x": 0,
+      "y": -2540
+    },
+    {
+      "path": "footprint.pads_attributes.2",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2013-03-24T20:21:59Z",
+      "dir": 180,
+      "drill": "1000.0",
+      "footprint_id": 4509,
+      "generator_type": "single",
+      "id": 23955,
+      "layer0": "<circle r=\"939.8\"/>",
+      "layer1": "<circle r=\"939.8\"/>",
+      "name": "3",
+      "number": null,
+      "pad_type_id": 1450,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2013-09-02T21:39:37Z",
+      "x": 2540,
+      "y": 2540
+    }
+  ],
+  "properties": [
+    {
+      "path": "device.properties_attributes.0",
+      "created_at": "2016-03-28T15:52:11Z",
+      "default": 0,
+      "default_prefix": "",
+      "default_show": false,
+      "device_id": 14416,
+      "id": 1807,
+      "name": "Position",
+      "unit": "hidden",
+      "updated_at": "2016-03-28T15:52:11Z"
+    },
+    {
+      "path": "device.properties_attributes.1",
+      "created_at": "2014-04-25T11:19:03Z",
+      "default": 250,
+      "default_prefix": "k",
+      "default_show": null,
+      "device_id": 14416,
+      "id": 202,
+      "name": "resistance",
+      "unit": "ohm",
+      "updated_at": "2014-04-25T11:19:03Z"
+    }
+  ],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435055929bce64e322ca7b45eeb029c28a51390ce/thumbnail20150623-5132-ticgg9.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435055929bce64e322ca7b45eeb029c28a51390ce/thumbnail20150623-5132-ticgg9.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1431740438deeef78394c8294757ffe98023f84c98/thumbnail20150516-1155-kebk7w.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1431740438deeef78394c8294757ffe98023f84c98/thumbnail20150516-1155-kebk7w.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/143388335725ec3701050ea98ba9bcbb019876e002/thumbnail20150609-4227-1xh4153.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/143388335725ec3701050ea98ba9bcbb019876e002/thumbnail20150609-4227-1xh4153.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/45547.json"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://www.tinkercad.com/manifest.json",
+  "payload": {
+    "short_name": "Tinkercad",
+    "name": "Tinkercad",
+    "icons": [
+      {
+        "src": "/img/app_icon_192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/img/app_icon_512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/?source=pwa",
+    "background_color": "#74bde6",
+    "display": "minimal-ui",
+    "scope": "/",
+    "description": "Tinkercad is a free, easy-to-use app for 3D design, electronics, and coding."
+  }
+}

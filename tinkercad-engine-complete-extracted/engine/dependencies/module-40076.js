@@ -1,0 +1,1 @@
+40076(e,t,i){var n=i(81118).Circuits;i(81118).base_url;n.logError=function(e,t,i){var n=e,o=t;console.log("Error logged",e,t),"undefined"!=typeof window?(CircuitsRecorder&&CircuitsRecorder.storeException(n,o),"local.circuits.io"==window.location.hostname&&console.error(t.stack)):console.error(t.stack)},"undefined"!=typeof window&&(window.logError=n.logError)

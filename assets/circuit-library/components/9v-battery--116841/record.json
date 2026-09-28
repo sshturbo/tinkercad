@@ -1,0 +1,161 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "component",
+  "id": 28787,
+  "device_id": "116841",
+  "name": "9V Battery",
+  "description": "A common battery great for higher power applications like motors.",
+  "tags": [
+    "power",
+    "voltage",
+    "supply",
+    "9volt",
+    "9 volt"
+  ],
+  "thumbnail": "battery9V.png",
+  "thumbnail_source": "/battery9V.png",
+  "footprint": {
+    "name": "Battery Connector (forked)",
+    "id": 116841
+  },
+  "simulation_model": "battery9V",
+  "extents": {
+    "top": -51.822,
+    "left": 0,
+    "width": 230.639,
+    "height": 103.636
+  },
+  "svgs": [
+    {
+      "type": "breadboard",
+      "file": "svg/breadboard.svg",
+      "json_path": "device.breadboard.svg"
+    }
+  ],
+  "pins_and_terminals": [
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.0",
+      "created_at": "2015-06-24T11:07:43Z",
+      "dir": 180,
+      "id": 203539,
+      "label": null,
+      "name": "Negative",
+      "schematic_symbol_id": 20281,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-24T11:07:43Z",
+      "x": 0,
+      "y": -5
+    },
+    {
+      "path": "device.breadboard.schematic_symbol_terminals_attributes.1",
+      "created_at": "2015-06-24T11:07:43Z",
+      "dir": 180,
+      "id": 203540,
+      "label": null,
+      "name": "Positive",
+      "schematic_symbol_id": 20281,
+      "terminal_type": "breadboard",
+      "updated_at": "2015-06-24T11:07:43Z",
+      "x": 0,
+      "y": 5
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.0",
+      "created_at": "2014-10-20T14:02:59Z",
+      "dir": 90,
+      "id": 154694,
+      "label": null,
+      "name": "-",
+      "schematic_symbol_id": 14366,
+      "terminal_type": "schematic",
+      "updated_at": "2014-10-20T14:06:36Z",
+      "x": 0,
+      "y": 37.5
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.schematic_symbol_terminals_attributes.1",
+      "created_at": "2014-10-20T14:02:59Z",
+      "dir": 270,
+      "id": 154695,
+      "label": null,
+      "name": "+",
+      "schematic_symbol_id": 14366,
+      "terminal_type": "schematic",
+      "updated_at": "2014-10-20T14:06:36Z",
+      "x": 0,
+      "y": -30
+    },
+    {
+      "path": "footprint.pads_attributes.0",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2014-10-20T13:57:29Z",
+      "dir": null,
+      "drill": "900",
+      "footprint_id": 23651,
+      "generator_type": null,
+      "id": 190896,
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "1",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2014-10-20T13:57:29Z",
+      "x": -2540,
+      "y": 0
+    },
+    {
+      "path": "footprint.pads_attributes.1",
+      "col_pitch": null,
+      "cols": null,
+      "created_at": "2014-10-20T13:57:29Z",
+      "dir": null,
+      "drill": "900",
+      "footprint_id": 23651,
+      "generator_type": null,
+      "id": 190895,
+      "layer0": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "layer1": "<rect x=\"-793.75\" y=\"-793.75\" width=\"1587.5\" height=\"1587.5\" rx=\"0.5\" ry=\"0.5\" stroke-width=\"100\" fill=\"none\" style=\"\"/>",
+      "name": "2",
+      "number": null,
+      "pad_type_id": null,
+      "pin_spacing": null,
+      "row_pitch": null,
+      "rows": null,
+      "updated_at": "2014-10-20T13:57:29Z",
+      "x": 2540,
+      "y": 0
+    }
+  ],
+  "properties": [],
+  "datasheets_or_references": [
+    {
+      "path": "device.breadboard.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435144294fe965f5bacf02c402811ea433690d038/thumbnail20150624-27414-f3847u.png"
+    },
+    {
+      "path": "device.breadboard.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/1435144294fe965f5bacf02c402811ea433690d038/thumbnail20150624-27414-f3847u.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/145385367316959202d1fed967ee6d04ba4a9320e4/thumbnail20160127-23108-1rsysgx.png"
+    },
+    {
+      "path": "device.subdevices_attributes.0.schematic_symbol_attributes.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/145385367316959202d1fed967ee6d04ba4a9320e4/thumbnail20160127-23108-1rsysgx.png"
+    },
+    {
+      "path": "footprint.thumb_url",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14339564539718e55918453d3915de1827251498ab/thumbnail20150610-24630-qhfci2.png"
+    },
+    {
+      "path": "footprint.thumbUrl",
+      "url": "https://123d-circuits-files.s3.amazonaws.com/14339564539718e55918453d3915de1827251498ab/thumbnail20150610-24630-qhfci2.png"
+    }
+  ],
+  "raw_device_json": "../../raw/packaged_devices/116841.json"
+}
