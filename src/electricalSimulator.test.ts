@@ -2460,3 +2460,69 @@ describe('solver elétrico DC', () => {
     expect(supportsDcSimulation(project)).toBe(false)
   })
 })
+
+describe('servo SG90 extraído', () => {
+  const servoProject = (voltage: number): Project => ({ version: 1, id: `servo-${voltage}`, name: 'Servo SG90', parts: [
+    { id: 'supply', kind: 'supply', x: 0, y: 0, rotation: 0, label: 'Fonte', properties: { voltage } },
+    { id: 'servo', kind: 'library', x: 100, y: 0, rotation: 0, label: 'Servo', properties: { simulationModel: 'servo_SG90', type: 'positional' } },
+  ], wires: [
+    { id: 'p', from: 'supply:PLUS', to: 'servo:Power', color: 'red' },
+    { id: 'g', from: 'supply:MINUS', to: 'servo:Ground', color: 'black' },
+  ] })
+
+  it('reconhece o servo e inclui carga de repouso e limiar de alimentação', () => {
+    const project = servoProject(5)
+    expect(supportsDcSimulation(project)).toBe(true)
+    const result = simulateDc(project, emptyRuntime())
+    expect(result.simulation.converged).toBe(true)
+    expect(result.simulation.servoPowered?.servo).toBe(true)
+    expect(result.simulation.servoPositionDegrees?.servo).toBe(0)
+    expect(result.simulation.currents?.servo).toBeCloseTo(5 / 1470, 5)
+
+    const overvoltage = simulateDc(servoProject(7), emptyRuntime())
+    expect(overvoltage.simulation.servoBreakdown?.servo).toBe(true)
+    expect(overvoltage.simulation.warnings?.some(warning => warning.includes('máximo extraído de 6 V'))).toBe(true)
+  })
+})
+
+describe('LCD HD44780 extraído', () => {
+  const lcdCircuit = (value: number, rs: boolean, enable: boolean, runtime: ReturnType<typeof emptyRuntime>) => {
+    const bits = Array.from({ length: 8 }, (_, bit) => ({ id: `d${bit}`, from: `s:${value & (1 << bit) ? 'PLUS' : 'MINUS'}`, to: `lcd:DB${bit}`, color: 'blue' }))
+    const wires = [
+      { id: 'vdd', from: 's:PLUS', to: 'lcd:Power', color: 'red' },
+      { id: 'gnd', from: 's:MINUS', to: 'lcd:Ground', color: 'black' },
+      { id: 'contrast', from: 's:MINUS', to: 'lcd:Contrast', color: 'black' },
+      { id: 'rw', from: 's:MINUS', to: 'lcd:Read/Write', color: 'black' },
+      { id: 'rs', from: `s:${rs ? 'PLUS' : 'MINUS'}`, to: 'lcd:Register Select', color: 'blue' },
+      { id: 'e', from: `s:${enable ? 'PLUS' : 'MINUS'}`, to: 'lcd:Enable', color: 'blue' },
+      { id: 'ledplus', from: 's:PLUS', to: 'lcd:LED+', color: 'red' },
+      { id: 'ledminus', from: 's:MINUS', to: 'lcd:LED-', color: 'black' },
+      ...bits,
+    ]
+    const project: Project = { version: 1, id: 'lcd-integration', name: 'LCD wired', parts: [
+      { id: 's', kind: 'supply', x: 0, y: 0, rotation: 0, label: 'Fonte', properties: { voltage: 5 } },
+      { id: 'lcd', kind: 'library', x: 100, y: 0, rotation: 0, label: 'LCD', properties: { simulationModel: 'LCD_HD44780' } },
+    ], wires }
+    return simulateDc(project, runtime)
+  }
+  const pulse = (runtime: ReturnType<typeof emptyRuntime>, value: number, rs = false) => {
+    const high = lcdCircuit(value, rs, true, runtime)
+    return lcdCircuit(value, rs, false, high.runtime)
+  }
+
+  it('reconhece o módulo e mostra texto após comandos reais no barramento', () => {
+    let runtime = emptyRuntime()
+    const idle = lcdCircuit(0, false, false, runtime)
+    runtime = idle.runtime
+    expect(supportsDcSimulation({ version: 1, id: 'lcd-support', name: 'LCD', parts: [
+      { id: 's', kind: 'supply', x: 0, y: 0, rotation: 0, label: 'Fonte', properties: { voltage: 5 } },
+      { id: 'lcd', kind: 'library', x: 100, y: 0, rotation: 0, label: 'LCD', properties: { simulationModel: 'LCD_HD44780' } },
+    ], wires: [] })).toBe(true)
+    runtime = pulse(runtime, 0x0c).runtime
+    runtime = pulse(runtime, 0x80).runtime
+    const written = pulse(runtime, 0x4f, true)
+    expect(written.simulation.converged).toBe(true)
+    expect(written.simulation.lcdPowered?.lcd).toBe(true)
+    expect(written.simulation.lcdDisplays?.lcd?.[0]).toBe('O               ')
+  })
+})

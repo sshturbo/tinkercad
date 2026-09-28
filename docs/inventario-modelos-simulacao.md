@@ -5,11 +5,11 @@ Gerado a partir do catálogo offline, do mapa e dos índices em `tinkercad-engin
 O solver MNA valida resíduos KCL, restrições de tensão das fontes ideais e correntes físicas dos dispositivos não lineares. Capacitores e indutores usam startup backward Euler e integração trapezoidal posterior.
 
 - Componentes no catálogo: 109.
-- Componentes com lógica elétrica/digital/continuidade local reconhecida: 80; os demais são visuais.
+- Componentes com lógica elétrica/digital/continuidade local reconhecida: 82; os demais são visuais.
 - Modelos distintos no catálogo: 105; com implementação encontrada na extração: 103.
 - Modelos locais sem implementação encontrada: L293D, optoCoupler_4N35.
 
-Diodo comum e LED 2 pinos usam curvas Shockley extraídas (diodo Is=1e−12 A/n=1; LED Is=1e−20 A, 6 Ω série e n por cor); a continuação numérica do MNA mantém uma pequena fuga reversa aproximada, sem comportamento térmico ou dano. O LED avisa acima de 20 mA e marca breakdown a partir de 120 mA sem limitar a corrente. O modelo piezoSound usa o resistor extraído de 600 Ω e o limite direto >25 V; áudio e intensidade acústica não são implementados. O Timer555 reproduz a ladder/pulls, o latch e a saída/discharge analógicos; os delays pendentes de 0,5 µs são processados por deadlines internos. O timer556 contém dois núcleos 555 com estado independente, rails compartilhados e deadlines separados por canal. O modelo sensor_ultrasonic_ping reproduz branches MNA e o scheduler de echo nos prazos extraídos, mas os triggers ainda são amostrados pelos subpassos do caller; pulsos entre amostras baixas são perdidos e não se afirma captura a 2 µs em passos de dezenas de milissegundos.
+Diodo comum e LED 2 pinos usam curvas Shockley extraídas (diodo Is=1e−12 A/n=1; LED Is=1e−20 A, 6 Ω série e n por cor); a continuação numérica do MNA mantém uma pequena fuga reversa aproximada, sem comportamento térmico ou dano. O LED avisa acima de 20 mA e marca breakdown a partir de 120 mA sem limitar a corrente. O modelo piezoSound usa o resistor extraído de 600 Ω e o limite direto >25 V; áudio e intensidade acústica não são implementados. O Timer555 reproduz a ladder/pulls, o latch e a saída/discharge analógicos; os delays pendentes de 0,5 µs são processados por deadlines internos. O timer556 contém dois núcleos 555 com estado independente, rails compartilhados e deadlines separados por canal. O LCD_HD44780 implementa instruções comuns, DDRAM 16×2, interface de 4/8 bits e shunts/backlight; leitura RW e CGRAM não estão implementados. O servo SG90 usa shunt extraído de 1,47 kΩ, limite de alimentação 2,8–6 V e captura por amostragem de pulsos >2,5 V (0,5–2,5 ms), com deslocamento de até 3° por pulso; pulsos entre passos, corrente dinâmica e modo contínuo não são modelados. O modelo sensor_ultrasonic_ping reproduz branches MNA e o scheduler de echo nos prazos extraídos, mas os triggers ainda são amostrados pelos subpassos do caller; pulsos entre amostras baixas são perdidos e não se afirma captura a 2 µs em passos de dezenas de milissegundos.
 
 | Modelo | Itens no catálogo | Implementação extraída | Estado no simulador local |
 |---|---:|---|---|
@@ -57,7 +57,7 @@ Diodo comum e LED 2 pinos usam curvas Shockley extraídas (diodo Is=1e−12 A/n=
 | `IRsensor` | 1 | sim (módulo 76617) | MNA DC/transitório parcial |
 | `keypad_4x4` | 1 | sim (módulo 58745) | MNA DC/transitório parcial |
 | `L293D` | 1 | não encontrado | Visual; sem modelo local |
-| `LCD_HD44780` | 1 | sim (módulo 12130) | Visual; sem modelo local |
+| `LCD_HD44780` | 1 | sim (módulo 12130) | MNA + HD44780: comandos, DDRAM, 4/8 bits; leitura RW/CGRAM ausentes |
 | `LCD_HD44780_I2C` | 1 | sim (módulo 78116) | Visual; sem modelo local |
 | `ldr_v2` | 1 | sim (módulo 35963) | MNA DC/transitório parcial |
 | `led2` | 1 | sim (módulo 2292) | MNA DC/transitório parcial |
@@ -93,7 +93,7 @@ Diodo comum e LED 2 pinos usam curvas Shockley extraídas (diodo Is=1e−12 A/n=
 | `sensorFlex` | 1 | sim (módulo 28308) | MNA DC/transitório parcial |
 | `sensorForce` | 1 | sim (módulo 60952) | MNA DC/transitório parcial |
 | `sensorSoilMoisture` | 1 | sim (módulo 12798) | MNA DC/transitório parcial |
-| `servo_SG90` | 1 | sim (módulo 53417) | Visual; sem modelo local |
+| `servo_SG90` | 1 | sim (módulo 53417) | MNA DC/transitório parcial; PWM posicional amostrado |
 | `seven_segment_digit_5011bh` | 1 | sim (módulo 28034) | MNA DC/transitório parcial |
 | `seven-segment-i2c` | 1 | sim (módulo 7403) | Visual; sem modelo local |
 | `slide_switch_v2` | 1 | sim (módulo 40360) | MNA DC/transitório parcial |

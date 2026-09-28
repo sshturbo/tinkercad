@@ -19,6 +19,8 @@ import { evaluatePiezoSound, PIEZO_SOUND_MODEL } from './piezoSoundModel'
 import { advanceTimer555Latch, canonicalTimer555Pin, requestedTimer555Latch, TIMER555_MODEL } from './timer555Model'
 import { canonicalTimer556Pin, TIMER556_MODEL, type Timer556ChannelName } from './timer556Model'
 import { advanceUltrasonicPingState, canonicalUltrasonicPingPin, evaluateUltrasonicTarget, initialUltrasonicPingState, nextUltrasonicDeadline, resolveUltrasonicTargetPosition, ultrasonicEchoActiveAt, ultrasonicEchoResistanceOhms, ultrasonicPowerValid, ULTRASONIC_PING_MODEL } from './ultrasonicPingModel'
+import { advanceServoState, initialServoRuntimeState, servoSignalIsHigh, SERVO_SG90_MODEL } from './servoModel'
+import { clockLcdHd44780Write, initialLcdHd44780State, lcdText } from './lcdHd44780Model'
 import { evaluateTiltSensor, TILT_SENSOR_MODEL, tiltSensorCurrentFromVoltage } from './tiltSensorModel'
 import { evaluateSoilMoisture, SOIL_MOISTURE_MODEL } from './soilMoistureModel'
 import { evaluateUSBStandardCurrent, USB_STANDARD_MODEL } from './usbStandardModel'
@@ -35,7 +37,7 @@ const ledLeakageConductance = 1e-12
 const solverTolerance = 1e-8
 const maxIterations = 40
 
-type ElectricalFamily = 'breadboard' | 'vcc' | 'gnd' | 'resistor' | 'variableResistor' | 'led' | 'diode' | 'button' | 'switch' | 'supply' | 'capacitor' | 'polarizedCapacitor' | 'inductor' | 'potentiometer' | 'dipSwitch' | 'tempSensor' | 'solarCell' | 'generator' | 'zenerDiode' | 'npn' | 'pnp' | 'mosfet' | 'tip120' | 'regulator' | 'opAmp' | 'comparator' | 'photodiode' | 'phototransistor' | 'relay' | 'lightBulb' | 'vibrationMotor' | 'tiltSensor' | 'usbSource' | 'soilMoisture' | 'rgbLed' | 'sevenSegment' | 'keypad' | 'irSensor' | 'gasSensor' | 'pirSensor' | 'piezo' | 'timer555' | 'timer556' | 'ultrasonicPing'
+type ElectricalFamily = 'breadboard' | 'vcc' | 'gnd' | 'resistor' | 'variableResistor' | 'led' | 'diode' | 'button' | 'switch' | 'supply' | 'capacitor' | 'polarizedCapacitor' | 'inductor' | 'potentiometer' | 'dipSwitch' | 'tempSensor' | 'solarCell' | 'generator' | 'zenerDiode' | 'npn' | 'pnp' | 'mosfet' | 'tip120' | 'regulator' | 'opAmp' | 'comparator' | 'photodiode' | 'phototransistor' | 'relay' | 'lightBulb' | 'vibrationMotor' | 'tiltSensor' | 'usbSource' | 'soilMoisture' | 'rgbLed' | 'sevenSegment' | 'keypad' | 'irSensor' | 'gasSensor' | 'pirSensor' | 'piezo' | 'timer555' | 'timer556' | 'ultrasonicPing' | 'servo' | 'lcd'
 type Branch = { part: Part; a: string; b: string; family: 'resistor' | 'switch' | 'solarDiode'; resistance?: number; saturationCurrent?: number; thermalVoltage?: number; maximumExponent?: number; minimumConductance?: number; photovoltaicStartup?: boolean; linearContinuation?: { voltage: number; conductance: number; intercept: number } }
 type VoltageSource = { part: Part; a: string; b: string; voltage: number; enabledAboveVoltage?: { positive: string; negative: string; minimum: number } }
 type CurrentSource = { part: Part; a: string; b: string; current: number }
@@ -77,6 +79,8 @@ function family(part: Part): ElectricalFamily | undefined {
   if (model === TIMER555_MODEL.id) return 'timer555'
   if (model === TIMER556_MODEL.id) return 'timer556'
   if (model === ULTRASONIC_PING_MODEL.id) return 'ultrasonicPing'
+  if (model === 'servo_SG90') return 'servo'
+  if (model === 'LCD_HD44780') return 'lcd'
   if (model === 'vibration_motor') return 'vibrationMotor'
   if (model === 'sensor_tilt_sw200d') return 'tiltSensor'
   if (model === SOIL_MOISTURE_MODEL.id) return 'soilMoisture'
@@ -152,6 +156,21 @@ function canonicalPin(part: Part, pin: string): string {
     }
     case 'ultrasonicPing': {
       return canonicalUltrasonicPingPin(pin) ?? pin
+    }
+    case 'lcd': {
+      const key = pin.trim().toLowerCase().replace(/[ _-]/g, '')
+      const aliases: Record<string, string> = { gnd: 'Ground', ground: 'Ground', vdd: 'Power', power: 'Power', vo: 'Contrast', contrast: 'Contrast', rs: 'Register Select', registerselect: 'Register Select', rw: 'Read/Write', readwrite: 'Read/Write', e: 'Enable', enable: 'Enable', ledplus: 'LED+', ledminus: 'LED-' }
+      if (aliases[key]) return aliases[key]
+      const bit = key.match(/^db([0-7])$/)
+      if (bit) return `DB${bit[1]}`
+      break
+    }
+    case 'servo': {
+      const name = pin.trim().toLowerCase()
+      if (name === 'ground' || name === 'gnd') return 'Ground'
+      if (name === 'power' || name === 'vcc') return 'Power'
+      if (name === 'signal' || name === 'sig') return 'Signal'
+      break
     }
     case 'piezo': {
       const name = pin.trim().toLowerCase()
@@ -640,6 +659,25 @@ function solveElectricalAttempt(project: Project, state: Runtime, timeStepSecond
       const positive = includeNode(pinId(part, PIEZO_SOUND_MODEL.terminals.positive.engine))
       const negative = includeNode(pinId(part, PIEZO_SOUND_MODEL.terminals.negative.engine))
       branches.push({ part, a: positive, b: negative, family: 'resistor', resistance: PIEZO_SOUND_MODEL.resistanceOhms })
+    } else if (kind === 'lcd') {
+      const groundNode = includeNode(pinId(part, 'Ground'))
+      const powerNode = includeNode(pinId(part, 'Power'))
+      const contrastNode = includeNode(pinId(part, 'Contrast'))
+      const backlightPositive = includeNode(pinId(part, 'LED+'))
+      const backlightNegative = includeNode(pinId(part, 'LED-'))
+      branches.push({ part, a: powerNode, b: groundNode, family: 'resistor', resistance: 4200 })
+      branches.push({ part, a: powerNode, b: contrastNode, family: 'resistor', resistance: 12500 })
+      branches.push({ part, a: backlightPositive, b: backlightNegative, family: 'solarDiode', saturationCurrent: 1e-20, thermalVoltage: 1.8, maximumExponent: 40, minimumConductance: 1e-12 })
+      for (const pin of ['Register Select', 'Read/Write', 'Enable', ...Array.from({ length: 8 }, (_, index) => `DB${index}`)]) {
+        const input = includeNode(pinId(part, pin))
+        branches.push({ part, a: input, b: groundNode, family: 'resistor', resistance: 400000 })
+      }
+    } else if (kind === 'servo') {
+      const groundNode = includeNode(pinId(part, 'Ground'))
+      const powerNode = includeNode(pinId(part, 'Power'))
+      const signalNode = includeNode(pinId(part, 'Signal'))
+      branches.push({ part, a: powerNode, b: groundNode, family: 'resistor', resistance: SERVO_SG90_MODEL.power.offStateResistanceOhms })
+      branches.push({ part, a: signalNode, b: groundNode, family: 'resistor', resistance: SERVO_SG90_MODEL.signal.inputResistanceOhms })
     } else if (kind === 'ultrasonicPing') {
       const terminals = ULTRASONIC_PING_MODEL.terminals
       const positive = includeNode(pinId(part, terminals.positive.engine))
@@ -1426,6 +1464,14 @@ function solveElectricalAttempt(project: Project, state: Runtime, timeStepSecond
   const timer555ReferenceVoltage: NonNullable<Simulation['timer555ReferenceVoltage']> = {}
   const timer556Channels: NonNullable<Simulation['timer556Channels']> = {}
   const ultrasonicPing: NonNullable<Simulation['ultrasonicPing']> = {}
+  const servoPositionDegrees: NonNullable<Simulation['servoPositionDegrees']> = {}
+  const servoPowered: NonNullable<Simulation['servoPowered']> = {}
+  const servoBreakdown: NonNullable<Simulation['servoBreakdown']> = {}
+  const lcdDisplays: NonNullable<Simulation['lcdDisplays']> = {}
+  const lcdPowered: NonNullable<Simulation['lcdPowered']> = {}
+  const lcdBacklightBrightness: NonNullable<Simulation['lcdBacklightBrightness']> = {}
+  const lcdContrast: NonNullable<Simulation['lcdContrast']> = {}
+  const lcdBreakdown: NonNullable<Simulation['lcdBreakdown']> = {}
   const vibrationMotorAmplitude: Record<string, number> = {}
   const tiltSensorClosed: Record<string, boolean> = {}
   const tiltSensorResistance: Record<string, number> = {}
@@ -1594,6 +1640,43 @@ function solveElectricalAttempt(project: Project, state: Runtime, timeStepSecond
       const evaluation = evaluateLightBulb(current)
       lightBulbBrightness[part.id] = evaluation.brightness
       if (converged && evaluation.breakdown) warnings.push(`${part.label}: corrente de ${evaluation.currentMagnitudeA.toFixed(3)} A acima do limite extraído de 0,25 A.`)
+    } else if (kind === 'lcd') {
+      const pins = ['Ground', 'Power', 'Contrast', 'Register Select', 'Read/Write', 'Enable', ...Array.from({ length: 8 }, (_, index) => `DB${index}`), 'LED+', 'LED-']
+      for (const pin of pins) recordPin(part, pin)
+      const ground = voltageAt(partNode(part, 'Ground'))
+      const power = voltageAt(partNode(part, 'Power'))
+      const contrast = voltageAt(partNode(part, 'Contrast'))
+      const ledVoltage = voltageAt(partNode(part, 'LED+')) - voltageAt(partNode(part, 'LED-'))
+      const ledCurrent = ledVoltage > 1.8 ? 1e-20 * (Math.exp(Math.min(40, (ledVoltage - 1.8) / 1.8)) - 1) : 0
+      const powered = power - ground > 4.5
+      const state = runtime.lcdStates?.[part.id] ?? initialLcdHd44780State()
+      const contrastRatio = Math.max(0, Math.min(1, (power - contrast - 3.3) / (5 - 3.3)))
+      lcdDisplays[part.id] = powered && contrastRatio > 0.01 ? lcdText(state) : [' '.repeat(16), ' '.repeat(16)]
+      lcdContrast[part.id] = contrastRatio
+      lcdPowered[part.id] = powered
+      lcdBacklightBrightness[part.id] = Math.max(0, Math.min(1, ledCurrent / 0.02))
+      lcdBreakdown[part.id] = ledCurrent > 0.02 || power - ground > 5.5
+      currents[part.id] = (power - ground) / 4200 + ledCurrent
+      powers[part.id] = (power - ground) * ((power - ground) / 4200) + ledVoltage * ledCurrent
+      if (converged && lcdBreakdown[part.id]) warnings.push(`${part.label}: limite do LCD excedido (backlight >20 mA ou alimentação >5,5 V).`)
+      if (!powered) lcdDisplays[part.id] = [' '.repeat(16), ' '.repeat(16)]
+    } else if (kind === 'servo') {
+      for (const pin of ['Ground', 'Power', 'Signal', 'GND', 'VCC', 'SIG']) recordPin(part, pin)
+      const ground = voltageAt(partNode(part, 'Ground'))
+      const power = voltageAt(partNode(part, 'Power'))
+      const signal = voltageAt(partNode(part, 'Signal'))
+      const state = runtime.servoStates?.[part.id] ?? initialServoRuntimeState()
+      const supply = power - ground
+      const powered = supply > SERVO_SG90_MODEL.power.minimumVoltageV
+      const signalCurrent = (signal - ground) / SERVO_SG90_MODEL.signal.inputResistanceOhms
+      const powerCurrent = supply / SERVO_SG90_MODEL.power.offStateResistanceOhms
+      servoPositionDegrees[part.id] = state.positionDegrees
+      servoPowered[part.id] = powered
+      servoBreakdown[part.id] = supply > SERVO_SG90_MODEL.power.maximumVoltageV
+      currents[part.id] = powerCurrent
+      currents[part.id + ':signal'] = signalCurrent
+      powers[part.id] = supply * powerCurrent + (signal - ground) * signalCurrent
+      if (converged && servoBreakdown[part.id]) warnings.push(`${part.label}: alimentação de ${supply.toFixed(3)} V acima do máximo extraído de 6 V.`)
     } else if (kind === 'ultrasonicPing') {
       for (const terminal of Object.values(ULTRASONIC_PING_MODEL.terminals)) for (const pin of terminal.aliases) recordPin(part, pin)
       const sensor = ultrasonicPingNodes.get(part.id)
@@ -2070,7 +2153,7 @@ function solveElectricalAttempt(project: Project, state: Runtime, timeStepSecond
 
   return {
     runtime,
-    simulation: { levels, leds, q: { ...runtime.q }, prev_clock: { ...runtime.prev_clock }, mode: dt > 0 && (capacitors.length > 0 || inductors.length > 0 || project.parts.some(part => ['generator', 'relay', 'timer555', 'timer556', 'ultrasonicPing'].includes(family(part) ?? ''))) ? 'transient' : 'dc', voltages, currents, powers, energies, relayStates: { ...runtime.relayStates }, ledBrightness, ledWarning, ledBreakdown, timer555LatchHigh, timer555LatchPending, timer555OutputVoltage, timer555OutputCurrent, timer555DischargeVoltage, timer555ReferenceVoltage, timer556Channels, ultrasonicPing, lightBulbBrightness, piezoVoltageIndicator, piezoBreakdown, vibrationMotorAmplitude, tiltSensorClosed, tiltSensorResistance, soilMoistureProbeResistance, usbBreakdown, rgbLedBrightness, rgbLedDisplayBrightness, rgbLedCurrents, rgbLedBreakdown, sevenSegmentBrightness, sevenSegmentDisplayBrightness, sevenSegmentCurrents, sevenSegmentBreakdown, sevenSegmentCommonType, keypadPushed, irSensorDetected, irSensorOutputResistance, irSensorSupplyVoltage, irSensorBreakdown, gasSensorLevel, gasSensorHeaterVoltage, gasSensorSignalResistance, gasSensorSignalCurrent, gasSensorHeaterCurrent, gasSensorBreakdown, pirSensorPowered, pirSensorInRange, pirSensorNormalizedDistance, pirSensorDriveActive, pirSensorOutputDriven, pirSensorOutputTriggered, pirSensorSupplyVoltage, pirSensorOutputVoltage, pirSensorPullupResistance, pirSensorOutputCurrent, converged, diagnostics, warnings },
+    simulation: { levels, leds, q: { ...runtime.q }, prev_clock: { ...runtime.prev_clock }, mode: dt > 0 && (capacitors.length > 0 || inductors.length > 0 || project.parts.some(part => ['generator', 'relay', 'timer555', 'timer556', 'ultrasonicPing', 'servo', 'lcd'].includes(family(part) ?? ''))) ? 'transient' : 'dc', voltages, currents, powers, energies, relayStates: { ...runtime.relayStates }, ledBrightness, ledWarning, ledBreakdown, timer555LatchHigh, timer555LatchPending, timer555OutputVoltage, timer555OutputCurrent, timer555DischargeVoltage, timer555ReferenceVoltage, timer556Channels, ultrasonicPing, servoPositionDegrees, servoPowered, servoBreakdown, lcdDisplays, lcdPowered, lcdBacklightBrightness, lcdContrast, lcdBreakdown, lightBulbBrightness, piezoVoltageIndicator, piezoBreakdown, vibrationMotorAmplitude, tiltSensorClosed, tiltSensorResistance, soilMoistureProbeResistance, usbBreakdown, rgbLedBrightness, rgbLedDisplayBrightness, rgbLedCurrents, rgbLedBreakdown, sevenSegmentBrightness, sevenSegmentDisplayBrightness, sevenSegmentCurrents, sevenSegmentBreakdown, sevenSegmentCommonType, keypadPushed, irSensorDetected, irSensorOutputResistance, irSensorSupplyVoltage, irSensorBreakdown, gasSensorLevel, gasSensorHeaterVoltage, gasSensorSignalResistance, gasSensorSignalCurrent, gasSensorHeaterCurrent, gasSensorBreakdown, pirSensorPowered, pirSensorInRange, pirSensorNormalizedDistance, pirSensorDriveActive, pirSensorOutputDriven, pirSensorOutputTriggered, pirSensorSupplyVoltage, pirSensorOutputVoltage, pirSensorPullupResistance, pirSensorOutputCurrent, converged, diagnostics, warnings },
   }
 }
 
@@ -2283,16 +2366,64 @@ function commitUltrasonicPingStep(
   }
 }
 
+function prepareLcdRuntime(project: Project, state: Runtime): Runtime {
+  const displays = project.parts.filter(part => family(part) === 'lcd')
+  if (!displays.length) return state
+  const lcdStates = { ...(state.lcdStates ?? {}) }
+  for (const part of displays) lcdStates[part.id] ??= initialLcdHd44780State()
+  return { ...state, lcdStates }
+}
+
+function commitLcdStep(project: Project, state: Runtime, solved: ReturnType<typeof solveElectricalAttempt>): ReturnType<typeof solveElectricalAttempt> {
+  const displays = project.parts.filter(part => family(part) === 'lcd')
+  if (!displays.length || !solved.simulation.converged) return solved
+  const lcdStates = { ...(state.lcdStates ?? {}) }
+  const lcdDisplays: NonNullable<Simulation['lcdDisplays']> = { ...(solved.simulation.lcdDisplays ?? {}) }
+  for (const part of displays) {
+    const previous = lcdStates[part.id] ?? initialLcdHd44780State()
+    const read = (pin: string) => solved.simulation.voltages?.[`${part.id}:${pin}`] ?? 0
+    const data = Array.from({ length: 8 }, (_, bit) => read(`DB${bit}`) > 2.5 ? 1 << bit : 0).reduce((sum, bit) => sum | bit, 0)
+    const next = clockLcdHd44780Write(previous, { enableHigh: read('Enable') > 2.5, registerSelect: read('Register Select') > 2.5, readWrite: read('Read/Write') > 2.5, data })
+    lcdStates[part.id] = next
+    lcdDisplays[part.id] = lcdText(next)
+  }
+  return { ...solved, runtime: { ...solved.runtime, lcdStates }, simulation: { ...solved.simulation, lcdDisplays } }
+}
+
+function prepareServoRuntime(project: Project, state: Runtime): Runtime {
+  const servos = project.parts.filter(part => family(part) === 'servo')
+  if (!servos.length) return state
+  const servoStates = { ...(state.servoStates ?? {}) }
+  for (const part of servos) servoStates[part.id] ??= initialServoRuntimeState()
+  return { ...state, servoStates }
+}
+
+function commitServoStep(project: Project, state: Runtime, solved: ReturnType<typeof solveElectricalAttempt>, timeSeconds: number): ReturnType<typeof solveElectricalAttempt> {
+  const servos = project.parts.filter(part => family(part) === 'servo')
+  if (!servos.length || !solved.simulation.converged) return solved
+  const servoStates = { ...(state.servoStates ?? {}) }
+  for (const part of servos) {
+    const previous = servoStates[part.id] ?? initialServoRuntimeState()
+    const read = (pin: string) => solved.simulation.voltages?.[`${part.id}:${pin}`] ?? 0
+    const powered = read('Power') - read('Ground') > SERVO_SG90_MODEL.power.minimumVoltageV
+    servoStates[part.id] = advanceServoState(previous, servoSignalIsHigh(read('Signal'), read('Ground')), powered, timeSeconds)
+  }
+  return { ...solved, runtime: { ...solved.runtime, servoStates }, simulation: { ...solved.simulation, servoPositionDegrees: Object.fromEntries(servos.map(part => [part.id, servoStates[part.id].positionDegrees])), servoPowered: Object.fromEntries(servos.map(part => [part.id, servoStates[part.id].powered])) } }
+}
+
 function simulateElectricalStep(project: Project, state: Runtime, timeStepSeconds = 0, simulationTimeSeconds = 0): { simulation: Simulation; runtime: Runtime } {
   const gasSensors = project.parts.filter(part => family(part) === 'gasSensor')
   const pirSensors = project.parts.filter(part => family(part) === 'pirSensor')
   const timer555s = project.parts.filter(part => family(part) === 'timer555')
   const timer556s = project.parts.filter(part => family(part) === 'timer556')
   const ultrasonicSensors = project.parts.filter(part => family(part) === 'ultrasonicPing')
-  if (gasSensors.length === 0 && pirSensors.length === 0 && timer555s.length === 0 && timer556s.length === 0 && ultrasonicSensors.length === 0) return solveElectricalAttempt(project, state, timeStepSeconds, simulationTimeSeconds)
+  const servos = project.parts.filter(part => family(part) === 'servo')
+  const lcds = project.parts.filter(part => family(part) === 'lcd')
+  if (gasSensors.length === 0 && pirSensors.length === 0 && timer555s.length === 0 && timer556s.length === 0 && ultrasonicSensors.length === 0 && servos.length === 0 && lcds.length === 0) return solveElectricalAttempt(project, state, timeStepSeconds, simulationTimeSeconds)
+  const prepared = prepareLcdRuntime(project, prepareServoRuntime(project, state))
   // All fixed-point retries start from the same snapshot. Timer delay/latch and
   // capacitor state are committed only after the coupled sensor solve succeeds.
-  const runtime = prepareTimer556Runtime(project, prepareTimer555Runtime(project, prepareUltrasonicRuntime(project, preparePIRRuntime(project, state))))
+  const runtime = prepareTimer556Runtime(project, prepareTimer555Runtime(project, prepareUltrasonicRuntime(project, preparePIRRuntime(project, prepared))))
 
   const gasLevels: Record<string, number> = {}
   const gasResistances: Record<string, number> = {}
@@ -2343,7 +2474,7 @@ function simulateElectricalStep(project: Project, state: Runtime, timeStepSecond
     }
     if (stable) {
       const timersSolved = commitTimer556Step(project, runtime, commitTimer555Step(project, runtime, last, timeStepSeconds), timeStepSeconds)
-      return commitUltrasonicPingStep(project, runtime, timersSolved, simulationTimeSeconds)
+      return commitServoStep(project, runtime, commitLcdStep(project, runtime, commitUltrasonicPingStep(project, runtime, timersSolved, simulationTimeSeconds)), simulationTimeSeconds)
     }
 
     for (const part of gasSensors) {
@@ -2375,7 +2506,7 @@ export function simulateElectrical(project: Project, state: Runtime, timeStepSec
   const requestedMaximumStep = Number.isFinite(maximumSubstepSeconds) && maximumSubstepSeconds > 0 ? maximumSubstepSeconds : 0.01
   const hasRelay = project.parts.some(part => family(part) === 'relay')
   const maximumStep = hasRelay ? Math.min(requestedMaximumStep, 0.001) : requestedMaximumStep
-  const hasDynamicComponent = project.parts.some(part => ['capacitor', 'polarizedCapacitor', 'inductor', 'relay', 'timer555', 'timer556', 'ultrasonicPing'].includes(family(part) ?? '') || hasBatteryParasiticCapacitor(part))
+  const hasDynamicComponent = project.parts.some(part => ['capacitor', 'polarizedCapacitor', 'inductor', 'relay', 'timer555', 'timer556', 'ultrasonicPing', 'servo', 'lcd'].includes(family(part) ?? '') || hasBatteryParasiticCapacitor(part))
   if (!dt || !hasDynamicComponent) return simulateElectricalStep(project, state, dt, currentTime)
 
   const steps = Math.min(500, Math.max(1, Math.ceil(dt / maximumStep)))

@@ -75,6 +75,8 @@ function electricalKind(part: Part): string {
   if (model === TIMER555_MODEL.id) return 'timer555'
   if (model === 'timer556') return 'timer556'
   if (model === ULTRASONIC_PING_MODEL.id) return 'ultrasonicPing'
+  if (model === 'servo_SG90') return 'servo'
+  if (model === 'LCD_HD44780') return 'lcd'
   if (['ldr_v2', 'sensorForce', 'sensorFlex'].includes(model)) return 'variableResistor'
   if (model === 'TMP36') return 'tempSensor'
   if (model === 'solarCell') return 'solarCell'
@@ -160,8 +162,10 @@ function ElectricalReadings({ part, simulation }: { part: Part; simulation?: Sim
   const hasTimer555Readings = kind === 'timer555' && simulation.timer555LatchHigh?.[part.id] !== undefined
   const hasTimer556Readings = kind === 'timer556' && simulation.timer556Channels?.[part.id] !== undefined
   const hasUltrasonicReadings = kind === 'ultrasonicPing' && simulation.ultrasonicPing?.[part.id] !== undefined
+  const hasServoReadings = kind === 'servo' && simulation.servoPositionDegrees?.[part.id] !== undefined
+  const hasLcdReadings = kind === 'lcd' && simulation.lcdDisplays?.[part.id] !== undefined
   const ultrasonicReadings = simulation.ultrasonicPing?.[part.id]
-  if (current === undefined && voltage === undefined && power === undefined && energy === undefined && !hasPIRReadings && !hasPiezoReadings && !hasTimer555Readings && !hasTimer556Readings && !hasUltrasonicReadings) return <SimulationWarnings warnings={warnings} />
+  if (current === undefined && voltage === undefined && power === undefined && energy === undefined && !hasPIRReadings && !hasPiezoReadings && !hasTimer555Readings && !hasTimer556Readings && !hasUltrasonicReadings && !hasServoReadings && !hasLcdReadings) return <SimulationWarnings warnings={warnings} />
   const sensorResistance = kind === 'variableResistor' ? variableSensorResistance(String(part.properties?.simulationModel ?? ''), part.properties ?? {}) : undefined
   return <>
     <div className="electrical-readings" aria-label="Leituras elétricas calculadas">
@@ -193,6 +197,12 @@ function ElectricalReadings({ part, simulation }: { part: Part; simulation?: Sim
     {kind === 'timer555' && simulation.timer555DischargeVoltage?.[part.id] !== undefined && <div className="component-row"><span>DIS (pino 7)</span><strong>{simulation.timer555DischargeVoltage[part.id].toFixed(3)} V</strong></div>}
     {kind === 'timer555' && simulation.timer555ReferenceVoltage?.[part.id] !== undefined && <div className="component-row"><span>Referência interna (1/3 Vcc)</span><strong>{simulation.timer555ReferenceVoltage[part.id].toFixed(3)} V</strong></div>}
     {kind === 'timer555' && simulation.timer555OutputCurrent?.[part.id] !== undefined && <div className="component-row"><span>Corrente em OUT</span><strong>{formatSignedCurrent(simulation.timer555OutputCurrent[part.id])}</strong></div>}
+    {kind === 'lcd' && simulation.lcdDisplays?.[part.id] && <div className="lcd-display-readout" aria-label="Conteúdo do LCD"><code>{simulation.lcdDisplays[part.id][0]}</code><code>{simulation.lcdDisplays[part.id][1]}</code><div className="component-row"><span>Alimentação</span><strong>{simulation.lcdPowered?.[part.id] ? 'válida' : 'abaixo de 4,5 V'}</strong></div></div>}
+    {kind === 'lcd' && simulation.lcdContrast?.[part.id] !== undefined && <div className="component-row"><span>Contraste</span><strong>{Math.round(simulation.lcdContrast[part.id] * 100)}%</strong></div>}
+    {kind === 'lcd' && simulation.lcdBacklightBrightness?.[part.id] !== undefined && <div className="component-row"><span>Backlight estimado</span><strong>{(simulation.lcdBacklightBrightness[part.id] * 100).toFixed(0)}%</strong></div>}
+    {kind === 'lcd' && simulation.lcdBreakdown?.[part.id] && <div className="component-row"><span>Limite</span><strong>Backlight acima de 20 mA ou VDD acima de 5,5 V</strong></div>}
+    {kind === 'servo' && simulation.servoPositionDegrees?.[part.id] !== undefined && <div className="component-row"><span>Posição</span><strong>{simulation.servoPositionDegrees[part.id].toFixed(1)}° · {simulation.servoPowered?.[part.id] ? 'alimentado' : 'sem alimentação'}</strong></div>}
+    {kind === 'servo' && simulation.servoBreakdown?.[part.id] && <div className="component-row"><span>Limite</span><strong>Alimentação acima de 6 V</strong></div>}
     {kind === 'ultrasonicPing' && ultrasonicReadings && <>
       <div className="component-row"><span>Alimentação</span><strong>{ultrasonicReadings.supplyVoltage.toFixed(3)} V · {ultrasonicReadings.powered ? 'válida' : 'fora de 4,5–6 V'}</strong></div>
       <div className="component-row"><span>Estado interno</span><strong>{ultrasonicReadings.phase === 'trigger' ? 'Aguardando borda de descida' : ultrasonicReadings.phase === 'transmit' ? 'Transmitindo' : 'Ocioso'}</strong></div>
@@ -680,6 +690,8 @@ export default function ComponentPopover({ part, wire, simulation, simulationAct
         {kind === 'library' && electricalKind(part) === 'irSensor' && <IRSensorControls part={part} active={simulationActive} detected={irDetected} onChange={onIRSensorDetected} />}
         {kind === 'library' && electricalKind(part) === 'gasSensor' && <GasSensorControls part={part} active={simulationActive} level={gasSensorLevel} onChange={onGasSensorLevel} />}
         {kind === 'library' && electricalKind(part) === 'pirSensor' && <PIRSensorControls part={part} active={simulationActive} position={pirTargetPosition ?? { x: 0, y: -200 }} inRange={pirInRange} onChange={onPIRTargetChange} />}
+        {kind === 'library' && electricalKind(part) === 'lcd' && <p className="library-detail-muted">Controlador HD44780 com instruções de display, endereço DDRAM, escrita de caracteres, modo de 4/8 bits, shunt de alimentação, contraste e backlight. Leituras do barramento pelo pino RW e CGRAM de caracteres personalizados não estão implementados.</p>}
+        {kind === 'library' && electricalKind(part) === 'servo' && <p className="library-detail-muted">SG90 posicional: sinal acima de 2,5 V; pulsos entre 0,5 e 2,5 ms comandam 0–180°. O ângulo se move até 3° por pulso. Bordas entre passos do solver podem ser perdidas; modo contínuo, dinâmica do motor e corrente variável não estão modelados.</p>}
         {kind === 'library' && electricalKind(part) === 'ultrasonicPing' && <UltrasonicPingControls part={part} active={simulationActive} position={ultrasonicTargetPosition ?? ULTRASONIC_PING_MODEL.target.defaultPosition} inRange={ultrasonicInRange} onChange={onUltrasonicTargetChange} />}
         {kind === 'library' && electricalKind(part) === 'piezo' && <p className="library-detail-muted">Este modelo calcula tensão, corrente e potência. O áudio e a intensidade acústica não são implementados; o indicador visual é apenas uma estimativa normalizada pela tensão (não representa som nem dB).</p>}
         {kind === 'library' && electricalKind(part) === 'timer555' && <p className="library-detail-muted">O latch usa atraso de 0,5 µs, amostrado uma vez por subpasso; transições menores que o passo escolhido ficam quantizadas. O equivalente preserva a ladder, os pulls, a saída resistiva e o NPN de descarga, mas idealiza efeitos parasitas e resolução submicrosegundo.</p>}
@@ -694,7 +706,7 @@ export default function ComponentPopover({ part, wire, simulation, simulationAct
           <label className="component-row"><span>Cor</span><span className="component-color-picker"><select value={String(part.properties?.color ?? 'green')} onChange={event => setProperty('color', event.target.value)}>{['red', 'orange', 'yellow', 'green', 'blue', 'white'].map(color => <option key={color} value={color}>{({ red: 'Vermelho', orange: 'Laranja', yellow: 'Amarelo', green: 'Verde', blue: 'Azul', white: 'Branco' } as Record<string, string>)[color]}</option>)}</select><i className="color-swatch-badge" style={{ background: String(part.properties?.color ?? 'green') }} /></span></label>
           <ElectricalReadings part={part} simulation={simulation} />
         </>}
-        {kind === 'library' && ['resistor', 'variableResistor', 'led', 'diode', 'capacitor', 'inductor', 'potentiometer', 'supply', 'tempSensor', 'solarCell', 'generator', 'npn', 'pnp', 'mosfet', 'tip120', 'regulator', 'opAmp', 'comparator', 'photodiode', 'phototransistor', 'relay', 'lightBulb', 'vibrationMotor', 'tiltSensor', 'usbSource', 'soilMoisture', 'rgbLed', 'sevenSegment', 'keypad', 'irSensor', 'gasSensor', 'pirSensor', 'piezo', 'timer555', 'timer556', 'ultrasonicPing'].includes(electricalKind(part)) && <ElectricalReadings part={part} simulation={simulation} />}
+        {kind === 'library' && ['resistor', 'variableResistor', 'led', 'diode', 'capacitor', 'inductor', 'potentiometer', 'supply', 'tempSensor', 'solarCell', 'generator', 'npn', 'pnp', 'mosfet', 'tip120', 'regulator', 'opAmp', 'comparator', 'photodiode', 'phototransistor', 'relay', 'lightBulb', 'vibrationMotor', 'tiltSensor', 'usbSource', 'soilMoisture', 'rgbLed', 'sevenSegment', 'keypad', 'irSensor', 'gasSensor', 'pirSensor', 'piezo', 'timer555', 'timer556', 'ultrasonicPing', 'servo', 'lcd'].includes(electricalKind(part)) && <ElectricalReadings part={part} simulation={simulation} />}
         {kind === 'generator' && <>
           {numberField('Frequência', 'frequency', 1, 'Hz')}{numberField('Amplitude', 'amplitude', 5, 'V')}{numberField('Offset DC', 'offset', 2.5, 'V')}
           <label className="component-row"><span>Forma de onda</span><select value={String(part.properties?.waveform ?? 'square')} onChange={event => setProperty('waveform', event.target.value)}><option value="square">Quadrada</option><option value="sine">Senoidal</option><option value="triangle">Triangular</option></select></label>

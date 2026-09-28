@@ -556,7 +556,9 @@ export default function App() {
           JSON.stringify(result.runtime.timer556PendingLatch ?? {}) !== JSON.stringify(runtime.timer556PendingLatch ?? {}) ||
           JSON.stringify(result.runtime.timer556DelayRemainingSeconds ?? {}) !== JSON.stringify(runtime.timer556DelayRemainingSeconds ?? {}) ||
           JSON.stringify(result.runtime.ultrasonicTargetPositions ?? {}) !== JSON.stringify(runtime.ultrasonicTargetPositions ?? {}) ||
-          JSON.stringify(result.runtime.ultrasonicStates ?? {}) !== JSON.stringify(runtime.ultrasonicStates ?? {})
+          JSON.stringify(result.runtime.ultrasonicStates ?? {}) !== JSON.stringify(runtime.ultrasonicStates ?? {}) ||
+          JSON.stringify(result.runtime.servoStates ?? {}) !== JSON.stringify(runtime.servoStates ?? {}) ||
+          JSON.stringify(result.runtime.lcdStates ?? {}) !== JSON.stringify(runtime.lcdStates ?? {})
         if (preparedRuntimeChanged) {
           setRuntime(current => ({
             ...current,
@@ -573,6 +575,8 @@ export default function App() {
             timer556DelayRemainingSeconds: result.runtime.timer556DelayRemainingSeconds ?? current.timer556DelayRemainingSeconds,
             ultrasonicTargetPositions: result.runtime.ultrasonicTargetPositions ?? current.ultrasonicTargetPositions,
             ultrasonicStates: result.runtime.ultrasonicStates ?? current.ultrasonicStates,
+            servoStates: result.runtime.servoStates ?? current.servoStates,
+            lcdStates: result.runtime.lcdStates ?? current.lcdStates,
           }))
         }
       })
