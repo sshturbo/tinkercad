@@ -2,14 +2,14 @@
 
 Gerado a partir do catálogo offline, do mapa e dos índices em `tinkercad-engine-complete-extracted`. Atualize com `npm run report:sim-models`. “Encontrado” quer dizer que a extração contém um módulo, não que esse modelo esteja implementado no simulador local. Os estados locais descrevem o comportamento atual e podem ser parciais.
 
-O solver MNA valida a solução candidata pelo resíduo de corrente KCL em cada nó e pelo resíduo de tensão das fontes ideais, com tolerâncias e unidades separadas. Transitórios de capacitores e indutores iniciam com backward Euler e usam a integração trapezoidal nos passos posteriores; o trigger ultrassônico segue limitado à amostragem do caller. Para dispositivos não lineares, inclui a diferença entre a corrente física no candidato e a tangente usada na iteração de Newton.
+O solver MNA valida resíduos KCL, restrições de tensão das fontes ideais e correntes físicas dos dispositivos não lineares. Capacitores e indutores usam startup backward Euler e integração trapezoidal posterior.
 
 - Componentes no catálogo: 109.
-- Componentes com lógica elétrica/digital/continuidade local reconhecida: 79; os demais são visuais.
+- Componentes com lógica elétrica/digital/continuidade local reconhecida: 80; os demais são visuais.
 - Modelos distintos no catálogo: 105; com implementação encontrada na extração: 103.
 - Modelos locais sem implementação encontrada: L293D, optoCoupler_4N35.
 
-Diodo comum e LED 2 pinos usam curvas Shockley extraídas (diodo Is=1e−12 A/n=1; LED Is=1e−20 A, 6 Ω série e n por cor); a continuação numérica do MNA mantém uma pequena fuga reversa aproximada, sem comportamento térmico ou dano. O LED avisa acima de 20 mA e marca breakdown a partir de 120 mA sem limitar a corrente. O modelo piezoSound usa o resistor extraído de 600 Ω e o limite direto >25 V; áudio e intensidade acústica não são implementados. O Timer555 reproduz a ladder/pulls, o latch e a saída/discharge analógicos; o atraso de 0,5 µs é amostrado por timestep. O timer556 contém dois núcleos 555 com estado independente e rails compartilhados, também amostrados pelo timestep. O modelo sensor_ultrasonic_ping reproduz branches MNA e o scheduler de echo nos prazos extraídos, mas os triggers são amostrados pelo passo do caller; pulsos entre amostras baixas são perdidos e não se afirma captura a 2 µs em passos de dezenas de milissegundos.
+Diodo comum e LED 2 pinos usam curvas Shockley extraídas (diodo Is=1e−12 A/n=1; LED Is=1e−20 A, 6 Ω série e n por cor); a continuação numérica do MNA mantém uma pequena fuga reversa aproximada, sem comportamento térmico ou dano. O LED avisa acima de 20 mA e marca breakdown a partir de 120 mA sem limitar a corrente. O modelo piezoSound usa o resistor extraído de 600 Ω e o limite direto >25 V; áudio e intensidade acústica não são implementados. O Timer555 reproduz a ladder/pulls, o latch e a saída/discharge analógicos; os delays pendentes de 0,5 µs são processados por deadlines internos. O timer556 contém dois núcleos 555 com estado independente, rails compartilhados e deadlines separados por canal. O modelo sensor_ultrasonic_ping reproduz branches MNA e o scheduler de echo nos prazos extraídos, mas os triggers ainda são amostrados pelos subpassos do caller; pulsos entre amostras baixas são perdidos e não se afirma captura a 2 µs em passos de dezenas de milissegundos.
 
 | Modelo | Itens no catálogo | Implementação extraída | Estado no simulador local |
 |---|---:|---|---|
@@ -42,7 +42,7 @@ Diodo comum e LED 2 pinos usam curvas Shockley extraídas (diodo Is=1e−12 A/n=
 | `button` | 1 | sim (módulo 77617) | MNA DC/transitório parcial |
 | `capacitor` | 1 | sim (módulo 5737) | MNA DC/transitório parcial |
 | `capacitor_polarized` | 1 | sim (módulo 20243) | MNA DC/transitório parcial |
-| `CD4511` | 1 | sim (módulo 43434) | Visual; sem modelo local |
+| `CD4511` | 1 | sim (módulo 43434) | Digital/lógico parcial |
 | `coinCell` | 1 | sim (módulo 42520) | MNA DC/transitório parcial |
 | `dc_motor_arduino` | 1 | sim (módulo 80722) | Visual; sem modelo local |
 | `dc_motor_encoder_small` | 1 | sim (módulo 3179) | Visual; sem modelo local |
@@ -98,8 +98,8 @@ Diodo comum e LED 2 pinos usam curvas Shockley extraídas (diodo Is=1e−12 A/n=
 | `seven-segment-i2c` | 1 | sim (módulo 7403) | Visual; sem modelo local |
 | `slide_switch_v2` | 1 | sim (módulo 40360) | MNA DC/transitório parcial |
 | `solarCell` | 1 | sim (módulo 27051) | MNA DC/transitório parcial |
-| `Timer555` | 1 | sim (módulo 27251) | MNA transitório parcial; latch amostrado por timestep |
-| `timer556` | 1 | sim (módulo 73430) | MNA dual transitório parcial; latches A/B independentes |
+| `Timer555` | 1 | sim (módulo 27251) | MNA transitório parcial; atraso com deadline interno |
+| `timer556` | 1 | sim (módulo 73430) | MNA dual transitório parcial; deadlines por canal |
 | `tip120` | 1 | sim (módulo 94047) | MNA DC/transitório parcial |
 | `TMP36` | 1 | sim (módulo 84820) | MNA DC/transitório parcial |
 | `USBstandard` | 1 | sim (módulo 70394) | MNA DC/transitório parcial |

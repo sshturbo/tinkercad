@@ -1990,6 +1990,26 @@ describe('solver elétrico DC', () => {
     const resetQueued = simulateElectrical(resetProject, initialRuntime(resetProject), 0)
     expect(resetQueued.runtime.timer555Latch?.t).toBe(true)
     expect(resetQueued.runtime.timer555PendingLatch?.t).toBe(false)
+    const loadedResetProject: Project = {
+      ...resetProject,
+      parts: [
+        ...resetProject.parts,
+        { id: 'r', kind: 'resistor', x: 0, y: 0, rotation: 0, label: 'Carga', properties: { ohms: 1000 } },
+        { id: 'c', kind: 'library', x: 0, y: 0, rotation: 0, label: 'Capacitor de saída', properties: { simulationModel: 'capacitor', capacitance: 1e-6 } },
+      ],
+      wires: [
+        ...resetProject.wires,
+        { id: 'out-load', from: 't:3', to: 'r:A', color: 'red' },
+        { id: 'load-cap', from: 'r:B', to: 'c:Terminal 1', color: 'green' },
+        { id: 'cap-ground', from: 'c:Terminal 2', to: 's:MINUS', color: 'black' },
+      ],
+    }
+    const timedReset = simulateElectrical(loadedResetProject, { ...resetQueued.runtime, capacitorVoltages: { c: 5 } }, 1e-3, 1e-3, 1e-3)
+    expect(timedReset.simulation.converged, timedReset.simulation.diagnostics?.join('; ')).toBe(true)
+    expect(timedReset.runtime.timer555Latch?.t).toBe(false)
+    expect(timedReset.runtime.capacitorVoltages?.c).toBeGreaterThan(2.5)
+    expect(timedReset.runtime.capacitorVoltages?.c).toBeLessThan(4)
+
     const resetApplied = simulateElectrical(resetProject, resetQueued.runtime, 1e-6, 1e-6)
     expect(resetApplied.simulation.converged, resetApplied.simulation.diagnostics?.join('; ')).toBe(true)
     expect(resetApplied.runtime.timer555Latch?.t).toBe(false)

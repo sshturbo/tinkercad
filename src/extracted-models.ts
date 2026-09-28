@@ -22,10 +22,11 @@ const gates: Record<string, Gate> = {
 }
 
 export const extractedModelNames = new Set([
-  ...Object.keys(gates), '74HC73', '74HC74', '74HC75', '74HC93', '74HC283', '74HC4017', '74HC595',
+  ...Object.keys(gates), 'CD4511', '74HC73', '74HC74', '74HC75', '74HC93', '74HC283', '74HC4017', '74HC595',
 ])
 
 export function extractedModelPins(model: string): string[] {
+  if (model === 'CD4511') return ['Power', 'Ground', 'AIN', 'BIN', 'CIN', 'DIN', 'LT', 'BI', 'LE', 'A', 'B', 'C', 'D', 'E', 'F', 'G']
   const gate = gates[model]
   if (gate) {
     const pins = ['Power', 'Ground']
@@ -88,6 +89,7 @@ export function driveExtractedCombinational(
     }
     return true
   }
+  if (model === 'CD4511') return false // BCD latch and lamp-test controls are handled as a sequential model.
   if (model === '74HC283') {
     const inputs = [read('Carry In'), ...[0, 1, 2, 3].flatMap(n => [read(`Input ${n}A`), read(`Input ${n}B`)])]
     if (inputs.includes('X')) {
@@ -106,7 +108,22 @@ export function driveExtractedCombinational(
 
 export function driveExtractedSequential(model: string, partId: string, runtime: Runtime, drive: (pin: string, value: Level) => void): boolean {
   const state = (name: string, fallback: Level = '0') => runtime.q[`${partId}:${name}`] ?? fallback
-  if (model === '74HC73' || model === '74HC74') {
+  if (model === 'CD4511') {
+    const bits = [0, 1, 2, 3].map(index => state(`CD4511:B${index}`))
+    const bcd = bits.some(value => value === 'X') ? -1 : bits.reduce((value, bit, index) => value | (bit === '1' ? 1 << index : 0), 0)
+    const segments = [
+      [1, 1, 1, 1, 1, 1, 0], [0, 1, 1, 0, 0, 0, 0], [1, 1, 0, 1, 1, 0, 1], [1, 1, 1, 1, 0, 0, 1],
+      [0, 1, 1, 0, 0, 1, 1], [1, 0, 1, 1, 0, 1, 1], [1, 0, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 0, 0],
+      [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 0, 1, 1],
+    ][bcd]
+    for (const [index, pin] of ['A', 'B', 'C', 'D', 'E', 'F', 'G'].entries()) {
+      const lampTest = state('CD4511:LT'), blanking = state('CD4511:BI')
+      const value = lampTest === '0' ? '1' : blanking === '0' ? '0'
+        : lampTest === 'X' || blanking === 'X' || bcd < 0 ? 'X'
+          : segments?.[index] ? '1' : '0'
+      drive(pin, value)
+    }
+  } else if (model === '74HC73' || model === '74HC74') {
     for (let n = 1; n <= 2; n++) {
       const q = state(`Q${n}`, model === '74HC73' ? '0' : 'X')
       drive(`Output ${n}`, q)
@@ -143,6 +160,23 @@ export function updateExtractedSequential(model: string, partId: string, runtime
     const current = read(pin)
     runtime.prev_clock[key(pin)] = current
     return direction === 'rising' ? previous === '0' && current === '1' : previous === '1' && current === '0'
+  }
+  if (model === 'CD4511') {
+    let changed = false
+    for (const control of ['LT', 'BI'] as const) {
+      const name = `CD4511:${control}`
+      const value = read(control)
+      if (state(name) !== value) { runtime.q[key(name)] = value; changed = true }
+    }
+    if (read('LE') === '0') {
+      for (let index = 0; index < 4; index++) {
+        const pin = ['AIN', 'BIN', 'CIN', 'DIN'][index]
+        const name = `CD4511:B${index}`
+        const value = read(pin)
+        if (state(name) !== value) { runtime.q[key(name)] = value; changed = true }
+      }
+    }
+    return changed
   }
   if (model === '74HC73' || model === '74HC74') {
     for (let n = 1; n <= 2; n++) {

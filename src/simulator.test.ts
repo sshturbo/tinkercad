@@ -205,3 +205,44 @@ describe('encaixe na protoboard', () => {
   })
 })
 
+
+describe('decodificador digital CD4511', () => {
+  it('decodifica BCD, mantém o valor com LE alto e aplica LT/BI ativos em zero', () => {
+    const project: Project = {
+      version: 1, id: 'cd4511-integration', name: 'CD4511 BCD',
+      parts: [
+        { id: 's', kind: 'supply', x: 0, y: 0, rotation: 0, label: 'Fonte', properties: { voltage: 5 } },
+        { id: 'u', kind: 'library', x: 0, y: 0, rotation: 0, label: 'CD4511', properties: { simulationModel: 'CD4511' } },
+      ],
+      wires: [
+        { id: 'power', from: 's:PLUS', to: 'u:Power', color: 'red' },
+        { id: 'ground', from: 's:MINUS', to: 'u:Ground', color: 'black' },
+        { id: 'digit-one', from: 's:PLUS', to: 'u:BIN', color: 'red' },
+        { id: 'input-zero-0', from: 's:MINUS', to: 'u:AIN', color: 'black' },
+        { id: 'input-zero-2', from: 's:MINUS', to: 'u:CIN', color: 'black' },
+        { id: 'input-zero-3', from: 's:MINUS', to: 'u:DIN', color: 'black' },
+        { id: 'lamp-test', from: 's:PLUS', to: 'u:LT', color: 'red' },
+        { id: 'blanking', from: 's:PLUS', to: 'u:BI', color: 'red' },
+        { id: 'latch-enable', from: 's:MINUS', to: 'u:LE', color: 'black' },
+      ],
+    }
+    const digitTwo = simulate(project, emptyRuntime())
+    expect(digitTwo.simulation.levels['u:A']).toBe('1')
+    expect(digitTwo.simulation.levels['u:B']).toBe('1')
+    expect(digitTwo.simulation.levels['u:C']).toBe('0')
+    expect(digitTwo.simulation.levels['u:D']).toBe('1')
+    expect(digitTwo.simulation.levels['u:G']).toBe('1')
+
+    project.wires = project.wires.filter(wire => wire.id !== 'digit-one' && wire.id !== 'latch-enable')
+    project.wires = project.wires.filter(wire => wire.id !== 'input-zero-2')
+    project.wires.push({ id: 'digit-two', from: 's:PLUS', to: 'u:CIN', color: 'red' }, { id: 'latch', from: 's:PLUS', to: 'u:LE', color: 'red' })
+    const latched = simulate(project, digitTwo.runtime)
+    expect(latched.simulation.levels['u:A']).toBe('1')
+    expect(latched.simulation.levels['u:C']).toBe('0')
+
+    project.wires = project.wires.filter(wire => wire.id !== 'blanking')
+    project.wires.push({ id: 'blanking-low', from: 's:MINUS', to: 'u:BI', color: 'black' })
+    const blanked = simulate(project, latched.runtime)
+    expect(['A', 'B', 'C', 'D', 'E', 'F', 'G'].map(pin => blanked.simulation.levels[`u:${pin}`])).toEqual(Array(7).fill('0'))
+  })
+})

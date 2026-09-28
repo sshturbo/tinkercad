@@ -3,24 +3,24 @@ import { emptyRuntime, type Level } from './model'
 import { driveExtractedCombinational, driveExtractedSequential, extractedModelNames, extractedModelPins, updateExtractedSequential } from './extracted-models'
 
 const combinational = [
-  { model: '74HC00', inputs: 'AB', count: 4, fn: (bits: number[]) => !(bits[0] && bits[1]) },
-  { model: '74HC02', inputs: 'AB', count: 4, fn: (bits: number[]) => !(bits[0] || bits[1]) },
-  { model: '74HC04', inputs: 'A', count: 6, fn: (bits: number[]) => !bits[0] },
-  { model: '74HC08', inputs: 'AB', count: 4, fn: (bits: number[]) => bits[0] && bits[1] },
-  { model: '74HC10', inputs: 'ABC', count: 3, fn: (bits: number[]) => !bits.every(Boolean) },
-  { model: '74HC11', inputs: 'ABC', count: 3, fn: (bits: number[]) => bits.every(Boolean) },
-  { model: '74HC14', inputs: 'A', count: 6, fn: (bits: number[]) => !bits[0] },
-  { model: '74HC20', inputs: 'ABCD', count: 2, fn: (bits: number[]) => !bits.every(Boolean) },
-  { model: '74HC21', inputs: 'ABCD', count: 2, fn: (bits: number[]) => bits.every(Boolean) },
-  { model: '74HC27', inputs: 'ABC', count: 3, fn: (bits: number[]) => !bits.some(Boolean) },
-  { model: '74HC32', inputs: 'AB', count: 4, fn: (bits: number[]) => bits.some(Boolean) },
-  { model: '74HC86', inputs: 'AB', count: 4, fn: (bits: number[]) => bits.reduce((value, bit) => value !== Boolean(bit), false) },
-  { model: '74HC132', inputs: 'AB', count: 4, fn: (bits: number[]) => !(bits[0] && bits[1]) },
+  { model: '74HC00', inputs: 'AB', count: 4, fn: (bits: boolean[]) => !(bits[0] && bits[1]) },
+  { model: '74HC02', inputs: 'AB', count: 4, fn: (bits: boolean[]) => !(bits[0] || bits[1]) },
+  { model: '74HC04', inputs: 'A', count: 6, fn: (bits: boolean[]) => !bits[0] },
+  { model: '74HC08', inputs: 'AB', count: 4, fn: (bits: boolean[]) => bits[0] && bits[1] },
+  { model: '74HC10', inputs: 'ABC', count: 3, fn: (bits: boolean[]) => !bits.every(Boolean) },
+  { model: '74HC11', inputs: 'ABC', count: 3, fn: (bits: boolean[]) => bits.every(Boolean) },
+  { model: '74HC14', inputs: 'A', count: 6, fn: (bits: boolean[]) => !bits[0] },
+  { model: '74HC20', inputs: 'ABCD', count: 2, fn: (bits: boolean[]) => !bits.every(Boolean) },
+  { model: '74HC21', inputs: 'ABCD', count: 2, fn: (bits: boolean[]) => bits.every(Boolean) },
+  { model: '74HC27', inputs: 'ABC', count: 3, fn: (bits: boolean[]) => !bits.some(Boolean) },
+  { model: '74HC32', inputs: 'AB', count: 4, fn: (bits: boolean[]) => bits.some(Boolean) },
+  { model: '74HC86', inputs: 'AB', count: 4, fn: (bits: boolean[]) => bits.reduce((value, bit) => value !== Boolean(bit), false) },
+  { model: '74HC132', inputs: 'AB', count: 4, fn: (bits: boolean[]) => !(bits[0] && bits[1]) },
 ] as const
 
 describe('conformidade dos modelos digitais extraídos', () => {
-  it('declara pinos para todas as 19 famílias locais e testa as 13 portas combinacionais', () => {
-    expect(extractedModelNames.size).toBe(20)
+  it('declara pinos para todas as 21 famílias locais e testa as 13 portas combinacionais', () => {
+    expect(extractedModelNames.size).toBe(21)
     for (const model of extractedModelNames) expect(extractedModelPins(model).length, model).toBeGreaterThan(2)
     for (const gate of combinational) {
       for (let channel = 1; channel <= gate.count; channel++) {
@@ -48,7 +48,7 @@ describe('conformidade dos modelos digitais extraídos', () => {
     expect(unknown.get('Output 1')).toBe('0')
   })
 
-  it('verifica atualização e leitura de saída das seis famílias sequenciais', () => {
+  it('verifica atualização e leitura de saída do CD4511 e das seis famílias sequenciais', () => {
     const runtime = emptyRuntime()
     const projectPart = 'chip'
     const update = (model: string, inputs: Record<string, Level>) => updateExtractedSequential(model, projectPart, runtime, pin => inputs[pin] ?? '0')
@@ -57,6 +57,27 @@ describe('conformidade dos modelos digitais extraídos', () => {
       expect(driveExtractedSequential(model, projectPart, runtime, (pin, value) => values.set(pin, value))).toBe(true)
       return values
     }
+
+    for (let digit = 0; digit < 16; digit++) {
+      for (let bit = 0; bit < 4; bit++) runtime.q[`chip:CD4511:B${bit}`] = digit & (1 << bit) ? '1' : '0'
+      const expected = [
+        ['1', '1', '1', '1', '1', '1', '0'], ['0', '1', '1', '0', '0', '0', '0'], ['1', '1', '0', '1', '1', '0', '1'], ['1', '1', '1', '1', '0', '0', '1'],
+        ['0', '1', '1', '0', '0', '1', '1'], ['1', '0', '1', '1', '0', '1', '1'], ['1', '0', '1', '1', '1', '1', '1'], ['1', '1', '1', '0', '0', '0', '0'],
+        ['1', '1', '1', '1', '1', '1', '1'], ['1', '1', '1', '1', '0', '1', '1'],
+        ['0', '0', '0', '0', '0', '0', '0'], ['0', '0', '0', '0', '0', '0', '0'], ['0', '0', '0', '0', '0', '0', '0'], ['0', '0', '0', '0', '0', '0', '0'], ['0', '0', '0', '0', '0', '0', '0'], ['0', '0', '0', '0', '0', '0', '0'],
+      ][digit]
+      update('CD4511', { LE: '1', LT: '1', BI: '1' })
+      expect([...readOutputs('CD4511')].filter(([pin]) => ['A', 'B', 'C', 'D', 'E', 'F', 'G'].includes(pin)).map(([, value]) => value)).toEqual(expected)
+    }
+    expect(readOutputs('CD4511').get('A')).toBe('0')
+    expect(readOutputs('CD4511').get('G')).toBe('0')
+    update('CD4511', { LE: '0', LT: '1', BI: '1', AIN: '0', BIN: '0', CIN: '1', DIN: '0' })
+    update('CD4511', { LE: '1', LT: '1', BI: '1', AIN: '0', BIN: '1', CIN: '0', DIN: '0' })
+    expect([...readOutputs('CD4511')].filter(([pin]) => ['A', 'B', 'C', 'D', 'E', 'F', 'G'].includes(pin)).map(([, value]) => value)).toEqual(['0', '1', '1', '0', '0', '1', '1'])
+    update('CD4511', { LE: '1', LT: '1', BI: '0' })
+    expect([...readOutputs('CD4511')].filter(([pin]) => ['A', 'B', 'C', 'D', 'E', 'F', 'G'].includes(pin)).map(([, value]) => value)).toEqual(['0', '0', '0', '0', '0', '0', '0'])
+    update('CD4511', { LE: '1', LT: '0', BI: '0' })
+    expect([...readOutputs('CD4511')].filter(([pin]) => ['A', 'B', 'C', 'D', 'E', 'F', 'G'].includes(pin)).map(([, value]) => value)).toEqual(['1', '1', '1', '1', '1', '1', '1'])
 
     runtime.q['chip:Q1'] = '0'
     runtime.prev_clock['chip:Clock 1'] = '1'

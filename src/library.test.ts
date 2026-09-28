@@ -22,6 +22,7 @@ describe('ligações da protoboard local', () => {
       expect(libraryItemSupportsSimulation(item(name, null))).toBe(true)
     }
     expect(libraryItemSupportsSimulation(item('4-Bit Binary Counter', '74HC93'))).toBe(true)
+    expect(libraryItemSupportsSimulation(item('BCD to 7-Segment Decoder', 'CD4511'))).toBe(true)
     expect(libraryItemSupportsSimulation(item('Diode', 'diode'))).toBe(true)
     expect(libraryItemSupportsSimulation(item('LED RGB', 'ledRGB'))).toBe(true)
     expect(libraryItemSupportsSimulation(item('7 Segment Display', 'seven_segment_digit_5011bh'))).toBe(true)
