@@ -57,3 +57,13 @@ Neste catálogo de 109 itens, 79 têm comportamento digital, elétrico ou de con
 No canvas, os componentes usam os SVGs locais; os PNGs ficam como miniaturas do menu e prévias do inspetor. O inspetor mostra propriedades editáveis, footprint, dimensões, tags, categoria do catálogo, `simulation_model`, terminais e referências registradas. Referências aparecem como nomes dos arquivos encontrados nos dados; nenhuma URL externa é aberta ou usada como imagem.
 
 Antes de iniciar o dev server ou gerar o build, `scripts/prepare-circuit-library.mjs` copia a captura de `circuit-library/` para `assets/circuit-library/`, quando a pasta original está disponível, e ajusta a área de visualização dos SVGs a partir das dimensões registradas. Se o checkout já tiver somente a cópia local em `assets/circuit-library/`, o preparo usa essa cópia sem buscar conteúdo externo.
+## Releases para Windows e Linux
+
+O workflow `.github/workflows/release.yml` compila e publica instaladores para Windows (`.msi` e `.exe`) e Linux (`.deb` e `.AppImage`) em uma GitHub Release. Para publicar uma versão, envie uma tag começando com `v`, por exemplo:
+
+```bash
+git tag v0.1.1
+git push origin v0.1.1
+```
+
+Acompanhe a execução em **Actions**; quando terminar, os instaladores estarão anexados à release dessa tag. Também é possível iniciar o workflow manualmente pela aba **Actions** e informar a tag que deseja publicar.
