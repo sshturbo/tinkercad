@@ -1,4 +1,4 @@
-import { RotateCw, Trash2, X } from 'lucide-react'
+import { AlignCenter, Minus, RotateCw, Trash2, X } from 'lucide-react'
 import { labels, type Part, type Simulation, type Wire } from './model'
 import { chipPinRows } from './pinout'
 import { variableSensorControl, variableSensorResistance } from './variableSensorModels'
@@ -369,6 +369,8 @@ type Props = {
   libraryRecord?: LibraryRecord
   onUpdatePart?: (changes: Partial<Part>) => void
   onUpdateWire?: (changes: Partial<Wire>) => void
+  onCenterWire?: () => void
+  onStraightenWire?: () => void
   onRotatePart?: () => void
   onDelete?: () => void
   onClose: () => void
@@ -662,7 +664,7 @@ function PinOverview({ part }: { part: Part }) {
   return <section className="component-pin-section"><span className="pin-section-title">Pinagem (entalhe à esquerda)</span>{render('top')}{render('bottom')}</section>
 }
 
-export default function ComponentPopover({ part, wire, simulation, simulationActive = false, keypadPushed, onKeypadPushed, irDetected = false, onIRSensorDetected, gasSensorLevel = 0.2, onGasSensorLevel, pirTargetPosition, pirInRange, onPIRTargetChange, ultrasonicTargetPosition, ultrasonicInRange, onUltrasonicTargetChange, libraryItem, libraryRecord, onUpdatePart, onUpdateWire, onRotatePart, onDelete, onClose }: Props) {
+export default function ComponentPopover({ part, wire, simulation, simulationActive = false, keypadPushed, onKeypadPushed, irDetected = false, onIRSensorDetected, gasSensorLevel = 0.2, onGasSensorLevel, pirTargetPosition, pirInRange, onPIRTargetChange, ultrasonicTargetPosition, ultrasonicInRange, onUltrasonicTargetChange, libraryItem, libraryRecord, onUpdatePart, onUpdateWire, onCenterWire, onStraightenWire, onRotatePart, onDelete, onClose }: Props) {
   const setProperty = (key: string, value: string | number) => part && onUpdatePart?.({ properties: { ...part.properties, [key]: value } })
   if (!part && !wire) return null
   const selectedColor = wire ? standardWireColors.find(color => color.hex.toLowerCase() === wire.color.toLowerCase()) : undefined
@@ -721,7 +723,25 @@ export default function ComponentPopover({ part, wire, simulation, simulationAct
           {onDelete && <button className="popover-danger-btn" onClick={onDelete}><Trash2 size={14} /> Excluir</button>}
         </div>
       </>}
-      {wire && <div className="component-popover-actions">{onDelete && <button className="popover-danger-btn" onClick={onDelete}><Trash2 size={14} /> Excluir fio</button>}</div>}
+      {wire && (
+        <div className="component-popover-actions">
+          {onCenterWire && (
+            <button className="popover-action-btn" type="button" onClick={onCenterWire} title="Centralizar fio entre os pinos">
+              <AlignCenter size={14} /> Centralizar
+            </button>
+          )}
+          {onStraightenWire && (
+            <button className="popover-action-btn" type="button" onClick={onStraightenWire} title="Remover curvas e endireitar fio">
+              <Minus size={14} /> Endireitar
+            </button>
+          )}
+          {onDelete && (
+            <button className="popover-danger-btn" type="button" onClick={onDelete}>
+              <Trash2 size={14} /> Excluir fio
+            </button>
+          )}
+        </div>
+      )}
     </div>
   </aside>
 }

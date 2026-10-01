@@ -186,9 +186,13 @@ export function updateExtractedSequential(model: string, partId: string, runtime
       const current = state(`Q${n}`, model === '74HC73' ? '0' : 'X')
       let next = current
       if (reset === '0' && preset === '0') next = 'X'
-      else if (reset === '0') next = '0'
-      else if (preset === '0') next = '1'
-      else if (reset === '1' && preset === '1' && clock) {
+      else if (reset === '0') {
+        next = '0'
+        runtime.prev_clock[key(`Clock ${n}`)] = read(`Clock ${n}`)
+      } else if (preset === '0') {
+        next = '1'
+        runtime.prev_clock[key(`Clock ${n}`)] = read(`Clock ${n}`)
+      } else if (reset === '1' && preset === '1' && clock) {
         if (model === '74HC74') next = read(`Input ${n}`)
         else {
           const j = read(`J ${n}`), k = read(`K ${n}`)
@@ -210,6 +214,8 @@ export function updateExtractedSequential(model: string, partId: string, runtime
     const clock1 = edge('Clock 1', 'falling')
     if (read('Reset 1') === '1' && read('Reset 2') === '1') {
       for (let n = 0; n < 4; n++) set(`Q${n}`, '0')
+      runtime.prev_clock[key('Clock 0')] = read('Clock 0')
+      runtime.prev_clock[key('Clock 1')] = read('Clock 1')
     } else {
       if (clock0) set('Q0', invert(state('Q0')))
       if (clock1) {

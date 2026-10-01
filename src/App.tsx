@@ -34,6 +34,7 @@ import {
 } from 'lucide-react'
 import Canvas, { type View } from './Canvas'
 import SchematicView from './SchematicView'
+import { centerWireBends } from './wireGeometry'
 import {
   getComponentDetail,
   getComponentDescription,
@@ -872,6 +873,7 @@ export default function App() {
   }
 
   const jk = project.parts.filter(p => p.kind === 'jk74hc73').slice(0, 2)
+  const ic93 = project.parts.find(p => p.kind === 'library' && p.properties?.simulationModel === '74HC93')
   const counterBits =
     jk.length === 2
       ? [
@@ -880,7 +882,14 @@ export default function App() {
           simulation?.q[`${jk[1].id}:1`],
           simulation?.q[`${jk[1].id}:2`],
         ]
-      : []
+      : ic93
+        ? [
+            simulation?.q[`${ic93.id}:Q0`],
+            simulation?.q[`${ic93.id}:Q1`],
+            simulation?.q[`${ic93.id}:Q2`],
+            simulation?.q[`${ic93.id}:Q3`],
+          ]
+        : []
   const counterValue =
     counterBits.length === 4 && counterBits.every(bit => bit === '0' || bit === '1')
       ? counterBits.reduce<number>((sum, bit, index) => sum + (bit === '1' ? 2 ** index : 0), 0)
@@ -902,6 +911,20 @@ export default function App() {
       wires: projectRef.current.wires.map(w => (w.id === selectedWire.id ? { ...w, ...changes } : w)),
     }
     commit(next)
+  }
+
+  const centerSelectedWire = () => {
+    if (!selectedWire) return
+    const a = terminalPosition(projectRef.current, selectedWire.from, libraryRecords)
+    const b = terminalPosition(projectRef.current, selectedWire.to, libraryRecords)
+    if (!a || !b) return
+    const newBends = centerWireBends(a, b)
+    updateWire({ bends: newBends.length ? newBends : undefined })
+  }
+
+  const straightenSelectedWire = () => {
+    if (!selectedWire) return
+    updateWire({ bends: undefined })
   }
 
   const changeWireColor = (hex: string) => {
@@ -1727,6 +1750,8 @@ export default function App() {
                       : undefined}
                     onUpdatePart={updatePart}
                     onUpdateWire={updateWire}
+                    onCenterWire={centerSelectedWire}
+                    onStraightenWire={straightenSelectedWire}
                     onRotatePart={() => {
                       if (selectedPart && selectedPart.kind !== 'breadboard') {
                         updatePart({ rotation: (selectedPart.rotation + 90) % 360 })
@@ -1756,12 +1781,12 @@ export default function App() {
           {/* Bottom Simulation Status Bar */}
           <div className="bottom-sim-bar">
             <div className="bottom-sim-left">
-              {counterValue !== undefined && (
+              {counterBits.length === 4 && (
                 <div className="counter-display-badge">
                   <span>CONTADOR:</span>
                   <strong>
-                    {counterValue.toString().padStart(2, '0')}{' '}
-                    <small>({[...counterBits].reverse().join('')})</small>
+                    {counterValue !== undefined ? counterValue.toString().padStart(2, '0') : '--'}{' '}
+                    <small>({[...counterBits].reverse().map(b => b ?? '?').join('')})</small>
                   </strong>
                 </div>
               )}

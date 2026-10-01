@@ -182,13 +182,24 @@ export function simulate(project: Project, state: Runtime, advanceClock = false)
   // Ripple clocks can trigger several flip-flops during one external edge.
   for (let wave = 0; wave < 16; wave++) {
     let changed = false
+    const inOverride = new Set<string>()
     for (const part of project.parts) {
       if (part.kind === 'library') {
         const model = String(part.properties?.simulationModel ?? '')
         const p = (pin: string) => pinId(part, pin)
         const powered = level(values, p('Power')) === '1' && level(values, p('Ground')) === '0'
         const read = (pin: string) => level(values, p(pin))
-        if (powered && updateExtractedSequential(model, part.id, runtime, read)) changed = true
+        if (powered) {
+          if (model === '74HC73' || model === '74HC74') {
+            for (const n of [1, 2]) {
+              const rst = read(`Reset ${n}`), setPin = model === '74HC74' ? read(`Set ${n}`) : '1'
+              if (rst === '0' || setPin === '0') inOverride.add(`${part.id}:${n}`)
+            }
+          } else if (model === '74HC93') {
+            if (read('Reset 1') === '1' && read('Reset 2') === '1') inOverride.add(`${part.id}:reset`)
+          }
+          if (updateExtractedSequential(model, part.id, runtime, read)) changed = true
+        }
         continue
       }
       if (part.kind !== 'dff7474' && part.kind !== 'jk74hc73') continue
@@ -199,6 +210,7 @@ export function simulate(project: Project, state: Runtime, advanceClock = false)
         const clk = level(values, p(`CLK${n}`))
         const pre = part.kind === 'jk74hc73' ? '1' : level(values, p(`PRE${n}`))
         const clr = level(values, p(`CLR${n}`))
+        if (powered && (pre === '0' || clr === '0')) inOverride.add(key)
         let next = runtime.q[key] ?? 'X'
         if (!powered || (pre === '0' && clr === '0')) next = 'X'
         else if (pre === '0' && clr === '1') next = '1'
@@ -220,6 +232,32 @@ export function simulate(project: Project, state: Runtime, advanceClock = false)
     }
     if (!changed) break
     values = settle()
+    if (inOverride.size > 0) {
+      for (const part of project.parts) {
+        if (part.kind === 'library') {
+          const model = String(part.properties?.simulationModel ?? '')
+          const p = (pin: string) => pinId(part, pin)
+          if (model === '74HC73' || model === '74HC74') {
+            for (const n of [1, 2]) {
+              if (inOverride.has(`${part.id}:${n}`)) {
+                runtime.prev_clock[`${part.id}:Clock ${n}`] = level(values, p(`Clock ${n}`))
+              }
+            }
+          } else if (model === '74HC93' && inOverride.has(`${part.id}:reset`)) {
+            runtime.prev_clock[`${part.id}:Clock 0`] = level(values, p('Clock 0'))
+            runtime.prev_clock[`${part.id}:Clock 1`] = level(values, p('Clock 1'))
+          }
+        }
+        if (part.kind !== 'dff7474' && part.kind !== 'jk74hc73') continue
+        const p = (pin: string) => pinId(part, canonicalChipPinName(part.kind, pin))
+        for (const n of [1, 2]) {
+          const key = `${part.id}:${n}`
+          if (inOverride.has(key)) {
+            runtime.prev_clock[key] = level(values, p(`CLK${n}`))
+          }
+        }
+      }
+    }
   }
   values = settle()
   const levels: Record<string, Level> = {}

@@ -273,6 +273,41 @@ fn ripple_counter_covers_zero_to_fifteen_and_wraps() {
 }
 
 #[test]
+fn ripple_counter_with_nand_reset_at_ten_resets_cleanly_to_zero() {
+    let mut p = counter();
+    p.wires.retain(|w| !w.to.contains("Redefinir"));
+    p.parts.push(part("u", "nand74hc00"));
+    p.wires.push(wire("v:PLUS", "u:Potência"));
+    p.wires.push(wire("v:MINUS", "u:Solo"));
+    p.wires.push(wire("a:Saída 2", "u:Entrada 1A"));
+    p.wires.push(wire("b:Saída 2", "u:Entrada 1B"));
+    p.wires.push(wire("u:Saída 1", "a:Redefinir 1"));
+    p.wires.push(wire("u:Saída 1", "a:Redefinir 2"));
+    p.wires.push(wire("u:Saída 1", "b:Redefinir 1"));
+    p.wires.push(wire("u:Saída 1", "b:Redefinir 2"));
+
+    let mut runtime = simulate_step(&p, runtime_zeroed(), false).runtime;
+    for cycle in 1..=30 {
+        runtime = simulate_step(&p, runtime, true).runtime;
+        runtime = simulate_step(&p, runtime, true).runtime;
+        let bits = ["a:1", "a:2", "b:1", "b:2"];
+        let count: usize = bits
+            .iter()
+            .enumerate()
+            .map(|(index, bit)| {
+                if runtime.q[*bit] == Level::High {
+                    1 << index
+                } else {
+                    0
+                }
+            })
+            .sum();
+        let expected = cycle % 10;
+        assert_eq!(count, expected, "cycle {cycle} expected {expected} got {count}");
+    }
+}
+
+#[test]
 fn project_deserialization_tolerant_to_missing_or_null_coordinates() {
     let json_missing_x = r#"{
         "version": 1,

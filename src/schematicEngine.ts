@@ -45,6 +45,7 @@ export type SchematicSymbolType =
   | 'ic_jk74hc73'
   | 'ic_nand74hc00'
   | 'ic_dff7474'
+  | 'ic_74hc93'
   | 'transistor_npn'
   | 'transistor_pnp'
   | 'sensor'
@@ -267,6 +268,7 @@ export function getSchematicSymbolType(part: Part, record?: LibraryRecord): Sche
     if (model === '74HC73') return 'ic_jk74hc73'
     if (model === '74HC00') return 'ic_nand74hc00'
     if (model === '74HC74') return 'ic_dff7474'
+    if (model === '74HC93') return 'ic_74hc93'
     if (model === '74HC08') return 'gate_and'
     if (model === '74HC32') return 'gate_or'
     if (model === '74HC04') return 'gate_not'
@@ -369,6 +371,7 @@ export function getDesignatorPrefix(type: SchematicSymbolType): string {
     case 'ic_jk74hc73':
     case 'ic_nand74hc00':
     case 'ic_dff7474':
+    case 'ic_74hc93':
     case 'ic_generic': return 'U'
     case 'transistor_npn':
     case 'transistor_pnp': return 'Q'
@@ -625,6 +628,26 @@ export function getComponentTerminals(
         pin('NQ2', '2Q̅', halfW + 6, 34, 'right', false, true),
       ]
       return { terminals, width, height, subText: '74HC74' }
+    }
+
+    case 'ic_74hc93': {
+      const width = 56
+      const height = 90
+      const halfW = width / 2
+      const terminals = [
+        pin('Clock 0', 'CP0', -halfW - 6, -30, 'left', true),
+        pin('Clock 1', 'CP1', -halfW - 6, -14, 'left', true),
+        pin('Reset 1', 'MR1', -halfW - 6, 14, 'left'),
+        pin('Reset 2', 'MR2', -halfW - 6, 30, 'left'),
+
+        pin('Power', 'VCC', halfW + 6, -34, 'right'),
+        pin('Output Bit 0', 'Q0', halfW + 6, -20, 'right'),
+        pin('Output Bit 1', 'Q1', halfW + 6, -6, 'right'),
+        pin('Output Bit 2', 'Q2', halfW + 6, 8, 'right'),
+        pin('Output Bit 3', 'Q3', halfW + 6, 22, 'right'),
+        pin('Ground', 'GND', halfW + 6, 36, 'right'),
+      ]
+      return { terminals, width, height, subText: '74HC93' }
     }
 
     case 'transistor_npn':

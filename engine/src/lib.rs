@@ -507,6 +507,7 @@ pub fn simulate_step(project: &Project, mut runtime: Runtime, advance_clock: boo
     let mut values = settle(project, &runtime, &nets);
     for _ in 0..16 {
         let mut changed = false;
+        let mut in_override = HashSet::new();
         for part in &project.parts {
             if part.kind != "dff7474" && part.kind != "jk74hc73" {
                 continue;
@@ -527,6 +528,9 @@ pub fn simulate_step(project: &Project, mut runtime: Runtime, advance_clock: boo
                     read(&format!("PRE{n}"))
                 };
                 let clr = read(&format!("CLR{n}"));
+                if powered && (pre == Level::Low || clr == Level::Low) {
+                    in_override.insert(key.clone());
+                }
                 let mut next = runtime.q.get(&key).copied().unwrap_or(Level::Unknown);
                 if !powered || (pre == Level::Low && clr == Level::Low) {
                     next = Level::Unknown;
@@ -571,6 +575,23 @@ pub fn simulate_step(project: &Project, mut runtime: Runtime, advance_clock: boo
             break;
         }
         values = settle(project, &runtime, &nets);
+        if !in_override.is_empty() {
+            for part in &project.parts {
+                if part.kind != "dff7474" && part.kind != "jk74hc73" {
+                    continue;
+                }
+                for n in 1..=2 {
+                    let key = format!("{}:{n}", part.id);
+                    if in_override.contains(&key) {
+                        let clk = nets.level(
+                            &values,
+                            &terminal(part, canonical_pin_name(&part.kind, &format!("CLK{n}"))),
+                        );
+                        runtime.prev_clock.insert(key, clk);
+                    }
+                }
+            }
+        }
     }
     values = settle(project, &runtime, &nets);
     let mut levels = HashMap::new();

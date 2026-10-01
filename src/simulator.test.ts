@@ -18,6 +18,28 @@ describe('contador de bancada', () => {
       expect(['led1', 'led2', 'led3', 'led4'].map(id => result.simulation.leds[id])).toEqual(bits)
     }
   })
+
+  it('reseta de forma limpa em 10 (módulo 10) com porta NAND conectada em Q1 e Q3', () => {
+    const project = demoProject()
+    project.wires = project.wires.filter(w => !['w38', 'w39', 'w56', 'w58', 'w78', 'w80'].includes(w.id))
+    project.wires.push({ id: 'w-nand-a', from: 'u1:Saída 2', to: 'u3:Entrada 1A', color: '#22c55e' })
+    project.wires.push({ id: 'w-nand-b', from: 'u2:Saída 2', to: 'u3:Entrada 1B', color: '#eab308' })
+    project.wires.push({ id: 'w-rst-u1-1', from: 'u3:Saída 1', to: 'u1:Redefinir 1', color: '#0284c7' })
+    project.wires.push({ id: 'w-rst-u1-2', from: 'u3:Saída 1', to: 'u1:Redefinir 2', color: '#0284c7' })
+    project.wires.push({ id: 'w-rst-u2-1', from: 'u3:Saída 1', to: 'u2:Redefinir 1', color: '#0284c7' })
+    project.wires.push({ id: 'w-rst-u2-2', from: 'u3:Saída 1', to: 'u2:Redefinir 2', color: '#0284c7' })
+
+    let runtime = simulate(project, initialRuntime(project)).runtime
+    for (let cycle = 1; cycle <= 30; cycle++) {
+      runtime = simulate(project, runtime, true).runtime
+      const result = simulate(project, runtime, true)
+      runtime = result.runtime
+      const bits = ['u1:1', 'u1:2', 'u2:1', 'u2:2'].map(key => result.simulation.q[key])
+      const value = bits.reduce<number>((sum, bit, index) => sum + (bit === '1' ? 2 ** index : 0), 0)
+      expect(value).toBe(cycle % 10)
+      expect(['led1', 'led2', 'led3', 'led4'].map(id => result.simulation.leds[id])).toEqual(bits)
+    }
+  })
 })
 
 describe('componentes editáveis', () => {

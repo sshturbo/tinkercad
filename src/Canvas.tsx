@@ -2,7 +2,7 @@ import { useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type Di
 import { board, boardGroup, boardPoint, columnX, isBreadboardPart, pinOffset, railY, rowY, terminalPosition, type Point } from './layout'
 import { pinId, pinNames, type Level, type Part, type Project, type Simulation, type Wire, type WirePoint } from './model'
 import { chipPinInfo, friendlyPinLabel } from './pinout'
-import { roundedWirePath } from './wireGeometry'
+import { roundedWirePath, snapBendPoint, wirePolylinePoints, type SnapGuide } from './wireGeometry'
 import { connectionTargets, nearestConnectionTarget, terminalLabel } from './connectionTargets'
 import { findDirectContact, isDirectContact } from './directContacts'
 import {
@@ -20,6 +20,7 @@ export type View = { x: number; y: number; width: number; height: number }
 type Drag =
   | { type: 'part'; part: string; start: Point; original: Project; initial: Point; moved: boolean }
   | { type: 'bend'; wireId: string; bendIndex: number; start: Point; original: Project; initial: Point; moved: boolean }
+  | { type: 'wire-segment'; wireId: string; segmentIndex: number; start: Point; original: Project; initialPoint: Point; moved: boolean }
 type Pan = { x: number; y: number; view: View }
 type Props = {
   project: Project
@@ -915,45 +916,11 @@ function Breadboard({
 }
 
 function wirePath(project: Project, wire: Wire, a: Point, b: Point): string {
-  if (wire.bends && wire.bends.length > 0) return roundedWirePath([a, ...wire.bends, b])
-  const from = project.parts.find(p => wire.from.startsWith(`${p.id}:`))
-  const to = project.parts.find(p => wire.to.startsWith(`${p.id}:`))
-  if (from?.kind === 'supply') {
-    const outside = board.x - 25
-    const belowPanel = wire.from.endsWith(':PLUS') ? a.y + 28 : a.y + 43
-    return roundedWirePath([a, { x: a.x, y: belowPanel }, { x: outside, y: belowPanel }, { x: outside, y: b.y }, b])
+  const points = wirePolylinePoints(project, wire, a, b)
+  if (points.length === 2 && (Math.abs(a.x - b.x) < 7 || Math.abs(a.y - b.y) < 7)) {
+    return `M ${a.x} ${a.y} L ${b.x} ${b.y}`
   }
-  if (to?.kind === 'supply') {
-    const outside = board.x - 25
-    const belowPanel = wire.to.endsWith(':PLUS') ? b.y + 28 : b.y + 43
-    return roundedWirePath([a, { x: outside, y: a.y }, { x: outside, y: belowPanel }, { x: b.x, y: belowPanel }, b])
-  }
-  if (from?.kind === 'generator') {
-    const outside = board.x - 20
-    const belowPanel = a.y + (wire.from.endsWith(':GND') ? 45 : 30)
-    if (wire.from.endsWith(':GND')) return roundedWirePath([a, { x: a.x, y: belowPanel }, { x: b.x, y: belowPanel }, b])
-    const upper = Math.min(b.y - 28, 276)
-    return roundedWirePath([a, { x: a.x, y: belowPanel }, { x: outside, y: belowPanel }, { x: outside, y: upper }, { x: b.x, y: upper }, b])
-  }
-  if (to?.kind === 'generator') {
-    const outside = board.x - 20
-    const belowPanel = b.y + (wire.to.endsWith(':GND') ? 45 : 30)
-    if (wire.to.endsWith(':GND')) return roundedWirePath([a, { x: a.x, y: belowPanel }, { x: b.x, y: belowPanel }, b])
-    const upper = Math.min(a.y - 28, 276)
-    return roundedWirePath([a, { x: a.x, y: upper }, { x: outside, y: upper }, { x: outside, y: belowPanel }, { x: b.x, y: belowPanel }, b])
-  }
-  if (Math.abs(a.x - b.x) < 7 || Math.abs(a.y - b.y) < 7) return `M ${a.x} ${a.y} L ${b.x} ${b.y}`
-  if (from && ['dff7474', 'jk74hc73', 'nand74hc00'].includes(from.kind)) {
-    const exitsTop = a.y < from.y
-    if (to && to.id === 'u3') {
-      const bottomLane = wire.from.includes('Saída 1') ? 456 : 446
-      return roundedWirePath([a, { x: a.x, y: bottomLane }, { x: b.x - 12, y: bottomLane }, { x: b.x - 12, y: b.y }, b])
-    }
-    const lane = to?.kind === 'resistor' ? (exitsTop ? 228 : 442) : exitsTop ? Math.min(a.y, b.y) - 28 : Math.max(a.y, b.y) + 28
-    return roundedWirePath([a, { x: a.x, y: lane }, { x: b.x, y: lane }, b])
-  }
-  const middle = (a.x + b.x) / 2
-  return roundedWirePath([a, { x: middle, y: a.y }, { x: middle, y: b.y }, b])
+  return roundedWirePath(points)
 }
 
 export default function Canvas({
@@ -982,6 +949,7 @@ export default function Canvas({
   const cursorRef = useRef<Point | undefined>(undefined)
   const [hoveredTerminal, setHoveredTerminal] = useState<string>()
   const [draggedPart, setDraggedPart] = useState<string>()
+  const [activeSnapGuides, setActiveSnapGuides] = useState<SnapGuide[]>([])
   const wireGesture = useRef<{ origin: string; x: number; y: number; moved: boolean } | null>(null)
   const suppressClick = useRef(false)
   const targets = useMemo(() => connectionTargets(project, libraryRecords), [project, libraryRecords])
@@ -1018,7 +986,7 @@ export default function Canvas({
 
   const targetAt = (e: PointerEvent<SVGSVGElement>) => {
     const element = e.target as Element
-    if (element.closest('.wire-bend-handle, .toggle-target')) return undefined
+    if (element.closest('.wire-bend-handle, .wire-midpoint-handle, .toggle-target')) return undefined
     const matrix = svgRef.current!.getScreenCTM()!
     const scale = Math.hypot(matrix.a, matrix.b)
     // Ignore holes underneath the body being dragged. Wires must not hide pins.
@@ -1077,23 +1045,126 @@ export default function Canvas({
     svgRef.current?.setPointerCapture(e.pointerId)
   }
 
+  const pointerDownMidpoint = (e: PointerEvent<SVGElement>, wireId: string, segmentIndex: number, midpoint: Point) => {
+    e.stopPropagation()
+    e.preventDefault()
+    if (pending) return
+    onSelect(wireId)
+    drag.current = {
+      type: 'wire-segment',
+      wireId,
+      segmentIndex,
+      start: toWorld(e),
+      original: project,
+      initialPoint: { ...midpoint },
+      moved: false,
+    }
+    svgRef.current?.setPointerCapture(e.pointerId)
+  }
+
+  const pointerDownWire = (e: PointerEvent<SVGElement>, wire: Wire) => {
+    e.stopPropagation()
+    if (pending) {
+      onWireBend(toWorld(e))
+      return
+    }
+    if (e.button !== 0) return
+    onSelect(wire.id)
+    const at = toWorld(e)
+    const a = terminalPosition(project, wire.from, libraryRecords)
+    const b = terminalPosition(project, wire.to, libraryRecords)
+    if (!a || !b) return
+
+    const poly = wirePolylinePoints(project, wire, a, b)
+    let bestDist = Infinity
+    let bestSegIdx = 0
+    let bestProj: Point = at
+
+    for (let i = 0; i < poly.length - 1; i++) {
+      const p1 = poly[i]
+      const p2 = poly[i + 1]
+      const l2 = (p2.x - p1.x) ** 2 + (p2.y - p1.y) ** 2
+      let t = l2 === 0 ? 0 : ((at.x - p1.x) * (p2.x - p1.x) + (at.y - p1.y) * (p2.y - p1.y)) / l2
+      t = Math.max(0, Math.min(1, t))
+      const projX = p1.x + t * (p2.x - p1.x)
+      const projY = p1.y + t * (p2.y - p1.y)
+      const dist = Math.hypot(at.x - projX, at.y - projY)
+      if (dist < bestDist) {
+        bestDist = dist
+        bestSegIdx = i
+        bestProj = { x: Math.round(projX), y: Math.round(projY) }
+      }
+    }
+
+    drag.current = {
+      type: 'wire-segment',
+      wireId: wire.id,
+      segmentIndex: bestSegIdx,
+      start: at,
+      original: project,
+      initialPoint: bestProj,
+      moved: false,
+    }
+    svgRef.current?.setPointerCapture(e.pointerId)
+  }
+
+  const removeBend = (wireId: string, bendIdx: number) => {
+    const wire = project.wires.find(w => w.id === wireId)
+    if (!wire || !wire.bends) return
+    const newBends = wire.bends.filter((_, i) => i !== bendIdx)
+    onUpdateWire?.(wireId, { bends: newBends.length ? newBends : undefined }, true)
+  }
+
   const pointerMove = (e: PointerEvent<SVGSVGElement>) => {
     if (drag.current) {
       const d = drag.current
       const at = toWorld(e)
       const dx = at.x - d.start.x,
         dy = at.y - d.start.y
-      if (Math.abs(dx) + Math.abs(dy) > 2) d.moved = true
+      if (!d.moved && Math.hypot(dx, dy) > 3) {
+        d.moved = true
+        if (d.type === 'wire-segment') {
+          const wire = project.wires.find(w => w.id === d.wireId)
+          if (wire) {
+            const a = terminalPosition(project, wire.from, libraryRecords)
+            const b = terminalPosition(project, wire.to, libraryRecords)
+            if (a && b) {
+              const currentBends = wire.bends ? [...wire.bends] : []
+              const insertIdx = Math.min(d.segmentIndex, currentBends.length)
+              const newBends = [...currentBends]
+              newBends.splice(insertIdx, 0, { x: d.initialPoint.x, y: d.initialPoint.y })
+              onUpdateWire?.(d.wireId, { bends: newBends }, false)
+              drag.current = {
+                type: 'bend',
+                wireId: d.wireId,
+                bendIndex: insertIdx,
+                start: d.start,
+                original: d.original,
+                initial: d.initialPoint,
+                moved: true,
+              }
+            }
+          }
+        }
+      }
       if (d.moved) {
         if (d.type === 'part') {
           onMovePart(d.part, Math.round(d.initial.x + dx), Math.round(d.initial.y + dy))
         } else if (d.type === 'bend') {
           const wire = project.wires.find(w => w.id === d.wireId)
           if (wire && wire.bends) {
-            const nextBends = wire.bends.map((b, i) =>
-              i === d.bendIndex ? { x: Math.round(d.initial.x + dx), y: Math.round(d.initial.y + dy) } : b
-            )
-            onUpdateWire?.(d.wireId, { bends: nextBends }, false)
+            const a = terminalPosition(project, wire.from, libraryRecords)
+            const b = terminalPosition(project, wire.to, libraryRecords)
+            if (a && b) {
+              const rawPoint = { x: Math.round(d.initial.x + dx), y: Math.round(d.initial.y + dy) }
+              const prev = d.bendIndex === 0 ? a : (wire.bends[d.bendIndex - 1] ?? a)
+              const next = d.bendIndex === wire.bends.length - 1 ? b : (wire.bends[d.bendIndex + 1] ?? b)
+              const { snapped, guides } = snapBendPoint(rawPoint, prev, next, a, b, 8)
+              setActiveSnapGuides(guides)
+
+              const nextBends = wire.bends.map((pt, i) => (i === d.bendIndex ? snapped : pt))
+              onUpdateWire?.(d.wireId, { bends: nextBends }, false)
+            }
           }
         }
       }
@@ -1133,6 +1204,7 @@ export default function Canvas({
   }
 
   const pointerUp = (e: PointerEvent<SVGSVGElement>) => {
+    setActiveSnapGuides([])
     const completedDrag = drag.current
     if (completedDrag?.moved) {
       if (completedDrag.type === 'part') {
@@ -1157,8 +1229,13 @@ export default function Canvas({
         } else {
           onMovePart(completedDrag.part, x, y)
         }
+        onDropPart(completedDrag.original)
+      } else if (completedDrag.type === 'bend') {
+        const currentWire = project.wires.find(w => w.id === completedDrag.wireId)
+        if (currentWire) {
+          onUpdateWire?.(completedDrag.wireId, { bends: currentWire.bends }, true)
+        }
       }
-      onDropPart(completedDrag.original)
     }
     const gesture = wireGesture.current
     if (gesture?.moved && pending === gesture.origin) {
@@ -1169,9 +1246,19 @@ export default function Canvas({
   }
 
   const pointerCancel = (e: PointerEvent<SVGSVGElement>) => {
+    setActiveSnapGuides([])
     // A cancelled gesture must never create a connection.
     if (wireGesture.current) onCancelWire()
-    if (drag.current?.moved) onDropPart(drag.current.original)
+    if (drag.current?.moved) {
+      if (drag.current.type === 'part') {
+        onDropPart(drag.current.original)
+      } else if (drag.current.type === 'bend') {
+        const origWire = drag.current.original.wires.find(w => w.id === (drag.current as any).wireId)
+        if (origWire) {
+          onUpdateWire?.(origWire.id, { bends: origWire.bends }, true)
+        }
+      }
+    }
     releasePointer(e)
     setHoveredTerminal(undefined)
   }
@@ -1193,6 +1280,29 @@ export default function Canvas({
   const highlightedTarget = targets.find(target => target.id === hoveredTerminal)
   const screenScale = svgRef.current?.getScreenCTM()?.a ?? 1
 
+  const selectedWireObj = project.wires.find(w => w.id === selected && !w.hidden)
+  const segmentMidpoints = useMemo(() => {
+    if (!selectedWireObj) return []
+    const a = terminalPosition(project, selectedWireObj.from, libraryRecords)
+    const b = terminalPosition(project, selectedWireObj.to, libraryRecords)
+    if (!a || !b) return []
+    const poly = wirePolylinePoints(project, selectedWireObj, a, b)
+    const midpoints: Array<{ x: number; y: number; segIdx: number }> = []
+    for (let i = 0; i < poly.length - 1; i++) {
+      const p1 = poly[i]
+      const p2 = poly[i + 1]
+      const dist = Math.hypot(p2.x - p1.x, p2.y - p1.y)
+      if (dist >= 16) {
+        midpoints.push({
+          x: Math.round((p1.x + p2.x) / 2),
+          y: Math.round((p1.y + p2.y) / 2),
+          segIdx: i,
+        })
+      }
+    }
+    return midpoints
+  }, [project, selectedWireObj, libraryRecords])
+
   return (
     <svg
       ref={svgRef}
@@ -1213,7 +1323,7 @@ export default function Canvas({
         }
       }}
       onPointerDown={e => {
-        if (e.target !== e.currentTarget && (e.target as Element).closest('.board-hole, .part, .wire, .terminal')) return
+        if (e.target !== e.currentTarget && (e.target as Element).closest('.board-hole, .part, .wire, .terminal, .wire-bend-handle, .wire-midpoint-handle, .wire-interaction-overlay')) return
         e.preventDefault()
         if (pending) {
           onWireBend(toWorld(e))
@@ -1309,150 +1419,222 @@ export default function Canvas({
       <rect x={-10000} y={-10000} width={20000} height={20000} fill="#ededed" />
       <rect x={-10000} y={-10000} width={20000} height={20000} fill="url(#dotGrid)" />
 
-      {/* Breadboards */}
-      {project.parts
-        .filter(part => part.kind === 'breadboard' || isBreadboardPart(part, libraryRecords))
-        .map(part => (
-          <Breadboard
-            key={part.id}
-            project={project}
-            part={part}
-            simulation={simulation}
-            libraryRecord={libraryRecords[libraryIdFromPart(part)]}
-            libraryRecords={libraryRecords}
-            pending={pending}
-            selected={selected === part.id}
-            onPointerDown={e => pointerDownPart(e, part)}
-          />
-        ))}
+      {/* Breadboards Layer */}
+      <g className="breadboards-layer">
+        {project.parts
+          .filter(part => part.kind === 'breadboard' || isBreadboardPart(part, libraryRecords))
+          .map(part => (
+            <Breadboard
+              key={part.id}
+              project={project}
+              part={part}
+              simulation={simulation}
+              libraryRecord={libraryRecords[libraryIdFromPart(part)]}
+              libraryRecords={libraryRecords}
+              pending={pending}
+              selected={selected === part.id}
+              onPointerDown={e => pointerDownPart(e, part)}
+            />
+          ))}
+      </g>
 
-      {/* Components (excluding breadboard) */}
-      {project.parts
-        .filter(part => part.kind !== 'breadboard' && !isBreadboardPart(part, libraryRecords))
-        .map(part => (
-          <PartFigure
-            key={part.id}
-            part={part}
-            project={project}
-            simulation={simulation}
-            libraryRecord={libraryRecords[libraryIdFromPart(part)]}
-            selected={selected === part.id}
-            onToggleButton={onToggleButton}
-            onPointerDown={e => pointerDownPart(e, part)}
-          />
-        ))}
+      {/* Wires Layer (rendered under components and on top of breadboards) */}
+      <g className="wires-layer">
+        {project.wires
+          .filter(wire => !wire.hidden)
+          .map((wire: Wire) => {
+            const a = terminalPosition(project, wire.from, libraryRecords),
+              b = terminalPosition(project, wire.to, libraryRecords)
+            if (!a || !b) return null
+            const path = wirePath(project, wire, a, b)
+            const isWireSelected = selected === wire.id
 
-      {/* Wires (rendered on top of breadboards and components) */}
-      {project.wires
-        .filter(wire => !wire.hidden)
-        .map((wire: Wire) => {
-          const a = terminalPosition(project, wire.from, libraryRecords),
-            b = terminalPosition(project, wire.to, libraryRecords)
-          if (!a || !b) return null
-          const path = wirePath(project, wire, a, b)
-          const isWireSelected = selected === wire.id
+            return (
+              <g
+                key={wire.id}
+                className={`wire ${isWireSelected ? 'wire-selected' : ''}`}
+                filter="url(#wireShadow)"
+                onPointerDown={e => pointerDownWire(e, wire)}
+                onClick={e => {
+                  e.stopPropagation()
+                  if (!pending) onSelect(wire.id)
+                }}
+              >
+                {/* Outer stroke / Selection ring */}
+                <path
+                  d={path}
+                  stroke={isWireSelected ? '#0082c3' : '#0f172a'}
+                  strokeWidth={isWireSelected ? 8.5 : 5.5}
+                  strokeOpacity={isWireSelected ? 1 : 0.22}
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
 
-          return (
-            <g
-              key={wire.id}
-              className="wire"
-              filter="url(#wireShadow)"
-              onPointerDown={e => {
-                e.stopPropagation()
-                if (pending) onWireBend(toWorld(e))
-              }}
-              onClick={e => {
-                e.stopPropagation()
-                if (!pending) onSelect(wire.id)
-              }}
-              onDoubleClick={e => {
-                e.stopPropagation()
-                e.preventDefault()
-                const pt = toWorld(e)
-                const currentBends = wire.bends ? [...wire.bends] : []
-                const poly = [a, ...currentBends, b]
-                let bestIdx = 0
-                let bestDist = Infinity
-                for (let i = 0; i < poly.length - 1; i++) {
-                  const p1 = poly[i]
-                  const p2 = poly[i + 1]
-                  const l2 = (p2.x - p1.x) ** 2 + (p2.y - p1.y) ** 2
-                  let t = l2 === 0 ? 0 : ((pt.x - p1.x) * (p2.x - p1.x) + (pt.y - p1.y) * (p2.y - p1.y)) / l2
-                  t = Math.max(0, Math.min(1, t))
-                  const projX = p1.x + t * (p2.x - p1.x)
-                  const projY = p1.y + t * (p2.y - p1.y)
-                  const dist = Math.hypot(pt.x - projX, pt.y - projY)
-                  if (dist < bestDist) {
-                    bestDist = dist
-                    bestIdx = i
-                  }
-                }
-                const newBends = [...currentBends]
-                newBends.splice(bestIdx, 0, { x: Math.round(pt.x), y: Math.round(pt.y) })
-                onUpdateWire?.(wire.id, { bends: newBends }, true)
-                onSelect(wire.id)
-              }}
-            >
-              {/* Outer stroke / Selection ring */}
-              <path
-                d={path}
-                stroke={isWireSelected ? '#0082c3' : '#0f172a'}
-                strokeWidth={isWireSelected ? 8.5 : 5.5}
-                strokeOpacity={isWireSelected ? 1 : 0.22}
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
+                {/* Core wire color */}
+                <path
+                  d={path}
+                  stroke={wire.color}
+                  strokeWidth={isWireSelected ? 5.5 : 4.5}
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
 
-              {/* Core wire color */}
-              <path
-                d={path}
-                stroke={wire.color}
-                strokeWidth={isWireSelected ? 5.5 : 4.5}
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
+                {/* Terminal Donut Rings at endpoints A and B */}
+                <g className="wire-terminals" pointerEvents="none">
+                  {/* Endpoint A */}
+                  <circle cx={a.x} cy={a.y} r={5} fill="#1e293b" opacity={0.65} />
+                  <circle cx={a.x} cy={a.y} r={3.8} fill={wire.color} stroke="#ffffff" strokeWidth={1} />
+                  <circle cx={a.x} cy={a.y} r={1.6} fill="#1e293b" />
 
-              {/* Terminal Donut Rings at endpoints A and B */}
-              <g className="wire-terminals" pointerEvents="none">
-                {/* Endpoint A */}
-                <circle cx={a.x} cy={a.y} r={5} fill="#1e293b" opacity={0.65} />
-                <circle cx={a.x} cy={a.y} r={3.8} fill={wire.color} stroke="#ffffff" strokeWidth={1} />
-                <circle cx={a.x} cy={a.y} r={1.6} fill="#1e293b" />
-
-                {/* Endpoint B */}
-                <circle cx={b.x} cy={b.y} r={5} fill="#1e293b" opacity={0.65} />
-                <circle cx={b.x} cy={b.y} r={3.8} fill={wire.color} stroke="#ffffff" strokeWidth={1} />
-                <circle cx={b.x} cy={b.y} r={1.6} fill="#1e293b" />
-              </g>
-
-              {/* Interactive bend point handles for selected wire */}
-              {isWireSelected && wire.bends && wire.bends.map((bend, bendIdx) => (
-                <g key={bendIdx} className="wire-bend-handle">
-                  <circle
-                    cx={bend.x}
-                    cy={bend.y}
-                    r={8}
-                    fill="transparent"
-                    cursor="move"
-                    onPointerDown={e => pointerDownBend(e, wire.id, bendIdx)}
-                  />
-                  <circle
-                    cx={bend.x}
-                    cy={bend.y}
-                    r={5}
-                    fill="#ffffff"
-                    stroke="#0284c7"
-                    strokeWidth={2.5}
-                    cursor="move"
-                    pointerEvents="none"
-                  />
+                  {/* Endpoint B */}
+                  <circle cx={b.x} cy={b.y} r={5} fill="#1e293b" opacity={0.65} />
+                  <circle cx={b.x} cy={b.y} r={3.8} fill={wire.color} stroke="#ffffff" strokeWidth={1} />
+                  <circle cx={b.x} cy={b.y} r={1.6} fill="#1e293b" />
                 </g>
-              ))}
+              </g>
+            )
+          })}
+      </g>
+
+      {/* Components Layer (rendered on top of wires) */}
+      <g className="components-layer">
+        {project.parts
+          .filter(part => part.kind !== 'breadboard' && !isBreadboardPart(part, libraryRecords))
+          .map(part => (
+            <PartFigure
+              key={part.id}
+              part={part}
+              project={project}
+              simulation={simulation}
+              libraryRecord={libraryRecords[libraryIdFromPart(part)]}
+              selected={selected === part.id}
+              onToggleButton={onToggleButton}
+              onPointerDown={e => pointerDownPart(e, part)}
+            />
+          ))}
+      </g>
+
+      {/* Selected Wire Interactive Handles & Snap Guides */}
+      {selectedWireObj && (
+        <g className="wire-interaction-overlay">
+          {/* Active snap guide lines and badges */}
+          {activeSnapGuides.map((guide, idx) => {
+            if (guide.type === 'x') {
+              return (
+                <g key={`guide-x-${idx}`} pointerEvents="none" className="snap-guide">
+                  <line
+                    x1={guide.pos}
+                    y1={view.y - 100}
+                    x2={guide.pos}
+                    y2={view.y + view.height + 100}
+                    stroke="#0284c7"
+                    strokeWidth={1.5}
+                    strokeDasharray="4 3"
+                    opacity={0.85}
+                  />
+                  {guide.label && (
+                    <g transform={`translate(${guide.pos} ${Math.max(view.y + 20, 160)}) scale(${1 / screenScale})`}>
+                      <rect x={-34} y={-10} width={68} height={20} rx={4} fill="#0284c7" />
+                      <text x={0} y={4} textAnchor="middle" fill="#ffffff" fontSize={11} fontWeight={700}>
+                        {guide.label}
+                      </text>
+                    </g>
+                  )}
+                </g>
+              )
+            } else {
+              return (
+                <g key={`guide-y-${idx}`} pointerEvents="none" className="snap-guide">
+                  <line
+                    x1={view.x - 100}
+                    y1={guide.pos}
+                    x2={view.x + view.width + 100}
+                    y2={guide.pos}
+                    stroke="#0284c7"
+                    strokeWidth={1.5}
+                    strokeDasharray="4 3"
+                    opacity={0.85}
+                  />
+                  {guide.label && (
+                    <g transform={`translate(${Math.max(view.x + 40, 170)} ${guide.pos}) scale(${1 / screenScale})`}>
+                      <rect x={-40} y={-10} width={80} height={20} rx={4} fill="#0284c7" />
+                      <text x={0} y={4} textAnchor="middle" fill="#ffffff" fontSize={11} fontWeight={700}>
+                        {guide.label}
+                      </text>
+                    </g>
+                  )}
+                </g>
+              )
+            }
+          })}
+
+          {/* Segment Midpoint Ghost Handles for direct grabbing and centering */}
+          {segmentMidpoints.map(mid => (
+            <g key={`mid-${mid.segIdx}`} className="wire-midpoint-handle" cursor="crosshair">
+              <circle
+                cx={mid.x}
+                cy={mid.y}
+                r={12}
+                fill="transparent"
+                onPointerDown={e => pointerDownMidpoint(e, selectedWireObj.id, mid.segIdx, mid)}
+              >
+                <title>Arraste para centralizar / criar curva</title>
+              </circle>
+              <circle
+                cx={mid.x}
+                cy={mid.y}
+                r={4}
+                fill="#ffffff"
+                stroke="#0284c7"
+                strokeWidth={2}
+                strokeDasharray="2 2"
+                opacity={0.9}
+                pointerEvents="none"
+              />
             </g>
-          )
-        })}
+          ))}
+
+          {/* Existing Bend Handles */}
+          {selectedWireObj.bends?.map((bend, bendIdx) => (
+            <g key={`bend-${bendIdx}`} className="wire-bend-handle">
+              <circle
+                cx={bend.x}
+                cy={bend.y}
+                r={12}
+                fill="transparent"
+                cursor="grab"
+                onPointerDown={e => pointerDownBend(e, selectedWireObj.id, bendIdx)}
+                onDoubleClick={e => {
+                  e.stopPropagation()
+                  e.preventDefault()
+                  removeBend(selectedWireObj.id, bendIdx)
+                }}
+              >
+                <title>Arraste para mover / Duplo clique para remover curva</title>
+              </circle>
+              <circle
+                cx={bend.x}
+                cy={bend.y}
+                r={5.5}
+                fill="#ffffff"
+                stroke="#0284c7"
+                strokeWidth={2.5}
+                cursor="grab"
+                pointerEvents="none"
+              />
+              <circle
+                cx={bend.x}
+                cy={bend.y}
+                r={2}
+                fill="#0284c7"
+                pointerEvents="none"
+              />
+            </g>
+          ))}
+        </g>
+      )}
 
       {/* Active draft wire being drawn */}
       {draftStart && (

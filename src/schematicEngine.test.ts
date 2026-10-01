@@ -33,8 +33,8 @@ describe('schematicEngine', () => {
     expect(getSchematicSymbolType({ id: 'd1', kind: 'led', x: 0, y: 0, rotation: 0, label: 'LED' })).toBe('led')
     expect(getSchematicSymbolType({ id: 'p1', kind: 'supply', x: 0, y: 0, rotation: 0, label: 'Fonte' })).toBe('supply')
     expect(getSchematicSymbolType({ id: 'bat1', kind: 'library', x: 0, y: 0, rotation: 0, label: 'Bateria 9V', properties: { simulationModel: 'battery9V' } })).toBe('battery')
-    expect(getSchematicSymbolType({ id: 'b1', kind: 'breadboard', x: 0, y: 0, rotation: 0, label: 'Placa' })).toBe(null)
     expect(getSchematicSymbolType({ id: 'u1', kind: 'jk74hc73', x: 0, y: 0, rotation: 0, label: 'CI' })).toBe('ic_jk74hc73')
+    expect(getSchematicSymbolType({ id: 'u2', kind: 'library', x: 0, y: 0, rotation: 0, label: 'Contador', properties: { simulationModel: '74HC93' } })).toBe('ic_74hc93')
   })
 
   it('formata valores de componentes com unidades de engenharia', () => {

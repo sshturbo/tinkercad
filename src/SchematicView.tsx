@@ -1005,6 +1005,7 @@ function ComponentSymbol({ comp, red }: { comp: SchematicComponent; red: string 
     case 'ic_jk74hc73':
     case 'ic_nand74hc00':
     case 'ic_dff7474':
+    case 'ic_74hc93':
     case 'sensor':
     case 'ic_generic':
     default: {
