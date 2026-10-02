@@ -62,4 +62,27 @@ describe('fios com dobras', () => {
     expect(points[0]).toEqual(a)
     expect(points[points.length - 1]).toEqual(b)
   })
+
+  it('preserva dobras intermediárias ao calcular pontos do fio', () => {
+    const project = demoProject()
+    const wireWithBends = {
+      ...project.wires[0],
+      bends: [
+        { x: 10, y: 100 },
+        { x: 100, y: 100 },
+      ],
+    }
+    const a = { x: 10, y: 20 }
+    const b = { x: 100, y: 200 }
+    const points = wirePolylinePoints(project, wireWithBends, a, b)
+    expect(points).toEqual([
+      { x: 10, y: 20 },
+      { x: 10, y: 100 },
+      { x: 100, y: 100 },
+      { x: 100, y: 200 },
+    ])
+    const path = roundedWirePath(points)
+    expect(path).toContain('M 10 20')
+    expect(path).toContain('100 200')
+  })
 })

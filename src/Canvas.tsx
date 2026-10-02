@@ -19,8 +19,9 @@ import {
 export type View = { x: number; y: number; width: number; height: number }
 type Drag =
   | { type: 'part'; part: string; start: Point; original: Project; initial: Point; moved: boolean }
-  | { type: 'bend'; wireId: string; bendIndex: number; start: Point; original: Project; initial: Point; moved: boolean }
-  | { type: 'wire-segment'; wireId: string; segmentIndex: number; start: Point; original: Project; initialPoint: Point; moved: boolean }
+  | { type: 'bend'; wireId: string; bendIndex: number; start: Point; original: Project; initial: Point; currentBends: Point[]; moved: boolean }
+  | { type: 'wire-segment'; wireId: string; segmentIndex: number; start: Point; original: Project; initialPoint: Point; currentBends: Point[]; moved: boolean }
+  | { type: 'endpoint'; wireId: string; endpoint: 'from' | 'to'; start: Point; original: Project; currentPos: Point; targetTerminal?: string; moved: boolean }
 type Pan = { x: number; y: number; view: View }
 type Props = {
   project: Project
@@ -950,6 +951,7 @@ export default function Canvas({
   const [hoveredTerminal, setHoveredTerminal] = useState<string>()
   const [draggedPart, setDraggedPart] = useState<string>()
   const [activeSnapGuides, setActiveSnapGuides] = useState<SnapGuide[]>([])
+  const [dragEndpointPreview, setDragEndpointPreview] = useState<{ wireId: string; endpoint: 'from' | 'to'; pos: Point } | undefined>()
   const wireGesture = useRef<{ origin: string; x: number; y: number; moved: boolean } | null>(null)
   const suppressClick = useRef(false)
   const targets = useMemo(() => connectionTargets(project, libraryRecords), [project, libraryRecords])
@@ -986,13 +988,20 @@ export default function Canvas({
 
   const targetAt = (e: PointerEvent<SVGSVGElement>) => {
     const element = e.target as Element
-    if (element.closest('.wire-bend-handle, .wire-midpoint-handle, .toggle-target')) return undefined
+    if (element.closest('.wire-bend-handle, .wire-midpoint-handle, .wire-endpoint-handle, .toggle-target')) return undefined
+    if (!pending && element.closest('.wire, .wire-terminals, .wire-interaction-overlay')) return undefined
     const matrix = svgRef.current!.getScreenCTM()!
     const scale = Math.hypot(matrix.a, matrix.b)
     // Ignore holes underneath the body being dragged. Wires must not hide pins.
     const partId = !pending ? element.closest('[data-part]')?.getAttribute('data-part') : undefined
     const candidates = partId ? targets.filter(target => target.partId === partId) : targets
     return nearestConnectionTarget(candidates, toWorld(e), (pending ? 14 : 10) / scale)
+  }
+
+  const findConnectionTarget = (at: Point) => {
+    const matrix = svgRef.current?.getScreenCTM()
+    const scale = matrix ? Math.hypot(matrix.a, matrix.b) : 1
+    return nearestConnectionTarget(targets, at, 16 / scale)
   }
 
   const pointerDownCapture = (e: PointerEvent<SVGSVGElement>) => {
@@ -1033,6 +1042,7 @@ export default function Canvas({
     const wire = project.wires.find(w => w.id === wireId)
     if (!wire || !wire.bends || !wire.bends[bendIndex]) return
     onSelect(wireId)
+    const currentBends = wire.bends.map(p => ({ ...p }))
     drag.current = {
       type: 'bend',
       wireId,
@@ -1040,6 +1050,7 @@ export default function Canvas({
       start: toWorld(e),
       original: project,
       initial: { ...wire.bends[bendIndex] },
+      currentBends,
       moved: false,
     }
     svgRef.current?.setPointerCapture(e.pointerId)
@@ -1049,17 +1060,81 @@ export default function Canvas({
     e.stopPropagation()
     e.preventDefault()
     if (pending) return
+    const wire = project.wires.find(w => w.id === wireId)
+    if (!wire) return
     onSelect(wireId)
+    const baseBends = wire.bends ? wire.bends.map(p => ({ ...p })) : []
+    const insertIdx = Math.min(segmentIndex, baseBends.length)
+    baseBends.splice(insertIdx, 0, { ...midpoint })
     drag.current = {
-      type: 'wire-segment',
+      type: 'bend',
       wireId,
-      segmentIndex,
+      bendIndex: insertIdx,
       start: toWorld(e),
       original: project,
-      initialPoint: { ...midpoint },
+      initial: { ...midpoint },
+      currentBends: baseBends,
+      moved: true,
+    }
+    onUpdateWire?.(wireId, { bends: baseBends }, false)
+    svgRef.current?.setPointerCapture(e.pointerId)
+  }
+
+  const pointerDownEndpoint = (e: PointerEvent<SVGElement>, wireId: string, endpoint: 'from' | 'to') => {
+    e.stopPropagation()
+    e.preventDefault()
+    if (pending) return
+    const wire = project.wires.find(w => w.id === wireId)
+    if (!wire) return
+    onSelect(wireId)
+    const termId = endpoint === 'from' ? wire.from : wire.to
+    const pos = terminalPosition(project, termId, libraryRecords)
+    if (!pos) return
+    drag.current = {
+      type: 'endpoint',
+      wireId,
+      endpoint,
+      start: toWorld(e),
+      original: project,
+      currentPos: pos,
+      targetTerminal: termId,
       moved: false,
     }
     svgRef.current?.setPointerCapture(e.pointerId)
+  }
+
+  const insertBendAtPoint = (wireId: string, at: Point) => {
+    const wire = project.wires.find(w => w.id === wireId)
+    if (!wire) return
+    const a = terminalPosition(project, wire.from, libraryRecords)
+    const b = terminalPosition(project, wire.to, libraryRecords)
+    if (!a || !b) return
+    const poly = wirePolylinePoints(project, wire, a, b)
+    let bestDist = Infinity
+    let bestSegIdx = 0
+    let bestProj: Point = at
+
+    for (let i = 0; i < poly.length - 1; i++) {
+      const p1 = poly[i]
+      const p2 = poly[i + 1]
+      const l2 = (p2.x - p1.x) ** 2 + (p2.y - p1.y) ** 2
+      let t = l2 === 0 ? 0 : ((at.x - p1.x) * (p2.x - p1.x) + (at.y - p1.y) * (p2.y - p1.y)) / l2
+      t = Math.max(0, Math.min(1, t))
+      const projX = p1.x + t * (p2.x - p1.x)
+      const projY = p1.y + t * (p2.y - p1.y)
+      const dist = Math.hypot(at.x - projX, at.y - projY)
+      if (dist < bestDist) {
+        bestDist = dist
+        bestSegIdx = i
+        bestProj = { x: Math.round(projX), y: Math.round(projY) }
+      }
+    }
+
+    const currentBends = wire.bends ? [...wire.bends.map(p => ({ ...p }))] : []
+    const insertIdx = Math.min(bestSegIdx, currentBends.length)
+    currentBends.splice(insertIdx, 0, bestProj)
+    onUpdateWire?.(wireId, { bends: currentBends }, true)
+    onSelect(wireId)
   }
 
   const pointerDownWire = (e: PointerEvent<SVGElement>, wire: Wire) => {
@@ -1096,6 +1171,7 @@ export default function Canvas({
       }
     }
 
+    const currentBends = wire.bends ? wire.bends.map(p => ({ ...p })) : []
     drag.current = {
       type: 'wire-segment',
       wireId: wire.id,
@@ -1103,6 +1179,7 @@ export default function Canvas({
       start: at,
       original: project,
       initialPoint: bestProj,
+      currentBends,
       moved: false,
     }
     svgRef.current?.setPointerCapture(e.pointerId)
@@ -1117,55 +1194,68 @@ export default function Canvas({
 
   const pointerMove = (e: PointerEvent<SVGSVGElement>) => {
     if (drag.current) {
-      const d = drag.current
+      let activeDrag = drag.current
       const at = toWorld(e)
-      const dx = at.x - d.start.x,
-        dy = at.y - d.start.y
-      if (!d.moved && Math.hypot(dx, dy) > 3) {
-        d.moved = true
-        if (d.type === 'wire-segment') {
-          const wire = project.wires.find(w => w.id === d.wireId)
-          if (wire) {
-            const a = terminalPosition(project, wire.from, libraryRecords)
-            const b = terminalPosition(project, wire.to, libraryRecords)
-            if (a && b) {
-              const currentBends = wire.bends ? [...wire.bends] : []
-              const insertIdx = Math.min(d.segmentIndex, currentBends.length)
-              const newBends = [...currentBends]
-              newBends.splice(insertIdx, 0, { x: d.initialPoint.x, y: d.initialPoint.y })
-              onUpdateWire?.(d.wireId, { bends: newBends }, false)
-              drag.current = {
-                type: 'bend',
-                wireId: d.wireId,
-                bendIndex: insertIdx,
-                start: d.start,
-                original: d.original,
-                initial: d.initialPoint,
-                moved: true,
-              }
-            }
+      const dx = at.x - activeDrag.start.x,
+        dy = at.y - activeDrag.start.y
+      if (!activeDrag.moved && Math.hypot(dx, dy) > 8) {
+        activeDrag.moved = true
+        if (activeDrag.type === 'wire-segment') {
+          const insertIdx = Math.min(activeDrag.segmentIndex, activeDrag.currentBends.length)
+          const newBends = [...activeDrag.currentBends]
+          newBends.splice(insertIdx, 0, { x: activeDrag.initialPoint.x, y: activeDrag.initialPoint.y })
+          onUpdateWire?.(activeDrag.wireId, { bends: newBends }, false)
+          activeDrag = {
+            type: 'bend',
+            wireId: activeDrag.wireId,
+            bendIndex: insertIdx,
+            start: activeDrag.start,
+            original: activeDrag.original,
+            initial: activeDrag.initialPoint,
+            currentBends: newBends,
+            moved: true,
           }
+          drag.current = activeDrag
         }
       }
-      if (d.moved) {
-        if (d.type === 'part') {
-          onMovePart(d.part, Math.round(d.initial.x + dx), Math.round(d.initial.y + dy))
-        } else if (d.type === 'bend') {
-          const wire = project.wires.find(w => w.id === d.wireId)
-          if (wire && wire.bends) {
+      if (activeDrag.moved) {
+        if (activeDrag.type === 'part') {
+          onMovePart(activeDrag.part, Math.round(activeDrag.initial.x + dx), Math.round(activeDrag.initial.y + dy))
+        } else if (activeDrag.type === 'bend') {
+          const wire = project.wires.find(w => w.id === activeDrag.wireId)
+          if (wire && activeDrag.currentBends) {
             const a = terminalPosition(project, wire.from, libraryRecords)
             const b = terminalPosition(project, wire.to, libraryRecords)
             if (a && b) {
-              const rawPoint = { x: Math.round(d.initial.x + dx), y: Math.round(d.initial.y + dy) }
-              const prev = d.bendIndex === 0 ? a : (wire.bends[d.bendIndex - 1] ?? a)
-              const next = d.bendIndex === wire.bends.length - 1 ? b : (wire.bends[d.bendIndex + 1] ?? b)
+              const rawPoint = at
+              const prev = activeDrag.bendIndex === 0 ? a : (activeDrag.currentBends[activeDrag.bendIndex - 1] ?? a)
+              const next =
+                activeDrag.bendIndex === activeDrag.currentBends.length - 1
+                  ? b
+                  : (activeDrag.currentBends[activeDrag.bendIndex + 1] ?? b)
               const { snapped, guides } = snapBendPoint(rawPoint, prev, next, a, b, 8)
               setActiveSnapGuides(guides)
 
-              const nextBends = wire.bends.map((pt, i) => (i === d.bendIndex ? snapped : pt))
-              onUpdateWire?.(d.wireId, { bends: nextBends }, false)
+              activeDrag.currentBends[activeDrag.bendIndex] = snapped
+              onUpdateWire?.(activeDrag.wireId, { bends: [...activeDrag.currentBends] }, false)
             }
           }
+        } else if (activeDrag.type === 'endpoint') {
+          const target = findConnectionTarget(at)
+          const targetId = target?.id
+          const wire = project.wires.find(w => w.id === activeDrag.wireId)
+          const otherTerminal = wire ? (activeDrag.endpoint === 'from' ? wire.to : wire.from) : undefined
+          const isValidTarget = targetId && targetId !== otherTerminal
+
+          activeDrag.currentPos = isValidTarget && target ? { x: target.x, y: target.y } : at
+          activeDrag.targetTerminal = isValidTarget ? targetId : undefined
+          setHoveredTerminal(isValidTarget ? targetId : undefined)
+
+          setDragEndpointPreview({
+            wireId: activeDrag.wireId,
+            endpoint: activeDrag.endpoint,
+            pos: activeDrag.currentPos,
+          })
         }
       }
     } else if (pan.current) {
@@ -1200,6 +1290,7 @@ export default function Canvas({
     pan.current = null
     wireGesture.current = null
     setDraggedPart(undefined)
+    setDragEndpointPreview(undefined)
     if (svgRef.current?.hasPointerCapture(e.pointerId)) svgRef.current.releasePointerCapture(e.pointerId)
   }
 
@@ -1208,9 +1299,6 @@ export default function Canvas({
     const completedDrag = drag.current
     if (completedDrag?.moved) {
       if (completedDrag.type === 'part') {
-        // Pointer capture can deliver a final pointerup position without a
-        // matching pointermove. Apply that position before resolving a snap so
-        // releasing near a terminal always has the same result as the preview.
         const at = toWorld(e)
         const x = Math.round(completedDrag.initial.x + at.x - completedDrag.start.x)
         const y = Math.round(completedDrag.initial.y + at.y - completedDrag.start.y)
@@ -1231,9 +1319,21 @@ export default function Canvas({
         }
         onDropPart(completedDrag.original)
       } else if (completedDrag.type === 'bend') {
-        const currentWire = project.wires.find(w => w.id === completedDrag.wireId)
-        if (currentWire) {
-          onUpdateWire?.(completedDrag.wireId, { bends: currentWire.bends }, true)
+        onUpdateWire?.(
+          completedDrag.wireId,
+          { bends: completedDrag.currentBends.length ? completedDrag.currentBends : undefined },
+          true,
+        )
+      } else if (completedDrag.type === 'endpoint') {
+        setDragEndpointPreview(undefined)
+        if (completedDrag.targetTerminal) {
+          const wire = project.wires.find(w => w.id === completedDrag.wireId)
+          if (wire) {
+            const currentTerminal = completedDrag.endpoint === 'from' ? wire.from : wire.to
+            if (completedDrag.targetTerminal !== currentTerminal) {
+              onUpdateWire?.(completedDrag.wireId, { [completedDrag.endpoint]: completedDrag.targetTerminal }, true)
+            }
+          }
         }
       }
     }
@@ -1247,16 +1347,18 @@ export default function Canvas({
 
   const pointerCancel = (e: PointerEvent<SVGSVGElement>) => {
     setActiveSnapGuides([])
-    // A cancelled gesture must never create a connection.
     if (wireGesture.current) onCancelWire()
-    if (drag.current?.moved) {
-      if (drag.current.type === 'part') {
-        onDropPart(drag.current.original)
-      } else if (drag.current.type === 'bend') {
-        const origWire = drag.current.original.wires.find(w => w.id === (drag.current as any).wireId)
+    const d = drag.current
+    if (d?.moved) {
+      if (d.type === 'part') {
+        onDropPart(d.original)
+      } else if (d.type === 'bend') {
+        const origWire = d.original.wires.find(w => w.id === d.wireId)
         if (origWire) {
           onUpdateWire?.(origWire.id, { bends: origWire.bends }, true)
         }
+      } else if (d.type === 'endpoint') {
+        setDragEndpointPreview(undefined)
       }
     }
     releasePointer(e)
@@ -1283,8 +1385,12 @@ export default function Canvas({
   const selectedWireObj = project.wires.find(w => w.id === selected && !w.hidden)
   const segmentMidpoints = useMemo(() => {
     if (!selectedWireObj) return []
-    const a = terminalPosition(project, selectedWireObj.from, libraryRecords)
-    const b = terminalPosition(project, selectedWireObj.to, libraryRecords)
+    let a = terminalPosition(project, selectedWireObj.from, libraryRecords)
+    let b = terminalPosition(project, selectedWireObj.to, libraryRecords)
+    if (dragEndpointPreview && dragEndpointPreview.wireId === selectedWireObj.id) {
+      if (dragEndpointPreview.endpoint === 'from') a = dragEndpointPreview.pos
+      if (dragEndpointPreview.endpoint === 'to') b = dragEndpointPreview.pos
+    }
     if (!a || !b) return []
     const poly = wirePolylinePoints(project, selectedWireObj, a, b)
     const midpoints: Array<{ x: number; y: number; segIdx: number }> = []
@@ -1301,7 +1407,7 @@ export default function Canvas({
       }
     }
     return midpoints
-  }, [project, selectedWireObj, libraryRecords])
+  }, [project, selectedWireObj, libraryRecords, dragEndpointPreview])
 
   return (
     <svg
@@ -1323,7 +1429,7 @@ export default function Canvas({
         }
       }}
       onPointerDown={e => {
-        if (e.target !== e.currentTarget && (e.target as Element).closest('.board-hole, .part, .wire, .terminal, .wire-bend-handle, .wire-midpoint-handle, .wire-interaction-overlay')) return
+        if (e.target !== e.currentTarget && (e.target as Element).closest('.board-hole, .part, .wire, .terminal, .wire-bend-handle, .wire-midpoint-handle, .wire-endpoint-handle, .wire-interaction-overlay')) return
         e.preventDefault()
         if (pending) {
           onWireBend(toWorld(e))
@@ -1443,8 +1549,12 @@ export default function Canvas({
         {project.wires
           .filter(wire => !wire.hidden)
           .map((wire: Wire) => {
-            const a = terminalPosition(project, wire.from, libraryRecords),
-              b = terminalPosition(project, wire.to, libraryRecords)
+            let a = terminalPosition(project, wire.from, libraryRecords)
+            let b = terminalPosition(project, wire.to, libraryRecords)
+            if (dragEndpointPreview && dragEndpointPreview.wireId === wire.id) {
+              if (dragEndpointPreview.endpoint === 'from') a = dragEndpointPreview.pos
+              if (dragEndpointPreview.endpoint === 'to') b = dragEndpointPreview.pos
+            }
             if (!a || !b) return null
             const path = wirePath(project, wire, a, b)
             const isWireSelected = selected === wire.id
@@ -1458,6 +1568,11 @@ export default function Canvas({
                 onClick={e => {
                   e.stopPropagation()
                   if (!pending) onSelect(wire.id)
+                }}
+                onDoubleClick={e => {
+                  e.stopPropagation()
+                  e.preventDefault()
+                  if (!pending) insertBendAtPoint(wire.id, toWorld(e))
                 }}
               >
                 {/* Outer stroke / Selection ring */}
@@ -1517,124 +1632,206 @@ export default function Canvas({
       </g>
 
       {/* Selected Wire Interactive Handles & Snap Guides */}
-      {selectedWireObj && (
-        <g className="wire-interaction-overlay">
-          {/* Active snap guide lines and badges */}
-          {activeSnapGuides.map((guide, idx) => {
-            if (guide.type === 'x') {
-              return (
-                <g key={`guide-x-${idx}`} pointerEvents="none" className="snap-guide">
-                  <line
-                    x1={guide.pos}
-                    y1={view.y - 100}
-                    x2={guide.pos}
-                    y2={view.y + view.height + 100}
-                    stroke="#0284c7"
-                    strokeWidth={1.5}
-                    strokeDasharray="4 3"
-                    opacity={0.85}
-                  />
-                  {guide.label && (
-                    <g transform={`translate(${guide.pos} ${Math.max(view.y + 20, 160)}) scale(${1 / screenScale})`}>
-                      <rect x={-34} y={-10} width={68} height={20} rx={4} fill="#0284c7" />
-                      <text x={0} y={4} textAnchor="middle" fill="#ffffff" fontSize={11} fontWeight={700}>
-                        {guide.label}
-                      </text>
-                    </g>
-                  )}
-                </g>
-              )
-            } else {
-              return (
-                <g key={`guide-y-${idx}`} pointerEvents="none" className="snap-guide">
-                  <line
-                    x1={view.x - 100}
-                    y1={guide.pos}
-                    x2={view.x + view.width + 100}
-                    y2={guide.pos}
-                    stroke="#0284c7"
-                    strokeWidth={1.5}
-                    strokeDasharray="4 3"
-                    opacity={0.85}
-                  />
-                  {guide.label && (
-                    <g transform={`translate(${Math.max(view.x + 40, 170)} ${guide.pos}) scale(${1 / screenScale})`}>
-                      <rect x={-40} y={-10} width={80} height={20} rx={4} fill="#0284c7" />
-                      <text x={0} y={4} textAnchor="middle" fill="#ffffff" fontSize={11} fontWeight={700}>
-                        {guide.label}
-                      </text>
-                    </g>
-                  )}
-                </g>
-              )
-            }
-          })}
+      {selectedWireObj && (() => {
+        let a = terminalPosition(project, selectedWireObj.from, libraryRecords)
+        let b = terminalPosition(project, selectedWireObj.to, libraryRecords)
+        if (dragEndpointPreview && dragEndpointPreview.wireId === selectedWireObj.id) {
+          if (dragEndpointPreview.endpoint === 'from') a = dragEndpointPreview.pos
+          if (dragEndpointPreview.endpoint === 'to') b = dragEndpointPreview.pos
+        }
+        if (!a || !b) return null
+        const overlayPath = wirePath(project, selectedWireObj, a, b)
 
-          {/* Segment Midpoint Ghost Handles for direct grabbing and centering */}
-          {segmentMidpoints.map(mid => (
-            <g key={`mid-${mid.segIdx}`} className="wire-midpoint-handle" cursor="crosshair">
+        return (
+          <g className="wire-interaction-overlay">
+            {/* Overlay highlight on top of components so selected wire route is always visible */}
+            <path
+              d={overlayPath}
+              stroke="#0284c7"
+              strokeWidth={3}
+              strokeDasharray="4 4"
+              strokeOpacity={0.8}
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              pointerEvents="none"
+            />
+
+            {/* Active snap guide lines and badges */}
+            {activeSnapGuides.map((guide, idx) => {
+              if (guide.type === 'x') {
+                return (
+                  <g key={`guide-x-${idx}`} pointerEvents="none" className="snap-guide">
+                    <line
+                      x1={guide.pos}
+                      y1={view.y - 100}
+                      x2={guide.pos}
+                      y2={view.y + view.height + 100}
+                      stroke="#0284c7"
+                      strokeWidth={1.5}
+                      strokeDasharray="4 3"
+                      opacity={0.85}
+                    />
+                    {guide.label && (
+                      <g transform={`translate(${guide.pos} ${Math.max(view.y + 20, 160)}) scale(${1 / screenScale})`}>
+                        <rect x={-34} y={-10} width={68} height={20} rx={4} fill="#0284c7" />
+                        <text x={0} y={4} textAnchor="middle" fill="#ffffff" fontSize={11} fontWeight={700}>
+                          {guide.label}
+                        </text>
+                      </g>
+                    )}
+                  </g>
+                )
+              } else {
+                return (
+                  <g key={`guide-y-${idx}`} pointerEvents="none" className="snap-guide">
+                    <line
+                      x1={view.x - 100}
+                      y1={guide.pos}
+                      x2={view.x + view.width + 100}
+                      y2={guide.pos}
+                      stroke="#0284c7"
+                      strokeWidth={1.5}
+                      strokeDasharray="4 3"
+                      opacity={0.85}
+                    />
+                    {guide.label && (
+                      <g transform={`translate(${Math.max(view.x + 40, 170)} ${guide.pos}) scale(${1 / screenScale})`}>
+                        <rect x={-40} y={-10} width={80} height={20} rx={4} fill="#0284c7" />
+                        <text x={0} y={4} textAnchor="middle" fill="#ffffff" fontSize={11} fontWeight={700}>
+                          {guide.label}
+                        </text>
+                      </g>
+                    )}
+                  </g>
+                )
+              }
+            })}
+
+            {/* Segment Midpoint Ghost Handles for direct grabbing and centering */}
+            {segmentMidpoints.map(mid => (
+              <g key={`mid-${mid.segIdx}`} className="wire-midpoint-handle" cursor="crosshair">
+                <circle
+                  cx={mid.x}
+                  cy={mid.y}
+                  r={12}
+                  fill="transparent"
+                  onPointerDown={e => pointerDownMidpoint(e, selectedWireObj.id, mid.segIdx, mid)}
+                >
+                  <title>Arraste para centralizar / criar curva</title>
+                </circle>
+                <circle
+                  cx={mid.x}
+                  cy={mid.y}
+                  r={4}
+                  fill="#ffffff"
+                  stroke="#0284c7"
+                  strokeWidth={2}
+                  strokeDasharray="2 2"
+                  opacity={0.9}
+                  pointerEvents="none"
+                />
+              </g>
+            ))}
+
+            {/* Existing Bend Handles */}
+            {selectedWireObj.bends?.map((bend, bendIdx) => (
+              <g key={`bend-${bendIdx}`} className="wire-bend-handle">
+                <circle
+                  cx={bend.x}
+                  cy={bend.y}
+                  r={12}
+                  fill="transparent"
+                  cursor="grab"
+                  onPointerDown={e => pointerDownBend(e, selectedWireObj.id, bendIdx)}
+                  onDoubleClick={e => {
+                    e.stopPropagation()
+                    e.preventDefault()
+                    removeBend(selectedWireObj.id, bendIdx)
+                  }}
+                >
+                  <title>Arraste para mover / Duplo clique para remover curva</title>
+                </circle>
+                <circle
+                  cx={bend.x}
+                  cy={bend.y}
+                  r={5.5}
+                  fill="#ffffff"
+                  stroke="#0284c7"
+                  strokeWidth={2.5}
+                  cursor="grab"
+                  pointerEvents="none"
+                />
+                <circle
+                  cx={bend.x}
+                  cy={bend.y}
+                  r={2}
+                  fill="#0284c7"
+                  pointerEvents="none"
+                />
+              </g>
+            ))}
+
+            {/* Endpoint A Handle (Reconnecting wire to another hole) */}
+            <g className="wire-endpoint-handle" cursor="grab">
               <circle
-                cx={mid.x}
-                cy={mid.y}
-                r={12}
+                cx={a.x}
+                cy={a.y}
+                r={13}
                 fill="transparent"
-                onPointerDown={e => pointerDownMidpoint(e, selectedWireObj.id, mid.segIdx, mid)}
+                onPointerDown={e => pointerDownEndpoint(e, selectedWireObj.id, 'from')}
               >
-                <title>Arraste para centralizar / criar curva</title>
+                <title>Arraste para reconectar este terminal a outro furo</title>
               </circle>
               <circle
-                cx={mid.x}
-                cy={mid.y}
-                r={4}
-                fill="#ffffff"
-                stroke="#0284c7"
-                strokeWidth={2}
-                strokeDasharray="2 2"
-                opacity={0.9}
-                pointerEvents="none"
-              />
-            </g>
-          ))}
-
-          {/* Existing Bend Handles */}
-          {selectedWireObj.bends?.map((bend, bendIdx) => (
-            <g key={`bend-${bendIdx}`} className="wire-bend-handle">
-              <circle
-                cx={bend.x}
-                cy={bend.y}
-                r={12}
-                fill="transparent"
-                cursor="grab"
-                onPointerDown={e => pointerDownBend(e, selectedWireObj.id, bendIdx)}
-                onDoubleClick={e => {
-                  e.stopPropagation()
-                  e.preventDefault()
-                  removeBend(selectedWireObj.id, bendIdx)
-                }}
-              >
-                <title>Arraste para mover / Duplo clique para remover curva</title>
-              </circle>
-              <circle
-                cx={bend.x}
-                cy={bend.y}
-                r={5.5}
+                cx={a.x}
+                cy={a.y}
+                r={6}
                 fill="#ffffff"
                 stroke="#0284c7"
                 strokeWidth={2.5}
-                cursor="grab"
                 pointerEvents="none"
               />
               <circle
-                cx={bend.x}
-                cy={bend.y}
+                cx={a.x}
+                cy={a.y}
                 r={2}
                 fill="#0284c7"
                 pointerEvents="none"
               />
             </g>
-          ))}
-        </g>
-      )}
+
+            {/* Endpoint B Handle (Reconnecting wire to another hole) */}
+            <g className="wire-endpoint-handle" cursor="grab">
+              <circle
+                cx={b.x}
+                cy={b.y}
+                r={13}
+                fill="transparent"
+                onPointerDown={e => pointerDownEndpoint(e, selectedWireObj.id, 'to')}
+              >
+                <title>Arraste para reconectar este terminal a outro furo</title>
+              </circle>
+              <circle
+                cx={b.x}
+                cy={b.y}
+                r={6}
+                fill="#ffffff"
+                stroke="#0284c7"
+                strokeWidth={2.5}
+                pointerEvents="none"
+              />
+              <circle
+                cx={b.x}
+                cy={b.y}
+                r={2}
+                fill="#0284c7"
+                pointerEvents="none"
+              />
+            </g>
+          </g>
+        )
+      })()}
 
       {/* Active draft wire being drawn */}
       {draftStart && (
