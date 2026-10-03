@@ -1,6 +1,6 @@
 [package]
 name = "circuitlab-offline"
-version = "0.1.0"
+version = "0.1.4"
 description = "Laboratório de circuitos digitais offline"
 edition = "2021"
 
