@@ -59,11 +59,20 @@ No canvas, os componentes usam os SVGs locais; os PNGs ficam como miniaturas do 
 Antes de iniciar o dev server ou gerar o build, `scripts/prepare-circuit-library.mjs` copia a captura de `circuit-library/` para `assets/circuit-library/`, quando a pasta original está disponível, e ajusta a área de visualização dos SVGs a partir das dimensões registradas. Se o checkout já tiver somente a cópia local em `assets/circuit-library/`, o preparo usa essa cópia sem buscar conteúdo externo.
 ## Releases para Windows e Linux
 
-O workflow `.github/workflows/release.yml` compila e publica instaladores para Windows (`.msi` e `.exe`) e Linux (`.deb` e `.AppImage`) em uma GitHub Release. Para publicar uma versão, envie uma tag começando com `v`, por exemplo:
+O workflow `.github/workflows/release.yml` compila e publica instaladores para Windows (`.msi` e `.exe`) e Linux (`.deb` e `.AppImage`) em uma GitHub Release. Para publicar, faça commit das alterações do projeto, entre na branch `main` e atualize-a. Depois execute o script com a versão desejada:
 
 ```bash
-git tag v0.1.1
-git push origin v0.1.1
+git switch main
+git pull --ff-only origin main
+npm run release -- 0.1.4
 ```
 
-Acompanhe a execução em **Actions**; quando terminar, os instaladores estarão anexados à release dessa tag. Também é possível iniciar o workflow manualmente pela aba **Actions** e informar a tag que deseja publicar.
+O script aceita versões estáveis como `0.1.4` ou `v0.1.4` e requer Node.js, Git e acesso de escrita ao remoto `origin`. Ele sincroniza `package.json`, `package-lock.json`, `src-tauri/tauri.conf.json`, `src-tauri/Cargo.toml` e a entrada do aplicativo em `src-tauri/Cargo.lock`. Em seguida, cria o commit de versão, a tag anotada `v0.1.4` e envia a branch `main` e a tag em um único push atômico. Se os arquivos já estiverem na versão solicitada, cria a tag no commit atual. A versão do crate interno `circuitlab-engine` é independente.
+
+O script interrompe a publicação se houver alterações pendentes (incluindo arquivos novos), se a tag já existir localmente ou no remoto, ou se faltarem commits do remoto na branch local. Não substitui tags existentes. Para conferir o plano sem modificar arquivos ou publicar, use:
+
+```bash
+npm run release -- 0.1.4 --dry-run
+```
+
+Se o push falhar, o commit e a tag permanecem locais; o script mostra o comando para tentar o envio novamente. Acompanhe a execução em **Actions**; quando terminar, os instaladores estarão anexados à release dessa tag com a versão informada. Os testes e a compilação são executados pelo workflow. Também é possível iniciar o workflow manualmente pela aba **Actions** e informar uma tag existente; nesse caso, será usada a versão já gravada nos arquivos daquela tag.
