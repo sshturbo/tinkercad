@@ -23,6 +23,56 @@ function write(path, content) {
   writeFileSync(absolute, content)
 }
 
+function writeVersionFixtures(version = '0.1.0') {
+  // Keep fixture versions independent of the checkout being released.
+  const name = 'circuitlab-offline'
+  const dependencies = { '@tauri-apps/api': '^2.0.0' }
+  const jsonFiles = {
+    'package.json': { name, version, private: true, type: 'module', dependencies },
+    'package-lock.json': {
+      name, version, lockfileVersion: 3, requires: true,
+      packages: {
+        '': { name, version, dependencies },
+        'node_modules/@tauri-apps/api': { version: '2.0.0' },
+      },
+    },
+  }
+  for (const [path, content] of Object.entries(jsonFiles)) {
+    write(path, `${JSON.stringify(content, null, 2)}\n`)
+  }
+  write('src-tauri/tauri.conf.json', `{
+  "productName": "CircuitLab Offline",
+  "version": "${version}",
+  "identifier": "dev.circuitlab.offline",
+  "bundle": { "active": true, "targets": "all" }
+}
+`)
+  write('src-tauri/Cargo.toml', `[package]
+name = "${name}"
+version = "${version}"
+edition = "2021"
+
+[dependencies]
+circuitlab-engine = { path = "../engine" }
+serde = "1"
+`)
+  write('src-tauri/Cargo.lock', `version = 4
+
+[[package]]
+name = "circuitlab-engine"
+version = "0.1.0"
+
+[[package]]
+name = "${name}"
+version = "${version}"
+dependencies = ["circuitlab-engine", "serde"]
+
+[[package]]
+name = "serde"
+version = "1.0.228"
+`)
+}
+
 function run(...args) {
   return spawnSync(process.execPath, [join(repo, 'scripts/release.mjs'), ...args], { cwd: repo, env, encoding: 'utf8' })
 }
@@ -55,9 +105,8 @@ describe('publicação de versões em repositórios temporários', () => {
     mkdirSync(repo)
     git(['init', '--bare', '--initial-branch=main', remote])
     git(['init', '--initial-branch=main'])
-    for (const path of [...versionFiles, 'scripts/release.mjs']) {
-      write(path, readFileSync(new URL(`../${path}`, import.meta.url), 'utf8'))
-    }
+    writeVersionFixtures()
+    write('scripts/release.mjs', readFileSync(new URL('release.mjs', import.meta.url), 'utf8'))
     git(['add', '.'])
     git(['commit', '-m', 'Initial fixture'])
     git(['remote', 'add', 'origin', remote])
@@ -82,20 +131,37 @@ describe('publicação de versões em repositórios temporários', () => {
 
     for (const path of versionFiles.slice(0, 3)) {
       const published = JSON.parse(git(['show', `v0.1.4:${path}`], remote))
-      expect(published.version).toBe('0.1.4')
-      if (path === 'package-lock.json') expect(published.packages[''].version).toBe('0.1.4')
+      const expected = JSON.parse(before.files[versionFiles.indexOf(path)])
+      expected.version = '0.1.4'
+      if (path === 'package-lock.json') expected.packages[''].version = '0.1.4'
+      expect(published).toEqual(expected)
     }
     for (const path of versionFiles.slice(3)) {
       const published = git(['show', `v0.1.4:${path}`], remote)
       const original = before.files[versionFiles.indexOf(path)].trim()
-      expect(published).toBe(original.replace(/(name = "circuitlab-offline"\r?\nversion = ")[^"]+/, '$10.1.4'))
+      expect(published).toBe(original.replace(/(name = "circuitlab-offline"\r?\nversion = ")[^"]+/, (_, prefix) => `${prefix}0.1.4`))
     }
-    // Releasing again with a fresh tag and already aligned versions needs no extra commit.
-    git(['tag', '-d', 'v0.1.4'])
-    git(['push', 'origin', ':refs/tags/v0.1.4'])
-    const repeat = run('v0.1.4')
-    expect(repeat.status, repeat.stderr).toBe(0)
-    expect(git(['rev-parse', 'HEAD'])).toBe(head)
+  })
+
+  it.each([false, true])('usa o commit atual quando as versões já estão sincronizadas (dry-run=%s)', dryRun => {
+    writeVersionFixtures('0.1.4')
+    git(['add', '--', ...versionFiles])
+    git(['commit', '-m', 'Already aligned versions'])
+    git(['push', 'origin', 'main'])
+    const before = snapshot()
+    const result = run('v0.1.4', ...(dryRun ? ['--dry-run'] : []))
+    expect(result.status, result.stderr).toBe(0)
+    expect(result.stdout).toContain('Os arquivos já estão na versão 0.1.4; a tag usará o commit atual.')
+    if (dryRun) {
+      expect(snapshot()).toEqual(before)
+    } else {
+      expect(git(['rev-parse', 'HEAD'])).toBe(before.head)
+      expect(git(['rev-parse', 'refs/heads/main'], remote)).toBe(before.head)
+      expect(git(['rev-parse', 'refs/tags/v0.1.4^{}'], remote)).toBe(before.head)
+      expect(git(['cat-file', '-t', 'refs/tags/v0.1.4'], remote)).toBe('tag')
+      expect(snapshot().files).toEqual(before.files)
+      expect(git(['status', '--porcelain'])).toBe('')
+    }
   })
 
   it('aceita o prefixo v e simula sem alterar arquivos ou refs', () => {
