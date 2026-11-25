@@ -39,7 +39,7 @@ const maxIterations = 40
 
 type ElectricalFamily = 'breadboard' | 'vcc' | 'gnd' | 'resistor' | 'variableResistor' | 'led' | 'diode' | 'button' | 'switch' | 'supply' | 'capacitor' | 'polarizedCapacitor' | 'inductor' | 'potentiometer' | 'dipSwitch' | 'tempSensor' | 'solarCell' | 'generator' | 'zenerDiode' | 'npn' | 'pnp' | 'mosfet' | 'tip120' | 'regulator' | 'opAmp' | 'comparator' | 'photodiode' | 'phototransistor' | 'relay' | 'lightBulb' | 'vibrationMotor' | 'tiltSensor' | 'usbSource' | 'soilMoisture' | 'rgbLed' | 'sevenSegment' | 'keypad' | 'irSensor' | 'gasSensor' | 'pirSensor' | 'piezo' | 'timer555' | 'timer556' | 'ultrasonicPing' | 'servo' | 'lcd'
 type Branch = { part: Part; a: string; b: string; family: 'resistor' | 'switch' | 'solarDiode'; resistance?: number; saturationCurrent?: number; thermalVoltage?: number; maximumExponent?: number; minimumConductance?: number; photovoltaicStartup?: boolean; linearContinuation?: { voltage: number; conductance: number; intercept: number } }
-type VoltageSource = { part: Part; a: string; b: string; voltage: number; enabledAboveVoltage?: { positive: string; negative: string; minimum: number } }
+type VoltageSource = { part: Part; a: string; b: string; voltage: number; currentLimitAmps?: number; outputA?: string; outputB?: string; enabledAboveVoltage?: { positive: string; negative: string; minimum: number } }
 type CurrentSource = { part: Part; a: string; b: string; current: number }
 type Capacitor = { part: Part; a: string; capacitorA: string; b: string; farads: number; seriesResistanceOhms: number }
 type Inductor = { part: Part; a: string; b: string; henries: number }
@@ -126,13 +126,25 @@ function projectReferencesPin(project: Project, part: Part, canonical: string): 
   }))
 }
 
-/** True only when the whole project consists of devices this first DC engine models. */
+/** Use the DC engine when every connected device has a local electrical model. */
 export function supportsDcSimulation(project: Project): boolean {
-  if (!project.parts.length || !project.parts.every(part => family(part) !== undefined)) return false
+  if (!project.parts.length || !project.parts.some(part => family(part) !== undefined)) return false
+  const hasOnlyUnconnectedVisualParts = project.parts.every(part => family(part) !== undefined || !project.wires.some(wire =>
+    wire.from.startsWith(part.id + ':') || wire.to.startsWith(part.id + ':'),
+  ))
+  if (!hasOnlyUnconnectedVisualParts) return false
   // OUT is a legacy digital-only helper on the virtual button, not a physical contact.
   return !project.parts.some(part => family(part) === 'button' && project.wires.some(wire =>
     wire.from === `${part.id}:OUT` || wire.to === `${part.id}:OUT`,
   ))
+}
+
+export function unmodeledDisconnectedComponents(project: Project): string[] {
+  return project.parts
+    .filter(part => family(part) === undefined && !project.wires.some(wire =>
+      wire.from.startsWith(part.id + ':') || wire.to.startsWith(part.id + ':'),
+    ))
+    .map(part => part.label)
 }
 
 function canonicalPin(part: Part, pin: string): string {
@@ -452,6 +464,17 @@ function sourceResistance(part: Part): number {
       : model === 'batteryPotato' ? 5650 : 0
   const legacyResistance = propertyNumber(part, 'libraryProperty:resistance', fallback / 1000) * 1000
   return propertyNumber(part, 'internalResistance', legacyResistance)
+}
+function sourceCurrentLimit(part: Part): number {
+  const model = String(part.properties?.simulationModel ?? '')
+  const fallback = model === 'battery9V' ? 1 : model === 'coinCell' ? 0.1 : model === 'AABattery' ? 2 : 5
+  const legacyCurrent = Object.entries(part.properties ?? {}).find(([key]) => {
+    if (!key.startsWith('libraryProperty:')) return false
+    const normalized = key.slice('libraryProperty:'.length).toLowerCase().replace(/[^a-z0-9]/g, '')
+    return ['current', 'currentlimit', 'maximumcurrent', 'maxcurrent'].includes(normalized)
+  })?.[1]
+  const configured = Number(part.properties?.current ?? legacyCurrent ?? fallback)
+  return Math.max(0, Number.isFinite(configured) ? configured : fallback)
 }
 function truthyProperty(value: unknown): boolean {
   return value === true || value === 1 || ['true', '1', 'yes', 'on'].includes(String(value ?? '').toLowerCase())
@@ -1083,7 +1106,7 @@ function solveElectricalAttempt(project: Project, state: Runtime, timeStepSecond
           nodes.add(sourcePositive)
           branches.push({ part, a, b: sourcePositive, family: 'resistor', resistance })
         }
-        sources.push({ part, a: sourcePositive, b, voltage: sourceVolts(part) })
+        sources.push({ part, a: sourcePositive, b, outputA: a, outputB: b, voltage: sourceVolts(part), currentLimitAmps: sourceCurrentLimit(part) })
       }
       if (hasBatteryParasiticCapacitor(part)) capacitors.push({ part, a, capacitorA: a, b, farads: 25e-6, seriesResistanceOhms: 0 })
     } else if (kind === 'vcc') {
@@ -1147,6 +1170,7 @@ function solveElectricalAttempt(project: Project, state: Runtime, timeStepSecond
   let comparatorStampedStates = new Map<string, boolean>()
   let converged = diagnostics.length === 0
   let solution = previous
+  const currentLimitedSources = new Map<string, number>()
 
   const indexOf = (node: string) => nodeIndex.get(sets.find(node))
   const stampConductance = (matrix: number[][], a: string, b: string, conductance: number) => {
@@ -1352,7 +1376,14 @@ function solveElectricalAttempt(project: Project, state: Runtime, timeStepSecond
         if (ai !== undefined) { matrix[ai][row] += 1; matrix[row][ai] += 1 }
         if (bi !== undefined) { matrix[bi][row] -= 1; matrix[row][bi] -= 1 }
         const enabled = !source.enabledAboveVoltage || voltage(previous, source.enabledAboveVoltage.positive) - voltage(previous, source.enabledAboveVoltage.negative) > source.enabledAboveVoltage.minimum
-        rhs[row] = enabled ? source.voltage : 0
+        const limitDirection = currentLimitedSources.get(source.part.id)
+        if (limitDirection !== undefined && source.currentLimitAmps !== undefined) {
+          matrix[row].fill(0)
+          matrix[row][row] = 1
+          rhs[row] = limitDirection * source.currentLimitAmps
+        } else {
+          rhs[row] = enabled ? source.voltage : 0
+        }
       }
       for (const source of currentSources) {
         const ai = indexOf(source.a), bi = indexOf(source.b)
@@ -1431,6 +1462,34 @@ function solveElectricalAttempt(project: Project, state: Runtime, timeStepSecond
         ) === comparatorStampedStates.get(`${comparator.part.id}:${channel.channel}`))
       })
       solution = next
+      let currentLimitChanged = false
+      for (const source of sources) {
+        const limit = source.currentLimitAmps
+        if (limit === undefined) continue
+        const row = sourceIndex.get(source.part.id)!
+        const current = next[row]
+        const direction = currentLimitedSources.get(source.part.id)
+        const currentTolerance = Math.max(1e-12, limit * 1e-8)
+        if (direction === undefined && Math.abs(current) > limit + currentTolerance) {
+          currentLimitedSources.set(source.part.id, Math.sign(current))
+          currentLimitChanged = true
+          continue
+        }
+        if (direction === undefined) continue
+        const sourceVoltage = voltage(next, source.outputA ?? source.a) - voltage(next, source.outputB ?? source.b)
+        const voltageTolerance = 1e-8 * Math.max(1, Math.abs(source.voltage))
+        const hasVoltageHeadroom = direction < 0
+          ? sourceVoltage >= source.voltage - voltageTolerance
+          : sourceVoltage <= source.voltage + voltageTolerance
+        if (hasVoltageHeadroom) {
+          currentLimitedSources.delete(source.part.id)
+          currentLimitChanged = true
+        }
+      }
+      if (currentLimitChanged) {
+        previous = next
+        continue
+      }
       if (delta < solverTolerance && comparatorStable && physicalResidual.converged) { converged = true; break }
       previous = next
     }
@@ -1508,17 +1567,20 @@ function solveElectricalAttempt(project: Project, state: Runtime, timeStepSecond
   const sevenSegmentCommonType: NonNullable<Simulation['sevenSegmentCommonType']> = {}
   const keypadPushed: NonNullable<Simulation['keypadPushed']> = {}
   const warnings: string[] = []
+  const limitedSupplyIds = new Set(currentLimitedSources.keys())
   for (const relay of relays) {
     const coilVoltage = voltageAt(relay.coil1) - voltageAt(relay.coil2)
     const previousState: RelayState = runtime.relayStates[relay.part.id] ? 'energized' : 'deenergized'
     const requestedState = getRelayStateAfterCoilSample(relay.model, previousState, coilVoltage)
-    if (dt > 0 && requestedState !== previousState) {
-      const elapsed = (runtime.relayActuationSeconds[relay.part.id] ?? 0) + dt
-      if (elapsed >= relay.model.contactSwitchDelaySeconds) {
-        runtime.relayStates[relay.part.id] = requestedState === 'energized'
-        runtime.relayActuationSeconds[relay.part.id] = 0
-      } else runtime.relayActuationSeconds[relay.part.id] = elapsed
-    } else runtime.relayActuationSeconds[relay.part.id] = 0
+    if (dt > 0) {
+      if (requestedState !== previousState) {
+        const elapsed = (runtime.relayActuationSeconds[relay.part.id] ?? 0) + dt
+        if (elapsed >= relay.model.contactSwitchDelaySeconds) {
+          runtime.relayStates[relay.part.id] = requestedState === 'energized'
+          runtime.relayActuationSeconds[relay.part.id] = 0
+        } else runtime.relayActuationSeconds[relay.part.id] = elapsed
+      } else runtime.relayActuationSeconds[relay.part.id] = 0
+    }
     const magnitude = Math.abs(coilVoltage)
     if (magnitude > relay.model.coil.maximumVoltageVolts) warnings.push(`${relay.part.label}: tensão da bobina acima do limite de 24 V extraído.`)
     const contactLimit = relay.model.primitiveBreakdownContactLimitVolts
@@ -2128,6 +2190,10 @@ function solveElectricalAttempt(project: Project, state: Runtime, timeStepSecond
       if (part.kind === 'library') { recordPin(part, 'Positive'); recordPin(part, 'Negative') }
       const row = sourceIndex.get(part.id)
       currents[part.id] = row === undefined ? 0 : solution[row]
+      const limitedSource = sources.find(source => source.part.id === part.id && source.currentLimitAmps !== undefined)
+      if (converged && limitedSource && limitedSupplyIds.has(part.id)) {
+        warnings.push(part.label + ': limite de corrente de ' + limitedSource.currentLimitAmps!.toFixed(3) + ' A ativo; a tensão de saída caiu para limitar a corrente.')
+      }
       const batteryCapacitor = capacitors.find(candidate => candidate.part.id === part.id)
       if (batteryCapacitor) {
         const voltage = voltageAt(batteryCapacitor.capacitorA) - voltageAt(batteryCapacitor.b)
@@ -2153,7 +2219,7 @@ function solveElectricalAttempt(project: Project, state: Runtime, timeStepSecond
 
   return {
     runtime,
-    simulation: { levels, leds, q: { ...runtime.q }, prev_clock: { ...runtime.prev_clock }, mode: dt > 0 && (capacitors.length > 0 || inductors.length > 0 || project.parts.some(part => ['generator', 'relay', 'timer555', 'timer556', 'ultrasonicPing', 'servo', 'lcd'].includes(family(part) ?? ''))) ? 'transient' : 'dc', voltages, currents, powers, energies, relayStates: { ...runtime.relayStates }, ledBrightness, ledWarning, ledBreakdown, timer555LatchHigh, timer555LatchPending, timer555OutputVoltage, timer555OutputCurrent, timer555DischargeVoltage, timer555ReferenceVoltage, timer556Channels, ultrasonicPing, servoPositionDegrees, servoPowered, servoBreakdown, lcdDisplays, lcdPowered, lcdBacklightBrightness, lcdContrast, lcdBreakdown, lightBulbBrightness, piezoVoltageIndicator, piezoBreakdown, vibrationMotorAmplitude, tiltSensorClosed, tiltSensorResistance, soilMoistureProbeResistance, usbBreakdown, rgbLedBrightness, rgbLedDisplayBrightness, rgbLedCurrents, rgbLedBreakdown, sevenSegmentBrightness, sevenSegmentDisplayBrightness, sevenSegmentCurrents, sevenSegmentBreakdown, sevenSegmentCommonType, keypadPushed, irSensorDetected, irSensorOutputResistance, irSensorSupplyVoltage, irSensorBreakdown, gasSensorLevel, gasSensorHeaterVoltage, gasSensorSignalResistance, gasSensorSignalCurrent, gasSensorHeaterCurrent, gasSensorBreakdown, pirSensorPowered, pirSensorInRange, pirSensorNormalizedDistance, pirSensorDriveActive, pirSensorOutputDriven, pirSensorOutputTriggered, pirSensorSupplyVoltage, pirSensorOutputVoltage, pirSensorPullupResistance, pirSensorOutputCurrent, converged, diagnostics, warnings },
+    simulation: { levels, leds, q: { ...runtime.q }, prev_clock: { ...runtime.prev_clock }, mode: dt > 0 && (capacitors.length > 0 || inductors.length > 0 || project.parts.some(part => ['generator', 'relay', 'timer555', 'timer556', 'ultrasonicPing', 'servo', 'lcd'].includes(family(part) ?? ''))) ? 'transient' : 'dc', currentLimitedSources: Object.fromEntries([...limitedSupplyIds].map(id => [id, true as const])), voltages, currents, powers, energies, relayStates: { ...runtime.relayStates }, ledBrightness, ledWarning, ledBreakdown, timer555LatchHigh, timer555LatchPending, timer555OutputVoltage, timer555OutputCurrent, timer555DischargeVoltage, timer555ReferenceVoltage, timer556Channels, ultrasonicPing, servoPositionDegrees, servoPowered, servoBreakdown, lcdDisplays, lcdPowered, lcdBacklightBrightness, lcdContrast, lcdBreakdown, lightBulbBrightness, piezoVoltageIndicator, piezoBreakdown, vibrationMotorAmplitude, tiltSensorClosed, tiltSensorResistance, soilMoistureProbeResistance, usbBreakdown, rgbLedBrightness, rgbLedDisplayBrightness, rgbLedCurrents, rgbLedBreakdown, sevenSegmentBrightness, sevenSegmentDisplayBrightness, sevenSegmentCurrents, sevenSegmentBreakdown, sevenSegmentCommonType, keypadPushed, irSensorDetected, irSensorOutputResistance, irSensorSupplyVoltage, irSensorBreakdown, gasSensorLevel, gasSensorHeaterVoltage, gasSensorSignalResistance, gasSensorSignalCurrent, gasSensorHeaterCurrent, gasSensorBreakdown, pirSensorPowered, pirSensorInRange, pirSensorNormalizedDistance, pirSensorDriveActive, pirSensorOutputDriven, pirSensorOutputTriggered, pirSensorSupplyVoltage, pirSensorOutputVoltage, pirSensorPullupResistance, pirSensorOutputCurrent, converged, diagnostics, warnings },
   }
 }
 

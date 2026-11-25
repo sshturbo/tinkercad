@@ -435,6 +435,7 @@ function propertyBinding(part: Part, property: LibraryProperty) {
   if (part.kind === 'library' && name === 'capacitance') return { key: 'capacitance', scale: prefixScale(property.default_prefix) }
   if (part.kind === 'library' && name === 'inductance') return { key: 'inductance', scale: prefixScale(property.default_prefix) }
   if (electricalKind(part) === 'supply' && name === 'voltage') return { key: 'voltage', scale: 1 }
+  if (electricalKind(part) === 'supply' && ['current', 'currentlimit', 'maximumcurrent', 'maxcurrent'].includes(name)) return { key: 'current', scale: 1 }
   if (electricalKind(part) === 'supply' && name === 'resistance') return { key: 'internalResistance', scale: prefixScale(property.default_prefix) }
   if (electricalKind(part) === 'potentiometer' && name === 'resistance') return { key: 'resistance', scale: prefixScale(property.default_prefix) }
   if (electricalKind(part) === 'variableResistor' && name === 'flatresistance') return { key: 'flatResistance', scale: prefixScale(property.default_prefix) }
@@ -462,7 +463,8 @@ function LibraryPropertyFields({ part, record, onUpdatePart }: { part: Part; rec
     const sevenSegmentCommon = model === SEVEN_SEGMENT_MODEL.id && normalized === 'common'
     const pirRuntimeTarget = model === 'sensor_pir' && ['targetx', 'targety'].includes(normalized)
     const ultrasonicRuntimeTarget = model === ULTRASONIC_PING_MODEL.id && ['targetx', 'targety'].includes(normalized)
-    return !(electricalKind(part) === 'resistor' && normalized === 'resistance') && !switchPosition && !potentiometerPosition && !dipSwitchPosition && !sevenSegmentCommon && !pirRuntimeTarget && !ultrasonicRuntimeTarget
+    const supplyCurrentLimit = electricalKind(part) === 'supply' && ['current', 'currentlimit', 'maximumcurrent', 'maxcurrent'].includes(normalized)
+    return !(electricalKind(part) === 'resistor' && normalized === 'resistance') && !switchPosition && !potentiometerPosition && !dipSwitchPosition && !sevenSegmentCommon && !pirRuntimeTarget && !ultrasonicRuntimeTarget && !supplyCurrentLimit
   })
   if (!editable.length) return null
   return <section className="library-detail-section">
@@ -672,9 +674,21 @@ export default function ComponentPopover({ part, wire, simulation, simulationAct
   const kind = part?.kind
   const visualOnly = !!part && kind === 'library' && !!libraryItem && !libraryItemSupportsSimulation(libraryItem)
   const resistance = Number(part?.properties?.ohms ?? 220)
+  const supplyModel = String(part?.properties?.simulationModel ?? '')
+  const supplyCurrentFallback = supplyModel === 'battery9V' ? 1 : supplyModel === 'coinCell' ? 0.1 : supplyModel === 'AABattery' ? 2 : 5
   const selectedUnit = String(part?.properties?.resistanceUnit ?? (resistance >= 1000 ? 'kΩ' : 'Ω'))
   const unitScale = resistanceUnits.find(unit => unit.label === selectedUnit)?.scale ?? 1
-  const numberField = (label: string, key: string, fallback: number, unit: string) => <label className="component-row"><span>{label}</span><span className="component-control"><input type="number" step="any" value={Number(part?.properties?.[key] ?? fallback)} onChange={event => setProperty(key, Number(event.target.value))} /><em>{unit}</em></span></label>
+  const numberField = (label: string, key: string, fallback: number, unit: string) => {
+    const legacySupplyValue = key === 'current' && part && electricalKind(part) === 'supply'
+      ? Object.entries(part.properties ?? {}).find(([property]) => {
+        if (!property.startsWith('libraryProperty:')) return false
+        const normalized = property.slice('libraryProperty:'.length).toLowerCase().replace(/[^a-z0-9]/g, '')
+        return ['current', 'currentlimit', 'maximumcurrent', 'maxcurrent'].includes(normalized)
+      })?.[1]
+      : undefined
+    const value = Number(part?.properties?.[key] ?? legacySupplyValue ?? fallback)
+    return <label className="component-row"><span>{label}</span><span className="component-control"><input type="number" step="any" min={key === 'current' && part && electricalKind(part) === 'supply' ? 0 : undefined} value={Number.isFinite(value) ? value : fallback} onChange={event => setProperty(key, key === 'current' && part && electricalKind(part) === 'supply' ? Math.max(0, Number(event.target.value)) : Number(event.target.value))} /><em>{unit}</em></span></label>
+  }
 
   return <aside className="component-popover" aria-label={wire ? 'Propriedades do fio' : `Propriedades de ${title}`}>
     <header className="component-popover-head">
@@ -700,6 +714,10 @@ export default function ComponentPopover({ part, wire, simulation, simulationAct
         {kind === 'library' && electricalKind(part) === 'ultrasonicPing' && <p className="library-detail-muted">Modelo elétrico de 3 ou 4 pinos: resistência de alimentação 166,7 Ω, pull-down Echo de 20 kΩ e pull-up de 100 Ω apenas com alimentação válida durante o pulso. A máquina agenda Echo após 750 µs; transições entre amostras não são reconstruídas.</p>}
         {kind === 'library' && electricalKind(part) === 'timer556' && <p className="library-detail-muted">Os dois canais reproduzem núcleos 555 independentes com alimentação compartilhada. Cada latch tem atraso de 0,5 µs, amostrado uma vez por subpasso; transições e períodos abaixo da resolução escolhida ficam quantizados.</p>}
         {visualOnly && <div className="library-visual-note">As propriedades visuais são editáveis, mas este componente ainda não altera o cálculo elétrico.</div>}
+        {kind === 'library' && electricalKind(part) === 'supply' && <>
+          {numberField('Corrente limite', 'current', supplyCurrentFallback, 'A')}
+          {simulation?.currentLimitedSources?.[part.id] && <div className="component-row" role="status"><span>Status da fonte</span><strong>Limitando corrente</strong></div>}
+        </>}
         {kind === 'resistor' && <>
           <label className="component-row"><span>Resistência</span><span className="component-control"><input type="number" step="any" value={resistance / unitScale} onChange={event => setProperty('ohms', Number(event.target.value) * unitScale)} /><select aria-label="Unidade da resistência" value={selectedUnit} onChange={event => { const unit = resistanceUnits.find(candidate => candidate.label === event.target.value)!; setProperty('resistanceUnit', unit.label); setProperty('ohms', resistance / unitScale * unit.scale) }}>{resistanceUnits.map(unit => <option key={unit.label} value={unit.label}>{unit.label}</option>)}</select></span></label>
           <ElectricalReadings part={part} simulation={simulation} />
@@ -714,7 +732,12 @@ export default function ComponentPopover({ part, wire, simulation, simulationAct
           <label className="component-row"><span>Forma de onda</span><select value={String(part.properties?.waveform ?? 'square')} onChange={event => setProperty('waveform', event.target.value)}><option value="square">Quadrada</option><option value="sine">Senoidal</option><option value="triangle">Triangular</option></select></label>
           <ElectricalReadings part={part} simulation={simulation} />
         </>}
-        {kind === 'supply' && <>{numberField('Tensão', 'voltage', 5, 'V')}{numberField('Corrente limite', 'current', 5, 'A')}<ElectricalReadings part={part} simulation={simulation} /></>}
+        {kind === 'supply' && <>
+          {numberField('Tensão', 'voltage', 5, 'V')}
+          {numberField('Corrente limite', 'current', supplyCurrentFallback, 'A')}
+          {simulation?.currentLimitedSources?.[part.id] && <div className="component-row" role="status"><span>Status da fonte</span><strong>Limitando corrente</strong></div>}
+          <ElectricalReadings part={part} simulation={simulation} />
+        </>}
         {kind === 'vcc' && numberField('Tensão', 'voltage', 5, 'V')}
         {(kind === 'jk74hc73' || kind === 'dff7474') && simulation && <div className="component-row"><span>Saídas</span><div className="component-value-text">{Object.entries(simulation.q).filter(([id]) => id.startsWith(`${part.id}:`)).map(([id, value]) => `${id.split(':').pop()} = ${value}`).join(' · ') || 'X'}</div></div>}
         <PinOverview part={part} />

@@ -547,6 +547,8 @@ export default function App() {
         const preparedRuntimeChanged =
           JSON.stringify(result.runtime.q) !== JSON.stringify(runtime.q) ||
           JSON.stringify(result.runtime.prev_clock) !== JSON.stringify(runtime.prev_clock) ||
+          JSON.stringify(result.runtime.relayStates ?? {}) !== JSON.stringify(runtime.relayStates ?? {}) ||
+          JSON.stringify(result.runtime.relayActuationSeconds ?? {}) !== JSON.stringify(runtime.relayActuationSeconds ?? {}) ||
           JSON.stringify(result.runtime.pirTargetPositions ?? {}) !== JSON.stringify(runtime.pirTargetPositions ?? {}) ||
           JSON.stringify(result.runtime.pirInRange ?? {}) !== JSON.stringify(runtime.pirInRange ?? {}) ||
           JSON.stringify(result.runtime.pirDrivePulses ?? {}) !== JSON.stringify(runtime.pirDrivePulses ?? {}) ||
@@ -565,6 +567,8 @@ export default function App() {
             ...current,
             q: result.runtime.q,
             prev_clock: result.runtime.prev_clock,
+            relayStates: result.runtime.relayStates ?? current.relayStates,
+            relayActuationSeconds: result.runtime.relayActuationSeconds ?? current.relayActuationSeconds,
             pirTargetPositions: result.runtime.pirTargetPositions ?? current.pirTargetPositions,
             pirInRange: result.runtime.pirInRange ?? current.pirInRange,
             pirDrivePulses: result.runtime.pirDrivePulses ?? current.pirDrivePulses,
@@ -1009,6 +1013,7 @@ export default function App() {
       const data: unknown = JSON.parse(await file.text())
       if (!validProject(data)) throw new Error('Formato de projeto inválido')
       replace({ ...data, id: newId() })
+      setActiveModal(null)
       message('Projeto importado com sucesso')
     } catch (err) {
       message(`Erro ao importar: ${String(err)}`)
@@ -1130,6 +1135,13 @@ export default function App() {
 
   return (
     <div className="app-shell" onClick={() => { setWireColorDropdownOpen(false); setFileMenuOpen(false); setCategoryDropdownOpen(false); }}>
+      <input
+        ref={importRef}
+        type="file"
+        accept=".json,application/json"
+        hidden
+        onChange={e => void importProject(e)}
+      />
       {/* ========================================================
           TOP HEADER BAR - CIRCUITLAB STUDIO BRANDING & MENUS
           ======================================================== */}
@@ -1802,8 +1814,11 @@ export default function App() {
             </div>
 
             <div className="bottom-sim-right">
-              {simulationStarted && simulation?.mode && <span className="simulation-mode-badge" title={simulation.mode === 'transient' ? 'Análise transitória trapezoidal com passo inicial backward Euler; o trigger ultrassônico continua amostrado nos subpassos' : simulation.mode === 'dc' ? 'Análise nodal modificada de corrente contínua, disponível para os tipos compatíveis' : 'Simulação lógica digital; não calcula tensão ou corrente analógica'}>
+              {simulationStarted && simulation?.mode && <span className="simulation-mode-badge" title={simulation.unmodeledComponents?.length
+                ? `O cálculo considera componentes com modelo local. Peças visuais sem modelo: ${simulation.unmodeledComponents.join(', ')}.`
+                : simulation.mode === 'transient' ? 'Análise transitória trapezoidal com passo inicial backward Euler; o trigger ultrassônico continua amostrado nos subpassos' : simulation.mode === 'dc' ? 'Análise nodal modificada de corrente contínua' : 'Simulação lógica digital; não calcula tensão ou corrente analógica'}>
                 {simulation.mode === 'transient' ? 'Transitório · MNA' : simulation.mode === 'dc' ? 'DC · MNA' : 'Lógica digital'}
+                {simulation.unmodeledComponents?.length ? ' · Parcial' : ''}
               </span>}
               <span
                 className={`engine-badge ${simulationEngine}`}
@@ -2131,52 +2146,10 @@ export default function App() {
             </div>
             <div className="modal-body">
               <p style={{ margin: '0 0 12px', color: '#64748b' }}>
-                Lógica comportamental em Verilog / HDL para o contador binário de 4 bits montado com CIs 74HC73 (Flip-Flops JK) e porta lógica 74HC00:
+                O editor e a simulação de sketches Arduino ainda não estão disponíveis. A bancada simula os componentes com modelo elétrico local e a lógica dos circuitos digitais compatíveis.
               </p>
-              <pre className="code-viewer-block">
-{`// =====================================================
-// CIRCUITLAB STUDIO · EDA DIGITAL CORE
-// Projeto: Contador Binário 4-Bits (Jefferson)
-// Módulo: Contador binário de 4 bits com CI 74HC73
-// =====================================================
-
-module contador_4bit_circuitlab (
-  input  wire       clk,        // Clock do Gerador de Funções (FUNC1)
-  input  wire       reset_btn,  // Botão de Reset
-  output wire [3:0] q,          // Saídas conectadas aos LEDs (D1..D4)
-  output wire [3:0] q_not
-);
-
-  // Instanciação de dois CIs 74HC73 (Dual JK Flip-Flop com Clear)
-  // U1: Flip-Flop 1 (Bit 0) e Flip-Flop 2 (Bit 1)
-  // U2: Flip-Flop 3 (Bit 2) e Flip-Flop 4 (Bit 3)
-
-  reg [3:0] count_reg = 4'b0000;
-
-  always @(negedge clk or negedge reset_btn) begin
-    if (!reset_btn) begin
-      count_reg <= 4'b0000;
-    end else begin
-      count_reg <= count_reg + 1'b1;
-    end
-  end
-
-  assign q = count_reg;
-  assign q_not = ~count_reg;
-
-endmodule`}
-              </pre>
             </div>
             <div className="modal-footer">
-              <button
-                className="btn-primary"
-                onClick={() => {
-                  navigator.clipboard.writeText(`// Projeto: Contador 20261987686 Jefferson\n// Contador binário 4-bits com 74HC73`)
-                  message('Código copiado para a área de transferência!')
-                }}
-              >
-                <Copy size={14} /> Copiar código
-              </button>
               <button className="btn-secondary" onClick={() => setActiveModal(null)}>
                 Fechar
               </button>
@@ -2437,13 +2410,6 @@ endmodule`}
                 <button className="btn-secondary" onClick={() => importRef.current?.click()}>
                   <Upload size={14} /> Importar JSON
                 </button>
-                <input
-                  ref={importRef}
-                  type="file"
-                  accept=".json,application/json"
-                  hidden
-                  onChange={e => void importProject(e)}
-                />
               </div>
 
               {library.length ? (

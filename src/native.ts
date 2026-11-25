@@ -1,6 +1,6 @@
 import { invoke } from '@tauri-apps/api/core'
 import { simulate } from './simulator'
-import { simulateElectrical, supportsDcSimulation } from './electricalSimulator'
+import { simulateElectrical, supportsDcSimulation, unmodeledDisconnectedComponents } from './electricalSimulator'
 import { extractedModelNames } from './extracted-models'
 import { normalizeProjectPinNames, sanitizeProjectForNative, type Project, type Runtime, type Simulation } from './model'
 
@@ -11,7 +11,12 @@ export type SimulationResult = { simulation: Simulation; runtime: Runtime; engin
 export async function runSimulation(project: Project, runtime: Runtime, advanceClock = false, timeStepSeconds = 0, simulationTimeSeconds = 0, maximumSubstepSeconds = 0.01): Promise<SimulationResult> {
   const normalized = normalizeProjectPinNames(project)
   if (supportsDcSimulation(normalized)) {
-    return { ...simulateElectrical(normalized, runtime, timeStepSeconds, simulationTimeSeconds, maximumSubstepSeconds), engine: 'typescript' }
+    const result = simulateElectrical(normalized, runtime, timeStepSeconds, simulationTimeSeconds, maximumSubstepSeconds)
+    return {
+      ...result,
+      simulation: { ...result.simulation, unmodeledComponents: unmodeledDisconnectedComponents(normalized) },
+      engine: 'typescript',
+    }
   }
   if (native && !project.parts.some(part => part.kind === 'library' || extractedModelNames.has(String(part.properties?.simulationModel ?? '')))) {
     try {
